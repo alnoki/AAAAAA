@@ -32,10 +32,47 @@ class Transaction:
                f"{self.per_share_amount}, {self.total_amount}, " \
                f"{self.transact_type}, {self.description}"
 
+    def __repr__(self):
+        # Per share amount is not needed to reproduce object
+        return f"Transaction({self.date}, {self.symbol}, {self.num_shares}, " \
+               f"{self.total_amount}, {self.transact_type}, {self.description})"
 
-# Testing
+    @classmethod
+    def from_string(cls, string):
+        """
+        Sanitizes and re-casts arguments from a string defining a
+        transaction. Strips off class definition and associated ()
+        :param string: Of form:
+        Transaction(2018-10-12, AAPL, 25, 4000, Buy, Apple market buy)
+        :return: A transaction object
+        """
+        arguments = string[len('Transaction('):-len(')')]
+        date, symbol, num_shares, total_amount, transact_type, description = \
+            arguments.split(', ')
+        date = None if date == 'None' else \
+            datetime.datetime.strptime(date, '%Y-%m-%d')
+        symbol = None if symbol == 'None' else symbol
+        num_shares = None if num_shares == 'None' else int(num_shares)
+        total_amount = None if total_amount == 'None' else float(total_amount)
+        transact_type = None if transact_type == 'None' else transact_type
+        description = None if description == 'None' else description
+        return(cls, date, symbol, num_shares, total_amount, transact_type,
+               description)
 
-print("\nTesting per share amount attribute:\n")
+        # Need to return None if string is empty
+        # Need to fix test case printout, see test results
+
+
+
+def test_section(description):
+    """
+    Prints a header-style message to terminal that denotes a new test
+    :param description: Description of the test being run
+    """
+    print(f"\n--- Test: {description} ---\n")
+
+
+test_section("Per share amount attribute")
 transaction = Transaction(datetime.date(2018, 10, 12), 'AAPL', 20, 4000,
                           'Buy', "Apple market buy")
 print(transaction.per_share_amount)  # Nominal case
@@ -48,7 +85,19 @@ transaction.total_amount = 4000
 transaction.num_shares = 0
 print(transaction.per_share_amount)  # divide by zero case
 
-print("\nTesting __str__:\n")
-print(transaction)
+test_section(" __str__ function")
+print(str(transaction))
+transaction.date, transaction.num_shares = None, None
+print(str(transaction))
+print(type(transaction.total_amount))
 
-# Print(int(None))
+test_section(" __repr__ function")
+transaction.date, transaction.num_shares = datetime.date(2018, 10, 12), 25
+print(repr(transaction))
+transaction.num_shares = None
+print(repr(transaction))
+
+test_section(" from_string function")
+string = repr(transaction)  # Using data from above test
+transaction = Transaction.from_string(string)
+print(str(transaction))
