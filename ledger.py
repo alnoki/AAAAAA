@@ -34,7 +34,8 @@ class Transaction:
 
     def __repr__(self):
         # Per share amount is not needed to reproduce object
-        return f"Transaction({self.date}, {self.symbol}, {self.num_shares}, " \
+        return f"{self.__class__.__name__}({self.date}, {self.symbol}, " \
+               f"{self.num_shares}, " \
                f"{self.total_amount}, {self.transact_type}, {self.description})"
 
     @classmethod
@@ -43,14 +44,21 @@ class Transaction:
         Sanitizes and re-casts arguments from a string defining a
         transaction. Strips off class definition and associated ()
         :param string: Of form:
-        Transaction(2018-10-12, AAPL, 25, 4000, Buy, Apple market buy)
-        :return: A transaction object
+        "Transaction(2018-10-12, AAPL, 25, 4000, Buy, Apple buy)"
+        :return: A Transaction object
         """
-        arguments = string[len('Transaction('):-len(')')]
+        import re
+        # Regex looks for class name, then left paren, then any number
+        # of non new-line chars, then right parent before end of string
+        pattern = re.compile(f"{cls.__name__}\((.+)\)$")
+        match = pattern.findall(string)  # Could probably be different
+        if match is None:
+            return None
         date, symbol, num_shares, total_amount, transact_type, description = \
-            arguments.split(', ')
+            match[0].split(', ') # This could probably be cleaner
+        # Recast relevant attributes
         date = None if date == 'None' else \
-            datetime.datetime.strptime(date, '%Y-%m-%d')
+            datetime.datetime.strptime(date, '%Y-%m-%d').date()
         symbol = None if symbol == 'None' else symbol
         num_shares = None if num_shares == 'None' else int(num_shares)
         total_amount = None if total_amount == 'None' else float(total_amount)
@@ -58,10 +66,6 @@ class Transaction:
         description = None if description == 'None' else description
         return(cls, date, symbol, num_shares, total_amount, transact_type,
                description)
-
-        # Need to return None if string is empty
-        # Need to fix test case printout, see test results
-
 
 
 def test_section(description):
