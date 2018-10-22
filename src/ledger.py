@@ -7,8 +7,7 @@ import datetime
 
 class Transaction:
     """
-    Represents a buy, sell, etc, that is associated with a form of
-    financial transfer
+    Represents a bank transfer, buy, dividends, fee, or sell
     """
     def __init__(self, date=None, symbol=None, num_shares=None,
                  total_amount=None, transact_type=None, description=None):
@@ -79,6 +78,8 @@ def test_section(description):
 test_section("Per share amount attribute")
 transaction = Transaction(datetime.date(2018, 10, 12), 'AAPL', 20, 4000,
                           'Buy', "Apple market buy")
+bank_transaction = Transaction(datetime.date(2019, 6, 9), None, 500,
+                               "Bank transfer", "Transfer to brokerage account")
 print(transaction.per_share_amount)  # Nominal case
 transaction.num_shares = None
 print(transaction.per_share_amount)  # num_shares is None
