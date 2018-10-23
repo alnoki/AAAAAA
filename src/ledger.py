@@ -6,17 +6,16 @@ import datetime
 
 
 class Transaction:
-    """
-    Represents a bank transfer, buy, dividends, fee, or sell
-    """
-    def __init__(self, date=None, symbol=None, num_shares=None,
-                 total_amount=None, transact_type=None, description=None):
-        self.date = date  # Should be datetime.date class
-        self.symbol = symbol  # Should be string
-        self.num_shares = num_shares  # Should be integer
-        self.total_amount = total_amount  # Should be float
-        self.transact_type = transact_type  # Should be string
-        self.description = description  # Should be string
+    """Represents a bank transfer, buy, dividends, fee, or sell"""
+    def __init__(self, date: datetime.date = None, symbol: str = None,
+                 num_shares: int = None, total_amount: float = None,
+                 transact_type: str = None, description: str = None):
+        self.date = date
+        self.symbol = symbol
+        self.num_shares = num_shares
+        self.total_amount = total_amount
+        self.transact_type = transact_type
+        self.description = description
 
     @property
     def per_share_amount(self):
