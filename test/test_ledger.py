@@ -1,28 +1,33 @@
 import datetime
-from ledger import Transaction
+from src.ledger import Transaction
 import pytest
 
 
-# Could have these vars go into a fixture as a yielded value
-# test_transactions.date, etc
-@pytest.mark.parametrize('date',
-     [datetime.date(2018, 10, 12), datetime.date(0, 0, 1)])
-@pytest.mark.parametrize('symbol', ['AAPL', None, 'BRK.A'])
-@pytest.mark.parametrize('num_shares', [20, None, 0])
-@pytest.mark.parametrize('total_amount', [0, None, 500, 300.46])
-@pytest.mark.parametrize('transact_type', ['Buy', 'Fees', None])
-@pytest.mark.parametrize('description', [None, '', "Market buy"])
-def test_init(date, symbol, num_shares, total_amount, transact_type,
-              description):
-    t = Transaction(
-            date, symbol, num_shares, total_amount, transact_type, description)
-    assert \
-        t.date == date and \
-        t.symbol == symbol and \
-        t.num_shares == num_shares and \
-        t.total_amount == total_amount and \
-        t.transact_type == transact_type and \
-        t.description == description
+class TestInit(object):
+    """Tests the initialization functions of the Transaction class"""
+
+    @pytest.mark.parametrize(
+        "in_var", [None, datetime.date(2018, 10, 12), datetime.date(1, 1, 1)])
+    def test_date(self, in_var):
+        """Verifies the date is correctly initialized"""
+        t = Transaction(date=in_var)
+        assert t.date == in_var
+
+    @pytest.mark.parametrize(
+        "in_var", [None, '', ' ', 'AAPL', 'BRK.A', 'AAPL', '^CRSPTMT'])
+    def test_symbol(self, in_var):
+        """Verifies the symbol is correctly initialized"""
+        t = Transaction(symbol=in_var)
+        assert t.symbol == in_var
+
+    @pytest.mark.parametrize(
+        "in_var", [None, 0, 1.2, 3, -1])
+    def test_num_shares(self, in_var):
+        """Verifies the number of shares is correctly initialized"""
+        t = Transaction(num_shares=in_var)
+        assert t.num_shares == in_var
+
+
 
 # class TestTransaction(unittest.TestCase):
 #     """Test case for validating Transaction class"""
