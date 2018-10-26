@@ -6,10 +6,15 @@ import datetime
 
 
 class Transaction:
-    """Represents a bank transfer, buy, dividends, fee, or sell"""
-    def __init__(self, date: datetime.date = None, symbol: str = None,
-                 num_shares: int = None, total_amount: float = None,
-                 transact_type: str = None, description: str = None):
+    """Represents a bank transfer, buy, dividends, fee, or sell
+    """
+    def __init__(self, date: datetime.date, total_amount: float,
+                 transact_type: str, symbol: str = None,
+                 num_shares: int = None, description: str = None):
+
+        # Sanitation of required inputs
+        if type(date) is not datetime.date:
+            raise ValueError(f"{self.__class__.__name__} date")
         self.date = date
         self.symbol = symbol
         self.num_shares = num_shares
