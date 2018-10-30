@@ -24,6 +24,18 @@ class Transaction:
                 transact_type not in transact_types):
             raise ValueError
             return
+        # Check that keyword arguments are correct data type
+        if ((symbol is not None and not isinstance(symbol, str)) or
+                (num_shares is not None and not isinstance(num_shares, int))):
+            raise AttributeError
+            return
+        # Check that keyword arguments have reasonable data
+        if ((transact_type == 'Bank transfer' and symbol is not None) or
+                (transact_type != 'Bank transfer' and symbol is None) or
+                (symbol is not None and
+                    (len(symbol) == 0 or symbol.isspace()))):
+            raise ValueError
+            return
         self.date = date
         self.total_amount = float(total_amount)
         self.transact_type = transact_type
