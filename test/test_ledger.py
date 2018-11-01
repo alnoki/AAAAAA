@@ -11,6 +11,7 @@ class TestTransactionInit(object):
     d_total_amount = 0
     d_transact_type = 'Bank transfer'
     d_symbol = 'AAPL'
+    d_num_shares = 1
     d_args = (d_date, d_total_amount, d_transact_type)
 
     @pytest.mark.parametrize(
@@ -20,7 +21,7 @@ class TestTransactionInit(object):
         """Verifies date is correctly initialized"""
         # Attribute error should be raised if date isn't correct type
         if not isinstance(i_date, datetime.date):
-            with pytest.raises(AttributeError):
+            with pytest.raises(AttributeError, match="date type"):
                 Transaction(date=i_date, total_amount=self.d_total_amount,
                             transact_type=self.d_transact_type)
         else:  # Check date has been assigned correctly
@@ -33,19 +34,19 @@ class TestTransactionInit(object):
         """Verifies total_amount is correctly initialized"""
         # Attribute error should be raised if not a float or an int
         if not isinstance(i_total_amount, (float, int)):
-            with pytest.raises(AttributeError):
+            with pytest.raises(AttributeError, match="total_amount type"):
                 Transaction(date=self.d_date, total_amount=i_total_amount,
                             transact_type=self.d_transact_type)
         # Value error should be raised if amount is negative
         elif i_total_amount < 0:
-            with pytest.raises(ValueError):
+            with pytest.raises(ValueError, match="total_amount negative"):
                 Transaction(date=self.d_date, total_amount=i_total_amount,
                             transact_type=self.d_transact_type)
         else:  # Verify value has been cast as float and assigned
             t = Transaction(date=self.d_date, total_amount=i_total_amount,
                             transact_type=self.d_transact_type)
             assert (t.total_amount == i_total_amount and
-                    type(t.total_amount) is float)
+                    isinstance(t.total_amount, float))
 
     @pytest.mark.parametrize('i_transact_type',
                              [None, 3, '', ' ', 'buy', 'Sell'])
@@ -53,19 +54,20 @@ class TestTransactionInit(object):
         """Verifies transact_type is correctly initialized"""
         # Attribute error should be raised if type is not string
         if not isinstance(i_transact_type, str):
-            with pytest.raises(AttributeError):
+            with pytest.raises(AttributeError, match="transact_type type"):
                 Transaction(date=self.d_date, total_amount=self.d_total_amount,
                             transact_type=i_transact_type)
         # Value error should be raised if isn't 'Buy', 'Sell', etc.
         # Case sensitive: 'buy' should fail, but 'Buy' would pass
         elif i_transact_type not in transact_types:
-            with pytest.raises(ValueError):
+            with pytest.raises(ValueError, match="transact_type type"):
                 Transaction(date=self.d_date, total_amount=self.d_total_amount,
                             transact_type=i_transact_type)
         else:  # Verify value has been assigned correctly
+            # Should only apply to 'Sell' test, so need num_shares
             t = Transaction(date=self.d_date, total_amount=self.d_total_amount,
                             transact_type=i_transact_type,
-                            symbol=self.d_symbol)
+                            symbol=self.d_symbol, num_shares=self.d_num_shares)
             assert t.transact_type == i_transact_type
 
     @pytest.mark.parametrize('i_symbol', [None, 3, '', '   ', 'BRK.A', 'AAPL'])
@@ -75,39 +77,84 @@ class TestTransactionInit(object):
         """Verifies symbol is correctly initialized"""
         # Attribute error should be raised if type is not None or str
         if i_symbol is not None and not isinstance(i_symbol, str):
-            with pytest.raises(AttributeError):
+            with pytest.raises(AttributeError, match="symbol type"):
                 Transaction(*self.d_args, symbol=i_symbol)
-        # No symbol if bank transfer, no bank transfer if symbol
-        elif ((i_transact_type == 'Bank transfer' and i_symbol is not None) or
-              (i_transact_type != 'Bank transfer' and i_symbol is None)):
-            with pytest.raises(ValueError):
-                Transaction(
-                    self.d_date, total_amount=self.d_total_amount,
-                    transact_type=i_transact_type, symbol=i_symbol)
         # Symbol must have some actual text if is not None
         elif ((i_symbol is not None) and
               (len(i_symbol) == 0 or i_symbol.isspace())):
-            with pytest.raises(ValueError):
+            with pytest.raises(ValueError, match="blank symbol"):
+                Transaction(
+                    self.d_date, total_amount=self.d_total_amount,
+                    transact_type=i_transact_type, symbol=i_symbol)
+        # Bank transfers can not have associated symbols
+        elif i_transact_type == 'Bank transfer' and i_symbol is not None:
+            with pytest.raises(ValueError, match="bank transfer has symbol"):
+                Transaction(
+                    self.d_date, total_amount=self.d_total_amount,
+                    transact_type=i_transact_type, symbol=i_symbol)
+        # Must have symbol if not bank transfer
+        elif i_transact_type != 'Bank transfer' and i_symbol is None:
+            with pytest.raises(ValueError, match="symbol missing"):
                 Transaction(
                     self.d_date, total_amount=self.d_total_amount,
                     transact_type=i_transact_type, symbol=i_symbol)
         else:  # Verify value has been assigned correctly
+            if i_transact_type == 'Bank transfer':
+                i_num_shares = None
+            else:
+                i_num_shares = self.d_num_shares
             t = Transaction(
                     self.d_date, total_amount=self.d_total_amount,
-                    transact_type=i_transact_type, symbol=i_symbol)
+                    transact_type=i_transact_type, symbol=i_symbol,
+                    num_shares=i_num_shares)
             assert t.symbol == i_symbol
 
     @pytest.mark.parametrize(
-        'i_num_shares', [None, 'abc', 0, 2, 3.5, -1])
+        'i_num_shares', [None, 'abc', 0, 2, 3.5, -1, 0.0])
     @pytest.mark.parametrize('i_symbol', [None, 'AAPL'])
     def test_num_shares(self, i_num_shares, i_symbol):
         """Verifies num_shares is correctly initialized"""
+        i_transact_type = 'Sell'
         # Attribute error should be raised if type is not None or int
         if i_num_shares is not None and not isinstance(i_num_shares, int):
-            with pytest.raises(AttributeError):
-                Transaction(*self.d_args, num_shares=i_num_shares)
+            with pytest.raises(AttributeError, match="num_shares type"):
+                Transaction(
+                    date=self.d_date, total_amount=self.d_total_amount,
+                    transact_type=i_transact_type, num_shares=i_num_shares)
+        # Can not have num_shares if symbol is undefined
+        elif i_symbol is None and i_num_shares is not None:
+            with pytest.raises(ValueError, match="num_shares should be None"):
+                Transaction(
+                    *self.d_args, symbol=i_symbol, num_shares=i_num_shares)
+        # Need num_shares if symbol is defined
+        elif i_symbol is not None and i_num_shares is None:
+            with pytest.raises(ValueError, match="num_shares missing"):
+                Transaction(
+                    date=self.d_date, total_amount=self.d_total_amount,
+                    transact_type=i_transact_type, symbol=i_symbol,
+                    num_shares=i_num_shares)
+        # Value error if num_shares is not None but is < or = to 0
+        elif i_num_shares is not None and i_num_shares <= 0:
+            with pytest.raises(ValueError, match="non-positive num_shares"):
+                Transaction(
+                    date=self.d_date, total_amount=self.d_total_amount,
+                    transact_type=i_transact_type, symbol=i_symbol,
+                    num_shares=i_num_shares)
+        else:  # Verify value has been assigned correctly
+            if i_symbol is None:
+                i_transact_type = self.d_transact_type
+            t = Transaction(
+                    date=self.d_date, total_amount=self.d_total_amount,
+                    transact_type=i_transact_type, symbol=i_symbol,
+                    num_shares=i_num_shares)
+            assert t.num_shares == i_num_shares
 
-
-# Can't have num_shares if symbol is None....
-# Need num_shares if symbol is not None
-# Can't have num_shares 0 or less (divide by 0) or float value of shares
+    @pytest.mark.parametrize('i_description', [None, 3, '', '\n', 'Comment'])
+    def test_description(self, i_description):
+        # Check that description is either None or string
+        if i_description is not None and not isinstance(i_description, str):
+            with pytest.raises(AttributeError, match="description type"):
+                Transaction(*self.d_args, description=i_description)
+        else:
+            t = Transaction(*self.d_args, description=i_description)
+            assert i_description == t.description

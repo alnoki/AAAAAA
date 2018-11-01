@@ -10,38 +10,57 @@ transact_types = set(['Bank transfer', 'Fees', 'Buy', 'Sell', 'Dividends'])
 
 class Transaction:
     """Represents a bank transfer, buy, dividends, fee, or sell"""
+    def _check_arg_types(self, date, total_amount, transact_type):
+        """Check that positional arguments are correct data type"""
+        if not isinstance(date, datetime.date):
+            raise AttributeError("date type")
+        if not isinstance(total_amount, (float, int)):
+            raise AttributeError("total_amount type")
+        if not isinstance(transact_type, str):
+            raise AttributeError("transact_type type")
+
+
+
     def __init__(self, date: datetime.date, total_amount: Union[float, int],
                  transact_type: str, symbol: str=None,
                  num_shares: int=None, description: str=None):
-        # Check that positional arguments are correct data type
-        if (not isinstance(date, datetime.date) or
-                not isinstance(total_amount, (int, float)) or
-                not isinstance(transact_type, str)):
-            raise AttributeError
-            return
-        # Check that positional arguments have reasonable data
-        if (total_amount < 0 or
-                transact_type not in transact_types):
-            raise ValueError
-            return
-        # Check that keyword arguments are correct data type
-        if ((symbol is not None and not isinstance(symbol, str)) or
-                (num_shares is not None and not isinstance(num_shares, int))):
-            raise AttributeError
-            return
-        # Check that keyword arguments have reasonable data
-        if ((transact_type == 'Bank transfer' and symbol is not None) or
-                (transact_type != 'Bank transfer' and symbol is None) or
-                (symbol is not None and
-                    (len(symbol) == 0 or symbol.isspace()))):
-            raise ValueError
-            return
-        self.date = date
-        self.total_amount = float(total_amount)
-        self.transact_type = transact_type
-        self.symbol = symbol
-        self.num_shares = num_shares
-        self.description = description
+        try:  # Check input validity before assignment
+            self._check_arg_types(date, total_amount, transact_type)
+            # Check that positional arguments have valid values
+            if total_amount < 0:
+                raise ValueError("total_amount negative")
+            if transact_type not in transact_types:
+                raise ValueError("transact_type type")
+            # Check that keyword arguments are correct data type
+            if symbol is not None and not isinstance(symbol, str):
+                raise AttributeError("symbol type")
+            if num_shares is not None and not isinstance(num_shares, int):
+                raise AttributeError("num_shares type")
+            if description is not None and not isinstance(description, str):
+                raise AttributeError("description type")
+            # Check that keyword arguments have valid values
+            if symbol is not None and (len(symbol) == 0 or symbol.isspace()):
+                raise ValueError("blank symbol")
+            if transact_type == 'Bank transfer' and symbol is not None:
+                raise ValueError("bank transfer has symbol")
+            if transact_type != 'Bank transfer' and symbol is None:
+                raise ValueError("symbol missing")
+            if symbol is None and num_shares is not None:
+                raise ValueError("num_shares should be None")
+            if symbol is not None and num_shares is None:
+                raise ValueError("num_shares missing")
+            if num_shares is not None and num_shares <= 0:
+                raise ValueError("non-positive num_shares")
+        except (AttributeError, ValueError) as e:
+            raise e
+            return  # Do not make an instance if data is invalid
+        else:
+            self.date = date
+            self.total_amount = float(total_amount)
+            self.transact_type = transact_type
+            self.symbol = symbol
+            self.num_shares = num_shares
+            self.description = description
 
 # @property
 # def per_share_amount(self):
