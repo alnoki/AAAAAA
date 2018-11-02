@@ -1,60 +1,88 @@
-"""
-This module includes classes and functions related to ledger-style
-data.
-"""
+"""Includes classes and functions related to ledger-style data."""
+
 import datetime
 from typing import Union
 
-transact_types = set(['Bank transfer', 'Fees', 'Buy', 'Sell', 'Dividends'])
-
+transact_types = set(['Bank transfer', 'Buy', 'Dividends', 'Fees', 'Sell'])
 
 class Transaction:
     """Represents a bank transfer, buy, dividends, fee, or sell"""
+
+    def _check_types(self, checks, keyword_args=False):
+        """Verify positional/keyword arguments are correct type"""
+        # Key is argument, value is tuple with expected format(s) and
+        # associated error message
+        for arg, (arg_type, error_msg) in checks.items():
+            # For positional arguments, just check if is correct type
+            # For keyword args, check if is None or is correct type
+            if ((not isinstance(arg, arg_type)) and
+                    (not (keyword_args == True and arg is None))):
+                raise AttributeError(error_msg)
+
+    def _check_vals(self, checks):
+        """Verify positional/keyword arguments have reasonable vals"""
+        # Order-dependent list of checks and failure message to report
+        # if condition is true
+        for check, error_message in checks:
+            if True == check:
+                raise ValueError(error_message)
+
     def _check_arg_types(self, date, total_amount, transact_type):
-        """Check that positional arguments are correct data type"""
-        if not isinstance(date, datetime.date):
-            raise AttributeError("date type")
-        if not isinstance(total_amount, (float, int)):
-            raise AttributeError("total_amount type")
-        if not isinstance(transact_type, str):
-            raise AttributeError("transact_type type")
+        """Verify positional arguments are correct data type"""
+        # Key is argument, value is tuple with expected format(s) and
+        # associated error message
+        checks = dict([(date, (datetime.date, "date type")),
+                       (total_amount, ((float, int), "total_amount type")),
+                       (transact_type, (str, "transact_type type"))])
+        self._check_types(checks)
 
+    def _check_kwarg_types(self, symbol, num_shares, description):
+        """Verify keyword arguments are correct data type"""
+        # Key is argument, value is tuple with expected format(s) and
+        # associated error message
+        checks = dict([(symbol, (str, "symbol type")),
+                       (num_shares, (int, "num_shares type")),
+                       (description, (str, "description type"))])
+        self._check_types(checks, keyword_args=True)
 
+    def _check_arg_vals(self, total_amount, transact_type):
+        """Verify positional argument values are valid"""
+        # Order-dependent list of checks and failure message to report
+        # if condition is true
+        checks = [(total_amount < 0, "total_amount negative"),
+                  (transact_type not in transact_types, "transact_type type")]
+        self._check_vals(checks)
+
+    def _check_kwarg_vals(self, transact_type, symbol, num_shares):
+        """Check that keyword argument values are valid"""
+        # Order-dependent list of checks and failure message to report
+        # if condition is true
+        checks = [
+            (symbol is not None and (len(symbol) == 0 or symbol.isspace()),
+                "blank symbol"),
+            (transact_type == 'Bank transfer' and symbol is not None,
+                "bank transfer has symbol"),
+            (transact_type != 'Bank transfer' and symbol is None,
+                "symbol missing"),
+            (symbol is None and num_shares is not None,
+                "num_shares should be None"),
+            (symbol is not None and num_shares is None, "num_shares missing"),
+            (num_shares is not None and num_shares <= 0,
+                "non-positive num_shares")]
+        self._check_vals(checks)
 
     def __init__(self, date: datetime.date, total_amount: Union[float, int],
                  transact_type: str, symbol: str=None,
                  num_shares: int=None, description: str=None):
+        """Creates object if valid parameters, else raises error"""
         try:  # Check input validity before assignment
             self._check_arg_types(date, total_amount, transact_type)
-            # Check that positional arguments have valid values
-            if total_amount < 0:
-                raise ValueError("total_amount negative")
-            if transact_type not in transact_types:
-                raise ValueError("transact_type type")
-            # Check that keyword arguments are correct data type
-            if symbol is not None and not isinstance(symbol, str):
-                raise AttributeError("symbol type")
-            if num_shares is not None and not isinstance(num_shares, int):
-                raise AttributeError("num_shares type")
-            if description is not None and not isinstance(description, str):
-                raise AttributeError("description type")
-            # Check that keyword arguments have valid values
-            if symbol is not None and (len(symbol) == 0 or symbol.isspace()):
-                raise ValueError("blank symbol")
-            if transact_type == 'Bank transfer' and symbol is not None:
-                raise ValueError("bank transfer has symbol")
-            if transact_type != 'Bank transfer' and symbol is None:
-                raise ValueError("symbol missing")
-            if symbol is None and num_shares is not None:
-                raise ValueError("num_shares should be None")
-            if symbol is not None and num_shares is None:
-                raise ValueError("num_shares missing")
-            if num_shares is not None and num_shares <= 0:
-                raise ValueError("non-positive num_shares")
+            self._check_arg_vals(total_amount, transact_type)
+            self._check_kwarg_types(symbol, num_shares, description)
+            self._check_kwarg_vals(transact_type, symbol, num_shares)
         except (AttributeError, ValueError) as e:
             raise e
-            return  # Do not make an instance if data is invalid
-        else:
+        else:  # Create an object if data is valid
             self.date = date
             self.total_amount = float(total_amount)
             self.transact_type = transact_type

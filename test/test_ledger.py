@@ -149,7 +149,7 @@ class TestTransactionInit(object):
                     num_shares=i_num_shares)
             assert t.num_shares == i_num_shares
 
-    @pytest.mark.parametrize('i_description', [None, 3, '', '\n', 'Comment'])
+    @pytest.mark.parametrize('i_description', [None, 3, '', 'Comment'])
     def test_description(self, i_description):
         # Check that description is either None or string
         if i_description is not None and not isinstance(i_description, str):
