@@ -1,6 +1,6 @@
 import datetime
-from src.ledger import Transaction, transact_types
 import pytest
+from src.ledger import Transaction, transact_types
 
 
 class TestTransactionInit(object):
@@ -19,9 +19,9 @@ class TestTransactionInit(object):
                    datetime.date(1, 1, 1)])
     def test_date(self, i_date):
         """Verifies date is correctly initialized"""
-        # Attribute error should be raised if date isn't correct type
+        # Type error should be raised if date isn't correct type
         if not isinstance(i_date, datetime.date):
-            with pytest.raises(AttributeError, match="date type"):
+            with pytest.raises(TypeError, match="date"):
                 Transaction(date=i_date, total_amount=self.d_total_amount,
                             transact_type=self.d_transact_type)
         else:  # Check date has been assigned correctly
@@ -32,9 +32,9 @@ class TestTransactionInit(object):
     @pytest.mark.parametrize('i_total_amount', [None, -2, 'abc', 45, 45.0])
     def test_total_amount(self, i_total_amount):
         """Verifies total_amount is correctly initialized"""
-        # Attribute error should be raised if not a float or an int
+        # Type error should be raised if not a float or an int
         if not isinstance(i_total_amount, (float, int)):
-            with pytest.raises(AttributeError, match="total_amount type"):
+            with pytest.raises(TypeError, match="total_amount"):
                 Transaction(date=self.d_date, total_amount=i_total_amount,
                             transact_type=self.d_transact_type)
         # Value error should be raised if amount is negative
@@ -52,9 +52,9 @@ class TestTransactionInit(object):
                              [None, 3, '', ' ', 'buy', 'Sell'])
     def test_transact_type(self, i_transact_type):
         """Verifies transact_type is correctly initialized"""
-        # Attribute error should be raised if type is not string
+        # Type error should be raised if type is not string
         if not isinstance(i_transact_type, str):
-            with pytest.raises(AttributeError, match="transact_type type"):
+            with pytest.raises(TypeError, match="transact_type"):
                 Transaction(date=self.d_date, total_amount=self.d_total_amount,
                             transact_type=i_transact_type)
         # Value error should be raised if isn't 'Buy', 'Sell', etc.
@@ -75,9 +75,9 @@ class TestTransactionInit(object):
         'i_transact_type', ['Bank transfer', 'Sell'])
     def test_symbol(self, i_symbol, i_transact_type):
         """Verifies symbol is correctly initialized"""
-        # Attribute error should be raised if type is not None or str
+        # Type error should be raised if type is not None or str
         if i_symbol is not None and not isinstance(i_symbol, str):
-            with pytest.raises(AttributeError, match="symbol type"):
+            with pytest.raises(TypeError, match="symbol"):
                 Transaction(*self.d_args, symbol=i_symbol)
         # Symbol must have some actual text if is not None
         elif ((i_symbol is not None) and
@@ -115,9 +115,9 @@ class TestTransactionInit(object):
     def test_num_shares(self, i_num_shares, i_symbol):
         """Verifies num_shares is correctly initialized"""
         i_transact_type = 'Sell'
-        # Attribute error should be raised if type is not None or int
+        # Type error should be raised if type is not None or int
         if i_num_shares is not None and not isinstance(i_num_shares, int):
-            with pytest.raises(AttributeError, match="num_shares type"):
+            with pytest.raises(TypeError, match="num_shares"):
                 Transaction(
                     date=self.d_date, total_amount=self.d_total_amount,
                     transact_type=i_transact_type, num_shares=i_num_shares)
@@ -153,7 +153,7 @@ class TestTransactionInit(object):
     def test_description(self, i_description):
         # Check that description is either None or string
         if i_description is not None and not isinstance(i_description, str):
-            with pytest.raises(AttributeError, match="description type"):
+            with pytest.raises(TypeError, match="description"):
                 Transaction(*self.d_args, description=i_description)
         else:
             t = Transaction(*self.d_args, description=i_description)

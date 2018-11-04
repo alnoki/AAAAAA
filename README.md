@@ -31,7 +31,8 @@ Alnoki Algorithmic Analysis Asset Allocation Advisor
 ## Recommended documentation review order
 As documentation was written, various Python terms were explained with hyperlinks so as to provide a means for teaching. To review documentation in a sequential order that will elucidate various concepts throughout the software architecture, it is suggested that documentation be read in the order in which it was written:
 1. `dev`\\`ledger`
-2.  `src`\\`ledger`
+2. `src`\\`ledger`
+3. `src`\\`utilities`
 
 ## Select references
 1. [Python.org documentation](https://docs.python.org/) and [tutorial](https://docs.python.org/3/tutorial/index.html)
