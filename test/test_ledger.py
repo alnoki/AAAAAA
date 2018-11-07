@@ -15,8 +15,9 @@ class TestTransactionInit(object):
     d_args = (d_date, d_total_amount, d_transact_type)
 
     @pytest.mark.parametrize(
-        "i_date", [None, 1, 'abc', datetime.date(2018, 10, 12),
-                   datetime.date(1, 1, 1)])
+        "i_date",
+        [None, 1, 'abc', datetime.date(2018, 10, 12), datetime.date(1, 1, 1)],
+        ids=['None', None, 'abc', '20181012', '00010101'])
     def test_date(self, i_date):
         """Verifies date is correctly initialized"""
         # Type error should be raised if date isn't correct type
@@ -48,8 +49,10 @@ class TestTransactionInit(object):
             assert (t.total_amount == i_total_amount and
                     isinstance(t.total_amount, float))
 
-    @pytest.mark.parametrize('i_transact_type',
-                             [None, 3, '', ' ', 'buy', 'Sell'])
+    @pytest.mark.parametrize(
+        'i_transact_type', [None, 3, '', ' ', 'buy', 'Sell'],
+        ids=[None, None, "empty str", "whitespace str", "lowercase buy",
+             "correct Sell"])
     def test_transact_type(self, i_transact_type):
         """Verifies transact_type is correctly initialized"""
         # Type error should be raised if type is not string
@@ -70,7 +73,10 @@ class TestTransactionInit(object):
                             symbol=self.d_symbol, num_shares=self.d_num_shares)
             assert t.transact_type == i_transact_type
 
-    @pytest.mark.parametrize('i_symbol', [None, 3, '', '   ', 'BRK.A', 'AAPL'])
+    @pytest.mark.parametrize(
+        'i_symbol', [None, 3, '', '   ', 'BRK.A', 'AAPL'],
+        ids=["None symbol", "int symbol", "Empty symbol", "Whitespace symbol",
+             None, None])
     @pytest.mark.parametrize(
         'i_transact_type', ['Bank transfer', 'Sell'])
     def test_symbol(self, i_symbol, i_transact_type):
@@ -110,8 +116,11 @@ class TestTransactionInit(object):
             assert t.symbol == i_symbol
 
     @pytest.mark.parametrize(
-        'i_num_shares', [None, 'abc', 0, 2, 3.5, -1, 0.0])
-    @pytest.mark.parametrize('i_symbol', [None, 'AAPL'])
+        'i_num_shares', [None, 'abc', 0, 2, 3.5, -1, 0.0],
+        ids=["None num_shares", "str num_shares", "0 shares", "2 shares",
+             "3.5 shares", "-1 shares", "0.0 shares"])
+    @pytest.mark.parametrize('i_symbol', [None, 'AAPL'],
+        ids=["None symbol", None])
     def test_num_shares(self, i_num_shares, i_symbol):
         """Verifies num_shares is correctly initialized"""
         i_transact_type = 'Sell'
@@ -149,7 +158,9 @@ class TestTransactionInit(object):
                     num_shares=i_num_shares)
             assert t.num_shares == i_num_shares
 
-    @pytest.mark.parametrize('i_description', [None, 3, '', 'Comment'])
+    @pytest.mark.parametrize('i_description', [None, 3, '', 'Comment'],
+        ids=[None, "int description", "empty description",
+             "correct description"])
     def test_description(self, i_description):
         # Check that description is either None or string
         if i_description is not None and not isinstance(i_description, str):
