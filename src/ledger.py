@@ -1,7 +1,9 @@
 """Includes classes and functions related to ledger-style data."""
 
 import datetime
+import decimal
 from typing import Union
+
 from src.utilities import check_object
 
 transact_types = set(['Bank transfer', 'Buy', 'Dividends', 'Fees', 'Sell'])
@@ -15,7 +17,7 @@ class Transaction:
         """Checks positional & keyword arg types/values for __init__"""
         check_object('types', (  # Positional arg types
             (date, (datetime.date,), 'date'),
-            (total_amount, (float, int), 'total_amount'),
+            (total_amount, (decimal.Decimal, int), 'total_amount'),
             (transact_type, (str,), 'transact_type'),))
         check_object('values', (  # Positional arg values
             (total_amount < 0, "total_amount negative"),
@@ -37,7 +39,8 @@ class Transaction:
             (num_shares is not None and num_shares <= 0,
                 "non-positive num_shares"),))
 
-    def __init__(self, date: datetime.date, total_amount: Union[float, int],
+    def __init__(self, date: datetime.date,
+                 total_amount: Union[decimal.Decimal, int],
                  transact_type: str, symbol: str=None,
                  num_shares: int=None, description: str=None):
         """Creates object if valid parameters, else raises error"""
@@ -48,7 +51,7 @@ class Transaction:
             raise e
         else:  # Create an object if data is valid
             self.date = date
-            self.total_amount = float(total_amount)
+            self.total_amount = decimal.Decimal(total_amount)
             self.transact_type = transact_type
             self.symbol = symbol
             self.num_shares = num_shares
@@ -101,45 +104,3 @@ class Transaction:
 #     description = None if description == 'None' else description
 #     return(cls, date, symbol, num_shares, total_amount, transact_type,
 #            description)
-
-
-# def test_section(description):
-#     """
-#     Prints a header-style message to terminal that denotes a new test
-#     :param description: Description of the test being run
-#     """
-#     print(f"\n--- Test: {description} ---\n")
-#
-#
-# test_section("Per share amount attribute")
-# transaction = Transaction(datetime.date(2018, 10, 12), 'AAPL', 20, 4000,
-#                           'Buy', "Apple market buy")
-# bank_transaction = Transaction(datetime.date(2019, 6, 9), None, 500,
-#                                "Bank transfer", "Transfer to brokerage\
-# account")
-# print(transaction.per_share_amount)  # Nominal case
-# transaction.num_shares = None
-# print(transaction.per_share_amount)  # num_shares is None
-# transaction.num_shares = 20
-# transaction.total_amount = None
-# print(transaction.per_share_amount)  # total_amount is None
-# transaction.total_amount = 4000
-# transaction.num_shares = 0
-# print(transaction.per_share_amount)  # divide by zero case
-#
-# test_section(" __str__ function")
-# print(str(transaction))
-# transaction.date, transaction.num_shares = None, None
-# print(str(transaction))
-# print(type(transaction.total_amount))
-#
-# test_section(" __repr__ function")
-# transaction.date, transaction.num_shares = datetime.date(2018, 10, 12), 25
-# print(repr(transaction))
-# transaction.num_shares = None
-# print(repr(transaction))
-#
-# test_section(" from_string function")
-# string = repr(transaction)  # Using data from above test
-# transaction = Transaction.from_string(string)
-# print(str(transaction))

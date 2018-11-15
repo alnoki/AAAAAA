@@ -6,3 +6,11 @@ AAAAAA.egg-info/PKG-INFO
 AAAAAA.egg-info/SOURCES.txt
 AAAAAA.egg-info/dependency_links.txt
 test/__pycache__/test_ledger.cpython-36-PYTEST.pyc
+doc/src/.ipynb_checkpoints/ledger-checkpoint.ipynb
+doc/src/.ipynb_checkpoints/utilities-checkpoint.ipynb
+src/__pycache__/utilities.cpython-37.pyc
+src/__pycache__/ledger.cpython-36.pyc
+src/__pycache__/__init__.cpython-36.pyc
+nbs/src/.ipynb_checkpoints/utilities-checkpoint.ipynb
+nbs/src/.ipynb_checkpoints/ledger-checkpoint.ipynb
+test/__pycache__/test_utilities.cpython-37-PYTEST.pyc

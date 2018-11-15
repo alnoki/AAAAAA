@@ -1,4 +1,5 @@
 import datetime
+import decimal
 import pytest
 from src.ledger import Transaction, transact_types
 
@@ -30,11 +31,14 @@ class TestTransactionInit(object):
                             transact_type=self.d_transact_type)
             assert t.date == i_date
 
-    @pytest.mark.parametrize('i_total_amount', [None, -2, 'abc', 45, 45.0])
+    @pytest.mark.parametrize(
+        'i_total_amount', [None, -2, 'abc', 45.0, 45, decimal.Decimal('45.0'),
+                           decimal.Decimal('-45.0')],
+        ids=[None, None, None, 'float', 'int', 'decimal', 'negative decimal'])
     def test_total_amount(self, i_total_amount):
         """Verifies total_amount is correctly initialized"""
-        # Type error should be raised if not a float or an int
-        if not isinstance(i_total_amount, (float, int)):
+        # Type error should be raised if not a decimal or an int
+        if not isinstance(i_total_amount, (decimal.Decimal, int)):
             with pytest.raises(TypeError, match="total_amount"):
                 Transaction(date=self.d_date, total_amount=i_total_amount,
                             transact_type=self.d_transact_type)
@@ -43,11 +47,11 @@ class TestTransactionInit(object):
             with pytest.raises(ValueError, match="total_amount negative"):
                 Transaction(date=self.d_date, total_amount=i_total_amount,
                             transact_type=self.d_transact_type)
-        else:  # Verify value has been cast as float and assigned
+        else:  # Verify value has been cast as decimal and assigned
             t = Transaction(date=self.d_date, total_amount=i_total_amount,
                             transact_type=self.d_transact_type)
             assert (t.total_amount == i_total_amount and
-                    isinstance(t.total_amount, float))
+                    isinstance(t.total_amount, decimal.Decimal))
 
     @pytest.mark.parametrize(
         'i_transact_type', [None, 3, '', ' ', 'buy', 'Sell'],
@@ -119,8 +123,8 @@ class TestTransactionInit(object):
         'i_num_shares', [None, 'abc', 0, 2, 3.5, -1, 0.0],
         ids=["None num_shares", "str num_shares", "0 shares", "2 shares",
              "3.5 shares", "-1 shares", "0.0 shares"])
-    @pytest.mark.parametrize('i_symbol', [None, 'AAPL'],
-        ids=["None symbol", None])
+    @pytest.mark.parametrize(
+        'i_symbol', [None, 'AAPL'], ids=["None symbol", None])
     def test_num_shares(self, i_num_shares, i_symbol):
         """Verifies num_shares is correctly initialized"""
         i_transact_type = 'Sell'
@@ -158,9 +162,9 @@ class TestTransactionInit(object):
                     num_shares=i_num_shares)
             assert t.num_shares == i_num_shares
 
-    @pytest.mark.parametrize('i_description', [None, 3, '', 'Comment'],
-        ids=[None, "int description", "empty description",
-             "correct description"])
+    @pytest.mark.parametrize(
+        'i_description', [None, 3, '', 'Comment'],
+        ids=[None, "int description", "empty description", "correct"])
     def test_description(self, i_description):
         # Check that description is either None or string
         if i_description is not None and not isinstance(i_description, str):
