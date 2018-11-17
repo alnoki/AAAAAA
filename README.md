@@ -49,12 +49,26 @@ documentation be read in the order in which it was written:
 1. `nbs`\\`src`\\`utilities`
 
 ## Select references
-1. [Python.org documentation](https://docs.python.org/) and [tutorial](https://docs.python.org/3/tutorial/index.html)
-1. [Corey Schafer YouTube playlist: Python Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
-1. [codebasics YouTube playlist: Pytest Tutorial (Python Automated Testing)](https://www.youtube.com/playlist?list=PLeo1K3hjS3utzQYDNRNluzqJqpMXx6hHu)
-1. [pytest.org homepage](https://docs.pytest.org) and [tutorials](https://docs.pytest.org/en/latest/contents.html)
-1. [VS Code Python tutorial](https://code.visualstudio.com/docs/languages/python) and [unit testing documentation](https://code.visualstudio.com/docs/python/unit-testing)
-1. [Anaconda user guide](https://docs.anaconda.com/anaconda/user-guide/) and [cheat sheet](https://docs.anaconda.com/_downloads/Anaconda-Starter-Guide-Cheat-Sheet.pdf)
-1. [alnoki Jupyter notebooks and sample code from assorted tutorials](https://github.com/alnoki?tab=repositories)
 1. [Changing bash prompt](https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
-1. [Read the Docs external resources](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html#external-resources)
+1. General Python
+    1. [Python.org documentation](https://docs.python.org/) and [tutorial](https://docs.python.org/3/tutorial/index.html)
+    1. [Corey Schafer YouTube playlist: Python Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
+    1. [alnoki Jupyter notebooks and sample code from assorted tutorials](https://github.com/alnoki?tab=repositories)
+    1. [Anaconda user guide](https://docs.anaconda.com/anaconda/user-guide/) and [cheat sheet](https://docs.anaconda.com/_downloads/Anaconda-Starter-Guide-Cheat-Sheet.pdf)
+1. Testing with `pytest`
+    1. [codebasics YouTube playlist: Pytest Tutorial (Python Automated Testing)](https://www.youtube.com/playlist?list=PLeo1K3hjS3utzQYDNRNluzqJqpMXx6hHu)
+    1. [pytest.org homepage](https://docs.pytest.org) and [tutorials](https://docs.pytest.org/en/latest/contents.html)
+    1. [VS Code Python tutorial](https://code.visualstudio.com/docs/languages/python) and [unit testing documentation](https://code.visualstudio.com/docs/python/unit-testing)
+1. Documentation
+    1. Sphix and Read the Docs background
+        1. [Read the Docs getting started with Sphinx](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html#external-resources)
+        1. [Sphinx documentation](http://www.sphinx-doc.org/en/master/)
+        1. [reST primer](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
+        1. [Sphinx/RTD intro for writers](http://www.ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)
+    1. Sample `reST` code
+        1. [matlibplot sampledoc tutorial](https://matplotlib.org/sampledoc/)
+        1. [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/latest/)
+    1. Using `autodoc`
+        1. [Sphinx autodoc feature](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html)
+        1. [Numpy docstring convention](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
+        1. [Napolean for numpy docstring support](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon)
