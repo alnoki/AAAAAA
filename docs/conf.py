@@ -83,6 +83,8 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
+# The below options are for the Read the Docs theme, see
+# https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
 html_theme_options = {
     'canonical_url': '',
     'analytics_id': '',
@@ -90,7 +92,6 @@ html_theme_options = {
     'display_version': True,
     'prev_next_buttons_location': 'both',
     'style_external_links': False,
-    'vcs_pageview_mode': '',
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,

@@ -3,6 +3,10 @@ Alnoki Algorithmic Analysis Asset Allocation Advisor
 
 *Brought to you by alnoki*
 
+[AAAAAA documentation](https://alnoki.rtfd.io) is hosted at
+[Read the Docs](https://rtfd.io), but below are some additional notes
+that are kept locally during developement
+
 ## Philosophy
 1. Testing and documenting up front prevents runtime debug headaches
 1. Have DRY (don't repeat yourself) code: decompose as much as possible
@@ -66,9 +70,19 @@ documentation be read in the order in which it was written:
         1. [reST primer](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
         1. [Sphinx/RTD intro for writers](http://www.ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)
     1. Sample `reST` code
+        1. [Official reST documentation](http://docutils.sourceforge.net/rst.html)
+        1. [Python developer's guide to documenting](https://devguide.python.org/documenting/)
         1. [matlibplot sampledoc tutorial](https://matplotlib.org/sampledoc/)
         1. [Read the Docs Sphinx Theme](https://sphinx-rtd-theme.readthedocs.io/en/latest/)
     1. Using `autodoc`
         1. [Sphinx autodoc feature](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html)
         1. [Numpy docstring convention](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
         1. [Napolean for numpy docstring support](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon)
+
+# TODO
+1. Cheat sheet admonition at bottom of tools/code pages
+    1. Use same message at the bottom of code/tools.rst via one reference
+1. Autodoc with source files and numpy style
+1. Auto-checking of links being broken
+1. Get a `<project name>` sort of reference in docs for AAAAAA
+1. Line break in a bulleted list?
