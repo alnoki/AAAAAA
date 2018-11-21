@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Development &mdash; AAAAAA  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome!" href="../index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> AAAAAA
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">AAAAAA documentation</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tools">Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code">Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#style">Style</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#access">Access</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Jupyter Notebooks</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AAAAAA</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Development</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/dev/development.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Welcome!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="development">
+<h1>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h1>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">The AAAAAA <code class="docutils literal notranslate"><span class="pre">README</span></code>, at the bottom of the <a class="reference external" href="https://github.com/alnoki/AAAAAA">AAAAAA GitHub repository</a>,
+contains some additional links that are commonly referenced during
+development as well as some philosophies and directory structure notes</p>
+</div>
+<div class="section" id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h2>
+<p>All the software tools used to create the AAAAAA are open source:</p>
+<ul>
+<li><p class="first"><a class="reference external" href="https://www.anaconda.com">The Anaconda Distribution</a> is used to manage all of the Python packages in the AAAAAA</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://docs.pytest.org/en/latest/">pytest</a> is used to create tests for the AAAAAA source code</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://jupyter.org">Jupyter Notebooks</a> are used for interactive development documentation</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html">Read the Dox with Sphinx</a> is used to document code via <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> (<code class="docutils literal notranslate"><span class="pre">reST</span></code>)</p>
+<blockquote>
+<div><ul class="simple">
+<li>This documentation is built using the <a class="reference external" href="https://sphinx-rtd-theme.readthedocs.io/en/latest/">Read the Docs Sphinx Theme</a></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><a class="reference external" href="https://code.visualstudio.com">VS Code</a> is the preferred integrated development environment used to edit code and documentation. Extensions used:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a></li>
+<li><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=tht13.rst-vscode">RST preview</a> for editing  <code class="docutils literal notranslate"><span class="pre">reST</span></code></li>
+<li><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter">Test Explorer UI</a> for visualising <code class="docutils literal notranslate"><span class="pre">pytest</span></code> tests during development</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="code">
+<h2>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="style">
+<h3>Style<a class="headerlink" href="#style" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP8</a> for Python code</li>
+<li><a class="reference external" href="https://devguide.python.org/documenting/#documenting-python">Python Developer’s Guide</a> for reST</li>
+</ul>
+</div>
+<div class="section" id="access">
+<h3>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h3>
+<p>Source code for the AAAAAA is available on
+<a class="reference external" href="https://github.com/alnoki/AAAAAA">Github</a>, and
+<a class="reference external" href="https://github.com/alnoki">alnoki’s Github profile</a> contains
+assorted repositories with extra tutorial code on associated topics</p>
+</div>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>Documentation is written according to a
+<a class="reference external" href="https://documentation-style-guide-sphinx.readthedocs.io/en/latest/index.html">Style guide for Sphinx-based documentations</a></p>
+</div>
+<div class="section" id="id1">
+<h2>Jupyter Notebooks<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://jupyter.org">Jupyter Notebooks</a> are used for some analyses, and
+alnoki’s notebooks for the AAAAAA can be accessed
+<a class="reference external" href="https://nbviewer.jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/">here</a>.
+References to specific notebooks should be found throughout the
+AAAAAA documentation, but the above link is for the highest-level notebook
+directory</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Welcome!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, alnoki
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

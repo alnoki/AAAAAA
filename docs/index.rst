@@ -1,18 +1,20 @@
+########
 Welcome!
-========
-This website contains documentation for the Alnoki Algorithmic Analysis
-Asset Allocation Advisor (AAAAAA)
+########
+
+*****************************************************************
+The Alnoki Algorithmic Analysis Asset Allocation Advisor (AAAAAA)
+*****************************************************************
 
 *Brought to you by alnoki*
 
-The AAAAAA is a growing collection of financial analysis
-tools. Development is performed in the
-`Python <https://docs.python.org>`_
-computer language, using additional packages developed by the open
-source community
+The AAAAAA is a growing collection of financial analysis tools. Development is
+performed in the `Python <https://docs.python.org>`_ computer language, using
+additional packages developed by the open source community
 
+*******
 Python?
-^^^^^^^
+*******
 A bit of Python can be executed on most computers with minimal effort
 
 1. Open the command line on your specific machine
@@ -28,22 +30,20 @@ A bit of Python can be executed on most computers with minimal effort
 4. If you are feeling fancy (hit ``enter`` twice for this one)::
 
     for i in range(5):
-        print("What number are we on? Oh, that's right:", i)
+        print("Please be aware of the number", i)
 
 Congratulations!!!
 
 .. toctree::
-   :caption: Documentation Contents
-   :maxdepth: 2
+   :caption: AAAAAA documentation
+   :maxdepth: -1
 
-   code
-   tools
+   dev/development
 
-..
 
-    Indices and tables
+..  Indices and tables
     ==================
 
-    * :ref:`genindex`
+..  * :ref:`genindex`
     * :ref:`modindex`
     * :ref:`search`
