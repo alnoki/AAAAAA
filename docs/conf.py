@@ -12,9 +12,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('exts'))
 
 
 # -- Project information -----------------------------------------------------
@@ -42,6 +42,9 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.extlinks',
+    'xref'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -192,3 +195,17 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
+intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
+
+xref_links = {
+    'Python': ('Python', 'https://www.python.org'),
+    'xref-ext': ("Michael Jones' sphinx-xref repository",
+                 'https://github.com/michaeljones/sphinx-xref'),
+    'Willing-Sphinx': ("Carol Willing's Practical Sphinx talk from PyCon 2018",
+                       'https://www.youtube.com/watch?v=0ROZRNZkPS8'),
+    'Yusuf-Sphinx-RTD': ("Mahdi Yusuf's Sphinx & Read the Docs screencast",
+                         'https://www.youtube.com/watch?v=oJsUvBQyHBs'),
+    'Anaconda': ('Anaconda', 'https://www.anaconda.com'),
+    'AAAAAA-repo': ("AAAAAA repository", 'https://github.com/alnoki/AAAAAA'),
+    # New links below, sorted links above
+    }

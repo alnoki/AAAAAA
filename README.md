@@ -88,22 +88,22 @@ documentation be read in the order in which it was written:
     1. Sphinx walkthroughs
         1. [Brandon's PyCon Sphinx tutorial on Read the Docs](https://brandons-sphinx-tutorial.readthedocs.io/en/latest/index.html)
             1. [PDF form](https://media.readthedocs.org/pdf/brandons-sphinx-tutorial/latest/brandons-sphinx-tutorial.pdf)
-        1. [Carol Willing Practical Sphinx talk from PyCon with examples](https://www.youtube.com/watch?v=0ROZRNZkPS8)
-            * `python -m http.server` -> http://localhost:8000/_build/html/index.html
-            * `make linkcheck`
-            * `make clean` then `make build`
         1. [Mahdi Yusuf Sphinx quickstart screencast](https://www.youtube.com/watch?v=oJsUvBQyHBs)
 
-
 ## TODO
-1. Reference audit
+1. Get intersphinx working with additional sites
+    1. Pages from official Spinx documentation
+    1. Pages from Python developer's guide
+1. File away:
+    1. https://stackoverflow.com/questions/19071512/socket-error-errno-48-address-already-in-use
+    1. http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#module-sphinx.ext.intersphinx
     1. [External links extension](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension)
-    1. Make a comprehensive references file
+1. Fix toctree depth on sidebar navigator for multiple depths
+1. Split up developers page
+1. In references top paragraph mention how the interspinx is used
+1. Reference audit
         1. PEP8 has a cross-reference directive
         [ref](http://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#role-pep)
-        1. Every other file should point to it, no links in other files
-    1. Check every link to add to a references file
-    1. Intersphinx with as much as possible
 1. Migrate readme to Sphinx
 1. How to line break in a bulleted list?
 1. Per Carol Willing talk

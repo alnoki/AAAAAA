@@ -9,19 +9,21 @@ The Alnoki Algorithmic Analysis Asset Allocation Advisor (AAAAAA)
 *Brought to you by alnoki*
 
 The AAAAAA is a growing collection of financial analysis tools. Development is
-performed in the `Python <https://docs.python.org>`_ computer language, using
-additional packages developed by the open source community
+performed in the :xref:`Python` computer language, using additional packages
+developed by the open source community
 
 *******
 Python?
 *******
-A bit of Python can be executed on most computers with minimal effort
+A bit of Python can be executed on most computers with minimal effort, using
+:py:func:`print`:
 
 1. Open the command line on your specific machine
 
-    * ``Terminal`` on a Mac
-    * ``Command Prompt`` on Windows
-    * If using Linux, you probably already know where to look...
+  * ``Terminal`` on a Mac
+  * ``Command Prompt`` on Windows
+  * If using Linux, you probably already know where to look...
+
 2. Type ``python`` and hit ``enter``
 3. Copy and paste the below contents to the command line and hit ``enter``::
 
@@ -39,6 +41,7 @@ Congratulations!!!
    :maxdepth: -1
 
    dev/development
+   references
 
 
 ..  Indices and tables
