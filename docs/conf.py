@@ -43,7 +43,6 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.extlinks',
     'xref'
 ]
 
@@ -197,27 +196,32 @@ epub_exclude_files = ['search.html']
 # -- Extension configuration -------------------------------------------------
 intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
 
+# Base urls used by xrefs extension
+url = {
+    'GitHub': 'https://github.com/',
+    'YT vid': 'https://www.youtube.com/watch?v=',  # Video
+    'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
+}
+
 xref_links = {
     'Python': ('Python', 'https://www.python.org'),
     'xref-ext': ("Michael Jones' sphinx-xref repository",
-                 'https://github.com/michaeljones/sphinx-xref'),
+                 url['GitHub'] + 'michaeljones/sphinx-xref'),
     'Willing-Sphinx': ("Carol Willing's Practical Sphinx talk from PyCon 2018",
-                       'https://www.youtube.com/watch?v=0ROZRNZkPS8'),
+                       url['YT vid'] + '0ROZRNZkPS8'),
     'Yusuf-Sphinx-RTD': ("Mahdi Yusuf's Sphinx & Read the Docs screencast",
-                         'https://www.youtube.com/watch?v=oJsUvBQyHBs'),
+                         url['YT vid'] + 'oJsUvBQyHBs'),
     'Anaconda': ('Anaconda', 'https://www.anaconda.com'),
-    'AAAAAA-repo': ("AAAAAA repository", 'https://github.com/alnoki/AAAAAA'),
+    'AAAAAA-repo': ("AAAAAA repository", url['GitHub'] + 'alnoki/AAAAAA'),
     'Change-bash-prompt': ("Cyberciti.biz instructions to change bash prompt",
                            'https://www.cyberciti.biz/tips/howto-linux-unix-'
                            'bash-shell-setup-prompt.html'),
     'Corey-Schafer-vids': ("Corey Schafer YouTube playlist: Python Tutorials",
-                           'https://www.youtube.com/playlist?list=PL-'
-                           'osiE80TeTt2d9bfVyTiXJA-UTHn6WwU'),
+                           url['YT PL'] + '-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU'),
     'alnoki-repos': ("alnoki's GitHub repositories",
-                     'https://github.com/alnoki?tab=repositories'),
+                     url['GitHub'] + 'alnoki?tab=repositories'),
     'codebasics-pytest-vids':
         ("codebasics YouTube playlist: Pytest Tutorial (Python Automated "
-         "Testing)", 'https://www.youtube.com/playlist?list='
-         'PLeo1K3hjS3utzQYDNRNluzqJqpMXx6hHu'),
+         "Testing)", url['YT PL'] + 'eo1K3hjS3utzQYDNRNluzqJqpMXx6hHu'),
     # New links below, sorted links above
     }

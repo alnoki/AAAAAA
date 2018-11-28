@@ -1,5 +1,5 @@
 # AAAAAA
-Alnoki Algorithmic Analysis Asset Allocation Applications Aggregation
+Alnoki's Algorithmic Analysis Asset Allocation Applications
 
 *Brought to you by alnoki*
 
@@ -76,6 +76,7 @@ documentation be read in the order in which it was written:
     1. https://stackoverflow.com/questions/19071512/socket-error-errno-48-address-already-in-use
     1. http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#module-sphinx.ext.intersphinx
     1. [External links extension](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension)
+    1. https://stackoverflow.com/questions/5550089/how-to-create-a-nested-list-in-restructuredtext
 1. `xref` style for links on development page
 1. In references top paragraph mention how the interspinx is used
 1. Per Carol Willing talk
@@ -85,8 +86,10 @@ documentation be read in the order in which it was written:
 1. Autodoc with source files and numpy style
 1. Numbering in references page should restart automatically
 1. Developer's page with 80 lines vs 72, etc. and how to do in VS code
+    1. PEP8 2 spaces for comment
 1. DO-178B link for Zen page
 1. Split up links in all .rst files
 1. Get a toctree to render inside the references page
 1. `pip install -e` for using package with `pytest` to `dev tasks`
 1. Official `AAAAAA` renaming
+1. Link official python developer's guide in `development` pages

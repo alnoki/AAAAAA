@@ -3,17 +3,18 @@ Development
 ###########
 
 .. tip::
-  The AAAAAA ``README``, at the bottom of the :xref:`AAAAAA-repo`, contains
-  some additional links that are commonly referenced during development as
-  well as some philosophies and directory structure notes
+   The AAAAAA ``README``, at the bottom of the :xref:`AAAAAA-repo`, contains
+   some additional links that are commonly referenced during development as
+   well as some philosophies and directory structure notes
 
 
 .. toctree::
-   :caption: Development
+   :caption: Contents
    :maxdepth: -1
 
    zen
    code
+
 
 *****
 Tools
@@ -45,47 +46,56 @@ Per :xref:`Willing-Sphinx`:
 #. Change working directory to documentation root directory
 #. From command line:
 
-  #. ``make clean`` to clear out old ``.html`` files
-  #. ``make html`` to create new ``.html`` files
-  #. ``python -m http.server`` to start running an ``html`` server
+   #. ``make html`` to create new ``.html`` files
+   #. ``python -m http.server`` to start running an ``html`` server
 
-    * Leave this process running even when rebuilding
+      * Leave this process running even when rebuilding
 
 #. Open http://localhost:8000/_build/html/index.html in a browser
+#. ``make clean`` to clear out old ``.html`` files before committing
 
-  * If making a new build but the server is already running, just refresh
-    the link
+.. Tip::
+   If a server is already running, make a new build and refresh the browser
+   window to view changes
 
 .. Note::
-  Run ``make linkcheck`` occasionally to verify that links in the project
-  reference valid locations
+   Run ``make linkcheck`` occasionally to verify that links in the project
+   reference valid locations
 
 Referencing external links
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Per :xref:`xref-ext`:
 
-  #. Add an entry to ``xref_links`` in ``conf.py``
+#. Add an entry to ``xref_links`` in ``conf.py``
 
-    * Put in new links below the delimiter comment ::
+   * Put in new links below the delimiter comment::
 
-      # New links below, sorted links above
+     # New links below, sorted links above
 
-  #. Add a link in documentation via ``:xref:`reference-name```
-  #. Add a description of the link to :ref:`References`
+#. Add a link in documentation via ``:xref:`reference-name```
+#. Add a description of the link to :ref:`References`
 
-    * Now the link can be moved above the delimiter comment in ``conf.py``
+   * Now the link can be moved above the delimiter comment in ``conf.py``
+
+.. Note::
+   As long as the delimiter comment is properly used, links can be sorted in
+   batches
 
 .. Tip::
-  As long as the delimiter comment is properly used, links can be sorted in
-  batches
+   Use a base url from ``url`` in ``conf.py`` for common references like
+   YouTube videos
 
 
 *************
 Documentation
 *************
-Documentation is written according to a
+Documentation is written primarily according to the ``Python developer's guide``
+and secondarily according to:
 `Style guide for Sphinx-based documentations <https://documentation-style-guide-sphinx.readthedocs.io/en/latest/index.html>`_
+
+Thus, 3 spaces are used for indentation and sections ``H1`` and ``H2`` are
+preceded by two blank lines
 
 *****************
 Jupyter Notebooks

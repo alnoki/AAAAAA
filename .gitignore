@@ -14,3 +14,4 @@ src/__pycache__/__init__.cpython-36.pyc
 nbs/src/.ipynb_checkpoints/utilities-checkpoint.ipynb
 nbs/src/.ipynb_checkpoints/ledger-checkpoint.ipynb
 test/__pycache__/test_utilities.cpython-37-PYTEST.pyc
+docs/exts/__pycache__/xref.cpython-37.pyc
