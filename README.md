@@ -32,6 +32,13 @@ documentation be read in the order in which it was written:
 
 
 ## TODO
+1. Intersphinx usage: make a task cheatsheet using below references
+    1. https://my-favorite-documentation-test.readthedocs.io/en/latest/using_intersphinx.html
+    1. https://stackoverflow.com/questions/30939867
+    1. https://gist.github.com/bskinn/0e164963428d4b51017cebdb6cda5209
+    1. https://stackoverflow.com/questions/21538983
+    1. https://stackoverflow.com/questions/45699577
+    1. http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#showing-all-links-of-an-intersphinx-mapping-file
 1. Migrate readme to Sphinx
 1. Get intersphinx working with additional sites
     1. Official Spinx documentation and
