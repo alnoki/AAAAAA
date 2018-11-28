@@ -7,6 +7,14 @@ Development
   some additional links that are commonly referenced during development as
   well as some philosophies and directory structure notes
 
+
+.. toctree::
+   :caption: Development
+   :maxdepth: -1
+
+   zen
+   code
+
 *****
 Tools
 *****
@@ -72,22 +80,6 @@ Per :xref:`xref-ext`:
   As long as the delimiter comment is properly used, links can be sorted in
   batches
 
-
-****
-Code
-****
-
-Style
-=====
-* :pep:`8` for Python code
-* `Python Developer's Guide <https://devguide.python.org/documenting/#documenting-python>`_ for reST
-
-Access
-======
-Source code for the AAAAAA is available on
-`Github <https://github.com/alnoki/AAAAAA>`_, and
-`alnoki's Github profile <https://github.com/alnoki>`_ contains
-assorted repositories with extra tutorial code on associated topics
 
 *************
 Documentation

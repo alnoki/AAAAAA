@@ -15,6 +15,10 @@ Python
 General
 =======
 
+#. :xref:`Corey-Schafer-vids`
+
+  * Recommended starting point for learning ``Python``
+
 #. :xref:`Python`
 
   * Definitive reference for the ``Python`` computer language
@@ -26,6 +30,17 @@ Environments
 
   * Package dependency manager and environment configurator
 
+#. :xref:`Change-bash-prompt`
+
+  * How to change bash prompt to a custom string like ``$``
+
+Testing with pytest
+===================
+
+#. :xref:`codebasics-pytest-vids`
+
+  * Recommended starting point for learning ``pytest``
+
 ***************
 AAAAAA codebase
 ***************
@@ -33,6 +48,10 @@ AAAAAA codebase
 #. :xref:`AAAAAA-repo`
 
   * GitHub.com repository for all source code and documentation
+
+#. :xref:`alnoki-repos`
+
+  * Assorted Jupyter notebooks and code from other tutorials
 
 *************
 Documentation

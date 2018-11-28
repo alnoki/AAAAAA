@@ -207,5 +207,17 @@ xref_links = {
                          'https://www.youtube.com/watch?v=oJsUvBQyHBs'),
     'Anaconda': ('Anaconda', 'https://www.anaconda.com'),
     'AAAAAA-repo': ("AAAAAA repository", 'https://github.com/alnoki/AAAAAA'),
+    'Change-bash-prompt': ("Cyberciti.biz instructions to change bash prompt",
+                           'https://www.cyberciti.biz/tips/howto-linux-unix-'
+                           'bash-shell-setup-prompt.html'),
+    'Corey-Schafer-vids': ("Corey Schafer YouTube playlist: Python Tutorials",
+                           'https://www.youtube.com/playlist?list=PL-'
+                           'osiE80TeTt2d9bfVyTiXJA-UTHn6WwU'),
+    'alnoki-repos': ("alnoki's GitHub repositories",
+                     'https://github.com/alnoki?tab=repositories'),
+    'codebasics-pytest-vids':
+        ("codebasics YouTube playlist: Pytest Tutorial (Python Automated "
+         "Testing)", 'https://www.youtube.com/playlist?list='
+         'PLeo1K3hjS3utzQYDNRNluzqJqpMXx6hHu'),
     # New links below, sorted links above
     }

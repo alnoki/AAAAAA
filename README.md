@@ -1,5 +1,5 @@
 # AAAAAA
-Alnoki Algorithmic Analysis Asset Allocation Advisor
+Alnoki Algorithmic Analysis Asset Allocation Applications Aggregation
 
 *Brought to you by alnoki*
 
@@ -7,29 +7,6 @@ Alnoki Algorithmic Analysis Asset Allocation Advisor
 [Read the Docs](https://rtfd.io), but below are some additional notes
 that are kept locally during developement
 
-## Philosophy
-1. Testing and documenting up front prevents runtime debug headaches
-1. Have DRY (don't repeat yourself) code: decompose as much as possible
-1. Documentation should enable another to re-write source and test code
-1. Have STUPID simple tests. Don't recursively 'test the test code'
-1. Documenting & testing forces consideration from various perspectives
-1. Consider DO-178B as a model for software design assurance
-1. PEP8 provides a repeatable and official means for formatting
-1. Legacy conventions shouldn't prevent a new worthwhile philosophy
-1. Play around and "whiteboard" code during initial stages
-
-## Project structure
-1. `src`: Source code
-1. `test`: [pytest](https://docs.pytest.org) modules for testing source
-code
-1. `docs`: Documentation created via recommended [Read the Docs](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html#quick-start)
-procedure
-1. `nbs`: [Jupyter Notebook](http://jupyter.org/) documentation of
-`src` and `dev` (nbs = 'notebooks')
-    1. `dev` includes walkthroughs done during experimental code
-    creation
-    1. `src` includes some documentation pre-[Read the Docs](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html#quick-start)
-procedure
 
 ## Design procedures
 1. Update `docs` for `test` and `src` after incremental developments
@@ -52,22 +29,22 @@ documentation be read in the order in which it was written:
 1. `nbs`\\`src`\\`ledger`
 1. `nbs`\\`src`\\`utilities`
 
-## Select references
-1. [Changing bash prompt](https://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
-1. General Python
-    1. [Python.org documentation](https://docs.python.org/) and
-    [tutorial](https://docs.python.org/3/tutorial/index.html)
-    1. [Corey Schafer YouTube playlist: Python Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)
-    1. [alnoki Jupyter notebooks and sample code from assorted tutorials](https://github.com/alnoki?tab=repositories)
-    1. [Anaconda user guide](https://docs.anaconda.com/anaconda/user-guide/)
-    and [cheat sheet](https://docs.anaconda.com/_downloads/Anaconda-Starter-Guide-Cheat-Sheet.pdf)
-1. Testing with `pytest`
-    1. [codebasics YouTube playlist: Pytest Tutorial (Python Automated Testing)](https://www.youtube.com/playlist?list=PLeo1K3hjS3utzQYDNRNluzqJqpMXx6hHu)
-    1. [pytest.org homepage](https://docs.pytest.org) and
-    [tutorials](https://docs.pytest.org/en/latest/contents.html)
+
+
+## TODO
+1. Migrate readme to Sphinx
+1. Get intersphinx working with additional sites
+    1. Official Spinx documentation and
+    1. http://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#role-pep
+    1. Python official tutorial
+    1. Python developer's guide
+    1. pytest documentation homepage
     1. [VS Code Python tutorial](https://code.visualstudio.com/docs/languages/python)
-    and [unit testing documentation](https://code.visualstudio.com/docs/python/unit-testing)
-1. Documentation
+    1. [VS Code unit testing documentation](https://code.visualstudio.com/docs/python/unit-testing)
+    1. Anaconda and cheatsheet
+        1. [Anaconda user guide](https://docs.anaconda.com/anaconda/user-guide/)
+        1. [cheat sheet](https://docs.anaconda.com/_downloads/Anaconda-Starter-Guide-Cheat-Sheet.pdf)
+    1. [pytest tutorials](https://docs.pytest.org/en/latest/contents.html)
     1. Sphix and Read the Docs background
         1. [Read the Docs getting started with Sphinx](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html#external-resources)
         1. [Sphinx documentation](http://www.sphinx-doc.org/en/master/)
@@ -88,28 +65,21 @@ documentation be read in the order in which it was written:
     1. Sphinx walkthroughs
         1. [Brandon's PyCon Sphinx tutorial on Read the Docs](https://brandons-sphinx-tutorial.readthedocs.io/en/latest/index.html)
             1. [PDF form](https://media.readthedocs.org/pdf/brandons-sphinx-tutorial/latest/brandons-sphinx-tutorial.pdf)
-        1. [Mahdi Yusuf Sphinx quickstart screencast](https://www.youtube.com/watch?v=oJsUvBQyHBs)
-
-## TODO
-1. Get intersphinx working with additional sites
-    1. Pages from official Spinx documentation
-    1. Pages from Python developer's guide
 1. File away:
     1. https://stackoverflow.com/questions/19071512/socket-error-errno-48-address-already-in-use
     1. http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#module-sphinx.ext.intersphinx
     1. [External links extension](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension)
-1. Fix toctree depth on sidebar navigator for multiple depths
-1. Split up developers page
+1. `xref` style for links on development page
 1. In references top paragraph mention how the interspinx is used
-1. Reference audit
-        1. PEP8 has a cross-reference directive
-        [ref](http://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#role-pep)
-1. Migrate readme to Sphinx
-1. How to line break in a bulleted list?
 1. Per Carol Willing talk
     1. Link a Jupyter notebook
     1. Make spelling test with exception words
 1. Get a `<project name>` sort of reference in docs for AAAAAA
 1. Autodoc with source files and numpy style
-
-
+1. Numbering in references page should restart automatically
+1. Developer's page with 80 lines vs 72, etc. and how to do in VS code
+1. DO-178B link for Zen page
+1. Split up links in all .rst files
+1. Get a toctree to render inside the references page
+1. `pip install -e` for using package with `pytest` to `dev tasks`
+1. Official `AAAAAA` renaming
