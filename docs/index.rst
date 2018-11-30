@@ -24,7 +24,7 @@ A bit of Python can be executed on most computers with minimal effort, using
    * ``Command Prompt`` on Windows
    * If using Linux, you probably already know where to look...
 
-2. Type ``python`` and hit ``enter``
+2. Type :command:`python` and hit ``enter``
 3. Copy and paste the below contents to the command line and hit ``enter``::
 
     print("I am a computer programmer!")

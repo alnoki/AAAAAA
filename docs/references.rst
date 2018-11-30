@@ -5,9 +5,9 @@
 References
 ##########
 
-This list contains references found throughout the AAAAAA, which are managed
-using :xref:`xref-ext`. Links are not necessarily in order, but links with high
-priority are usually placed at the top of a section
+This list contains references found throughout AAAAAA, which are managed via
+the extension provided at :xref:`xref-ext`. Links are not necessarily in order, but
+links with high priority are usually placed at the top of a section
 
 
 ******

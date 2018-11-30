@@ -8,7 +8,6 @@ Style
 *****
 
 #. :pep:`8` for Python code
-#. `Python Developer's Guide <https://devguide.python.org/documenting/#documenting-python>`_ for reST
 
 
 ******

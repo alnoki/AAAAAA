@@ -7,7 +7,6 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications
 [Read the Docs](https://rtfd.io), but below are some additional notes
 that are kept locally during developement
 
-
 ## Design procedures
 1. Update `docs` for `test` and `src` after incremental developments
 1. pytest with the VS Code debugger
@@ -28,8 +27,6 @@ documentation be read in the order in which it was written:
 1. `nbs`\\`dev`\\`ledger`
 1. `nbs`\\`src`\\`ledger`
 1. `nbs`\\`src`\\`utilities`
-
-
 
 ## TODO
 1. Intersphinx usage: make a task cheatsheet using below references
@@ -93,3 +90,4 @@ documentation be read in the order in which it was written:
 1. `pip install -e` for using package with `pytest` to `dev tasks`
 1. Official `AAAAAA` renaming
 1. Link official python developer's guide in `development` pages
+1. Link DO-178b
