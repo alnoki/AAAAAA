@@ -6,8 +6,12 @@ References
 ##########
 
 This list contains references found throughout AAAAAA, which are managed via
-the extension provided at :xref:`xref-ext`. Links are not necessarily in order, but
-links with high priority are usually placed at the top of a section
+
+*  The extension provided at :xref:`xref-ext`
+*  :std:doc:`usage/extensions/intersphinx`
+
+Links are not necessarily in order, but links with high priority are usually
+placed at the top of a section
 
 
 ******
@@ -21,7 +25,7 @@ General
 
    * Recommended starting point for learning ``Python``
 
-#. :xref:`Python`
+#. :xref:`Python.org <Python>`
 
    * Definitive reference for the ``Python`` computer language
 
@@ -81,11 +85,30 @@ Practical use
    * ``toctree`` and associated documentation structure
    * Basic ``reST`` syntax
 
+Managing references
+-------------------
+
+#. :std:doc:`usage/extensions/intersphinx`
+
+   * Official documentation on ``Intersphinx`` extension
+
 #. :xref:`xref-ext`
 
    * ``Sphinx`` extension to manage common external references in a project
 
+#. :xref:`intersphinx-inv-targets`
 
+   * Explains how to interpret ``objects.inv`` files when using
+     :std:doc:`Intersphinx <usage/extensions/intersphinx>`
+
+#. :xref:`intersphinx-inv-parser`
+
+   * Sample code for analyzing ``objects.inv`` Sphinx inventory files
+
+#. :xref:`intersphinx-numpy-matplotlib`
+
+   * Instructions on referencing NumPy/Matplotlib via
+     :std:doc:`Intersphinx <usage/extensions/intersphinx>`
 
 
 

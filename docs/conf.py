@@ -194,13 +194,17 @@ epub_exclude_files = ['search.html']
 
 
 # -- Extension configuration -------------------------------------------------
-intersphinx_mapping = {'python': ('https://docs.python.org/3', None)}
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+    'sphinx': ('http://www.sphinx-doc.org', None)
+}
 
 # Base urls used by xrefs extension
 url = {
     'GitHub': 'https://github.com/',
     'YT vid': 'https://www.youtube.com/watch?v=',  # Video
     'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
+    'Stack OF': 'https://stackoverflow.com/questions/',  # Question
 }
 
 xref_links = {
@@ -223,5 +227,12 @@ xref_links = {
     'codebasics-pytest-vids':
         ("codebasics YouTube playlist: Pytest Tutorial (Python Automated "
          "Testing)", url['YT PL'] + 'eo1K3hjS3utzQYDNRNluzqJqpMXx6hHu'),
+    'intersphinx-numpy-matplotlib':
+        ("Intersphinx with NumPy/Matplotlib", url['Stack OF'] + '21538983'),
+    'intersphinx-inv-parser':
+        ("Intersphinx inventory parser", url['Stack OF'] + '30939867'),
+    'intersphinx-inv-targets':
+        ("Intersphinx objects.inv explanation", url['Stack OF'] + '45699577'),
     # New links below, sorted links above
+
     }

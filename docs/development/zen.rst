@@ -16,6 +16,7 @@ alnoki's philosophies
 #. :pep:`8` provides a repeatable and official means for formatting
 #. Legacy conventions shouldn't prevent a new worthwhile philosophy
 #. Play around and "whiteboard" code during initial stages
+#. Read documentation out loud
 
 
 ******************

@@ -29,14 +29,7 @@ documentation be read in the order in which it was written:
 1. `nbs`\\`src`\\`utilities`
 
 ## TODO
-1. Intersphinx usage: make a task cheatsheet using below references
-    1. https://my-favorite-documentation-test.readthedocs.io/en/latest/using_intersphinx.html
-    1. https://stackoverflow.com/questions/30939867
-    1. https://gist.github.com/bskinn/0e164963428d4b51017cebdb6cda5209
-    1. https://stackoverflow.com/questions/21538983
-    1. https://stackoverflow.com/questions/45699577
-    1. http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#showing-all-links-of-an-intersphinx-mapping-file
-1. Migrate readme to Sphinx
+1. Make whitespace paragraph spacing in tasks page match references page
 1. Get intersphinx working with additional sites
     1. Official Spinx documentation and
     1. http://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#role-pep
@@ -69,6 +62,7 @@ documentation be read in the order in which it was written:
     1. Sphinx walkthroughs
         1. [Brandon's PyCon Sphinx tutorial on Read the Docs](https://brandons-sphinx-tutorial.readthedocs.io/en/latest/index.html)
             1. [PDF form](https://media.readthedocs.org/pdf/brandons-sphinx-tutorial/latest/brandons-sphinx-tutorial.pdf)
+1. Migrate readme to Sphinx
 1. File away:
     1. https://stackoverflow.com/questions/19071512/socket-error-errno-48-address-already-in-use
     1. http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#module-sphinx.ext.intersphinx
@@ -88,6 +82,6 @@ documentation be read in the order in which it was written:
 1. Split up links in all .rst files
 1. Get a toctree to render inside the references page
 1. `pip install -e` for using package with `pytest` to `dev tasks`
-1. Official `AAAAAA` renaming
 1. Link official python developer's guide in `development` pages
 1. Link DO-178b
+1. Linkcheck intersphinx

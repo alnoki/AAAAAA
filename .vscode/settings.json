@@ -1,0 +1,26 @@
+// alnoki's development environment preferences - enjoy!
+{
+    "git.autofetch": true,
+    "editor.minimap.enabled": false,
+    "editor.tokenColorCustomizations": {
+        "comments": "#3CB371",
+        "strings": "#FF00FF"
+    },
+    "editor.renderWhitespace": "all",
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    // PEP8
+    "[python]": {
+        "editor.rulers": [71, 79],
+    },
+    // For reST files
+    "editor.rulers": [79],
+    // Privacy related
+    "telemetry.enableCrashReporter": false,
+    "editor.mouseWheelZoom": true,
+    "breadcrumbs.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": true,
+    "python.linting.enabled": true,
+    "restructuredtext.confPath": "${workspaceFolder}\\docs",
+}

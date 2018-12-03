@@ -8,8 +8,8 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 
 *Brought to you by alnoki*
 
-AAAAAA contain a growing collection of financial analysis tools. Development
-is performed in the :xref:`Python` computer language, using additional packages
+AAAAAA are a growing collection of financial analysis tools. Development is
+performed in the :xref:`Python` computer language, using additional packages
 developed by the open source community
 
 *******
@@ -37,11 +37,25 @@ A bit of Python can be executed on most computers with minimal effort, using
 Congratulations!!!
 
 .. toctree::
-   :caption: AAAAAA documentation
+   :caption: Development
    :maxdepth: -1
 
-   dev/development
+   development/zen
+   development/tools
+   development/code
+   development/documentation
+   development/tasks/index
+
+.. toctree::
+   :caption: References
+   :maxdepth: -1
+
    references
+
+.. tip::
+   AAAAAA ``README`` file, at the bottom of the :xref:`AAAAAA-repo`, contains
+   some additional links that are commonly referenced during development as
+   well as some philosophies and directory structure notes
 
 
 ..  Indices and tables
