@@ -16,12 +16,12 @@ alnoki's philosophies
 #. :pep:`8` provides a repeatable and official means for formatting
 #. Legacy conventions shouldn't prevent a new worthwhile philosophy
 #. Play around and "whiteboard" code during initial stages
-#. Read documentation out loud
+#. Read documentation out loud [2]_
 
 
-******************
-Other philosophies
-******************
+***************
+Further reading
+***************
 
 Need some more inspiration? Try::
 
@@ -31,3 +31,4 @@ Need some more inspiration? Try::
 
 .. [1] Based on a tip that embedded software code should be "stupid simple",
    offered by a founder of 219 Design
+.. [2] Recommeded in :xref:`Willing-Sphinx`

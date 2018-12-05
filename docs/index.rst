@@ -18,21 +18,45 @@ Python?
 A bit of Python can be executed on most computers with minimal effort, using
 :py:func:`print`:
 
-1. Open the command line on your specific machine
+#. Open the command line on your specific machine
 
    * ``Terminal`` on a Mac
    * ``Command Prompt`` on Windows
    * If using Linux, you probably already know where to look...
 
-2. Type :command:`python` and hit ``enter``
-3. Copy and paste the below contents to the command line and hit ``enter``::
+#. Type :command:`python` and hit ``enter``
+#. Copy and paste the below contents to the command line then hit ``enter``::
 
     print("I am a computer programmer!")
 
-4. If you are feeling fancy (hit ``enter`` twice for this one)::
+#. If you are feeling fancy::
 
     for i in range(5):
-        print("Please be aware of the number", i)
+       print("Please be aware of the number", i)
+
+   .. tip::
+      Hit ``enter`` twice after copy-pasting the above contents
+
+#. How about some :xref:`factorials <factorial-definition>`? The "factorial of
+   x" is represented by:
+
+   .. math::
+      x! = \begin{cases}
+               1 & x = 0 \\
+               \displaystyle \prod_{k=1}^{x} & x > 0 \\
+            \end{cases}
+
+   ::
+
+       factorial = 1  # Initialize factorial
+       for x in range(10):
+          if x > 0:
+             factorial = x * factorial  # Update factorial
+          print("Please be aware of the number", x,
+                "with factorial", factorial)
+
+   .. note::
+      Don't forget to hit ``enter`` twice
 
 Congratulations!!!
 
@@ -45,11 +69,6 @@ Congratulations!!!
    development/code
    development/documentation
    development/tasks/index
-
-.. toctree::
-   :caption: References
-   :maxdepth: -1
-
    references
 
 .. tip::

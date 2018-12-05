@@ -110,7 +110,13 @@ Managing references
    * Instructions on referencing NumPy/Matplotlib via
      :std:doc:`Intersphinx <usage/extensions/intersphinx>`
 
+***********
+Mathematics
+***********
 
+#. :xref:`factorial-definition`
+
+     * Wikipedia.org factorial page
 
 
 

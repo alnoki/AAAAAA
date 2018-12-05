@@ -13,7 +13,7 @@
     "[python]": {
         "editor.rulers": [71, 79],
     },
-    // For reST files
+    // Usually just for reST files
     "editor.rulers": [79],
     // Privacy related
     "telemetry.enableCrashReporter": false,
@@ -22,5 +22,4 @@
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
     "python.linting.enabled": true,
-    "restructuredtext.confPath": "${workspaceFolder}\\docs",
 }

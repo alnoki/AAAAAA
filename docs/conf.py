@@ -97,7 +97,7 @@ html_theme_options = {
     # Toc options
     'collapse_navigation': True,
     'sticky_navigation': True,
-    'navigation_depth': -1,  # Allows unlimited depth of tree
+    'navigation_depth': 4,  # Render errors if using more depth
     'includehidden': True,
     'titles_only': False
 }
@@ -205,6 +205,7 @@ url = {
     'YT vid': 'https://www.youtube.com/watch?v=',  # Video
     'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
     'Stack OF': 'https://stackoverflow.com/questions/',  # Question
+    'Wiki pg': 'https://en.wikipedia.org/wiki/', # Article
 }
 
 xref_links = {
@@ -233,6 +234,7 @@ xref_links = {
         ("Intersphinx inventory parser", url['Stack OF'] + '30939867'),
     'intersphinx-inv-targets':
         ("Intersphinx objects.inv explanation", url['Stack OF'] + '45699577'),
+    'factorial-definition':
+        ("Definition of factorial", url['Wiki pg'] + 'Factorial'),
     # New links below, sorted links above
-
     }
