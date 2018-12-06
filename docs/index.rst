@@ -37,8 +37,10 @@ A bit of Python can be executed on most computers with minimal effort, using
    .. tip::
       Hit ``enter`` twice after copy-pasting the above contents
 
-#. How about some :xref:`factorials <factorial-definition>`? The "factorial of
-   x" is represented by:
+#. How about some :xref:`factorials <factorial-definition>`? 
+   :xref:`Factorials <factorial-definition>` are an example of a
+   mathematical concept that you can document in ``LaTeX`` and calculate
+   in :xref:`Python`. The "factorial of x" is represented by:
 
    .. math::
       x! = \begin{cases}
