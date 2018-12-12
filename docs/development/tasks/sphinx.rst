@@ -10,7 +10,7 @@ Managing references
 Using Intersphinx
 =================
 
-Per :std:doc:`Intershpinx documentation <usage/extensions/intersphinx>`:
+Per :std:doc:`Intershpinx documentation <sphinx:usage/extensions/intersphinx>`:
 
 #. Add the project's root url to ``conf.py``::
 
@@ -32,17 +32,27 @@ Per :std:doc:`Intershpinx documentation <usage/extensions/intersphinx>`:
 
    * See :xref:`intersphinx-inv-targets` for a formatting explanation
 
-#. Link to the reference as desired and (for archival purposes) add a
-   description of the link to :ref:`References`
+#. Link to the reference using the below syntax and (for archival purposes) add
+   a description of the link to :ref:`References`
 
 .. Tip::
-   To control the display text of the link:
+   Use either the default text from the link or create your own custom text
+   using the map entry from ``intersphinx_mapping``, in this case ``sphinx``
 
-   #. Default text: ``:std:doc:`usage/extensions/intersphinx``` produces
-      :std:doc:`usage/extensions/intersphinx`
+   #. To create the default text from the reference,
+      :std:doc:`sphinx:usage/extensions/intersphinx`:
 
-   #. Custom: ``:std:doc:`Custom <usage/extensions/intersphinx>``` produces
-      :std:doc:`Custom <usage/extensions/intersphinx>`
+      .. code-block:: rest
+
+          :std:doc:`sphinx:usage/extensions/intersphinx`
+
+
+   #. To create your own custom text,
+      :std:doc:`Custom <sphinx:usage/extensions/intersphinx>`:
+
+      .. code-block:: rest
+
+          :std:doc:`Custom <sphinx:usage/extensions/intersphinx>`
 
 .. Note::
    See :xref:`intersphinx-numpy-matplotlib` instructions for these specific

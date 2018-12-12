@@ -8,7 +8,7 @@ References
 This list contains references found throughout AAAAAA, which are managed via
 
 *  The extension provided at :xref:`xref-ext`
-*  :std:doc:`usage/extensions/intersphinx`
+*  :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
 
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
@@ -42,6 +42,9 @@ Environments
 
 Testing with pytest
 ===================
+#. :std:doc:`pytest:index`
+
+   * Official ``pytest`` documentation
 
 #. :xref:`codebasics-pytest-vids`
 
@@ -88,7 +91,7 @@ Practical use
 Managing references
 -------------------
 
-#. :std:doc:`usage/extensions/intersphinx`
+#. :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
 
    * Official documentation on ``Intersphinx`` extension
 

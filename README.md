@@ -29,6 +29,7 @@ documentation be read in the order in which it was written:
 1. `nbs`\\`src`\\`utilities`
 
 ## TODO
+1. Find a tool that will render intersphinx directives properly
 1. Make whitespace paragraph spacing in tasks page match references page
 1. Get intersphinx working with additional sites
     1. Official Spinx documentation and

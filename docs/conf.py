@@ -196,7 +196,8 @@ epub_exclude_files = ['search.html']
 # -- Extension configuration -------------------------------------------------
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
-    'sphinx': ('http://www.sphinx-doc.org', None)
+    'sphinx': ('http://www.sphinx-doc.org', None),
+    'pytest': ('https://docs.pytest.org/en/latest/', None)
 }
 
 # Base urls used by xrefs extension
@@ -205,7 +206,8 @@ url = {
     'YT vid': 'https://www.youtube.com/watch?v=',  # Video
     'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
     'Stack OF': 'https://stackoverflow.com/questions/',  # Question
-    'Wiki pg': 'https://en.wikipedia.org/wiki/', # Article
+    'Wiki pg': 'https://en.wikipedia.org/wiki/',  # Article
+    'VS Code ext': 'https://marketplace.visualstudio.com/items?itemName='
 }
 
 xref_links = {
@@ -229,12 +231,26 @@ xref_links = {
         ("codebasics YouTube playlist: Pytest Tutorial (Python Automated "
          "Testing)", url['YT PL'] + 'eo1K3hjS3utzQYDNRNluzqJqpMXx6hHu'),
     'intersphinx-numpy-matplotlib':
-        ("Intersphinx with NumPy/Matplotlib", url['Stack OF'] + '21538983'),
+        ("Intersphinx with NumPy/Matplotlib", url['Stack OF'] +
+         '21538983/specifying-targets-for-intersphinx-links-to-numpy-'
+         'scipy-and-matplotlib'),
     'intersphinx-inv-parser':
-        ("Intersphinx inventory parser", url['Stack OF'] + '30939867'),
+        ("Intersphinx inventory parser", url['Stack OF'] +
+         '30939867/how-to-properly-write-cross-references-to-external-'
+         'documentation-with-intersphin'),
     'intersphinx-inv-targets':
-        ("Intersphinx objects.inv explanation", url['Stack OF'] + '45699577'),
+        ("Intersphinx objects.inv explanation", url['Stack OF'] +
+         '45699577/how-to-link-to-root-page-in-intersphinx'),
     'factorial-definition':
         ("Definition of factorial", url['Wiki pg'] + 'Factorial'),
     # New links below, sorted links above
+    'GitLens': ("GitLens extension", url['VS Code ext'] + 'eamodio.gitlens'),
+    'VS-Code-Python-ext':
+        ("Python extension", url['VS Code ext'] + 'ms-python.python'),
+    'RST-preview-ext':
+        ("RST preview extension", url['VS Code ext'] + 'tht13.rst-vscode'),
+    'Test-explorer-UI':
+        ("Test explorer UI extension", url['VS Code ext'] +
+         'LittleFoxTeam.vscode-python-test-adapter'),
+    'VS-Code': ("Visual Studio Code", 'https://code.visualstudio.com')
     }
