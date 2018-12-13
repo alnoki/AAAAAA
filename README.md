@@ -29,13 +29,7 @@ documentation be read in the order in which it was written:
 1. `nbs`\\`src`\\`utilities`
 
 ## TODO
-1. Find a tool that will render intersphinx directives properly
-1. Make whitespace paragraph spacing in tasks page match references page
 1. Get intersphinx working with additional sites
-    1. Official Spinx documentation and
-    1. http://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html#role-pep
-    1. Python official tutorial
-    1. Python developer's guide
     1. pytest documentation homepage
     1. [VS Code Python tutorial](https://code.visualstudio.com/docs/languages/python)
     1. [VS Code unit testing documentation](https://code.visualstudio.com/docs/python/unit-testing)
@@ -86,3 +80,6 @@ documentation be read in the order in which it was written:
 1. Link official python developer's guide in `development` pages
 1. Link DO-178b
 1. Linkcheck intersphinx
+1. LaTeX external reference
+1. Make sure all links are in as necessary
+1. Items from paper notebook

@@ -24,6 +24,8 @@ Per :std:doc:`Intershpinx documentation <sphinx:usage/extensions/intersphinx>`:
 
       python -msphinx.ext.intersphinx http://www.sphinx-doc.org/objects.inv
 
+   * Try this in a terminal that can be maximized to full screen
+   * Most times the root will be at ``.io/en/latest/`` or ``.com/en/latest``
    * Consider an :xref:`intersphinx-inv-parser` for large outputs
 
 #. Locate the desired target in the mapping output, which is arranged like the
@@ -31,6 +33,7 @@ Per :std:doc:`Intershpinx documentation <sphinx:usage/extensions/intersphinx>`:
    is located in the ``std:doc`` section of the output from the above command
 
    * See :xref:`intersphinx-inv-targets` for a formatting explanation
+   * Most documentation pages will be in ``std:doc``
 
 #. Link to the reference using the below syntax and (for archival purposes) add
    a description of the link to :ref:`References`

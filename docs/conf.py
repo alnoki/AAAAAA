@@ -196,8 +196,12 @@ epub_exclude_files = ['search.html']
 # -- Extension configuration -------------------------------------------------
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
-    'sphinx': ('http://www.sphinx-doc.org', None),
-    'pytest': ('https://docs.pytest.org/en/latest/', None)
+    'sphinx': ('http://www.sphinx-doc.org/en/master/', None),
+    'pytest': ('https://docs.pytest.org/en/latest/', None),
+    'rtfd': ('https://docs.readthedocs.io/en/latest/', None),
+    'rtd-sphinx-theme':
+        ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
+    'py-dev-guide': ('https://devguide.python.org/', None),
 }
 
 # Base urls used by xrefs extension
@@ -243,14 +247,16 @@ xref_links = {
          '45699577/how-to-link-to-root-page-in-intersphinx'),
     'factorial-definition':
         ("Definition of factorial", url['Wiki pg'] + 'Factorial'),
-    # New links below, sorted links above
     'GitLens': ("GitLens extension", url['VS Code ext'] + 'eamodio.gitlens'),
     'VS-Code-Python-ext':
         ("Python extension", url['VS Code ext'] + 'ms-python.python'),
     'RST-preview-ext':
-        ("RST preview extension", url['VS Code ext'] + 'tht13.rst-vscode'),
+        ("RST preview extension", url['VS Code ext'] +
+         'lextudio.restructuredtext'),
     'Test-explorer-UI':
         ("Test explorer UI extension", url['VS Code ext'] +
          'LittleFoxTeam.vscode-python-test-adapter'),
-    'VS-Code': ("Visual Studio Code", 'https://code.visualstudio.com')
+    'VS-Code': ("Visual Studio Code", 'https://code.visualstudio.com'),
+    'Jupyter': ("Project Jupyter", 'http://jupyter.org'),
+    # New links below, sorted links above
     }

@@ -5,16 +5,18 @@ Tools
 All the software tools used to create AAAAAA are open source:
 
 * :xref:`Anaconda` helps manage Python packages used in AAAAAA
-* :std:doc:`Pytest <pytest:index>` is used to create tests for AAAAAA source code
-* `Jupyter Notebooks <http://jupyter.org>`_ are used for interactive development documentation
-* `Read the Dox with Sphinx <https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html>`_ is used to document code via `reStructuredText <http://docutils.sourceforge.net/rst.html>`_ (``reST``)
+* :std:doc:`pytest <pytest:index>` is for testing AAAAAA source code
+* :xref:`Jupyter notebooks <Jupyter>` enable an interactive style of
+  algorithm development during initial ideation
+* :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
+  is a documentation engine that helped create this website!
 
-  * This documentation is built using the `Read the Docs Sphinx Theme <https://sphinx-rtd-theme.readthedocs.io/en/latest/>`_
+   * The actual webpage appearance comes from the
+     :std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
 
-* :xref:`VS-Code` is the preferred integrated development environment used to
-  edit code and documentation. Extensions used:
+* :xref:`VS-Code` is used to edit/test code and documentation. Extensions used:
 
-  * :xref:`VS-Code-Python-ext`
-  * :xref:`RST-preview-ext`
-  * :xref:`Test-explorer-UI`
-  * :xref:`GitLens`
+   * :xref:`VS-Code-Python-ext`
+   * :xref:`RST-preview-ext`
+   * :xref:`Test-explorer-UI`
+   * :xref:`GitLens`
