@@ -1,4 +1,3 @@
-# AAAAAA
 Alnoki's Algorithmic Analysis Asset Allocation Applications
 
 *Brought to you by alnoki*
@@ -30,21 +29,7 @@ documentation be read in the order in which it was written:
 
 ## TODO
 1. Get intersphinx working with additional sites
-    1. pytest documentation homepage
-    1. [VS Code Python tutorial](https://code.visualstudio.com/docs/languages/python)
-    1. [VS Code unit testing documentation](https://code.visualstudio.com/docs/python/unit-testing)
-    1. Anaconda and cheatsheet
-        1. [Anaconda user guide](https://docs.anaconda.com/anaconda/user-guide/)
-        1. [cheat sheet](https://docs.anaconda.com/_downloads/Anaconda-Starter-Guide-Cheat-Sheet.pdf)
-    1. [pytest tutorials](https://docs.pytest.org/en/latest/contents.html)
-    1. Sphix and Read the Docs background
-        1. [Read the Docs getting started with Sphinx](https://docs.readthedocs.io/en/latest/intro/getting-started-with-sphinx.html#external-resources)
-        1. [Sphinx documentation](http://www.sphinx-doc.org/en/master/)
-        1. [reST primer](http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
-        1. [Sphinx/RTD intro for writers](http://www.ericholscher.com/blog/2016/jul/1/sphinx-and-rtd-for-writers/)
     1. Sample `reST` code
-        1. [Quick reST](http://docutils.sourceforge.net/docs/user/rst/quickref.html#example-callout)
-        1. [Official reST documentation](http://docutils.sourceforge.net/rst.html)
         1. [Python developer's guide to documenting](https://devguide.python.org/documenting/)
             1. reST code should be 80 columns wide
         1. [matlibplot sampledoc tutorial](https://matplotlib.org/sampledoc/)
@@ -63,23 +48,26 @@ documentation be read in the order in which it was written:
     1. http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#module-sphinx.ext.intersphinx
     1. [External links extension](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension)
     1. https://stackoverflow.com/questions/5550089/how-to-create-a-nested-list-in-restructuredtext
-1. `xref` style for links on development page
-1. In references top paragraph mention how the interspinx is used
 1. Per Carol Willing talk
     1. Link a Jupyter notebook
     1. Make spelling test with exception words
+    1. Import video annotation times from iPad notes
+        1. Get link from below too, the packaging/deploying/etc. video
 1. Get a `<project name>` sort of reference in docs for AAAAAA
 1. Autodoc with source files and numpy style
 1. Numbering in references page should restart automatically
 1. Developer's page with 80 lines vs 72, etc. and how to do in VS code
     1. PEP8 2 spaces for comment
 1. DO-178B link for Zen page
+1. Markdown table generator for Jupyter
 1. Split up links in all .rst files
 1. Get a toctree to render inside the references page
 1. `pip install -e` for using package with `pytest` to `dev tasks`
 1. Link official python developer's guide in `development` pages
 1. Link DO-178b
 1. Linkcheck intersphinx
+1. Install DOC8 linter for reST extension
 1. LaTeX external reference
 1. Make sure all links are in as necessary
 1. Items from paper notebook
+1. Read through all documentation out loud at then end of above updates

@@ -65,13 +65,14 @@ Congratulations!!!
 .. toctree::
    :caption: Development
    :maxdepth: -1
+   :numbered:
 
    development/zen
    development/tools
    development/code
    development/documentation
    development/tasks/index
-   references/references
+   references
 
 .. tip::
    AAAAAA ``README`` file, at the bottom of the :xref:`AAAAAA-repo`, contains

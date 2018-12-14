@@ -1,10 +1,17 @@
 .. _References:
 
 
-##############
-Reference list
-##############
+##########
+References
+##########
 
+This list contains references found throughout AAAAAA, which are managed via
+
+*  The extension provided at :xref:`xref-ext`
+*  :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
+
+Links are not necessarily in order, but links with high priority are usually
+placed at the top of a section
 
 ******
 Python
@@ -32,19 +39,36 @@ Environments
 
    * Package dependency manager and environment configurator
 
+#. :std:doc:`anaconda:anaconda/index`
+
+   * Documentation for :xref:`Anaconda`
+
+#. :std:doc:`conda:index`
+
+   * Command line interface for :xref:`Anaconda`
+
+#. :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`
+
+   * Quick reference for common :std:doc:`Conda <conda:index>` commands
+
 #. :xref:`Change-bash-prompt`
 
-   * How to change bash prompt to a custom string like ``$``
+   * How to change ``bash`` prompt to a custom string like ``$``
 
 Testing with pytest
 ===================
+
 #. :std:doc:`pytest:index`
 
    * Official ``pytest`` documentation
 
 #. :xref:`codebasics-pytest-vids`
 
-   * Recommended starting point for learning ``pytest``
+   * Recommended starting point for learning ``pytest`` quickly
+
+#. :std:doc:`pytest tutorials <pytest:contents>`
+
+   * Official comprehensive :std:doc:`pytest <pytest:index>` walkthroughs
 
 
 ***************
@@ -87,6 +111,12 @@ Practical use
 
    * General :std:doc:`Sphinx <sphinx:intro>` use and ``reST`` style guide
 
+#. :xref:`Writer-intro-to-Sphinx`
+
+   * General explanation of using
+     :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
+     , written by Eric Holscher, co-founder of https://readthedocs.org
+
 With Read the Docs
 ------------------
 
@@ -104,6 +134,21 @@ With Read the Docs
    * Setting up a project using ``quickstart``
    * ``toctree`` and associated documentation structure
    * Basic ``reST`` syntax
+
+reStructuredText
+----------------
+
+#. :std:doc:`usage/restructuredtext/basics`
+
+   * :std:doc:`Sphinx <sphinx:intro>` explanation of ``reST`` markup language
+
+#. :xref:`reST-documentation`
+
+   * Official ``reStructuredText`` documentation
+
+#. :xref:`quick-reST`
+
+   * Quick reference with :xref:`reST <reST-documentation>` examples
 
 Jupyter
 =======
@@ -150,10 +195,21 @@ Mathematics
 Tools
 *****
 
+VS Code general
+===============
+
 #. :xref:`VS-Code`
 
    * Preferred open-source environment for development
    * Has a marketplace with community-developed extensions
+
+#. :xref:`VS-Code-Python-tutorial`
+
+   * Tutorial for using :xref:`Python` in :xref:`VS-Code`
+
+#. :xref:`VS-Code-unit-testing`
+
+   * Tutorial for using :std:doc:`pytest <pytest:index>` with :xref:`VS-Code`
 
 VS Code extensions
 ==================

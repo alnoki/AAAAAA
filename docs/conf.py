@@ -202,6 +202,8 @@ intersphinx_mapping = {
     'rtd-sphinx-theme':
         ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
     'py-dev-guide': ('https://devguide.python.org/', None),
+    'anaconda': ('https://docs.anaconda.com/', None),
+    'conda': ('https://conda.io/docs/', None),
 }
 
 # Base urls used by xrefs extension
@@ -211,7 +213,9 @@ url = {
     'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
     'Stack OF': 'https://stackoverflow.com/questions/',  # Question
     'Wiki pg': 'https://en.wikipedia.org/wiki/',  # Article
-    'VS Code ext': 'https://marketplace.visualstudio.com/items?itemName='
+    'VS Code ext': 'https://marketplace.visualstudio.com/items?itemName=',
+    'VS Code doc': 'https://code.visualstudio.com/docs/',
+    'docutils': 'http://docutils.sourceforge.net/',
 }
 
 xref_links = {
@@ -224,7 +228,7 @@ xref_links = {
                          url['YT vid'] + 'oJsUvBQyHBs'),
     'Anaconda': ('Anaconda', 'https://www.anaconda.com'),
     'AAAAAA-repo': ("AAAAAA repository", url['GitHub'] + 'alnoki/AAAAAA'),
-    'Change-bash-prompt': ("Cyberciti.biz instructions to change bash prompt",
+    'Change-bash-prompt':("Cyberciti.biz instructions to change bash prompt",
                            'https://www.cyberciti.biz/tips/howto-linux-unix-'
                            'bash-shell-setup-prompt.html'),
     'Corey-Schafer-vids': ("Corey Schafer YouTube playlist: Python Tutorials",
@@ -258,5 +262,16 @@ xref_links = {
          'LittleFoxTeam.vscode-python-test-adapter'),
     'VS-Code': ("Visual Studio Code", 'https://code.visualstudio.com'),
     'Jupyter': ("Project Jupyter", 'http://jupyter.org'),
+    'VS-Code-Python-tutorial':
+        ("VS Code Python tutorial", url['VS Code doc'] + 'languages/python'),
+    'VS-Code-unit-testing':
+        ("VS Code unit testing", url['VS Code doc'] + 'python/unit-testing'),
+    'Writer-intro-to-Sphinx':
+        ("Intro to Sphinx and Read the Docs", 'http://www.ericholscher.com/'
+         'blog/2016/jul/1/sphinx-and-rtd-for-writers/'),
+    'reST-documentation': (
+        "reStructuredText documentation", url['docutils'] + 'rst.html'),
+    'quick-reST': ("Quick reST reference",
+                   url['docutils'] + 'docs/user/rst/quickref.html'),
     # New links below, sorted links above
     }
