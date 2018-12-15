@@ -273,5 +273,10 @@ xref_links = {
         "reStructuredText documentation", url['docutils'] + 'rst.html'),
     'quick-reST': ("Quick reST reference",
                    url['docutils'] + 'docs/user/rst/quickref.html'),
+    'Mac': ('Mac', url['Wiki pg'] + 'Macintosh_operating_systems'),
+    'Windows': ('Windows', url['Wiki pg'] + 'Microsoft_Windows'),
+    'Linux': ('Linux', url['Wiki pg'] + 'Linux'),
+    'Wikipedia': ('Wikipedia', 'https://www.wikipedia.org'),
+    'Google': ('Google', 'https://www.google.com'),
     # New links below, sorted links above
     }

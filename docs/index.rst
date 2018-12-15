@@ -20,12 +20,13 @@ A bit of Python can be executed on most computers with minimal effort, using
 
 #. Open the command line on your specific machine
 
-   * ``Terminal`` on a Mac
-   * ``Command Prompt`` on Windows
-   * If using Linux, you probably already know where to look...
+   * :program:`Terminal` on a :xref:`Mac`
+   * :program:`Command Prompt` on :xref:`Windows`
+   * If using :xref:`Linux`, you probably already know where to look...
 
-#. Type :command:`python` and hit ``enter``
-#. Copy and paste the below contents to the command line then hit ``enter``::
+#. Type :command:`python` and hit :kbd:`return`
+#. Copy and paste the below contents to the command line then hit
+   :kbd:`return`::
 
     print("I am a computer programmer!")
 
@@ -35,17 +36,16 @@ A bit of Python can be executed on most computers with minimal effort, using
        print("Please be aware of the number", i)
 
    .. tip::
-      Hit ``enter`` twice after copy-pasting the above contents
+      This :xref:`Python` input ends with an indented line, so hit
+      :kbd:`return` twice after copy-pasting the above contents
 
-#. How about some :xref:`factorials <factorial-definition>`?
-   :xref:`Factorials <factorial-definition>` are an example of a
-   mathematical concept that you can document in ``LaTeX`` and calculate
-   in :xref:`Python`. The "factorial of x" is represented by:
+#. How about some :xref:`factorials <factorial-definition>`?  The "factorial of
+   x" is represented by:
 
    .. math::
       x! = \begin{cases}
                1 & x = 0 \\
-               \displaystyle \prod_{k=1}^{x} & x > 0 \\
+               \displaystyle \prod_{k=1}^{x} k & x > 0 \\
             \end{cases}
 
    ::
@@ -58,7 +58,8 @@ A bit of Python can be executed on most computers with minimal effort, using
                 "with factorial", factorial)
 
    .. note::
-      Don't forget to hit ``enter`` twice
+      This :xref:`Python` input ends with an indented line, so don't forget to
+      hit :kbd:`return` twice
 
 Congratulations!!!
 
@@ -73,12 +74,6 @@ Congratulations!!!
    development/documentation
    development/tasks/index
    references
-
-.. tip::
-   AAAAAA ``README`` file, at the bottom of the :xref:`AAAAAA-repo`, contains
-   some additional links that are commonly referenced during development as
-   well as some philosophies and directory structure notes
-
 
 ..  Indices and tables
     ==================

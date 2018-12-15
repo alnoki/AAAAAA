@@ -3,10 +3,11 @@ Zen
 ###
 
 
-*********************
-alnoki's philosophies
-*********************
+***********************************************************
+Alnoki's Inspired Philosophies, Adopted in Practice (AIP)^2
+***********************************************************
 
+#. Silly acronyms actually help with remembering things
 #. Testing and documenting up front prevents runtime debug headaches
 #. Have DRY (don't repeat yourself) code: decompose as much as possible
 #. Documentation should enable another to re-write source and test code

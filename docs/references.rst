@@ -55,6 +55,18 @@ Environments
 
    * How to change ``bash`` prompt to a custom string like ``$``
 
+#. :xref:`Mac OS<Mac>`
+
+   * :xref:`Wikipedia` article about the :xref:`Mac OS<Mac>`
+
+#. :xref:`Windows OS<Windows>`
+
+   * :xref:`Wikipedia` article about the :xref:`Windows OS<Windows>`
+
+#. :xref:`Linux OS family<Linux>`
+
+   * :xref:`Wikipedia` article about the :xref:`Linux OS family<Linux>`
+
 Testing with pytest
 ===================
 
@@ -231,7 +243,15 @@ VS Code extensions
    * Graphical interface for using :std:doc:`pytest <pytest:index>`
 
 
+*******************
+General information
+*******************
 
+#. :xref:`Google`
 
+   * Preferred online search engine for general topic inquiries
 
+#. :xref:`Wikipedia`
+
+   * Preferred online encyclopedia
 
