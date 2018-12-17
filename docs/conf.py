@@ -204,6 +204,8 @@ intersphinx_mapping = {
     'py-dev-guide': ('https://devguide.python.org/', None),
     'anaconda': ('https://docs.anaconda.com/', None),
     'conda': ('https://conda.io/docs/', None),
+    'rtfd-style-guide': ('https://documentation-style-guide-sphinx.'
+                         'readthedocs.io/en/latest/', None),
 }
 
 # Base urls used by xrefs extension
@@ -228,7 +230,7 @@ xref_links = {
                          url['YT vid'] + 'oJsUvBQyHBs'),
     'Anaconda': ('Anaconda', 'https://www.anaconda.com'),
     'AAAAAA-repo': ("AAAAAA repository", url['GitHub'] + 'alnoki/AAAAAA'),
-    'Change-bash-prompt':("Cyberciti.biz instructions to change bash prompt",
+    'Change-bash-prompt': ("Cyberciti.biz instructions to change bash prompt",
                            'https://www.cyberciti.biz/tips/howto-linux-unix-'
                            'bash-shell-setup-prompt.html'),
     'Corey-Schafer-vids': ("Corey Schafer YouTube playlist: Python Tutorials",
@@ -278,9 +280,14 @@ xref_links = {
     'Linux': ('Linux', url['Wiki pg'] + 'Linux'),
     'Wikipedia': ('Wikipedia', 'https://www.wikipedia.org'),
     'Google': ('Google', 'https://www.google.com'),
-    # New links below, sorted links above
     'Garmin': ("Garmin Ltd.", url['Wiki pg'] + 'Garmin'),
     '219-Design': ("219 Design", 'https://www.219design.com/who-we-are/'),
     'DO-178B': ('DO-178B', url['Wiki pg'] + 'DO-178B'),
     'AHRS': ('AHRS', url['Wiki pg'] + 'Attitude_and_heading_reference_system'),
+    'Python-quote-convention':
+        ("Python quote convention", url['Stack OF'] + '56011/single-quotes-vs-'
+         'double-quotes-in-python'),
+    'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
+                   'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
+    # New links below, sorted links above
     }

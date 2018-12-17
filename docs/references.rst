@@ -7,11 +7,12 @@ References
 
 This list contains references found throughout AAAAAA, which are managed via
 
-*  The extension provided at :xref:`xref-ext`
-*  :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
+   * The extension provided at :xref:`xref-ext`
+   * :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
 
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
+
 
 ******
 Python
@@ -31,6 +32,14 @@ General
 #. :std:doc:`python:tutorial/index`
 
    * Official :xref:`Python` tutorial
+
+#. :pep:`8`
+
+   * Official :xref:`Python` style guide
+
+#. :xref:`Python-quote-convention`
+
+   * Recommendation for using ``'`` vs ``"`` in :xref:`Python`
 
 Environments
 ============
@@ -147,6 +156,10 @@ With Read the Docs
    * ``toctree`` and associated documentation structure
    * Basic ``reST`` syntax
 
+#. :std:doc:`Unofficial Read the Docs style guide for Sphinx <rtfd-style-guide:index>`
+
+   * General :std:doc:`Sphinx <sphinx:intro>` syntax and style
+
 reStructuredText
 ----------------
 
@@ -169,6 +182,11 @@ Jupyter
 
    * Interactive Python notebook format suitable for algorithm development
    * Allows ``LaTeX``, markdown, code, and plotting all in one place
+
+#. :xref:`AAAAAA-nbs`
+
+   * Online viewer for :xref:`Jupyter Notebooks <Jupyter>` used to
+     develop AAAAAA
 
 Managing references
 -------------------
@@ -195,6 +213,7 @@ Managing references
    * Instructions on referencing NumPy/Matplotlib via
      :std:doc:`Intersphinx <usage/extensions/intersphinx>`
 
+
 ***********
 Mathematics
 ***********
@@ -202,6 +221,7 @@ Mathematics
 #. :xref:`factorial-definition`
 
    * Wikipedia.org factorial page
+
 
 *****
 Tools
@@ -243,9 +263,12 @@ VS Code extensions
    * Graphical interface for using :std:doc:`pytest <pytest:index>`
 
 
-*******************
-General information
-*******************
+*******
+General
+*******
+
+Online information
+==================
 
 #. :xref:`Google`
 
@@ -255,3 +278,22 @@ General information
 
    * Preferred online encyclopedia
 
+
+Software design standards
+=========================
+
+#. :xref:`219-Design`
+
+   * Embedded systems design consulting firm
+
+#. :xref:`DO-178B`
+
+   * Software design assurance standards for aviation devices
+
+#. :xref:`Attitude Heading and Reference System (AHRS) <AHRS>`
+
+   * Aviation device certified to :xref:`DO-178B` Level A
+
+#. :xref:`Garmin`
+
+   * Manufacturer of :xref:`DO-178B`-compliant aviation products
