@@ -4,7 +4,7 @@ Tools
 
 All the software tools used to create AAAAAA are open source:
 
-#. :xref:`Anaconda` helps manage Python packages used in AAAAAA
+#. :xref:`Anaconda` helps manage :xref:`Python` packages used in AAAAAA
 #. :std:doc:`pytest <pytest:index>` is for testing AAAAAA source code
 #. :xref:`Jupyter notebooks <Jupyter>` enable an interactive style of
    algorithm development during initial ideation
@@ -14,7 +14,8 @@ All the software tools used to create AAAAAA are open source:
    * The actual webpage appearance comes from the
      :std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
 
-#. :xref:`VS-Code` is used to edit/test code and documentation. Extensions used:
+#. :xref:`VS-Code` is used to develop, to document, and to test code, via the
+   following extensions:
 
    * :xref:`VS-Code-Python-ext`
    * :xref:`RST-preview-ext`

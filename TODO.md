@@ -1,19 +1,7 @@
 # Proof reading
 
-Zen
-DRY should link to Corey Schafer
-Point 4. Should point to SWRDs, SDDs
-Documenting & testing adds perspective beyond source code development alone
-Link to DO-178B
-Legacy conventions shouldn't prevent the adoption of a new worthwhile philosopy
-Whiteboarding term should reference Brett Glasner
-
-Tools
-Anaconda line should xref to Python
-Visual Studio Code is used to develop, document, and test code using the following extensions:
-
 Code
-AAAAAA source code is available at the AAAAAA repository, and alnoki�s
+AAAAAA source code is available at the AAAAAA repository, and alnoki's
 GitHub repositories contain some additional content from relevant tutorials
 Structure should be a dir tree
 
@@ -76,6 +64,8 @@ RST preview extension -> should xref to reST -> live preview functionality
 
 
 ## TODO
+1. AAAAAA as a glossary term
+1. Explain single vs double quotes style in python strings
 1. Get intersphinx working with additional sites
     1. Sample `reST` code
         1. [Python developer's guide to documenting](https://devguide.python.org/documenting/)
@@ -122,6 +112,13 @@ RST preview extension -> should xref to reST -> live preview functionality
 1. Keep on hand a section for out-loud proof-reading
 1. Use the live render in the reST pluging
 1. Figure out what uncommenting indices and tables in index.rst will do
+1. Tools should have additional non-open source section:
+    1. Robinhood
+    1. alphavantage
+    1. Google sheets
+1. Plan out actual source code dev design when website is all ready
+    1. Robinhood interface to Google sheets
+    1. RODCA with LaTeX
 
 ## Design procedures
 1. Update `docs` for `test` and `src` after incremental developments

@@ -279,4 +279,8 @@ xref_links = {
     'Wikipedia': ('Wikipedia', 'https://www.wikipedia.org'),
     'Google': ('Google', 'https://www.google.com'),
     # New links below, sorted links above
+    'Garmin': ("Garmin Ltd.", url['Wiki pg'] + 'Garmin'),
+    '219-Design': ("219 Design", 'https://www.219design.com/who-we-are/'),
+    'DO-178B': ('DO-178B', url['Wiki pg'] + 'DO-178B'),
+    'AHRS': ('AHRS', url['Wiki pg'] + 'Attitude_and_heading_reference_system'),
     }
