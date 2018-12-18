@@ -19,7 +19,6 @@ Style
        natural = "Documentation optimality"  # Natural language message
 
 
-
 ******
 Access
 ******

@@ -7,6 +7,8 @@ Sphinx
 Managing references
 *******************
 
+.. _intersphinx-linking:
+
 Using Intersphinx
 =================
 
@@ -24,7 +26,8 @@ Per :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`:
           ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
        ...
 
-#. Inspect the ``objects.inv`` mapping, usually located under the root, via
+#. Inspect the :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
+   mapping, usually located under the root, via
 
    :command:`python -msphinx.ext.intersphinx http://www.sphinx-doc.org/objects.inv`
 
@@ -42,7 +45,7 @@ Per :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`:
 #. Link to the reference using syntax from the
    :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`
    and (for archival purposes) add a description of the link to
-   :ref:`References`
+   :ref:`references`
 
    * To use the default text from the reference, rendered as
      :std:doc:`sphinx:usage/extensions/intersphinx`, use:
@@ -62,22 +65,26 @@ Per :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`:
    See :xref:`intersphinx-numpy-matplotlib` instructions for these specific
    cases
 
+.. _xref-linking:
+
 Referencing external links
 ==========================
 
-Per :xref:`xref-ext`:
+The :xref:`Sphinx xref extension <xref-ext>` is installed like the built-in
+:std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`, and operates per
+the instructions at :xref:`xref-ext`:
 
 #. Add a reference to the link in
    :std:doc:`conf.py <sphinx:usage/configuration>`
 
    * If the link has a common base link, like in a
-     :xref:`YouTube video <YouTube>`, add the base link::
+     :xref:`YouTube video <YouTube>`, add it too::
 
        # Base urls used by xrefs extension
        url = {
           'GitHub': 'https://github.com/',
           'YT vid': 'https://www.youtube.com/watch?v=',  # Video
-       }
+          ...
 
    * Put in new links below the delimiter comment::
 
@@ -111,7 +118,7 @@ Per :xref:`xref-ext`:
 
          :xref:`Custom link <xref-ext>`
 
-#. Add a description of the link to :ref:`References`
+#. Add a description of the link to :ref:`references`
 
    * After this step, the link can be moved above the delimiter comment in
      :std:doc:`conf.py <sphinx:usage/configuration>`
@@ -133,14 +140,14 @@ Per :xref:`Willing-Sphinx`:
 #. Change working directory to documentation root directory
 #. From command line:
 
-   * :command:`make html` to create new ``.html`` files
-   * :command:`python -m http.server` to start running an ``html`` server
+   * :command:`make html` to create new documentation files
+   * :command:`python -m http.server` to start running a website server
 
 #. Open http://localhost:8000/_build/html/index.html in a browser
 
    * Refresh after making a new build to load the changes
 
-#. :command:`make clean` to clear out old ``.html`` files before committing
+#. :command:`make clean` to clear out old build files before committing
 
 .. Tip::
    Run :command:`make linkcheck` occasionally to verify that links in the

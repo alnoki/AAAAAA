@@ -1,63 +1,23 @@
 Viewing local build: http://localhost:8000/_build/html/index.html
 
-# Out-loud proof reading
-Common tasks change ``.html``
+# Out-loud proof reading notes
 
-References
-The intersphinx explanation at the top should be more concise
-Corey Schafer link to xref python, same for below sentence
-Python tutorial -> Official tutorial from "Python.org"
-Conda -> command line configurator for Anacondaa
-Cyberciti.biz -> how to change :program:Terminal prompt
-Pytest -> official [pytest](the actual intersphinx for pytest), same on next line
-	copy-paste from the 3rd line
-AAAAAA codebase linnk to GitHub.com should be live link -> source code, test code, and documentation
-alnoki's repositories 0-> link to Jupyter Notebooks with capital N
-	Also use for next line, get the intersphinx handle from the documentation page
-Sphinx-> official documentation for the [Sphinx](instersphinx) documentation engine
-Carol willing -> Jupyter Notebooks with cap N intersphinx, intersphinx for Extensions and Autodoc
-Python dev guide -> reST should link to docutils xref
-Read the Docs Sphinx theme -> A Sphinx theme for creating....
-Mahdi Yusuf -> intersphinx to quickstart and toctree and reST
-	He should be at top of the section
-	With Read the Docs section should be first under Sphinx
-reStructuredText Primer -> Sphinx documentation explanation of [reST](intersphinx)
-Next two items same thing
-Jupyter xref Python, "format used for algorithm development"
-	Xref to LaTeX, markdown, etc.
-xref to Corey Schafer jupyter tutorial
-xref to markdown link (that shows up from inside Jupyternotebook help menu)
-xref to the markdown table generator
-Managing references section---
-Intersphinx->Official extension documentation from [Sphinx](intersphinx) website
-Michael Jones -> intershpinx to Sphinx name
-Intersphinx inventory parser -> remove word Sphinx
-NumPy/Matplotlib -> Instructions to reference numerical analysis and plotting tools via....
-Factorial -> wikipedia.org should be a live link
-Mathematics sphinx LaTeX ref, which should yield a LaTeX xref
-VS Code -> development, testing, and documentation -> has marketplace with extensions
-	developed by open source community
-RST preview extension -> should xref to reST -> live preview functionality
-
-## TODO
+# General notes
+1. Intersphinx to math page about LaTeX
+1. File references in conf.py
+1. Use Corey Schafer password tutorial for Robinhood, Google API, etc.
 1. Link to conf.py intersphinx in footnote to reST on tools page
-1. Give references its own toctree?
 1. Go through top to bottom - either do, or re-order for later
 1. AAAAAA as a glossary term
 1. Get intersphinx working with additional sites
     1. Sample `reST` code
         1. [matlibplot sampledoc tutorial](https://matplotlib.org/sampledoc/)
-        1. [Read the Docs table/admonition syntax](https://learning-readthedocs.readthedocs.io/en/latest/Options/table.html)
     1. Using `autodoc`
         1. [Sphinx autodoc feature](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html)
         1. [Numpy docstring convention](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
         1. [Napolean for numpy docstring support](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon)
-    1. Sphinx walkthroughs
-        1. [Brandon's PyCon Sphinx tutorial on Read the Docs](https://brandons-sphinx-tutorial.readthedocs.io/en/latest/index.html)
-            1. [PDF form](https://media.readthedocs.org/pdf/brandons-sphinx-tutorial/latest/brandons-sphinx-tutorial.pdf)
 1. File away:
     1. https://stackoverflow.com/questions/19071512/socket-error-errno-48-address-already-in-use
-    1. http://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html#module-sphinx.ext.intersphinx
     1. [External links extension](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension)
     1. https://stackoverflow.com/questions/5550089/how-to-create-a-nested-list-in-restructuredtext
 1. Per Carol Willing talk
@@ -66,11 +26,8 @@ RST preview extension -> should xref to reST -> live preview functionality
     1. Import video annotation times from iPad notes
         1. Get link from below too, the packaging/deploying/etc. video
 1. Autodoc with source files and numpy style
-1. Markdown table generator for Jupyter
-1. Get a toctree to render inside the references page
 1. `pip install -e` for using package with `pytest` to `dev tasks`
 1. Install DOC8 linter for reST extension
-1. LaTeX external reference
 1. Items from paper notebook
 1. Use the live render in the reST plugin
 1. Figure out what uncommenting indices and tables in index.rst will do

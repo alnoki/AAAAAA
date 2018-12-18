@@ -1,4 +1,4 @@
-.. _References:
+.. _references:
 
 
 ##########
@@ -6,12 +6,20 @@ References
 ##########
 
 This list contains references found throughout AAAAAA, which are managed via
+two :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`
 
-   * The extension provided at :xref:`xref-ext`
-   * :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
+   #. :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
+
+      * See :ref:`intersphinx-linking`
+
+   #. :xref:`xref <xref-ext>`
+
+      * See :ref:`xref-linking`
 
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
+
+.. contents:: Contents
 
 
 ******
@@ -23,15 +31,15 @@ General
 
 #. :xref:`Corey-Schafer-vids`
 
-   * Recommended starting point for learning ``Python``
+   * Recommended starting point for learning :xref:`Python`
 
 #. :xref:`Python.org <Python>`
 
-   * Definitive reference for the ``Python`` computer language
+   * Definitive reference for the :xref:`Python` computer language
 
 #. :std:doc:`python:tutorial/index`
 
-   * Official :xref:`Python` tutorial
+   * Official :xref:`Python` tutorial from :xref:`Python.org <Python>`
 
 #. :pep:`8`
 
@@ -46,7 +54,7 @@ Environments
 
 #. :xref:`Anaconda`
 
-   * Package dependency manager and environment configurator
+   * :xref:`Python` package dependency manager and environment configurator
 
 #. :std:doc:`anaconda:anaconda/index`
 
@@ -54,7 +62,7 @@ Environments
 
 #. :std:doc:`conda:index`
 
-   * Command line interface for :xref:`Anaconda`
+   * Command line configurator for :xref:`Anaconda`
 
 #. :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`
 
@@ -62,7 +70,7 @@ Environments
 
 #. :xref:`Change-bash-prompt`
 
-   * How to change ``bash`` prompt to a custom string like ``$``
+   * How to change :program:`bash` prompt to a custom string like ``$``
 
 #. :xref:`Mac OS<Mac>`
 
@@ -81,11 +89,11 @@ Testing with pytest
 
 #. :std:doc:`pytest:index`
 
-   * Official ``pytest`` documentation
+   * Official :std:doc:`pytest <pytest:index>` documentation
 
 #. :xref:`codebasics-pytest-vids`
 
-   * Recommended starting point for learning ``pytest`` quickly
+   * Recommended starting point for learning :std:doc:`pytest <pytest:index>`
 
 #. :std:doc:`pytest tutorials <pytest:contents>`
 
@@ -98,11 +106,12 @@ AAAAAA codebase
 
 #. :xref:`AAAAAA-repo`
 
-   * GitHub.com repository for all source code and documentation
+   * :xref:`GitHub` repository for AAAAAA source code, test code, and
+     documentation
 
 #. :xref:`alnoki-repos`
 
-   * Assorted Jupyter notebooks and code from other tutorials
+   * Assorted :xref:`Jupyter Notebooks <Jupyter>` and code from other tutorials
 
 
 *************
@@ -115,46 +124,51 @@ Sphinx
 Practical use
 -------------
 
-#. :std:doc:`Sphinx <sphinx:intro>`
+#. :std:doc:`sphinx:intro`
 
-   * Definitive resource for Sphinx
+   * Official documentation for the :std:doc:`Sphinx <sphinx:intro>`
+     documentation engine
 
 #. :xref:`Willing-Sphinx`
 
    * Common workflow tasks
    * Checking spelling and links
-   * Linking Jupyter notebooks
-   * Extensions
+   * Linking :xref:`Jupyter Notebooks <Jupyter>`
+   * :std:doc:`Extensions <sphinx:usage/extensions/index>`
    * Team development ideologies
-   * Autodoc and custom strings
+   * :std:doc:`Autodoc <sphinx:usage/extensions/autodoc>` and custom strings
 
 #. :std:doc:`Python Developer's Guide to Documenting Python <py-dev-guide:documenting>`
 
-   * General :std:doc:`Sphinx <sphinx:intro>` use and ``reST`` style guide
+   * General :std:doc:`Sphinx <sphinx:intro>` use and
+     :std:doc:`usage/restructuredtext/basics` style guide
 
 #. :xref:`Writer-intro-to-Sphinx`
 
    * General explanation of using
      :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
-     , written by Eric Holscher, co-founder of https://readthedocs.org
+     , written by Eric Holscher, co-founder of
+     :std:doc:`Read the Docs<rtfd:index>`
 
 With Read the Docs
 ------------------
 
+#. :xref:`Yusuf-Sphinx-RTD`
+
+   * Setting up a project using :std:doc:`quickstart <sphinx:usage/quickstart>`
+   * :std:doc:`toctree <sphinx:usage/quickstart>` and associated documentation
+     structure
+   * Basic :std:doc:`reST <usage/restructuredtext/basics>` syntax
+
 #. :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
 
-   * Tutorial for starting a Sphinx project hosted on https://readthedocs.org
+   * Tutorial for starting a :std:doc:`Sphinx <sphinx:intro>` project hosted on
+     :std:doc:`Read the Docs<rtfd:index>`
 
 #. :std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
 
-   * A theme used with :std:doc:`Sphinx <sphinx:intro>` for creating
-     a mobile-friendly webpage layout
-
-#. :xref:`Yusuf-Sphinx-RTD`
-
-   * Setting up a project using ``quickstart``
-   * ``toctree`` and associated documentation structure
-   * Basic ``reST`` syntax
+   * A :std:doc:`Sphinx <sphinx:intro>` theme for creating a mobile-friendly
+     webpage layout
 
 #. :std:doc:`Unofficial Read the Docs style guide for Sphinx <rtfd-style-guide:index>`
 
@@ -165,53 +179,65 @@ reStructuredText
 
 #. :std:doc:`usage/restructuredtext/basics`
 
-   * :std:doc:`Sphinx <sphinx:intro>` explanation of ``reST`` markup language
+   * :std:doc:`Sphinx <sphinx:intro>` explanation of
+     :std:doc:`reST <usage/restructuredtext/basics>` markup language
 
 #. :xref:`reST-documentation`
 
-   * Official ``reStructuredText`` documentation
+   * Official :std:doc:`reST <usage/restructuredtext/basics>` documentation
 
 #. :xref:`quick-reST`
 
-   * Quick reference with :xref:`reST <reST-documentation>` examples
+   * Quick reference with :std:doc:`reST <usage/restructuredtext/basics>`
+     examples
+
+Managing references
+-------------------
+
+#. :std:doc:`Intersphinx extension <sphinx:usage/extensions/intersphinx>`
+
+   * Official :std:doc:`Sphinx <sphinx:intro>` documentation for referencing
+     other :std:doc:`Sphinx <sphinx:intro>` projects
+
+#. :xref:`xref-ext`
+
+   * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to manage
+     common external references in a project
+
+#. :xref:`intersphinx-inv-targets`
+
+   * Explains how to interpret
+     :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>` files when
+     using :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
+
+#. :xref:`intersphinx-inv-parser`
+
+   * Sample code for analyzing
+     :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>` files
+
+#. :xref:`intersphinx-numpy-matplotlib`
+
+   * Instructions to reference numerical analysis and plotting tools via
+     :std:doc:`Intersphinx <usage/extensions/intersphinx>`
 
 Jupyter
 =======
 
-#. :xref:`Jupyter`
+#. :xref:`Jupyter Notebooks <Jupyter>`
 
-   * Interactive Python notebook format suitable for algorithm development
-   * Allows ``LaTeX``, markdown, code, and plotting all in one place
+   * Interactive :xref:`Python` notebook format used for algorithm development
+   * Code, :xref:`LaTeX`, :xref:`Markdown`, and plotting in one document
+
+#. :xref:`Schafer-Jupyter`
+
+   * Recommended starting point for learning to use
+     :xref:`Jupyter Notebooks <Jupyter>`
+   * Tutorial video produced by :xref:`Corey Schafer <Corey-Schafer-vids>`
 
 #. :xref:`AAAAAA-nbs`
 
    * Online viewer for :xref:`Jupyter Notebooks <Jupyter>` used to
      develop AAAAAA
-
-Managing references
--------------------
-
-#. :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
-
-   * Official documentation on ``Intersphinx`` extension
-
-#. :xref:`xref-ext`
-
-   * ``Sphinx`` extension to manage common external references in a project
-
-#. :xref:`intersphinx-inv-targets`
-
-   * Explains how to interpret ``objects.inv`` files when using
-     :std:doc:`Intersphinx <usage/extensions/intersphinx>`
-
-#. :xref:`intersphinx-inv-parser`
-
-   * Sample code for analyzing ``objects.inv`` Sphinx inventory files
-
-#. :xref:`intersphinx-numpy-matplotlib`
-
-   * Instructions on referencing NumPy/Matplotlib via
-     :std:doc:`Intersphinx <usage/extensions/intersphinx>`
 
 
 ***********
@@ -220,7 +246,11 @@ Mathematics
 
 #. :xref:`factorial-definition`
 
-   * Wikipedia.org factorial page
+   * :xref:`Wikipedia` factorial page
+
+#. :xref:`LaTeX`
+
+   * Typesetting system for documenting equations
 
 
 *****
@@ -232,8 +262,10 @@ VS Code general
 
 #. :xref:`VS-Code`
 
-   * Preferred open-source environment for development
-   * Has a marketplace with community-developed extensions
+   * Preferred open-source environment for software development, documentation,
+     and testing
+   * Has a marketplace with community-developed extensions developed by the
+     open-source community
 
 #. :xref:`VS-Code-Python-tutorial`
 
@@ -256,7 +288,9 @@ VS Code extensions
 
 #. :xref:`RST-preview-ext`
 
-   * Syntax highlighting for ``reST``, some preview functionality
+   * Syntax highlighting for
+     :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+   * Some live preview functionality
 
 #. :xref:`Test-explorer-UI`
 
@@ -278,6 +312,9 @@ Online information
 
    * Preferred online encyclopedia
 
+#. :xref:`YouTube`
+
+   * For accessing tutorials and other video information
 
 Software design standards
 =========================

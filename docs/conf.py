@@ -218,6 +218,7 @@ url = {
     'VS Code ext': 'https://marketplace.visualstudio.com/items?itemName=',
     'VS Code doc': 'https://code.visualstudio.com/docs/',
     'docutils': 'http://docutils.sourceforge.net/',
+    'GitHub help': 'https://help.github.com/',
 }
 
 xref_links = {
@@ -289,10 +290,24 @@ xref_links = {
          'double-quotes-in-python'),
     'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
                    'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
+    'LaTeX': ('LaTeX', url['Wiki pg'] + 'LaTeX'),
+    'YouTube': ('YouTube', 'https://www.youtube.com/'),
     # New links below, sorted links above
     'doc8-newline-issue':
         ("Doc8 newline issue fix", url['GitHub'] + 'vscode-restructuredtext/'
-        'vscode-restructuredtext/issues/84'),
-     # :std:doc:`conf.py <sphinx:usage/configuration:
-     'YouTube': ('YouTube', 'https://www.youtube.com/')
+         'vscode-restructuredtext/issues/84'),
+        # :std:doc:`conf.py <sphinx:usage/configuration:
+    'reST-cheatsheet': ("reST cheatsheet", url['GitHub'] + 'ralsina/rst-'
+                        'cheatsheet/blob/master/rst-cheatsheet.rst'),
+        # :std:doc:`Sphinx extensions <sphinx:usage/extensions>`
+    'GitHub': ('GitHub', url['GitHub']),
+        # :std:doc:`Autodoc <sphinx:usage/extensions/autodoc>`
+        # :std:doc:`Read the Docs<rtfd:index>`
+        # :std:doc:`quickstart <sphinx:usage/quickstart>`
+    'Markdown': ('Markdown', url['GitHub help'] + 'articles/basic-writing-and'
+                 '-formatting-syntax/'),
+    'Schafer-Jupyter': ("Jupyter Notebook Tutorial: Introduction, Setup, and "
+                        "Walkthrough", url['YT vid'] + 'HW29067qVWk'),
+    'tables-generator': ("Tables generator for assorted languages",
+                         'https://www.tablesgenerator.com/'),
     }

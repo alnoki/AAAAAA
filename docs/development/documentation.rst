@@ -7,11 +7,23 @@ Documentation
 Sphinx and reST
 ***************
 
+Sphinx?
+=======
+
+:std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
+is a documentation engine that helped create this website. See
+:ref:`references` for more help on Sphinx
+
+This :xref:`reST-cheatsheet` is a helpful quick syntax reference
+
+Style
+=====
+
 Documentation is written primarily according to the
 :std:doc:`Python Developer's Guide to Documenting Python <py-dev-guide:documenting>`
 , and secondarily according to an
 :std:doc:`Unofficial Read the Docs style guide for Sphinx <rtfd-style-guide:index>`
-, with particular emphasis on:
+, with emphasis on:
 
    * Indent 3 spaces
    * Lines should be a maximum length of 79 characters
@@ -19,7 +31,7 @@ Documentation is written primarily according to the
 
       .. code-block:: rest
 
-          .. _Handle:
+          .. _reference-handle:
 
 
           ##############

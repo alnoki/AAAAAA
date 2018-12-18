@@ -3,15 +3,15 @@ Zen
 ###
 
 
-***************************************************************************
-Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)^2
-***************************************************************************
+*******************************************************************************************
+Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :superscript:`2`
+*******************************************************************************************
 
 #. Silly acronyms actually help with remembering things
 #. Testing and documenting up front prevents runtime debug headaches
 #. Have DRY (don't repeat yourself) [#]_ code: decompose as much as possible
 #. Documentation should enable another to re-write source and test code [#]_
-#. Have STUPID simple tests. [#]_ Don't recursively 'test the test code'
+#. Have STUPID simple tests. [#]_ Don't recursively "test the test code"
 #. Documenting & testing adds perspective beyond source code development alone
 #. Consider :xref:`DO-178B` as a model for software design assurance [#]_
 #. :pep:`8` provides a repeatable and official means for formatting
