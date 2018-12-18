@@ -18,6 +18,10 @@ All the software tools used to create AAAAAA are open source:
    following extensions:
 
    * :xref:`VS-Code-Python-ext`
-   * :xref:`RST-preview-ext`
+   * :xref:`RST-preview-ext` [#]_
    * :xref:`Test-explorer-UI`
    * :xref:`GitLens`
+
+.. rubric:: Footnotes
+
+.. [#] Requires a :xref:`doc8-newline-issue`

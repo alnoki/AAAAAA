@@ -23,5 +23,9 @@
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
     "python.linting.enabled": true,
-
+    // Prevent linter errors about literal carriage returns
+    "restructuredtext.linter.extraArgs": [
+        "--ignore D002",
+        "--ignore D004"
+    ],
 }

@@ -290,4 +290,9 @@ xref_links = {
     'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
                    'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
     # New links below, sorted links above
+    'doc8-newline-issue':
+        ("Doc8 newline issue fix", url['GitHub'] + 'vscode-restructuredtext/'
+        'vscode-restructuredtext/issues/84'),
+     # :std:doc:`conf.py <sphinx:usage/configuration:
+     'YouTube': ('YouTube', 'https://www.youtube.com/')
     }

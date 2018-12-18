@@ -10,19 +10,23 @@ Managing references
 Using Intersphinx
 =================
 
-Per :std:doc:`Intershpinx documentation <sphinx:usage/extensions/intersphinx>`:
+Per :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`:
 
-#. Add the project's root url to ``conf.py``::
+#. Add the project's root url to
+   :std:doc:`conf.py <sphinx:usage/configuration>`::
 
     intersphinx_mapping = {
        'python': ('https://docs.python.org/3', None),
-       'sphinx': ('http://www.sphinx-doc.org', None)
-    }
-#. Inspect the ``objects.inv`` mapping, usually located under the root:
+       'sphinx': ('http://www.sphinx-doc.org/en/master/', None),
+       'pytest': ('https://docs.pytest.org/en/latest/', None),
+       'rtfd': ('https://docs.readthedocs.io/en/latest/', None),
+       'rtd-sphinx-theme':
+          ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
+       ...
 
-   .. code-block:: none
+#. Inspect the ``objects.inv`` mapping, usually located under the root, via
 
-      python -msphinx.ext.intersphinx http://www.sphinx-doc.org/objects.inv
+   :command:`python -msphinx.ext.intersphinx http://www.sphinx-doc.org/objects.inv`
 
    * Try this in a terminal that can be maximized to full screen
    * Most times the root will be at ``.io/en/latest/`` or ``.com/en/latest``
@@ -35,27 +39,24 @@ Per :std:doc:`Intershpinx documentation <sphinx:usage/extensions/intersphinx>`:
    * See :xref:`intersphinx-inv-targets` for a formatting explanation
    * Most documentation pages will be in ``std:doc``
 
-#. Link to the reference using the below syntax and (for archival purposes) add
-   a description of the link to :ref:`References`
+#. Link to the reference using syntax from the
+   :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`
+   and (for archival purposes) add a description of the link to
+   :ref:`References`
 
-.. Tip::
-   Use either the default text from the link or create your own custom text
-   using the map entry from ``intersphinx_mapping``, in this case ``sphinx``
+   * To use the default text from the reference, rendered as
+     :std:doc:`sphinx:usage/extensions/intersphinx`, use:
 
-   #. To create the default text from the reference,
-      :std:doc:`sphinx:usage/extensions/intersphinx`:
+     .. code-block:: rest
 
-      .. code-block:: rest
+         :std:doc:`sphinx:usage/extensions/intersphinx`
 
-          :std:doc:`sphinx:usage/extensions/intersphinx`
+   * To create your own custom text, rendered as
+     :std:doc:`Custom <sphinx:usage/extensions/intersphinx>`, use:
 
+     .. code-block:: rest
 
-   #. To create your own custom text,
-      :std:doc:`Custom <sphinx:usage/extensions/intersphinx>`:
-
-      .. code-block:: rest
-
-          :std:doc:`Custom <sphinx:usage/extensions/intersphinx>`
+         :std:doc:`Custom <sphinx:usage/extensions/intersphinx>`
 
 .. Note::
    See :xref:`intersphinx-numpy-matplotlib` instructions for these specific
@@ -66,26 +67,56 @@ Referencing external links
 
 Per :xref:`xref-ext`:
 
-#. Add an entry to ``xref_links`` in ``conf.py``
+#. Add a reference to the link in
+   :std:doc:`conf.py <sphinx:usage/configuration>`
+
+   * If the link has a common base link, like in a
+     :xref:`YouTube video <YouTube>`, add the base link::
+
+       # Base urls used by xrefs extension
+       url = {
+          'GitHub': 'https://github.com/',
+          'YT vid': 'https://www.youtube.com/watch?v=',  # Video
+       }
 
    * Put in new links below the delimiter comment::
 
-       # New links below, sorted links above
+       xref_links = {
+          'Python': ('Python', 'https://www.python.org'),
+          'xref-ext': ("Michael Jones' sphinx-xref repository",
+                      url['GitHub'] + 'michaeljones/sphinx-xref'),
+          ...
+          'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
+                         'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
+          # New links below, sorted links above
+          'doc8-newline-issue':
+              ("Doc8 newline issue fix", url['GitHub'] + 'vscode-restructuredtext/'
+              'vscode-restructuredtext/issues/84'),
+          }
 
-#. Add a link in documentation:
+#. Link to the reference using syntax similar to the
+   :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`
 
-   * ``:xref:`xref-ext``` makes :xref:`xref-ext`
-   * ``:xref:`Custom link <xref-ext>``` makes :xref:`Custom link <xref-ext>`
+   * To use the default text from the reference, rendered as
+     :xref:`xref-ext`, use:
+
+     .. code-block:: rest
+
+         :xref:`xref-ext`
+
+   * To create your own custom text, rendered as
+     :xref:`Custom link <xref-ext>`, use:
+
+     .. code-block:: rest
+
+         :xref:`Custom link <xref-ext>`
 
 #. Add a description of the link to :ref:`References`
 
-   * Now the link can be moved above the delimiter comment in ``conf.py``
+   * After this step, the link can be moved above the delimiter comment in
+     :std:doc:`conf.py <sphinx:usage/configuration>`
 
 .. Tip::
-   Use a base url from ``url`` in ``conf.py`` for common references like
-   YouTube videos
-
-.. Note::
    As long as the delimiter comment is properly used, links can be sorted in
    batches
 
@@ -102,18 +133,15 @@ Per :xref:`Willing-Sphinx`:
 #. Change working directory to documentation root directory
 #. From command line:
 
-   #. :command:`make html` to create new ``.html`` files
-   #. :command:`python -m http.server` to start running an ``html`` server
-
-      * Leave this process running even when rebuilding
+   * :command:`make html` to create new ``.html`` files
+   * :command:`python -m http.server` to start running an ``html`` server
 
 #. Open http://localhost:8000/_build/html/index.html in a browser
+
+   * Refresh after making a new build to load the changes
+
 #. :command:`make clean` to clear out old ``.html`` files before committing
 
 .. Tip::
-   If a server is already running, make a new build and refresh the browser
-   window to view changes
-
-.. Note::
-   Run :command:`make linkcheck` occasionally to verify that links in the project
-   reference valid locations
+   Run :command:`make linkcheck` occasionally to verify that links in the
+   project reference valid locations

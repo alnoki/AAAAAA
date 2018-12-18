@@ -26,15 +26,17 @@ Documentation is written primarily according to the
           Document title
           ##############
 
-          Hello!
+          Welcome to this document!
 
 
           *******
           Section
           *******
 
+          Welcome to this section!
+
           Subsection
-          =======
+          ==========
 
 *****************
 Jupyter Notebooks

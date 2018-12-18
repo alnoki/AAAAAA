@@ -1,16 +1,7 @@
 Viewing local build: http://localhost:8000/_build/html/index.html
 
 # Out-loud proof reading
-
-Using Intersphinx
-Clean up, syntax shouldn't be inside of a tip
-Reference the roles document about :xref:`Custom link <xref-ext>`
-Use an rst code block and show output
-Don't have a tip about the base url dictionary
-Use a Python term to talk about the base url dictionary
-Take out the delimiter comment note
-
-Building documentation take out tip
+Common tasks change ``.html``
 
 References
 The intersphinx explanation at the top should be more concise
@@ -49,6 +40,7 @@ VS Code -> development, testing, and documentation -> has marketplace with exten
 RST preview extension -> should xref to reST -> live preview functionality
 
 ## TODO
+1. Link to conf.py intersphinx in footnote to reST on tools page
 1. Give references its own toctree?
 1. Go through top to bottom - either do, or re-order for later
 1. AAAAAA as a glossary term
