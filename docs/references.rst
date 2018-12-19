@@ -19,7 +19,7 @@ two :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
 
-.. contents:: Contents
+.. contents::
 
 
 ******
@@ -48,6 +48,14 @@ General
 #. :xref:`Python-quote-convention`
 
    * Recommendation for using ``'`` vs ``"`` in :xref:`Python`
+
+#. :std:doc:`python:howto/functional`
+
+   * Official tutorial on :xref:`Python` functional programming technique
+
+#. :std:doc:`python:howto/index`
+
+   * Official in-depth :xref:`Python` tutorials for various advanced topics
 
 Environments
 ============
@@ -149,6 +157,10 @@ Practical use
      :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
      , written by Eric Holscher, co-founder of
      :std:doc:`Read the Docs<rtfd:index>`
+
+#. :std:doc:`conf.py usage<sphinx:usage/configuration>`
+
+   * How to configure a :std:doc:`Sphinx <sphinx:intro>` project
 
 With Read the Docs
 ------------------
@@ -252,6 +264,15 @@ Mathematics
 
    * Typesetting system for documenting equations
 
+#. :rst:role:`sphinx:math`
+
+   * :std:term:`Sphinx role <sphinx:role>` for using :xref:`LaTeX` in-line
+
+#. :rst:dir:`sphinx:math`
+
+   * :std:term:`Sphinx directive <sphinx:directive>` for using
+     :xref:`LaTeX` on its own line
+
 
 *****
 Tools
@@ -290,7 +311,7 @@ VS Code extensions
 
    * Syntax highlighting for
      :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
-   * Some live preview functionality
+   * Limited live preview functionality
 
 #. :xref:`Test-explorer-UI`
 

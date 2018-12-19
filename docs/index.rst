@@ -16,7 +16,7 @@ developed by the open source community
 Python?
 *******
 A bit of Python can be executed on most computers with minimal effort, using
-:py:func:`print`:
+:py:func:`python:print`:
 
 #. Open the command line on your specific machine
 
