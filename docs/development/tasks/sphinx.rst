@@ -61,7 +61,14 @@ Per :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`:
 
          :std:doc:`Custom <sphinx:usage/extensions/intersphinx>`
 
-.. Note::
+.. tip::
+   Some items in :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
+   may require slightly different syntax. For example, items in the
+   ``rst:directive`` section of the
+   :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>` file for
+   :std:doc:`Sphinx <sphinx:intro>` must be referenced via ``:rst:dir:` ... ```
+
+.. note::
    See :xref:`intersphinx-numpy-matplotlib` instructions for these specific
    cases
 
@@ -153,6 +160,11 @@ Per :xref:`Willing-Sphinx`:
 
 #. :command:`make clean` to clear out old build files before committing
 
-.. Tip::
+.. tip::
    Run :command:`make linkcheck` occasionally to verify that links in the
-   project reference valid locations
+   project are valid references
+
+.. warning::
+   The :xref:`RST-preview-ext` offers live rendering, but it is not as reliable
+   as the above procedure. For example, it fails to properly render
+   :std:doc:`Intersphinx references<sphinx:usage/extensions/intersphinx>`

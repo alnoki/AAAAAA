@@ -1,31 +1,49 @@
 // alnoki's development environment preferences - enjoy!
 {
-    "git.autofetch": true,
-    "editor.minimap.enabled": false,
+
+    // General viewing
+    "workbench.colorTheme": "Default Dark+",
     "editor.tokenColorCustomizations": {
         "comments": "#3CB371",
         "strings": "#FF00FF"
     },
+    "editor.minimap.enabled": false,
+    "zenMode.centerLayout": false,
+    "editor.mouseWheelZoom": true,
+    "breadcrumbs.enabled": true,
+
+
+    // Indentation/line width
     "editor.renderWhitespace": "all",
     "editor.trimAutoWhitespace": true,
     "files.trimTrailingWhitespace": true,
-    // PEP8
+    // Per PEP8, for comments (71) and code (79)
     "[python]": {
         "editor.rulers": [71, 79],
+        "editor.tabSize": 4,
     },
-    // Usually just for reST files
+    "[markdown]": {
+        "editor.rulers": [79],
+        "editor.tabSize": 4,
+    },
+    // If not .py or .md, assume .rst file
     "editor.rulers": [79],
     "editor.tabSize": 3,
-    // Privacy related
-    "telemetry.enableCrashReporter": false,
-    "editor.mouseWheelZoom": true,
-    "breadcrumbs.enabled": true,
+
+
+    // Linting
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
     "python.linting.enabled": true,
-    // Prevent linter errors about literal carriage returns
+    // Disable errors about literal carriage returns
     "restructuredtext.linter.extraArgs": [
         "--ignore D002",
         "--ignore D004"
     ],
+
+
+    // Privacy related
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "gitlens.advanced.telemetry.enabled": false,
 }
