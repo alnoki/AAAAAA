@@ -2,16 +2,9 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # Out-loud proof reading notes
 
-# Website references
-1. Sample `reST` code
-    1. [matlibplot sampledoc tutorial](https://matplotlib.org/sampledoc/)
-1. Other
-    1. https://stackoverflow.com/questions/19071512/socket-error-errno-48-address-already-in-use
-    1. [External links extension](https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension)
-    1. https://stackoverflow.com/questions/5550089/how-to-create-a-nested-list-in-restructuredtext
-1. File references in conf.py
-
-# Immediate website additions
+# Immediate website modifications
+1. Proofread
+1. Verify 3-space indent in rst files
 1. Try table format extension from marketplace from .rst search
 1. Add reST extension side preview usage to building documentation section
     1. Most of the time can use extension, else proofread live rtfd.io site
@@ -36,7 +29,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Separate ledger.py into a snippets file
 1. Document utilities.py
     1. Autodoc with source files and maybe numpy style
-    1. [Sphinx autodoc feature](http://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html)
+        1. Autodoc reference already in references page
     1. [Numpy docstring convention](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
     1. [Napolean for numpy docstring support](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon)
 1. Document test_utilities.py

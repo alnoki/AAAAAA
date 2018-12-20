@@ -70,9 +70,12 @@ Per :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`:
 Referencing external links
 ==========================
 
-The :xref:`Sphinx xref extension <xref-ext>` is installed like the built-in
-:std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`, and operates per
-the instructions at :xref:`xref-ext`:
+The :xref:`Sphinx xref extension <xref-ext>` is installed like other
+:std:doc:`built-in Sphinx extensions<sphinx:usage/extensions/index>`, with some
+installation tips taken from a related
+:ref:`references extension configuration manual <sublime-with-sphinx:use the external links extension>`
+
+Usage instructions are per :xref:`xref-ext`:
 
 #. Add a reference to the link in
    :std:doc:`conf.py <sphinx:usage/configuration>`
@@ -142,6 +145,7 @@ Per :xref:`Willing-Sphinx`:
 
    * :command:`make html` to create new documentation files
    * :command:`python -m http.server` to start running a website server
+   * Just start one server, lest you incur an :xref:`http-socket-error`
 
 #. Open http://localhost:8000/_build/html/index.html in a browser
 

@@ -121,6 +121,9 @@ AAAAAA codebase
 
    * Assorted :xref:`Jupyter Notebooks <Jupyter>` and code from other tutorials
 
+#. :xref:`GitHub`
+
+   * Online repository for software projects
 
 *************
 Documentation
@@ -132,10 +135,19 @@ Sphinx
 Practical use
 -------------
 
-#. :std:doc:`sphinx:intro`
+#. :std:doc:`Sphinx <sphinx:intro>`
 
    * Official documentation for the :std:doc:`Sphinx <sphinx:intro>`
      documentation engine
+
+#. :std:doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`
+
+   * How to start a documentation project from scratch
+
+#. :std:doc:`Matplotlib sampledoc tutorial <matplotlib-sampledoc:index>`
+
+   * Quick walkthrough with practical syntax examples
+   * Interactive :xref:`Python` examples, using plots
 
 #. :xref:`Willing-Sphinx`
 
@@ -158,9 +170,40 @@ Practical use
      , written by Eric Holscher, co-founder of
      :std:doc:`Read the Docs<rtfd:index>`
 
+Usage specifics
+---------------
+
+#. :std:doc:`sphinx:usage/extensions/index`
+
+   * Additional functionalities for :std:doc:`Sphinx <sphinx:intro>` engine
+
 #. :std:doc:`conf.py usage<sphinx:usage/configuration>`
 
    * How to configure a :std:doc:`Sphinx <sphinx:intro>` project
+
+#. :std:doc:`Autodoc extension <sphinx:usage/extensions/autodoc>`
+
+   * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` for generating
+     documentation straight from :xref:`Python` source code
+
+#. :ref:`sublime-with-sphinx:use the external links extension`
+
+   * Instructions for installing a
+     :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` similar to
+     those used for managing references in AAAAAA
+
+#. :rst:role:`sphinx:math`
+
+   * :std:term:`Sphinx role <sphinx:role>` for using :xref:`LaTeX` in-line
+
+#. :rst:dir:`sphinx:math`
+
+   * :std:term:`Sphinx directive <sphinx:directive>` for using
+     :xref:`LaTeX` on its own line
+
+#. :xref:`http socket error fix <http-socket-error>`
+
+   * Managing errors during documentation builds
 
 With Read the Docs
 ------------------
@@ -171,6 +214,10 @@ With Read the Docs
    * :std:doc:`toctree <sphinx:usage/quickstart>` and associated documentation
      structure
    * Basic :std:doc:`reST <usage/restructuredtext/basics>` syntax
+
+#. :std:doc:`Read the Docs<rtfd:index>`
+
+   * Online repository for hosting software documentation
 
 #. :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
 
@@ -185,23 +232,6 @@ With Read the Docs
 #. :std:doc:`Unofficial Read the Docs style guide for Sphinx <rtfd-style-guide:index>`
 
    * General :std:doc:`Sphinx <sphinx:intro>` syntax and style
-
-reStructuredText
-----------------
-
-#. :std:doc:`usage/restructuredtext/basics`
-
-   * :std:doc:`Sphinx <sphinx:intro>` explanation of
-     :std:doc:`reST <usage/restructuredtext/basics>` markup language
-
-#. :xref:`reST-documentation`
-
-   * Official :std:doc:`reST <usage/restructuredtext/basics>` documentation
-
-#. :xref:`quick-reST`
-
-   * Quick reference with :std:doc:`reST <usage/restructuredtext/basics>`
-     examples
 
 Managing references
 -------------------
@@ -232,6 +262,31 @@ Managing references
    * Instructions to reference numerical analysis and plotting tools via
      :std:doc:`Intersphinx <usage/extensions/intersphinx>`
 
+reStructuredText
+================
+
+#. :std:doc:`usage/restructuredtext/basics`
+
+   * :std:doc:`Sphinx <sphinx:intro>` explanation of
+     :std:doc:`reST <usage/restructuredtext/basics>` markup language
+
+#. :xref:`reST-cheatsheet`
+
+   * Quick reference for :std:doc:`reST <usage/restructuredtext/basics>` usage
+
+#. :xref:`reST-documentation`
+
+   * Official :std:doc:`reST <usage/restructuredtext/basics>` documentation
+
+#. :xref:`quick-reST`
+
+   * Quick reference with :std:doc:`reST <usage/restructuredtext/basics>`
+     examples
+
+#. :xref:`reST-list-indentation`
+
+   * Explanation of nested list syntax
+
 Jupyter
 =======
 
@@ -251,6 +306,25 @@ Jupyter
    * Online viewer for :xref:`Jupyter Notebooks <Jupyter>` used to
      develop AAAAAA
 
+Engine-agnostic tools
+=====================
+
+#. :xref:`tables-generator`
+
+   * Online tool to format tables in :xref:`Markdown`,
+     :std:doc:`usage/restructuredtext/basics`, and plain text
+
+#. :xref:`LaTeX`
+
+   * Typesetting system for documenting equations in
+     :xref:`Jupyter Notebooks <Jupyter>` and in
+     :std:doc:`Sphinx <sphinx:intro>`
+
+#. :xref:`Markdown`
+
+   * Language syntax used to generate tables, lists, etc. for :xref:`GitHub`
+     and :xref:`Jupyter Notebooks <Jupyter>`
+
 
 ***********
 Mathematics
@@ -259,20 +333,6 @@ Mathematics
 #. :xref:`factorial-definition`
 
    * :xref:`Wikipedia` factorial page
-
-#. :xref:`LaTeX`
-
-   * Typesetting system for documenting equations
-
-#. :rst:role:`sphinx:math`
-
-   * :std:term:`Sphinx role <sphinx:role>` for using :xref:`LaTeX` in-line
-
-#. :rst:dir:`sphinx:math`
-
-   * :std:term:`Sphinx directive <sphinx:directive>` for using
-     :xref:`LaTeX` on its own line
-
 
 *****
 Tools
@@ -307,15 +367,19 @@ VS Code extensions
 
    * Syntax highlighting, autocomplete, etc.
 
+#. :xref:`Test-explorer-UI`
+
+   * Graphical interface for using :std:doc:`pytest <pytest:index>`
+
 #. :xref:`RST-preview-ext`
 
    * Syntax highlighting for
      :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
    * Limited live preview functionality
 
-#. :xref:`Test-explorer-UI`
+#. :xref:`doc8-newline-issue`
 
-   * Graphical interface for using :std:doc:`pytest <pytest:index>`
+   * Fix for syntax highlighter bug in :xref:`RST-preview-ext`
 
 
 *******

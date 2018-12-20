@@ -206,6 +206,10 @@ intersphinx_mapping = {
     'conda': ('https://conda.io/docs/', None),
     'rtfd-style-guide': ('https://documentation-style-guide-sphinx.'
                          'readthedocs.io/en/latest/', None),
+    'matplotlib-sampledoc':
+        ('https://matplotlib.org/sampledoc/', None),
+    'sublime-with-sphinx':
+        ('https://sublime-and-sphinx-guide.readthedocs.io/en/latest', None)
 }
 
 # Base urls used by xrefs extension
@@ -292,22 +296,23 @@ xref_links = {
                    'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
     'LaTeX': ('LaTeX', url['Wiki pg'] + 'LaTeX'),
     'YouTube': ('YouTube', 'https://www.youtube.com/'),
-    # New links below, sorted links above
     'doc8-newline-issue':
         ("Doc8 newline issue fix", url['GitHub'] + 'vscode-restructuredtext/'
          'vscode-restructuredtext/issues/84'),
-        # :std:doc:`conf.py <sphinx:usage/configuration:
     'reST-cheatsheet': ("reST cheatsheet", url['GitHub'] + 'ralsina/rst-'
                         'cheatsheet/blob/master/rst-cheatsheet.rst'),
-        # :std:doc:`Sphinx extensions <sphinx:usage/extensions>`
     'GitHub': ('GitHub', url['GitHub']),
-        # :std:doc:`Autodoc <sphinx:usage/extensions/autodoc>`
-        # :std:doc:`Read the Docs<rtfd:index>`
-        # :std:doc:`quickstart <sphinx:usage/quickstart>`
     'Markdown': ('Markdown', url['GitHub help'] + 'articles/basic-writing-and'
                  '-formatting-syntax/'),
     'Schafer-Jupyter': ("Jupyter Notebook Tutorial: Introduction, Setup, and "
                         "Walkthrough", url['YT vid'] + 'HW29067qVWk'),
     'tables-generator': ("Tables generator for assorted languages",
-                         'https://www.tablesgenerator.com/'),
+                         'http://tablesgenerator.com'),
+    'http-socket-error':
+        ("http socket error", url['Stack OF'] + '19071512/socket-error-errno'
+         '-48-address-already-in-use'),
+    'reST-list-indentation':
+        ("reST list indentation", url['Stack OF'] +
+         '5550089/how-to-create-a-nested-list-in-restructuredtext')
+    # New links below, sorted links above
     }

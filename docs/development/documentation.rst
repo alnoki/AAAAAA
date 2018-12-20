@@ -25,7 +25,8 @@ Documentation is written primarily according to the
 :std:doc:`Unofficial Read the Docs style guide for Sphinx <rtfd-style-guide:index>`
 , with emphasis on:
 
-   * Indent 3 spaces
+   * Indent 3 spaces (especially for
+     :xref:`nested lists <reST-list-indentation>`)
    * Lines should be a maximum length of 79 characters
    * 2-line whitespace for the two top-level titles:
 
