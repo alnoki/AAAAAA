@@ -8,7 +8,7 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 *******************************************************************************************
 
 #. Silly acronyms actually help with remembering things
-#. Testing and documenting up front prevents runtime debug headaches
+#. Testing and documenting up front prevents massive runtime debug headaches
 #. Have DRY (don't repeat yourself) [#]_ code: decompose as much as possible
 #. Documentation should enable another to re-write source and test code [#]_
 #. Have STUPID simple tests. [#]_ Don't recursively "test the test code"

@@ -5,8 +5,8 @@
 References
 ##########
 
-This list contains references found throughout AAAAAA, which are managed via
-two :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`
+This list contains references found throughout :term:`AAAAAA`, which are
+managed via two :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`
 
    #. :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
 
@@ -56,6 +56,10 @@ General
 #. :std:doc:`python:howto/index`
 
    * Official in-depth :xref:`Python` tutorials for various advanced topics
+
+#. :xref:`RealPython`
+
+   * Comprehensive blog-style website with examples, guides, tips, etc.
 
 Environments
 ============
@@ -114,7 +118,7 @@ AAAAAA codebase
 
 #. :xref:`AAAAAA-repo`
 
-   * :xref:`GitHub` repository for AAAAAA source code, test code, and
+   * :xref:`GitHub` repository for :term:`AAAAAA` source code, test code, and
      documentation
 
 #. :xref:`alnoki-repos`
@@ -125,9 +129,27 @@ AAAAAA codebase
 
    * Online repository for software projects
 
+
 *************
 Documentation
 *************
+
+General
+=======
+
+#. :std:doc:`Official Python Developer's Guide to Documenting Python <py-dev-guide:documenting>`
+
+   * General :std:doc:`Sphinx <sphinx:intro>` use and
+     :std:doc:`usage/restructuredtext/basics` style guide
+
+#. :xref:`RealPython Guide to Documenting Python <documenting-python>`
+
+   * Recommended practices for documenting :xref:`Python` software from
+   * Tips and examples from :xref:`RealPython`
+
+# :pep:`257`
+
+   * Official conventions for :ref:`docstrings <python:tut-docstrings>`
 
 Sphinx
 ======
@@ -158,11 +180,6 @@ Practical use
    * Team development ideologies
    * :std:doc:`Autodoc <sphinx:usage/extensions/autodoc>` and custom strings
 
-#. :std:doc:`Python Developer's Guide to Documenting Python <py-dev-guide:documenting>`
-
-   * General :std:doc:`Sphinx <sphinx:intro>` use and
-     :std:doc:`usage/restructuredtext/basics` style guide
-
 #. :xref:`Writer-intro-to-Sphinx`
 
    * General explanation of using
@@ -190,7 +207,7 @@ Usage specifics
 
    * Instructions for installing a
      :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` similar to
-     those used for managing references in AAAAAA
+     those used for managing references in :term:`AAAAAA`
 
 #. :rst:role:`sphinx:math`
 
@@ -304,7 +321,7 @@ Jupyter
 #. :xref:`AAAAAA-nbs`
 
    * Online viewer for :xref:`Jupyter Notebooks <Jupyter>` used to
-     develop AAAAAA
+     develop :term:`AAAAAA`
 
 Engine-agnostic tools
 =====================
@@ -333,6 +350,7 @@ Mathematics
 #. :xref:`factorial-definition`
 
    * :xref:`Wikipedia` factorial page
+
 
 *****
 Tools
@@ -400,6 +418,10 @@ Online information
 #. :xref:`YouTube`
 
    * For accessing tutorials and other video information
+
+#. :xref:`Open-source software <open-source>`
+
+   * :xref:`Wikipedia` article
 
 Software design standards
 =========================

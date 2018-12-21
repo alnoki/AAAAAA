@@ -2,6 +2,9 @@
 Documentation
 #############
 
+See this :xref:`documenting-python` for an explanation of preferred
+documentation practices
+
 
 ***************
 Sphinx and reST
@@ -28,7 +31,8 @@ Documentation is written primarily according to the
    * Indent 3 spaces (especially for
      :xref:`nested lists <reST-list-indentation>`)
    * Lines should be a maximum length of 79 characters
-   * 2-line whitespace for the two top-level titles:
+   * 2-line whitespace for the two top-level titles
+   * Use a single, unescaped space for footnotes
 
       .. code-block:: rest
 
@@ -46,10 +50,14 @@ Documentation is written primarily according to the
           Section
           *******
 
-          Welcome to this section!
+          Welcome to this section! [#]_
 
           Subsection
           ==========
+
+          .. rubric:: Footnotes
+
+          .. [#] Footnote about the above section
 
 *****************
 Jupyter Notebooks

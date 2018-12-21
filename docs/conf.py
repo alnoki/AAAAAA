@@ -223,6 +223,7 @@ url = {
     'VS Code doc': 'https://code.visualstudio.com/docs/',
     'docutils': 'http://docutils.sourceforge.net/',
     'GitHub help': 'https://help.github.com/',
+    'RealPython': 'https://realpython.com/',
 }
 
 xref_links = {
@@ -313,6 +314,10 @@ xref_links = {
          '-48-address-already-in-use'),
     'reST-list-indentation':
         ("reST list indentation", url['Stack OF'] +
-         '5550089/how-to-create-a-nested-list-in-restructuredtext')
+         '5550089/how-to-create-a-nested-list-in-restructuredtext'),
+    'documenting-python': ("Guide to Documenting Python",
+                           url['RealPython'] + 'documenting-python-code/'),
+    'open-source': ('open-source', url['Wiki pg'] + 'Open-source_software'),
+    'RealPython': ('RealPython.com', url['RealPython']),
     # New links below, sorted links above
     }

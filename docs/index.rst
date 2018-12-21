@@ -2,19 +2,26 @@
 Welcome!
 ########
 
+
 ********************************************************************
 Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 ********************************************************************
 
 *Brought to you by alnoki*
 
-AAAAAA are a growing collection of financial analysis tools. Development is
-performed in the :xref:`Python` computer language, using additional packages
-developed by the open source community
+.. glossary::
+
+   AAAAAA
+      Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA) are
+      a growing collection of financial analysis tools. Development is
+      performed in the :xref:`Python` computer language, using additional
+      packages developed by the :xref:`open-source` community
+
 
 *******
 Python?
 *******
+
 A bit of Python can be executed on most computers with minimal effort, using
 :py:func:`python:print`:
 
@@ -63,9 +70,19 @@ A bit of Python can be executed on most computers with minimal effort, using
 
 Congratulations!!!
 
+
+******************
+Indices and tables
+******************
+
+* :ref:`genindex`
+* :ref:`search`
+
+.. * :ref:`modindex` - should go between genindex and search when ready
+
 .. toctree::
    :caption: Development
-   :maxdepth: -1
+   :maxdepth: 2
    :numbered:
 
    development/zen
@@ -74,10 +91,3 @@ Congratulations!!!
    development/documentation
    development/tasks/index
    references
-
-..  Indices and tables
-    ==================
-
-..  * :ref:`genindex`
-    * :ref:`modindex`
-    * :ref:`search`

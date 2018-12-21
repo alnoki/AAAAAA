@@ -63,10 +63,14 @@ Per :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`:
 
 .. tip::
    Some items in :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
-   may require slightly different syntax. For example, items in the
-   ``rst:directive`` section of the
-   :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>` file for
-   :std:doc:`Sphinx <sphinx:intro>` must be referenced via ``:rst:dir:` ... ```
+   may require slightly different syntax
+
+      * Items in the ``rst:directive`` section of the
+        :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>` file for
+        :std:doc:`Sphinx <sphinx:intro>` must be referenced via
+        ``:rst:dir:` ... ```
+      * Items in an ``std:label`` section use ``:ref:` ... ```, because they
+        were generated via the :rst:role:`sphinx:ref` role
 
 .. note::
    See :xref:`intersphinx-numpy-matplotlib` instructions for these specific

@@ -1,39 +1,57 @@
 Viewing local build: http://localhost:8000/_build/html/index.html
 
-# Out-loud proof reading notes
+# General review
 
-# Immediate website modifications
-1. AAAAAA as a glossary term - use find all to replace
-1. Items from paper notebook
-1. Figure out what uncommenting indices and tables in index.rst will do
+## Out-loud proof reading notes
 
-# .rst read-through
+## Lunch-time reading
+1. https://realpython.com/documenting-python-code/
+1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
+
+## .rst read-through
+1. Continue on documentation page
+1. Intersphinx to footnotes on documentation page
 1. Verify admonitions are all lowercase
 1. Verify 3-space indent in rst files, and with nested lists
 1. Verify all AAAAAA references are to glossary term
 
-# Environment quickstart
+# Next tasks
+
+## QuickStart guide
+1. Jupyter extensions and settings
+1. VS Code bookmarks extension
+1. 2 sections
+   1. Basic setup has minimal needed for a transaction to be declared
+   1. For Developers has everything that alnoki uses, and says so
+1. .yaml creation in common tasks links to setup
 1. Clear .gitignore and re-make it from scratch
 1. Install :xref:`Anaconda`, which should include :xref:`VS Code`
+1. Install :xref:`VS Code` extensions (on the advanced setup page)
 1. Do environment walkthrough
 1. Make a new AAAAAA conda environment from scratch
    1. Try installing all possible packages via conda, then forge, then pip
       1. Per https://anaconda.org/anaconda/sphinx_rtd_theme style of command
       1. Install those needed for doc8
+      1. If `conda list` shows something as a pip package, try installing in
+         Conda and then `pip uninstall`
    1. pytest
    1. restructured text extension
 1. Save the AAAAAA environment in .yaml
 1. Select which interpreter to use - may make a user setting
 1. Clone the AAAAAA repo
 1. `pip install -e` for using package with `pytest` to `dev tasks`
+   1. Should always come after downloading a .yaml or making Conda environment
+   1. Is there a Conda install -e?
 1. Install extensions per extension page (should be last after)
 1. Make sure .yaml file from before hasn't changed
+1. Index says - having trouble running Python? Try the QuickStart guide
 
-# Source documentation
+## Source documentation
 1. Link a Jupyter notebook per Carol Willing video
 1. Separate ledger.py into a snippets file
 1. Document utilities.py
    1. Autodoc with source files and maybe numpy style
+      1. Reference the autodoc extension in the tools page
       1. Autodoc reference already in references page
    1. [Numpy docstring convention](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
    1. [Napolean for numpy docstring support](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon)
@@ -46,8 +64,25 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Verify all Jupyter notebooks are linked
 1. Figure out how to do documentation coverage
 1. Make directory trees that describe the structure of the project
+1. MyPy type linter
+1. Link to the Python article about Decimal vs floating point types
+1. Uncomment mod index on main page
+
+## Transaction code
+1. NaN in GoogleSheets should be different than $0
+1. __repr__ should sanitize inputs
+1. Need a to_string()
+
+## Robinhood API references
+1. [Unofficial Robinhood API documentation](https://github.com/sanko/Robinhood)
+1. GitHub Robinhood modules
+   1. [version with 736 stars](https://github.com/Jamonek/Robinhood)
+   1. [version with 30 stars](https://github.com/westonplatter/fast_arrow)
+   1. [version with 27 stars](https://github.com/mstrum/robinhood-python)
 
 # Future development
+
+## General ideas
 1. Coverage.py for testing framework
 1. Per Carol Willing talk
    1. Make spelling test with exception words
@@ -60,3 +95,16 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Use Corey Schafer password tutorial
 1. Robinhood interface to Google sheets
 1. RODCA with LaTeX
+1. Do some fun stats first just for fun
+   1. Those goons at instutions don't know DSP
+   1. The patterns are there
+1. Cast a portfolio into a Pandas dataframe then plot
+1. Make an AAAAAA GSheet and update the associated GDrive document ledger
+1. Leisurely review paper notebook notes for more ideas
+1. See other investing references from urls on Google Drive
+
+## Numerical analysis
+1. [RealPython.com Pandas optimization](https://realpython.com/fast-flexible-pandas/)
+1. Review references
+1. Pandas/matplotlib/numpy tutorial videos on iPad while getting ready
+1. Other references from Python training logs on Google Drive
