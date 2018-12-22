@@ -1,4 +1,7 @@
 // alnoki's development environment preferences - enjoy!
+
+// Settings are specified if they defer from defaults
+// See default workspace settings for more info
 {
 
     // General viewing
@@ -13,10 +16,11 @@
     "breadcrumbs.enabled": true,
 
 
-    // Indentation/line width
+    // Whitespace
     "editor.renderWhitespace": "all",
-    "editor.trimAutoWhitespace": true,
     "files.trimTrailingWhitespace": true,
+
+    // Line width
     // Per PEP8, for comments (71) and code (79)
     "[python]": {
         "editor.rulers": [71, 79],
@@ -24,7 +28,7 @@
     },
     "[markdown]": {
         "editor.rulers": [79],
-        "editor.tabSize": 4,
+        "editor.tabSize": 3,
     },
     // If not .py or .md, assume .rst file
     "editor.rulers": [79],
@@ -34,7 +38,6 @@
     // Linting
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
-    "python.linting.enabled": true,
     // Disable errors about literal carriage returns
     "restructuredtext.linter.extraArgs": [
         "--ignore D002",
@@ -42,8 +45,18 @@
     ],
 
 
+    // Testing, see VS Code unit test documentation
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.pyTestEnabled": true,
+    "python.unitTest.nosetestsEnabled": false,
+
+
     // Privacy related
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "gitlens.advanced.telemetry.enabled": false,
+
+
+    // Version control
+    "git.autofetch": true,
 }

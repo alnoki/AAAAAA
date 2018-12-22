@@ -8,9 +8,20 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://realpython.com/documenting-python-code/
 1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
 
+## Immediate modifications
+1. Py like you reST, reST like you Py
+   1. Footnote to Tom C Bryan
+   1. Be able to get blank computer to environment stage via QuickStart
+1. Intersphinx to footnotes on documentation page
+1. Index under first Python tutorial step
+   1. If the above step didn't work, then it appears your machine didn't come
+      preloaded with Python. At this point you have two options
+         1. Quit
+         1. Install anaconda
+            1. And follow the quickstart guide (when it becomes available)
+
 ## .rst read-through
 1. Continue on documentation page
-1. Intersphinx to footnotes on documentation page
 1. Verify admonitions are all lowercase
 1. Verify 3-space indent in rst files, and with nested lists
 1. Verify all AAAAAA references are to glossary term
@@ -22,7 +33,17 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. VS Code bookmarks extension
 1. 2 sections
    1. Basic setup has minimal needed for a transaction to be declared
+      1. Just get VS Code going and clone/install .yaml
+      1. Explain activating the environment on Windows vs Mac
+      1. Explain selecting interpreter as user setting, etc.
+      1. `Conda install -e` (if it exists) last, else `pip install -e`
+      1. Say that can do developer setup next too
    1. For Developers has everything that alnoki uses, and says so
+      1. Should be the basic guide, plus extensions added
+      1. Explain the VS Code workspace settings
+      1. Links to more tasks pages as they become available
+         1. They should link back too
+      1. Talk about how to test/document code as task guides become available
 1. .yaml creation in common tasks links to setup
 1. Clear .gitignore and re-make it from scratch
 1. Install :xref:`Anaconda`, which should include :xref:`VS Code`
@@ -45,6 +66,10 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Install extensions per extension page (should be last after)
 1. Make sure .yaml file from before hasn't changed
 1. Index says - having trouble running Python? Try the QuickStart guide
+1. All Jupyter extensions used should be mentioned on tools page
+   1. Is there an equivalen to a .yaml that can keep nbextensions/preferences?
+1. Tools page says to look at references for more information on extensions
+1. Any time a package is added to Conda, add it to tools page under Anaconda
 
 ## Source documentation
 1. Link a Jupyter notebook per Carol Willing video
