@@ -9,6 +9,8 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
 
 ## Immediate modifications
+1. Index should show how to install MiniConda
+   1. Install miniconda https://conda.io/miniconda.html
 1. Py like you reST, reST like you Py
    1. Footnote to Tom C Bryan
    1. Be able to get blank computer to environment stage via QuickStart
@@ -19,6 +21,13 @@ Viewing local build: http://localhost:8000/_build/html/index.html
          1. Quit
          1. Install anaconda
             1. And follow the quickstart guide (when it becomes available)
+1. Extensions section should mention bookmarks extension
+1. Clear .gitignore and re-make it from scratch
+1. All Jupyter extensions used should be mentioned on tools page
+1. Tools page says to look at references for more information on extensions
+1. Any time a package is added to Conda, add it to tools page under Anaconda
+   1. Harvest packages thus far from the QuickStart
+   1. Make a .yaml file eventually
 
 ## .rst read-through
 1. Continue on documentation page
@@ -26,50 +35,71 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Verify 3-space indent in rst files, and with nested lists
 1. Verify all AAAAAA references are to glossary term
 
-# Next tasks
+# QuickStart guide
+Some of these notes were made while trying to do a basic setup on a "virgin"
+Mac.
 
-## QuickStart guide
+Should have an index page that says basic setup is just to try out some simple
+commands. Anything more is a lot of notes that alnoki uses to develop AAAAAA
+on any computer
+
+## Basic setup - done on virgin Mac
+1. Download miniconda
+1. Download AAAAAA .zip from the GitHub repository
+1. Open terminal from inside the downloaded folder
+   1. In Mac open terminal and drag the folder on top of it
+   1. How to do this on windows?
+      1. Check this out when you have access to a windows machine
+1. Type python and hit enter
+1. Make a transaction via interpreter input:
+
+import datetime
+from src.ledger import Transaction
+my_transaction = Transaction(
+    date=datetime.date(1994, 6, 19), total_amount=50, transact_type='Buy',
+    symbol='ALNOKI', num_shares=1)
+my_transaction.symbol
+
+## Building documentation - done on virgin Mac
+1. Install VS Code
+1. Explain the VS Code workspace settings
+1. Introduce the command pallete
+1. Make an integrated terminal
+   1. For Conda to work inside VS Code on Mac:
+      1. "terminal.integrated.shell.osx": "/bin/bash"  // .json setting
+   1. For Conda to work inside VS Code on Windows:
+      1. Must get when have access to Windows machine
+1. Make a miniconda environment
+   1. conda create --name a6 python sphinx sphinx_rtd_theme
+      1. Put in a reference to the conda cheatsheet
+   1. Source activate vs activate the new env, a6
+   1. conda info -e to get path for the interpreter
+   1. which python will show python path, then paste into select interpreter
+      1. /Users/alnoki/miniconda3/envs/a6/bin/python
+1. Install Python extension
+   1. Select interpreter for the path just found
+      // .json setting
+      "python.pythonPath": "/Users/alnoki/miniconda3/envs/a6/bin/python",
+1. Open terminal type git --version
+   1. Mac may say it needs to be downloaded
+   1. Mac Should take care of install via command line tools
+   1. Can also download at https://git-scm.com/downloads
+1. Git clone the repo
+1. Then follow instructions to build documentation from common tasks
+
+## Running a pytest - still need to attempt
+1. conda install pytest pep8 // from inside a6 environment
+1. Install doc8 and other rst extension dependencies per
+   1. https://anaconda.org/anaconda/sphinx_rtd_theme style of command
 1. Jupyter extensions and settings
-1. VS Code bookmarks extension
-1. 2 sections
-   1. Basic setup has minimal needed for a transaction to be declared
-      1. Just get VS Code going and clone/install .yaml
-      1. Explain activating the environment on Windows vs Mac
-      1. Explain selecting interpreter as user setting, etc.
-      1. `Conda install -e` (if it exists) last, else `pip install -e`
-      1. Say that can do developer setup next too
-   1. For Developers has everything that alnoki uses, and says so
-      1. Should be the basic guide, plus extensions added
-      1. Explain the VS Code workspace settings
-      1. Links to more tasks pages as they become available
-         1. They should link back too
-      1. Talk about how to test/document code as task guides become available
-1. .yaml creation in common tasks links to setup
-1. Clear .gitignore and re-make it from scratch
-1. Install :xref:`Anaconda`, which should include :xref:`VS Code`
-1. Install :xref:`VS Code` extensions (on the advanced setup page)
-1. Do environment walkthrough
-1. Make a new AAAAAA conda environment from scratch
-   1. Try installing all possible packages via conda, then forge, then pip
-      1. Per https://anaconda.org/anaconda/sphinx_rtd_theme style of command
-      1. Install those needed for doc8
-      1. If `conda list` shows something as a pip package, try installing in
-         Conda and then `pip uninstall`
-   1. pytest
-   1. restructured text extension
-1. Save the AAAAAA environment in .yaml
-1. Select which interpreter to use - may make a user setting
-1. Clone the AAAAAA repo
-1. `pip install -e` for using package with `pytest` to `dev tasks`
-   1. Should always come after downloading a .yaml or making Conda environment
-   1. Is there a Conda install -e?
-1. Install extensions per extension page (should be last after)
-1. Make sure .yaml file from before hasn't changed
-1. Index says - having trouble running Python? Try the QuickStart guide
-1. All Jupyter extensions used should be mentioned on tools page
-   1. Is there an equivalen to a .yaml that can keep nbextensions/preferences?
-1. Tools page says to look at references for more information on extensions
-1. Any time a package is added to Conda, add it to tools page under Anaconda
+   1. Conda nbextensions install
+   1. Is there an equivalent to a .yaml that can keep nbextensions/preferences?
+1. Run a pytest with the pip install -e or conda install -e equivalent
+   1. Link to pytest test discovery explanation
+1. Install all the extensions and maybe .yaml?
+   1. .yaml could become obsolete
+
+# Next tasks
 
 ## Source documentation
 1. Link a Jupyter notebook per Carol Willing video
