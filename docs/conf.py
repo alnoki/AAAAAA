@@ -319,5 +319,7 @@ xref_links = {
                            url['RealPython'] + 'documenting-python-code/'),
     'open-source': ('open-source', url['Wiki pg'] + 'Open-source_software'),
     'RealPython': ('RealPython.com', url['RealPython']),
+    'AAAAAA-zip-archive': ('AAAAAA repository archive', url['GitHub'] +
+                           'alnoki/AAAAAA/archive/master.zip')
     # New links below, sorted links above
     }

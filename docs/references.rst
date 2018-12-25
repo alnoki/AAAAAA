@@ -72,6 +72,10 @@ Environments
 
    * Documentation for :xref:`Anaconda`
 
+#. :std:doc:`Miniconda<conda:user-guide/install/index>`
+
+   # Abbreviated version of :xref:`Anaconda` that is quick to download
+
 #. :std:doc:`conda:index`
 
    * Command line configurator for :xref:`Anaconda`
@@ -128,6 +132,10 @@ AAAAAA codebase
 #. :xref:`GitHub`
 
    * Online repository for software projects
+
+#. :xref:`AAAAAA-zip-archive`
+
+   * Compressed archive of :xref:`AAAAAA-repo` that is quick to download
 
 
 *************

@@ -39,29 +39,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 Some of these notes were made while trying to do a basic setup on a "virgin"
 Mac.
 
-Should have an index page that says basic setup is just to try out some simple
-commands. Anything more is a lot of notes that alnoki uses to develop AAAAAA
-on any computer
-
-## Basic setup - done on virgin Mac
-1. Download miniconda
-1. Download AAAAAA .zip from the GitHub repository
-1. Open terminal from inside the downloaded folder
-   1. In Mac open terminal and drag the folder on top of it
-   1. How to do this on windows?
-      1. Check this out when you have access to a windows machine
-1. Type python and hit enter
-1. Make a transaction via interpreter input:
-
-import datetime
-from src.ledger import Transaction
-my_transaction = Transaction(
-    date=datetime.date(1994, 6, 19), total_amount=50, transact_type='Buy',
-    symbol='ALNOKI', num_shares=1)
-my_transaction.symbol
-
 ## Building documentation - done on virgin Mac
-1. Install VS Code
 1. Explain the VS Code workspace settings
 1. Introduce the command pallete
 1. Make an integrated terminal
@@ -70,7 +48,7 @@ my_transaction.symbol
    1. For Conda to work inside VS Code on Windows:
       1. Must get when have access to Windows machine
 1. Make a miniconda environment
-   1. conda create --name a6 python sphinx sphinx_rtd_theme
+   1. conda create --name a6 python pep8 sphinx sphinx_rtd_theme
       1. Put in a reference to the conda cheatsheet
    1. Source activate vs activate the new env, a6
    1. conda info -e to get path for the interpreter
@@ -85,6 +63,8 @@ my_transaction.symbol
    1. Mac Should take care of install via command line tools
    1. Can also download at https://git-scm.com/downloads
 1. Git clone the repo
+1. conda install -c conda-forge doc8
+1. Install reST extension
 1. Then follow instructions to build documentation from common tasks
 
 ## Running a pytest - still need to attempt

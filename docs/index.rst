@@ -81,6 +81,14 @@ Indices and tables
 .. * :ref:`modindex` - should go between genindex and search when ready
 
 .. toctree::
+   :caption: QuickStart
+   :maxdepth: 2
+   :numbered:
+
+   quickstart/basic
+   quickstart/documentation
+
+.. toctree::
    :caption: Development
    :maxdepth: 2
    :numbered:
