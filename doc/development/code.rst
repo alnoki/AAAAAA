@@ -40,7 +40,7 @@ importance:
 
 #. ``src``: Source code
 #. ``test``: :std:doc:`pytest <pytest:index>` modules for testing source code
-#. ``docs``: Documentation created via
+#. ``doc``: Documentation created via
    :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
 #. ``nbs``: :xref:`Jupyter Notebook <Jupyter>` documentation of ``src`` and
    ``dev`` (nbs = ``notebooks``)

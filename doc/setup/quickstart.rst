@@ -1,14 +1,14 @@
-###########
-Basic setup
-###########
+##########
+QuickStart
+##########
 
 If you just want to try out some basic :term:`AAAAAA` functionality, then
 follow the below steps. Afterwards, if you want to re-create the development
 environment that :xref:`alnoki <alnoki-repos>` uses, there are some additional
 steps for you on the following pages
 
-#. Download the :std:doc:`Miniconda variant <conda:user-guide/install/index>`
-   of :xref:`Anaconda`, which will give you quick access to :xref:`Python` if
+#. :std:doc:`Download Miniconda <conda:user-guide/install/download>` (a variant
+   of :xref:`Anaconda`), which will give you quick access to :xref:`Python` if
    your machine did not come pre-loaded with it
 #. Download the :xref:`AAAAAA-zip-archive` and open the command line from
    inside the root directory of the project
@@ -24,5 +24,7 @@ steps for you on the following pages
 #. Play around with some commands like::
 
        my_transaction.symbol  # What was that symbol again?
+
+.. Example code here should not require any packages beyond base miniconda
 
 Congratulations!!!

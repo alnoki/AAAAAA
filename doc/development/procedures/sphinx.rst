@@ -151,7 +151,9 @@ Building documentation
 
 Per :xref:`Willing-Sphinx`:
 
-#. Change working directory to documentation root directory
+#. :std:doc:`Activate<conda:user-guide/cheatsheet>` the
+   :ref:`a6 environment <dev_environment>` from inside the documentation root
+   directory
 #. From command line:
 
    * :command:`make html` to create new documentation files

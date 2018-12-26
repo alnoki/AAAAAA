@@ -320,6 +320,15 @@ xref_links = {
     'open-source': ('open-source', url['Wiki pg'] + 'Open-source_software'),
     'RealPython': ('RealPython.com', url['RealPython']),
     'AAAAAA-zip-archive': ('AAAAAA repository archive', url['GitHub'] +
-                           'alnoki/AAAAAA/archive/master.zip')
+                           'alnoki/AAAAAA/archive/master.zip'),
     # New links below, sorted links above
+    'VS-Code-settings': ("VS Code settings", url['VS Code doc'] +
+                         'getstarted/settings'),
+    'VS-Code-terminal': ("integrated terminal", url['VS Code doc'] +
+                         'editor/integrated-terminal'),
+    'command-pallete': ("command pallete", url['VS Code doc'] +
+                        'getstarted/userinterface#_command-palette'),
+    'VS-Code-interpreter':
+        ("select Python interpreter", url['VS Code doc'] +
+         'python/environments#_select-and-activate-an-environment')
     }

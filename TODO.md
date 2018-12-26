@@ -7,57 +7,36 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 ## Lunch-time reading
 1. https://realpython.com/documenting-python-code/
 1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
+1. Git tutorial/user guide
 
 ## Immediate modifications
-1. Index should show how to install MiniConda
-   1. Install miniconda https://conda.io/miniconda.html
+1. File away references in conf.py
 1. Py like you reST, reST like you Py
    1. Footnote to Tom C Bryan
    1. Be able to get blank computer to environment stage via QuickStart
 1. Intersphinx to footnotes on documentation page
-1. Index under first Python tutorial step
-   1. If the above step didn't work, then it appears your machine didn't come
-      preloaded with Python. At this point you have two options
-         1. Quit
-         1. Install anaconda
-            1. And follow the quickstart guide (when it becomes available)
 1. Extensions section should mention bookmarks extension
 1. Clear .gitignore and re-make it from scratch
 1. All Jupyter extensions used should be mentioned on tools page
 1. Tools page says to look at references for more information on extensions
+1. Figure out integrated terminal setting for windows
 1. Any time a package is added to Conda, add it to tools page under Anaconda
    1. Harvest packages thus far from the QuickStart
    1. Make a .yaml file eventually
+1. Re-do git author history via
+   1. https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi
 
 ## .rst read-through
-1. Continue on documentation page
+1. Continue on documentation page, after first pass on QuickStart
 1. Verify admonitions are all lowercase
 1. Verify 3-space indent in rst files, and with nested lists
 1. Verify all AAAAAA references are to glossary term
 
-# QuickStart guide
+# Developer's setup
 Some of these notes were made while trying to do a basic setup on a "virgin"
 Mac.
 
-## Building documentation - done on virgin Mac
-1. Explain the VS Code workspace settings
-1. Introduce the command pallete
-1. Make an integrated terminal
-   1. For Conda to work inside VS Code on Mac:
-      1. "terminal.integrated.shell.osx": "/bin/bash"  // .json setting
-   1. For Conda to work inside VS Code on Windows:
-      1. Must get when have access to Windows machine
-1. Make a miniconda environment
-   1. conda create --name a6 python pep8 sphinx sphinx_rtd_theme
-      1. Put in a reference to the conda cheatsheet
-   1. Source activate vs activate the new env, a6
-   1. conda info -e to get path for the interpreter
-   1. which python will show python path, then paste into select interpreter
-      1. /Users/alnoki/miniconda3/envs/a6/bin/python
-1. Install Python extension
-   1. Select interpreter for the path just found
-      // .json setting
-      "python.pythonPath": "/Users/alnoki/miniconda3/envs/a6/bin/python",
+## Documentating - done on virgin Mac
 1. Open terminal type git --version
    1. Mac may say it needs to be downloaded
    1. Mac Should take care of install via command line tools
@@ -65,9 +44,12 @@ Mac.
 1. Git clone the repo
 1. conda install -c conda-forge doc8
 1. Install reST extension
-1. Then follow instructions to build documentation from common tasks
+1. Then follow instructions to build documentation from development procedures
+1. Make sure to change git config properly
+   1. https://www.git-tower.com/learn/git/faq/change-author-name-email
+   1. https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
 
-## Running a pytest - still need to attempt
+## Testing - still need to attempt
 1. conda install pytest pep8 // from inside a6 environment
 1. Install doc8 and other rst extension dependencies per
    1. https://anaconda.org/anaconda/sphinx_rtd_theme style of command
@@ -78,6 +60,11 @@ Mac.
    1. Link to pytest test discovery explanation
 1. Install all the extensions and maybe .yaml?
    1. .yaml could become obsolete
+
+## Jupyter
+1. Will need to conda install
+1. Have a link to the tools page for notebook extensions
+1. .yaml equivalent of Jupyter notebooks?
 
 # Next tasks
 

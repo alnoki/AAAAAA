@@ -1,6 +1,6 @@
-############
-Common tasks
-############
+##########
+Procedures
+##########
 
 .. toctree::
    :caption: Contents

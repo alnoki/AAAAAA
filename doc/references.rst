@@ -74,7 +74,7 @@ Environments
 
 #. :std:doc:`Miniconda<conda:user-guide/install/index>`
 
-   # Abbreviated version of :xref:`Anaconda` that is quick to download
+   * Abbreviated version of :xref:`Anaconda` that is quick to download
 
 #. :std:doc:`conda:index`
 

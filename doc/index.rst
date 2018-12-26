@@ -32,6 +32,11 @@ A bit of Python can be executed on most computers with minimal effort, using
    * If using :xref:`Linux`, you probably already know where to look...
 
 #. Type :command:`python` and hit :kbd:`return`
+
+   * If this doesn't work then you probably don't have :xref:`Python`, but you
+     can get it by downloading
+     :std:doc:`Miniconda <conda:user-guide/install/download>`
+
 #. Copy and paste the below contents to the command line then hit
    :kbd:`return`::
 
@@ -80,13 +85,18 @@ Indices and tables
 
 .. * :ref:`modindex` - should go between genindex and search when ready
 
+
+********
+Contents
+********
+
 .. toctree::
-   :caption: QuickStart
+   :caption: Setup
    :maxdepth: 2
    :numbered:
 
-   quickstart/basic
-   quickstart/documentation
+   setup/quickstart
+   setup/developer
 
 .. toctree::
    :caption: Development
@@ -97,5 +107,5 @@ Indices and tables
    development/tools
    development/code
    development/documentation
-   development/tasks/index
+   development/procedures/index
    references
