@@ -1,6 +1,9 @@
-##########
-QuickStart
-##########
+.. _quickstart:
+
+
+###########
+Quick start
+###########
 
 If you just want to try out some basic :term:`AAAAAA` functionality, then
 follow the below steps. Afterwards, if you want to re-create the development

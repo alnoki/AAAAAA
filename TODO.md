@@ -3,51 +3,46 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 # General review
 
 ## Out-loud proof reading notes
-
-## Lunch-time reading
-1. https://realpython.com/documenting-python-code/
-1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
-1. Git tutorial/user guide
-
-## Immediate modifications
-1. File away references in conf.py
-1. Py like you reST, reST like you Py
-   1. Footnote to Tom C Bryan
-   1. Be able to get blank computer to environment stage via QuickStart
-1. Intersphinx to footnotes on documentation page
-1. Extensions section should mention bookmarks extension
-1. Clear .gitignore and re-make it from scratch
-1. All Jupyter extensions used should be mentioned on tools page
-1. Tools page says to look at references for more information on extensions
-1. Figure out integrated terminal setting for windows
-1. Any time a package is added to Conda, add it to tools page under Anaconda
-   1. Harvest packages thus far from the QuickStart
-   1. Make a .yaml file eventually
-1. Re-do git author history via
-   1. https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi
-
-## .rst read-through
-1. Continue on documentation page, after first pass on QuickStart
+1. Should be done with browser side-by-side with VS Code
 1. Verify admonitions are all lowercase
 1. Verify 3-space indent in rst files, and with nested lists
 1. Verify all AAAAAA references are to glossary term
 
-# Developer's setup
-Some of these notes were made while trying to do a basic setup on a "virgin"
-Mac.
+## Referential reading reviews (RRRs)
+1. https://realpython.com/documenting-python-code/
+1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
+1. Git tutorial/user guide
 
-## Documentating - done on virgin Mac
+# Developer's setup
+1. Some of these notes were made while trying to do a basic setup on a "virgin"
+Mac.
+1. After making each section, should split them into separate pages
+   1. Main page should give an explanation of structure, where to find
+      references, etc.
+
+
+## Documenting - done on virgin Mac
+1. Windows .bat file stil filepath still the same if using miniconda?
+1. Try the auto-activate a6 on Mac via similar terminal args
 1. Open terminal type git --version
    1. Mac may say it needs to be downloaded
    1. Mac Should take care of install via command line tools
    1. Can also download at https://git-scm.com/downloads
 1. Git clone the repo
+   1. Say how it should have the proper settings in the .json file
 1. conda install -c conda-forge doc8
 1. Install reST extension
 1. Then follow instructions to build documentation from development procedures
 1. Make sure to change git config properly
    1. https://www.git-tower.com/learn/git/faq/change-author-name-email
    1. https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+1. Should check username on commit before pushing
+   1. Change back to old username if need be
+1. Any time a package is added to Conda, add it to tools page under Anaconda
+   1. Harvest packages thus far from the QuickStart
+   1. Make a .yaml file eventually
+1. Re-do git author history via
+   1. https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi
 
 ## Testing - still need to attempt
 1. conda install pytest pep8 // from inside a6 environment
@@ -65,6 +60,7 @@ Mac.
 1. Will need to conda install
 1. Have a link to the tools page for notebook extensions
 1. .yaml equivalent of Jupyter notebooks?
+1. All Jupyter extensions used should be mentioned on tools page
 
 # Next tasks
 

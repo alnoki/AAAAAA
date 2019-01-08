@@ -155,7 +155,7 @@ General
    * Recommended practices for documenting :xref:`Python` software from
    * Tips and examples from :xref:`RealPython`
 
-# :pep:`257`
+#. :pep:`257`
 
    * Official conventions for :ref:`docstrings <python:tut-docstrings>`
 
@@ -290,22 +290,22 @@ Managing references
 reStructuredText
 ================
 
-#. :std:doc:`usage/restructuredtext/basics`
+#. :std:doc:`sphinx:usage/restructuredtext/basics`
 
    * :std:doc:`Sphinx <sphinx:intro>` explanation of
-     :std:doc:`reST <usage/restructuredtext/basics>` markup language
+     :std:doc:`reST <sphinx:usage/restructuredtext/basics>` markup language
 
 #. :xref:`reST-cheatsheet`
 
-   * Quick reference for :std:doc:`reST <usage/restructuredtext/basics>` usage
+   * Quick reference for :std:doc:`reST <sphinx:usage/restructuredtext/basics>` usage
 
 #. :xref:`reST-documentation`
 
-   * Official :std:doc:`reST <usage/restructuredtext/basics>` documentation
+   * Official :std:doc:`reST <sphinx:usage/restructuredtext/basics>` documentation
 
 #. :xref:`quick-reST`
 
-   * Quick reference with :std:doc:`reST <usage/restructuredtext/basics>`
+   * Quick reference with :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
      examples
 
 #. :xref:`reST-list-indentation`
@@ -382,6 +382,18 @@ VS Code general
 
    * Tutorial for using :std:doc:`pytest <pytest:index>` with :xref:`VS-Code`
 
+#. :xref:`VS-Code-settings`
+
+   * Explanation of user configurations via ``settings.json``
+
+#. :xref:`VS Code integrated terminal <VS-Code-terminal>`
+
+   * Description of using a terminal inside :xref:`VS-Code`
+
+#. :xref:`VS Code command pallete <command-pallete>`
+
+   * Direct input for various development commands in :xref:`VS-Code`
+
 VS Code extensions
 ==================
 
@@ -393,9 +405,17 @@ VS Code extensions
 
    * Syntax highlighting, autocomplete, etc.
 
+#. :xref:`Python interpreter <VS-Code-interpreter>`
+
+   * Selecting the version of :xref:`Python` to use in :xref:`VS-Code`
+
 #. :xref:`Test-explorer-UI`
 
    * Graphical interface for using :std:doc:`pytest <pytest:index>`
+
+#. :xref:`VS-Code-bookmarks-ext`
+
+   * Tool for marking and navigating to lines in code
 
 #. :xref:`RST-preview-ext`
 

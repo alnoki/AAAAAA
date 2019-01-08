@@ -29,7 +29,9 @@ Per :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`:
 #. Inspect the :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
    mapping, usually located under the root, via
 
-   :command:`python -msphinx.ext.intersphinx http://www.sphinx-doc.org/objects.inv`
+   .. code-block:: bash
+
+      python -msphinx.ext.intersphinx http://www.sphinx-doc.org/objects.inv
 
    * Try this in a terminal that can be maximized to full screen
    * Most times the root will be at ``.io/en/latest/`` or ``.com/en/latest``
@@ -152,7 +154,7 @@ Building documentation
 Per :xref:`Willing-Sphinx`:
 
 #. :std:doc:`Activate<conda:user-guide/cheatsheet>` the
-   :ref:`a6 environment <dev_environment>` from inside the documentation root
+   :ref:`a6 environment <dev-environment>` from inside the documentation root
    directory
 #. From command line:
 

@@ -18,6 +18,10 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 #. Legacy conventions shant prevent the adoption of a new worthwhile philosopy
 #. Play around and "whiteboard" code during initial stages [#]_
 #. Read documentation out loud [#]_
+#. :xref:`Py <Python>` like you
+   :std:doc:`reST <sphinx:usage/restructuredtext/basics>`,
+   :std:doc:`reST <sphinx:usage/restructuredtext/basics>` like you
+   :xref:`Py <Python>` [#]_
 
 
 ***************
@@ -39,3 +43,7 @@ Need some more inspiration? Try::
 .. [#] From a comment by Brett Glasner, that whiteboarding is the most
    fun part of software design
 .. [#] Recommeded in :xref:`Willing-Sphinx`
+.. [#] Adapted from Tom C. Bryan's suggestion (fly like you test, test like you
+   fly) that flight testing and flight operations should be identical, to
+   indicate that software development in practice should match procedural
+   documentation

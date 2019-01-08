@@ -19,6 +19,7 @@ All the software tools used to create :term:`AAAAAA` are open source:
    * :xref:`RST-preview-ext` [#]_
    * :xref:`Test-explorer-UI`
    * :xref:`GitLens`
+   * :xref:`VS-Code-bookmarks-ext`
 
 #. :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
    is a documentation engine that helped create this website!
@@ -30,6 +31,10 @@ All the software tools used to create :term:`AAAAAA` are open source:
 
       * :ref:`Intersphinx <intersphinx-linking>`
       * :ref:`xref <xref-linking>`
+
+.. tip::
+   See :ref:`references` if you want more information about the above
+   extensions
 
 .. rubric:: Footnotes
 

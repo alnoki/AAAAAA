@@ -32,7 +32,8 @@ Documentation is written primarily according to the
      :xref:`nested lists <reST-list-indentation>`)
    * Lines should be a maximum length of 79 characters
    * 2-line whitespace for the two top-level titles
-   * Use a single, unescaped space for footnotes
+   * Use a single, unescaped space before
+     :std:doc:`footnotes <sphinx:usage/restructuredtext/basics>`
 
       .. code-block:: rest
 
