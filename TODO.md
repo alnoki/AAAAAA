@@ -21,8 +21,12 @@ Mac.
       references, etc.
 
 
-## Documenting - done on virgin Mac
-1. Windows .bat file stil filepath still the same if using miniconda?
+## Documenting
+1. Rename this section documenting with Sphinx?
+1. Make sure that all extensions on the extension page end up getting installed
+      1. Can probably list bookmarks under the Install Visual Studio code step
+      1. Git Lens after making sure that git version is okay
+      1. Testing viewer in the pytest section
 1. Try the auto-activate a6 on Mac via similar terminal args
 1. Open terminal type git --version
    1. Mac may say it needs to be downloaded
@@ -34,8 +38,13 @@ Mac.
 1. Install reST extension
 1. Then follow instructions to build documentation from development procedures
 1. Make sure to change git config properly
+   1. This should point to a version control section in dev procedures
    1. https://www.git-tower.com/learn/git/faq/change-author-name-email
    1. https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+   1. https://stackoverflow.com/questions/12254076/how-do-i-show-my-global-git-config/12254106
+      1. git config --edit --global
+      1. Alternatively, git config --global user.name "alnoki the user"
+   1. Should also make sure all windows are saved and closed before committing
 1. Should check username on commit before pushing
    1. Change back to old username if need be
 1. Any time a package is added to Conda, add it to tools page under Anaconda
@@ -43,6 +52,7 @@ Mac.
    1. Make a .yaml file eventually
 1. Re-do git author history via
    1. https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi
+   1. Can then add to version control in dev procedures section
 
 ## Testing - still need to attempt
 1. conda install pytest pep8 // from inside a6 environment
@@ -101,6 +111,7 @@ Mac.
 # Future development
 
 ## General ideas
+1. See all notebook entries since Dec 26
 1. Coverage.py for testing framework
 1. Per Carol Willing talk
    1. Make spelling test with exception words
