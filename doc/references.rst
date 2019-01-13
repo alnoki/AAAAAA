@@ -84,9 +84,13 @@ Environments
 
    * Quick reference for common :std:doc:`Conda <conda:index>` commands
 
-#. :xref:`Change-bash-prompt`
+#. :ref:`Anaconda Prompt <conda:starting-conda>`
 
-   * How to change :program:`bash` prompt to a custom string like ``$``
+   * Invocation methods for :std:doc:`Conda <conda:index>`
+
+
+OS-specific
+============
 
 #. :xref:`Mac OS<Mac>`
 
@@ -99,6 +103,19 @@ Environments
 #. :xref:`Linux OS family<Linux>`
 
    * :xref:`Wikipedia` article about the :xref:`Linux OS family<Linux>`
+
+#. :xref:`cmd.exe-invocation`
+
+   * :xref:`Windows` command line
+
+#. :xref:`bash-man-page`
+
+   * Command line for :xref:`Mac` and :xref:`Linux`
+
+#. :xref:`Change-bash-prompt`
+
+   * How to change :xref:`bash <bash-man-page>` prompt to a custom string like
+     ``$``
 
 Testing with pytest
 ===================

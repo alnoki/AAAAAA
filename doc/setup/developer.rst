@@ -18,17 +18,22 @@ Documenting
 #. Install :xref:`VS-Code`
 #. Update the :xref:`VS-Code-terminal` ``USER SETTINGS`` in
    :xref:`settings.json <VS-Code-settings>` so that you can use
-   :std:doc:`conda:index`
+   :ref:`Conda <conda:starting-conda>`
 
-   * On a :xref:`Mac`, add:
+   * On a :xref:`Mac`, add the following options to configure
+     :xref:`bash login mode invocation<bash-man-page>`:
 
      .. code-block:: json
 
         {
-            "terminal.integrated.shell.osx": "/bin/bash"
+            "terminal.integrated.shell.osx": "/bin/bash",
+            "terminal.integrated.shellArgs.osx": [ "-l" ],
         }
 
-   * On :xref:`Windows`, add (adapted for your username and machine):
+   * On :xref:`Windows`, use the ``/K``
+     :xref:`cmd.exe option <cmd.exe-invocation>` to run
+     :ref:`Anaconda Prompt <conda:starting-conda>` (adapted for your username
+     and machine):
 
      .. code-block:: json
 
@@ -50,22 +55,33 @@ Documenting
 #. Configure the :xref:`VS-Code-terminal` to automatically
    :std:doc:`activate <conda:user-guide/cheatsheet>` ``a6``
 
-    * On :xref:`Windows`, append ``"a6"`` to the
-      ``"terminal.integrated.shellArgs.windows"`` setting from above:
+   * On a :xref:`Mac`, there is no :xref:`bash <bash-man-page>` equivalent to
+     the ``/K`` :xref:`cmd.exe option <cmd.exe-invocation>`, so the easiest
+     way to :std:doc:`activate <conda:user-guide/cheatsheet>` ``a6`` is to add
+     the following line to :xref:`~/.bash_profile <bash-man-page>`, which will
+     execute any time a :xref:`bash login mode <bash-man-page>` session starts
+     (even outside of the
+     :xref:`VS Code integrated terminal <VS-Code-terminal>`):
 
-      .. code-block:: json
-         :emphasize-lines: 4
+     .. code-block:: text
 
-         {
-             "terminal.integrated.shellArgs.windows": ["/K",
-                 "C:\\Users\\alnoki\\AppData\\Local\\Continuum\\miniconda3\\Scripts\\activate.bat",
-                 "a6"],
-         }
+        # Activate a6 conda environment when bash login session starts
+        source activate a6
 
-#. Install the :xref:`VS Code Python extension <VS-Code-Python-ext>`
+   * On :xref:`Windows`, append ``"a6"`` to the
+     ``"terminal.integrated.shellArgs.windows"`` setting from above:
 
-#. If, for some reason, you don't want the :xref:`VS-Code-terminal` to
-   automatically :std:doc:`activate <conda:user-guide/cheatsheet>` ``a6``, use
+     .. code-block:: json
+        :emphasize-lines: 4
+
+        {
+            "terminal.integrated.shellArgs.windows": ["/K",
+                "C:\\Users\\alnoki\\AppData\\Local\\Continuum\\miniconda3\\Scripts\\activate.bat",
+                "a6"],
+        }
+
+
+#. Install the :xref:`VS Code Python extension <VS-Code-Python-ext>` and use
    the :xref:`command-pallete` to
    :xref:`select the intepreter <VS-Code-interpreter>` for ``a6``
 
@@ -74,15 +90,15 @@ Documenting
      SETTINGS`` in :xref:`settings.json <VS-Code-settings>`, make sure to
      put it in ``USER SETTINGS`` instead
 
-    * On a :xref:`Mac`, this should look like:
+   * On a :xref:`Mac`, this should look like:
 
      .. code-block:: json
 
         {
-            "python.pythonPath": "/Users/alnoki/miniconda3/envs/a6/bin/python"
+            "python.pythonPath": "~/miniconda3/envs/a6/bin/python"
         }
 
-    * On :xref:`Windows`, this should look like:
+   * On :xref:`Windows`, this should look like:
 
      .. code-block:: json
 

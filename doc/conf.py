@@ -269,7 +269,7 @@ xref_links = {
         ("Test explorer UI extension", url['VS Code ext'] +
          'LittleFoxTeam.vscode-python-test-adapter'),
     'VS-Code': ("Visual Studio Code", 'https://code.visualstudio.com'),
-    'Jupyter': ("Project Jupyter", 'http://jupyter.org'),
+    'Jupyter': ("Project Jupyter", 'https://jupyter.org'),
     'VS-Code-Python-tutorial':
         ("VS Code Python tutorial", url['VS Code doc'] + 'languages/python'),
     'VS-Code-unit-testing':
@@ -332,5 +332,7 @@ xref_links = {
          'python/environments#_select-and-activate-an-environment'),
     'VS-Code-bookmarks-ext': ("Bookmarks extension", url['VS Code ext'] +
                               'alefragnani.Bookmarks'),
+    'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
+    'bash-man-page': ("bash shell manual", 'https://linux.die.net/man/1/bash'),
     # New links below, sorted links above
     }

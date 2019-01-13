@@ -3,7 +3,6 @@
 // Settings are specified if they defer from defaults
 // See default workspace settings for more info
 {
-
     // General viewing
     "workbench.colorTheme": "Default Dark+",
     "editor.tokenColorCustomizations": {
@@ -19,6 +18,7 @@
     // Whitespace
     "editor.renderWhitespace": "all",
     "files.trimTrailingWhitespace": true,
+
 
     // Line width
     // Per PEP8, for comments (71) and code (79)

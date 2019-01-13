@@ -1,3 +1,4 @@
+
 Viewing local build: http://localhost:8000/_build/html/index.html
 
 # General review
@@ -22,12 +23,11 @@ Mac.
 
 
 ## Documenting
-1. Rename this section documenting with Sphinx?
+1. Get Windows equivalent to ~/user_folder and shorten paths to one line
 1. Make sure that all extensions on the extension page end up getting installed
       1. Can probably list bookmarks under the Install Visual Studio code step
       1. Git Lens after making sure that git version is okay
       1. Testing viewer in the pytest section
-1. Try the auto-activate a6 on Mac via similar terminal args
 1. Open terminal type git --version
    1. Mac may say it needs to be downloaded
    1. Mac Should take care of install via command line tools
@@ -37,6 +37,7 @@ Mac.
 1. conda install -c conda-forge doc8
 1. Install reST extension
 1. Then follow instructions to build documentation from development procedures
+      1. Add doc/_static folder in case a build error comes up
 1. Make sure to change git config properly
    1. This should point to a version control section in dev procedures
    1. https://www.git-tower.com/learn/git/faq/change-author-name-email
