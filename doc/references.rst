@@ -6,15 +6,13 @@ References
 ##########
 
 This list contains references found throughout :term:`AAAAAA`, which are
-managed via two :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`
+managed via two :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`:
 
-   #. :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
+.. csv-table::
+   :header: "Extension", "Usage instructions"
 
-      * See :ref:`intersphinx-linking`
-
-   #. :xref:`xref <xref-ext>`
-
-      * See :ref:`xref-linking`
+   :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`, :ref:`intersphinx-linking`
+   :xref:`xref <xref-ext>`, :ref:`xref-linking`
 
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
@@ -407,7 +405,7 @@ VS Code general
 
    * Description of using a terminal inside :xref:`VS-Code`
 
-#. :xref:`VS Code command pallete <command-pallete>`
+#. :xref:`VS Code command palette <command-palette>`
 
    * Direct input for various development commands in :xref:`VS-Code`
 

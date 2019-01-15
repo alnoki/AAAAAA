@@ -2,6 +2,46 @@
 Sphinx
 ######
 
+.. _building-documentation:
+
+
+**********************
+Building documentation
+**********************
+
+Per :xref:`Willing-Sphinx`:
+
+#. :std:doc:`Activate<conda:user-guide/cheatsheet>` the
+   :ref:`a6 environment <dev-environment>` from inside the documentation root
+   directory if it is not already active
+#. From the :xref:`VS-Code-terminal`:
+
+   * :command:`make html` to create new documentation files
+   * :command:`python -m http.server` to start running a website server
+   * Just start one server, lest you incur an :xref:`http-socket-error`
+
+#. Open http://localhost:8000/_build/html/index.html in a browser
+
+   * Refresh after making a new build to load the changes
+
+#. :command:`make clean` to clear files before :ref:`committing <committing>`
+
+.. note::
+   The first time you perform this procedure you may see a warning about a
+   ``_static`` directory. If that's the case, simply create a blank on in the
+   documentation root directory
+
+.. tip::
+   Run :command:`make linkcheck` occasionally to verify that links in the
+   project are valid references
+
+.. warning::
+   The :xref:`RST-preview-ext` offers live rendering, but it is not as reliable
+   as the above procedure. For example, it fails to properly render
+   :std:doc:`Intersphinx references<sphinx:usage/extensions/intersphinx>`
+
+.. _managing-references:
+
 
 *******************
 Managing references
@@ -144,35 +184,3 @@ Usage instructions are per :xref:`xref-ext`:
    batches
 
 
-******************
-Project management
-******************
-
-Building documentation
-======================
-
-Per :xref:`Willing-Sphinx`:
-
-#. :std:doc:`Activate<conda:user-guide/cheatsheet>` the
-   :ref:`a6 environment <dev-environment>` from inside the documentation root
-   directory
-#. From command line:
-
-   * :command:`make html` to create new documentation files
-   * :command:`python -m http.server` to start running a website server
-   * Just start one server, lest you incur an :xref:`http-socket-error`
-
-#. Open http://localhost:8000/_build/html/index.html in a browser
-
-   * Refresh after making a new build to load the changes
-
-#. :command:`make clean` to clear out old build files before committing
-
-.. tip::
-   Run :command:`make linkcheck` occasionally to verify that links in the
-   project are valid references
-
-.. warning::
-   The :xref:`RST-preview-ext` offers live rendering, but it is not as reliable
-   as the above procedure. For example, it fails to properly render
-   :std:doc:`Intersphinx references<sphinx:usage/extensions/intersphinx>`

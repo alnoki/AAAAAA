@@ -18,21 +18,29 @@
     // Whitespace
     "editor.renderWhitespace": "all",
     "files.trimTrailingWhitespace": true,
+    "editor.detectIndentation": false,
 
 
-    // Line width
+    // Line/tab width
     // Per PEP8, for comments (71) and code (79)
     "[python]": {
         "editor.rulers": [71, 79],
         "editor.tabSize": 4,
     },
+    "[restructuredtext]": {
+        "editor.rulers": [79],
+        "editor.tabSize": 3,
+    },
     "[markdown]": {
         "editor.rulers": [79],
         "editor.tabSize": 3,
     },
-    // If not .py or .md, assume .rst file
-    "editor.rulers": [79],
-    "editor.tabSize": 3,
+    "[jsonc]":{
+        "editor.tabSize": 4,
+    },
+    "[json]":{
+        "editor.tabSize": 4,
+    },
 
 
     // Linting

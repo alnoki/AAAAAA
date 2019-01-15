@@ -7,3 +7,4 @@ Procedures
    :maxdepth: -1
 
    sphinx
+   git

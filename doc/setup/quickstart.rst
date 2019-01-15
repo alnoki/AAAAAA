@@ -13,8 +13,9 @@ steps for you on the following pages
 #. :std:doc:`Download Miniconda <conda:user-guide/install/download>` (a variant
    of :xref:`Anaconda`), which will give you quick access to :xref:`Python` if
    your machine did not come pre-loaded with it
-#. Download the :xref:`AAAAAA-zip-archive` and open the command line from
-   inside the root directory of the project
+#. Download the :xref:`AAAAAA-zip-archive`
+#. :ref:`Start up Conda <conda:starting-conda>` and navigate to the root
+   directory of the :xref:`archive you just downloaded <AAAAAA-zip-archive>`
 #. Type :command:`python` and hit :kbd:`return`
 #. Copy-paste the following and hit :kbd:`return`::
 

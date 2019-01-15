@@ -224,6 +224,8 @@ url = {
     'docutils': 'http://docutils.sourceforge.net/',
     'GitHub help': 'https://help.github.com/',
     'RealPython': 'https://realpython.com/',
+    'conda-forge': 'https://anaconda.org/conda-forge/',
+    'git-scm': 'https://git-scm.com/'
 }
 
 xref_links = {
@@ -325,7 +327,7 @@ xref_links = {
                          'getstarted/settings'),
     'VS-Code-terminal': ("integrated terminal", url['VS Code doc'] +
                          'editor/integrated-terminal'),
-    'command-pallete': ("command pallete", url['VS Code doc'] +
+    'command-palette': ("command palette", url['VS Code doc'] +
                         'getstarted/userinterface#_command-palette'),
     'VS-Code-interpreter':
         ("select Python interpreter", url['VS Code doc'] +
@@ -335,4 +337,7 @@ xref_links = {
     'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
     'bash-man-page': ("bash shell manual", 'https://linux.die.net/man/1/bash'),
     # New links below, sorted links above
+    'Doc8': ("Doc8 reST linter", url['conda-forge'] + 'doc8'),
+    'git-download': ("Git download", url['git-scm'] + 'downloads'),
+    'git-manual': ("Git manual", url['git-scm'] + 'docs/user-manual.html'),
     }

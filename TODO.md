@@ -12,53 +12,21 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 ## Referential reading reviews (RRRs)
 1. https://realpython.com/documenting-python-code/
 1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
-1. Git tutorial/user guide
 
 # Developer's setup
-1. Some of these notes were made while trying to do a basic setup on a "virgin"
-Mac.
-1. After making each section, should split them into separate pages
-   1. Main page should give an explanation of structure, where to find
-      references, etc.
-
-
-## Documenting
-1. Get Windows equivalent to ~/user_folder and shorten paths to one line
 1. Make sure that all extensions on the extension page end up getting installed
-      1. Can probably list bookmarks under the Install Visual Studio code step
-      1. Git Lens after making sure that git version is okay
-      1. Testing viewer in the pytest section
-1. Open terminal type git --version
-   1. Mac may say it needs to be downloaded
-   1. Mac Should take care of install via command line tools
-   1. Can also download at https://git-scm.com/downloads
-1. Git clone the repo
-   1. Say how it should have the proper settings in the .json file
-1. conda install -c conda-forge doc8
-1. Install reST extension
-1. Then follow instructions to build documentation from development procedures
-      1. Add doc/_static folder in case a build error comes up
-1. Make sure to change git config properly
-   1. This should point to a version control section in dev procedures
-   1. https://www.git-tower.com/learn/git/faq/change-author-name-email
-   1. https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
-   1. https://stackoverflow.com/questions/12254076/how-do-i-show-my-global-git-config/12254106
-      1. git config --edit --global
-      1. Alternatively, git config --global user.name "alnoki the user"
-   1. Should also make sure all windows are saved and closed before committing
-1. Should check username on commit before pushing
-   1. Change back to old username if need be
 1. Any time a package is added to Conda, add it to tools page under Anaconda
    1. Harvest packages thus far from the QuickStart
    1. Make a .yaml file eventually
+
+## Committing
 1. Re-do git author history via
    1. https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi
    1. Can then add to version control in dev procedures section
 
+
 ## Testing - still need to attempt
-1. conda install pytest pep8 // from inside a6 environment
-1. Install doc8 and other rst extension dependencies per
-   1. https://anaconda.org/anaconda/sphinx_rtd_theme style of command
+1. conda install pytest
 1. Jupyter extensions and settings
    1. Conda nbextensions install
    1. Is there an equivalent to a .yaml that can keep nbextensions/preferences?
@@ -66,6 +34,7 @@ Mac.
    1. Link to pytest test discovery explanation
 1. Install all the extensions and maybe .yaml?
    1. .yaml could become obsolete
+1. Testing viewer extension in the pytest section
 
 ## Jupyter
 1. Will need to conda install
@@ -132,6 +101,7 @@ Mac.
 1. Make an AAAAAA GSheet and update the associated GDrive document ledger
 1. Leisurely review paper notebook notes for more ideas
 1. See other investing references from urls on Google Drive
+1. https://realpython.com/python-type-checking/#annotations
 
 ## Numerical analysis
 1. [RealPython.com Pandas optimization](https://realpython.com/fast-flexible-pandas/)

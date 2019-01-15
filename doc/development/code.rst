@@ -53,8 +53,9 @@ importance:
 Additional contents of the :xref:`AAAAAA-repo`, which can be manipulated in
 :xref:`VS-Code` [#]_:
 
-#. ``.vscode`` directory contains development settings
-#. ``.gitignore`` is used for version control
+#. ``.vscode`` directory contains development
+   :xref:`settings <VS-Code-settings>`
+#. ``.gitignore`` is used for :xref:`version control <git-manual>`
 #. ``README.md`` contains references to :term:`AAAAAA` documentation
 #. ``TODO.md`` contains planned development tasks
 

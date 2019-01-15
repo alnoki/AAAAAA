@@ -41,8 +41,8 @@ class Transaction:
 
     def __init__(self, date: datetime.date,
                  total_amount: Union[decimal.Decimal, int],
-                 transact_type: str, symbol: str=None,
-                 num_shares: int=None, description: str=None):
+                 transact_type: str, symbol: str = None,
+                 num_shares: int = None, description: str = None):
         """Creates object if valid parameters, else raises error"""
         try:  # Check input validity before assignment
             self._check_instance_args(date, total_amount, transact_type,

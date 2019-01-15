@@ -34,8 +34,12 @@ A bit of Python can be executed on most computers with minimal effort, using
 #. Type :command:`python` and hit :kbd:`return`
 
    * If this doesn't work then you probably don't have :xref:`Python`, but you
-     can get it by downloading
-     :std:doc:`Miniconda <conda:user-guide/install/download>`
+     can get it for free!
+
+      #. Download
+         :std:doc:`Miniconda <conda:user-guide/install/download>`
+      #. :ref:`Start up Conda <conda:starting-conda>`
+      #. Type :command:`python` and hit :kbd:`return`
 
 #. Copy and paste the below contents to the command line then hit
    :kbd:`return`::
