@@ -222,7 +222,7 @@ url = {
     'VS Code ext': 'https://marketplace.visualstudio.com/items?itemName=',
     'VS Code doc': 'https://code.visualstudio.com/docs/',
     'docutils': 'http://docutils.sourceforge.net/',
-    'GitHub help': 'https://help.github.com/',
+    'GitHub help': 'https://help.github.com/articles/',
     'RealPython': 'https://realpython.com/',
     'conda-forge': 'https://anaconda.org/conda-forge/',
     'git-scm': 'https://git-scm.com/'
@@ -305,7 +305,7 @@ xref_links = {
     'reST-cheatsheet': ("reST cheatsheet", url['GitHub'] + 'ralsina/rst-'
                         'cheatsheet/blob/master/rst-cheatsheet.rst'),
     'GitHub': ('GitHub', url['GitHub']),
-    'Markdown': ('Markdown', url['GitHub help'] + 'articles/basic-writing-and'
+    'Markdown': ('Markdown', url['GitHub help'] + 'basic-writing-and'
                  '-formatting-syntax/'),
     'Schafer-Jupyter': ("Jupyter Notebook Tutorial: Introduction, Setup, and "
                         "Walkthrough", url['YT vid'] + 'HW29067qVWk'),
@@ -340,4 +340,16 @@ xref_links = {
     'Doc8': ("Doc8 reST linter", url['conda-forge'] + 'doc8'),
     'git-download': ("Git download", url['git-scm'] + 'downloads'),
     'git-manual': ("Git manual", url['git-scm'] + 'docs/user-manual.html'),
+    'list-git-developers':
+        ("Listing Git project developers", url['Stack OF'] +
+         '9597410/list-all-developers-on-a-project-in-git'),
+    'git-log-formatting': ("Git log formatting options", url['Stack OF'] +
+                           '1441010/the-shortest-possible-output-from-git-log-'
+                           'containing-author-and-date'),
+    'github-change-authors':
+        ("GitHub.com instructions to change author history",
+         url['GitHub help'] + 'changing-author-info/#platform-all'),
+    'git-branch-filtering':
+        ("Git filter-branch options", 'https://devsector.wordpress.com/'
+         '2014/10/05/advanced-git-branch-filtering/'),
     }

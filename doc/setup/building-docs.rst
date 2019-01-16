@@ -110,9 +110,9 @@ Building documentation
 
    * To figure out if you have it, open the :xref:`VS-Code-terminal` and type:
 
-   .. code-block:: bash
+     .. code-block:: bash
 
-      git --version
+        git --version
 
 #. Install the :xref:`GitLens` for :xref:`VS-Code`
 
@@ -124,7 +124,7 @@ Building documentation
      :xref:`alnoki <alnoki-repos>` uses
 
 #. At this point you should be able to
-   :ref:`build the documentaion <building-documentation>` and play around
+   :ref:`build the documentation <building-documentation>` and play around
    with the :ref:`reference management <managing-references>` features
 
 Congratulations!!!

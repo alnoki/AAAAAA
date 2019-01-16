@@ -22,8 +22,10 @@
 
 
     // Line/tab width
-    // Per PEP8, for comments (71) and code (79)
-    "[python]": {
+    // Command palette >
+    //   Change language mode >
+    //     Configure 'x' language based settings
+    "[python]": { // Per PEP8, for comments (71) and code (79)
         "editor.rulers": [71, 79],
         "editor.tabSize": 4,
     },

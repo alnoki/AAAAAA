@@ -19,12 +19,6 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Harvest packages thus far from the QuickStart
    1. Make a .yaml file eventually
 
-## Committing
-1. Re-do git author history via
-   1. https://stackoverflow.com/questions/750172/how-to-change-the-author-and-committer-name-and-e-mail-of-multiple-commits-in-gi
-   1. Can then add to version control in dev procedures section
-
-
 ## Testing - still need to attempt
 1. conda install pytest
 1. Jupyter extensions and settings
@@ -81,6 +75,16 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 # Future development
 
 ## General ideas
+1. Split references into a major section
+   1. Index
+      1. The intersphinx/xref table goes here
+   1. Digital
+   1. Books
+      1. Header for each book is the name
+      1. Include ISBN, author
+      1. CSV table with a page number and the concept
+      1. For The Intelligent investor, can link to another "concepts page"
+         1. The 7-step checklist, etc.
 1. See all notebook entries since Dec 26
 1. Coverage.py for testing framework
 1. Per Carol Willing talk
