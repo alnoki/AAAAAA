@@ -1,12 +1,12 @@
-.. _references:
+.. _links:
 
 
-##########
-References
-##########
+#####
+Links
+#####
 
-This list contains references found throughout :term:`AAAAAA`, which are
-managed via two :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`:
+These links are managed via two
+:std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`:
 
 .. csv-table::
    :header: "Extension", "Usage instructions"
@@ -16,9 +16,6 @@ managed via two :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`:
 
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
-
-.. contents::
-
 
 ******
 Python

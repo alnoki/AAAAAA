@@ -89,11 +89,6 @@ Indices and tables
 
 .. * :ref:`modindex` - should go between genindex and search when ready
 
-
-********
-Contents
-********
-
 .. toctree::
    :caption: Setup
    :maxdepth: 2
@@ -101,15 +96,22 @@ Contents
 
    setup/quickstart
    setup/developer
+   setup/concepts
 
 .. toctree::
-   :caption: Development
+   :caption: Procedures
    :maxdepth: 2
    :numbered:
 
-   development/zen
-   development/tools
-   development/code
-   development/documentation
-   development/procedures/index
-   references
+   procedures/git
+   procedures/sphinx
+
+.. _references:
+
+.. toctree::
+   :caption: References
+   :maxdepth: -1
+   :numbered:
+
+   references/links
+   references/books

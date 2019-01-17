@@ -43,16 +43,16 @@ See
 
    .. code-block:: bash
 
-      git log --pretty=format:"Author name: %an" | sort | uniq
-      git log --pretty=format:"Author email: %ae" | sort | uniq
-      git log --pretty=format:"Committer name: %cn" | sort | uniq
-      git log --pretty=format:"Committer email: %ce" | sort | uniq
+      git log --pretty="Author name: %an" | sort | uniq
+      git log --pretty="Author email: %ae" | sort | uniq
+      git log --pretty="Committer name: %cn" | sort | uniq
+      git log --pretty="Committer email: %ce" | sort | uniq
 
 #. Inspect all of these fields at once, for the entire project history, via:
 
    .. code-block:: bash
 
-      git log --pretty=format:"%an, %ae, %cn, %ce"
+      git log --pretty="%an, %ae, %cn, %ce"
 
 .. _committing:
 
@@ -91,7 +91,7 @@ Per the :xref:`git-manual`:
    .. code-block:: bash
 
       git log
-      git log --pretty=format:"%an, %ae, %cn, %ce"
+      git log --pretty="%an, %ae, %cn, %ce"
 
 #. In the :xref:`command palette <command-palette>`:
    :guilabel:`Git: Push`
@@ -115,7 +115,7 @@ See
 
    .. code-block:: bash
 
-      git log --pretty=format:"%an, %ae, %cn, %ce"
+      git log --pretty="%an, %ae, %cn, %ce"
 
 #. If you forget to :ref:`update your user credentials <git-credentials>`
    before :ref:`committing and pushing <committing>` (a whole bunch of times),

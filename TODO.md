@@ -1,4 +1,3 @@
-
 Viewing local build: http://localhost:8000/_build/html/index.html
 
 # General review
@@ -57,6 +56,8 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Figure out how to do documentation coverage
 1. Make directory trees that describe the structure of the project
 1. MyPy type linter
+   1. https://www.python.org/dev/peps/pep-0526/
+   1. https://realpython.com/python-type-checking/
 1. Link to the Python article about Decimal vs floating point types
 1. Uncomment mod index on main page
 
@@ -75,16 +76,12 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 # Future development
 
 ## General ideas
-1. Split references into a major section
-   1. Index
-      1. The intersphinx/xref table goes here
-   1. Digital
-   1. Books
-      1. Header for each book is the name
-      1. Include ISBN, author
-      1. CSV table with a page number and the concept
-      1. For The Intelligent investor, can link to another "concepts page"
-         1. The 7-step checklist, etc.
+1. Books
+   1. Header for each book is the name
+   1. Include ISBN, author
+   1. CSV table with a page number and the concept
+   1. For The Intelligent investor, can link to another "concepts page"
+      1. The 7-step checklist, etc.
 1. See all notebook entries since Dec 26
 1. Coverage.py for testing framework
 1. Per Carol Willing talk
