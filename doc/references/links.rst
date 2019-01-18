@@ -17,6 +17,9 @@ These links are managed via two
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
 
+.. contents::
+
+
 ******
 Python
 ******
@@ -149,6 +152,83 @@ AAAAAA codebase
 
    * Compressed archive of :xref:`AAAAAA-repo` that is quick to download
 
+
+*******************
+Git version control
+*******************
+
+General
+=======
+
+#. :xref:`git-manual`
+
+   * Quick practical reference
+
+#. :xref:`git-book`
+
+   * In-depth conceptual explanations
+
+#. :xref:`git-download`
+
+   * Download :xref:`Git <git-manual>`
+
+#. :xref:`git-setup`
+
+   * Getting started
+
+Core functionality
+==================
+
+#. :xref:`git-config`
+
+   * Set up user credentials
+
+#. :xref:`git-log`
+
+   * See project history
+
+#. :xref:`git-commit`
+
+   * Create saved changes to a project
+
+Text manipulation
+=================
+
+#. :xref:`less-pager`
+
+   * For viewing :xref:`git-log`
+
+#. :xref:`Vim`
+
+   * For :xref:`git-config` and :xref:`git-commit`
+
+#. :xref:`Vim-tutorial`
+
+   * To learn :xref:`Vim` in several minutes
+
+#. :xref:`Vim-cheatsheet`
+
+   * Common :xref:`Vim` commands
+
+Extra features
+==============
+
+#. :xref:`git-log-formatting`
+
+   * Special formatting options for :xref:`git-log`
+
+#. :xref:`list-git-developers`
+
+   * Identifying unique :xref:`committers <git-commit>`
+
+#. :xref:`github-change-authors`
+
+   * :xref:`GitHub` instructions to re-write :xref:`git-commit` history
+
+#. :xref:`git-branch-filtering`
+
+   * Extra options for
+     :xref:`re-writing commit history <github-change-authors>`
 
 *************
 Documentation
@@ -309,11 +389,13 @@ reStructuredText
 
 #. :xref:`reST-cheatsheet`
 
-   * Quick reference for :std:doc:`reST <sphinx:usage/restructuredtext/basics>` usage
+   * Quick reference for :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+     usage
 
 #. :xref:`reST-documentation`
 
-   * Official :std:doc:`reST <sphinx:usage/restructuredtext/basics>` documentation
+   * Official :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+     documentation
 
 #. :xref:`quick-reST`
 
@@ -323,6 +405,10 @@ reStructuredText
 #. :xref:`reST-list-indentation`
 
    * Explanation of nested list syntax
+
+#. :xref:`Doc8`
+
+   * Style checker for :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
 
 Jupyter
 =======

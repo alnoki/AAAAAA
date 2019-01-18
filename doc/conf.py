@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath('exts'))
 # -- Project information -----------------------------------------------------
 
 project = 'AAAAAA'
-copyright = '2018, alnoki'
+copyright = '2019, alnoki'
 author = 'alnoki'
 
 # The short X.Y version
@@ -225,7 +225,8 @@ url = {
     'GitHub help': 'https://help.github.com/articles/',
     'RealPython': 'https://realpython.com/',
     'conda-forge': 'https://anaconda.org/conda-forge/',
-    'git-scm': 'https://git-scm.com/'
+    'git-scm': 'https://git-scm.com/',
+    'linux-die': 'https://linux.die.net/man/1/'
 }
 
 xref_links = {
@@ -335,11 +336,20 @@ xref_links = {
     'VS-Code-bookmarks-ext': ("Bookmarks extension", url['VS Code ext'] +
                               'alefragnani.Bookmarks'),
     'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
-    'bash-man-page': ("bash shell manual", 'https://linux.die.net/man/1/bash'),
-    # New links below, sorted links above
+    'bash-man-page': ("bash shell manual", url['linux-die'] + 'bash'),
     'Doc8': ("Doc8 reST linter", url['conda-forge'] + 'doc8'),
-    'git-download': ("Git download", url['git-scm'] + 'downloads'),
     'git-manual': ("Git manual", url['git-scm'] + 'docs/user-manual.html'),
+    'git-download': ("Git download", url['git-scm'] + 'downloads'),
+    'git-book': ("Git book", url['git-scm'] + 'book'),
+    'git-config': ('git-config', url['git-scm'] + 'docs/git-config'),
+    'git-log': ('git-log', url['git-scm'] + 'docs/git-log'),
+    'git-commit': ('git-commit', url['git-scm'] + 'docs/git-commit'),
+    'git-setup': ("Git setup", url['git-scm'] + 'book/en/v2/Getting-Started-'
+                  'First-Time-Git-Setup'),
+    'less-pager': ('less pager', url['linux-die'] + 'less'),
+    'Vim': ("Vim text editor", 'https://www.vim.org/'),
+    'Vim-tutorial': ("Interactive Vim tutorial", 'https://www.openvim.com/'),
+    'Vim-cheatsheet': ("Vim cheatsheet", 'https://devhints.io/vim'),
     'list-git-developers':
         ("Listing Git project developers", url['Stack OF'] +
          '9597410/list-all-developers-on-a-project-in-git'),
@@ -352,4 +362,5 @@ xref_links = {
     'git-branch-filtering':
         ("Git filter-branch options", 'https://devsector.wordpress.com/'
          '2014/10/05/advanced-git-branch-filtering/'),
+    # New links below, sorted links above
     }

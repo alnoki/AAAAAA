@@ -1,6 +1,52 @@
+.. Last proofread 20190118
+
+.. _git-procedures:
+
 ###
 Git
 ###
+
+   .. csv-table::
+      :header: "Reference", "Topic"
+
+      :xref:`git-manual`, Quick practical reference
+      :xref:`git-book`, In-depth conceptual explanations
+
+.. contents::
+
+.. _git-setup:
+
+
+*****
+Setup
+*****
+
+Use the :xref:`VS Code integrated terminal <VS-Code-terminal>` for first-time
+:xref:`git-setup`:
+
+#. Configure your identity:
+
+   .. code-block:: bash
+
+      git config --global user.name alnoki
+      git config --global user.email 43892045+alnoki@users.noreply.github.com
+
+#. Set :xref:`Vim` as the default editor and use it to verify your identity:
+
+   .. code-block:: bash
+
+      git config --global core.editor Vim
+      git config --global -e
+
+#. At this point, you will be in the :xref:`Vim`. If you your identity looks
+   right, you can :xref:`exit without saving <Vim-cheatsheet>` by typing
+   ``:q!`` then :kbd:`return`
+
+.. csv-table::
+   :header: "Reference", "Topic"
+
+   :xref:`Vim-tutorial`, Learn :xref:`Vim` quickly
+   :xref:`Vim-cheatsheet`, Common commands
 
 .. _git-credentials:
 
@@ -9,21 +55,64 @@ Git
 Updating user credentials
 *************************
 
-Per the :xref:`git-manual`:
+Per :xref:`git-config`:
 
-#. Use the :xref:`VS Code integrated terminal <VS-Code-terminal>` to enter
-   (adapted for your name and email address):
+#. Use the :xref:`VS Code integrated terminal <VS-Code-terminal>` to edit
+   :xref:`git-config` using :xref:`Vim`:
 
    .. code-block:: bash
 
-      git config --global user.name 'alnoki'
-      git config --global user.email '43892045+alnoki@users.noreply.github.com'
+      git config --global -e
+
+#. Type ``i`` then :kbd:`return` to get into
+   :xref:`insert mode <Vim-cheatsheet>`, then make your changes:
+
+   .. code-block:: none
+      :emphasize-lines: 2-3
+
+      [user]
+           name = alnoki
+           email = 43892045+alnoki@users.noreply.github.com
+      [core]
+           editor = Vim
+
+#. Type :kbd:`Esc`, then ``:x!``, then :kbd:`return`, to
+   :xref:`save and close <Vim-cheatsheet>`
 
 #. To check that the credentials have updated:
 
    .. code-block:: bash
 
       git config --global --list
+
+
+****************
+View project log
+****************
+
+Per :xref:`git-log`:
+
+#. In the :xref:`VS Code integrated terminal <VS-Code-terminal>`:
+
+   .. code-block:: bash
+
+      git log
+
+#. This will open the :xref:`less-pager` for text navigation. The most
+   important :xref:`less commands <less-pager>`:
+
+   .. csv-table::
+      :header: "Key", "Function"
+
+      :kbd:`return`, scroll
+      ``q``, exit
+      ``h``, show help
+
+#. A condensed version:
+
+   .. code-block:: bash
+
+      git log --oneline
 
 .. _list-committers:
 
@@ -32,14 +121,13 @@ Per the :xref:`git-manual`:
 List project committers
 ***********************
 
-See
+Use :xref:`git log --pretty <git-log>` options, explained per:
 
-* :xref:`list-git-developers`
-* :xref:`git-log-formatting`
+   * :xref:`list-git-developers`
+   * :xref:`git-log-formatting`
 
-#. Inspect unique :xref:`commit credentials <git-manual>` with any of the
-   following single commands in the
-   :xref:`VS Code integrated terminal <VS-Code-terminal>`:
+#. In the :xref:`VS Code integrated terminal <VS-Code-terminal>`, isolate all
+   unique instances of a field:
 
    .. code-block:: bash
 
@@ -48,7 +136,7 @@ See
       git log --pretty="Committer name: %cn" | sort | uniq
       git log --pretty="Committer email: %ce" | sort | uniq
 
-#. Inspect all of these fields at once, for the entire project history, via:
+#. Inspect all of these fields at once, for the entire project history:
 
    .. code-block:: bash
 
@@ -61,7 +149,7 @@ See
 Committing
 **********
 
-Per the :xref:`git-manual`:
+Per :xref:`git-commit`:
 
 #. Verify the state of the project using the
    :xref:`VS Code integrated terminal <VS-Code-terminal>`:
@@ -72,19 +160,30 @@ Per the :xref:`git-manual`:
       git log
 
 #. Save and close any open project files
-#. Verify your :ref:`Git user credentials <git-credentials>`, update as needed
+#. Update and verify your :ref:`Git user credentials <git-credentials>` as
+   needed
 #. Use the :xref:`VS Code command palette <command-palette>` to select
 
    * :guilabel:`View: Open View`
    * :guilabel:`Source Control`
 
 #. Use the :guilabel:`Source Control` interface to
-   :xref:`stage changes <git-manual>` and to create a
-   :xref:`commit message <git-manual>`
+   :xref:`stage changes <git-commit>`
+#. In the :xref:`VS-Code-terminal`:
+
+   .. code-block:: bash
+
+      git commit
+
+   * This will open :xref:`Vim`, which you can use to generate your
+     :xref:`commit message <git-commit>`
+   * See :ref:`git-credentials` for the :xref:`save and close <Vim-cheatsheet>`
+     procedure
+
 #. In the :xref:`command palette <command-palette>`:
    :guilabel:`Git: Commit Staged`
 
-#. Use the :xref:`VS-Code-terminal` to verify the :xref:`commit <git-manual>`
+#. Use the :xref:`VS-Code-terminal` to verify the :xref:`commit <git-commit>`
    looks alright, and that the :ref:`commit identities <list-committers>` are
    okay:
 

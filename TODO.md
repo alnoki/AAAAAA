@@ -2,21 +2,28 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # General review
 
-## Out-loud proof reading notes
-1. Should be done with browser side-by-side with VS Code
-1. Verify admonitions are all lowercase
-1. Verify 3-space indent in rst files, and with nested lists
-1. Verify all AAAAAA references are to glossary term
-
-## Referential reading reviews (RRRs)
-1. https://realpython.com/documenting-python-code/
-1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
-
 # Developer's setup
+
+## Tools
+
 1. Make sure that all extensions on the extension page end up getting installed
 1. Any time a package is added to Conda, add it to tools page under Anaconda
    1. Harvest packages thus far from the QuickStart
    1. Make a .yaml file eventually
+1. Use the "select renderer" for reST extension?
+1. Add explanations to Tools
+   1. csv table of anaconda packages that get installed
+1. numpy codebasics tutorial videos under mathematics
+1. Concepts should say now you have a bunch of software, then should explain it
+   1. Allude that an explanation is coming before dev setup begins?
+   1. Should link manuals for Vim, Git, etc., cheatsheets
+   1. Also show the links page for learning online
+1. Documentation section
+   1. Give examples of csv table line break (see tools)
+   1. Don't line break inside role content
+      1. Instead, the vertical bar should provide guidance
+1. Should have a Sphinx section that links to Sphinx procedures
+
 
 ## Testing - still need to attempt
 1. conda install pytest
@@ -28,6 +35,9 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Install all the extensions and maybe .yaml?
    1. .yaml could become obsolete
 1. Testing viewer extension in the pytest section
+1. pip install -e from inside src folder
+   1. Will involve moving setup.py
+      1. May need to update in folder tree structure description
 
 ## Jupyter
 1. Will need to conda install
@@ -35,9 +45,40 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. .yaml equivalent of Jupyter notebooks?
 1. All Jupyter extensions used should be mentioned on tools page
 
+## Setup after development configuration is complete
+1. Conda procedures
+   1. Conda update
+   1. Make a .yaml
+   1. Install a .yaml
+1. After completing setup guide
+   1. Should go through conf.py and figure out what is going on
+   1. Can explain in concepts section what defaults are, etc.
+      1. Talk about how xref is used, folder it is in, etc.
+   1. Update license
+   1. Update copyright year
+1. Proofreading before src changes
+
+## Proofreading procedures
+1. Should be done with browser side-by-side with VS Code
+1. Verify admonitions are all lowercase
+1. Verify 3-space indent in rst files, and with nested lists
+1. Verify all AAAAAA references are to glossary term
+1. Go through website front to end read aloud
+   1. Make sure reST looks fine
+   1. Then can have a "not proofread" section
+   1. Can have comment on each page: last proofread YYYYMMDD
+         1. Then can compare this date with commit change dates
+         1. Can be a procedure for editing
+1. Live build next to .rst
+   1. Read a section out loud first, use the anchor to go to it
+   1. Click links as you go through
+   1. Read a section at a time on text, then check rest for style and links
+
 # Next tasks
 
 ## Source documentation
+1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
+1. https://realpython.com/documenting-python-code/
 1. Link a Jupyter notebook per Carol Willing video
 1. Separate ledger.py into a snippets file
 1. Document utilities.py
@@ -60,6 +101,9 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. https://realpython.com/python-type-checking/
 1. Link to the Python article about Decimal vs floating point types
 1. Uncomment mod index on main page
+1. https://realpython.com/python-type-checking/#annotations
+   1. Annotate everything
+   1. Get mypy going
 
 ## Transaction code
 1. NaN in GoogleSheets should be different than $0
@@ -102,9 +146,11 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Make an AAAAAA GSheet and update the associated GDrive document ledger
 1. Leisurely review paper notebook notes for more ideas
 1. See other investing references from urls on Google Drive
-1. https://realpython.com/python-type-checking/#annotations
 
 ## Numerical analysis
+1. https://web.stanford.edu/~schmit/cme193/
+   1. has seaborn and pandas examples
+   1. Predictor of survivor on Titanic, powerful statistical modeling tools
 1. [RealPython.com Pandas optimization](https://realpython.com/fast-flexible-pandas/)
 1. Review references
 1. Pandas/matplotlib/numpy tutorial videos on iPad while getting ready
