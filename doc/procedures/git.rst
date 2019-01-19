@@ -1,13 +1,13 @@
-.. Last proofread 20190118
-
 .. _git-procedures:
+
 
 ###
 Git
 ###
 
-   .. csv-table::
+   .. csv-table:: Select references
       :header: "Reference", "Topic"
+      :align: center
 
       :xref:`git-manual`, Quick practical reference
       :xref:`git-book`, In-depth conceptual explanations
@@ -42,8 +42,9 @@ Use the :xref:`VS Code integrated terminal <VS-Code-terminal>` for first-time
    right, you can :xref:`exit without saving <Vim-cheatsheet>` by typing
    ``:q!`` then :kbd:`return`
 
-.. csv-table::
+.. csv-table:: Learning :xref:`Vim`
    :header: "Reference", "Topic"
+   :align: center
 
    :xref:`Vim-tutorial`, Learn :xref:`Vim` quickly
    :xref:`Vim-cheatsheet`, Common commands
@@ -86,6 +87,8 @@ Per :xref:`git-config`:
       git config --global --list
 
 
+.. _git-view-project-log:
+
 ****************
 View project log
 ****************
@@ -98,11 +101,11 @@ Per :xref:`git-log`:
 
       git log
 
-#. This will open the :xref:`less-pager` for text navigation. The most
-   important :xref:`less commands <less-pager>`:
+#. This will open the :xref:`less-pager` for text navigation
 
-   .. csv-table::
+   .. csv-table:: Core :xref:`less commands <less-pager>`
       :header: "Key", "Function"
+      :align: center
 
       :kbd:`return`, scroll
       ``q``, exit
@@ -149,7 +152,7 @@ Use :xref:`git log --pretty <git-log>` options, explained per:
 Committing
 **********
 
-Per :xref:`git-commit`:
+Per :xref:`git-commit` and :xref:`git-push`:
 
 #. Verify the state of the project using the
    :xref:`VS Code integrated terminal <VS-Code-terminal>`:
@@ -184,16 +187,20 @@ Per :xref:`git-commit`:
    :guilabel:`Git: Commit Staged`
 
 #. Use the :xref:`VS-Code-terminal` to verify the :xref:`commit <git-commit>`
-   looks alright, and that the :ref:`commit identities <list-committers>` are
-   okay:
+   looks alright and that the :ref:`commit identities <list-committers>` are
+   okay
 
    .. code-block:: bash
 
       git log
       git log --pretty="%an, %ae, %cn, %ce"
 
-#. In the :xref:`command palette <command-palette>`:
-   :guilabel:`Git: Push`
+#. Use the :xref:`VS-Code-terminal` to :xref:`push <git-push>`
+
+   .. code-block:: bash
+
+      git push
+
 #. Verify results at the :xref:`AAAAAA-repo`
 
 .. _change-commit-credential-history:

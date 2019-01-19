@@ -53,6 +53,7 @@
         "--ignore D002",
         "--ignore D004"
     ],
+    "restructuredtext.confPath": "${workspaceFolder}\\doc",
 
 
     // Testing, see VS Code unit test documentation

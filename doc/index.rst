@@ -79,6 +79,11 @@ A bit of Python can be executed on most computers with minimal effort, using
 
 Congratulations!!!
 
+.. tip::
+
+   Hit the :guilabel:`Next` button at the top or the bottom of the page to
+   continue
+
 
 ******************
 Indices and tables

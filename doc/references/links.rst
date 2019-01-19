@@ -5,14 +5,8 @@
 Links
 #####
 
-These links are managed via two
-:std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`:
-
-.. csv-table::
-   :header: "Extension", "Usage instructions"
-
-   :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`, :ref:`intersphinx-linking`
-   :xref:`xref <xref-ext>`, :ref:`xref-linking`
+This is a centralized and comprehensive list of online resources related to
+:term:`AAAAAA`, and is managed according to :ref:`managing-references`
 
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
@@ -191,6 +185,10 @@ Core functionality
 
    * Create saved changes to a project
 
+#. :xref:`git-push`
+
+   * Upload a :xref:`commit <git-commit>`
+
 Text manipulation
 =================
 
@@ -346,10 +344,6 @@ With Read the Docs
    * A :std:doc:`Sphinx <sphinx:intro>` theme for creating a mobile-friendly
      webpage layout
 
-#. :std:doc:`Unofficial Read the Docs style guide for Sphinx <rtfd-style-guide:index>`
-
-   * General :std:doc:`Sphinx <sphinx:intro>` syntax and style
-
 Managing references
 -------------------
 
@@ -467,10 +461,14 @@ VS Code general
 
 #. :xref:`VS-Code`
 
-   * Preferred open-source environment for software development, documentation,
-     and testing
-   * Has a marketplace with community-developed extensions developed by the
-     open-source community
+   * Preferred :xref:`open-source` environment for software development,
+     documentation, and testing
+   * Has a collection of :xref:`extensions <VS-Code-extensions>` developed by
+     the :xref:`open-source` community
+
+#. :xref:`VS-Code-extensions`
+
+   * Tools to enable additional functionality
 
 #. :xref:`VS-Code-Python-tutorial`
 

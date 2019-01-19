@@ -32,3 +32,8 @@ steps for you on the following pages
 .. Example code here should not require any packages beyond base miniconda
 
 Congratulations!!!
+
+.. tip::
+
+   Hit the :guilabel:`Next` button at the top or the bottom of the page to
+   continue

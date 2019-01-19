@@ -204,8 +204,6 @@ intersphinx_mapping = {
     'py-dev-guide': ('https://devguide.python.org/', None),
     'anaconda': ('https://docs.anaconda.com/', None),
     'conda': ('https://conda.io/docs/', None),
-    'rtfd-style-guide': ('https://documentation-style-guide-sphinx.'
-                         'readthedocs.io/en/latest/', None),
     'matplotlib-sampledoc':
         ('https://matplotlib.org/sampledoc/', None),
     'sublime-with-sphinx':
@@ -344,6 +342,7 @@ xref_links = {
     'git-config': ('git-config', url['git-scm'] + 'docs/git-config'),
     'git-log': ('git-log', url['git-scm'] + 'docs/git-log'),
     'git-commit': ('git-commit', url['git-scm'] + 'docs/git-commit'),
+    'git-push': ('git-push', url['git-scm'] + 'docs/git-push'),
     'git-setup': ("Git setup", url['git-scm'] + 'book/en/v2/Getting-Started-'
                   'First-Time-Git-Setup'),
     'less-pager': ('less pager', url['linux-die'] + 'less'),
@@ -358,9 +357,11 @@ xref_links = {
                            'containing-author-and-date'),
     'github-change-authors':
         ("GitHub.com instructions to change author history",
-         url['GitHub help'] + 'changing-author-info/#platform-all'),
+         url['GitHub help'] + 'changing-author-info/'),
     'git-branch-filtering':
         ("Git filter-branch options", 'https://devsector.wordpress.com/'
          '2014/10/05/advanced-git-branch-filtering/'),
+    'VS-Code-extensions': ("Extensions", url['VS Code doc'] + 'setup/'
+                           'additional-components#_vs-code-extensions'),
     # New links below, sorted links above
     }

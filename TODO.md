@@ -5,24 +5,9 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 # Developer's setup
 
 ## Tools
-
-1. Make sure that all extensions on the extension page end up getting installed
-1. Any time a package is added to Conda, add it to tools page under Anaconda
-   1. Harvest packages thus far from the QuickStart
-   1. Make a .yaml file eventually
-1. Use the "select renderer" for reST extension?
-1. Add explanations to Tools
-   1. csv table of anaconda packages that get installed
-1. numpy codebasics tutorial videos under mathematics
-1. Concepts should say now you have a bunch of software, then should explain it
-   1. Allude that an explanation is coming before dev setup begins?
-   1. Should link manuals for Vim, Git, etc., cheatsheets
-   1. Also show the links page for learning online
-1. Documentation section
-   1. Give examples of csv table line break (see tools)
-   1. Don't line break inside role content
-      1. Instead, the vertical bar should provide guidance
-1. Should have a Sphinx section that links to Sphinx procedures
+1. Update Sphinx procedures
+   1. Make linkcheck and make spelling should be their own procedure?
+   1. Less admonitions?
 
 
 ## Testing - still need to attempt
@@ -46,6 +31,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. All Jupyter extensions used should be mentioned on tools page
 
 ## Setup after development configuration is complete
+1. All VS Code extensions from the tools page should be added in dev setup
 1. Conda procedures
    1. Conda update
    1. Make a .yaml
@@ -57,6 +43,9 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Update license
    1. Update copyright year
 1. Proofreading before src changes
+1. Any time a package is added to Conda, add it to tools page under Anaconda
+   1. Harvest packages thus far from the QuickStart
+   1. Make a .yaml file eventually
 
 ## Proofreading procedures
 1. Should be done with browser side-by-side with VS Code
@@ -79,6 +68,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 ## Source documentation
 1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
 1. https://realpython.com/documenting-python-code/
+1. Use sphinx rtd theme for test_module.py
 1. Link a Jupyter notebook per Carol Willing video
 1. Separate ledger.py into a snippets file
 1. Document utilities.py
@@ -148,6 +138,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. See other investing references from urls on Google Drive
 
 ## Numerical analysis
+1. numpy codebasics tutorial videos
 1. https://web.stanford.edu/~schmit/cme193/
    1. has seaborn and pandas examples
    1. Predictor of survivor on Titanic, powerful statistical modeling tools
