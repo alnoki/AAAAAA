@@ -8,32 +8,53 @@ Tools
 .. contents::
 
 
+.. _tools-anaconda:
+
 ********
 Anaconda
 ********
 
-:xref:`Anaconda` contains a collection of :xref:`Python` packages that are
-free to download and use. The base :xref:`Anaconda` collection has way more
-packages than :term:`AAAAAA` require, so you can use
-:std:doc:`Miniconda<conda:user-guide/install/index>` to acess only the ones
-that you need
+:xref:`Anaconda` contains a collection of
+:ref:`packages <conda:concept-conda-package>` that are free to download and
+use. The base :xref:`Anaconda` collection has way more
+:ref:`packages <conda:concept-conda-package>` than :term:`AAAAAA` require, so
+you can use :std:doc:`Miniconda<conda:user-guide/install/index>` to acess only
+the ones that you need
 
-You can manage these packages using :std:doc:`conda:index`, a command-line
-style configurator that automatically checks package dependencies and maintains
+You can manage these :ref:`packages <conda:concept-conda-package>` using
+:std:doc:`conda <conda:index>`, a command-line
+style configurator that automatically checks dependencies and maintains
 compatibility
 
-.. csv-table:: :xref:`Anaconda` packages in :term:`AAAAAA`
-   :header: "Package", "Purpose"
-   :align: center
+The :ref:`setup-documenting` setup instructions describe how to
+:std:doc:`create <conda:commands/conda-create>` a new
+:ref:`conda environment <conda:concept-conda-env>`, called :term:`a6`:
 
-   :xref:`python <Python>`, Code creation
-   :std:doc:`pytest <pytest:index>`, Code testing
-   :std:doc:`conda <conda:index>`, Package management
-   :pep:`pep8 <8>`, Check code style
-   :std:doc:`sphinx <sphinx:intro>` , Build documentation
-   :std:doc:`sphinx_rtd_theme <rtd-sphinx-theme:index>`, "Documentation
-   appearance"
-   :xref:`doc8 <Doc8>`, Check documentation syntax
+.. glossary::
+
+   a6
+      A :ref:`conda environment <conda:concept-conda-env>` that contains all
+      the necessary :ref:`packages <conda:concept-conda-package>` that
+      :term:`AAAAAA` needs
+
+      .. csv-table:: :ref:`conda:concept-conda-package` in :term:`AAAAAA`
+         :header: "Package", "Function", "Setup Stage"
+         :align: center
+
+         :xref:`python <Python>`, Code creation, "
+         :ref:`Documenting <setup-documenting>`"
+         :std:doc:`conda <conda:index>`, Package management, "
+         :ref:`Documenting <setup-documenting>`"
+         :pep:`pep8 <8>`, Check code style, "
+         :ref:`Documenting <setup-documenting>`"
+         :std:doc:`sphinx <sphinx:intro>` , Build documentation, "
+         :ref:`Documenting <setup-documenting>`"
+         :std:doc:`sphinx_rtd_theme <rtd-sphinx-theme:index>`, "Documentation
+         appearance", "
+         :ref:`Documenting <setup-documenting>`"
+         :xref:`doc8 <Doc8>`, Check documentation syntax, "
+         :ref:`Documenting <setup-documenting>`"
+         :std:doc:`pytest <pytest:index>`, Code testing, Testing
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"
@@ -41,11 +62,12 @@ compatibility
 
    :std:doc:`conda:index`, General functionality information
    :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`, "Common
-   :std:doc:`conda:index` commands"
+   :std:doc:`conda <conda:index>` commands"
    :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
    :xref:`Python`"
    :xref:`codebasics tutorials <codebasics-pytest-vids>`, "Learn
    :std:doc:`pytest <pytest:index>`"
+
 
 ***
 Git

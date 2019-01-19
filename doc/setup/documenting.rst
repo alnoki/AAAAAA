@@ -1,12 +1,14 @@
-######################
-Building documentation
-######################
+.. _setup-documenting:
+
+###########
+Documenting
+###########
 
 #. Install :xref:`VS-Code` and the :xref:`VS-Code-bookmarks-ext`
 
 #. Update the :xref:`VS-Code-terminal` ``USER SETTINGS`` in
    :xref:`settings.json <VS-Code-settings>` so that you can use
-   :ref:`Conda <conda:starting-conda>`
+   :ref:`conda <conda:starting-conda>`
 
    * On a :xref:`Mac`, add the following options to configure
      :xref:`bash login mode invocation<bash-man-page>`:
@@ -33,19 +35,22 @@ Building documentation
 
 #. Use the :xref:`command-palette` to open a new :xref:`VS-Code-terminal` and
    enter the following command to
-   :std:doc:`create a new conda environment <conda:user-guide/cheatsheet>`,
-   ``a6``, that has the necessary :ref:`packages <tools>`
+   :std:doc:`create <conda:commands/conda-create>` a new
+   :ref:`conda environment <conda:concept-conda-env>`, called
+   :term:`a6`, that has the necessary
+   :ref:`packages <conda:concept-conda-package>`:
 
    .. code-block:: bash
 
       conda create --name a6 python conda pep8 sphinx sphinx_rtd_theme
 
 #. Configure the :xref:`VS-Code-terminal` to automatically
-   :std:doc:`activate <conda:user-guide/cheatsheet>` ``a6``
+   :ref:`activate <conda:activate-env>` the :term:`a6 evironment <a6>`:
 
    * On a :xref:`Mac`, there is no :xref:`bash <bash-man-page>` equivalent to
      the ``/K`` :xref:`cmd.exe option <cmd.exe-invocation>`, so the easiest
-     way to :std:doc:`activate <conda:user-guide/cheatsheet>` ``a6`` is to add
+     way to :ref:`activate <conda:activate-env>` the
+     :term:`a6 environment <a6>` is to add
      the following line to :xref:`~/.bash_profile <bash-man-page>`, which will
      execute any time a :xref:`bash login mode <bash-man-page>` session starts
      (even outside of the
@@ -71,7 +76,7 @@ Building documentation
 
 #. Install the :xref:`VS Code Python extension <VS-Code-Python-ext>` and use
    the :xref:`command-palette` to
-   :xref:`select the intepreter <VS-Code-interpreter>` for ``a6``
+   :xref:`select the intepreter <VS-Code-interpreter>` for :term:`a6`
 
    * This should add a setting for your machine-specific path to
      :xref:`settings.json <VS-Code-settings>`. If it is added to ``WORKSPACE
@@ -95,7 +100,7 @@ Building documentation
         }
 
    * You can also get this path by
-     :std:doc:`activating<conda:user-guide/cheatsheet>` ``a6`` then
+     :ref:`activating <conda:activate-env>` the :term:`a6 evironment <a6>` then
      typing :command:`which python`
 
 #. Use the :xref:`VS-Code-terminal` to install the :xref:`Doc8`:

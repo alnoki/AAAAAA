@@ -72,14 +72,37 @@ Environments
 
    * Command line configurator for :xref:`Anaconda`
 
-#. :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`
-
-   * Quick reference for common :std:doc:`Conda <conda:index>` commands
-
 #. :ref:`Anaconda Prompt <conda:starting-conda>`
 
-   * Invocation methods for :std:doc:`Conda <conda:index>`
+   * Invocation methods for :std:doc:`conda <conda:index>`
 
+#. :ref:`Conda package <conda:concept-conda-package>`
+
+   * A collection of :xref:`Python` software contained in :xref:`Anaconda`
+
+#. :ref:`Conda environment <conda:concept-conda-env>`
+
+   * A collection of :ref:`conda packages <conda:concept-conda-package>`
+
+Conda syntax
+------------
+
+#. :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`
+
+   * Quick reference for common :std:doc:`conda <conda:index>` commands
+
+#. :std:doc:`conda:commands/conda-create`
+
+   * Make a new :ref:`conda environment <conda:concept-conda-env>`
+
+#. :std:doc:`conda:commands/conda-install`
+
+   * Add a :ref:`package <conda:concept-conda-package>` to a
+     :ref:`conda environment <conda:concept-conda-env>`
+
+#. :ref:`conda:activate-env`
+
+   * Enable use of a :ref:`conda environment <conda:concept-conda-env>`
 
 OS-specific
 ============

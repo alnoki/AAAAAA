@@ -35,4 +35,5 @@ that will explain all the software and familiarize you with developing
    :caption: Developer setup
    :maxdepth: 2
 
-   building-docs
+   documenting
+   analyzing

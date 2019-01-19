@@ -4,11 +4,17 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # Developer's setup
 
+## Analyzing
+1. Will need to conda install
+1. Have a link to the tools page for notebook extensions
+1. .yaml equivalent of Jupyter notebooks?
+1. All Jupyter extensions used should be mentioned on tools page
+1. Links for numerical analysis packages
+
 ## Tools
 1. Update Sphinx procedures
    1. Make linkcheck and make spelling should be their own procedure?
    1. Less admonitions?
-
 
 ## Testing - still need to attempt
 1. conda install pytest
@@ -23,12 +29,6 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. pip install -e from inside src folder
    1. Will involve moving setup.py
       1. May need to update in folder tree structure description
-
-## Jupyter
-1. Will need to conda install
-1. Have a link to the tools page for notebook extensions
-1. .yaml equivalent of Jupyter notebooks?
-1. All Jupyter extensions used should be mentioned on tools page
 
 ## Setup after development configuration is complete
 1. All VS Code extensions from the tools page should be added in dev setup
@@ -46,6 +46,16 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Any time a package is added to Conda, add it to tools page under Anaconda
    1. Harvest packages thus far from the QuickStart
    1. Make a .yaml file eventually
+1. Make sure all anaconda tools in csv are linked
+
+## Conda procedures
+1. Make a .yaml
+1. Loading a .yaml
+1. Centralized env creation
+   1. All packages from Conda main channel
+   1. Doc8 and other forge packages
+   1. Pip -e AAAAAA
+1. Have Conda update somewhere
 
 ## Proofreading procedures
 1. Should be done with browser side-by-side with VS Code
@@ -62,6 +72,10 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Read a section out loud first, use the anchor to go to it
    1. Click links as you go through
    1. Read a section at a time on text, then check rest for style and links
+1. Proofread should say last sha1
+   1. Then use gitLens to see diff since then, etc.
+   1. Proofread procedures one for determining last update
+   1. One procedure for updating
 
 # Next tasks
 
