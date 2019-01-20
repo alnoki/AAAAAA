@@ -132,21 +132,76 @@ OS-specific
    * How to change :xref:`bash <bash-man-page>` prompt to a custom string like
      ``$``
 
-Testing with pytest
-===================
 
-#. :std:doc:`pytest:index`
+********
+Packages
+********
+
+Numerical Analysis
+==================
+
+NumPy
+-----
+
+#. :std:doc:`numpy:about`
+
+   * Fundamental :ref:`package <conda:concept-conda-package>` for scientific
+     :xref:`Python` computing
+
+#. :std:doc:`numpy:user/quickstart`
+
+   * Official :std:doc:`NumPy <numpy:about>` tutorial
+
+#. :xref:`codebasics-numpy`
+
+   * Recommended :std:doc:`NumPy <numpy:about>` tutorial on :xref:`YouTube`
+
+Matplotlib
+----------
+
+#. :std:doc:`Matplotlib <matplotlib:index>`
+
+   * Homepage for :xref:`Python` plotting tool
+
+#. :std:doc:`matplotlib:tutorials/index`
+
+   * Instructions to use :std:doc:`Matplotlib <matplotlib:index>`
+
+#. :xref:`codebasics-matplotlib`
+
+   * Recommended :std:doc:`Matplotlib <matplotlib:index>` tutorial on
+     :xref:`YouTube`
+
+
+pandas
+------
+
+#. :std:doc:`pandas <pandas:index>`
+
+   * For handling datasets
+
+#. :std:doc:`pandas:10min`
+
+   * Official :std:doc:`pandas <pandas:index>` tutorial
+
+#. :xref:`codebasics-pandas`
+
+   * Recommended :std:doc:`pandas <pandas:index>` tutorial on :xref:`YouTube`
+
+pytest
+======
+
+#. :std:doc:`pytest <pytest:index>`
 
    * Official :std:doc:`pytest <pytest:index>` documentation
 
-#. :xref:`codebasics-pytest-vids`
+#. :xref:`codebasics-pytest`
 
-   * Recommended starting point for learning :std:doc:`pytest <pytest:index>`
+   * Recommended :std:doc:`pandas:index` tutorial on :xref:`YouTube`
 
 #. :std:doc:`pytest tutorials <pytest:contents>`
 
    * Official comprehensive :std:doc:`pytest <pytest:index>` walkthroughs
-
 
 ***************
 AAAAAA codebase
@@ -427,25 +482,6 @@ reStructuredText
 
    * Style checker for :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
 
-Jupyter
-=======
-
-#. :xref:`Jupyter Notebooks <Jupyter>`
-
-   * Interactive :xref:`Python` notebook format used for algorithm development
-   * Code, :xref:`LaTeX`, :xref:`Markdown`, and plotting in one document
-
-#. :xref:`Schafer-Jupyter`
-
-   * Recommended starting point for learning to use
-     :xref:`Jupyter Notebooks <Jupyter>`
-   * Tutorial video produced by :xref:`Corey Schafer <Corey-Schafer-vids>`
-
-#. :xref:`AAAAAA-nbs`
-
-   * Online viewer for :xref:`Jupyter Notebooks <Jupyter>` used to
-     develop :term:`AAAAAA`
-
 Engine-agnostic tools
 =====================
 
@@ -479,8 +515,56 @@ Mathematics
 Tools
 *****
 
-VS Code general
-===============
+Jupyter
+=======
+
+General
+-------
+
+#. :xref:`Jupyter Notebooks <Jupyter>`
+
+   * Interactive :xref:`Python` notebook format used for algorithm development
+   * Code, :xref:`LaTeX`, :xref:`Markdown`, and plotting in one document
+
+#. :xref:`Schafer-Jupyter`
+
+   * Recommended starting point for learning to use
+     :xref:`Jupyter Notebooks <Jupyter>`
+   * Tutorial video produced by :xref:`Corey Schafer <Corey-Schafer-vids>`
+
+#. :xref:`AAAAAA-nbs`
+
+   * Online viewer for :xref:`Jupyter Notebooks <Jupyter>` used to
+     develop :term:`AAAAAA`
+
+Extensions
+----------
+
+#. :std:doc:`nb-extensions:index`
+
+   * Additional functionality for :xref:`Jupyter`
+
+#. :std:doc:`nb-extensions:nbextensions/collapsible_headings/readme`
+
+   * Section navigation and management
+
+#. :std:doc:`nb-extensions:nbextensions/toc2/README`
+
+   * Automatic section linking
+
+#. :std:doc:`nb-extensions:nbextensions/varInspector/README`
+
+   * Inspect data values
+
+#. :xref:`live-md-preview`
+
+   * Preview :xref:`Markdown` and :xref:`LaTeX` syntax real-time
+
+VS Code
+=======
+
+General
+-------
 
 #. :xref:`VS-Code`
 
@@ -513,8 +597,8 @@ VS Code general
 
    * Direct input for various development commands in :xref:`VS-Code`
 
-VS Code extensions
-==================
+Extensions
+----------
 
 #. :xref:`GitLens`
 

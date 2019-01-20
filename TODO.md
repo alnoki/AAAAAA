@@ -4,27 +4,16 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # Developer's setup
 
-## Analyzing
-1. Will need to conda install
-1. Have a link to the tools page for notebook extensions
-1. .yaml equivalent of Jupyter notebooks?
-1. All Jupyter extensions used should be mentioned on tools page
-1. Links for numerical analysis packages
-
 ## Tools
 1. Update Sphinx procedures
-   1. Make linkcheck and make spelling should be their own procedure?
+   1. Make linkcheck its own procedure?
    1. Less admonitions?
+   1. Link Willing video times in a CSV table
 
 ## Testing - still need to attempt
 1. conda install pytest
-1. Jupyter extensions and settings
-   1. Conda nbextensions install
-   1. Is there an equivalent to a .yaml that can keep nbextensions/preferences?
 1. Run a pytest with the pip install -e or conda install -e equivalent
    1. Link to pytest test discovery explanation
-1. Install all the extensions and maybe .yaml?
-   1. .yaml could become obsolete
 1. Testing viewer extension in the pytest section
 1. pip install -e from inside src folder
    1. Will involve moving setup.py
@@ -36,6 +25,8 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Conda update
    1. Make a .yaml
    1. Install a .yaml
+1. .yaml equivalent of Jupyter notebooks extension settings?
+   1. Maybe a .json file is stored somewhere
 1. After completing setup guide
    1. Should go through conf.py and figure out what is going on
    1. Can explain in concepts section what defaults are, etc.
@@ -152,6 +143,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. See other investing references from urls on Google Drive
 
 ## Numerical analysis
+1. matplotlib sampledoc tutorial shows how to embed plots
 1. numpy codebasics tutorial videos
 1. https://web.stanford.edu/~schmit/cme193/
    1. has seaborn and pandas examples

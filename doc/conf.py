@@ -207,7 +207,12 @@ intersphinx_mapping = {
     'matplotlib-sampledoc':
         ('https://matplotlib.org/sampledoc/', None),
     'sublime-with-sphinx':
-        ('https://sublime-and-sphinx-guide.readthedocs.io/en/latest', None)
+        ('https://sublime-and-sphinx-guide.readthedocs.io/en/latest', None),
+    'matplotlib': ('https://matplotlib.org/', None),
+    'numpy': ('https://docs.scipy.org/doc/numpy/', None),
+    'pandas': ('http://pandas.pydata.org/pandas-docs/stable/', None),
+    'nb-extensions': ('https://jupyter-contrib-nbextensions.readthedocs.io/en/'
+                      'latest', None),
 }
 
 # Base urls used by xrefs extension
@@ -244,9 +249,6 @@ xref_links = {
                            url['YT PL'] + '-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU'),
     'alnoki-repos': ("alnoki's GitHub repositories",
                      url['GitHub'] + 'alnoki?tab=repositories'),
-    'codebasics-pytest-vids':
-        ("codebasics YouTube playlist: Pytest Tutorial (Python Automated "
-         "Testing)", url['YT PL'] + 'eo1K3hjS3utzQYDNRNluzqJqpMXx6hHu'),
     'intersphinx-numpy-matplotlib':
         ("Intersphinx with NumPy/Matplotlib", url['Stack OF'] +
          '21538983/specifying-targets-for-intersphinx-links-to-numpy-'
@@ -363,5 +365,17 @@ xref_links = {
          '2014/10/05/advanced-git-branch-filtering/'),
     'VS-Code-extensions': ("Extensions", url['VS Code doc'] + 'setup/'
                            'additional-components#_vs-code-extensions'),
+    'codebasics-numpy': ("codebasics NumPy tutorial", url['YT PL'] +
+                         'eo1K3hjS3uset9zIVzJWqplaWBiacTEU'),
+    'codebasics-matplotlib': ("codebasics Matplotlib tutorial", url['YT PL'] +
+                              'eo1K3hjS3uu4Lr8_kro2AqaO6CFYgKOl'),
+    'codebasics-pandas': ("codebasics pandas tutorial", url['YT PL'] +
+                          'eo1K3hjS3uuASpe-1LjfG5f14Bnozjwy'),
+    'codebasics-pytest': ("codebasics pytest tutorial", url['YT PL'] +
+                          'eo1K3hjS3utzQYDNRNluzqJqpMXx6hHu'),
+    'live-md-preview':
+        ("Live Markdown Preview", url['GitHub'] + 'ipython-contrib/'
+         'jupyter_contrib_nbextensions/tree/master/src/'
+         'jupyter_contrib_nbextensions/nbextensions/livemdpreview'),
     # New links below, sorted links above
     }

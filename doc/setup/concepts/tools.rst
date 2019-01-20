@@ -38,23 +38,33 @@ The :ref:`setup-documenting` setup instructions describe how to
       :term:`AAAAAA` needs
 
       .. csv-table:: :ref:`conda:concept-conda-package` in :term:`AAAAAA`
-         :header: "Package", "Function", "Setup Stage"
+         :header: "Package", "Function", "Setup Phase"
          :align: center
 
-         :xref:`python <Python>`, Code creation, "
+         :xref:`Python`, Code creation, "
          :ref:`Documenting <setup-documenting>`"
          :std:doc:`conda <conda:index>`, Package management, "
          :ref:`Documenting <setup-documenting>`"
-         :pep:`pep8 <8>`, Check code style, "
+         :pep:`8`, Check code style, "
          :ref:`Documenting <setup-documenting>`"
-         :std:doc:`sphinx <sphinx:intro>` , Build documentation, "
+         :std:doc:`Sphinx <sphinx:intro>` , Build documentation, "
          :ref:`Documenting <setup-documenting>`"
          :std:doc:`sphinx_rtd_theme <rtd-sphinx-theme:index>`, "Documentation
          appearance", "
          :ref:`Documenting <setup-documenting>`"
-         :xref:`doc8 <Doc8>`, Check documentation syntax, "
+         :xref:`Doc8 <Doc8>`, Check documentation syntax, "
          :ref:`Documenting <setup-documenting>`"
+         :xref:`Jupyter Notebook <Jupyter>`, Interactive analysis, "
+         :ref:`analyzing`"
+         :std:doc:`Notebook extensions <nb-extensions:index>`, "Extra analysis
+         tools", :ref:`analyzing`
+         :std:doc:`NumPy <numpy:about>`, "Number processing", :ref:`analyzing`
+         :std:doc:`Matplotlib <matplotlib:index>`, "Data plotting", "
+         :ref:`analyzing`"
+         :std:doc:`pandas <pandas:index>`, "Dataset management", "
+         :ref:`analyzing`"
          :std:doc:`pytest <pytest:index>`, Code testing, Testing
+
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"
@@ -65,7 +75,7 @@ The :ref:`setup-documenting` setup instructions describe how to
    :std:doc:`conda <conda:index>` commands"
    :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
    :xref:`Python`"
-   :xref:`codebasics tutorials <codebasics-pytest-vids>`, "Learn
+   :xref:`codebasics tutorials <codebasics-pytest>`, "Learn
    :std:doc:`pytest <pytest:index>`"
 
 
@@ -218,3 +228,43 @@ Jupyter
 
 :xref:`Jupyter Notebooks <Jupyter>` enable an interactive style of
 algorithm development, and can quickly render :xref:`LaTeX`
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`Corey Schafer tutorial <Schafer-Jupyter>`, "Tutorial video on
+   :xref:`YouTube`"
+   :xref:`Markdown`, "Syntax for making links, tables, etc."
+   :xref:`tables-generator`, "Table syntax generator"
+
+The interactive style of :xref:`Jupyter Notebooks <Jupyter>` make it easy to
+analyze data with numerical :ref:`conda packages <conda:concept-conda-package>`
+
+.. csv-table:: Numerical analysis :ref:`packages <conda:concept-conda-package>`
+   :header: "Package", "Official tutorial", "YouTube tutorial"
+   :align: center
+
+   :std:doc:`NumPy <numpy:about>`, "
+   :std:doc:`Quickstart <numpy:user/quickstart>`", "
+   :xref:`NumPy <codebasics-numpy>`"
+   :std:doc:`Matplotlib <matplotlib:index>`,"
+   :std:doc:`matplotlib:tutorials/index`", "
+   :xref:`Matplotlib <codebasics-matplotlib>`"
+   :std:doc:`pandas <pandas:index>`, "
+   :std:doc:`10 min tutorial <pandas:10min>`", "
+   :xref:`pandas <codebasics-pandas>`"
+
+The :std:doc:`nb-extensions:index` provide additional functionality
+
+.. csv-table:: :std:doc:`Select extensions <nb-extensions:index>`
+   :header: "Extension", "Function"
+   :align: center
+
+   :std:doc:`nb-extensions:nbextensions/collapsible_headings/readme`, "Section
+   management"
+   :std:doc:`nb-extensions:nbextensions/toc2/README`, "Automatic section
+   linking"
+   :std:doc:`nb-extensions:nbextensions/varInspector/README`, "Data value
+   inspection"
+   :xref:`live-md-preview`, "Preview equation syntax"
