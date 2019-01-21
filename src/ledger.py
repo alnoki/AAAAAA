@@ -15,6 +15,9 @@ class Transaction:
     def _check_instance_args(self, date, total_amount, transact_type, symbol,
                              num_shares, description):
         """Checks positional & keyword arg types/values for __init__"""
+
+        # use date.__name__ instead of 'date'?
+
         check_object('types', (  # Positional arg types
             (date, (datetime.date,), 'date'),
             (total_amount, (decimal.Decimal, int), 'total_amount'),

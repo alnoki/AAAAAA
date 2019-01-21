@@ -6,7 +6,7 @@ Analyzing
 #########
 
 #. Use the :xref:`VS Code integrated terminal <VS-Code-terminal>` to
-   :std:doc:`install <conda:commands/conda-install>` some more
+   :std:doc:`install <conda:commands/install>` some more
    :ref:`conda packages <conda:concept-conda-package>` for :term:`a6`:
 
    .. code-block:: bash

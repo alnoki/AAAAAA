@@ -84,6 +84,15 @@ Environments
 
    * A collection of :ref:`conda packages <conda:concept-conda-package>`
 
+#. :ref:`Conda channels <conda:channels-glossary>`
+
+   * A repository that hosts
+     :ref:`conda packages <conda:concept-conda-package>`
+
+#. :xref:`conda-forge`
+
+   * A community-driven :ref:`conda channel <conda:channels-glossary>`
+
 Conda syntax
 ------------
 
@@ -91,11 +100,11 @@ Conda syntax
 
    * Quick reference for common :std:doc:`conda <conda:index>` commands
 
-#. :std:doc:`conda:commands/conda-create`
+#. :std:doc:`conda:commands/create`
 
    * Make a new :ref:`conda environment <conda:concept-conda-env>`
 
-#. :std:doc:`conda:commands/conda-install`
+#. :std:doc:`conda:commands/install`
 
    * Add a :ref:`package <conda:concept-conda-package>` to a
      :ref:`conda environment <conda:concept-conda-env>`
@@ -374,6 +383,11 @@ Usage specifics
 
    * How to configure a :std:doc:`Sphinx <sphinx:intro>` project
 
+#. :ref:`sphinx:toctree-directive`
+
+   * :std:doc:`Directive <sphinx:usage/restructuredtext/directives>` for
+     creating project document structure
+
 #. :std:doc:`Autodoc extension <sphinx:usage/extensions/autodoc>`
 
    * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` for generating
@@ -387,11 +401,12 @@ Usage specifics
 
 #. :rst:role:`sphinx:math`
 
-   * :std:term:`Sphinx role <sphinx:role>` for using :xref:`LaTeX` in-line
+   * :std:doc:`Role <sphinx:usage/restructuredtext/roles>` for using
+     :xref:`LaTeX` in-line
 
 #. :rst:dir:`sphinx:math`
 
-   * :std:term:`Sphinx directive <sphinx:directive>` for using
+   * :std:doc:`Directive <sphinx:usage/restructuredtext/directives>` for using
      :xref:`LaTeX` on its own line
 
 #. :xref:`http socket error fix <http-socket-error>`
@@ -454,15 +469,13 @@ Managing references
 reStructuredText
 ================
 
+General
+-------
+
 #. :std:doc:`sphinx:usage/restructuredtext/basics`
 
    * :std:doc:`Sphinx <sphinx:intro>` explanation of
      :std:doc:`reST <sphinx:usage/restructuredtext/basics>` markup language
-
-#. :xref:`reST-cheatsheet`
-
-   * Quick reference for :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
-     usage
 
 #. :xref:`reST-documentation`
 
@@ -471,16 +484,41 @@ reStructuredText
 
 #. :xref:`quick-reST`
 
-   * Quick reference with :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
-     examples
+   * Quick reference with
+     :std:doc:`reST <sphinx:usage/restructuredtext/basics>` examples
+
+#. :xref:`Doc8`
+
+   * Style checker for :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+
+Syntax
+------
+
+#. :xref:`reST-cheatsheet`
+
+   * Quick reference for :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+     usage
 
 #. :xref:`reST-list-indentation`
 
    * Explanation of nested list syntax
 
-#. :xref:`Doc8`
+#. :ref:`Tables <sphinx:table-directives>`
 
-   * Style checker for :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+   * Syntax for creating various table styles
+
+#. :std:doc:`Role <sphinx:usage/restructuredtext/roles>`
+
+   * Element that marks a piece of text, usually in-line
+
+#. :std:doc:`Directive <sphinx:usage/restructuredtext/directives>`
+
+   * Element that marks a block of text
+
+#. :ref:`ref-role`
+
+   * :std:doc:`Role <sphinx:usage/restructuredtext/roles>` syntax to link to
+     arbritrary documentation components
 
 Engine-agnostic tools
 =====================

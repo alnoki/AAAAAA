@@ -7,8 +7,8 @@ Tools
 
 .. contents::
 
-
 .. _tools-anaconda:
+
 
 ********
 Anaconda
@@ -24,10 +24,11 @@ the ones that you need
 You can manage these :ref:`packages <conda:concept-conda-package>` using
 :std:doc:`conda <conda:index>`, a command-line
 style configurator that automatically checks dependencies and maintains
-compatibility
+compatibility. :ref:`conda:concept-conda-package` can be downloaded from
+different :ref:`conda channels <conda:channels-glossary>`
 
 The :ref:`setup-documenting` setup instructions describe how to
-:std:doc:`create <conda:commands/conda-create>` a new
+:std:doc:`create <conda:commands/create>` a new
 :ref:`conda environment <conda:concept-conda-env>`, called :term:`a6`:
 
 .. glossary::
@@ -37,33 +38,45 @@ The :ref:`setup-documenting` setup instructions describe how to
       the necessary :ref:`packages <conda:concept-conda-package>` that
       :term:`AAAAAA` needs
 
+      .. _anaconda-packages-table:
+
       .. csv-table:: :ref:`conda:concept-conda-package` in :term:`AAAAAA`
-         :header: "Package", "Function", "Setup Phase"
+         :header: "Package", "Function", "Setup Phase", "Channel"
          :align: center
 
          :xref:`Python`, Code creation, "
-         :ref:`Documenting <setup-documenting>`"
+         :ref:`Documenting <setup-documenting>`", "
+         :ref:`conda <conda:channels-glossary>`"
          :std:doc:`conda <conda:index>`, Package management, "
-         :ref:`Documenting <setup-documenting>`"
+         :ref:`Documenting <setup-documenting>`", "
+         :ref:`conda <conda:channels-glossary>`"
          :pep:`8`, Check code style, "
-         :ref:`Documenting <setup-documenting>`"
+         :ref:`Documenting <setup-documenting>`","
+         :ref:`conda <conda:channels-glossary>`"
          :std:doc:`Sphinx <sphinx:intro>` , Build documentation, "
-         :ref:`Documenting <setup-documenting>`"
+         :ref:`Documenting <setup-documenting>`","
+         :ref:`conda <conda:channels-glossary>`"
          :std:doc:`sphinx_rtd_theme <rtd-sphinx-theme:index>`, "Documentation
          appearance", "
-         :ref:`Documenting <setup-documenting>`"
+         :ref:`Documenting <setup-documenting>`", "
+         :ref:`conda <conda:channels-glossary>`"
          :xref:`Doc8 <Doc8>`, Check documentation syntax, "
-         :ref:`Documenting <setup-documenting>`"
+         :ref:`Documenting <setup-documenting>`", :xref:`conda-forge`
          :xref:`Jupyter Notebook <Jupyter>`, Interactive analysis, "
-         :ref:`analyzing`"
+         :ref:`analyzing`","
+         :ref:`conda <conda:channels-glossary>`"
          :std:doc:`Notebook extensions <nb-extensions:index>`, "Extra analysis
-         tools", :ref:`analyzing`
-         :std:doc:`NumPy <numpy:about>`, "Number processing", :ref:`analyzing`
+         tools", :ref:`analyzing`, :xref:`conda-forge`
+         :std:doc:`NumPy <numpy:about>`, "Number processing", "
+         :ref:`analyzing`", :ref:`conda <conda:channels-glossary>`
          :std:doc:`Matplotlib <matplotlib:index>`, "Data plotting", "
-         :ref:`analyzing`"
+         :ref:`analyzing`", "
+         :ref:`conda <conda:channels-glossary>`"
          :std:doc:`pandas <pandas:index>`, "Dataset management", "
-         :ref:`analyzing`"
-         :std:doc:`pytest <pytest:index>`, Code testing, Testing
+         :ref:`analyzing`", "
+         :ref:`conda <conda:channels-glossary>`"
+         :std:doc:`pytest <pytest:index>`, Code testing, Testing, "
+         :ref:`conda <conda:channels-glossary>`"
 
 
 .. csv-table:: Select references
@@ -77,6 +90,8 @@ The :ref:`setup-documenting` setup instructions describe how to
    :xref:`Python`"
    :xref:`codebasics tutorials <codebasics-pytest>`, "Learn
    :std:doc:`pytest <pytest:index>`"
+
+.. _tools-git:
 
 
 ***
@@ -124,6 +139,9 @@ documentation for :term:`AAAAAA` and even for
 :std:doc:`reStructuredText <sphinx:usage/restructuredtext/basics>` (``reST``)
 markup language
 
+The :ref:`table of contents <sphinx:toctree-directive>` facility provides a
+linearly navigable structure that ensures access to all pages of documentation
+
 :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>` enable additional
 functionality and several are used in :term:`AAAAAA`
 
@@ -150,6 +168,10 @@ functionality and several are used in :term:`AAAAAA`
    :xref:`quick-reST`, "
    :std:doc:`reStructuredText <sphinx:usage/restructuredtext/basics>`
    syntax"
+   :ref:`References extension configuration <sublime-with-sphinx:use the external links extension>`, "
+   :std:doc:`Extensions <sphinx:usage/extensions/index>` installation and
+   configuration"
+
 
 A list of common :term:`AAAAAA` usage examples is at
 :ref:`Sphinx Procedures <sphinx-procedures>`
@@ -177,6 +199,8 @@ the visual appearance of this website!
    :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
    documentation elements"
 
+.. _tools-VS-Code:
+
 
 *******
 VS Code
@@ -192,8 +216,8 @@ develop, to document, and to test code
 
    :xref:`Python <VS-Code-Python-ext>`, Developing :xref:`Python`
    :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate code
-   :xref:`RST preview <RST-preview-ext>` [#]_, "Editing
-   :std:doc:`reST <sphinx:usage/restructuredtext/basics>`"
+   :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "Editing
+   :std:doc:`reST <sphinx:usage/restructuredtext/basics>` "
    :xref:`Test explorer UI <Test-explorer-UI>`, "Testing with
    :std:doc:`pytest <pytest:index>`"
    :xref:`GitLens <GitLens>`, Advanced :xref:`Git <git-manual>` functionality
@@ -220,6 +244,9 @@ all the relevant settings should already be installed!
 
 .. [#] Requires a :xref:`doc8-newline-issue`, included in the provided
    :xref:`VS-Code-settings`
+.. [#] Offers live rendering, but is not as reliable as
+   :ref:`using a browser <building-documentation>`. For example, fails to
+   properly render :ref:`intersphinx links <intersphinx-linking>`
 
 
 *******

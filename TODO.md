@@ -4,11 +4,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # Developer's setup
 
-## Tools
-1. Update Sphinx procedures
-   1. Make linkcheck its own procedure?
-   1. Less admonitions?
-   1. Link Willing video times in a CSV table
+1. Project dir structure should be its own page
 
 ## Testing - still need to attempt
 1. conda install pytest
@@ -18,6 +14,32 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. pip install -e from inside src folder
    1. Will involve moving setup.py
       1. May need to update in folder tree structure description
+1. Mypy goes into testing
+   1. Real python typing guide
+
+## Conda procedures
+1. Make a .yaml
+1. Loading a .yaml
+1. Centralized env creation
+   1. All packages from Conda main channel
+   1. Doc8 and other forge packages
+   1. Pip -e AAAAAA
+   1. Make it so this page doesn't have to be maintained as much
+      1. Just point to channels and say how they are used
+1. Have Conda update somewhere
+1. Conda procedures should have environment reproduction
+   1. Can show how to load a .yaml
+   1. Can show how to do conda/pip install
+      1. References the anaconda table
+      1. Says how to install from forge, etc
+
+## Composition procedures
+1. Includes proofreading
+1. Says take time to ponder and plan next steps
+1. Says gather references first
+   1. Get reference, put in links
+   1. Then add it to tools, the page, etc
+1. Do original tutorials but with financial data
 
 ## Setup after development configuration is complete
 1. All VS Code extensions from the tools page should be added in dev setup
@@ -38,17 +60,12 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Harvest packages thus far from the QuickStart
    1. Make a .yaml file eventually
 1. Make sure all anaconda tools in csv are linked
-
-## Conda procedures
-1. Make a .yaml
-1. Loading a .yaml
-1. Centralized env creation
-   1. All packages from Conda main channel
-   1. Doc8 and other forge packages
-   1. Pip -e AAAAAA
-1. Have Conda update somewhere
+1. Zen says to plan out, get in the right jungle before trees
+   1. 7 habits highly effective people
+1. Link Willing video times in a CSV table
 
 ## Proofreading procedures
+1. Links should have correct capitalization for the first word in a sentence
 1. Should be done with browser side-by-side with VS Code
 1. Verify admonitions are all lowercase
 1. Verify 3-space indent in rst files, and with nested lists
@@ -67,10 +84,16 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Then use gitLens to see diff since then, etc.
    1. Proofread procedures one for determining last update
    1. One procedure for updating
+1. Should have all lowercase arbitrary-section-labels
+   1. Also should be categorical
+   1. Update the documentation syle accordingly
 
 # Next tasks
 
 ## Source documentation
+1. date.__name__ f string? instead of the string "date"
+1. Do autodoc first, then update type annotations, then mypy
+1. Autodoc, then docstrings, then types
 1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
 1. https://realpython.com/documenting-python-code/
 1. Use sphinx rtd theme for test_module.py

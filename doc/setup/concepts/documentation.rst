@@ -43,7 +43,11 @@ reST
 
 :std:doc:`reStructuredText <sphinx:usage/restructuredtext/basics>` (``reST``)
 is a markup language that has special syntax for making fancy
-components like ``this``, :guilabel:`this`, etc.
+components like ``this``, :guilabel:`this`, etc. The two most fundamental
+components are the :std:doc:`role <sphinx:usage/restructuredtext/roles>`, which
+marks a piece of text (usually in-line), and the
+:std:doc:`directive <sphinx:usage/restructuredtext/directives>`, which marks a
+block of text
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"
@@ -63,11 +67,13 @@ components like ``this``, :guilabel:`this`, etc.
    :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, via the
    :guilabel:`Edit on GitHub` feature
 
+.. _documentation-style:
+
 Style
 =====
 
-For consistency, :term:`AAAAAA` adopts stylistic recommendations from common
-sources
+:term:`AAAAAA` adopts stylistic recommendations from common sources, with some
+particular emphases
 
 .. csv-table:: Style references
    :header: "Reference", "Topic"
@@ -83,42 +89,62 @@ sources
 .. [#] Automatically runs through the :xref:`RST-preview-ext` for
    :xref:`VS-Code`
 
+Whitespace
+----------
 
-Select stylistic components worth mentioning:
+#. Indent 3 spaces (especially for :xref:`nested lists <reST-list-indentation>`)
+#. Lines should be a maximum length of 79 characters, unless a
+   :ref:`link <links>` title can't be broken up (this is okay)
+#. Use 2 lines of whitespace above anything that is overlined
+#. Use a single, unescaped space before
+   :std:doc:`footnotes <sphinx:usage/restructuredtext/basics>`
 
-   * Indent 3 spaces (especially for
-     :xref:`nested lists <reST-list-indentation>`)
-   * Lines should be a maximum length of 79 characters, unless a
-     :ref:`link <links>` title can't be broken up (this is okay)
-   * 2-lines of whitespace above anything that is overlined
-   * Use a single, unescaped space before
-     :std:doc:`footnotes <sphinx:usage/restructuredtext/basics>`
-   * Lowercase hyphenated names when possible: ``the-fantastic-reference``
+General syntax
+--------------
 
-      .. code-block:: rest
+#. :ref:`Labels <ref-role>` should be lowercase hyphenated, and should use
+   similar categorical naming when possible:
 
-          .. _reference-handle:
+   * ``tools-anaconda``
+   * ``git-view-project-log``
 
+#. See :ref:`the packages table <anaconda-packages-table>` for some sample
+   :ref:`csv-table <sphinx:table-directives>` syntax with appropriate line
+   breaks
+#. :ref:`Link <Links>` capitalization should be natural with regard to the
+   rest of the sentence
 
-          ##############
-          Document title
-          ##############
-
-          Welcome to this document!
+   * :ref:`Links` are here
+   * Here are some :ref:`links <Links>`
 
 
-          *******
-          Section
-          *******
+Simple example
+--------------
 
-          Welcome to this section! [#]_
+.. code-block:: rest
 
-          Subsection
-          ==========
+   .. _my-label:
 
-          .. rubric:: Footnotes
 
-          .. [#] Footnote from the above section
+   ##############
+   Document title
+   ##############
+
+   Welcome to this document!
+
+
+   *******
+   Section
+   *******
+
+   Welcome to this section! [#]_
+
+   Subsection
+   ==========
+
+   .. rubric:: Footnotes
+
+   .. [#] Footnote from the above section
 
 The ``.rst`` files in :term:`AAAAAA` should clearly portray other relevant
 stylistic components, simply look around in them for more examples

@@ -5,6 +5,17 @@
 Sphinx
 ######
 
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`Practical Sphinx presentation <Willing-Sphinx>`, "Common commands"
+   :xref:`Project setup screencast <Yusuf-Sphinx-RTD>`, "How projects work"
+   :std:doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`, "
+   Official tutorial"
+
+.. contents::
+
 .. _building-documentation:
 
 
@@ -14,34 +25,34 @@ Building documentation
 
 Per :xref:`Willing-Sphinx`:
 
-#. :std:doc:`Activate<conda:user-guide/cheatsheet>` the
-   :ref:`a6 environment <dev-environment>` from inside the documentation root
-   directory if it is not already active
-#. From the :xref:`VS-Code-terminal`:
+#. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
+   inside the :ref:`documentation root directory<project-dir-tree>` if it is
+   not already :ref:`active <conda:activate-env>`
+#. From the :ref:`integrated terminal <tools-VS-Code>`, make a new build then
+   start a local server:
 
-   * :command:`make html` to create new documentation files
-   * :command:`python -m http.server` to start running a website server
-   * Just start one server, lest you incur an :xref:`http-socket-error`
+   .. code-block:: bash
 
-#. Open http://localhost:8000/_build/html/index.html in a browser
+      make html
+      python -m http.server
 
-   * Refresh after making a new build to load the changes
+#. Open http://localhost:8000/_build/html/index.html in a browser to view the
+   build
+#. You can update the :ref:`.rst files <concepts-documentation>` and make
+   another build, but don't start another server (unless you want an
+   :xref:`http-socket-error`):
 
-#. :command:`make clean` to clear files before :ref:`committing <committing>`
+   .. code-block:: bash
 
-.. note::
-   The first time you perform this procedure you may see a warning about a
-   ``_static`` directory. If that's the case, simply create a blank on in the
-   documentation root directory
+      make html
 
-.. tip::
-   Run :command:`make linkcheck` occasionally to verify that links in the
-   project are valid references
+#. Refresh the browser to see changes
 
-.. warning::
-   The :xref:`RST-preview-ext` offers live rendering, but it is not as reliable
-   as the above procedure. For example, it fails to properly render
-   :std:doc:`Intersphinx references<sphinx:usage/extensions/intersphinx>`
+#. Before :ref:`committing <committing>`, clear out the build files:
+
+   .. code-block:: bash
+
+      make clean
 
 .. _managing-references:
 
@@ -55,135 +66,161 @@ Managing references
 Using Intersphinx
 =================
 
-Per :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`:
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
 
-#. Add the project's root url to
-   :std:doc:`conf.py <sphinx:usage/configuration>`::
+   :std:doc:`sphinx.ext.intersphinx <sphinx:usage/extensions/intersphinx>`, "
+   :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` documentation"
+   :xref:`Intersphinx reference syntax <intersphinx-inv-targets>`, "Syntax
+   explanation"
+   :xref:`Intersphinx inventory parser <intersphinx-inv-parser>`, "For viewing
+   large map outputs"
 
-    intersphinx_mapping = {
-       'python': ('https://docs.python.org/3', None),
-       'sphinx': ('http://www.sphinx-doc.org/en/master/', None),
-       'pytest': ('https://docs.pytest.org/en/latest/', None),
-       'rtfd': ('https://docs.readthedocs.io/en/latest/', None),
-       'rtd-sphinx-theme':
-          ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
-       ...
 
-#. Inspect the :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
-   mapping, usually located under the root, via
+#. Locate the project's
+   :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
+   mapping, using the :ref:`VS Code integrated terminal <tools-VS-Code>`:
 
    .. code-block:: bash
 
-      python -msphinx.ext.intersphinx http://www.sphinx-doc.org/objects.inv
+      python -msphinx.ext.intersphinx http://www.sphinx-doc.org/en/master/objects.inv
 
-   * Try this in a terminal that can be maximized to full screen
-   * Most times the root will be at ``.io/en/latest/`` or ``.com/en/latest``
-   * Consider an :xref:`intersphinx-inv-parser` for large outputs
+   * You may have to experiment with the project root link. Some common
+     endings:
 
-#. Locate the desired target in the mapping output, which is arranged like the
-   project's table of contents. For example, ``usage/extensions/intersphinx``
-   is located in the ``std:doc`` section of the output from the above command
+      * ``.io/en/latest/``
+      * ``.com/en/latest/``
 
-   * See :xref:`intersphinx-inv-targets` for a formatting explanation
-   * Most documentation pages will be in ``std:doc``
+#. Add the project's root to
+   :std:doc:`conf.py <sphinx:usage/configuration>`:
 
-#. Link to the reference using syntax from the
-   :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`
-   and (for archival purposes) add a description of the link to
-   :ref:`references`
+   .. code-block:: python
 
-   * To use the default text from the reference, rendered as
-     :std:doc:`sphinx:usage/extensions/intersphinx`, use:
+      intersphinx_mapping = {
+         'python': ('https://docs.python.org/3', None),
+         'sphinx': ('http://www.sphinx-doc.org/en/master/', None),
+         'pytest': ('https://docs.pytest.org/en/latest/', None),
+         'rtfd': ('https://docs.readthedocs.io/en/latest/', None),
+         'rtd-sphinx-theme':
+            ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
+         ...
+
+#. Inspect the :std:doc:`objects.inv mapping <sphinx:usage/extensions/intersphinx>`
+
+   * For large outputs, consider using a command line program (like
+     :program:`terminal.app` on a :xref:`Mac`), which can be maximized to full
+     screen
+
+#. Locate the desired target in the mapping output and link to it using a
+   corresponding :std:doc:`role <sphinx:usage/restructuredtext/roles>`:
+
+   .. csv-table:: Referencing mapping outputs
+      :header: "Category in objects.inv", "Role to use"
+      :align: center
+
+      ``std:doc``, ``:std:doc:``
+      ``rst:directive``, ``:rst:dir:``
+      ``std:label``, ``:ref:``
+
+#. Documentation pages, under ``std:doc``, are arranged like the project's
+   :ref:`table of contents <sphinx:toctree-directive>`, so you can figure
+   out the :std:doc:`role target <sphinx:usage/restructuredtext/roles>` from
+   the link that a web browser uses to render the documentation page:
+
+   * https://docs.python.org/3/tutorial/introduction.html
+     (**tutorial/introduction**) yields
 
      .. code-block:: rest
 
-         :std:doc:`sphinx:usage/extensions/intersphinx`
+        Here is a description about :std:doc:`comments <python:tutorial/introduction>`
 
-   * To create your own custom text, rendered as
-     :std:doc:`Custom <sphinx:usage/extensions/intersphinx>`, use:
+#. Add a description of the link to :ref:`links <links>`
+#. :std:doc:`Add a link role <sphinx:usage/restructuredtext/roles>` to
+   documentation using the appropriate
+   :ref:`capitalization <documentation-style>`. For example:
 
-     .. code-block:: rest
+   .. code-block:: rest
 
-         :std:doc:`Custom <sphinx:usage/extensions/intersphinx>`
+      Read about :std:doc:`Sphinx roles <sphinx:usage/restructuredtext/roles>`
 
 .. tip::
-   Some items in :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
-   may require slightly different syntax
+   :xref:`intersphinx-numpy-matplotlib` has instructions for referencing
+   :std:doc:`Numpy <numpy:about>` and :std:doc:`Matplotlib <matplotlib:index>`
 
-      * Items in the ``rst:directive`` section of the
-        :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>` file for
-        :std:doc:`Sphinx <sphinx:intro>` must be referenced via
-        ``:rst:dir:` ... ```
-      * Items in an ``std:label`` section use ``:ref:` ... ```, because they
-        were generated via the :rst:role:`sphinx:ref` role
-
-.. note::
-   See :xref:`intersphinx-numpy-matplotlib` instructions for these specific
-   cases
 
 .. _xref-linking:
 
 Referencing external links
 ==========================
 
-The :xref:`Sphinx xref extension <xref-ext>` is installed like other
-:std:doc:`built-in Sphinx extensions<sphinx:usage/extensions/index>`, with some
-installation tips taken from a related
-:ref:`references extension configuration manual <sublime-with-sphinx:use the external links extension>`
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
 
-Usage instructions are per :xref:`xref-ext`:
+   :xref:`Sphinx xref extension <xref-ext>`, Manages external links
+   :ref:`Using references extension <sublime-with-sphinx:use the external links extension>`, "
+   Additional configuration and usage"
 
 #. Add a reference to the link in
    :std:doc:`conf.py <sphinx:usage/configuration>`
 
    * If the link has a common base link, like in a
-     :xref:`YouTube video <YouTube>`, add it too::
+     :xref:`YouTube video <YouTube>`, add it to the ``url`` mapping
+     :ref:`dictionary <python:tut-dictionaries>`:
 
-       # Base urls used by xrefs extension
-       url = {
-          'GitHub': 'https://github.com/',
-          'YT vid': 'https://www.youtube.com/watch?v=',  # Video
-          ...
+     .. code-block:: python
 
-   * Put in new links below the delimiter comment::
+        # Base urls used by xrefs extension
+        url = {
+           'GitHub': 'https://github.com/',
+           'YT vid': 'https://www.youtube.com/watch?v=',  # Video
+           ...
 
-       xref_links = {
-          'Python': ('Python', 'https://www.python.org'),
-          'xref-ext': ("Michael Jones' sphinx-xref repository",
-                      url['GitHub'] + 'michaeljones/sphinx-xref'),
-          ...
-          'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
-                         'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
-          # New links below, sorted links above
-          'doc8-newline-issue':
-              ("Doc8 newline issue fix", url['GitHub'] + 'vscode-restructuredtext/'
-              'vscode-restructuredtext/issues/84'),
-          }
+   * Put new links in the ``xref_links`` mapping
+     :ref:`dictionary <python:tut-dictionaries>` below the delimiter
+     :std:doc:`comment <python:tutorial/introduction>`
 
-#. Link to the reference using syntax similar to the
-   :std:doc:`Intersphinx documentation <sphinx:usage/extensions/intersphinx>`
+     .. code-block:: python
 
-   * To use the default text from the reference, rendered as
-     :xref:`xref-ext`, use:
+        xref_links = {
+           'Python': ('Python', 'https://www.python.org'),
+           'xref-ext': ("Michael Jones' sphinx-xref repository",
+                       url['GitHub'] + 'michaeljones/sphinx-xref'),
+           ...
+           'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
+                          'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
+           # New links below, sorted links above
+           'doc8-newline-issue':
+               ("Doc8 newline issue fix", url['GitHub'] + 'vscode-restructuredtext/'
+               'vscode-restructuredtext/issues/84'),
+           }
 
-     .. code-block:: rest
+#. :std:doc:`Add a link role <sphinx:usage/restructuredtext/roles>` to
+   documentation using the appropriate
+   :ref:`capitalization <documentation-style>`. For example:
 
-         :xref:`xref-ext`
+   .. code-block:: rest
 
-   * To create your own custom text, rendered as
-     :xref:`Custom link <xref-ext>`, use:
+      Read about the :xref:`xref extension <xref-ext>`
 
-     .. code-block:: rest
+#. Add a description of the link to :ref:`links <references>`
 
-         :xref:`Custom link <xref-ext>`
-
-#. Add a description of the link to :ref:`references`
-
-   * After this step, the link can be moved above the delimiter comment in
+   * After this step, the link can be moved above the delimiter
+     :std:doc:`comment <python:tutorial/introduction>` in
      :std:doc:`conf.py <sphinx:usage/configuration>`
 
 .. Tip::
-   As long as the delimiter comment is properly used, links can be sorted in
-   batches
+   As links aren't put above the delimiter
+   :std:doc:`comment <python:tutorial/introduction>` until after they are put
+   into :ref:`links <links>`, links can be sorted in batches
 
+Checking links
+==============
 
+#. With a :ref:`server running<building-documentation>`, use the
+   :ref:`integrated terminal <tools-VS-Code>` to enter:
+
+   .. code-block:: bash
+
+      make linkcheck

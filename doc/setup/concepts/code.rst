@@ -33,6 +33,7 @@ Access
 :term:`AAAAAA` source code is available at the :xref:`AAAAAA-repo`, and
 :xref:`alnoki-repos` contain some additional content from relevant tutorials
 
+.. _project-dir-tree:
 
 *********
 Structure
@@ -58,7 +59,7 @@ Additional contents of the :xref:`AAAAAA-repo`, which can be manipulated in
 
 #. ``.vscode`` directory contains development
    :xref:`settings <VS-Code-settings>`
-#. ``.gitignore`` is used for :xref:`version control <git-manual>`
+#. ``.gitignore`` is for :ref:`git <tools-git>`
 #. ``README.md`` contains references to :term:`AAAAAA` documentation
 #. ``TODO.md`` contains planned development tasks
 

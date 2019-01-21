@@ -35,7 +35,7 @@ Documenting
 
 #. Use the :xref:`command-palette` to open a new :xref:`VS-Code-terminal` and
    enter the following command to
-   :std:doc:`create <conda:commands/conda-create>` a new
+   :std:doc:`create <conda:commands/create>` a new
    :ref:`conda environment <conda:concept-conda-env>`, called
    :term:`a6`, that has the necessary
    :ref:`packages <conda:concept-conda-package>`:

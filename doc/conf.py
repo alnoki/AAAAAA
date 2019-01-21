@@ -105,7 +105,7 @@ html_theme_options = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = []
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -203,7 +203,8 @@ intersphinx_mapping = {
         ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
     'py-dev-guide': ('https://devguide.python.org/', None),
     'anaconda': ('https://docs.anaconda.com/', None),
-    'conda': ('https://conda.io/docs/', None),
+    'conda': ('https://docs.conda.io/projects/continuumio-conda/en/latest/',
+               None),
     'matplotlib-sampledoc':
         ('https://matplotlib.org/sampledoc/', None),
     'sublime-with-sphinx':
@@ -377,5 +378,6 @@ xref_links = {
         ("Live Markdown Preview", url['GitHub'] + 'ipython-contrib/'
          'jupyter_contrib_nbextensions/tree/master/src/'
          'jupyter_contrib_nbextensions/nbextensions/livemdpreview'),
+    'conda-forge': ('conda-forge', "https://conda-forge.org/#about"),
     # New links below, sorted links above
     }
