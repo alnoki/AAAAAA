@@ -111,6 +111,7 @@ Indices and tables
 
    procedures/git
    procedures/sphinx
+   procedures/conda
 
 .. _references:
 

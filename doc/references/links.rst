@@ -113,6 +113,24 @@ Conda syntax
 
    * Enable use of a :ref:`conda environment <conda:concept-conda-env>`
 
+#. :std:doc:`conda:user-guide/tasks/manage-environments`
+
+   * Exporting and importing :ref:`environment <conda:concept-conda-env>` files
+
+#. :std:doc:`conda:commands/clean`
+
+   * Removing unnecessary :ref:`conda packages <conda:concept-conda-package>`
+
+#. :std:doc:`conda:commands/update`
+
+   * Get the most recent version of
+     :ref:`conda packages <conda:concept-conda-package>`
+
+#. :std:doc:`conda:commands/list`
+
+   * List the :ref:`conda packages <conda:concept-conda-package>` in a
+     :ref:`conda environment <conda:concept-conda-env>`
+
 OS-specific
 ============
 

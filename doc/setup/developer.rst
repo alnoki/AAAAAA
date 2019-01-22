@@ -27,7 +27,7 @@ that will explain all the software and familiarize you with developing
    Keep on hitting the :guilabel:`Next` button at the top or the bottom of the
    page!
 
-   It will allow you to sequentially visit every page in the :term:`AAAAAA`
+   It will allow you to sequentially visit every page in :term:`AAAAAA`
    documentation in a logical order
 
 

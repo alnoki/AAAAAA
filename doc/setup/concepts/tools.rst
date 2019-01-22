@@ -56,7 +56,7 @@ The :ref:`setup-documenting` setup instructions describe how to
          :std:doc:`Sphinx <sphinx:intro>` , Build documentation, "
          :ref:`Documenting <setup-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
-         :std:doc:`sphinx_rtd_theme <rtd-sphinx-theme:index>`, "Documentation
+         :std:doc:`RTD Sphinx Theme <rtd-sphinx-theme:index>`, "Documentation
          appearance", "
          :ref:`Documenting <setup-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
@@ -65,7 +65,7 @@ The :ref:`setup-documenting` setup instructions describe how to
          :xref:`Jupyter Notebook <Jupyter>`, Interactive analysis, "
          :ref:`analyzing`","
          :ref:`conda <conda:channels-glossary>`"
-         :std:doc:`Notebook extensions <nb-extensions:index>`, "Extra analysis
+         :std:doc:`Notebook Extensions <nb-extensions:index>`, "Extra analysis
          tools", :ref:`analyzing`, :xref:`conda-forge`
          :std:doc:`NumPy <numpy:about>`, "Number processing", "
          :ref:`analyzing`", :ref:`conda <conda:channels-glossary>`

@@ -4,22 +4,20 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # Developer's setup
 
+# General updates
 1. Project dir structure should be its own page
-
-## Testing - still need to attempt
-1. conda install pytest
-1. Run a pytest with the pip install -e or conda install -e equivalent
-   1. Link to pytest test discovery explanation
-1. Testing viewer extension in the pytest section
-1. pip install -e from inside src folder
-   1. Will involve moving setup.py
-      1. May need to update in folder tree structure description
-1. Mypy goes into testing
-   1. Real python typing guide
+1. Contents directive should be a blank title, see conda docs
+1. csv table for OS and what command line is on index page
+1. Lines max length direct reference to python dev guide
+1. Explain what the over line and headings refer to
+1. Zen: avoid double maintaining things (DRY)
 
 ## Conda procedures
+1. Maybe if conda is listed before conda-forge, then things will come from
+   conda first?
+1. Note that loading from a .yaml can be excuciatingly slow compared with
+   running conda install commands
 1. Make a .yaml
-1. Loading a .yaml
 1. Centralized env creation
    1. All packages from Conda main channel
    1. Doc8 and other forge packages
@@ -28,10 +26,32 @@ Viewing local build: http://localhost:8000/_build/html/index.html
       1. Just point to channels and say how they are used
 1. Have Conda update somewhere
 1. Conda procedures should have environment reproduction
-   1. Can show how to load a .yaml
    1. Can show how to do conda/pip install
       1. References the anaconda table
       1. Says how to install from forge, etc
+1. Still have install case by case in the dev setup
+   1. Then conda setup shows how to read from .yml
+   1. Beginning of dev setup explains that can skip to .yml if want
+      1. Will still need to install via pip install -e, too
+      1. Then could avoid anything that starts with conda install
+1. Conda tasks shows updating .yml
+    1. Verify package is in defaults first then try conda-forge
+    1. Then will need to add to the anaconda packages table
+    1. Can restore via the procedure to install from .yml, then update
+    1. Note that will always need to pip install -e for AAAAAA
+1. a6.yml needs to be explained in the project-dir-structure
+
+## Testing - still need to attempt
+1. conda install pytest pip
+1. Run a pytest with the pip install -e or conda install -e equivalent
+   1. Link to pytest test discovery explanation
+1. Testing viewer extension in the pytest section
+1. pip install -e from inside src folder
+   1. Will involve moving setup.py
+      1. May need to update in folder tree structure description
+1. Mypy goes into testing
+   1. Real python typing guide
+1. At end, do conda update and conda clean?
 
 ## Composition procedures
 1. Includes proofreading
@@ -40,6 +60,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Get reference, put in links
    1. Then add it to tools, the page, etc
 1. Do original tutorials but with financial data
+1. Avoid creating documents that have to be double-maintained
 
 ## Setup after development configuration is complete
 1. All VS Code extensions from the tools page should be added in dev setup

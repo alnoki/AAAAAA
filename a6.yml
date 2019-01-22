@@ -1,0 +1,17 @@
+name: a6
+channels:
+  - conda-forge
+  - conda
+dependencies:
+  - python
+  - conda
+  - pep8
+  - sphinx
+  - sphinx_rtd_theme
+  - doc8
+  - jupyter
+  - jupyter_contrib_nbextensions
+  - numpy
+  - matplotlib
+  - pandas
+  - pytest

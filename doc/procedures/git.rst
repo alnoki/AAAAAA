@@ -77,7 +77,7 @@ Per :xref:`git-config`:
       [core]
            editor = Vim
 
-#. Type :kbd:`Esc`, then ``:x!``, then :kbd:`return`, to
+#. Type :kbd:`Esc`, then ``:x``, then :kbd:`return`, to
    :xref:`save and close <Vim-cheatsheet>`
 
 #. To check that the credentials have updated:
