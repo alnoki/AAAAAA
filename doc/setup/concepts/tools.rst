@@ -6,6 +6,7 @@ Tools
 #####
 
 .. contents::
+   :local:
 
 .. _tools-anaconda:
 
@@ -27,7 +28,7 @@ style configurator that automatically checks dependencies and maintains
 compatibility. :ref:`conda:concept-conda-package` can be downloaded from
 different :ref:`conda channels <conda:channels-glossary>`
 
-The :ref:`setup-documenting` setup instructions describe how to
+The :ref:`documenting <setup-documenting>` setup instructions describe how to
 :std:doc:`create <conda:commands/create>` a new
 :ref:`conda environment <conda:concept-conda-env>`, called :term:`a6`:
 
@@ -37,6 +38,11 @@ The :ref:`setup-documenting` setup instructions describe how to
       A :ref:`conda environment <conda:concept-conda-env>` that contains all
       the necessary :ref:`packages <conda:concept-conda-package>` that
       :term:`AAAAAA` needs
+
+      .. tip::
+
+         :ref:`conda-import-a6` requires less commands than the
+         :ref:`developer setup <setup-documenting>`
 
       .. _anaconda-packages-table:
 
@@ -78,7 +84,6 @@ The :ref:`setup-documenting` setup instructions describe how to
          :std:doc:`pytest <pytest:index>`, Code testing, Testing, "
          :ref:`conda <conda:channels-glossary>`"
 
-
 .. csv-table:: Select references
    :header: "Reference", "Topic"
    :align: center
@@ -102,7 +107,7 @@ Git
 :xref:`AAAAAA-repo`. It is a version control system that allows the project
 to be updated with :xref:`commits <git-commit>`, which are like
 snapshots in time that describe minor changes to the project throughout its
-history.
+history
 
 :xref:`GitHub` is a free service that hosts the :xref:`AAAAAA-repo`
 

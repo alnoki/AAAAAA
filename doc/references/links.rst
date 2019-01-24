@@ -11,7 +11,8 @@ This is a centralized and comprehensive list of online resources related to
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
 
-.. contents::
+.. contents:: Contents
+   :local:
 
 
 ******
@@ -134,6 +135,10 @@ Conda syntax
 OS-specific
 ============
 
+#. :xref:`OS`
+
+   * Computer system resource manager
+
 #. :xref:`Mac OS<Mac>`
 
    * :xref:`Wikipedia` article about the :xref:`Mac OS<Mac>`
@@ -229,6 +234,10 @@ pytest
 #. :std:doc:`pytest tutorials <pytest:contents>`
 
    * Official comprehensive :std:doc:`pytest <pytest:index>` walkthroughs
+
+#. :std:doc:`pytest:goodpractices`
+
+   * Configuring :std:doc:`pytest <pytest:index>` to run with :term:`a6`
 
 ***************
 AAAAAA codebase

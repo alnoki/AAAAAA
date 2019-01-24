@@ -20,6 +20,7 @@ resources relating to any of these topics
    :caption: Concepts
    :maxdepth: -1
 
+   concepts/project-structure
    concepts/tools
    concepts/code
    concepts/documentation

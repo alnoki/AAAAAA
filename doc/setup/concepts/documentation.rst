@@ -5,6 +5,9 @@
 Documentation
 #############
 
+.. contents:: Contents
+   :local:
+
 
 ******
 Sphinx
@@ -86,15 +89,16 @@ particular emphases
 
 .. rubric:: Footnotes
 
-.. [#] Automatically runs through the :xref:`RST-preview-ext` for
-   :xref:`VS-Code`
+.. [#] Automatically runs via the :xref:`RST-preview-ext` for :xref:`VS-Code`
 
 Whitespace
 ----------
 
-#. Indent 3 spaces (especially for :xref:`nested lists <reST-list-indentation>`)
-#. Lines should be a maximum length of 79 characters, unless a
-   :ref:`link <links>` title can't be broken up (this is okay)
+#. Indent 3 spaces (especially for
+   :xref:`nested lists <reST-list-indentation>`)
+#. Lines should be a maximum length of 79 characters, unless
+   :std:doc:`role content <sphinx:usage/restructuredtext/roles>` can't be
+   broken up (this is okay)
 #. Use 2 lines of whitespace above anything that is overlined
 #. Use a single, unescaped space before
    :std:doc:`footnotes <sphinx:usage/restructuredtext/basics>`
@@ -126,21 +130,27 @@ Simple example
    .. _my-label:
 
 
-   ##############
-   Document title
-   ##############
+   ##########
+   Part title
+   ##########
 
-   Welcome to this document!
+   Welcome to this document! Don't forget the double overline!
 
 
-   *******
-   Section
-   *******
+   *************
+   Chapter title
+   *************
 
-   Welcome to this section! [#]_
+   Welcome to this section! Don't forget the double overline! [#]_
 
-   Subsection
-   ==========
+   Section title
+   =============
+
+   Welcome to this section. No double overline needed here!
+
+   Subsection title
+   ----------------
+   Welcome to this subsection. No double overline needed here!
 
    .. rubric:: Footnotes
 
@@ -159,4 +169,5 @@ development and may be referenced throughout the documentation via direct links
 
 This :xref:`AAAAAA-nbs` can render any :xref:`Jupyter Notebook<Jupyter>` from
 :xref:`alnoki's AAAAAA repository <AAAAAA-repo>` in a web browser, and contains
-a directory of all notebook in the project
+a directory of all :xref:`Jupyter Notebooks <Jupyter>` created for
+:term:`AAAAAA`

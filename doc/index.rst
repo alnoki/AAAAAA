@@ -26,11 +26,15 @@ Python?
 A bit of Python can be executed on most computers with minimal effort, using
 :py:func:`python:print`:
 
-#. Open the command line on your specific machine
+#. Open the command line on your specific machine:
 
-   * :program:`Terminal` on a :xref:`Mac`
-   * :program:`Command Prompt` on :xref:`Windows`
-   * If using :xref:`Linux`, you probably already know where to look...
+.. csv-table::
+   :header: :xref:`OS` , "Command line"
+   :align: center
+
+   :xref:`Mac`, :program:`Terminal`
+   :xref:`Windows`, :program:`Command Prompt`
+   :xref:`Linux`, :program:`Terminal`
 
 #. Type :command:`python` and hit :kbd:`return`
 

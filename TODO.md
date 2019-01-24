@@ -1,48 +1,10 @@
 Viewing local build: http://localhost:8000/_build/html/index.html
 
-# General review
-
 # Developer's setup
 
-# General updates
-1. Project dir structure should be its own page
-1. Contents directive should be a blank title, see conda docs
-1. csv table for OS and what command line is on index page
-1. Lines max length direct reference to python dev guide
-1. Explain what the over line and headings refer to
-1. Zen: avoid double maintaining things (DRY)
-
-## Conda procedures
-1. Maybe if conda is listed before conda-forge, then things will come from
-   conda first?
-1. Note that loading from a .yaml can be excuciatingly slow compared with
-   running conda install commands
-1. Make a .yaml
-1. Centralized env creation
-   1. All packages from Conda main channel
-   1. Doc8 and other forge packages
-   1. Pip -e AAAAAA
-   1. Make it so this page doesn't have to be maintained as much
-      1. Just point to channels and say how they are used
-1. Have Conda update somewhere
-1. Conda procedures should have environment reproduction
-   1. Can show how to do conda/pip install
-      1. References the anaconda table
-      1. Says how to install from forge, etc
-1. Still have install case by case in the dev setup
-   1. Then conda setup shows how to read from .yml
-   1. Beginning of dev setup explains that can skip to .yml if want
-      1. Will still need to install via pip install -e, too
-      1. Then could avoid anything that starts with conda install
-1. Conda tasks shows updating .yml
-    1. Verify package is in defaults first then try conda-forge
-    1. Then will need to add to the anaconda packages table
-    1. Can restore via the procedure to install from .yml, then update
-    1. Note that will always need to pip install -e for AAAAAA
-1. a6.yml needs to be explained in the project-dir-structure
-
 ## Testing - still need to attempt
-1. conda install pytest pip
+1. conda install pip pytest
+   1. Add to conda packages table per conda add package procedure
 1. Run a pytest with the pip install -e or conda install -e equivalent
    1. Link to pytest test discovery explanation
 1. Testing viewer extension in the pytest section
@@ -51,7 +13,8 @@ Viewing local build: http://localhost:8000/_build/html/index.html
       1. May need to update in folder tree structure description
 1. Mypy goes into testing
    1. Real python typing guide
-1. At end, do conda update and conda clean?
+1. At end, do conda update and conda clean? :ref:`conda-tidy-up` optional
+1. Add pip procedure
 
 ## Composition procedures
 1. Includes proofreading
@@ -64,10 +27,6 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 ## Setup after development configuration is complete
 1. All VS Code extensions from the tools page should be added in dev setup
-1. Conda procedures
-   1. Conda update
-   1. Make a .yaml
-   1. Install a .yaml
 1. .yaml equivalent of Jupyter notebooks extension settings?
    1. Maybe a .json file is stored somewhere
 1. After completing setup guide
@@ -77,10 +36,6 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Update license
    1. Update copyright year
 1. Proofreading before src changes
-1. Any time a package is added to Conda, add it to tools page under Anaconda
-   1. Harvest packages thus far from the QuickStart
-   1. Make a .yaml file eventually
-1. Make sure all anaconda tools in csv are linked
 1. Zen says to plan out, get in the right jungle before trees
    1. 7 habits highly effective people
 1. Link Willing video times in a CSV table

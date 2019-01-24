@@ -5,21 +5,22 @@
 Git
 ###
 
-   .. csv-table:: Select references
-      :header: "Reference", "Topic"
-      :align: center
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
 
-      :xref:`git-manual`, Quick practical reference
-      :xref:`git-book`, In-depth conceptual explanations
+   :xref:`git-manual`, Quick practical reference
+   :xref:`git-book`, In-depth conceptual explanations
 
-.. contents::
+.. contents:: Contents
+   :local:
 
 .. _git-setup:
 
 
-*****
-Setup
-*****
+**********
+Setting up
+**********
 
 Use the :xref:`VS Code integrated terminal <VS-Code-terminal>` for first-time
 :xref:`git-setup`:
@@ -89,9 +90,9 @@ Per :xref:`git-config`:
 
 .. _git-view-project-log:
 
-****************
-View project log
-****************
+***********************
+Viewing the project log
+***********************
 
 Per :xref:`git-log`:
 
@@ -120,9 +121,9 @@ Per :xref:`git-log`:
 .. _list-committers:
 
 
-***********************
-List project committers
-***********************
+**************************
+Listing project committers
+**************************
 
 Use :xref:`git log --pretty <git-log>` options, explained per:
 
@@ -206,9 +207,9 @@ Per :xref:`git-commit` and :xref:`git-push`:
 .. _change-commit-credential-history:
 
 
-********************************
-Change commit credential history
-********************************
+**********************************
+Changing commit credential history
+**********************************
 
 See
 

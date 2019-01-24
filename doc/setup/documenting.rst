@@ -103,7 +103,8 @@ Documenting
      :ref:`activating <conda:activate-env>` the :term:`a6 evironment <a6>` then
      typing :command:`which python`
 
-#. Use the :xref:`VS-Code-terminal` to install the :xref:`Doc8`:
+#. Use the :xref:`VS-Code-terminal` to
+   :std:doc:`install <conda:commands/install>` the :xref:`Doc8`:
 
    .. code-block:: bash
 

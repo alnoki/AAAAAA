@@ -379,5 +379,6 @@ xref_links = {
          'jupyter_contrib_nbextensions/tree/master/src/'
          'jupyter_contrib_nbextensions/nbextensions/livemdpreview'),
     'conda-forge': ('conda-forge', "https://conda-forge.org/#about"),
+    'OS': ("Operating System", url['Wiki pg'] + 'Operating_system'),
     # New links below, sorted links above
     }

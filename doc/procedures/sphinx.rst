@@ -14,7 +14,8 @@ Sphinx
    :std:doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`, "
    Official tutorial"
 
-.. contents::
+.. contents:: Contents
+   :local:
 
 .. _building-documentation:
 
@@ -133,7 +134,7 @@ Using Intersphinx
 
      .. code-block:: rest
 
-        Here is a description about :std:doc:`comments <python:tutorial/introduction>`
+        Here is a :std:doc:`tutorial <python:tutorial/introduction>`
 
 #. Add a description of the link to :ref:`links <links>`
 #. :std:doc:`Add a link role <sphinx:usage/restructuredtext/roles>` to
@@ -179,7 +180,7 @@ Referencing external links
 
    * Put new links in the ``xref_links`` mapping
      :ref:`dictionary <python:tut-dictionaries>` below the delimiter
-     :std:doc:`comment <python:tutorial/introduction>`
+     :ref:`comment <python:comments>`
 
      .. code-block:: python
 
@@ -207,12 +208,12 @@ Referencing external links
 #. Add a description of the link to :ref:`links <references>`
 
    * After this step, the link can be moved above the delimiter
-     :std:doc:`comment <python:tutorial/introduction>` in
+     :ref:`comment <python:comments>` in
      :std:doc:`conf.py <sphinx:usage/configuration>`
 
 .. Tip::
-   As links aren't put above the delimiter
-   :std:doc:`comment <python:tutorial/introduction>` until after they are put
+   As long as links aren't put above the delimiter
+   :ref:`comments <python:comments>` until after they are put
    into :ref:`links <links>`, links can be sorted in batches
 
 Checking links
