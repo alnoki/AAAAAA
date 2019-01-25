@@ -113,10 +113,11 @@ Indices and tables
    :maxdepth: 2
    :numbered:
 
-   procedures/git
-   procedures/sphinx
    procedures/conda
+   procedures/git
    procedures/pytest
+   procedures/sphinx
+   procedures/writing
 
 .. _references:
 

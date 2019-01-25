@@ -61,6 +61,10 @@ Specifics
 
    * Recommendation for using ``'`` vs ``"`` in :xref:`Python`
 
+#. :xref:`print-dir-tree`
+
+   * Sample code to print out a directory tree
+
 Environments
 ============
 

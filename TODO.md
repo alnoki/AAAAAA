@@ -2,13 +2,11 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # Developer's setup
 
-## Testing
-1. Put links into documentation:
-   1. :ref:`python:tut-packages` (and pytest) on code structure page
-   1. Modify tree.py for dir tree creation
-   1. Tutorial 6.4.2 showing dunder init
-   1. Drawing a tree in composition procedures
-1. Verify quickstart procedure works
+1. CSV table in project structure contents
+1. Mention other structures are there (hidden dirs), but not covered
+1. Cite the packages/pytest for the __init__.py usage
+1. On code page, explain how AAAAAA is a "package" and then show relative
+   imports, etc.
 
 ## Composition procedures
 1. Includes proofreading

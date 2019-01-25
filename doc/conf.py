@@ -384,5 +384,7 @@ xref_links = {
     'VS-Code-insiders': ("Insider Edition", url['VS Code'] + 'insiders'),
     'pytest-discovery-issue': ("VS Code pytest issue", url['GitHub'] +
                                'Microsoft/vscode-python/issues/4099'),
+    'print-dir-tree': ("Printing a directory tree", url['Stack OF'] +
+                       '9727673/list-directory-tree-structure-in-python'),
     # New links below, sorted links above
     }

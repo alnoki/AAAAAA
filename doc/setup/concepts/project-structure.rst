@@ -17,6 +17,43 @@ Access
 Contents
 ********
 
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :ref:`python:tut-packages`, Explains directory structuring
+   :std:doc:`pytest:goodpractices`, Structure for testing code
+
+.. code-block:: none
+   :caption: Select contents of the :xref:`AAAAAA-repo`
+
+   AAAAAA/
+       src/
+           AAAAAA/
+               __init__.py
+               ledger.py
+               utilities.py
+       test/
+           test_utilities.py
+           test_ledger.py
+       doc/
+           index.rst
+           conf.py
+           make.bat
+       nbs/
+           dev/
+               ledger.ipynb
+           src/
+               ledger.ipynb
+               utilities.ipynb
+       a6.yml
+       TODO.md
+       README.md
+       setup.py
+       .gitignore
+       .vscode/
+           settings.json
+
 The :xref:`AAAAAA-repo` has several top-level directories of particular
 importance:
 
