@@ -37,3 +37,4 @@ that will explain all the software and familiarize you with developing
 
    documenting
    analyzing
+   testing

@@ -68,7 +68,7 @@ Creating a6 from scratch
 
    .. code-block:: bash
 
-      conda create -n a6 python conda pep8 sphinx sphinx_rtd_theme jupyter numpy matplotlib pandas pytest
+      conda create -n a6 python conda pep8 sphinx sphinx_rtd_theme jupyter numpy matplotlib pandas pip pytest
 
    .. note::
       Be sure to copy and paste the whole box! It may scroll to the right on

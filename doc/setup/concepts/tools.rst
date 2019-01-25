@@ -81,7 +81,9 @@ The :ref:`documenting <setup-documenting>` setup instructions describe how to
          :std:doc:`pandas <pandas:index>`, "Dataset management", "
          :ref:`analyzing`", "
          :ref:`conda <conda:channels-glossary>`"
-         :std:doc:`pytest <pytest:index>`, Code testing, Testing, "
+         :std:doc:`pip <python:installing/index>`, Configuring testing, "
+         :ref:`setup-testing`", :ref:`conda <conda:channels-glossary>`
+         :std:doc:`pytest <pytest:index>`, Code testing, :ref:`setup-testing`, "
          :ref:`conda <conda:channels-glossary>`"
 
 .. csv-table:: Select references
@@ -216,16 +218,20 @@ develop, to document, and to test code
 
 .. csv-table:: :xref:`VS Code extensions <VS-Code-extensions>` used with
    :term:`AAAAAA`
-   :header: "Extension", "Purpose"
+   :header: "Extension", "Purpose", "Setup Phase"
    :align: center
 
-   :xref:`Python <VS-Code-Python-ext>`, Developing :xref:`Python`
-   :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate code
+   :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate code, "
+   :ref:`Documenting <setup-documenting>`"
+   :xref:`Python <VS-Code-Python-ext>`, Developing :xref:`Python`, "
+   :ref:`Documenting <setup-documenting>`"
    :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "Editing
-   :std:doc:`reST <sphinx:usage/restructuredtext/basics>` "
+   :std:doc:`reST <sphinx:usage/restructuredtext/basics>` ", "
+   :ref:`Documenting <setup-documenting>`"
+   :xref:`GitLens <GitLens>`, "Advanced :xref:`Git <git-manual>`
+   functionality", :ref:`Documenting <setup-documenting>`
    :xref:`Test explorer UI <Test-explorer-UI>`, "Testing with
-   :std:doc:`pytest <pytest:index>`"
-   :xref:`GitLens <GitLens>`, Advanced :xref:`Git <git-manual>` functionality
+   :std:doc:`pytest <pytest:index>`", :ref:`Testing <setup-testing>`
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"
@@ -252,6 +258,30 @@ all the relevant settings should already be installed!
 .. [#] Offers live rendering, but is not as reliable as
    :ref:`using a browser <building-documentation>`. For example, fails to
    properly render :ref:`intersphinx links <intersphinx-linking>`
+
+.. _tools-pytest:
+
+
+******
+pytest
+******
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :std:doc:`pytest <pytest:index>`, Official documentation
+   :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
+   :std:doc:`pytest tutorials <pytest:contents>`, Official tutorials
+
+
+:term:`AAAAAA` uses :std:doc:`pytest <pytest:index>`, a
+:ref:`conda package<conda:concept-conda-package>`, to verify that code is
+functioning as expected
+
+:xref:`VS-Code` natively integrates with :std:doc:`pytest <pytest:index>`,
+and additional functionality is provided by the
+:xref:`Test Explorer UI extension<Test-explorer-UI>`
 
 
 *******

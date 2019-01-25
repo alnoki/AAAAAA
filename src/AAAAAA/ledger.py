@@ -4,7 +4,7 @@ import datetime
 import decimal
 from typing import Union
 
-from src.utilities import check_object
+from .utilities import check_object
 
 transact_types = set(['Bank transfer', 'Buy', 'Dividends', 'Fees', 'Sell'])
 

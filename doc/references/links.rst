@@ -239,6 +239,10 @@ pytest
 
    * Configuring :std:doc:`pytest <pytest:index>` to run with :term:`a6`
 
+#. :std:doc:`pip <python:installing/index>`
+
+   * Used to configure :term:`a6` for using :std:doc:`pytest <pytest:index>`
+
 ***************
 AAAAAA codebase
 ***************

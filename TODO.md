@@ -2,19 +2,12 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # Developer's setup
 
-## Testing - still need to attempt
-1. conda install pip pytest
-   1. Add to conda packages table per conda add package procedure
-1. Run a pytest with the pip install -e or conda install -e equivalent
-   1. Link to pytest test discovery explanation
-1. Testing viewer extension in the pytest section
-1. pip install -e from inside src folder
-   1. Will involve moving setup.py
-      1. May need to update in folder tree structure description
-1. Mypy goes into testing
-   1. Real python typing guide
-1. At end, do conda update and conda clean? :ref:`conda-tidy-up` optional
-1. Add pip procedure
+## Testing
+1. Get VS Code to discover tests
+   1. May need to update the quickstart with directory options
+   1. Extension should actually be the python test explorer
+      1. Auto-inludes text explorer UI
+1. pytest procedure on debugging, configuring, and regular tests
 
 ## Composition procedures
 1. Includes proofreading
@@ -25,22 +18,8 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Do original tutorials but with financial data
 1. Avoid creating documents that have to be double-maintained
 
-## Setup after development configuration is complete
-1. All VS Code extensions from the tools page should be added in dev setup
-1. .yaml equivalent of Jupyter notebooks extension settings?
-   1. Maybe a .json file is stored somewhere
-1. After completing setup guide
-   1. Should go through conf.py and figure out what is going on
-   1. Can explain in concepts section what defaults are, etc.
-      1. Talk about how xref is used, folder it is in, etc.
-   1. Update license
-   1. Update copyright year
-1. Proofreading before src changes
-1. Zen says to plan out, get in the right jungle before trees
-   1. 7 habits highly effective people
-1. Link Willing video times in a CSV table
-
 ## Proofreading procedures
+1. Should go through and rename labels so they all make sense
 1. Links should have correct capitalization for the first word in a sentence
 1. Should be done with browser side-by-side with VS Code
 1. Verify admonitions are all lowercase
@@ -64,11 +43,25 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Also should be categorical
    1. Update the documentation syle accordingly
 
+## Setup after development configuration is complete
+1. After completing setup guide
+   1. Should go through conf.py and figure out what is going on
+   1. Can explain in concepts section what defaults are, etc.
+      1. Talk about how xref is used, folder it is in, etc.
+   1. Update license
+   1. Update copyright year
+1. Proofreading before src changes
+1. Zen says to plan out, get in the right jungle before trees
+   1. 7 habits highly effective people
+1. Link Willing video times in a CSV table
+
 # Next tasks
 
 ## Source documentation
 1. date.__name__ f string? instead of the string "date"
 1. Do autodoc first, then update type annotations, then mypy
+   1. Mypy goes into testing developer setup
+   1. Real python typing guide
 1. Autodoc, then docstrings, then types
 1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
 1. https://realpython.com/documenting-python-code/

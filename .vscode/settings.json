@@ -70,4 +70,5 @@
 
     // Version control
     "git.autofetch": true,
+
 }

@@ -8,3 +8,10 @@ AAAAAA.egg-info/PKG-INFO
 AAAAAA.egg-info/SOURCES.txt
 AAAAAA.egg-info/dependency_links.txt
 AAAAAA.egg-info/top_level.txt
+src/AAAAAA/__pycache__/__init__.cpython-37.pyc
+src/AAAAAA/__pycache__/ledger.cpython-37.pyc
+src/AAAAAA/__pycache__/utilities.cpython-37.pyc
+test/__pycache__/__init__.cpython-37.pyc
+.pytest_cache/v/cache/stepwise
+.pytest_cache/v/cache/nodeids
+.pytest_cache/v/cache/lastfailed

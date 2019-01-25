@@ -1,7 +1,7 @@
 import datetime
 import decimal
 import pytest
-from src.ledger import Transaction, transact_types
+from src.AAAAAA.ledger import Transaction, transact_types
 
 
 class TestTransactionInit(object):

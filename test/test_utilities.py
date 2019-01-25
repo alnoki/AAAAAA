@@ -1,7 +1,7 @@
 """Contains tests for utilities"""
 
 import pytest
-from src.utilities import check_object
+from src.AAAAAA.utilities import check_object
 
 
 class FakeClass:

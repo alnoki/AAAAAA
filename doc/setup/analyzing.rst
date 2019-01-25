@@ -19,7 +19,7 @@ Analyzing
 
       conda install -c conda-forge jupyter_contrib_nbextensions
 
-#. Open a :xref:`Jupyter Notebook <Jupyter>`
+#. Open a :xref:`Jupyter Notebook <Jupyter>`:
 
    .. code-block:: bash
 
@@ -35,3 +35,5 @@ Analyzing
    #. :std:doc:`nb-extensions:nbextensions/toc2/README`
    #. :std:doc:`nb-extensions:nbextensions/varInspector/README`
    #. :xref:`live-md-preview`
+
+Congratulations!!!

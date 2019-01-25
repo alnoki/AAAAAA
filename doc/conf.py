@@ -271,7 +271,7 @@ xref_links = {
          'lextudio.restructuredtext'),
     'Test-explorer-UI':
         ("Test explorer UI extension", url['VS Code ext'] +
-         'LittleFoxTeam.vscode-python-test-adapter'),
+         'hbenl.vscode-test-explorer'),
     'VS-Code': ("Visual Studio Code", 'https://code.visualstudio.com'),
     'Jupyter': ("Project Jupyter", 'https://jupyter.org'),
     'VS-Code-Python-tutorial':
