@@ -230,7 +230,8 @@ url = {
     'RealPython': 'https://realpython.com/',
     'conda-forge': 'https://anaconda.org/conda-forge/',
     'git-scm': 'https://git-scm.com/',
-    'linux-die': 'https://linux.die.net/man/1/'
+    'linux-die': 'https://linux.die.net/man/1/',
+    'VS Code': 'https://code.visualstudio.com/',
 }
 
 xref_links = {
@@ -270,8 +271,8 @@ xref_links = {
         ("RST preview extension", url['VS Code ext'] +
          'lextudio.restructuredtext'),
     'Test-explorer-UI':
-        ("Test explorer UI extension", url['VS Code ext'] +
-         'hbenl.vscode-test-explorer'),
+        ("Python Test Explorer Extension", url['VS Code ext'] +
+         'LittleFoxTeam.vscode-python-test-adapter'),
     'VS-Code': ("Visual Studio Code", 'https://code.visualstudio.com'),
     'Jupyter': ("Project Jupyter", 'https://jupyter.org'),
     'VS-Code-Python-tutorial':
@@ -380,5 +381,8 @@ xref_links = {
          'jupyter_contrib_nbextensions/nbextensions/livemdpreview'),
     'conda-forge': ('conda-forge', "https://conda-forge.org/#about"),
     'OS': ("Operating System", url['Wiki pg'] + 'Operating_system'),
+    'VS-Code-insiders': ("Insider Edition", url['VS Code'] + 'insiders'),
+    'pytest-discovery-issue': ("VS Code pytest issue", url['GitHub'] +
+                               'Microsoft/vscode-python/issues/4099'),
     # New links below, sorted links above
     }

@@ -116,6 +116,7 @@ Indices and tables
    procedures/git
    procedures/sphinx
    procedures/conda
+   procedures/pytest
 
 .. _references:
 

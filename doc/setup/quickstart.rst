@@ -20,7 +20,7 @@ steps for you on the following pages
 #. Copy-paste the following and hit :kbd:`return`::
 
        import datetime  # Lets you work with dates and times
-       from src.ledger import Transaction  # From AAAAAA codebase
+       from src.AAAAAA.ledger import Transaction  # From AAAAAA codebase
        my_transaction = Transaction(
            date=datetime.date(1994, 6, 19), total_amount=50, transact_type='Buy',
            symbol='ALNOKI', num_shares=1)

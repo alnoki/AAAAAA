@@ -230,7 +230,7 @@ develop, to document, and to test code
    :ref:`Documenting <setup-documenting>`"
    :xref:`GitLens <GitLens>`, "Advanced :xref:`Git <git-manual>`
    functionality", :ref:`Documenting <setup-documenting>`
-   :xref:`Test explorer UI <Test-explorer-UI>`, "Testing with
+   :xref:`Python Test Explorer <Test-explorer-UI>`, "Testing with
    :std:doc:`pytest <pytest:index>`", :ref:`Testing <setup-testing>`
 
 .. csv-table:: Select references
@@ -250,6 +250,10 @@ The :xref:`AAAAAA-repo` comes with a collection of
 :xref:`VS-Code-settings` that will automatically configure most of your
 workspace. If you completed the :ref:`developer setup <dev-environment>`, then
 all the relevant settings should already be installed!
+
+You can also download the :xref:`VS Code Insider Edition <VS-Code-insiders>`,
+which has all the latest features and bug fixes, although it may not be as
+stable as the most recent official release
 
 .. rubric:: Footnotes
 
@@ -281,7 +285,7 @@ functioning as expected
 
 :xref:`VS-Code` natively integrates with :std:doc:`pytest <pytest:index>`,
 and additional functionality is provided by the
-:xref:`Test Explorer UI extension<Test-explorer-UI>`
+:xref:`Test-explorer-UI`
 
 
 *******
@@ -314,7 +318,7 @@ analyze data with numerical :ref:`conda packages <conda:concept-conda-package>`
    :std:doc:`matplotlib:tutorials/index`", "
    :xref:`Matplotlib <codebasics-matplotlib>`"
    :std:doc:`pandas <pandas:index>`, "
-   :std:doc:`10 min tutorial <pandas:10min>`", "
+   :std:doc:`10 min tutorial <pandas:getting_started/10min>`", "
    :xref:`pandas <codebasics-pandas>`"
 
 The :std:doc:`nb-extensions:index` provide additional functionality

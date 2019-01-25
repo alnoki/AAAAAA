@@ -3,11 +3,12 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 # Developer's setup
 
 ## Testing
-1. Get VS Code to discover tests
-   1. May need to update the quickstart with directory options
-   1. Extension should actually be the python test explorer
-      1. Auto-inludes text explorer UI
-1. pytest procedure on debugging, configuring, and regular tests
+1. Put links into documentation:
+   1. :ref:`python:tut-packages` (and pytest) on code structure page
+   1. Modify tree.py for dir tree creation
+   1. Tutorial 6.4.2 showing dunder init
+   1. Drawing a tree in composition procedures
+1. Verify quickstart procedure works
 
 ## Composition procedures
 1. Includes proofreading
@@ -42,6 +43,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Should have all lowercase arbitrary-section-labels
    1. Also should be categorical
    1. Update the documentation syle accordingly
+1. Make linkcheck and change all purples
 
 ## Setup after development configuration is complete
 1. After completing setup guide

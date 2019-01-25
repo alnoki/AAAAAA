@@ -20,7 +20,7 @@ Testing
 
       pip install -e .
 
-#. Install the :xref:`Test explorer UI <Test-explorer-UI>`
+#. Install the :xref:`Python Test Explorer for VS Code <Test-explorer-UI>`
 
 #. :ref:`Tidy up <conda-tidy-up>`:
 

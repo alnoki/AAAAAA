@@ -38,10 +38,6 @@ General
 
    * Official :xref:`Python` style guide
 
-#. :xref:`Python-quote-convention`
-
-   * Recommendation for using ``'`` vs ``"`` in :xref:`Python`
-
 #. :std:doc:`python:howto/functional`
 
    * Official tutorial on :xref:`Python` functional programming technique
@@ -53,6 +49,17 @@ General
 #. :xref:`RealPython`
 
    * Comprehensive blog-style website with examples, guides, tips, etc.
+
+Specifics
+=========
+
+#. :ref:`python:tut-packages`
+
+   * Structuring of files and directories in a project
+
+#. :xref:`Python-quote-convention`
+
+   * Recommendation for using ``'`` vs ``"`` in :xref:`Python`
 
 Environments
 ============
@@ -212,7 +219,7 @@ pandas
 
    * For handling datasets
 
-#. :std:doc:`pandas:10min`
+#. :std:doc:`pandas:getting_started/10min`
 
    * Official :std:doc:`pandas <pandas:index>` tutorial
 
@@ -242,6 +249,11 @@ pytest
 #. :std:doc:`pip <python:installing/index>`
 
    * Used to configure :term:`a6` for using :std:doc:`pytest <pytest:index>`
+
+#. :xref:`pytest-discovery-issue`
+
+   * :xref:`VS-Code` integration problem upon release of
+     :std:doc:`pytest <pytest:index>`
 
 ***************
 AAAAAA codebase
@@ -665,6 +677,10 @@ General
 #. :xref:`VS Code command palette <command-palette>`
 
    * Direct input for various development commands in :xref:`VS-Code`
+
+#. :xref:`VS-Code-insiders`
+
+   * Has the latest features, may be unstable
 
 Extensions
 ----------
