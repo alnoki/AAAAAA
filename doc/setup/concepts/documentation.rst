@@ -31,7 +31,7 @@ General info
 language called
 :std:doc:`reStructuredText <sphinx:usage/restructuredtext/basics>` (``reST``).
 Documentation files have a ``.rst`` extension and are parsed out by
-:std:doc:`Sphinx <sphinx:intro>` whenever :ref:`building-documentation`
+:std:doc:`Sphinx <sphinx:intro>` whenever :ref:`sphinx-building-documentation`
 
 :term:`AAAAAA` are documented using the
 :std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides
@@ -42,7 +42,8 @@ the top of the page which will display the
 page
 
 :ref:`Sphinx procedures <sphinx-procedures>` contain :term:`AAAAAA` usage
-examples for :ref:`building-documentation`, :ref:`managing-references`, etc.
+examples for :ref:`sphinx-building-documentation`, :ref:`sphinx-managing-references`,
+etc.
 
 reST
 ====
@@ -97,12 +98,12 @@ Documentation structure
 
    ``exts/``, :std:doc:`Extensions <sphinx:usage/extensions/index>`
    ``conf.py``, :std:doc:`Configuration <sphinx:usage/configuration>`
-   ``Makefile`` / ``make.bat``, :ref:`building-documentation`
+   ``Makefile`` / ``make.bat``, :ref:`sphinx-building-documentation`
    ``index.rst`` , :term:`AAAAAA` documentation homepage
    ``setup/`` / ``procedures/`` / ``...`` , Documentation pages
 
 
-.. _documentation-style:
+.. _concepts-documentation-style:
 
 Style
 =====
@@ -144,14 +145,14 @@ General syntax
    * ``tools-anaconda``
    * ``git-view-project-log``
 
-#. See :ref:`the packages table <anaconda-packages-table>` for some sample
+#. See :ref:`the packages table <concepts-packages-table>` for some sample
    :ref:`csv-table <sphinx:table-directives>` syntax with appropriate line
    breaks
-#. :ref:`Link <Links>` capitalization should be natural with regard to the
-   rest of the sentence
+#. :ref:`Link <references-links>` capitalization should be natural with regard
+   to the rest of the sentence
 
-   * :ref:`Links` are here
-   * Here are some :ref:`links <Links>`
+   * :ref:`Links <references-links>` are here
+   * Here are some :ref:`links <references-links>`
 
 .. _concepts-documentation-example:
 
@@ -168,6 +169,11 @@ Simple example
    ##########
 
    Welcome to this document! Don't forget the double overline!
+
+   #. Item 1
+   #. Item 2 (no vertical whitespace)
+
+      #. Item 3 (needs vertical whitespace
 
 
    *************
@@ -202,8 +208,8 @@ development and may be referenced throughout the documentation via direct links
 
 This :xref:`AAAAAA-nbs` can render any :xref:`Jupyter Notebook<Jupyter>` from
 :xref:`alnoki's AAAAAA repository <AAAAAA-repo>` in a web browser, and contains
-a directory of all :xref:`Jupyter Notebooks <Jupyter>` created for
-:term:`AAAAAA`
+a :xref:`directory <directory>` of all :xref:`Jupyter Notebooks <Jupyter>`
+created for :term:`AAAAAA`
 
 .. code-block:: none
 

@@ -9,7 +9,7 @@ Discovering tests
 
 #. Verify that you can run :std:doc:`pytest <pytest:index>` in the
    :xref:`VS Code integrated terminal <VS-Code-terminal>` from inside the
-   :ref:`root directory <project-dir-tree>` of :term:`AAAAAA`
+   :ref:`root directory <concepts-project-dir-tree>` of :term:`AAAAAA`
 
    .. code-block:: bash
 

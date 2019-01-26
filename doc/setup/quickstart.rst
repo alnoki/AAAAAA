@@ -1,6 +1,6 @@
-.. c5be61a
+.. 5333f1a
 
-.. _quickstart:
+.. _setup-quickstart:
 
 
 ###########
@@ -17,7 +17,8 @@ steps for you on the following pages
    your :xref:`operating system <OS>` did not come pre-loaded with it
 #. Download the :xref:`AAAAAA-zip-archive`
 #. :ref:`Start up Conda <conda:starting-conda>` and navigate to the root
-   directory of the :xref:`archive you just downloaded <AAAAAA-zip-archive>`
+   :xref:`directory <directory>` of the
+   :xref:`archive you just downloaded <AAAAAA-zip-archive>`
 #. Type :command:`python` and hit :kbd:`return`
 #. Copy-paste the following and hit :kbd:`return`
 

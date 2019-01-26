@@ -1,4 +1,4 @@
-.. _books:
+.. _references-books:
 
 
 #####

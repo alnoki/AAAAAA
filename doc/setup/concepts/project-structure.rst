@@ -10,7 +10,7 @@ Access
 :term:`AAAAAA` source code and documentation is available at the
 :xref:`AAAAAA-repo`, which is hosted by :xref:`GitHub`
 
-.. _project-dir-tree:
+.. _concepts-project-dir-tree:
 
 
 ********
@@ -51,6 +51,7 @@ Contents
    :header: "Name", "Function"
    :align: center
 
+   ``AAAAAA/``, Project root :xref:`directory <directory>`
    ``src/`` , Source code
    ``test/`` , :ref:`tools-pytest` code
    ``doc/`` , :ref:`tools-sphinx` documentation

@@ -1,4 +1,4 @@
-.. _links:
+.. _references-links:
 
 
 #####
@@ -6,7 +6,7 @@ Links
 #####
 
 This is a centralized and comprehensive list of online resources related to
-:term:`AAAAAA`, and is managed according to :ref:`managing-references`
+:term:`AAAAAA`, and is managed according to :ref:`sphinx-managing-references`
 
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
@@ -63,7 +63,7 @@ Specifics
 
 #. :xref:`print-dir-tree`
 
-   * Sample code to print out a directory tree
+   * Sample code to print out a :xref:`directory <directory>` tree
 
 Environments
 ============
@@ -104,6 +104,10 @@ Environments
 #. :xref:`conda-forge`
 
    * A community-driven :ref:`conda channel <conda:channels-glossary>`
+
+#. :xref:`directory`
+
+   * Cataloging structure with references to computer data
 
 Conda syntax
 ------------

@@ -14,11 +14,12 @@ Structure
    :header: "Reference", "Topic"
    :align: center
 
-   :ref:`python:tut-packages`, Explains directory structuring
+   :ref:`python:tut-packages`, "Explains :xref:`directory <directory>`
+   structuring"
    :std:doc:`pytest:goodpractices`, Structure for testing code
 
 In accordance with :std:doc:`pytest recommendations <pytest:goodpractices>`,
-:term:`AAAAAA` use the following :ref:`structure <project-dir-tree>`:
+:term:`AAAAAA` use the following :ref:`structure <concepts-project-dir-tree>`:
 
 .. code-block:: none
 

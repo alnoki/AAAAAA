@@ -118,7 +118,7 @@ Per :xref:`git-log`:
 
       git log --oneline
 
-.. _list-committers:
+.. _git-list-committers:
 
 
 **************************
@@ -146,7 +146,7 @@ Use :xref:`git log --pretty <git-log>` options, explained per:
 
       git log --pretty="%an, %ae, %cn, %ce"
 
-.. _committing:
+.. _git-committing:
 
 
 **********
@@ -188,7 +188,7 @@ Per :xref:`git-commit` and :xref:`git-push`:
    :guilabel:`Git: Commit Staged`
 
 #. Use the :xref:`VS-Code-terminal` to verify the :xref:`commit <git-commit>`
-   looks alright and that the :ref:`commit identities <list-committers>` are
+   looks alright and that the :ref:`commit identities <git-list-committers>` are
    okay
 
    .. code-block:: bash
@@ -204,7 +204,7 @@ Per :xref:`git-commit` and :xref:`git-push`:
 
 #. Verify results at the :xref:`AAAAAA-repo`
 
-.. _change-commit-credential-history:
+.. _git-change-commit-history:
 
 
 **********************************
@@ -218,14 +218,15 @@ See
 
 #. For the most part, follow :xref:`github-change-authors`. Before you
    :xref:`push the corrected history <github-change-authors>`, check out the
-   updated :ref:`commit credential history <list-committers>`:
+   updated :ref:`commit credential history <git-list-committers>`:
 
    .. code-block:: bash
 
       git log --pretty="%an, %ae, %cn, %ce"
 
 #. If you forget to :ref:`update your user credentials <git-credentials>`
-   before :ref:`committing and pushing <committing>` (a whole bunch of times),
+   before :ref:`committing and pushing <git-committing>` (a whole bunch of
+   times),
    use:
 
    .. code-block:: bash
@@ -244,7 +245,7 @@ See
       fi
       ' --tag-name-filter cat -- --branches --tags
 
-   * This will update all :ref:`project commit credentials <list-committers>`
+   * This will update all :ref:`project commit credentials <git-list-committers>`
      that were not authored by ``43892045+alnoki@users.noreply.github.com``
 
 #. If you want to get more specific about your selections:

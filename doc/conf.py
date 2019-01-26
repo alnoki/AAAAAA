@@ -347,6 +347,7 @@ xref_links = {
     'git-log': ('git-log', url['git-scm'] + 'docs/git-log'),
     'git-commit': ('git-commit', url['git-scm'] + 'docs/git-commit'),
     'git-push': ('git-push', url['git-scm'] + 'docs/git-push'),
+    'git-clone': ('git-clone', url['git-scm'] + 'docs/git-clone'),
     'git-setup': ("Git setup", url['git-scm'] + 'book/en/v2/Getting-Started-'
                   'First-Time-Git-Setup'),
     'less-pager': ('less pager', url['linux-die'] + 'less'),
@@ -386,5 +387,6 @@ xref_links = {
                                'Microsoft/vscode-python/issues/4099'),
     'print-dir-tree': ("Printing a directory tree", url['Stack OF'] +
                        '9727673/list-directory-tree-structure-in-python'),
+    'directory': ("Directory", url['Wiki pg'] + 'Directory_(computing)'),
     # New links below, sorted links above
     }

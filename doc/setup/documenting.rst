@@ -1,4 +1,4 @@
-.. c5be61a
+.. 5333f1a
 
 .. _setup-documenting:
 
@@ -121,7 +121,7 @@ Documenting
         git --version
 
 #. Install the :xref:`GitLens` for :xref:`VS-Code`
-#. Use the :xref:`command-palette` to :xref:`clone <git-manual>` the
+#. Use the :xref:`command-palette` to :xref:`clone <git-clone>` the
    :xref:`AAAAAA-repo`
 
    * This will include all of the
@@ -129,7 +129,7 @@ Documenting
      :xref:`alnoki <alnoki-repos>` uses
 
 #. At this point you should be able to
-   :ref:`build the documentation <building-documentation>` and play around
-   with the :ref:`reference management <managing-references>` features
+   :ref:`build the documentation <sphinx-building-documentation>` and play
+   around with the :ref:`reference management <sphinx-managing-references>` features
 
 Congratulations!!!

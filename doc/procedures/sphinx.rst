@@ -17,7 +17,7 @@ Sphinx
 .. contents:: Contents
    :local:
 
-.. _building-documentation:
+.. _sphinx-building-documentation:
 
 
 **********************
@@ -27,7 +27,7 @@ Building documentation
 Per :xref:`Willing-Sphinx`:
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
-   inside the :ref:`documentation root directory<project-dir-tree>` if it is
+   inside the :ref:`documentation root directory<concepts-project-dir-tree>` if it is
    not already :ref:`active <conda:activate-env>`
 #. From the :ref:`integrated terminal <tools-VS-Code>`, make a new build then
    start a local server:
@@ -49,20 +49,20 @@ Per :xref:`Willing-Sphinx`:
 
 #. Refresh the browser to see changes
 
-#. Before :ref:`committing <committing>`, clear out the build files:
+#. Before :ref:`committing <git-committing>`, clear out the build files:
 
    .. code-block:: bash
 
       make clean
 
-.. _managing-references:
+.. _sphinx-managing-references:
 
 
 *******************
 Managing references
 *******************
 
-.. _intersphinx-linking:
+.. _sphinx-intersphinx:
 
 Using Intersphinx
 =================
@@ -136,10 +136,10 @@ Using Intersphinx
 
         Here is a :std:doc:`tutorial <python:tutorial/introduction>`
 
-#. Add a description of the link to :ref:`links <links>`
+#. Add a description of the link to :ref:`links <references-links>`
 #. :std:doc:`Add a link role <sphinx:usage/restructuredtext/roles>` to
    documentation using the appropriate
-   :ref:`capitalization <documentation-style>`. For example:
+   :ref:`capitalization <concepts-documentation-style>`. For example:
 
    .. code-block:: rest
 
@@ -150,7 +150,7 @@ Using Intersphinx
    :std:doc:`Numpy <numpy:about>` and :std:doc:`Matplotlib <matplotlib:index>`
 
 
-.. _xref-linking:
+.. _sphinx-xref:
 
 Referencing external links
 ==========================
@@ -199,13 +199,13 @@ Referencing external links
 
 #. :std:doc:`Add a link role <sphinx:usage/restructuredtext/roles>` to
    documentation using the appropriate
-   :ref:`capitalization <documentation-style>`. For example:
+   :ref:`capitalization <concepts-documentation-style>`. For example:
 
    .. code-block:: rest
 
       Read about the :xref:`xref extension <xref-ext>`
 
-#. Add a description of the link to :ref:`links <references>`
+#. Add a description of the link to :ref:`links <references-links>`
 
    * After this step, the link can be moved above the delimiter
      :ref:`comment <python:comments>` in
@@ -214,14 +214,14 @@ Referencing external links
 .. Tip::
    As long as links aren't put above the delimiter
    :ref:`comments <python:comments>` until after they are put
-   into :ref:`links <links>`, links can be sorted in batches
+   into :ref:`links <references-links>`, links can be sorted in batches
 
 .. _tools-sphinx-checking-links:
 
 Checking links
 ==============
 
-#. With a :ref:`server running<building-documentation>`, use the
+#. With a :ref:`server running<sphinx-building-documentation>`, use the
    :ref:`integrated terminal <tools-VS-Code>` to enter:
 
    .. code-block:: bash

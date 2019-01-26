@@ -1,4 +1,6 @@
-.. _analyzing:
+.. 5333f1a
+
+.. _setup-analyzing:
 
 
 #########
@@ -27,7 +29,6 @@ Analyzing
 
 #. Use the :guilabel:`New` button to open a new :guilabel:`Python 3`
    :xref:`Jupyter Notebook <Jupyter>`
-
 #. Hit the :guilabel:`Edit` button, then the :guilabel:`nbextensions config`
    button to enable the following :std:doc:`extensions <nb-extensions:index>`:
 

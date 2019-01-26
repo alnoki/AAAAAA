@@ -1,4 +1,4 @@
-.. _procedures-conda:
+.. _conda-procedures:
 
 
 #####
@@ -57,8 +57,8 @@ Tidying up
 Creating a6 from scratch
 ************************
 
-#. Use the :ref:`packages table <anaconda-packages-table>` to indentify which
-   :ref:`packages <anaconda-packages-table>` you need
+#. Use the :ref:`packages table <concepts-packages-table>` to indentify which
+   :ref:`packages <concepts-packages-table>` you need
 
 #. :ref:`Start up conda <conda:starting-conda>`, then use
    :std:doc:`conda:commands/create` to make a new
@@ -95,9 +95,9 @@ Importing a6
 ************
 
 #. :ref:`Start up conda <conda:starting-conda>` from inside the
-   :ref:`project root directory <project-dir-tree>`, then
+   :ref:`project root directory <concepts-project-dir-tree>`, then
    :std:doc:`import <conda:user-guide/tasks/manage-environments>`
-   the necessary :ref:`conda packages <anaconda-packages-table>`:
+   the necessary :ref:`conda packages <concepts-packages-table>`:
 
    .. code-block:: bash
 
@@ -118,7 +118,7 @@ Installing AAAAAA for testing
 
 Per :std:doc:`pytest integration practices <pytest:goodpractices>`:
 
-#. From inside the :ref:`AAAAAA project directory <project-dir-tree>`, use
+#. From inside the :ref:`AAAAAA project directory <concepts-project-dir-tree>`, use
    :term:`a6` from inside the
    :ref:`VS Code integrated terminal <tools-VS-Code>`:
 
@@ -135,15 +135,15 @@ Using a new package
 
 #. Add the :ref:`package <conda:concept-conda-package>` to
 
-   #. The :ref:`packages table <anaconda-packages-table>`
-   #. The :ref:`a6.yml file <project-dir-tree>`
+   #. The :ref:`packages table <concepts-packages-table>`
+   #. The :ref:`a6.yml file <concepts-project-dir-tree>`
    #. The instructions for :ref:`creating a6 <conda-create-a6>`
    #. An installation step somewhere in the
-      :ref:`developer setup <dev-environment>`
+      :ref:`developer setup <setup-dev-environment>`
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
 
 #. :std:doc:`Install <conda:commands/install>` the desired
-   :ref:`package <anaconda-packages-table>`
+   :ref:`package <concepts-packages-table>`
 
 #. :ref:`Tidy up <conda-tidy-up>`

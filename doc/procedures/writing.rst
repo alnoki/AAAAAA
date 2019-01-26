@@ -38,8 +38,8 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`:
 #. Modify ``base_indent`` and ``branch_symbol`` to symbols that you would like
    to have in your tree
 
-#. Update ``where_to_start`` to the directory that you would like to write
-   about
+#. Update ``where_to_start`` to the :xref:`directory <directory>` that you
+   would like to write about
 
 #. Highlight the text in the scratch file
 
@@ -53,9 +53,9 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`:
 Documenting a new topic
 ***********************
 
-#. Gather :ref:`references <managing-references>` first, preferably in a batch
+#. Gather :ref:`references <sphinx-managing-references>` first, preferably in a batch
 
-#. Add a descripion of any :ref:`links <links>` to or books to
+#. Add a descripion of any :ref:`links <references-links>` to or books to
    :ref:`references <references>`
 
 #. Use the new :ref:`reference <reference>` in documentation
@@ -70,19 +70,17 @@ Documenting a new topic
 Proofreading
 ************
 
-See :ref:`documentation style <documentation-style>` to see what to watch out
+See :ref:`documentation style <concepts-documentation-style>` to see what to watch out
 for
 
-#. Open a :ref:`live build <building-documentation>` in a browser alongside
-   :ref:`tools-VS-Code`, so you can make edits immediately
-
+#. Open a :ref:`live build <sphinx-building-documentation>` in a browser
+   alongside :ref:`tools-VS-Code`, so you can make edits immediately
 #. Go through one :ref:`minor section <concepts-documentation-example>` at a
    time
 
    #. Read the browser-rendered text out loud and make any corrections in
       :ref:`tools-VS-Code`, then try a
-      :ref:`new build <building-documentation>`
-
+      :ref:`new build <sphinx-building-documentation>`
    #. Click on each link in the section and verify it goes to the correct
       target
 
