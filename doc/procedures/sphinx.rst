@@ -216,6 +216,8 @@ Referencing external links
    :ref:`comments <python:comments>` until after they are put
    into :ref:`links <links>`, links can be sorted in batches
 
+.. _tools-sphinx-checking-links:
+
 Checking links
 ==============
 

@@ -17,13 +17,6 @@ Access
 Contents
 ********
 
-.. csv-table:: Select references
-   :header: "Reference", "Topic"
-   :align: center
-
-   :ref:`python:tut-packages`, Explains directory structuring
-   :std:doc:`pytest:goodpractices`, Structure for testing code
-
 .. code-block:: none
    :caption: Select contents of the :xref:`AAAAAA-repo`
 
@@ -34,8 +27,8 @@ Contents
                ledger.py
                utilities.py
        test/
-           test_utilities.py
            test_ledger.py
+           test_utilities.py
        doc/
            index.rst
            conf.py
@@ -46,35 +39,25 @@ Contents
            src/
                ledger.ipynb
                utilities.ipynb
-       a6.yml
-       TODO.md
-       README.md
-       setup.py
-       .gitignore
        .vscode/
            settings.json
+       .gitignore
+       a6.yml
+       setup.py
+       README.md
+       TODO.md
 
-The :xref:`AAAAAA-repo` has several top-level directories of particular
-importance:
+.. csv-table:: Project contents
+   :header: "Name", "Function"
+   :align: center
 
-#. ``src``: Source code
-#. ``test``: :std:doc:`pytest <pytest:index>` modules for testing source code
-#. ``doc``: Documentation created via
-   :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
-#. ``nbs``: :xref:`Jupyter Notebook <Jupyter>` documentation of ``src`` and
-   ``dev`` (nbs = ``notebooks``)
-
-   * ``dev`` includes walkthroughs done during experimental code creation
-   * ``src`` includes some documentation created before the use of
-     :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
-     was adopted
-
-Additional contents of the :xref:`AAAAAA-repo`, which can be manipulated in
-:ref:`tools-VS-Code` :
-
-#. ``.vscode`` directory contains development
-   :xref:`settings <VS-Code-settings>`
-#. ``.gitignore`` is for :ref:`git <tools-git>`
-#. ``README.md`` contains references to :term:`AAAAAA` documentation
-#. ``TODO.md`` contains planned development tasks
-#. ``a6.yml`` specifies the :term:`a6 conda environment <a6>`
+   ``src/`` , Source code
+   ``test/`` , :ref:`tools-pytest` code
+   ``doc/`` , :ref:`tools-sphinx` documentation
+   ``nbs/`` , :ref:`tools-jupyter` notebooks
+   ``.vscode/`` , :ref:`tools-VS-Code` settings
+   ``.gitignore`` , :ref:`tools-git` configuration
+   ``a6.yml`` , Specifies the :term:`a6 environment <a6>`
+   ``setup.py`` , Configuration for :ref:`tools-pytest`
+   ``README.md`` , Renders at the :xref:`AAAAAA-repo`
+   ``TODO.md`` , Planned development tasks

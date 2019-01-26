@@ -1,61 +1,16 @@
 Viewing local build: http://localhost:8000/_build/html/index.html
 
-# Developer's setup
-
-1. CSV table in project structure contents
-1. Mention other structures are there (hidden dirs), but not covered
-1. Cite the packages/pytest for the __init__.py usage
-1. On code page, explain how AAAAAA is a "package" and then show relative
-   imports, etc.
-
-## Composition procedures
-1. Includes proofreading
-1. Says take time to ponder and plan next steps
-1. Says gather references first
-   1. Get reference, put in links
-   1. Then add it to tools, the page, etc
-1. Do original tutorials but with financial data
-1. Avoid creating documents that have to be double-maintained
-
-## Proofreading procedures
-1. Should go through and rename labels so they all make sense
-1. Links should have correct capitalization for the first word in a sentence
-1. Should be done with browser side-by-side with VS Code
-1. Verify admonitions are all lowercase
-1. Verify 3-space indent in rst files, and with nested lists
-1. Verify all AAAAAA references are to glossary term
-1. Go through website front to end read aloud
-   1. Make sure reST looks fine
-   1. Then can have a "not proofread" section
-   1. Can have comment on each page: last proofread YYYYMMDD
-         1. Then can compare this date with commit change dates
-         1. Can be a procedure for editing
-1. Live build next to .rst
-   1. Read a section out loud first, use the anchor to go to it
-   1. Click links as you go through
-   1. Read a section at a time on text, then check rest for style and links
-1. Proofread should say last sha1
-   1. Then use gitLens to see diff since then, etc.
-   1. Proofread procedures one for determining last update
-   1. One procedure for updating
-1. Should have all lowercase arbitrary-section-labels
-   1. Also should be categorical
-   1. Update the documentation syle accordingly
-1. Make linkcheck and change all purples
-
-## Setup after development configuration is complete
-1. After completing setup guide
+## Administrative
    1. Should go through conf.py and figure out what is going on
    1. Can explain in concepts section what defaults are, etc.
       1. Talk about how xref is used, folder it is in, etc.
    1. Update license
    1. Update copyright year
-1. Proofreading before src changes
-1. Zen says to plan out, get in the right jungle before trees
-   1. 7 habits highly effective people
 1. Link Willing video times in a CSV table
-
-# Next tasks
+1. Explain how sha1 is at top of each document.
+1. Use objects.inv to see AAAAAA labels that may be wrong
+   1. dev-environment?
+1. Condense whitespace in lists
 
 ## Source documentation
 1. date.__name__ f string? instead of the string "date"
@@ -93,6 +48,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Get mypy going
 
 ## Transaction code
+1. Do original tutorials but with financial data
 1. NaN in GoogleSheets should be different than $0
 1. __repr__ should sanitize inputs
 1. Need a to_string()
@@ -113,6 +69,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. CSV table with a page number and the concept
    1. For The Intelligent investor, can link to another "concepts page"
       1. The 7-step checklist, etc.
+1. Module index on home page :ref:`modindex`
 1. See all notebook entries since Dec 26
 1. Coverage.py for testing framework
 1. Per Carol Willing talk

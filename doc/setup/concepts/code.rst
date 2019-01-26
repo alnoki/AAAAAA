@@ -6,6 +6,36 @@ Code
 ####
 
 
+*********
+Structure
+*********
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :ref:`python:tut-packages`, Explains directory structuring
+   :std:doc:`pytest:goodpractices`, Structure for testing code
+
+In accordance with :std:doc:`pytest recommendations <pytest:goodpractices>`,
+:term:`AAAAAA` use the following :ref:`structure <project-dir-tree>`:
+
+.. code-block:: none
+
+   AAAAAA/
+       setup.py
+       src/
+           AAAAAA/
+               __init__.py
+               ledger.py
+               utilities.py
+               ...
+       test/
+           test_ledger.py
+           test_utilities.py
+           ...
+
+
 *****
 Style
 *****

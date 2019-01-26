@@ -1,3 +1,5 @@
+.. c5be61a
+
 .. _dev-environment:
 
 
@@ -12,15 +14,15 @@ completely :xref:`open-source`
 Before you begin, you will need
 :std:doc:`Miniconda <conda:user-guide/install/download>`, which will
 give you access to :xref:`Python` and :xref:`Anaconda`. If you participated in
-the :ref:`quickstart`, then you should already have
+the :ref:`quick start <quickstart>` guide, then you should already have
 :std:doc:`Miniconda <conda:user-guide/install/download>`
 
 Any configurations, settings, and tools that you might need are described
 in the following instructions, so get ready to install some free software!
 
-Following the installation are some :ref:`conceptual explanations <concepts>`
-that will explain all the software and familiarize you with developing
-:term:`AAAAAA`
+After the installation, there are some
+:ref:`conceptual descriptions <concepts>` that should explain all the software
+and familiarize you with developing :term:`AAAAAA`
 
 .. tip::
 

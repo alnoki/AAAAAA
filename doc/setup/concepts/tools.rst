@@ -135,6 +135,8 @@ There are several command-line style text navigators that go along with
 A list of common :term:`AAAAAA` usage examples is at
 :ref:`Git Procedures <git-procedures>`
 
+.. _tools-sphinx:
+
 
 ******
 Sphinx
@@ -178,7 +180,6 @@ functionality and several are used in :term:`AAAAAA`
    :ref:`References extension configuration <sublime-with-sphinx:use the external links extension>`, "
    :std:doc:`Extensions <sphinx:usage/extensions/index>` installation and
    configuration"
-
 
 A list of common :term:`AAAAAA` usage examples is at
 :ref:`Sphinx Procedures <sphinx-procedures>`
@@ -278,7 +279,6 @@ pytest
    :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
    :std:doc:`pytest tutorials <pytest:contents>`, Official tutorials
 
-
 :term:`AAAAAA` uses :std:doc:`pytest <pytest:index>`, a
 :ref:`conda package<conda:concept-conda-package>`, to verify that code is
 functioning as expected
@@ -286,6 +286,8 @@ functioning as expected
 :xref:`VS-Code` natively integrates with :std:doc:`pytest <pytest:index>`,
 and additional functionality is provided by the
 :xref:`Test-explorer-UI`
+
+.. _tools-jupyter:
 
 
 *******

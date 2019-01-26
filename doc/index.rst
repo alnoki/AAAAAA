@@ -1,3 +1,6 @@
+.. c5be61a
+
+
 ########
 Welcome!
 ########
@@ -32,29 +35,33 @@ A bit of Python can be executed on most computers with minimal effort, using
    :header: :xref:`OS` , "Command line"
    :align: center
 
-   :xref:`Mac`, :program:`Terminal`
-   :xref:`Windows`, :program:`Command Prompt`
-   :xref:`Linux`, :program:`Terminal`
+   :xref:`Mac`, Terminal
+   :xref:`Windows`, Command Prompt
+   :xref:`Linux`, Terminal
 
 #. Type :command:`python` and hit :kbd:`return`
 
-   * If this doesn't work then you probably don't have :xref:`Python`, but you
-     can get it for free!
+   #. If this doesn't work then you probably don't have :xref:`Python`, but you
+      can get it for free!
 
       #. Download
          :std:doc:`Miniconda <conda:user-guide/install/download>`
-      #. :ref:`Start up Conda <conda:starting-conda>`
+      #. :ref:`Start up conda <conda:starting-conda>`
       #. Type :command:`python` and hit :kbd:`return`
 
 #. Copy and paste the below contents to the command line then hit
-   :kbd:`return`::
+   :kbd:`return`:
 
-    print("I am a computer programmer!")
+   .. code-block:: python
 
-#. If you are feeling fancy::
+      print("I am a computer programmer!")
 
-    for i in range(5):
-       print("Please be aware of the number", i)
+#. If you are feeling fancy:
+
+   .. code-block:: python
+
+      for i in range(5):
+          print("Please be aware of the number", i)
 
    .. tip::
       This :xref:`Python` input ends with an indented line, so hit
@@ -69,14 +76,14 @@ A bit of Python can be executed on most computers with minimal effort, using
                \displaystyle \prod_{k=1}^{x} k & x > 0 \\
             \end{cases}
 
-   ::
+   .. code-block:: python
 
-       factorial = 1  # Initialize factorial
-       for x in range(10):
+      factorial = 1  # Initialize factorial
+      for x in range(10):
           if x > 0:
-             factorial = x * factorial  # Update factorial
-          print("Please be aware of the number", x,
-                "with factorial", factorial)
+              factorial = x * factorial  # Update factorial
+              print("Please be aware of the number", x,
+                     "with factorial", factorial)
 
    .. note::
       This :xref:`Python` input ends with an indented line, so don't forget to
@@ -85,7 +92,6 @@ A bit of Python can be executed on most computers with minimal effort, using
 Congratulations!!!
 
 .. tip::
-
    Hit the :guilabel:`Next` button at the top or the bottom of the page to
    continue
 

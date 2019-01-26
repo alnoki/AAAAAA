@@ -1,11 +1,13 @@
+.. c5be61a
+
 .. _setup-documenting:
+
 
 ###########
 Documenting
 ###########
 
 #. Install :xref:`VS-Code` and the :xref:`VS-Code-bookmarks-ext`
-
 #. Update the :xref:`VS-Code-terminal` ``USER SETTINGS`` in
    :xref:`settings.json <VS-Code-settings>` so that you can use
    :ref:`conda <conda:starting-conda>`
@@ -82,7 +84,6 @@ Documenting
      :xref:`settings.json <VS-Code-settings>`. If it is added to ``WORKSPACE
      SETTINGS`` in :xref:`settings.json <VS-Code-settings>`, make sure to
      put it in ``USER SETTINGS`` instead
-
    * On a :xref:`Mac`, this should look like:
 
      .. code-block:: json
@@ -111,7 +112,6 @@ Documenting
       conda install -c conda-forge doc8
 
 #. Install the :xref:`RST-preview-ext` for :xref:`VS-Code`
-
 #. If you don't already have it, :xref:`download Git <git-download>`
 
    * To figure out if you have it, open the :xref:`VS-Code-terminal` and type:
@@ -121,7 +121,6 @@ Documenting
         git --version
 
 #. Install the :xref:`GitLens` for :xref:`VS-Code`
-
 #. Use the :xref:`command-palette` to :xref:`clone <git-manual>` the
    :xref:`AAAAAA-repo`
 

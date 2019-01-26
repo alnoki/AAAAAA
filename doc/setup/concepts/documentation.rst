@@ -13,6 +13,9 @@ Documentation
 Sphinx
 ******
 
+General info
+============
+
 .. csv-table:: Select references
    :header: "Reference", "Topic"
    :align: center
@@ -70,6 +73,35 @@ block of text
    :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, via the
    :guilabel:`Edit on GitHub` feature
 
+Documentation structure
+=======================
+
+.. code-block:: none
+
+   AAAAAA/
+       doc/
+           exts/
+               xref.py
+               ...
+           conf.py
+           Makefile
+           make.bat
+           index.rst
+           setup/
+           procedures/
+           ...
+
+.. csv-table::
+   :header: "Name", "Function"
+   :align: center
+
+   ``exts/``, :std:doc:`Extensions <sphinx:usage/extensions/index>`
+   ``conf.py``, :std:doc:`Configuration <sphinx:usage/configuration>`
+   ``Makefile`` / ``make.bat``, :ref:`building-documentation`
+   ``index.rst`` , :term:`AAAAAA` documentation homepage
+   ``setup/`` / ``procedures/`` / ``...`` , Documentation pages
+
+
 .. _documentation-style:
 
 Style
@@ -121,6 +153,7 @@ General syntax
    * :ref:`Links` are here
    * Here are some :ref:`links <Links>`
 
+.. _concepts-documentation-example:
 
 Simple example
 --------------
@@ -171,3 +204,20 @@ This :xref:`AAAAAA-nbs` can render any :xref:`Jupyter Notebook<Jupyter>` from
 :xref:`alnoki's AAAAAA repository <AAAAAA-repo>` in a web browser, and contains
 a directory of all :xref:`Jupyter Notebooks <Jupyter>` created for
 :term:`AAAAAA`
+
+.. code-block:: none
+
+   AAAAAA/
+       nbs/
+           dev/
+               ledger.ipynb
+           src/
+               ledger.ipynb
+               utilities.ipynb
+
+.. csv-table::
+   :header: "Name", "Style"
+   :align: center
+
+   ``dev/``, Created during development
+   ``src/``, Complements source code
