@@ -29,7 +29,7 @@ Per :xref:`Willing-Sphinx`:
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
    inside the :ref:`documentation root directory<concepts-project-dir-tree>` if it is
    not already :ref:`active <conda:activate-env>`
-#. From the :ref:`integrated terminal <tools-VS-Code>`, make a new build then
+#. From the :ref:`integrated terminal <tools-vs-code>`, make a new build then
    start a local server:
 
    .. code-block:: bash
@@ -81,7 +81,7 @@ Using Intersphinx
 
 #. Locate the project's
    :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
-   mapping, using the :ref:`VS Code integrated terminal <tools-VS-Code>`:
+   mapping, using the :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 
@@ -222,7 +222,7 @@ Checking links
 ==============
 
 #. With a :ref:`server running<sphinx-building-documentation>`, use the
-   :ref:`integrated terminal <tools-VS-Code>` to enter:
+   :ref:`integrated terminal <tools-vs-code>` to enter:
 
    .. code-block:: bash
 

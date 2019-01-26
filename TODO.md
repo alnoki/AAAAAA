@@ -1,5 +1,9 @@
 Viewing local build: http://localhost:8000/_build/html/index.html
 
+## Proofreading
+1. Explain how sha1 is at top of each document
+   1. Get a link to sha1 and put in documentation.rst and writing.rst
+
 ## Administrative
 1. Should go through conf.py and figure out what is going on
    1. Can explain in concepts section what defaults are, etc.
@@ -7,8 +11,6 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Update license
    1. Update copyright year
 1. Link Willing video times in a CSV table
-1. Explain how sha1 is at top of each document
-   1. Get a link to sha1 and put in documentation.rst and writing.rst
 
 ## Source documentation
 1. date.__name__ f string? instead of the string "date"

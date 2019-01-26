@@ -56,7 +56,7 @@ Contents
    ``test/`` , :ref:`tools-pytest` code
    ``doc/`` , :ref:`tools-sphinx` documentation
    ``nbs/`` , :ref:`tools-jupyter` notebooks
-   ``.vscode/`` , :ref:`tools-VS-Code` settings
+   ``.vscode/`` , :ref:`tools-vs-code` settings
    ``.gitignore`` , :ref:`tools-git` configuration
    ``a6.yml`` , Specifies the :term:`a6 environment <a6>`
    ``setup.py`` , Configuration for :ref:`tools-pytest`

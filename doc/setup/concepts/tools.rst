@@ -1,4 +1,4 @@
-.. 5333f1a
+.. 1b382f1
 
 .. _concepts-tools:
 
@@ -33,6 +33,16 @@ different :ref:`conda channels <conda:channels-glossary>`
 
 A list of common :term:`AAAAAA` usage examples is at
 :ref:`conda procedures <conda-procedures>`
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :std:doc:`conda:index`, Official reference
+   :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`, "Common
+   :std:doc:`conda <conda:index>` commands"
+   :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
+   :xref:`Python`"
 
 The :ref:`developer setup <setup-dev-environment>` describes how to
 :std:doc:`create <conda:commands/create>` a new
@@ -90,18 +100,9 @@ The :ref:`developer setup <setup-dev-environment>` describes how to
          :ref:`conda <conda:channels-glossary>`"
          :std:doc:`pip <python:installing/index>`, Configuring test code, "
          :ref:`setup-testing`", :ref:`conda <conda:channels-glossary>`
-         :std:doc:`pytest <pytest:index>`, Code testing, :ref:`setup-testing`, "
+         :std:doc:`pytest <pytest:index>`, Code testing, "
+         :ref:`setup-testing`", "
          :ref:`conda <conda:channels-glossary>`"
-
-.. csv-table:: Select references
-   :header: "Reference", "Topic"
-   :align: center
-
-   :std:doc:`conda:index`, Official reference
-   :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`, "Common
-   :std:doc:`conda <conda:index>` commands"
-   :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
-   :xref:`Python`"
 
 .. _tools-git:
 
@@ -111,10 +112,10 @@ Git
 ***
 
 :xref:`Git <git-manual>` is used create and track changes to the
-:xref:`AAAAAA-repo`. It is a version control system that allows the project
-to be updated with :xref:`commits <git-commit>`, which are like
-snapshots in time that describe minor changes to the project throughout its
-history
+:xref:`AAAAAA-repo`. :xref:`Git <git-manual>` is a version control system that
+allows the project to be updated with :xref:`commits <git-commit>`, which are
+like snapshots in time that describe minor changes to the project throughout
+its history
 
 :xref:`GitHub` is a free service that hosts the :xref:`AAAAAA-repo`
 
@@ -147,13 +148,17 @@ There are several command-line style text navigators that go along with
 Sphinx
 ******
 
-:std:doc:`Sphinx <sphinx:intro>` is the engine used to create all the
-documentation for :term:`AAAAAA` and even for
-:std:doc:`Python itself <python:tutorial/index>`. Sphinx uses the
-:std:doc:`reStructuredText <sphinx:usage/restructuredtext/basics>` (``reST``)
-markup language. The :ref:`table of contents <sphinx:toctree-directive>`
-feature provides a linearly navigable structure that ensures access to all
-pages of documentation
+:std:doc:`Sphinx <sphinx:intro>` is the documentation engine that creates all
+the documentation for :term:`AAAAAA` and even for
+:std:doc:`Python itself <python:tutorial/index>`. Sphinx is built on the
+:ref:`tools-restructured-text` (``reST``) markup language
+
+:std:doc:`Sphinx <sphinx:intro>` has a
+:ref:`table of contents <sphinx:toctree-directive>` feature, which provides a
+linearly navigable structure that ensures access to all pages of documentation.
+:term:`AAAAAA` are documented using the
+:std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides
+a mobile-friendly viewing experience with a modern look
 
 A list of common :term:`AAAAAA` usage examples is at
 :ref:`Sphinx procedures <sphinx-procedures>`
@@ -180,12 +185,53 @@ functionality and several are used in :term:`AAAAAA`
    :std:doc:`Sphinx <sphinx:intro>`, Official documentation
    :xref:`Practical use seminar <Willing-Sphinx>`, "Practical commands and
    functions"
-   :xref:`quick-reST`, "
-   :std:doc:`reStructuredText <sphinx:usage/restructuredtext/basics>`
-   syntax"
    :ref:`References extension configuration <sublime-with-sphinx:use the external links extension>`, "
    :std:doc:`Extension <sphinx:usage/extensions/index>` installation and
    configuration"
+
+.. _tools-restructured-text:
+
+
+****************
+reStructuredText
+****************
+
+:xref:`reStructuredText <reST-documentation>` (``reST``) is a markup language
+containing syntax to generate fancy components like ``this``, :guilabel:`this`,
+or :menuselection:`t --> h --> i --> s`
+
+The two most fundamental :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+components are the :std:doc:`role <sphinx:usage/restructuredtext/roles>`, which
+marks a piece of text (usually in-line), and the
+:std:doc:`directive <sphinx:usage/restructuredtext/directives>`, which marks a
+block of text
+
+:std:doc:`reST <sphinx:usage/restructuredtext/basics>` files have an ``.rst``
+extension, and :ref:`tools-sphinx` parses them whenever documentation is built
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :std:doc:`sphinx:usage/restructuredtext/basics`, "
+   :std:doc:`Sphinx <sphinx:intro>` tutorial on ``reST`` usage"
+   :xref:`reST-documentation`, Official documentation
+   :xref:`quick-reST`, Practical syntax
+   :xref:`reST-cheatsheet`, Quick syntax reference
+   :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
+   syntax"
+
+Many :ref:`tools-sphinx` documentation websites have an
+:guilabel:`Edit on GitHub` (or similar) feature at
+the top of each page. This feature will display the
+:std:doc:`reST <sphinx:usage/restructuredtext/basics>` file that created the
+page
+
+.. tip::
+   You can harvest the syntax for nearly any kind of
+   :std:doc:`reST <sphinx:usage/restructuredtext/basics>` component from the
+   :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, via the
+   :guilabel:`Edit on GitHub` feature
 
 
 *************
@@ -209,8 +255,9 @@ the visual appearance of this website!
    project"
    :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
    documentation elements"
+   :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
 
-.. _tools-VS-Code:
+.. _tools-vs-code:
 
 
 *******
@@ -274,6 +321,14 @@ stable as the most recent official release
 pytest
 ******
 
+:term:`AAAAAA` uses :std:doc:`pytest <pytest:index>`, a
+:ref:`conda package<tools-anaconda>`, to verify that code is
+functioning as expected
+
+:xref:`VS-Code` natively integrates with :std:doc:`pytest <pytest:index>`,
+and additional functionality is provided by the
+:ref:`VS Code Python Test Explorer extension<tools-vs-code>`
+
 .. csv-table:: Select references
    :header: "Reference", "Topic"
    :align: center
@@ -282,13 +337,6 @@ pytest
    :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
    :std:doc:`pytest tutorials <pytest:contents>`, Official tutorials
 
-:term:`AAAAAA` uses :std:doc:`pytest <pytest:index>`, a
-:ref:`conda package<conda:concept-conda-package>`, to verify that code is
-functioning as expected
-
-:xref:`VS-Code` natively integrates with :std:doc:`pytest <pytest:index>`,
-and additional functionality is provided by the
-:xref:`VS Code Python Test Explorer extension<Test-explorer-UI>`
 
 .. _tools-jupyter:
 
@@ -339,3 +387,8 @@ The :std:doc:`nb-extensions:index` provide additional functionality
    :std:doc:`nb-extensions:nbextensions/varInspector/README`, "Data value
    inspection"
    :xref:`live-md-preview`, "Quick equation rendering"
+
+.. tip::
+   This :xref:`AAAAAA-nbs` can render any :xref:`Jupyter Notebook<Jupyter>`
+   from the :xref:`AAAAAA-repo` inside of a browser, even if
+   :xref:`Jupyter <Jupyter>` isn't installed

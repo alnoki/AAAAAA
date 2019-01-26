@@ -84,7 +84,7 @@ Environments
 
    * Command line configurator for :xref:`Anaconda`
 
-#. :ref:`Anaconda Prompt <conda:starting-conda>`
+#. :ref:`conda:starting-conda`
 
    * Invocation methods for :std:doc:`conda <conda:index>`
 

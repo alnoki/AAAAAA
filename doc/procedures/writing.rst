@@ -4,6 +4,27 @@
 Writing
 #######
 
+.. _writing-max-screen-estate:
+
+************************
+Maximizing screen estate
+************************
+
+#. For half-screen, use the :ref:`VS Code command palette <tools-vs-code>`
+   to experiment with the following commands
+
+   * :guilabel:`View: Toggle Tab Visibility`
+   * :guilabel:`View: Toggle Maximized Panel`
+   * :guilabel:`View: Toggle Panel`
+   * :guilabel:`View: Toggle Activity Bar Visibility`
+   * :guilabel:`View: Toggle Side Bar Visibility`
+   * :guilabel:`View: Toggle Status Bar Visibility`
+   * :guilabel:`View: Toggle Centered Layout`
+
+#. For full-screen:
+
+   * :guilabel:`View: Toggle Zen Mode`
+
 
 *************************
 Creating a directory tree
@@ -53,12 +74,14 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`:
 Documenting a new topic
 ***********************
 
-#. Gather :ref:`references <sphinx-managing-references>` first, preferably in a batch
-
-#. Add a descripion of any :ref:`links <references-links>` to or books to
+#. Gather :ref:`references <sphinx-managing-references>` first, preferably in a
+   batch
+#. Add a descripion of any :ref:`links <references-links>` or books to
    :ref:`references <references>`
-
 #. Use the new :ref:`reference <reference>` in documentation
+#. When appropriate, link to :ref:`tools <concepts-tools>` or other similar
+   documentation pages that have already been created rather than creating a
+   new :ref:`link <references-links>` outside of :term:`AAAAAA`
 
 .. tip::
 
@@ -74,12 +97,15 @@ See :ref:`documentation style <concepts-documentation-style>` to see what to wat
 for
 
 #. Open a :ref:`live build <sphinx-building-documentation>` in a browser
-   alongside :ref:`tools-VS-Code`, so you can make edits immediately
+   alongside :ref:`tools-vs-code` with
+   :ref:`maximum half-screen estate <writing-max-screen-estate>`, so you can
+   make edits immediately
+
 #. Go through one :ref:`minor section <concepts-documentation-example>` at a
    time
 
    #. Read the browser-rendered text out loud and make any corrections in
-      :ref:`tools-VS-Code`, then try a
+      :ref:`tools-vs-code`, then try a
       :ref:`new build <sphinx-building-documentation>`
    #. Click on each link in the section and verify it goes to the correct
       target

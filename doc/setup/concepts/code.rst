@@ -48,8 +48,7 @@ Style
    :pep:`8`, Official :xref:`Python` style guide
    :pep:`257`, :ref:`docstring <python:tut-docstrings>` conventions
 
-
-#.  Items of particuar emphasis:
+#. Items of particuar emphasis:
 
    * Lines should be a maximum length of 79 characters, except
      :ref:`comments <python:comments>` and

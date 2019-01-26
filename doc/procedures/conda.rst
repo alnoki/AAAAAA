@@ -120,7 +120,7 @@ Per :std:doc:`pytest integration practices <pytest:goodpractices>`:
 
 #. From inside the :ref:`AAAAAA project directory <concepts-project-dir-tree>`, use
    :term:`a6` from inside the
-   :ref:`VS Code integrated terminal <tools-VS-Code>`:
+   :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 
