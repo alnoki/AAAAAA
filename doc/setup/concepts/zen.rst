@@ -1,3 +1,6 @@
+.. 5863379
+
+
 ###
 Zen
 ###
@@ -14,14 +17,12 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 #. Have STUPID simple tests. [#]_ Don't recursively "test the test code"
 #. Documenting & testing adds perspective beyond source code development alone
 #. Consider :xref:`DO-178B` as a model for software design assurance [#]_
-#. :pep:`8` provides a repeatable and official means for formatting
+#. :pep:`8` provides a repeatable and official means for formatting. Use it!!!
 #. Legacy conventions shant prevent the adoption of a new worthwhile philosopy
 #. Play around and "whiteboard" code during initial stages [#]_
 #. Read documentation out loud [#]_
-#. :xref:`Py <Python>` like you
-   :std:doc:`reST <sphinx:usage/restructuredtext/basics>`,
-   :std:doc:`reST <sphinx:usage/restructuredtext/basics>` like you
-   :xref:`Py <Python>` [#]_
+#. :xref:`Py <Python>` like you :ref:`reST <tools-restructured-text>`,
+   :ref:`reST <tools-restructured-text>` like you :xref:`Py <Python>` [#]_
 
 
 ***************
@@ -37,9 +38,10 @@ Need some more inspiration? Try::
 .. [#] Acronym from :xref:`Corey Schafer <Corey-Schafer-vids>`
 .. [#] From Software Requirements Documents (SWRDs) and Software Design
    Documents (SDDs) standards at :xref:`Garmin`
-.. [#] From a tip that embedded software code should be "stupid simple", given
+.. [#] From a tip that embedded systems code should be "stupid simple", given
    by Daniel Santos, co-founder of :xref:`219-Design`
-.. [#] :xref:`AHRS` products from :xref:`Garmin` are :xref:`DO-178B` Level A
+.. [#] :xref:`AHRS` products from :xref:`Garmin` are
+   :xref:`DO-178B Level A<DO-178B>`
 .. [#] From a comment by Brett Glasner, that whiteboarding is the most
    fun part of software design
 .. [#] Recommeded in :xref:`Willing-Sphinx`

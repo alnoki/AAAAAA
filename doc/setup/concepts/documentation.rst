@@ -1,3 +1,5 @@
+.. 5863379
+
 .. _concepts-documentation:
 
 
@@ -51,8 +53,8 @@ Documentation structure
    :header: "Name", "Function"
    :align: center
 
-   ``exts/``, ":std:doc:`Extensions <sphinx:usage/extensions/index>`
-   :xref:`directory <directory>`"
+   ``exts/``, ":xref:`Directory <directory>` for
+   :std:doc:`extensions <sphinx:usage/extensions/index>`"
    ``conf.py``, :std:doc:`Configuration <sphinx:usage/configuration>`
    "``Makefile`` , ``make.bat``", :ref:`sphinx-building-documentation`
    ``index.rst`` , :term:`AAAAAA` documentation homepage
@@ -66,21 +68,22 @@ Documentation structure
 Style
 =====
 
-:term:`AAAAAA` adopts stylistic recommendations from common sources, with some
-particular emphases
+:term:`AAAAAA` adopt stylistic recommendations from common sources, with some
+particular emphases:
 
 .. csv-table:: Style references
    :header: "Reference", "Topic"
    :align: center
 
    :std:doc:`Python Developer's Guide <py-dev-guide:documenting>`, "
-   General :std:doc:`reST <sphinx:usage/restructuredtext/basics>` style guide"
-   :xref:`Doc8`, ":std:doc:`conda:index` package to check
-   :std:doc:`reST <sphinx:usage/restructuredtext/basics>` style [#]_"
+   General :ref:`reST <tools-restructured-text>` style guide"
+   :xref:`Doc8`, ":ref:`Conda package <tools-anaconda>` to check
+   :ref:`reST <tools-restructured-text>` style [#]_"
 
 .. rubric:: Footnotes
 
-.. [#] Automatically runs via the :xref:`RST-preview-ext` for :xref:`VS-Code`
+.. [#] Automatically runs via the :xref:`RST-preview-ext` for
+   :ref:`tools-vs-code`
 
 General syntax
 --------------
@@ -100,6 +103,17 @@ General syntax
    * :ref:`Links <references-links>` are here
    * Here are some :ref:`links <references-links>`
 
+#. There should be non-link text between two different links so that the links
+   can clearly be differentiated:
+
+   .. csv-table::
+      :header: Yes, NO!!!
+      :align: center
+
+      ":std:doc:`Extensions <sphinx:usage/extensions/index>` for
+      :std:doc:`Sphinx <sphinx:intro>`", ":std:doc:`Sphinx <sphinx:intro>`
+      :std:doc:`extensions <sphinx:usage/extensions/index>`"
+
 Whitespace
 ----------
 
@@ -108,7 +122,8 @@ Whitespace
 #. Lines should be a maximum length of 79 characters, unless
    :std:doc:`role content <sphinx:usage/restructuredtext/roles>` can't be
    broken up (this is okay)
-#. Use 2 lines of whitespace above anything that is overlined
+#. Use 2 lines of whitespace above anything that is
+   :std:doc:`overlined <py-dev-guide:documenting>`
 #. Use a single, unescaped space before
    :std:doc:`footnotes <sphinx:usage/restructuredtext/basics>`
 
@@ -117,7 +132,14 @@ Whitespace
 Simple example
 ==============
 
+.. note::
+   Per the :ref:`proofreading procedure <writing-proofreading>`, there should
+   be a :ref:`SHA-1 <tools-git>` tag at the top of
+   :ref:`.rst <tools-restructured-text>` files that have been proofread
+
 .. code-block:: rest
+
+   .. f00cafe
 
    .. _my-label:
 
@@ -153,8 +175,10 @@ Simple example
 
    .. [#] Footnote from the above section
 
-The ``.rst`` files in :term:`AAAAAA` should clearly portray other relevant
-stylistic components. Look around in them for more examples
+.. tip::
+   The :ref:`.rst <tools-restructured-text>` files in :term:`AAAAAA` should
+   clearly portray other relevant stylistic components. Look around in them for
+   more examples
 
 
 *****************
@@ -167,9 +191,11 @@ Jupyter Notebooks
        nbs/
            dev/
                ledger.ipynb
+               ...
            src/
                ledger.ipynb
                utilities.ipynb
+               ...
 
 .. csv-table::
    :header: "Name", "Style"

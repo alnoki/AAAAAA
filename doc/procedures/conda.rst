@@ -1,3 +1,5 @@
+.. 5863379
+
 .. _conda-procedures:
 
 
@@ -9,8 +11,9 @@ Conda
    :header: "Reference", "Topic"
    :align: center
 
-   :std:doc:`conda:user-guide/tasks/manage-environments`, Practical reference
-   :ref:`tools-anaconda`, :term:`AAAAAA` explanation
+   :std:doc:`conda:user-guide/tasks/manage-environments`, "Official practical
+   reference"
+   :ref:`tools-anaconda`, General information
 
 .. contents:: Contents
    :local:
@@ -23,7 +26,6 @@ Tidying up
 **********
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
-
 #. Use :std:doc:`conda:commands/update` to get the latest
    :ref:`packages <conda:concept-conda-package>`:
 
@@ -58,8 +60,7 @@ Creating a6 from scratch
 ************************
 
 #. Use the :ref:`packages table <concepts-packages-table>` to indentify which
-   :ref:`packages <concepts-packages-table>` you need
-
+   :ref:`packages <conda:concept-conda-package>` you need
 #. :ref:`Start up conda <conda:starting-conda>`, then use
    :std:doc:`conda:commands/create` to make a new
    :ref:`conda environment <conda:concept-conda-env>` with
@@ -75,7 +76,6 @@ Creating a6 from scratch
       your screen
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
-
 #. :std:doc:`Install <conda:commands/install>` the remaining
    :ref:`packages <conda:concept-conda-package>` from :xref:`conda-forge`:
 
@@ -84,7 +84,6 @@ Creating a6 from scratch
       conda install -c conda-forge doc8 jupyter_contrib_nbextensions
 
 #. :ref:`Install AAAAAA for testing <conda-pip-AAAAAA>`
-
 #. :ref:`Tidy up <conda-tidy-up>`
 
 .. _conda-import-a6:
@@ -95,7 +94,7 @@ Importing a6
 ************
 
 #. :ref:`Start up conda <conda:starting-conda>` from inside the
-   :ref:`project root directory <concepts-project-dir-tree>`, then
+   :ref:`AAAAAA project directory <concepts-project-dir-tree>`, then
    :std:doc:`import <conda:user-guide/tasks/manage-environments>`
    the necessary :ref:`conda packages <concepts-packages-table>`:
 
@@ -104,9 +103,7 @@ Importing a6
       conda env create -f a6.yml
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
-
 #. :ref:`Install AAAAAA for testing <conda-pip-AAAAAA>`
-
 #. :ref:`Tidy up <conda-tidy-up>`
 
 .. _conda-pip-AAAAAA:
@@ -142,8 +139,6 @@ Using a new package
       :ref:`developer setup <setup-dev-environment>`
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
-
 #. :std:doc:`Install <conda:commands/install>` the desired
    :ref:`package <concepts-packages-table>`
-
 #. :ref:`Tidy up <conda-tidy-up>`

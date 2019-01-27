@@ -1,4 +1,4 @@
-.. 1b382f1
+.. 5863379
 
 .. _concepts-tools:
 
@@ -115,7 +115,9 @@ Git
 :xref:`AAAAAA-repo`. :xref:`Git <git-manual>` is a version control system that
 allows the project to be updated with :xref:`commits <git-commit>`, which are
 like snapshots in time that describe minor changes to the project throughout
-its history
+its history. Each :xref:`commit <git-commit>` is identified by a :xref:`sha1`,
+a unique identifier that can be accessed by viewing a
+:xref:`commit log <git-log>`
 
 :xref:`GitHub` is a free service that hosts the :xref:`AAAAAA-repo`
 

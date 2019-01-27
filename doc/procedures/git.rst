@@ -1,3 +1,5 @@
+.. 5863379
+
 .. _git-procedures:
 
 
@@ -80,15 +82,14 @@ Per :xref:`git-config`:
 
 #. Type :kbd:`Esc`, then ``:x``, then :kbd:`return`, to
    :xref:`save and close <Vim-cheatsheet>`
-
 #. To check that the credentials have updated:
 
    .. code-block:: bash
 
       git config --global --list
 
-
 .. _git-view-project-log:
+
 
 ***********************
 Viewing the project log
@@ -96,7 +97,7 @@ Viewing the project log
 
 Per :xref:`git-log`:
 
-#. In the :xref:`VS Code integrated terminal <VS-Code-terminal>`:
+#. In the :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 
@@ -112,11 +113,12 @@ Per :xref:`git-log`:
       ``q``, exit
       ``h``, show help
 
-#. A condensed version:
+.. tip::
+   A condensed version:
 
-   .. code-block:: bash
+      .. code-block:: bash
 
-      git log --oneline
+         git log --oneline
 
 .. _git-list-committers:
 
@@ -125,12 +127,15 @@ Per :xref:`git-log`:
 Listing project committers
 **************************
 
-Use :xref:`git log --pretty <git-log>` options, explained per:
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
 
-   * :xref:`list-git-developers`
-   * :xref:`git-log-formatting`
+   :xref:`git-log`, Syntax reference
+   :xref:`list-git-developers`, Sorting unique instances
+   :xref:`git-log-formatting`, Practical syntax examples
 
-#. In the :xref:`VS Code integrated terminal <VS-Code-terminal>`, isolate all
+#. In the :ref:`VS Code integrated terminal <tools-vs-code>`, isolate all
    unique instances of a field:
 
    .. code-block:: bash
@@ -153,10 +158,15 @@ Use :xref:`git log --pretty <git-log>` options, explained per:
 Committing
 **********
 
-Per :xref:`git-commit` and :xref:`git-push`:
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`git-commit`, Create snapshot of project changes
+   :xref:`git-push`, Upload changes to repository
 
 #. Verify the state of the project using the
-   :xref:`VS Code integrated terminal <VS-Code-terminal>`:
+   :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 
@@ -164,39 +174,39 @@ Per :xref:`git-commit` and :xref:`git-push`:
       git log
 
 #. Save and close any open project files
-#. Update and verify your :ref:`Git user credentials <git-credentials>` as
-   needed
-#. Use the :xref:`VS Code command palette <command-palette>` to select
+#. :ref:`Update your Git credentials <git-credentials>` and verify as needed
+#. Use the :ref:`VS Code command palette <tools-vs-code>` to select:
 
    * :guilabel:`View: Open View`
    * :guilabel:`Source Control`
 
 #. Use the :guilabel:`Source Control` interface to
    :xref:`stage changes <git-commit>`
-#. In the :xref:`VS-Code-terminal`:
+#. In the :ref:`integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 
       git commit
 
-   * This will open :xref:`Vim`, which you can use to generate your
-     :xref:`commit message <git-commit>`
-   * See :ref:`git-credentials` for the :xref:`save and close <Vim-cheatsheet>`
-     procedure
+   .. tip::
+      This will open :xref:`Vim`, which you can use to generate your
+      :xref:`commit message <git-commit>` per the
+      :xref:`save and close <Vim-cheatsheet>` procedure used to
+      :ref:`update Git credentials <git-credentials>`
 
-#. In the :xref:`command palette <command-palette>`:
+#. In the :ref:`command palette <tools-vs-code>`:
    :guilabel:`Git: Commit Staged`
-
-#. Use the :xref:`VS-Code-terminal` to verify the :xref:`commit <git-commit>`
-   looks alright and that the :ref:`commit identities <git-list-committers>` are
-   okay
+#. Use the :ref:`integrated terminal <tools-vs-code>` to verify the
+   :xref:`commit <git-commit>` looks alright and that the
+   :ref:`commit identities <git-list-committers>` are okay
 
    .. code-block:: bash
 
       git log
       git log --pretty="%an, %ae, %cn, %ce"
 
-#. Use the :xref:`VS-Code-terminal` to :xref:`push <git-push>`
+#. Use the :ref:`integrated terminal <tools-vs-code>` to
+   :xref:`push <git-push>`
 
    .. code-block:: bash
 
@@ -211,10 +221,13 @@ Per :xref:`git-commit` and :xref:`git-push`:
 Changing commit credential history
 **********************************
 
-See
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
 
-* :xref:`github-change-authors`
-* :xref:`git-branch-filtering`
+   :xref:`Change author history <github-change-authors>`, "
+   :xref:`GitHub` instructions"
+   :xref:`git-branch-filtering`, Advanced syntax
 
 #. For the most part, follow :xref:`github-change-authors`. Before you
    :xref:`push the corrected history <github-change-authors>`, check out the
@@ -245,7 +258,8 @@ See
       fi
       ' --tag-name-filter cat -- --branches --tags
 
-   * This will update all :ref:`project commit credentials <git-list-committers>`
+   * This will update all
+     :ref:`project commit credentials <git-list-committers>`
      that were not authored by ``43892045+alnoki@users.noreply.github.com``
 
 #. If you want to get more specific about your selections:
@@ -274,4 +288,3 @@ See
           export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
       fi
       ' --tag-name-filter cat -- --branches --tags
-

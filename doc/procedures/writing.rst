@@ -1,8 +1,9 @@
-
-
 #######
 Writing
 #######
+
+.. contents:: Contents
+   :local:
 
 .. _writing-max-screen-estate:
 
@@ -11,7 +12,7 @@ Maximizing screen estate
 ************************
 
 #. For half-screen, use the :ref:`VS Code command palette <tools-vs-code>`
-   to experiment with the following commands
+   to experiment with the following commands:
 
    * :guilabel:`View: Toggle Tab Visibility`
    * :guilabel:`View: Toggle Maximized Panel`
@@ -20,11 +21,11 @@ Maximizing screen estate
    * :guilabel:`View: Toggle Side Bar Visibility`
    * :guilabel:`View: Toggle Status Bar Visibility`
    * :guilabel:`View: Toggle Centered Layout`
+   * :guilabel:`View: Join All Editor Groups`
 
 #. For full-screen:
 
    * :guilabel:`View: Toggle Zen Mode`
-
 
 *************************
 Creating a directory tree
@@ -88,19 +89,20 @@ Documenting a new topic
    Avoid creating identical documentation in multiple places that must be
    doubly maintained
 
+.. _writing-proofreading:
+
 
 ************
 Proofreading
 ************
 
-See :ref:`documentation style <concepts-documentation-style>` to see what to watch out
-for
+See :ref:`documentation style <concepts-documentation-style>` to see what to
+watch out for
 
 #. Open a :ref:`live build <sphinx-building-documentation>` in a browser
    alongside :ref:`tools-vs-code` with
    :ref:`maximum half-screen estate <writing-max-screen-estate>`, so you can
    make edits immediately
-
 #. Go through one :ref:`minor section <concepts-documentation-example>` at a
    time
 
@@ -110,14 +112,16 @@ for
    #. Click on each link in the section and verify it goes to the correct
       target
 
-#. :ref:`Do a linkcheck <tools-sphinx-checking-links>`
-#. When done proofreading a :ref:`.rst file <tools-sphinx>`, use the
-   :ref:`oneline log commit hash <git-view-project-log>` to tag the top of
-   the :ref:`.rst file <tools-sphinx>`:
+#. :ref:`Do a linkcheck <sphinx-checking-links>`
+#. When done proofreading an :ref:`.rst file <tools-sphinx>`, use the
+   :ref:`SHA-1 <tools-git>` from a
+   :ref:`oneline commit log <git-view-project-log>` to tag the top of
+   the :ref:`.rst file <tools-sphinx>` with a
+   :std:doc:`comment <usage/restructuredtext/basics>`
 
    .. code-block:: rest
 
-      .. 76795bc
+      .. f00cafe
 
       .. _doc-label:
 

@@ -388,5 +388,6 @@ xref_links = {
     'print-dir-tree': ("Printing a directory tree", url['Stack OF'] +
                        '9727673/list-directory-tree-structure-in-python'),
     'directory': ("Directory", url['Wiki pg'] + 'Directory_(computing)'),
+    'sha1': ('SHA-1', url['Wiki pg'] + 'SHA-1'),
     # New links below, sorted links above
     }

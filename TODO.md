@@ -1,18 +1,12 @@
 Viewing local build: http://localhost:8000/_build/html/index.html
 
 ## Proofreading
-1. Explain how sha1 is at top of each document
-   1. Get a link to sha1 and put in documentation.rst and writing.rst
-
-## Administrative
-1. Should go through conf.py and figure out what is going on
-   1. Can explain in concepts section what defaults are, etc.
-      1. Talk about how xref is used, folder it is in, etc.
-   1. Update license
-   1. Update copyright year
-1. Link Willing video times in a CSV table
+1. All csv-tables should have a title, use find all
+1. Verify sha1 tag for each rst when done
+1. Make linkcheck
 
 ## Source documentation
+1. Use autodoc link from Willing Sphinx table and put in tools-sphinx
 1. date.__name__ f string? instead of the string "date"
 1. Do autodoc first, then update type annotations, then mypy
    1. Mypy goes into testing developer setup
@@ -47,6 +41,13 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Annotate everything
    1. Get mypy going
 
+## Administrative
+1. Should go through conf.py and figure out what is going on
+   1. Can explain in concepts section what defaults are, etc.
+      1. Talk about how xref is used, folder it is in, etc.
+   1. Update license
+   1. Update copyright year
+
 ## Transaction code
 1. Do original tutorials but with financial data
 1. NaN in GoogleSheets should be different than $0
@@ -74,7 +75,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Coverage.py for testing framework
 1. Per Carol Willing talk
    1. Make spelling test with exception words
-   1. Import video annotation times from iPad notes
+   1. Links for topics in csv table, like spellchecking, etc.
 1. Package per the YouTube tutorial by the freelancer, link on iPad
 1. Tools should have an additional non-open source section:
    1. Robinhood

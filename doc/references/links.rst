@@ -65,6 +65,14 @@ Specifics
 
    * Sample code to print out a :xref:`directory <directory>` tree
 
+#. :ref:`python:comments`
+
+   * Documentation inside code that is human-readable
+
+#. :ref:`python:tut-docstrings`
+
+   * :ref:`python:comments` for specific :xref:`Python` code components
+
 Environments
 ============
 
@@ -308,6 +316,10 @@ General
 
    * Getting started
 
+#. :xref:`sha1`
+
+   * Unique identifier attached to each :xref:`commit <git-commit>`
+
 Core functionality
 ==================
 
@@ -410,11 +422,20 @@ Practical use
 #. :xref:`Willing-Sphinx`
 
    * Common workflow tasks
-   * Checking spelling and links
-   * Linking :xref:`Jupyter Notebooks <Jupyter>`
-   * :std:doc:`Extensions <sphinx:usage/extensions/index>`
+   * :ref:`sphinx-checking-links`
    * Team development ideologies
-   * :std:doc:`Autodoc <sphinx:usage/extensions/autodoc>` and custom strings
+
+   .. csv-table::
+      :header: "Time of video", "Topic"
+      :align: center
+
+      10:15, Incorporating :ref:`Jupyter Notebooks <tools-jupyter>`
+      13:00, Checking spelling
+      14:00, Incorporating images
+      15:15, Including code
+      17:00, Continuous integration
+      20:00, :std:doc:`Autodoc <sphinx:usage/extensions/autodoc>`
+      24:15, :ref:`Themes <tools-sphinx>`
 
 #. :xref:`Writer-intro-to-Sphinx`
 

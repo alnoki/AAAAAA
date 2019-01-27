@@ -1,3 +1,5 @@
+.. 5863379
+
 #################
 Project structure
 #################
@@ -17,8 +19,9 @@ Access
 Contents
 ********
 
+Some select demonstrative contents of the :xref:`AAAAAA-repo`:
+
 .. code-block:: none
-   :caption: Select contents of the :xref:`AAAAAA-repo`
 
    AAAAAA/
        src/
@@ -60,5 +63,5 @@ Contents
    ``.gitignore`` , :ref:`tools-git` configuration
    ``a6.yml`` , Specifies the :term:`a6 environment <a6>`
    ``setup.py`` , Configuration for :ref:`tools-pytest`
-   ``README.md`` , Renders at the :xref:`AAAAAA-repo`
+   ``README.md`` , Points to :term:`AAAAAA` homepage
    ``TODO.md`` , Planned development tasks

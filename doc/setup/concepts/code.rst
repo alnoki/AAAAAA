@@ -1,3 +1,5 @@
+.. 5863379
+
 .. _concepts-code:
 
 
@@ -14,12 +16,11 @@ Structure
    :header: "Reference", "Topic"
    :align: center
 
-   :ref:`python:tut-packages`, "Explains :xref:`directory <directory>`
-   structuring"
-   :std:doc:`pytest:goodpractices`, Structure for testing code
+   :ref:`python:tut-packages`, :xref:`Directory <directory>` structuring
+   :std:doc:`pytest:goodpractices`, Integrating :ref:`test code <tools-pytest>`
 
-In accordance with :std:doc:`pytest recommendations <pytest:goodpractices>`,
-:term:`AAAAAA` use the following :ref:`structure <concepts-project-dir-tree>`:
+In accordance with :std:doc:`test code recommendations <pytest:goodpractices>`,
+:term:`AAAAAA` code is structured as follows:
 
 .. code-block:: none
 
@@ -56,7 +57,9 @@ Style
      of 72 characters
    * Two spaces should precede a :ref:`comment <python:comments>`
 
-#. Per a recommended :xref:`Python-quote-convention`::
+#. Per a recommended :xref:`Python-quote-convention`:
 
-       symbol_like = 'begin_index'  # Symbol-like term
-       natural = "Documentation optimality"  # Natural language message
+   .. code-block:: python
+
+      symbol_like = 'begin_index'  # Symbol-like term
+      natural = "Documentation optimality"  # Natural language message
