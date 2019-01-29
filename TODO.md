@@ -1,11 +1,23 @@
 Viewing local build: http://localhost:8000/_build/html/index.html
 
+## Reading
+1. https://realpython.com/documenting-python-code/ (already linked)
+
 ## Proofreading
 1. All csv-tables should have a title, use find all
 1. Verify sha1 tag for each rst when done
 1. Make linkcheck
 
 ## Source documentation
+1. Pep257
+   1. Need __init.py__ docstring
+   1. See realpython typing guide too
+1. pep484
+1. https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html
+   1. Napoleon docstrings
+   1. Should come with Sphinx now
+      1. http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon
+1. https://numpydoc.readthedocs.io/en/latest/format.html Style Guide
 1. Use autodoc link from Willing Sphinx table and put in tools-sphinx
 1. date.__name__ f string? instead of the string "date"
 1. Do autodoc first, then update type annotations, then mypy
@@ -13,16 +25,12 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Real python typing guide
 1. Autodoc, then docstrings, then types
 1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
-1. https://realpython.com/documenting-python-code/
 1. Use sphinx rtd theme for test_module.py
 1. Link a Jupyter notebook per Carol Willing video
-1. Separate ledger.py into a snippets file
 1. Document utilities.py
    1. Autodoc with source files and maybe numpy style
       1. Reference the autodoc extension in the tools page
       1. Autodoc reference already in references page
-   1. [Numpy docstring convention](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard)
-   1. [Napolean for numpy docstring support](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon)
 1. Document test_utilities.py
 1. Document ledger.py
 1. Document test_ledger.py
@@ -31,7 +39,6 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Incorporate ledger.py snippets
 1. Verify all Jupyter notebooks are linked
 1. Figure out how to do documentation coverage
-1. Make directory trees that describe the structure of the project
 1. MyPy type linter
    1. https://www.python.org/dev/peps/pep-0526/
    1. https://realpython.com/python-type-checking/
@@ -40,6 +47,21 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://realpython.com/python-type-checking/#annotations
    1. Annotate everything
    1. Get mypy going
+
+## Linking
+1. Import times from the iPad speech about packaging
+   1. Shows code coverage
+   1. Link to the topics when you get around to it
+      1. Link to every topic from a csv table
+1. Make sure all topics from the willing speech are linked too
+
+## Services
+1. Services setup
+   1. AlphaVantage
+   1. Robinhood
+   1. Google Sheets
+   1. EDGAR
+   1. Will require its own setup section, adding to .yaml, etc
 
 ## Administrative
 1. Should go through conf.py and figure out what is going on

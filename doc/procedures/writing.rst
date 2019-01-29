@@ -92,9 +92,14 @@ Documenting a new topic
 .. _writing-proofreading:
 
 
-************
-Proofreading
-************
+**************************
+Proofreading documentation
+**************************
+
+.. _writing-proofreading-new:
+
+New documents
+=============
 
 See :ref:`documentation style <concepts-documentation-style>` to see what to
 watch out for
@@ -109,15 +114,14 @@ watch out for
    #. Read the browser-rendered text out loud and make any corrections in
       :ref:`tools-vs-code`, then try a
       :ref:`new build <sphinx-building-documentation>`
-   #. Click on each link in the section and verify it goes to the correct
-      target
+   #. Verify each link in the section by clicking on it
 
 #. :ref:`Do a linkcheck <sphinx-checking-links>`
 #. When done proofreading an :ref:`.rst file <tools-sphinx>`, use the
    :ref:`SHA-1 <tools-git>` from a
    :ref:`oneline commit log <git-view-project-log>` to tag the top of
-   the :ref:`.rst file <tools-sphinx>` with a
-   :std:doc:`comment <usage/restructuredtext/basics>`
+   the :ref:`.rst file <tools-restructured-text>` with a
+   :std:doc:`comment <usage/restructuredtext/basics>`:
 
    .. code-block:: rest
 
@@ -130,5 +134,34 @@ watch out for
       Document header
       ###############
 
+Changes to a document
+=====================
 
+After you are done making changes to the :ref:`reST <tools-restructured-text>`
+file in question:
 
+#. Use :ref:`GitLens <tools-vs-code>` to inspect the history of the
+   file: :guilabel:`GitLens: Show File History`
+#. The :ref:`SHA-1 tag <concepts-documentation-example>` at the top of the file
+   should be associated with the second-most-recent :ref:`commit <tools-git>`,
+   because the :ref:`proofreading procedures <writing-proofreading>` always
+   look one revision back
+
+   #. If this is the case, simply hit :kbd:`Esc` and continue through this
+      procedure
+   #. If this is not the case, use the :guilabel:`GitLens: Show File History`
+      view to highlight the :ref:`commit <tools-git>` that has the same
+      :ref:`SHA-1 tag <concepts-documentation-example>` as the
+      :std:doc:`comment <usage/restructuredtext/basics>` at the top of the
+      current working file and hit:
+
+      #. :kbd:`return`
+      #. :guilabel:`Open Changes with Working File`
+      #. Then, continue through this procedure
+
+#. Open a build and follow the steps for
+   :ref:`proofreading new documents <writing-proofreading-new>`, but only
+   review *changes* to the document:
+
+      * Use the :ref:`VS Code command palette <tools-vs-code>` to select
+        :guilabel:`Move to Next Change`

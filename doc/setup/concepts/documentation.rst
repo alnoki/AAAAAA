@@ -1,4 +1,4 @@
-.. 5863379
+.. db615a5
 
 .. _concepts-documentation:
 
@@ -133,8 +133,9 @@ Simple example
 ==============
 
 .. note::
-   Per the :ref:`proofreading procedure <writing-proofreading>`, there should
-   be a :ref:`SHA-1 <tools-git>` tag at the top of
+   Per the :ref:`proofreading procedures <writing-proofreading>`, there should
+   be a :std:doc:`reST comment <usage/restructuredtext/basics>` with
+   a :ref:`SHA-1 <tools-git>` tag at the top of
    :ref:`.rst <tools-restructured-text>` files that have been proofread
 
 .. code-block:: rest
