@@ -1,3 +1,6 @@
+.. 41bbe32
+
+
 #######
 Writing
 #######
@@ -6,6 +9,7 @@ Writing
    :local:
 
 .. _writing-max-screen-estate:
+
 
 ************************
 Maximizing screen estate
@@ -27,15 +31,17 @@ Maximizing screen estate
 
    * :guilabel:`View: Toggle Zen Mode`
 
+.. _writing-make-dir-tree:
+
+
 *************************
 Creating a directory tree
 *************************
 
 Adapted from :xref:`directory tree sample code <print-dir-tree>`:
 
-#. Use the :xref:`VS Code command palette <command-palette>` to select
+#. Use the :ref:`VS Code command palette <tools-vs-code>` to select
    :guilabel:`File: New Untitled File`
-
 #. Copy-paste the below contents to the new file:
 
    .. code-block:: python
@@ -59,16 +65,13 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`:
 
 #. Modify ``base_indent`` and ``branch_symbol`` to symbols that you would like
    to have in your tree
-
 #. Update ``where_to_start`` to the :xref:`directory <directory>` that you
    would like to write about
-
 #. Highlight the text in the scratch file
-
-#. Use the :xref:`command palette <command-palette>` to select
+#. Use the :ref:`command palette <tools-vs-code>` to select
    :guilabel:`Python: Run Selection/Line in Python Terminal` then hit
    :kbd:`enter` from inside the
-   :xref:`VS Code integrated terminal <VS-Code-terminal>`
+   :ref:`VS Code integrated terminal <tools-vs-code>`
 
 
 ***********************
@@ -77,17 +80,17 @@ Documenting a new topic
 
 #. Gather :ref:`references <sphinx-managing-references>` first, preferably in a
    batch
-#. Add a descripion of any :ref:`links <references-links>` or books to
-   :ref:`references <references>`
-#. Use the new :ref:`reference <reference>` in documentation
+#. Add a descripion of any :ref:`links <references-links>` or
+   :ref:`books <references-books>` to :ref:`references <references>`
+#. Use the new :ref:`reference <references>` in documentation
 #. When appropriate, link to :ref:`tools <concepts-tools>` or other similar
    documentation pages that have already been created rather than creating a
    new :ref:`link <references-links>` outside of :term:`AAAAAA`
 
 .. tip::
 
-   Avoid creating identical documentation in multiple places that must be
-   doubly maintained
+   Avoid creating identical documentation in several places that must be
+   multiply maintained
 
 .. _writing-proofreading:
 
@@ -101,8 +104,8 @@ Proofreading documentation
 New documents
 =============
 
-See :ref:`documentation style <concepts-documentation-style>` to see what to
-watch out for
+See :ref:`documentation style <concepts-documentation-style>` for a list of
+things to watch out for
 
 #. Open a :ref:`live build <sphinx-building-documentation>` in a browser
    alongside :ref:`tools-vs-code` with
@@ -116,9 +119,9 @@ watch out for
       :ref:`new build <sphinx-building-documentation>`
    #. Verify each link in the section by clicking on it
 
-#. :ref:`Do a linkcheck <sphinx-checking-links>`
-#. When done proofreading an :ref:`.rst file <tools-sphinx>`, use the
-   :ref:`SHA-1 <tools-git>` from a
+#. Do a :ref:`linkcheck <sphinx-checking-links>`
+#. When done proofreading an :ref:`.rst file <tools-restructured-text>`, use
+   the :ref:`SHA-1 <tools-git>` from a
    :ref:`oneline commit log <git-view-project-log>` to tag the top of
    the :ref:`.rst file <tools-restructured-text>` with a
    :std:doc:`comment <usage/restructuredtext/basics>`:

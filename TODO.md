@@ -1,14 +1,39 @@
 Viewing local build: http://localhost:8000/_build/html/index.html
 
-## Reading
+# Reading
+1. https://embeddedartistry.com/blog/2017/12/7/start-using-semantic-versioning-to-give-your-version-numbers-meaning (included below)
 1. https://realpython.com/documenting-python-code/ (already linked)
 
-## Proofreading
-1. All csv-tables should have a title, use find all
-1. Verify sha1 tag for each rst when done
-1. Make linkcheck
+# 0.1.0 First doc release
 
-## Source documentation
+## Proofreading
+1. Start on links page
+1. Make linkcheck when done
+
+## Versioning small items
+1. Update to 0.1.0 in conf.py then commit
+1. Next commit 0.2.0
+1. Verify the Sphinx version shows the set correctly
+
+# 0.2.0 src documentation
+
+## Version change list (start one in .md)
+
+## Minor documentation additions
+1. Spirit of alnoki's apps on Zen page
+   1. Functional programming is easiest to read, understand, and test
+      1. Link to functional programming reference
+   1. Should be open source
+   1. Incremental versioning per the link above
+      1. Each one should be an MVP (minimum viable prototype)
+         1. Link
+   1. Hyperlink to anything a novice might not understand
+   1. Show how it's done, in case you forget later
+   1. Open source and free as much as possible
+1. AAAAAA term should say (colloquially referred to as alnoki's apps)
+
+## src documentation
+1. PEP484
 1. Pep257
    1. Need __init.py__ docstring
    1. See realpython typing guide too
@@ -47,34 +72,77 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://realpython.com/python-type-checking/#annotations
    1. Annotate everything
    1. Get mypy going
+1. 1. Module index on home page :ref:`modindex`
 
-## Linking
-1. Import times from the iPad speech about packaging
-   1. Shows code coverage
-   1. Link to the topics when you get around to it
-      1. Link to every topic from a csv table
-1. Make sure all topics from the willing speech are linked too
+## Git commit conventions
+1. https://stackoverflow.com/questions/24046846
+1. https://stackoverflow.com/questions/3459744
+1. https://stackoverflow.com/questions/11553374
+1. Link to the git commit conventions
+1. Explain the Git theme for Vim?
+   1. Shows up on current windows machine but not
 
-## Services
-1. Services setup
-   1. AlphaVantage
-   1. Robinhood
-   1. Google Sheets
-   1. EDGAR
-   1. Will require its own setup section, adding to .yaml, etc
+## Syntax/terminology
+1. Link to https://en.wikipedia.org/wiki/Command-line_interface
+   1. Find all for command line and replace with :xref:
+1. Capitalization should mention that proper nouns should be capitalized
+   1. Consider the NumPy package
+   1. Consider the pandas package
+   1. Pandas package
+1. Line break in documentation also say ..code-block can go over a line
+1. Give all csv-table a title
+   1. Use find all
+1. Verify all peps are in :ref:`links` via find all for " :pep: "
+   1. PEP257, pep8 are there - rearrange?
+1. Say how information sources (google, wikipedia, etc.) are used
+   1. In open-source section
+1. Conda procedures should add a link to pip (already in links)
 
-## Administrative
+## Versioning
+1. Should be in concepts section
+   1. Link to procedures page for versioning
+   1. Keep pushing new functionalities in subsequent versions
+1. Include link to https://embeddedartistry.com/blog/2017/12/7/start-using-semantic-versioning-to-give-your-version-numbers-meaning
+1. https://semver.org/
+1. Add a version page/release notes page with
+1. Add a versioning procedures page
+   1. Can also use this when releasing packages
+1. Start next commit at 0.2.0
+   1. Listed on release page as a beta
+1. Verify can load various release versions on the Sphinx website
+   1. After releasing, always increment minor version and list as beta
 1. Should go through conf.py and figure out what is going on
    1. Can explain in concepts section what defaults are, etc.
       1. Talk about how xref is used, folder it is in, etc.
    1. Update license
    1. Update copyright year
+1. yaml should freeze at last release and then update each release
 
-## Transaction code
-1. Do original tutorials but with financial data
-1. NaN in GoogleSheets should be different than $0
-1. __repr__ should sanitize inputs
-1. Need a to_string()
+# 0.3.0 Linking nbs
+
+## Jupyter
+1. TOC for all Jupyter notebooks?
+1. Need a way to include he nbs directory
+1. Need a table that says which doc pages link to which nbs
+1. Each doc that links to an nb also says which nb it links to
+1. Add to nbs concepts page
+   1. Say links in them may not be in links page
+   1. Core content is distilled into .rst
+1. Procedure for linking an nb says the two places that must be update
+   1. Link to this procedure in the nbs concepts page
+   1. Link to it in the nbs toc page
+
+# 0.4.0 Robinhood
+
+## Robinhood integration
+1. Services setup
+   1. Robinhood
+   1. Will require its own setup section, adding to .yaml, etc
+1. Can do later:
+   1. AlphaVantage
+   1. Google Sheets
+   1. EDGAR
+1. Use Corey Schafer password tutorial
 
 ## Robinhood API references
 1. [Unofficial Robinhood API documentation](https://github.com/sanko/Robinhood)
@@ -83,7 +151,61 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. [version with 30 stars](https://github.com/westonplatter/fast_arrow)
    1. [version with 27 stars](https://github.com/mstrum/robinhood-python)
 
-# Future development
+## Transaction updates
+1. When transaction init gets an error, should
+   1. Raise error
+   1. Show a trace to the data that produced it
+1. Class method to convert to a dataframe?
+   1. Could have a subclass of DataFrame called ledger
+      1. By merit of existing, it has already been sanitized
+         1. Thus can go straight back into transactions
+   1. Would already have sanitized data
+
+# 1.0.0 Package release
+
+## Main functionality
+1. Download a Robinhood history to a pandas DataFrame
+1. MVP (minimum viable prototype)
+1. Package per the YouTube tutorial by the freelancer, link on iPad
+
+## Deployment
+1. Use iPad video
+   1. Travis
+   1. Coverage for both code and docs
+1. Coverage.py for testing framework
+1. Per Carol Willing talk
+   1. Make spelling test with exception words
+   1. Links for topics in csv table, like spellchecking, etc.
+   1. Links for package deployment talk
+1. __init__.py should have docstrings too per {PEP257 (?)}
+
+## Setup page
+1. For the python enthusiast
+   1. Conda install AAAAAA
+   1. pip install AAAAAA (?)
+
+## Linking
+1. Import times from the iPad speech about packaging
+   1. Shows code coverage
+   1. Link to the topics when you get around to it
+      1. Link to every topic from a csv table
+1. Make sure all topics from the willing speech are linked too
+
+## Transaction code
+1. Do original tutorials but with financial data
+1. NaN in GoogleSheets should be different than $0
+1. __repr__ should sanitize inputs
+1. Need a to_string()
+
+# 1.1.0 BTMF
+
+# Main functionailty
+1. Adds PARDAFA and BTMF versus CRSPTMT
+1. Cast a portfolio into a Pandas dataframe then plot
+1. ABC: Annualized BTMF coefficient
+   1. (APR of alnoki) / (APR of CRSPTMT)
+
+# 1.2.0 and on
 
 ## General ideas
 1. Books
@@ -92,24 +214,16 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. CSV table with a page number and the concept
    1. For The Intelligent investor, can link to another "concepts page"
       1. The 7-step checklist, etc.
-1. Module index on home page :ref:`modindex`
 1. See all notebook entries since Dec 26
-1. Coverage.py for testing framework
-1. Per Carol Willing talk
-   1. Make spelling test with exception words
-   1. Links for topics in csv table, like spellchecking, etc.
-1. Package per the YouTube tutorial by the freelancer, link on iPad
-1. Tools should have an additional non-open source section:
-   1. Robinhood
-   1. Alphavantage
-   1. Google Sheets
-1. Use Corey Schafer password tutorial
 1. Robinhood interface to Google sheets
 1. RODCA with LaTeX
 1. Do some fun stats first just for fun
    1. Those goons at instutions don't know DSP
    1. The patterns are there
-1. Cast a portfolio into a Pandas dataframe then plot
+1. Standard and Poors facilitated the 2009 crisis
+   1. This is why we use CRSPTMT
+      1. Also it is academic
+
 1. Make an AAAAAA GSheet and update the associated GDrive document ledger
 1. Leisurely review paper notebook notes for more ideas
 1. See other investing references from urls on Google Drive

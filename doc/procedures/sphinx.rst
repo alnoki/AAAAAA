@@ -1,3 +1,5 @@
+.. 41bbe32
+
 .. _sphinx-procedures:
 
 
@@ -27,10 +29,10 @@ Building documentation
 Per :xref:`Willing-Sphinx`:
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
-   inside the :ref:`documentation root directory<concepts-project-dir-tree>` if it is
-   not already :ref:`active <conda:activate-env>`
-#. From the :ref:`integrated terminal <tools-vs-code>`, make a new build then
-   start a local server:
+   inside the :ref:`documentation root directory<concepts-project-dir-tree>` if
+   it is not already :ref:`active <conda:activate-env>`
+#. From the :ref:`VS Code integrated terminal <tools-vs-code>`, make a new
+   build then start a local server:
 
    .. code-block:: bash
 
@@ -39,7 +41,7 @@ Per :xref:`Willing-Sphinx`:
 
 #. Open http://localhost:8000/_build/html/index.html in a browser to view the
    build
-#. You can update the :ref:`.rst files <concepts-documentation>` and make
+#. You can update the :ref:`.rst files <tools-restructured-text>` and make
    another build, but don't start another server (unless you want an
    :xref:`http-socket-error`):
 
@@ -48,7 +50,6 @@ Per :xref:`Willing-Sphinx`:
       make html
 
 #. Refresh the browser to see changes
-
 #. Before :ref:`committing <git-committing>`, clear out the build files:
 
    .. code-block:: bash
@@ -77,7 +78,6 @@ Using Intersphinx
    explanation"
    :xref:`Intersphinx inventory parser <intersphinx-inv-parser>`, "For viewing
    large map outputs"
-
 
 #. Locate the project's
    :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
@@ -110,13 +110,13 @@ Using Intersphinx
 #. Inspect the :std:doc:`objects.inv mapping <sphinx:usage/extensions/intersphinx>`
 
    * For large outputs, consider using a command line program (like
-     :program:`terminal.app` on a :xref:`Mac`), which can be maximized to full
+     :program:`Terminal` on a :xref:`Mac`), which can be maximized to full
      screen
 
 #. Locate the desired target in the mapping output and link to it using a
    corresponding :std:doc:`role <sphinx:usage/restructuredtext/roles>`:
 
-   .. csv-table:: Referencing mapping outputs
+   .. csv-table:: Referencing select mapping outputs
       :header: "Category in objects.inv", "Role to use"
       :align: center
 
@@ -147,7 +147,7 @@ Using Intersphinx
 
 .. tip::
    :xref:`intersphinx-numpy-matplotlib` has instructions for referencing
-   :std:doc:`Numpy <numpy:about>` and :std:doc:`Matplotlib <matplotlib:index>`
+   :std:doc:`NumPy <numpy:about>` and :std:doc:`Matplotlib <matplotlib:index>`
 
 
 .. _sphinx-xref:
@@ -160,8 +160,8 @@ Referencing external links
    :align: center
 
    :xref:`Sphinx xref extension <xref-ext>`, Manages external links
-   :ref:`Using references extension <sublime-with-sphinx:use the external links extension>`, "
-   Additional configuration and usage"
+   :ref:`Using a references extension <sublime-with-sphinx:use the external links extension>`, "
+   Related configuration and usage"
 
 #. Add a reference to the link in
    :std:doc:`conf.py <sphinx:usage/configuration>`
@@ -221,7 +221,7 @@ Referencing external links
 Checking links
 ==============
 
-#. With a :ref:`server running<sphinx-building-documentation>`, use the
+#. With a :ref:`build server running<sphinx-building-documentation>`, use the
    :ref:`integrated terminal <tools-vs-code>` to enter:
 
    .. code-block:: bash

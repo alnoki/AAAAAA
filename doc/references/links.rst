@@ -1,3 +1,5 @@
+.. 41bbe32 search below for same sha1 tag...
+
 .. _references-links:
 
 
@@ -6,7 +8,8 @@ Links
 #####
 
 This is a centralized and comprehensive list of online resources related to
-:term:`AAAAAA`, and is managed according to :ref:`sphinx-managing-references`
+:term:`AAAAAA`, and is managed according to the
+:ref:`managing referenences procedures <sphinx-managing-references>`
 
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
@@ -40,7 +43,7 @@ General
 
 #. :std:doc:`python:howto/functional`
 
-   * Official tutorial on :xref:`Python` functional programming technique
+   * Official tutorial on :xref:`Python` programming techniques
 
 #. :std:doc:`python:howto/index`
 
@@ -55,7 +58,7 @@ Specifics
 
 #. :ref:`python:tut-packages`
 
-   * Structuring of files and directories in a project
+   * Structuring of code and :xref:`directories <directory>` in a project
 
 #. :xref:`Python-quote-convention`
 
@@ -64,6 +67,7 @@ Specifics
 #. :xref:`print-dir-tree`
 
    * Sample code to print out a :xref:`directory <directory>` tree
+   * Adapted for :ref:`directory tree procedure <writing-make-dir-tree>`
 
 #. :ref:`python:comments`
 
@@ -72,6 +76,10 @@ Specifics
 #. :ref:`python:tut-docstrings`
 
    * :ref:`python:comments` for specific :xref:`Python` code components
+
+#. :ref:`python:tut-dictionaries`
+
+   * A set of *key: value* pairs
 
 Environments
 ============
@@ -113,9 +121,11 @@ Environments
 
    * A community-driven :ref:`conda channel <conda:channels-glossary>`
 
-#. :xref:`directory`
+#. :std:doc:`pip <python:installing/index>`
 
-   * Cataloging structure with references to computer data
+   * General installer for :xref:`Python` software
+   * Used to :ref:`configure a6 <conda-pip-AAAAAA>` for use with
+     :std:doc:`pytest <pytest:index>`
 
 Conda syntax
 ------------
@@ -216,7 +226,7 @@ Matplotlib
 
 #. :std:doc:`Matplotlib <matplotlib:index>`
 
-   * Homepage for :xref:`Python` plotting tool
+   * Plotting tool for numerical data
 
 #. :std:doc:`matplotlib:tutorials/index`
 
@@ -248,11 +258,11 @@ pytest
 
 #. :std:doc:`pytest <pytest:index>`
 
-   * Official :std:doc:`pytest <pytest:index>` documentation
+   * Framework for writing test code
 
 #. :xref:`codebasics-pytest`
 
-   * Recommended :std:doc:`pandas:index` tutorial on :xref:`YouTube`
+   * Recommended :std:doc:`pytest <pytest:index>` tutorial on :xref:`YouTube`
 
 #. :std:doc:`pytest tutorials <pytest:contents>`
 
@@ -262,14 +272,11 @@ pytest
 
    * Configuring :std:doc:`pytest <pytest:index>` to run with :term:`a6`
 
-#. :std:doc:`pip <python:installing/index>`
-
-   * Used to configure :term:`a6` for using :std:doc:`pytest <pytest:index>`
-
 #. :xref:`pytest-discovery-issue`
 
    * :xref:`VS-Code` integration problem upon release of
      :std:doc:`pytest <pytest:index>`
+
 
 ***************
 AAAAAA codebase
@@ -291,6 +298,10 @@ AAAAAA codebase
 #. :xref:`AAAAAA-zip-archive`
 
    * Compressed archive of :xref:`AAAAAA-repo` that is quick to download
+
+#. :xref:`directory`
+
+   * Cataloging structure with references to computer data
 
 
 *******************
@@ -320,8 +331,8 @@ General
 
    * Unique identifier attached to each :xref:`commit <git-commit>`
 
-Core functionality
-==================
+Core commands
+=============
 
 #. :xref:`git-config`
 
@@ -352,14 +363,14 @@ Text manipulation
 
 #. :xref:`Vim-tutorial`
 
-   * To learn :xref:`Vim` in several minutes
+   * Learn :xref:`Vim` in several minutes
 
 #. :xref:`Vim-cheatsheet`
 
    * Common :xref:`Vim` commands
 
-Extra features
-==============
+Special features
+================
 
 #. :xref:`git-log-formatting`
 
@@ -378,6 +389,7 @@ Extra features
    * Extra options for
      :xref:`re-writing commit history <github-change-authors>`
 
+
 *************
 Documentation
 *************
@@ -388,11 +400,11 @@ General
 #. :std:doc:`Official Python Developer's Guide to Documenting Python <py-dev-guide:documenting>`
 
    * General :std:doc:`Sphinx <sphinx:intro>` use and
-     :std:doc:`usage/restructuredtext/basics` style guide
+     :std:doc:`reStructuredTest <usage/restructuredtext/basics>` style guide
 
 #. :xref:`RealPython Guide to Documenting Python <documenting-python>`
 
-   * Recommended practices for documenting :xref:`Python` software from
+   * Recommended practices for documenting :xref:`Python`
    * Tips and examples from :xref:`RealPython`
 
 #. :pep:`257`
@@ -426,7 +438,7 @@ Practical use
    * Team development ideologies
 
    .. csv-table::
-      :header: "Time of video", "Topic"
+      :header: "Time in video", "Topic"
       :align: center
 
       10:15, Incorporating :ref:`Jupyter Notebooks <tools-jupyter>`
@@ -443,6 +455,8 @@ Practical use
      :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
      , written by Eric Holscher, co-founder of
      :std:doc:`Read the Docs<rtfd:index>`
+
+.. 41bbe32
 
 Usage specifics
 ---------------
