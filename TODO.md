@@ -4,20 +4,12 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://embeddedartistry.com/blog/2017/12/7/start-using-semantic-versioning-to-give-your-version-numbers-meaning (included below)
 1. https://realpython.com/documenting-python-code/ (already linked)
 
-# 0.1.0 First doc release
-
-## Proofreading
-1. Start on links page
-1. Make linkcheck when done
-
-## Versioning small items
-1. Update to 0.1.0 in conf.py then commit
-1. Next commit 0.2.0
+# 0.2.0 src documentation
+1. Make a branch for next commit 0.2.0
+   1. Update conf.py
 1. Verify the Sphinx version shows the set correctly
 
-# 0.2.0 src documentation
-
-## Version change list (start one in .md)
+## Version change list (start one in .md to save for later)
 
 ## Minor documentation additions
 1. Spirit of alnoki's apps on Zen page
@@ -97,6 +89,15 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Say how information sources (google, wikipedia, etc.) are used
    1. In open-source section
 1. Conda procedures should add a link to pip (already in links)
+1. Show how */#. spacing works in style guide
+   1. Level indentation always 3 spaces
+   1. Only one space since the * or the #.
+1. Link the tables generator somewhere on tools
+1. Use markdown link to say what TODO.md is made from
+
+## Documentation structure
+1. Figure out how to have index page be toc-blank like on Sphinx, etc.
+   1. Have a comprehensive TOC somewhere else?
 
 ## Versioning
 1. Should be in concepts section
@@ -117,6 +118,11 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Update license
    1. Update copyright year
 1. yaml should freeze at last release and then update each release
+1. Immediately checkout a branch on the next version number
+1. SHA-1 for all docs before a minor rev?
+   1. See all docs that have been changed since the last version
+   1. Verify individually their proofread status
+1. make linkcheck to verify all are correct
 
 # 0.3.0 Linking nbs
 
@@ -167,6 +173,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Download a Robinhood history to a pandas DataFrame
 1. MVP (minimum viable prototype)
 1. Package per the YouTube tutorial by the freelancer, link on iPad
+1. Make sure the downloadable PDF version is okay
 
 ## Deployment
 1. Use iPad video

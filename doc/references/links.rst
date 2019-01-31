@@ -1,4 +1,4 @@
-.. 41bbe32 search below for same sha1 tag...
+.. 14a4fa4:
 
 .. _references-links:
 
@@ -456,8 +456,6 @@ Practical use
      , written by Eric Holscher, co-founder of
      :std:doc:`Read the Docs<rtfd:index>`
 
-.. 41bbe32
-
 Usage specifics
 ---------------
 
@@ -481,9 +479,10 @@ Usage specifics
 
 #. :ref:`sublime-with-sphinx:use the external links extension`
 
-   * Instructions for installing a
-     :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` similar to
-     those used for managing references in :term:`AAAAAA`
+   * Instructions for installing an example
+     :std:doc:`Sphinx extension <sphinx:usage/extensions/index>`
+   * Similar to :ref:`link management <sphinx-managing-references>` in
+     :term:`AAAAAA`
 
 #. :rst:role:`sphinx:math`
 
@@ -658,15 +657,14 @@ General
 
 #. :xref:`AAAAAA-nbs`
 
-   * Online viewer for :xref:`Jupyter Notebooks <Jupyter>` used to
-     develop :term:`AAAAAA`
+   * Online viewer for :xref:`Jupyter Notebooks <Jupyter>` in :term:`AAAAAA`
 
 Extensions
 ----------
 
 #. :std:doc:`nb-extensions:index`
 
-   * Additional functionality for :xref:`Jupyter`
+   * Additional functionality for :xref:`Jupyter Notebooks <Jupyter>`
 
 #. :std:doc:`nb-extensions:nbextensions/collapsible_headings/readme`
 
@@ -707,7 +705,7 @@ General
 
 #. :xref:`VS-Code-unit-testing`
 
-   * Tutorial for using :std:doc:`pytest <pytest:index>` with :xref:`VS-Code`
+   * Enables use of :std:doc:`pytest <pytest:index>` with :xref:`VS-Code`
 
 #. :xref:`VS-Code-settings`
 
@@ -730,19 +728,19 @@ Extensions
 
 #. :xref:`GitLens`
 
-   * Enables branch inspection, enhanced history, etc.
+   * Enhanced :ref:`tools-git` functionality
 
 #. :xref:`VS-Code-Python-ext`
 
    * Syntax highlighting, autocomplete, etc.
 
-#. :xref:`Python interpreter <VS-Code-interpreter>`
+#. :xref:`Selecting the Python interpreter <VS-Code-interpreter>`
 
    * Selecting the version of :xref:`Python` to use in :xref:`VS-Code`
 
 #. :xref:`Test-explorer-UI`
 
-   * Graphical interface for using :std:doc:`pytest <pytest:index>`
+   * Graphical interface that enables use of :std:doc:`pytest <pytest:index>`
 
 #. :xref:`VS-Code-bookmarks-ext`
 
@@ -795,8 +793,8 @@ Software design standards
 
 #. :xref:`Attitude Heading and Reference System (AHRS) <AHRS>`
 
-   * Aviation device certified to :xref:`DO-178B` Level A
+   * Aviation device certified to :xref:`DO-178B Level A <DO-178B>`
 
 #. :xref:`Garmin`
 
-   * Manufacturer of :xref:`DO-178B`-compliant aviation products
+   * Manufacturer of :xref:`DO-178B Level A <DO-178B>` aviation products

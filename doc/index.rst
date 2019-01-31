@@ -1,4 +1,4 @@
-.. c5be61a
+.. 14a4fa4
 
 
 ########
@@ -26,8 +26,8 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 Python?
 *******
 
-A bit of Python can be executed on most computers with minimal effort, using
-:py:func:`python:print`:
+A bit of :xref:`Python` can be executed on most computers with minimal effort,
+using :py:func:`python:print`:
 
 #. Open the command line on your specific machine:
 
