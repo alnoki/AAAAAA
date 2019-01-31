@@ -10,7 +10,7 @@ transact_types = set(['Bank transfer', 'Buy', 'Dividends', 'Fees', 'Sell'])
 
 
 class Transaction:
-    """Represents a bank transfer, buy, dividends, fee, or sell"""
+    """Represents a transaction in a brokerage account"""
 
     def _check_instance_args(self, date, total_amount, transact_type, symbol,
                              num_shares, description):
@@ -42,11 +42,41 @@ class Transaction:
             (num_shares is not None and num_shares <= 0,
                 "non-positive num_shares"),))
 
-    def __init__(self, date: datetime.date,
+    def __init__(self,
+                 date: datetime.date,
                  total_amount: Union[decimal.Decimal, int],
-                 transact_type: str, symbol: str = None,
-                 num_shares: int = None, description: str = None):
-        """Creates object if valid parameters, else raises error"""
+                 transact_type: str,
+                 symbol: str = None,
+                 num_shares: int = None,
+                 description: str = None) -> None:
+        """Sanitizes inputs and creates a Transaction instance
+
+        Parameters
+        ----------
+        date
+            The day on which a Transaction occured
+        total_amount
+            The total amount transacted. Use a decimal.Decimal if cents
+            are specified, and an int if only dollars are specified
+        transact_type
+            What type of Transaction occured. Should be a member of
+            transact_types
+        symbol
+            Ticker symbol associated with a Transaction
+        num_shares
+            The number of shares associated with a Transaction, if
+            symbol is not None
+        description
+            A description of the Transaction, typically provided by a
+            brokerage
+
+        Raises
+        ------
+        A TypeError if a parameter is of the invalid type, and a
+        ValueError if a parameter
+
+
+        """
         try:  # Check input validity before assignment
             self._check_instance_args(date, total_amount, transact_type,
                                       symbol, num_shares, description)

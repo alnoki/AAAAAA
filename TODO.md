@@ -37,6 +37,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://numpydoc.readthedocs.io/en/latest/format.html Style Guide
 1. Use autodoc link from Willing Sphinx table and put in tools-sphinx
 1. date.__name__ f string? instead of the string "date"
+https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 1. Do autodoc first, then update type annotations, then mypy
    1. Mypy goes into testing developer setup
    1. Real python typing guide
@@ -73,6 +74,8 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Link to the git commit conventions
 1. Explain the Git theme for Vim?
    1. Shows up on current windows machine but not
+https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-in-git-commit-messages
+   1. Tell codebase what to do
 
 ## Syntax/terminology
 1. Link to https://en.wikipedia.org/wiki/Command-line_interface
@@ -94,6 +97,12 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Only one space since the * or the #.
 1. Link the tables generator somewhere on tools
 1. Use markdown link to say what TODO.md is made from
+
+## Zen
+1. Cite "_why" and how we get to "live in the computer"
+   1. _why's poingnant guide to Ruby
+   1. https://poignant.guide/book/chapter-3.html
+   1. "That therefore, we, the coders, are foreigners, seeking citizenship in the computer’s locale"
 
 ## Documentation structure
 1. Figure out how to have index page be toc-blank like on Sphinx, etc.
@@ -123,6 +132,41 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. See all docs that have been changed since the last version
    1. Verify individually their proofread status
 1. make linkcheck to verify all are correct
+1. https://docs.readthedocs.io/en/latest/versions.html
+1. https://git-scm.com/book/en/v2/Git-Basics-Tagging
+   1. git tag v0.1-lw
+   1. Need to tag the release
+      1. Put two tags on master and see what happens?
+      1. Use v0.2.0 and v0.1.0?
+         1. Or just 0.1.0?
+1. https://docs.readthedocs.io/en/latest/webhooks.html
+   1. On settings for AAAAAA on GitHub, select tags too
+1. Don't use lightweight tags because of hyphen
+
+## Proofreading procedures
+1. Should make version update procedures first so they can be pointed to?
+   1. Just start writing, you'll get it linked eventually
+      1. Could make a stub document
+1. When making a new document, reference to the last SHA-1
+1. Current procedure for updating a document is inaccurate
+   1. Shouldn't reference to last SHA-1 in log
+   1. Should reference previous SHA-1 for when the document was changed
+      1. Can get this from VS Code
+1. Makes more sense to proofread the diff right before a version update
+   1. Compare the diff on changed documents versus the previous version
+   1. Then, should tag top of file with: .. 0.2.0 etc.
+   1. Re-do all proofreading for 0.2.0 release and tag appropriately
+   1. Also need to change the description in the concepts-documentation
+      1. Shows a SHA-1 at the top of the file
+      1. Also do this in the proofreading an original file procedure
+1. Need to check the file diff since the last version commit
+   1. Consider if the file has been added
+      1. Then proofread the whole file
+   1. If the file has been modified
+      1. Proofread just the diff
+   1. If the file has been moved and modified
+      1. Need to do the diff against the file before it was moved
+         1. Because a moved file shows up as a complete "add"
 
 # 0.3.0 Linking nbs
 
