@@ -101,9 +101,8 @@ Indices and tables
 ******************
 
 * :ref:`genindex`
+* :ref:`modindex`
 * :ref:`search`
-
-.. * :ref:`modindex` - should go between genindex and search when ready
 
 .. toctree::
    :caption: Setup

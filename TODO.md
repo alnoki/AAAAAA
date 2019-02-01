@@ -5,35 +5,27 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://realpython.com/documenting-python-code/ (already linked)
 
 # 0.2.0 src documentation
-1. Make a branch for next commit 0.2.0
-   1. Update conf.py
-1. Verify the Sphinx version shows the set correctly
+1. Verify the Sphinx version shows the version set correctly
 
 ## Version change list (start one in .md to save for later)
-
-## Minor documentation additions
-1. Spirit of alnoki's apps on Zen page
-   1. Functional programming is easiest to read, understand, and test
-      1. Link to functional programming reference
-   1. Should be open source
-   1. Incremental versioning per the link above
-      1. Each one should be an MVP (minimum viable prototype)
-         1. Link
-   1. Hyperlink to anything a novice might not understand
-   1. Show how it's done, in case you forget later
-   1. Open source and free as much as possible
-1. AAAAAA term should say (colloquially referred to as alnoki's apps)
+1. Napoleon integration
 
 ## src documentation
-1. PEP484
+1. Links for code.rst page
+1. Play around with napoleon_include_init_with_doc in conf.py
+   1. Note your autodoc uses :member: and so does the .rst example
+1. Sphinx tools should explain what code page does not
+   1. Add Napoleon to extensions list
+   1. Use a reference to autodoc
+1. Did you do type annotations correctly?
+   1. If you didn't that might explain with the types don't show in bullet list
 1. Pep257
-   1. Need __init.py__ docstring
    1. See realpython typing guide too
-1. pep484
 1. https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html
    1. Napoleon docstrings
    1. Should come with Sphinx now
       1. http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon
+   1. Uses the same syntax as autodoc
 1. https://numpydoc.readthedocs.io/en/latest/format.html Style Guide
 1. Use autodoc link from Willing Sphinx table and put in tools-sphinx
 1. date.__name__ f string? instead of the string "date"
@@ -64,8 +56,21 @@ https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 1. Uncomment mod index on main page
 1. https://realpython.com/python-type-checking/#annotations
    1. Annotate everything
-   1. Get mypy going
-1. 1. Module index on home page :ref:`modindex`
+
+## Minor documentation additions
+1. Spirit of alnoki's apps on Zen page
+   1. Functional programming is easiest to read, understand, and test
+      1. Link to functional programming reference
+   1. Should be open source
+   1. Incremental versioning per the link above
+      1. Each one should be an MVP (minimum viable prototype)
+         1. Link
+   1. Hyperlink to anything a novice might not understand
+   1. Show how it's done, in case you forget later
+   1. Open source and free as much as possible
+1. AAAAAA term should say (colloquially referred to as alnoki's apps)
+1. Find (link_needed) in docs
+
 
 ## Git commit conventions
 1. https://stackoverflow.com/questions/24046846
@@ -143,6 +148,10 @@ https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-i
    1. On settings for AAAAAA on GitHub, select tags too
 1. Don't use lightweight tags because of hyphen
 
+## Package structuring and imports
+1. PEP 328
+1. https://stackoverflow.com/questions/448271/what-is-init-py-for
+
 ## Proofreading procedures
 1. Should make version update procedures first so they can be pointed to?
    1. Just start writing, you'll get it linked eventually
@@ -168,7 +177,18 @@ https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-i
       1. Need to do the diff against the file before it was moved
          1. Because a moved file shows up as a complete "add"
 
-# 0.3.0 Linking nbs
+# 0.3.0 Test code documentation
+
+## Sharing
+1. Show jason the attention admonition with the napoleon example
+
+## Imports
+1. Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger
+
+## Type checking
+1. Get mypy going
+
+# 0.4.0 Linking nbs
 
 ## Jupyter
 1. TOC for all Jupyter notebooks?
@@ -182,7 +202,7 @@ https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-i
    1. Link to this procedure in the nbs concepts page
    1. Link to it in the nbs toc page
 
-# 0.4.0 Robinhood
+# 0.5.0 Robinhood
 
 ## Robinhood integration
 1. Services setup

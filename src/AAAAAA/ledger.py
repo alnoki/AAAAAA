@@ -72,9 +72,10 @@ class Transaction:
 
         Raises
         ------
-        A TypeError if a parameter is of the invalid type, and a
-        ValueError if a parameter
-
+        TypeError
+            if a parameter is of the invalid type
+        ValueError
+            if a parameter contains invalid data
 
         """
         try:  # Check input validity before assignment

@@ -14,8 +14,8 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('exts'))
-sys.path.insert(0, os.path.abspath('../src/AAAAAA/'))
+sys.path.insert(0, os.path.abspath('exts'))  # For xref
+sys.path.insert(0, os.path.abspath('../src'))  # For napoleon
 
 
 # -- Project information -----------------------------------------------------
@@ -25,9 +25,9 @@ copyright = '2019, alnoki'
 author = 'alnoki'
 
 # The short X.Y version
-version = '0.1'
+version = '0.2'
 # The full version, including alpha/beta/rc tags
-release = '0.1.0'
+release = '0.2.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -199,7 +199,7 @@ epub_exclude_files = ['search.html']
 # Napoleon settings
 napoleon_google_docstring = False
 napoleon_numpy_docstring = True
-napoleon_include_init_with_doc = False
+napoleon_include_init_with_doc = True
 napoleon_include_private_with_doc = True
 napoleon_include_special_with_doc = True
 napoleon_use_admonition_for_examples = False
@@ -405,4 +405,5 @@ xref_links = {
     'directory': ("Directory", url['Wiki pg'] + 'Directory_(computing)'),
     'sha1': ('SHA-1', url['Wiki pg'] + 'SHA-1'),
     # New links below, sorted links above
+    # :PEP:`type annotations <484>`
     }
