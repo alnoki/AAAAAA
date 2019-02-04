@@ -259,6 +259,26 @@ the visual appearance of this website!
    documentation elements"
    :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
 
+.. _tools-napoleon:
+
+********
+Napoleon
+********
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :ref:`docstrings <python:tut-docstrings>`, ":ref:`python:comments` used for
+   specific :xref:`Python` code components"
+   :pep:`type annotations <484>`, "Syntax guide"
+
+Napoleon is a :ref:`Sphinx extension <tools-sphinx>` that parses code and
+creates documentation elements from :ref:`docstrings <python:tut-docstrings>`
+and :pep:`type annotations <484>`. It uses the same
+:ref:`directives <tools-restructured-text>` as autodoc (link_needed), but it
+can accept NumPy style docstrings (link_needed)
+
 .. _tools-vs-code:
 
 

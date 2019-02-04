@@ -65,21 +65,13 @@ Style
       natural = "Documentation optimality"  # Natural language message
 
 
-********
-Napoleon
-********
+************************
+Explanatory enhancements
+************************
 
-Example
-=======
-
-If you participated in the :ref:`quick start <setup-quickstart>`, then you
-initialized (link_needed) an instance (link_needed) of
-:py:class:`~AAAAAA.ledger.Transaction`, which is itself a class (link_needed)
-
-The code for :py:class:`~AAAAAA.ledger.Transaction` is enhanced with
-:ref:`docstrings <python:tut-docstrings>` and :PEP:`type annotations <484>`,
-which enable the Sphinx Napoleon extension (link_needed) to create an
-autoclass (link_needed) documentation element:
+Code is enhanced with :ref:`docstrings <python:tut-docstrings>` and
+:pep:`type annotations <484>`, which enable :ref:`napoleon <tools-napoleon>` to
+create pretty documentation elements that explain code:
 
 .. autoclass:: AAAAAA.ledger.Transaction
    :members: __init__
@@ -89,30 +81,15 @@ autoclass (link_needed) documentation element:
    addressing you in the second person
 
 If you click :guilabel:`[source]`, you will be taken to the original code. Once
-you are there, if you click :guilabel:`[docs]`, you will be taken back to the
-autoclass (link_needed) documentation element
+you are there, if you click :guilabel:`[docs]`, you will be taken back to
+documentation
 
-Specifics
-=========
-
-Conveniently, the autoclass (link_needed) documentation element is
-created with a simple :ref:`reST directive <tools-restructured-text>` specified
-in the autodoc extension (link_needed):
+Conveniently, documentation elements are created with simple
+:ref:`reST directives <tools-restructured-text>`. As long as you follow very
+specific :ref:`formatting and syntax rules <tools-napoleon>`, all you need to
+re-create the above example is:
 
 .. code-block:: rest
 
    .. autoclass:: AAAAAA.ledger.Transaction
       :members: __init__
-
-Code uses NumPy style docstrings (link_needed) instead of traditional autodoc
-style docstrings (link_needed), so :term:`AAAAAA` use the Napolen extension
-(link_needed) to convert :ref:`docstrings <python:tut-docstrings>` in a way
-that enables the use of autodoc directives (link_needed)
-
-
-.. Configuring
-.. ===========
-
-.. Should talk about how conf.py got set up and use the package links to
-   explain
-

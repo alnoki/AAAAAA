@@ -10,6 +10,15 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 ## Version change list (start one in .md to save for later)
 1. Napoleon integration
 
+## Just in
+1. Need a conf.py part of documentation concepts
+1. Tools should be concepts, code/documentation pages should be specifics
+   1. Setup have concepts and specifics section?
+   1. Code.rst should be specifics
+   1. Move the theory in Code.rst to tools page
+   1. Code/rst section called adornments, not Napoleon
+1. Git tower reset local commit as a tip in committing process
+
 ## src documentation
 1. Links for code.rst page
 1. Play around with napoleon_include_init_with_doc in conf.py
