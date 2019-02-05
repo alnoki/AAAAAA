@@ -261,6 +261,7 @@ the visual appearance of this website!
 
 .. _tools-napoleon:
 
+
 ********
 Napoleon
 ********
@@ -269,15 +270,26 @@ Napoleon
    :header: "Reference", "Topic"
    :align: center
 
-   :ref:`docstrings <python:tut-docstrings>`, ":ref:`python:comments` used for
-   specific :xref:`Python` code components"
-   :pep:`type annotations <484>`, "Syntax guide"
+   :ref:`Docstrings <python:tut-docstrings>`, ":ref:`python:comments` for
+   :xref:`Python` code components"
+   :doc:`Autodoc <sphinx:usage/extensions/autodoc>`, "
+   :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
+   :ref:`docstrings <python:tut-docstrings>`"
+   :std:ref:`NumPy docstrings <numpy:format>`, "
+   :ref:`Docstrings <python:tut-docstrings>` style"
+   :pep:`Type annotations <484>`, Syntax guide
+   :doc:`Napoleon <sphinx:usage/extensions/napoleon>`, "Include
+   :std:ref:`NumPy-style docstrings <numpy:format>`"
 
-Napoleon is a :ref:`Sphinx extension <tools-sphinx>` that parses code and
+:std:doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
+:ref:`Sphinx extension <tools-sphinx>` that parses code and
 creates documentation elements from :ref:`docstrings <python:tut-docstrings>`
 and :pep:`type annotations <484>`. It uses the same
-:ref:`directives <tools-restructured-text>` as autodoc (link_needed), but it
-can accept NumPy style docstrings (link_needed)
+:ref:`directives <tools-restructured-text>` as
+:doc:`autodoc <sphinx:usage/extensions/autodoc>`, but it
+can accept :std:ref:`NumPy-style docstrings <numpy:format>`
+
+An :ref:`example <concepts-code-e4>`
 
 .. _tools-vs-code:
 

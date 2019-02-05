@@ -65,9 +65,11 @@ Style
       natural = "Documentation optimality"  # Natural language message
 
 
-************************
-Explanatory enhancements
-************************
+.. _concepts-code-e4:
+
+**********************************************************************
+Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
+**********************************************************************
 
 Code is enhanced with :ref:`docstrings <python:tut-docstrings>` and
 :pep:`type annotations <484>`, which enable :ref:`napoleon <tools-napoleon>` to

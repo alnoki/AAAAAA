@@ -77,9 +77,16 @@ Specifics
 
    * :ref:`python:comments` for specific :xref:`Python` code components
 
-#. :ref:`python:tut-dictionaries`
+Data structures
+===============
 
-   * A set of *key: value* pairs
+#. :std:doc:`python:library/stdtypes`
+
+   * Standard :xref:`Python` data structures
+
+#. :std:ref:`python:tut-dictionaries`
+
+   * A :std:doc:`type <python:library/stdtypes>` containing *key: value* pairs
 
 Environments
 ============
@@ -407,10 +414,6 @@ General
    * Recommended practices for documenting :xref:`Python`
    * Tips and examples from :xref:`RealPython`
 
-#. :pep:`257`
-
-   * Official conventions for :ref:`docstrings <python:tut-docstrings>`
-
 Sphinx
 ======
 
@@ -550,6 +553,32 @@ Managing references
 
    * Instructions to reference numerical analysis and plotting tools via
      :std:doc:`Intersphinx <usage/extensions/intersphinx>`
+
+Showing code
+------------
+
+#. :doc:`Autodoc <sphinx:usage/extensions/autodoc>`
+
+   * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
+     content from code :ref:`docstrings <python:tut-docstrings>`
+
+#. :std:ref:`NumPy-style docstrings <numpy:format>`
+
+   * :ref:`Docstring <python:tut-docstrings>` format provided by
+     :std:doc:`NumPy <numpy:about>`
+
+#. :doc:`Napoleon <sphinx:usage/extensions/napoleon>`
+
+   * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
+     content from :std:ref:`NumPy-style docstrings <numpy:format>`
+
+#. :pep:`257`
+
+   * Official conventions for :ref:`docstrings <python:tut-docstrings>`
+
+#. :pep:`Type annotations <484>`
+
+   * Syntax to indicate :std:doc:`types <python:library/stdtypes>` in code
 
 reStructuredText
 ================

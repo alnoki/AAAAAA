@@ -11,6 +11,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Napoleon integration
 
 ## Just in
+1. http://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#the-python-domain
 1. Need a conf.py part of documentation concepts
 1. Tools should be concepts, code/documentation pages should be specifics
    1. Setup have concepts and specifics section?
@@ -18,6 +19,12 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Move the theory in Code.rst to tools page
    1. Code/rst section called adornments, not Napoleon
 1. Git tower reset local commit as a tip in committing process
+1. Top-down to-do task deferral
+   1. Punt ## when too many appear
+   1. Goes in versioning section
+1. Data types references section
+   1. Domains from Sphinx
+1. Automodule conf.py and settings.json?
 
 ## src documentation
 1. Links for code.rst page
