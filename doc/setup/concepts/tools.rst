@@ -291,6 +291,7 @@ Napoleon
    :std:doc:`Sample automodule <demo/api>`, "
    :doc:`Autodoc <sphinx:usage/extensions/autodoc>` demo with
    :std:doc:`RTD Sphinx theme <rtd-sphinx-theme:index>`"
+   :doc:`Example NumPy Strings <napoleon:example_numpy>`, Example syntax
 
 :std:doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
 :ref:`Sphinx extension <tools-sphinx>` that parses code and

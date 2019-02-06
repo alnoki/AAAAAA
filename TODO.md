@@ -6,13 +6,13 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # 0.2.0 src documentation
 
-1. Verify the Sphinx version shows the version set correctly
-
 ## Version change list (start one in .md to save for later)
 1. Napoleon integration
 
 ## Napoleon
-1. https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html
+1. Get references: ticker, brokerage
+1. Start linking around in docstrings
+1. Separate attributes (the class) and parameters (init)
 1. Play around with napoleon_include_init_with_doc in conf.py
    1. Note your autodoc uses :member: and so does the .rst example
 1. Did you do type annotations correctly?
@@ -111,6 +111,11 @@ Viewing local build: http://localhost:8000/_build/html/index.html
       1. Need to do the diff against the file before it was moved
          1. Because a moved file shows up as a complete "add"
 
+## Pushing
+1. Tag before pushing
+1. Verify merge to master is correct
+1. Push with tags
+
 # 0.3.0 Test code documentation
 
 ## Jupyter
@@ -132,8 +137,13 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 ## myPy
 1. MyPy type linter
    1. https://www.python.org/dev/peps/pep-0526/
+1. :pep:`Type hint theory <483>`
+   1. Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
+1. :pep:`Variable annotations <527>`
+1. :std:doc:`Typing module <python:library/typing>`
 
 ## Syntax/terminology
+1. :std:doc: should just be :doc: per sphinx roles
 1. Link to https://en.wikipedia.org/wiki/Command-line_interface
    1. Find all for command line and replace with :xref:
 1. Capitalization should mention that proper nouns should be capitalized
@@ -175,8 +185,6 @@ https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-i
 ## Imports
 1. Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger
 
-## Type checking
-1. Get mypy going
 
 # 0.4.0 Linking nbs
 

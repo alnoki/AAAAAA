@@ -85,7 +85,6 @@ Code is enhanced with :ref:`docstrings <python:tut-docstrings>` and
 create pretty documentation elements that explain code:
 
 .. autoclass:: AAAAAA.ledger.Transaction
-   :members: __init__
 
 .. attention::
    We interrupt your drooling to return to :xref:`alnoki <alnoki-repos>`
@@ -101,4 +100,3 @@ Conveniently, documentation elements are created with simple
 .. code-block:: rest
 
    .. autoclass:: AAAAAA.ledger.Transaction
-      :members: __init__

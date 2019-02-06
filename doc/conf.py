@@ -219,7 +219,7 @@ intersphinx_mapping = {
     'py-dev-guide': ('https://devguide.python.org/', None),
     'anaconda': ('https://docs.anaconda.com/', None),
     'conda': ('https://docs.conda.io/projects/continuumio-conda/en/latest/',
-               None),
+              None),
     'matplotlib-sampledoc':
         ('https://matplotlib.org/sampledoc/', None),
     'sublime-with-sphinx':
@@ -229,6 +229,8 @@ intersphinx_mapping = {
     'pandas': ('http://pandas.pydata.org/pandas-docs/stable/', None),
     'nb-extensions': ('https://jupyter-contrib-nbextensions.readthedocs.io/en/'
                       'latest', None),
+    'napoleon': ('https://sphinxcontrib-napoleon.readthedocs.io/en/latest/',
+                 None),
 }
 
 # Base urls used by xrefs extension

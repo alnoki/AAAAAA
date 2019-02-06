@@ -599,6 +599,11 @@ Showing code
 
    * Sample syntax for :doc:`autodoc <sphinx:usage/extensions/autodoc>`
 
+#. :doc:`napoleon:example_numpy`
+
+   * Sample :ref:`NumPy docstring <numpy:format>` syntax for
+     :doc:`napoleon <sphinx:usage/extensions/napoleon>`
+
 reStructuredText
 ================
 

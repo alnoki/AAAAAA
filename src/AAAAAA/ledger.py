@@ -10,7 +10,29 @@ transact_types = set(['Bank transfer', 'Buy', 'Dividends', 'Fees', 'Sell'])
 
 
 class Transaction:
-    """Represents a transaction in a brokerage account"""
+    """Represents a transaction in a brokerage account
+
+    Parameters
+    ----------
+    date : :obj:`datetime.date`
+        The day on which a :obj:`Transaction` occured
+    total_amount : :obj:`decimal.Decimal` or :obj:`int`
+        The total amount transacted. Use a :obj:`decimal.Decimal` if
+        cents are specified, and an :obj:`int` if only dollars are
+        specified
+    transact_type : :obj:`str`
+        What type of :obj:`Transaction` occured. Should be a member of
+        transact_types
+    symbol : :obj:`str`
+        Ticker symbol associated with a :obj:`Transaction`
+    num_shares : :obj:`int` or :obj:`None`
+        The number of shares associated with a :obj:`Transaction` that
+        involves a symbol
+    description : :obj:`str` or :obj:`None`
+        A description of the :obj:`Transaction`, like one provided by
+        a broker
+
+    """
 
     def _check_instance_args(self, date, total_amount, transact_type, symbol,
                              num_shares, description):
@@ -49,26 +71,7 @@ class Transaction:
                  symbol: str = None,
                  num_shares: int = None,
                  description: str = None) -> None:
-        """Sanitizes inputs and creates a Transaction instance
-
-        Parameters
-        ----------
-        date
-            The day on which a Transaction occured
-        total_amount
-            The total amount transacted. Use a decimal.Decimal if cents
-            are specified, and an int if only dollars are specified
-        transact_type
-            What type of Transaction occured. Should be a member of
-            transact_types
-        symbol
-            Ticker symbol associated with a Transaction
-        num_shares
-            The number of shares associated with a Transaction, if
-            symbol is not None
-        description
-            A description of the Transaction, typically provided by a
-            brokerage
+        """ Sanitize inputs
 
         Raises
         ------
@@ -76,8 +79,8 @@ class Transaction:
             if a parameter is of the invalid type
         ValueError
             if a parameter contains invalid data
-
         """
+
         try:  # Check input validity before assignment
             self._check_instance_args(date, total_amount, transact_type,
                                       symbol, num_shares, description)
