@@ -222,6 +222,9 @@ extension, and :ref:`tools-sphinx` parses them whenever documentation is built
    :xref:`reST-cheatsheet`, Quick syntax reference
    :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
    syntax"
+   :std:doc:`sphinx:usage/restructuredtext/domains`, "Collections of
+   :std:doc:`roles <sphinx:usage/restructuredtext/roles>` and
+   :std:doc:`directives <sphinx:usage/restructuredtext/directives>`"
 
 Many :ref:`tools-sphinx` documentation websites have an
 :guilabel:`Edit on GitHub` (or similar) feature at
@@ -278,8 +281,16 @@ Napoleon
    :std:ref:`NumPy docstrings <numpy:format>`, "
    :ref:`Docstrings <python:tut-docstrings>` style"
    :pep:`Type annotations <484>`, Syntax guide
-   :doc:`Napoleon <sphinx:usage/extensions/napoleon>`, "Include
-   :std:ref:`NumPy-style docstrings <numpy:format>`"
+   :doc:`Napoleon <sphinx:usage/extensions/napoleon>`, "Accepts
+   :std:ref:`NumPy docstrings <numpy:format>`"
+   :ref:`Python domain <sphinx:python-roles>`, "
+   :std:doc:`Roles <sphinx:usage/restructuredtext/roles>` and
+   :std:doc:`directives <sphinx:usage/restructuredtext/directives>`"
+   :xref:`Type checking <realpython-type-checking>`, "
+   :xref:`RealPython <RealPython>` guide"
+   :std:doc:`Sample automodule <demo/api>`, "
+   :doc:`Autodoc <sphinx:usage/extensions/autodoc>` demo with
+   :std:doc:`RTD Sphinx theme <rtd-sphinx-theme:index>`"
 
 :std:doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
 :ref:`Sphinx extension <tools-sphinx>` that parses code and
@@ -287,9 +298,10 @@ creates documentation elements from :ref:`docstrings <python:tut-docstrings>`
 and :pep:`type annotations <484>`. It uses the same
 :ref:`directives <tools-restructured-text>` as
 :doc:`autodoc <sphinx:usage/extensions/autodoc>`, but it
-can accept :std:ref:`NumPy-style docstrings <numpy:format>`
+can accept :std:ref:`NumPy docstrings <numpy:format>`
 
-An :ref:`example <concepts-code-e4>`
+:ref:`Docstrings <python:tut-docstrings>` are annotated using the
+:ref:`Python domain <sphinx:python-roles>`
 
 .. _tools-vs-code:
 

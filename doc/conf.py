@@ -404,6 +404,8 @@ xref_links = {
                        '9727673/list-directory-tree-structure-in-python'),
     'directory': ("Directory", url['Wiki pg'] + 'Directory_(computing)'),
     'sha1': ('SHA-1', url['Wiki pg'] + 'SHA-1'),
+    'realpython-type-checking':
+        ("RealPython guide to type checking", url['RealPython'] +
+         'python-type-checking'),
     # New links below, sorted links above
-    # :PEP:`type annotations <484>`
     }

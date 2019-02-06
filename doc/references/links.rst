@@ -88,6 +88,10 @@ Data structures
 
    * A :std:doc:`type <python:library/stdtypes>` containing *key: value* pairs
 
+#. :xref:`realpython-type-checking`
+
+   * Guide to using correct :std:doc:`types <python:library/stdtypes>` in code
+
 Environments
 ============
 
@@ -501,6 +505,12 @@ Usage specifics
 
    * Managing errors during documentation builds
 
+#. :std:doc:`sphinx:usage/restructuredtext/domains`
+
+   * Collection of
+     :std:doc:`directives <sphinx:usage/restructuredtext/directives>` and
+     :std:doc:`roles <sphinx:usage/restructuredtext/roles>` for specific topics
+
 With Read the Docs
 ------------------
 
@@ -562,7 +572,7 @@ Showing code
    * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
      content from code :ref:`docstrings <python:tut-docstrings>`
 
-#. :std:ref:`NumPy-style docstrings <numpy:format>`
+#. :ref:`NumPy docstrings <numpy:format>`
 
    * :ref:`Docstring <python:tut-docstrings>` format provided by
      :std:doc:`NumPy <numpy:about>`
@@ -570,7 +580,7 @@ Showing code
 #. :doc:`Napoleon <sphinx:usage/extensions/napoleon>`
 
    * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
-     content from :std:ref:`NumPy-style docstrings <numpy:format>`
+     content from :ref:`NumPy docstrings <numpy:format>`
 
 #. :pep:`257`
 
@@ -579,6 +589,15 @@ Showing code
 #. :pep:`Type annotations <484>`
 
    * Syntax to indicate :std:doc:`types <python:library/stdtypes>` in code
+
+#. :ref:`sphinx:python-roles`
+
+   * :std:doc:`Domain <sphinx:usage/restructuredtext/domains>` for documenting
+     :xref:`Python` components
+
+#. :std:doc:`Read the Docs sample Python module <demo/api>`
+
+   * Sample syntax for :doc:`autodoc <sphinx:usage/extensions/autodoc>`
 
 reStructuredText
 ================

@@ -71,6 +71,15 @@ Style
 Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
 **********************************************************************
 
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :pep:`257`, :ref:`Docstring <python:tut-docstrings>` conventions
+   :pep:`484`, Syntax to annotate :std:doc:`types <python:library/stdtypes>`
+   :std:ref:`NumPy docstrings <numpy:format>`, "
+   :ref:`Docstring <python:tut-docstrings>` style"
+
 Code is enhanced with :ref:`docstrings <python:tut-docstrings>` and
 :pep:`type annotations <484>`, which enable :ref:`napoleon <tools-napoleon>` to
 create pretty documentation elements that explain code:
@@ -87,9 +96,7 @@ you are there, if you click :guilabel:`[docs]`, you will be taken back to
 documentation
 
 Conveniently, documentation elements are created with simple
-:ref:`reST directives <tools-restructured-text>`. As long as you follow very
-specific :ref:`formatting and syntax rules <tools-napoleon>`, all you need to
-re-create the above example is:
+:ref:`reST directives <tools-restructured-text>`. The element above is simply:
 
 .. code-block:: rest
 

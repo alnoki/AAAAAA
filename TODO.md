@@ -5,75 +5,29 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://realpython.com/documenting-python-code/ (already linked)
 
 # 0.2.0 src documentation
+
 1. Verify the Sphinx version shows the version set correctly
 
 ## Version change list (start one in .md to save for later)
 1. Napoleon integration
 
-## Just in
-1. http://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#the-python-domain
-1. Need a conf.py part of documentation concepts
-1. Tools should be concepts, code/documentation pages should be specifics
-   1. Setup have concepts and specifics section?
-   1. Code.rst should be specifics
-   1. Move the theory in Code.rst to tools page
-   1. Code/rst section called adornments, not Napoleon
-1. Git tower reset local commit as a tip in committing process
-1. Top-down to-do task deferral
-   1. Punt ## when too many appear
-   1. Goes in versioning section
-1. Data types references section
-   1. Domains from Sphinx
-1. Automodule conf.py and settings.json?
-
-## src documentation
-1. Links for code.rst page
+## Napoleon
+1. https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html
 1. Play around with napoleon_include_init_with_doc in conf.py
    1. Note your autodoc uses :member: and so does the .rst example
-1. Sphinx tools should explain what code page does not
-   1. Add Napoleon to extensions list
-   1. Use a reference to autodoc
 1. Did you do type annotations correctly?
    1. If you didn't that might explain with the types don't show in bullet list
-1. Pep257
-   1. See realpython typing guide too
-1. https://sphinxcontrib-napoleon.readthedocs.io/en/latest/index.html
-   1. Napoleon docstrings
-   1. Should come with Sphinx now
-      1. http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon
-   1. Uses the same syntax as autodoc
-1. https://numpydoc.readthedocs.io/en/latest/format.html Style Guide
 1. Use autodoc link from Willing Sphinx table and put in tools-sphinx
-1. date.__name__ f string? instead of the string "date"
-https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
-1. Do autodoc first, then update type annotations, then mypy
-   1. Mypy goes into testing developer setup
-   1. Real python typing guide
-1. Autodoc, then docstrings, then types
-1. https://docs.python.org/3/tutorial/controlflow.html#tut-docstrings
-1. Use sphinx rtd theme for test_module.py
-1. Link a Jupyter notebook per Carol Willing video
-1. Document utilities.py
-   1. Autodoc with source files and maybe numpy style
-      1. Reference the autodoc extension in the tools page
-      1. Autodoc reference already in references page
-1. Document test_utilities.py
-1. Document ledger.py
-1. Document test_ledger.py
-   1. Add a section to common tasks about testing
-   1. May need to update the quickstart guide
-1. Incorporate ledger.py snippets
-1. Verify all Jupyter notebooks are linked
-1. Figure out how to do documentation coverage
-1. MyPy type linter
-   1. https://www.python.org/dev/peps/pep-0526/
-   1. https://realpython.com/python-type-checking/
-1. Link to the Python article about Decimal vs floating point types
-1. Uncomment mod index on main page
-1. https://realpython.com/python-type-checking/#annotations
-   1. Annotate everything
+1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
-## Minor documentation additions
+## src updates
+1. date.__name__ f string? instead of the string "date"
+1. Document utilities.py
+1. Document ledger.py
+1. Incorporate ledger.py snippets
+1. Link to the Python article about Decimal vs floating point types
+
+## Zen
 1. Spirit of alnoki's apps on Zen page
    1. Functional programming is easiest to read, understand, and test
       1. Link to functional programming reference
@@ -85,51 +39,19 @@ https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
    1. Show how it's done, in case you forget later
    1. Open source and free as much as possible
 1. AAAAAA term should say (colloquially referred to as alnoki's apps)
-1. Find (link_needed) in docs
-
-
-## Git commit conventions
-1. https://stackoverflow.com/questions/24046846
-1. https://stackoverflow.com/questions/3459744
-1. https://stackoverflow.com/questions/11553374
-1. Link to the git commit conventions
-1. Explain the Git theme for Vim?
-   1. Shows up on current windows machine but not
-https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-in-git-commit-messages
-   1. Tell codebase what to do
-
-## Syntax/terminology
-1. Link to https://en.wikipedia.org/wiki/Command-line_interface
-   1. Find all for command line and replace with :xref:
-1. Capitalization should mention that proper nouns should be capitalized
-   1. Consider the NumPy package
-   1. Consider the pandas package
-   1. Pandas package
-1. Line break in documentation also say ..code-block can go over a line
-1. Give all csv-table a title
-   1. Use find all
-1. Verify all peps are in :ref:`links` via find all for " :pep: "
-   1. PEP257, pep8 are there - rearrange?
-1. Say how information sources (google, wikipedia, etc.) are used
-   1. In open-source section
-1. Conda procedures should add a link to pip (already in links)
-1. Show how */#. spacing works in style guide
-   1. Level indentation always 3 spaces
-   1. Only one space since the * or the #.
-1. Link the tables generator somewhere on tools
-1. Use markdown link to say what TODO.md is made from
-
-## Zen
+1. Tools should be concepts, code/documentation pages should be specifics
+   1. Setup have concepts and specifics section?
+   1. Code.rst should be specifics
+   1. Move the theory in Code.rst to tools page
 1. Cite "_why" and how we get to "live in the computer"
    1. _why's poingnant guide to Ruby
    1. https://poignant.guide/book/chapter-3.html
    1. "That therefore, we, the coders, are foreigners, seeking citizenship in the computer’s locale"
 
-## Documentation structure
-1. Figure out how to have index page be toc-blank like on Sphinx, etc.
-   1. Have a comprehensive TOC somewhere else?
-
 ## Versioning
+1. Top-down to-do task deferral
+   1. Punt ## when too many appear
+   1. :guilabel:`View: Open View` + :guilabel:`Outline
 1. Should be in concepts section
    1. Link to procedures page for versioning
    1. Keep pushing new functionalities in subsequent versions
@@ -164,10 +86,6 @@ https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-i
    1. On settings for AAAAAA on GitHub, select tags too
 1. Don't use lightweight tags because of hyphen
 
-## Package structuring and imports
-1. PEP 328
-1. https://stackoverflow.com/questions/448271/what-is-init-py-for
-
 ## Proofreading procedures
 1. Should make version update procedures first so they can be pointed to?
    1. Just start writing, you'll get it linked eventually
@@ -195,6 +113,62 @@ https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-i
 
 # 0.3.0 Test code documentation
 
+## Jupyter
+1. Verify all Jupyter notebooks are linked
+1. Link a Jupyter notebook per Carol Willing video
+
+## Conf.py autodoc
+1. Need a conf.py part of documentation concepts
+1. Automodule conf.py and settings.json?
+
+## Documentation structure
+1. Figure out how to have index page be toc-blank like on Sphinx, etc.
+   1. Have a comprehensive TOC somewhere else?
+
+## Package structuring and imports
+1. PEP 328
+1. https://stackoverflow.com/questions/448271/what-is-init-py-for
+
+## myPy
+1. MyPy type linter
+   1. https://www.python.org/dev/peps/pep-0526/
+
+## Syntax/terminology
+1. Link to https://en.wikipedia.org/wiki/Command-line_interface
+   1. Find all for command line and replace with :xref:
+1. Capitalization should mention that proper nouns should be capitalized
+   1. Consider the NumPy package
+   1. Consider the pandas package
+   1. Pandas package
+1. Line break in documentation also say ..code-block can go over a line
+1. Give all csv-table a title
+   1. Use find all
+1. Say how information sources (google, wikipedia, etc.) are used
+   1. In open-source section
+1. Conda procedures should add a link to pip (already in links)
+1. Show how */#. spacing works in style guide
+   1. Level indentation always 3 spaces
+   1. Only one space since the * or the #.
+1. Link the tables generator somewhere on tools
+1. Use markdown link to say what TODO.md is made from
+
+## autodoc test code
+1. Document test_ledger.py
+   1. Add a section to common tasks about testing
+   1. May need to update the quickstart guide
+1. Document test_utilities.py
+
+## Git commit conventions
+1. https://stackoverflow.com/questions/24046846
+1. https://stackoverflow.com/questions/3459744
+1. https://stackoverflow.com/questions/11553374
+1. Link to the git commit conventions
+1. Explain the Git theme for Vim?
+   1. Shows up on current windows machine but not
+https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-in-git-commit-messages
+   1. Tell codebase what to do
+   1. Git tower reset local commit as a tip in committing process
+
 ## Sharing
 1. Show jason the attention admonition with the napoleon example
 
@@ -205,6 +179,10 @@ https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-i
 1. Get mypy going
 
 # 0.4.0 Linking nbs
+
+## Doc coverage
+1. Figure out how to do this
+   1. The packaging video on iPad may help
 
 ## Jupyter
 1. TOC for all Jupyter notebooks?
