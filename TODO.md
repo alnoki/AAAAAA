@@ -10,12 +10,6 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Napoleon integration
 
 ## Napoleon
-1. What's going on with attributes (the class?) and parameters (init)?
-   1. Should the instance attributes be under the class?
-   1. When you use attributes it crashes, even without :obj:`Transaction`
-   1. You don't need to self-reference :obj:`Transaction` so much
-      1. Brevity is the sould of wit (Zen)
-1. Say something on code page about how this is listed elsewhere so no index?
    1. Rather, say that it is explained in software section with a link to it
 1. Don't say what is raised, just say check objects is called
    1. This will inform a tutorial about types, classes, etc.
@@ -124,6 +118,24 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 # 0.3.0 Test code documentation
 
+## toctree structure
+1. Intro
+   1. Quickstart
+   1. What next? page
+      1. Describes the site
+      1. Mention more info on tools in tools page
+      1. Say how to get started with Python, etc.
+   1. TOC for everything page?
+   1. Maybe have references here
+1. For developers
+   1. Versioning
+   1. Concepts
+   1. Tools
+   1. Procedures
+1. Software
+1. Test code (?)
+1. References
+
 ## Jupyter
 1. Verify all Jupyter notebooks are linked
 1. Link a Jupyter notebook per Carol Willing video
@@ -211,6 +223,10 @@ https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-i
    1. Link to it in the nbs toc page
 
 # 0.5.0 Robinhood
+
+## Class restructuring
+1. use datetime.datetime with zulu time - call the instance variable "when"
+1. Restructure other attributes as necessary
 
 ## Robinhood integration
 1. Services setup

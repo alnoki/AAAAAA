@@ -84,10 +84,21 @@ Code is enhanced with :ref:`docstrings <python:tut-docstrings>` and
 :pep:`type annotations <484>`, which enable :ref:`napoleon <tools-napoleon>` to
 create pretty documentation elements that explain code:
 
-.. autoclass:: AAAAAA.ledger.Transaction
-   :noindex:
+.. py:function:: explanation(what, who, how, where, when, how_many)
 
-.. This is just for demonstration, thus :noindex:
+   Explain something to somebody in a certain way at a certain place on a
+   certain day, a certain number of timey times
+
+   :param object what: are you trying to explain?
+   :param str who: even cares?
+   :param str how: you gon' do that?
+   :param str where: are you 'splaining it?
+   :param datetime.date when: do we receive the coupons you promised?
+   :param int how_many: times you gon' do dis befo' I smack-a-you?
+   :return: with newfound knowledge
+   :rtype: str
+   :raises ValueError: if the explanaion is not understood
+   :raises TypeError: if the explanation is in the wrong language
 
 .. attention::
    We interrupt your drooling to return to :xref:`alnoki <alnoki-repos>`
@@ -97,7 +108,7 @@ If you click :guilabel:`[source]`, you will be taken to the original code. Once
 you are there, if you click :guilabel:`[docs]`, you will be taken back to
 documentation
 
-Conveniently, documentation elements are created with simple
+Conveniently, documentation elements can be created with simple
 :ref:`reST directives <tools-restructured-text>` like:
 
 .. code-block:: rest

@@ -604,6 +604,10 @@ Showing code
    * Sample :ref:`NumPy docstring <numpy:format>` syntax for
      :doc:`napoleon <sphinx:usage/extensions/napoleon>`
 
+#. :ref:`sphinx:info-field-lists`
+
+   * Syntax that :doc:`napoleon <sphinx:usage/extensions/napoleon>` produces
+
 reStructuredText
 ================
 

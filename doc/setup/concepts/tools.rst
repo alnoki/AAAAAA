@@ -292,6 +292,8 @@ Napoleon
    :doc:`Autodoc <sphinx:usage/extensions/autodoc>` demo with
    :std:doc:`RTD Sphinx theme <rtd-sphinx-theme:index>`"
    :doc:`Example NumPy Strings <napoleon:example_numpy>`, Example syntax
+   :ref:`sphinx:info-field-lists`, "Resultant
+   :ref:`reST <tools-restructured-text>` syntax"
 
 :std:doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
 :ref:`Sphinx extension <tools-sphinx>` that parses code and
@@ -300,6 +302,12 @@ and :pep:`type annotations <484>`. It uses the same
 :ref:`directives <tools-restructured-text>` as
 :doc:`autodoc <sphinx:usage/extensions/autodoc>`, but it
 can accept :std:ref:`NumPy docstrings <numpy:format>`
+
+:doc:`Napoleon <sphinx:usage/extensions/napoleon>` and
+:doc:`autodoc <sphinx:usage/extensions/autodoc>` both parse
+:ref:`docstrings <python:tut-docstrings>` into syntax (like that used for
+:ref:`field lists <sphinx:info-field-lists>`) which is native to
+:ref:`reST <tools-restructured-text>`
 
 :ref:`Docstrings <python:tut-docstrings>` are annotated using the
 :ref:`Python domain <sphinx:python-roles>`

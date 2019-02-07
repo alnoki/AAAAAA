@@ -6,46 +6,43 @@ from typing import Union
 
 from .utilities import check_object
 
-transact_types = set(['Bank transfer', 'Buy', 'Dividends', 'Fees', 'Sell'])
-
 
 class Transaction:
     """A :xref:`transaction <finance-transaction>`
 
-
-    Parameters
+    Attributes
     ----------
-    date : :obj:`datetime.date`
-        Day on which a :obj:`Transaction` occured
+    when : :obj:`datetime.date`
+        Day of occurence
     total_amount : :obj:`decimal.Decimal`
-        The amount of :xref:`money <money>` transacted, in units of
+        The amount of :xref:`money <money>` involved, in units of
         :xref:`$ <USD>` and :xref:`¢ <finance-cent>`
-    transact_type : :obj:`str`
-        What type of :obj:`Transaction` occured
-    symbol : :obj:`str`
-        :xref:`ticker-symbol` associated with a :obj:`Transaction`
+    kind : :obj:`str`
+        What kind of :xref:`transaction <finance-transaction>`
+    symbol : :obj:`str` or :obj:`None`
+        Associated :xref:`ticker-symbol`
     num_shares : :obj:`int` or :obj:`None`
-        Number of :xref:`shares <finance-share>` associated with a
-        :obj:`Transaction`
+        Number of associated :xref:`shares <finance-share>`
     description : :obj:`str` or :obj:`None`
-        A description of the :obj:`Transaction`, typically provided by a
-        :xref:`brokerage <brokerage>`
+        A description, typically provided by a :xref:`brokerage <brokerage>`
 
     """
 
-    def _check_instance_args(self, date, total_amount, transact_type, symbol,
+    kinds = set(['Bank transfer', 'Buy', 'Dividends', 'Fees', 'Sell'])
+
+    def _check_instance_args(self, when, total_amount, kind, symbol,
                              num_shares, description):
         """Checks positional & keyword arg types/values for __init__"""
 
-        # use date.__name__ instead of 'date'?
+        # use when.__name__ instead of 'when'?
 
         check_object('types', (  # Positional arg types
-            (date, (datetime.date,), 'date'),
+            (when, (datetime.date,), 'when'),
             (total_amount, (decimal.Decimal, int), 'total_amount'),
-            (transact_type, (str,), 'transact_type'),))
+            (kind, (str,), 'kind'),))
         check_object('values', (  # Positional arg values
             (total_amount < 0, "total_amount negative"),
-            (transact_type not in transact_types, "transact_type type"),))
+            (kind not in kinds, "kind"),))
         check_object('types', (  # Keyword arg types
             (symbol, (str, None), 'symbol'),
             (num_shares, (int, None), 'num_shares'),
@@ -53,9 +50,9 @@ class Transaction:
         check_object('values', (  # Keyword arg values
             (symbol is not None and (len(symbol) == 0 or symbol.isspace()),
                 "blank symbol"),
-            (transact_type == 'Bank transfer' and symbol is not None,
+            (kind == 'Bank transfer' and symbol is not None,
                 "bank transfer has symbol"),
-            (transact_type != 'Bank transfer' and symbol is None,
+            (kind != 'Bank transfer' and symbol is None,
                 "symbol missing"),
             (symbol is None and num_shares is not None,
                 "num_shares should be None"),
@@ -64,31 +61,22 @@ class Transaction:
                 "non-positive num_shares"),))
 
     def __init__(self,
-                 date: datetime.date,
+                 when: datetime.date,
                  total_amount: Union[decimal.Decimal, int],
-                 transact_type: str,
+                 kind: str,
                  symbol: str = None,
                  num_shares: int = None,
                  description: str = None) -> None:
-        """ Sanitize inputs
-
-        Raises
-        ------
-        TypeError
-            if a parameter is of the invalid type
-        ValueError
-            if a parameter contains invalid data
-        """
 
         try:  # Check input validity before assignment
-            self._check_instance_args(date, total_amount, transact_type,
-                                      symbol, num_shares, description)
+            self._check_instance_args(when, total_amount, kind, symbol,
+                                      num_shares, description)
         except (TypeError, ValueError) as e:
             raise e
         else:  # Create an object if data is valid
-            self.date = date
+            self.when = when
             self.total_amount = decimal.Decimal(total_amount)
-            self.transact_type = transact_type
+            self.kind = kind
             self.symbol = symbol
             self.num_shares = num_shares
             self.description = description
