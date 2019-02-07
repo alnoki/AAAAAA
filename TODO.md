@@ -10,9 +10,15 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Napoleon integration
 
 ## Napoleon
-1. Get references: ticker, brokerage
-1. Start linking around in docstrings
-1. Separate attributes (the class) and parameters (init)
+1. What's going on with attributes (the class?) and parameters (init)?
+   1. Should the instance attributes be under the class?
+   1. When you use attributes it crashes, even without :obj:`Transaction`
+   1. You don't need to self-reference :obj:`Transaction` so much
+      1. Brevity is the sould of wit (Zen)
+1. Say something on code page about how this is listed elsewhere so no index?
+   1. Rather, say that it is explained in software section with a link to it
+1. Don't say what is raised, just say check objects is called
+   1. This will inform a tutorial about types, classes, etc.
 1. Play around with napoleon_include_init_with_doc in conf.py
    1. Note your autodoc uses :member: and so does the .rst example
 1. Did you do type annotations correctly?

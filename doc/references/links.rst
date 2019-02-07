@@ -851,3 +851,66 @@ Software design standards
 #. :xref:`Garmin`
 
    * Manufacturer of :xref:`DO-178B Level A <DO-178B>` aviation products
+
+*********
+Financial
+*********
+
+Securities mechanics
+====================
+
+#. :xref:`corporation`
+
+   * An organization that acts as a single entity
+
+#. :xref:`finance-share`
+
+   * A single unit representing fractional owenership
+
+#. :xref:`finance-stock`
+
+   * The combination of all :xref:`shares <finance-share>` that form
+     representative ownership of a :xref:`corporation <corporation>`
+
+#. :xref:`financial-asset`
+
+   * A non-physical asset, like :xref:`shares <finance-share>` of
+     :xref:`stock <finance-stock>`
+
+#. :xref:`finance-security`
+
+   * Tradable forms of :xref:`financial assets <financial-asset>`
+
+#. :xref:`brokerage`
+
+   * Facilitates the buying and selling of
+     :xref:`securities <finance-security>`
+
+#. :xref:`ticker-symbol`
+
+   * Identifier used to buy or sell a :xref:`security <finance-security>`
+     through a :xref:`brokerage <brokerage>`
+
+Money definitions
+=================
+
+#. :xref:`medium-of-exchange`
+
+   * A widely accepted token that can be exhanged for something else
+
+#. :xref:`money`
+
+   * An item or verifiable record that is accepted as a
+     :xref:`medium of exchange <medium-of-exchange>`
+
+#. :xref:`finance-transaction`
+
+   * Typically, an exchange of :xref:`money <money>` for something else
+
+#. :xref:`USD`
+
+   * A unit of :xref:`money <money>`
+
+#. :xref:`finance-cent`
+
+   * :math:`\frac{1}{100}` of a basic :xref:`money <money>` unit

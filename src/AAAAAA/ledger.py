@@ -10,27 +10,26 @@ transact_types = set(['Bank transfer', 'Buy', 'Dividends', 'Fees', 'Sell'])
 
 
 class Transaction:
-    """Represents a transaction in a brokerage account
+    """A :xref:`transaction <finance-transaction>`
+
 
     Parameters
     ----------
     date : :obj:`datetime.date`
-        The day on which a :obj:`Transaction` occured
-    total_amount : :obj:`decimal.Decimal` or :obj:`int`
-        The total amount transacted. Use a :obj:`decimal.Decimal` if
-        cents are specified, and an :obj:`int` if only dollars are
-        specified
+        Day on which a :obj:`Transaction` occured
+    total_amount : :obj:`decimal.Decimal`
+        The amount of :xref:`money <money>` transacted, in units of
+        :xref:`$ <USD>` and :xref:`¢ <finance-cent>`
     transact_type : :obj:`str`
-        What type of :obj:`Transaction` occured. Should be a member of
-        transact_types
+        What type of :obj:`Transaction` occured
     symbol : :obj:`str`
-        Ticker symbol associated with a :obj:`Transaction`
+        :xref:`ticker-symbol` associated with a :obj:`Transaction`
     num_shares : :obj:`int` or :obj:`None`
-        The number of shares associated with a :obj:`Transaction` that
-        involves a symbol
+        Number of :xref:`shares <finance-share>` associated with a
+        :obj:`Transaction`
     description : :obj:`str` or :obj:`None`
-        A description of the :obj:`Transaction`, like one provided by
-        a broker
+        A description of the :obj:`Transaction`, typically provided by a
+        :xref:`brokerage <brokerage>`
 
     """
 

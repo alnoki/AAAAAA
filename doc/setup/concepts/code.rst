@@ -85,6 +85,9 @@ Code is enhanced with :ref:`docstrings <python:tut-docstrings>` and
 create pretty documentation elements that explain code:
 
 .. autoclass:: AAAAAA.ledger.Transaction
+   :noindex:
+
+.. This is just for demonstration, thus :noindex:
 
 .. attention::
    We interrupt your drooling to return to :xref:`alnoki <alnoki-repos>`
@@ -95,7 +98,7 @@ you are there, if you click :guilabel:`[docs]`, you will be taken back to
 documentation
 
 Conveniently, documentation elements are created with simple
-:ref:`reST directives <tools-restructured-text>`. The element above is simply:
+:ref:`reST directives <tools-restructured-text>` like:
 
 .. code-block:: rest
 

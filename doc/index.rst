@@ -124,6 +124,13 @@ Indices and tables
    procedures/sphinx
    procedures/writing
 
+.. toctree::
+   :caption: Software
+   :maxdepth: 2
+   :numbered:
+
+   software/fundamentals
+
 .. _references:
 
 .. toctree::

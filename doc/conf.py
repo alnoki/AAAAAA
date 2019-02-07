@@ -409,5 +409,19 @@ xref_links = {
     'realpython-type-checking':
         ("RealPython guide to type checking", url['RealPython'] +
          'python-type-checking'),
+    'finance-security': ('Securities', url['Wiki pg'] + 'Security_(finance)'),
+    'financial-asset': ("Financial asset", url['Wiki pg'] + 'Financial_asset'),
+    'finance-stock': ('Stock', url['Wiki pg'] + 'Stock'),
+    'corporation': ('Corporation', url['Wiki pg'] + 'Corporation'),
+    'brokerage': ('Brokerage', url['Wiki pg'] + 'Brokerage_firm'),
+    'ticker-symbol': ("Ticker symbol", url['Wiki pg'] + 'Ticker_symbol'),
+    'finance-share': ('Share', url['Wiki pg'] + 'Ticker_symbol'),
+    'finance-transaction': ("Financial transaction", url['Wiki pg'] +
+                            'Financial_transaction'),
+    'money': ('Money', url['Wiki pg'] + 'Money'),
+    'medium-of-exchange': ("Medium of exchange", url['Wiki pg'] +
+                           'Medium_of_exchange'),
+    'USD': ("United States dollar", url['Wiki pg'] + 'United_States_dollar'),
+    'finance-cent': ('Cent', url['Wiki pg'] + 'Cent_(currency)'),
     # New links below, sorted links above
     }
