@@ -2,9 +2,12 @@
 Fundamentals
 ############
 
-*********
-Financial
-*********
+**********************
+Brokerage transactions
+**********************
+
+Introduction
+============
 
 A :xref:`brokerage <brokerage>` facilitates the buying or selling of
 :xref:`securities <finance-security>`, which are tradable forms of
@@ -31,3 +34,35 @@ and :term:`AAAAAA` measure :xref:`money <money>` using units of
    :xref:`Cents <finance-cent>`, ¢
 
 .. autoclass:: AAAAAA.ledger.Transaction
+
+Mechanics
+=========
+
+:py:class:`AAAAAA.ledger.Transaction` (:py:class:`~AAAAAA.ledger.Transaction`)
+is a :ref:`class <python:tut-classes>`
+with various :ref:`attributes <python:tut-scopes>` like
+:py:attr:`~AAAAAA.ledger.Transaction.total_amount` or
+:py:attr:`~AAAAAA.ledger.Transaction.symbol`
+
+:py:attr:`~AAAAAA.ledger.Transaction.kinds` is a
+:ref:`class variable <python:tut-class-and-instance-variables>` that describes
+the possible values that can be assumed by
+:py:attr:`~AAAAAA.ledger.Transaction.kind`, which is an
+:ref:`instance variable <python:tut-class-and-instance-variables>`
+
+.. csv-table:: Possible :py:attr:`~AAAAAA.ledger.Transaction.kinds`
+   :header: "Kind", ":xref:`ticker-symbol` associated?", "Interpretation"
+   :align: center
+
+   ``'Bank transfer'``, No, Add :xref:`money <money>` from a :xref:`bank`
+   ``'Buy'``, Yes, "Pay :xref:`money <money>` for a
+   :xref:`security <finance-security>`"
+   ``'Dividends'``, Yes, "Receive :xref:`money <money>` from a
+   :xref:`security <finance-security>`"
+   ``'Fees'``, Yes, "Pay a :xref:`fee <fee>` when selling a
+   :xref:`security <finance-security>`"
+   ``'Sell'``, Yes, "Sell a :xref:`security <finance-security>` for
+   :xref:`money <money>`"
+
+When you :ref:`initialize an instance<python:tut-classobjects>` of
+:py:class:`~AAAAAA.ledger.Transaction`

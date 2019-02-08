@@ -423,5 +423,8 @@ xref_links = {
                            'Medium_of_exchange'),
     'USD': ("United States dollar", url['Wiki pg'] + 'United_States_dollar'),
     'finance-cent': ('Cent', url['Wiki pg'] + 'Cent_(currency)'),
+    'dividend': ('Dividend', url['Wiki pg'] + 'Dividend'),
+    'fee': ('Fee', url['Wiki pg'] + 'Fee'),
+    'bank': ('Bank', url['Wiki pg'] + 'Bank'),
     # New links below, sorted links above
     }

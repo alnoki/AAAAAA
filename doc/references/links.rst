@@ -53,21 +53,24 @@ General
 
    * Comprehensive blog-style website with examples, guides, tips, etc.
 
-Specifics
-=========
+Projects
+========
 
 #. :ref:`python:tut-packages`
 
    * Structuring of code and :xref:`directories <directory>` in a project
 
-#. :xref:`Python-quote-convention`
-
-   * Recommendation for using ``'`` vs ``"`` in :xref:`Python`
-
 #. :xref:`print-dir-tree`
 
    * Sample code to print out a :xref:`directory <directory>` tree
    * Adapted for :ref:`directory tree procedure <writing-make-dir-tree>`
+
+Text
+====
+
+#. :xref:`Python-quote-convention`
+
+   * Recommendation for using ``'`` vs ``"`` in :xref:`Python`
 
 #. :ref:`python:comments`
 
@@ -77,8 +80,8 @@ Specifics
 
    * :ref:`python:comments` for specific :xref:`Python` code components
 
-Data structures
-===============
+Types
+=====
 
 #. :std:doc:`python:library/stdtypes`
 
@@ -91,6 +94,27 @@ Data structures
 #. :xref:`realpython-type-checking`
 
    * Guide to using correct :std:doc:`types <python:library/stdtypes>` in code
+
+Classes
+=======
+
+#. :ref:`python:tut-classes`
+
+   * A way to bundle data and functionality together
+
+#. :ref:`python:tut-classobjects`
+
+   * Syntax and instance concepts, like ``__init__()``
+
+#. :ref:`python:tut-scopes`
+
+   * Domains of association
+
+#. :ref:`python:tut-class-and-instance-variables`
+
+   * :ref:`Attributes <python:tut-scopes>` of a
+     :ref:`class <python:tut-classes>` that have
+     different :ref:`scopes <python:tut-scopes>`
 
 Environments
 ============
@@ -247,7 +271,6 @@ Matplotlib
 
    * Recommended :std:doc:`Matplotlib <matplotlib:index>` tutorial on
      :xref:`YouTube`
-
 
 pandas
 ------
@@ -814,9 +837,9 @@ Extensions
    * Fix for syntax highlighter bug in :xref:`RST-preview-ext`
 
 
-*******
-General
-*******
+****************************
+General computer information
+****************************
 
 Online information
 ==================
@@ -895,6 +918,11 @@ Securities mechanics
    * Identifier used to buy or sell a :xref:`security <finance-security>`
      through a :xref:`brokerage <brokerage>`
 
+#. :xref:`dividend`
+
+   * Typically, :xref:`money <money>` that a :xref:`corporation <corporation>`
+     pays to its :xref:`shareholders <finance-share>`
+
 Money definitions
 =================
 
@@ -918,3 +946,11 @@ Money definitions
 #. :xref:`finance-cent`
 
    * :math:`\frac{1}{100}` of a basic :xref:`money <money>` unit
+
+#. :xref:`fee`
+
+   * An amount of :xref:`money <money>` paid for services
+
+#. :xref:`bank`
+
+   * An institution that manages :xref:`money <money>`

@@ -8,19 +8,22 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 
 ## Version change list (start one in .md to save for later)
 1. Napoleon integration
+1. Documented the Transaction class
 
 ## Napoleon
-   1. Rather, say that it is explained in software section with a link to it
-1. Don't say what is raised, just say check objects is called
-   1. This will inform a tutorial about types, classes, etc.
+1. Don't say what is raised, just say check objects is called or rather that
+   1. The check objects function raises the error
+   1. Need to show the __init__
+1. Investigate how the autodoc directives influence the napoleon init config
+   1. autoclass_content
 1. Play around with napoleon_include_init_with_doc in conf.py
+   1. You may need to enable autodoc and change around the
    1. Note your autodoc uses :member: and so does the .rst example
-1. Did you do type annotations correctly?
-   1. If you didn't that might explain with the types don't show in bullet list
 1. Use autodoc link from Willing Sphinx table and put in tools-sphinx
 1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
 ## src updates
+1. Update the quick start and verify it works
 1. date.__name__ f string? instead of the string "date"
 1. Document utilities.py
 1. Document ledger.py
@@ -155,6 +158,8 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 ## myPy
 1. MyPy type linter
    1. https://www.python.org/dev/peps/pep-0526/
+   1. https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
+      1. Get the mypy linter going in the conda package
 1. :pep:`Type hint theory <483>`
    1. Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 1. :pep:`Variable annotations <527>`

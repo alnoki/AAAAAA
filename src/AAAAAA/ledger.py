@@ -2,13 +2,13 @@
 
 import datetime
 import decimal
-from typing import Union
+from typing import Set, Optional
 
 from .utilities import check_object
 
 
 class Transaction:
-    """A :xref:`transaction <finance-transaction>`
+    """An exchange of money inside of a brokerage account
 
     Attributes
     ----------
@@ -20,15 +20,18 @@ class Transaction:
     kind : :obj:`str`
         What kind of :xref:`transaction <finance-transaction>`
     symbol : :obj:`str` or :obj:`None`
-        Associated :xref:`ticker-symbol`
+        Associated :xref:`ticker symbol <ticker-symbol>`
     num_shares : :obj:`int` or :obj:`None`
         Number of associated :xref:`shares <finance-share>`
     description : :obj:`str` or :obj:`None`
         A description, typically provided by a :xref:`brokerage <brokerage>`
+    kinds : :obj:`set` of :obj:`string`
+        Allowed kinds
 
     """
 
-    kinds = set(['Bank transfer', 'Buy', 'Dividends', 'Fees', 'Sell'])
+    kinds: Set[int] = set(['Bank transfer', 'Buy', 'Dividends', 'Fees',
+                           'Sell'])
 
     def _check_instance_args(self, when, total_amount, kind, symbol,
                              num_shares, description):
@@ -62,11 +65,11 @@ class Transaction:
 
     def __init__(self,
                  when: datetime.date,
-                 total_amount: Union[decimal.Decimal, int],
+                 total_amount: decimal.Decimal,
                  kind: str,
-                 symbol: str = None,
-                 num_shares: int = None,
-                 description: str = None) -> None:
+                 symbol: Optional[str] = None,
+                 num_shares: Optional[int] = None,
+                 description: Optional[str] = None) -> None:
 
         try:  # Check input validity before assignment
             self._check_instance_args(when, total_amount, kind, symbol,
@@ -75,7 +78,7 @@ class Transaction:
             raise e
         else:  # Create an object if data is valid
             self.when = when
-            self.total_amount = decimal.Decimal(total_amount)
+            self.total_amount = total_amount
             self.kind = kind
             self.symbol = symbol
             self.num_shares = num_shares
