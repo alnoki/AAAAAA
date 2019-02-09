@@ -13,6 +13,7 @@ Git
 
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
+   :xref:`commit-conventions`, Tell codebase what to do
 
 .. contents:: Contents
    :local:
@@ -164,6 +165,7 @@ Committing
 
    :xref:`git-commit`, Create snapshot of project changes
    :xref:`git-push`, Upload changes to repository
+   :xref:`Message conventions <commit-conventions>`, Tell codebase what to do
 
 #. Verify the state of the project using the
    :ref:`VS Code integrated terminal <tools-vs-code>`:
@@ -194,6 +196,8 @@ Committing
       :xref:`save and close <Vim-cheatsheet>` procedure used to
       :ref:`update Git credentials <git-credentials>`
 
+#. Compose a message that
+   :xref:`tells the codebase what to do <commit-conventions>`
 #. In the :ref:`command palette <tools-vs-code>`:
    :guilabel:`Git: Commit Staged`
 #. Use the :ref:`integrated terminal <tools-vs-code>` to verify the
@@ -213,6 +217,98 @@ Committing
       git push
 
 #. Verify results at the :xref:`AAAAAA-repo`
+
+
+.. _git-tagging:
+
+
+*******
+Tagging
+*******
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`git-tag`
+   :xref:`Message style <commit-conventions>`, Tell codebase what to do
+   :xref:`git-push`, Upload changes to repository
+   :xref:`git-commit-guidelines`, Long message guidelines
+
+
+#. :ref:`View the project log <git-view-project-log>` to verify the
+   :xref:`commit <git-commit>` in question
+#. Use the :ref:`VS Code integrated terminal <tools-vs-code>` to create an
+   :xref:`annotated tag <git-tag>`:
+
+   .. code-block:: bash
+
+      git tag -a 0.3.0
+
+   .. tip::
+      This will open :xref:`Vim`, which you can use to generate your
+      :xref:`commit message <git-commit>` per the
+      :xref:`save and close <Vim-cheatsheet>` procedure used to
+      :ref:`update Git credentials <git-credentials>`
+
+#. Compose a message that
+   :xref:`tells the codebase what to do <commit-conventions>` and includes
+   a :xref:`lengthier description <git-commit-guidelines>` if appropriate
+#. Verify by :ref:`viewing the project log <git-view-project-log>`
+#. :xref:`Push <git-push>`:
+
+   .. code-block:: bash
+
+      git push 0.3.0
+
+#. Verify results at the :xref:`AAAAAA-repo`
+
+.. _git-branching:
+
+
+*********
+Branching
+*********
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`git-branch`, Manage independent commit sequences
+   :xref:`git-checkout`, Switch :xref:`branches <git-branch>`
+
+#. :ref:`View the project log <git-view-project-log>` to verify the
+   :xref:`commit <git-commit>` in question
+#. Inspect :xref:`all branches <git-branch>` in the
+   :ref:`VS Code integrated terminal <tools-vs-code>`:
+
+   .. code-block:: bash
+
+      git branch -a
+
+#. :xref:`Create and check out <git-checkout>` a new
+   :xref:`tracked branch <git-branch>`:
+
+   .. code-block:: bash
+
+      git checkout -b dev/0.3.0
+
+#. Verify:
+
+   .. code-block:: bash
+
+      git branch
+
+
+.. tip::
+
+   The first time you :ref:`commit <git-committing>` a new
+   :xref:`branch <git-branch>` to the :xref:`AAAAAA-repo`, make sure to
+   :xref:`set upstream tracking <git-push>`:
+
+   .. code-block:: bash
+
+      git push -u
 
 .. _git-change-commit-history:
 

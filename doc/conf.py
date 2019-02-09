@@ -25,9 +25,9 @@ copyright = '2019, alnoki'
 author = 'alnoki'
 
 # The short X.Y version
-version = '0.2'
+version = '0.3'
 # The full version, including alpha/beta/rc tags
-release = '0.2.0'
+release = '0.3.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -355,8 +355,17 @@ xref_links = {
     'git-commit': ('git-commit', url['git-scm'] + 'docs/git-commit'),
     'git-push': ('git-push', url['git-scm'] + 'docs/git-push'),
     'git-clone': ('git-clone', url['git-scm'] + 'docs/git-clone'),
+    'git-branch': ('git-branch', url['git-scm'] + 'docs/git-branch'),
+    'git-tag': ('git-tag', url['git-scm'] + 'docs/git-tag'),
+    'git-checkout': ('git-checkout', url['git-scm'] + 'docs/git-checkout'),
     'git-setup': ("Git setup", url['git-scm'] + 'book/en/v2/Getting-Started-'
                   'First-Time-Git-Setup'),
+    'git-commit-guidelines':
+        ("Git commit guidelines", url['git-scm'] + 'book/en/v2/Distributed-Git'
+         '-Contributing-to-a-Project#_commit_guidelines'),
+    'commit-conventions':
+        ("Git commit message style", url['Stack OF'] + '3580013/should-i-use'
+         '-past-or-present-tense-in-git-commit-messages'),
     'less-pager': ('less pager', url['linux-die'] + 'less'),
     'Vim': ("Vim text editor", 'https://www.vim.org/'),
     'Vim-tutorial': ("Interactive Vim tutorial", 'https://www.openvim.com/'),
@@ -416,5 +425,6 @@ xref_links = {
     'dividend': ('Dividend', url['Wiki pg'] + 'Dividend'),
     'fee': ('Fee', url['Wiki pg'] + 'Fee'),
     'bank': ('Bank', url['Wiki pg'] + 'Bank'),
+    'semver': ("Semantic Versioning", 'https://semver.org/'),
     # New links below, sorted links above
     }

@@ -69,6 +69,10 @@ Projects
    * Sample code to print out a :xref:`directory <directory>` tree
    * Adapted for :ref:`directory tree procedure <writing-make-dir-tree>`
 
+#. :xref:`directory`
+
+   * Cataloging structure with references to computer data
+
 Text
 ====
 
@@ -374,10 +378,12 @@ pytest
    * :xref:`VS-Code` integration problem upon release of
      :std:doc:`pytest <pytest:index>`
 
+******************
+Project management
+******************
 
-***************
 AAAAAA codebase
-***************
+===============
 
 #. :xref:`AAAAAA-repo`
 
@@ -396,9 +402,20 @@ AAAAAA codebase
 
    * Compressed archive of :xref:`AAAAAA-repo` that is quick to download
 
-#. :xref:`directory`
+Versioning
+==========
 
-   * Cataloging structure with references to computer data
+#. :xref:`semver`
+
+   * Guidelines for version number of style ``MAJOR.MINOR.PATCH``
+
+#. :xref:`git-commit-guidelines`
+
+   * General guidelines for contributing to a project
+
+#. :xref:`commit-conventions`
+
+   * Specific language style for contributing to a project
 
 
 *******************
@@ -446,6 +463,18 @@ Core commands
 #. :xref:`git-push`
 
    * Upload a :xref:`commit <git-commit>`
+
+#. :xref:`git-tag`
+
+   * Assign a special identifier to a :xref:`commit <git-commit>`
+
+#. :xref:`git-branch`
+
+   * Work with independent sequences of :xref:`commits <git-commit>`
+
+#. :xref:`git-checkout`
+
+   * Switch between :xref:`branches <git-branch>`
 
 Text manipulation
 =================

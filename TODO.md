@@ -4,18 +4,26 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://embeddedartistry.com/blog/2017/12/7/start-using-semantic-versioning-to-give-your-version-numbers-meaning (included below)
 1. https://realpython.com/documenting-python-code/ (already linked)
 
-## Version change list (start one in .md to save for later)
-1. 0.2.0
-   1. Napoleon integration
-   1. Documented the Transaction class with types information
+# 0.3.0 Website restructuring
 
-# 0.2.0 src documentation pushing
+## New version pushing
 1. Commit and tag
 1. Verify quickstart works
 1. Verify merge to master is correct
 1. Push with tags
+1. Say make linkcheck
+1. Then proofread
 
-# 0.3.0 Website restructuring
+## Starting a new version
+1. Need to immediately start a dev/0.3.0 branch to avoid 0.3.0 tag
+   1. Update conf.py as well
+1. After a merge, it makes sense to use a long tag comment
+   1. The last commit comment will likely just involve minor changes
+1. The "next release" branch shouldn't have just the name of the next number
+   1. call it 0.3.0-branch?
+1. https://softwareengineering.stackexchange.com/questions/230438/in-git-is-it-a-bad-idea-to-create-a-tag-with-the-same-name-as-a-deleted-branch
+   1. Then can do git push tag
+1. Need to update the "active versions" on readthedocs
 
 ## Proofreading procedures
 1. Should make version update procedures first so they can be pointed to?
@@ -183,16 +191,16 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. May need to update the quickstart guide
 1. Document test_utilities.py
 
-## Git commit conventions
+## Git environment
 1. https://stackoverflow.com/questions/24046846
 1. https://stackoverflow.com/questions/3459744
 1. https://stackoverflow.com/questions/11553374
 1. Link to the git commit conventions
 1. Explain the Git theme for Vim?
    1. Shows up on current windows machine but not
-https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-in-git-commit-messages
-   1. Tell codebase what to do
+1. Add configuration to dev setup
    1. Git tower reset local commit as a tip in committing process
+1. Describe long message
 
 ## Sharing
 1. Show jason the attention admonition with the napoleon example

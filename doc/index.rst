@@ -114,11 +114,12 @@ Indices and tables
    setup/concepts
 
 .. toctree::
-   :caption: Software
+   :caption: User guide
    :maxdepth: 2
    :numbered:
 
-   software/fundamentals
+   user-guide/fundamentals
+   user-guide/versions
 
 .. toctree::
    :caption: Procedures

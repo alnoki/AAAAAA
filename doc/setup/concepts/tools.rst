@@ -119,6 +119,11 @@ its history. Each :xref:`commit <git-commit>` is identified by a :xref:`sha1`,
 a unique identifier that can be accessed by viewing a
 :xref:`commit log <git-log>`
 
+:xref:`Tags <git-tag>`, which provide a unique identifier for
+:xref:`commits <git-commit>`, and :xref:`branches <git-branch>`, which enable
+independent sequences of :xref:`commits <git-commit>`, are used to manage
+:ref:`project versions <version-list>`
+
 :xref:`GitHub` is a free service that hosts the :xref:`AAAAAA-repo`
 
 A list of common :term:`AAAAAA` usage examples is at
@@ -142,6 +147,7 @@ There are several command-line style text navigators that go along with
 
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
+   :xref:`git-commit-guidelines`, Contribution guidelines
 
 .. _tools-sphinx:
 
