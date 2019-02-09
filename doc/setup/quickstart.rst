@@ -25,14 +25,17 @@ steps for you on the following pages
    .. code-block:: python
 
       import datetime  # Lets you work with dates and times
+      import decimal  # Lets you work with $$.¢¢
       from src.AAAAAA.ledger import Transaction  # From AAAAAA codebase
       my_transaction = Transaction(
-          date=datetime.date(1994, 6, 19), total_amount=50, transact_type='Buy',
-          symbol='ALNOKI', num_shares=1)
+          when=datetime.date(1994, 6, 19), total_amount=decimal.Decimal('24.48'),
+          kind='Buy', symbol='ALNOKI', num_shares=12)
 
-#. Play around with some commands like::
+#. You just paid $24.48 for 12 :xref:`shares <finance-share>`
 
-       my_transaction.symbol  # What was that symbol again?
+   .. code-block:: python
+
+      my_transaction.per_share_amount  # How much does each one cost?
 
 .. Example code here should not require any packages beyond base miniconda
 

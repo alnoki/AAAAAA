@@ -4,52 +4,45 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://embeddedartistry.com/blog/2017/12/7/start-using-semantic-versioning-to-give-your-version-numbers-meaning (included below)
 1. https://realpython.com/documenting-python-code/ (already linked)
 
-# 0.2.0 src documentation
-
 ## Version change list (start one in .md to save for later)
-1. Napoleon integration
-1. Documented the Transaction class
+1. 0.2.0
+   1. Napoleon integration
+   1. Documented the Transaction class with types information
 
-## Napoleon
-1. Don't say what is raised, just say check objects is called or rather that
-   1. The check objects function raises the error
-   1. Need to show the __init__
-1. Investigate how the autodoc directives influence the napoleon init config
-   1. autoclass_content
-1. Play around with napoleon_include_init_with_doc in conf.py
-   1. You may need to enable autodoc and change around the
-   1. Note your autodoc uses :member: and so does the .rst example
-1. Use autodoc link from Willing Sphinx table and put in tools-sphinx
-1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
+# 0.2.0 src documentation pushing
+1. Commit and tag
+1. Verify quickstart works
+1. Verify merge to master is correct
+1. Push with tags
 
-## src updates
-1. Update the quick start and verify it works
-1. date.__name__ f string? instead of the string "date"
-1. Document utilities.py
-1. Document ledger.py
-1. Incorporate ledger.py snippets
-1. Link to the Python article about Decimal vs floating point types
+# 0.3.0 Website restructuring
 
-## Zen
-1. Spirit of alnoki's apps on Zen page
-   1. Functional programming is easiest to read, understand, and test
-      1. Link to functional programming reference
-   1. Should be open source
-   1. Incremental versioning per the link above
-      1. Each one should be an MVP (minimum viable prototype)
-         1. Link
-   1. Hyperlink to anything a novice might not understand
-   1. Show how it's done, in case you forget later
-   1. Open source and free as much as possible
-1. AAAAAA term should say (colloquially referred to as alnoki's apps)
-1. Tools should be concepts, code/documentation pages should be specifics
-   1. Setup have concepts and specifics section?
-   1. Code.rst should be specifics
-   1. Move the theory in Code.rst to tools page
-1. Cite "_why" and how we get to "live in the computer"
-   1. _why's poingnant guide to Ruby
-   1. https://poignant.guide/book/chapter-3.html
-   1. "That therefore, we, the coders, are foreigners, seeking citizenship in the computer’s locale"
+## Proofreading procedures
+1. Should make version update procedures first so they can be pointed to?
+   1. Just start writing, you'll get it linked eventually
+      1. Could make a stub document
+1. When making a new document, reference to the last SHA-1
+1. Current procedure for updating a document is inaccurate
+   1. Shouldn't reference to last SHA-1 in log
+   1. Should reference previous SHA-1 for when the document was changed
+      1. Can get this from VS Code
+1. Makes more sense to proofread the diff right before a version update
+   1. Compare the diff on changed documents versus the previous version
+   1. Then, should tag top of file with: .. 0.2.0 etc.
+   1. Re-do all proofreading for 0.2.0 release and tag appropriately
+   1. Also need to change the description in the concepts-documentation
+      1. Shows a SHA-1 at the top of the file
+      1. Also do this in the proofreading an original file procedure
+1. Need to check the file diff since the last version commit
+   1. Consider if the file has been added
+      1. Then proofread the whole file
+   1. If the file has been modified
+      1. Proofread just the diff
+   1. If the file has been moved and modified
+      1. Need to do the diff against the file before it was moved
+         1. Because a moved file shows up as a complete "add"
+1. :std:doc: -> :doc:, same with :ref: should be on documentation page
+   1. Link to sphinx saying the std isn't needed
 
 ## Versioning
 1. Top-down to-do task deferral
@@ -89,37 +82,28 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. On settings for AAAAAA on GitHub, select tags too
 1. Don't use lightweight tags because of hyphen
 
-## Proofreading procedures
-1. Should make version update procedures first so they can be pointed to?
-   1. Just start writing, you'll get it linked eventually
-      1. Could make a stub document
-1. When making a new document, reference to the last SHA-1
-1. Current procedure for updating a document is inaccurate
-   1. Shouldn't reference to last SHA-1 in log
-   1. Should reference previous SHA-1 for when the document was changed
-      1. Can get this from VS Code
-1. Makes more sense to proofread the diff right before a version update
-   1. Compare the diff on changed documents versus the previous version
-   1. Then, should tag top of file with: .. 0.2.0 etc.
-   1. Re-do all proofreading for 0.2.0 release and tag appropriately
-   1. Also need to change the description in the concepts-documentation
-      1. Shows a SHA-1 at the top of the file
-      1. Also do this in the proofreading an original file procedure
-1. Need to check the file diff since the last version commit
-   1. Consider if the file has been added
-      1. Then proofread the whole file
-   1. If the file has been modified
-      1. Proofread just the diff
-   1. If the file has been moved and modified
-      1. Need to do the diff against the file before it was moved
-         1. Because a moved file shows up as a complete "add"
-
-## Pushing
-1. Tag before pushing
-1. Verify merge to master is correct
-1. Push with tags
-
-# 0.3.0 Test code documentation
+## Zen
+1. Spirit of alnoki's apps on Zen page
+   1. Functional programming is easiest to read, understand, and test
+      1. Link to functional programming reference
+   1. Should be open source
+   1. Incremental versioning per the link above
+      1. Each one should be an MVP (minimum viable prototype)
+         1. Link
+   1. Hyperlink to anything a novice might not understand
+   1. Show how it's done, in case you forget later
+   1. Open source and free as much as possible
+1. AAAAAA term should say (colloquially referred to as alnoki's apps)
+1. Tools should be concepts, code/documentation pages should be specifics
+   1. Setup have concepts and specifics section?
+   1. Code.rst should be specifics
+   1. Move the theory in Code.rst to tools page
+1. Cite "_why" and how we get to "live in the computer"
+   1. _why's poingnant guide to Ruby
+   1. https://poignant.guide/book/chapter-3.html
+   1. "That therefore, we, the coders, are foreigners, seeking citizenship in the computer’s locale"
+1. https://realpython.com/interview-corey-schafer/
+   1. I believe the most important lesson I’ve learned is that you should make content for yourself
 
 ## toctree structure
 1. Intro
@@ -128,6 +112,8 @@ Viewing local build: http://localhost:8000/_build/html/index.html
       1. Describes the site
       1. Mention more info on tools in tools page
       1. Say how to get started with Python, etc.
+      1. :doc:`python:faq` getting started
+      1. :doc:`python:faq/programming` anything specific: keyword args, etc.
    1. TOC for everything page?
    1. Maybe have references here
 1. For developers
@@ -150,16 +136,22 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 ## Documentation structure
 1. Figure out how to have index page be toc-blank like on Sphinx, etc.
    1. Have a comprehensive TOC somewhere else?
+1. Verify that objects.inv is in order
 
 ## Package structuring and imports
 1. PEP 328
 1. https://stackoverflow.com/questions/448271/what-is-init-py-for
+1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 
 ## myPy
 1. MyPy type linter
    1. https://www.python.org/dev/peps/pep-0526/
    1. https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
       1. Get the mypy linter going in the conda package
+   1. VS Code linter
+      1. https://code.visualstudio.com/docs/python/linting
+         1. Make a type checking procedures page
+         1. Talk about how to disable the pep8 colon warning but leave mypy on
 1. :pep:`Type hint theory <483>`
    1. Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 1. :pep:`Variable annotations <527>`
@@ -206,8 +198,7 @@ https://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-i
 1. Show jason the attention admonition with the napoleon example
 
 ## Imports
-1. Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger
-
+1. Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger for tests
 
 # 0.4.0 Linking nbs
 

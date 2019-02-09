@@ -114,6 +114,13 @@ Indices and tables
    setup/concepts
 
 .. toctree::
+   :caption: Software
+   :maxdepth: 2
+   :numbered:
+
+   software/fundamentals
+
+.. toctree::
    :caption: Procedures
    :maxdepth: 2
    :numbered:
@@ -123,13 +130,6 @@ Indices and tables
    procedures/pytest
    procedures/sphinx
    procedures/writing
-
-.. toctree::
-   :caption: Software
-   :maxdepth: 2
-   :numbered:
-
-   software/fundamentals
 
 .. _references:
 

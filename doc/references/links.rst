@@ -53,6 +53,10 @@ General
 
    * Comprehensive blog-style website with examples, guides, tips, etc.
 
+#. :doc:`tutorial/interpreter`
+
+   * The mechanism that runs :xref:`Python` code
+
 Projects
 ========
 
@@ -87,6 +91,11 @@ Types
 
    * Standard :xref:`Python` data structures
 
+#. :term:`Object <python:object>`
+
+   * The most basic :std:doc:`type <python:library/stdtypes>` upon which others
+     are based
+
 #. :std:ref:`python:tut-dictionaries`
 
    * A :std:doc:`type <python:library/stdtypes>` containing *key: value* pairs
@@ -94,6 +103,48 @@ Types
 #. :xref:`realpython-type-checking`
 
    * Guide to using correct :std:doc:`types <python:library/stdtypes>` in code
+
+#. :ref:`python:tut-numbers`
+
+   * Simple introduction to :py:obj:`python:int` and :py:obj:`python:float`
+
+#. :py:obj:`python:int`
+
+   * A :ref:`number <python:tut-numbers>` like ``2`` or ``128`` but not ``2.3``
+
+#. :py:obj:`python:float`
+
+   * A :ref:`number <python:tut-numbers>` like ``1.5`` or ``3.0`` but not ``3``
+
+#. :doc:`Decimals <python:library/decimal>`
+
+   * A precise way to represent things like :xref:`money <money>`
+
+#. :doc:`python:tutorial/floatingpoint`
+
+   * When to use :doc:`decimals <python:library/decimal>` instead of
+     :py:obj:`floats <python:float>`
+
+Control flow
+============
+
+#. :ref:`Functions <python:tut-functions>`
+
+   * Specified processes that can act on :term:`arguments <python:argument>`
+
+#. :ref:`python:tut-defaultargs`
+
+   * Values that must be passed to a :ref:`function <python:tut-functions>`
+
+#. :ref:`python:tut-keywordargs`
+
+   * Values that may be (but do not need to be) passed to a
+     :ref:`function <python:tut-functions>`
+
+#. :term:`Argument <python:argument>`
+
+   * Concise definition for both :ref:`positional <python:tut-defaultargs>` and
+     :ref:`keyword <python:tut-keywordargs>` styles
 
 Classes
 =======
@@ -106,6 +157,10 @@ Classes
 
    * Syntax and instance concepts, like ``__init__()``
 
+#. :term:`Attributes <python:attribute>`
+
+   * Accessed via dotted notation: ``big_thing.small_attribute``
+
 #. :ref:`python:tut-scopes`
 
    * Domains of association
@@ -115,6 +170,14 @@ Classes
    * :ref:`Attributes <python:tut-scopes>` of a
      :ref:`class <python:tut-classes>` that have
      different :ref:`scopes <python:tut-scopes>`
+
+#. :py:class:`python:property`
+
+   * A special :term:`python:attribute` of a :ref:`class <python:tut-classes>`
+     which can be a function of
+     :ref:`instance variables <python:tut-class-and-instance-variables>`
+   * :py:attr:`AAAAAA.ledger.Transaction.per_share_amount` is a
+     :py:class:`python:property`
 
 Environments
 ============

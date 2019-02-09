@@ -190,6 +190,7 @@ functionality and several are used in :term:`AAAAAA`
    :ref:`References extension configuration <sublime-with-sphinx:use the external links extension>`, "
    :std:doc:`Extension <sphinx:usage/extensions/index>` installation and
    configuration"
+   :std:doc:`conf.py <sphinx:usage/configuration>`, Configuration settings
 
 .. _tools-restructured-text:
 

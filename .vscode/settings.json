@@ -53,6 +53,8 @@
     // Linting
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
+    // ``:`` errors incurred from mypy annotations
+    "python.linting.pep8Args": ["--ignore=E701"],
     // Disable errors about literal carriage returns
     "restructuredtext.linter.extraArgs": [
         "--ignore D002",

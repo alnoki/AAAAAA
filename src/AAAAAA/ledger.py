@@ -1,10 +1,6 @@
-"""Includes classes and functions related to ledger-style data."""
-
 import datetime
 import decimal
 from typing import Set, Optional
-
-from .utilities import check_object
 
 
 class Transaction:
@@ -26,42 +22,12 @@ class Transaction:
     description : :obj:`str` or :obj:`None`
         A description, typically provided by a :xref:`brokerage <brokerage>`
     kinds : :obj:`set` of :obj:`string`
-        Allowed kinds
+        Allowed kinds of :xref:`transactions <finance-transaction>`
 
     """
 
     kinds: Set[int] = set(['Bank transfer', 'Buy', 'Dividends', 'Fees',
                            'Sell'])
-
-    def _check_instance_args(self, when, total_amount, kind, symbol,
-                             num_shares, description):
-        """Checks positional & keyword arg types/values for __init__"""
-
-        # use when.__name__ instead of 'when'?
-
-        check_object('types', (  # Positional arg types
-            (when, (datetime.date,), 'when'),
-            (total_amount, (decimal.Decimal, int), 'total_amount'),
-            (kind, (str,), 'kind'),))
-        check_object('values', (  # Positional arg values
-            (total_amount < 0, "total_amount negative"),
-            (kind not in kinds, "kind"),))
-        check_object('types', (  # Keyword arg types
-            (symbol, (str, None), 'symbol'),
-            (num_shares, (int, None), 'num_shares'),
-            (description, (str, None), 'description'),))
-        check_object('values', (  # Keyword arg values
-            (symbol is not None and (len(symbol) == 0 or symbol.isspace()),
-                "blank symbol"),
-            (kind == 'Bank transfer' and symbol is not None,
-                "bank transfer has symbol"),
-            (kind != 'Bank transfer' and symbol is None,
-                "symbol missing"),
-            (symbol is None and num_shares is not None,
-                "num_shares should be None"),
-            (symbol is not None and num_shares is None, "num_shares missing"),
-            (num_shares is not None and num_shares <= 0,
-                "non-positive num_shares"),))
 
     def __init__(self,
                  when: datetime.date,
@@ -71,15 +37,25 @@ class Transaction:
                  num_shares: Optional[int] = None,
                  description: Optional[str] = None) -> None:
 
-        try:  # Check input validity before assignment
-            self._check_instance_args(when, total_amount, kind, symbol,
-                                      num_shares, description)
-        except (TypeError, ValueError) as e:
-            raise e
-        else:  # Create an object if data is valid
-            self.when = when
-            self.total_amount = total_amount
-            self.kind = kind
-            self.symbol = symbol
-            self.num_shares = num_shares
-            self.description = description
+        self.when = when
+        self.total_amount = total_amount
+        self.kind = kind
+        self.symbol = symbol
+        self.num_shares = num_shares
+        self.description = description
+
+    @property
+    def per_share_amount(self) -> Optional[decimal.Decimal]:
+        """ :obj:`decimal.Decimal` or :obj:`None`:
+
+        The amount of :xref:`money <money>` associated with each
+        :xref:`share <finance-share>`
+
+        Only defined if
+        :py:class:`~AAAAAA.ledger.Transaction.num_shares` is
+        defined and is nonzero
+
+        """
+        if self.num_shares is None or self.num_shares == 0:
+            return
+        return self.total_amount / self.num_shares
