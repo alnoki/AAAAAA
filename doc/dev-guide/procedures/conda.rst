@@ -115,8 +115,8 @@ Installing AAAAAA for testing
 
 Per :std:doc:`pytest integration practices <pytest:goodpractices>`:
 
-#. From inside the :ref:`AAAAAA project directory <concepts-project-dir-tree>`, use
-   :term:`a6` from inside the
+#. From inside the :ref:`AAAAAA project directory <concepts-project-dir-tree>`,
+   use :term:`a6` from inside the
    :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
@@ -136,7 +136,7 @@ Using a new package
    #. The :ref:`a6.yml file <concepts-project-dir-tree>`
    #. The instructions for :ref:`creating a6 <conda-create-a6>`
    #. An installation step somewhere in the
-      :ref:`developer setup <setup-dev-environment>`
+      :ref:`developer setup <dev-env-intro>`
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
 #. :std:doc:`Install <conda:commands/install>` the desired

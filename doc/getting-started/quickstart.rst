@@ -1,16 +1,14 @@
 .. 5333f1a
 
-.. _setup-quickstart:
+.. _quickstart:
 
 
 ###########
 Quick start
 ###########
 
-If you just want to try out some basic :term:`AAAAAA` functionality, then
-follow the below steps. Afterwards, if you want to re-create the development
-environment that :xref:`alnoki <alnoki-repos>` uses, there are some additional
-steps for you on the following pages
+If you want to try out some basic :term:`AAAAAA` functionality, then
+follow the below steps:
 
 #. :std:doc:`Download Miniconda <conda:user-guide/install/download>` (a variant
    of :xref:`Anaconda`), which will give you quick access to :xref:`Python` if

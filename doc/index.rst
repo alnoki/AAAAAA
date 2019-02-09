@@ -105,39 +105,32 @@ Indices and tables
 * :ref:`search`
 
 .. toctree::
-   :caption: Setup
+   :caption: Getting started
    :maxdepth: 2
    :numbered:
 
-   setup/quickstart
-   setup/developer
-   setup/concepts
+   getting-started/quickstart
+   getting-started/what-next
+   getting-started/references/index
+
 
 .. toctree::
    :caption: User guide
    :maxdepth: 2
    :numbered:
 
+   user-guide/index
    user-guide/fundamentals
    user-guide/versions
 
 .. toctree::
-   :caption: Procedures
+   :caption: Developer guide
    :maxdepth: 2
    :numbered:
 
-   procedures/conda
-   procedures/git
-   procedures/pytest
-   procedures/sphinx
-   procedures/writing
+   dev-guide/environment/index
+   dev-guide/concepts/index
+   dev-guide/procedures/index
 
-.. _references:
 
-.. toctree::
-   :caption: References
-   :maxdepth: -1
-   :numbered:
 
-   references/links
-   references/books

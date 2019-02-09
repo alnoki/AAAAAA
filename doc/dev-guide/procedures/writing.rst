@@ -38,7 +38,8 @@ Maximizing screen estate
 Creating a directory tree
 *************************
 
-Adapted from :xref:`directory tree sample code <print-dir-tree>`:
+Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
+:ref:`AAAAAA project tree <concepts-project-dir-tree>`:
 
 #. Use the :ref:`VS Code command palette <tools-vs-code>` to select
    :guilabel:`File: New Untitled File`
@@ -92,14 +93,14 @@ Documenting a new topic
    Avoid creating identical documentation in several places that must be
    multiply maintained
 
-.. _writing-proofreading:
+.. _writing-proofread:
 
 
 **************************
 Proofreading documentation
 **************************
 
-.. _writing-proofreading-new:
+.. _writing-proofread-new:
 
 New documents
 =============
@@ -147,8 +148,8 @@ file in question:
    file: :guilabel:`GitLens: Show File History`
 #. The :ref:`SHA-1 tag <concepts-documentation-example>` at the top of the file
    should be associated with the second-most-recent :ref:`commit <tools-git>`,
-   because the :ref:`proofreading procedures <writing-proofreading>` always
-   look one revision back
+   because the :ref:`proofreading procedures <writing-proofread>` always look
+   one revision back
 
    #. If this is the case, simply hit :kbd:`Esc` and continue through this
       procedure
@@ -163,8 +164,8 @@ file in question:
       #. Then, continue through this procedure
 
 #. Open a build and follow the steps for
-   :ref:`proofreading new documents <writing-proofreading-new>`, but only
-   review *changes* to the document:
+   :ref:`proofreading new documents <writing-proofread-new>`, but only review
+   *changes* to the document:
 
       * Use the :ref:`VS Code command palette <tools-vs-code>` to select
         :guilabel:`Move to Next Change`

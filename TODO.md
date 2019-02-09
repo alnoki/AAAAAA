@@ -13,6 +13,7 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Push with tags
 1. Say make linkcheck
 1. Then proofread
+1. Verify python -msphinx.ext.intersphinx _build/html/objects.inv
 
 ## Starting a new version
 1. Need to immediately start a dev/0.3.0 branch to avoid 0.3.0 tag
@@ -24,6 +25,12 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. https://softwareengineering.stackexchange.com/questions/230438/in-git-is-it-a-bad-idea-to-create-a-tag-with-the-same-name-as-a-deleted-branch
    1. Then can do git push tag
 1. Need to update the "active versions" on readthedocs
+
+##
+1. Is module index still broken?
+
+## Examples page
+1. Tip to open the nb viewer
 
 ## Proofreading procedures
 1. Should make version update procedures first so they can be pointed to?

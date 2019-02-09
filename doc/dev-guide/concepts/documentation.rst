@@ -24,6 +24,12 @@ Documentation
 Sphinx
 ******
 
+.. note::
+
+   The :ref:`Tools: Sphinx <tools-sphinx>` section explains how
+   :ref:`Sphinx <tools-sphinx>` works, but this is an elaboration of the
+   specific components in :term:`AAAAAA`
+
 Documentation structure
 =======================
 
@@ -133,8 +139,8 @@ Simple example
 ==============
 
 .. note::
-   Per the :ref:`proofreading procedures <writing-proofreading>`, there should
-   be a :std:doc:`reST comment <usage/restructuredtext/basics>` with
+   Per the :ref:`proofreading procedures <writing-proofread>`, there should be
+   a :std:doc:`reST comment <usage/restructuredtext/basics>` with
    a :ref:`SHA-1 <tools-git>` tag at the top of
    :ref:`.rst <tools-restructured-text>` files that have been proofread
 
@@ -185,6 +191,12 @@ Simple example
 *****************
 Jupyter Notebooks
 *****************
+
+.. note::
+
+   The :ref:`Tools: Jupyter <tools-jupyter>` section explains how
+   :ref:`Jupyter <tools-Jupyter>` works, but is an elaboration of the specific
+   components in :term:`AAAAAA`
 
 .. code-block:: none
 

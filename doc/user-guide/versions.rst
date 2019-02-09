@@ -1,3 +1,4 @@
+
 .. _version-list:
 
 ############
@@ -8,6 +9,8 @@ Below is a list of versions of :term:`AAAAAA`, numbered according to
 :xref:`semantic versioning standards <semver>`. Version updates are written in
 a way that :xref:`tells the codebase what to do <commit-conventions>`, like
 :ref:`commits <git-committing>`
+
+* 0.3.0
 
 * 0.2.0
 

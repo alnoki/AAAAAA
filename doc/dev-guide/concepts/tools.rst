@@ -44,7 +44,7 @@ A list of common :term:`AAAAAA` usage examples is at
    :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
    :xref:`Python`"
 
-The :ref:`developer setup <setup-dev-environment>` describes how to
+The :ref:`developer setup <dev-env-intro>` describes how to
 :std:doc:`create <conda:commands/create>` a new
 :ref:`conda environment <conda:concept-conda-env>`, called :term:`a6`:
 
@@ -58,7 +58,7 @@ The :ref:`developer setup <setup-dev-environment>` describes how to
       .. tip::
 
          :ref:`conda-import-a6` requires less commands than the
-         :ref:`developer setup <setup-dev-environment>`
+         :ref:`developer setup <dev-env-intro>`
 
       .. _concepts-packages-table:
 
@@ -68,40 +68,40 @@ The :ref:`developer setup <setup-dev-environment>` describes how to
          :align: center
 
          :xref:`Python`, Code creation, "
-         :ref:`Documenting <setup-documenting>`", "
+         :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
          :std:doc:`conda <conda:index>`, Package management, "
-         :ref:`Documenting <setup-documenting>`", "
+         :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
          :pep:`8`, Check code style, "
-         :ref:`Documenting <setup-documenting>`","
+         :ref:`Documenting <dev-env-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
          :std:doc:`Sphinx <sphinx:intro>` , Create documentation, "
-         :ref:`Documenting <setup-documenting>`","
+         :ref:`Documenting <dev-env-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
          :std:doc:`RTD Sphinx Theme <rtd-sphinx-theme:index>`, "Documentation
          appearance", "
-         :ref:`Documenting <setup-documenting>`", "
+         :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
          :xref:`Doc8 <Doc8>`, Check documentation syntax, "
-         :ref:`Documenting <setup-documenting>`", :xref:`conda-forge`
+         :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
          :xref:`Jupyter Notebook <Jupyter>`, Interactive analysis, "
-         :ref:`setup-analyzing`","
+         :ref:`dev-env-analyzing`","
          :ref:`conda <conda:channels-glossary>`"
          :std:doc:`Notebook Extensions <nb-extensions:index>`, "Extra analysis
-         tools", :ref:`setup-analyzing`, :xref:`conda-forge`
+         tools", :ref:`dev-env-analyzing`, :xref:`conda-forge`
          :std:doc:`NumPy <numpy:about>`, "Number processing", "
-         :ref:`setup-analyzing`", :ref:`conda <conda:channels-glossary>`
+         :ref:`dev-env-analyzing`", :ref:`conda <conda:channels-glossary>`
          :std:doc:`Matplotlib <matplotlib:index>`, "Data plotting", "
-         :ref:`setup-analyzing`", "
+         :ref:`dev-env-analyzing`", "
          :ref:`conda <conda:channels-glossary>`"
          :std:doc:`pandas <pandas:index>`, "Dataset management", "
-         :ref:`setup-analyzing`", "
+         :ref:`dev-env-analyzing`", "
          :ref:`conda <conda:channels-glossary>`"
          :std:doc:`pip <python:installing/index>`, Configuring test code, "
-         :ref:`setup-testing`", :ref:`conda <conda:channels-glossary>`
+         :ref:`dev-env-testing`", :ref:`conda <conda:channels-glossary>`
          :std:doc:`pytest <pytest:index>`, Code testing, "
-         :ref:`setup-testing`", "
+         :ref:`dev-env-testing`", "
          :ref:`conda <conda:channels-glossary>`"
 
 .. _tools-git:
@@ -331,8 +331,8 @@ develop, to document, and to test code
 
 The :xref:`AAAAAA-repo` comes with a collection of
 :xref:`VS-Code-settings` that will automatically configure most of your
-workspace. If you completed the :ref:`developer setup <setup-dev-environment>`,
-then all the relevant settings should already be installed!
+workspace. If you completed the :ref:`developer setup <dev-env-intro>`, then
+all the relevant settings should already be installed!
 
 You can also download the :xref:`VS Code Insider Edition <VS-Code-insiders>`,
 which has all the latest features and bug fixes, although it may not be as
@@ -344,16 +344,16 @@ stable as the most recent official release
    :align: center
 
    :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate code, "
-   :ref:`Documenting <setup-documenting>`"
+   :ref:`Documenting <dev-env-documenting>`"
    :xref:`Python <VS-Code-Python-ext>`, Developing :xref:`Python`, "
-   :ref:`Documenting <setup-documenting>`"
+   :ref:`Documenting <dev-env-documenting>`"
    :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "Editing
    :std:doc:`reST <sphinx:usage/restructuredtext/basics>` ", "
-   :ref:`Documenting <setup-documenting>`"
+   :ref:`Documenting <dev-env-documenting>`"
    :xref:`GitLens <GitLens>`, "Advanced :xref:`Git <git-manual>`
-   functionality", :ref:`Documenting <setup-documenting>`
+   functionality", :ref:`Documenting <dev-env-documenting>`
    :xref:`Python Test Explorer <Test-explorer-UI>`, "Testing with
-   :std:doc:`pytest <pytest:index>`", :ref:`Testing <setup-testing>`
+   :std:doc:`pytest <pytest:index>`", :ref:`Testing <dev-env-testing>`
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"

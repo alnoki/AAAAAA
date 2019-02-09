@@ -1,11 +1,11 @@
 .. 5333f1a
 
-.. _setup-dev-environment:
+.. _dev-env-intro:
 
 
-##############
-For developers
-##############
+#################
+Environment setup
+#################
 
 The steps in this section will enable you to reproduce the environment that
 :xref:`alnoki <alnoki-repos>` uses to create :term:`AAAAAA`, which is
@@ -14,7 +14,7 @@ completely :xref:`open-source`
 Before you begin, you will need
 :std:doc:`Miniconda <conda:user-guide/install/download>`, which will
 give you access to :xref:`Python` and :xref:`Anaconda`. If you participated in
-the :ref:`quick start <setup-quickstart>` guide, then you should already have
+the :ref:`quick start <quickstart>` guide, then you should already have
 :std:doc:`Miniconda <conda:user-guide/install/download>`
 
 Any configurations, settings, and tools that you might need are described
@@ -34,7 +34,7 @@ software and familiarize you with developing :term:`AAAAAA`
 
 .. toctree::
    :caption: Developer setup
-   :maxdepth: 2
+   :maxdepth: -1
 
    documenting
    analyzing

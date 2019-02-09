@@ -308,7 +308,7 @@ Branching
 
    .. code-block:: bash
 
-      git push -u
+      git push -u origin dev/0.3.0
 
 .. _git-change-commit-history:
 

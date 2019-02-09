@@ -7,6 +7,14 @@
 Code
 ####
 
+.. note::
+
+   The :ref:`Tools: Anaconda <tools-anaconda>` section explains how
+   :ref:`Python and it associated packages <tools-anaconda>` work and the
+   :ref:`user guide <guide-intro>` is a walkthrough of software features, but
+   this is an elaboration of the specific components in :term:`AAAAAA` from a
+   developer's perspective
+
 
 *********
 Structure
