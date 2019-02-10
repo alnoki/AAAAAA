@@ -1,9 +1,17 @@
 .. 5863379
 
+.. _pytest-procedures:
 
 ######
 pytest
 ######
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :ref:`tools-pytest`, :term:`AAAAAA` conceptual explanation
+   :std:doc:`pytest:index`, Official documentation
 
 
 *****************

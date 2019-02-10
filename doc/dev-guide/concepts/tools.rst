@@ -31,9 +31,6 @@ checks dependencies and maintains compatibility between
 :ref:`conda:concept-conda-package` can be downloaded from
 different :ref:`conda channels <conda:channels-glossary>`
 
-A list of common :term:`AAAAAA` usage examples is at
-:ref:`conda procedures <conda-procedures>`
-
 .. csv-table:: Select references
    :header: "Reference", "Topic"
    :align: center
@@ -43,6 +40,7 @@ A list of common :term:`AAAAAA` usage examples is at
    :std:doc:`conda <conda:index>` commands"
    :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
    :xref:`Python`"
+   :ref:`Conda procedures <conda-procedures>`, :term:`AAAAAA` usage
 
 The :ref:`developer setup <dev-env-intro>` describes how to
 :std:doc:`create <conda:commands/create>` a new
@@ -126,9 +124,6 @@ independent sequences of :xref:`commits <git-commit>`, are used to manage
 
 :xref:`GitHub` is a free service that hosts the :xref:`AAAAAA-repo`
 
-A list of common :term:`AAAAAA` usage examples is at
-:ref:`Git procedures <git-procedures>`
-
 There are several command-line style text navigators that go along with
 :xref:`Git <git-manual>`
 
@@ -148,6 +143,7 @@ There are several command-line style text navigators that go along with
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`git-commit-guidelines`, Contribution guidelines
+   :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
 
 .. _tools-sphinx:
 
@@ -167,9 +163,6 @@ linearly navigable structure that ensures access to all pages of documentation.
 :term:`AAAAAA` are documented using the
 :std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides
 a mobile-friendly viewing experience with a modern look
-
-A list of common :term:`AAAAAA` usage examples is at
-:ref:`Sphinx procedures <sphinx-procedures>`
 
 :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>` enable additional
 functionality and several are used in :term:`AAAAAA`
@@ -197,6 +190,7 @@ functionality and several are used in :term:`AAAAAA`
    :std:doc:`Extension <sphinx:usage/extensions/index>` installation and
    configuration"
    :std:doc:`conf.py <sphinx:usage/configuration>`, Configuration settings
+   :ref:`Sphinx procedures <sphinx-procedures>`, :term:`AAAAAA` usage
 
 .. _tools-restructured-text:
 
@@ -367,6 +361,8 @@ stable as the most recent official release
    :xref:`VS Code <VS-Code>`"
    :xref:`VS-Code-unit-testing`, ":std:doc:`pytest <pytest:index>` integration
    setup"
+   :xref:`Markdown`, For :ref:`planning version features <versioning-td3>`
+   :ref:`Writing procedures <writing-procedures>`, :term:`AAAAAA` usage
 
 .. rubric:: Footnotes
 
@@ -395,9 +391,10 @@ and additional functionality is provided by the
    :header: "Reference", "Topic"
    :align: center
 
-   :std:doc:`pytest <pytest:index>`, Official documentation
+   :doc:`pytest <pytest:index>`, Official documentation
    :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
    :std:doc:`pytest tutorials <pytest:contents>`, Official tutorials
+   :ref:`pytest procedures <pytest-procedures>`, :term:`AAAAAA` usage
 
 
 .. _tools-jupyter:

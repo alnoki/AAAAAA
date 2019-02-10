@@ -1,74 +1,29 @@
 # 0.3.0 Website restructuring
 
 ## New version pushing
-1. Then proofread
-1. Update the read the docs checkbox for the project
-1. Need to update the "active versions" on readthedocs
+1. Replace :std: -> :
+1. Proofread all docs
+1. Make 0.3.0 active so you can view it on RTD when doing procedures
 
-## Proofreading procedures
-1. Should make version update procedures first so they can be pointed to?
-   1. Just start writing, you'll get it linked eventually
-      1. Could make a stub document
-1. When making a new document, reference to the last SHA-1
-1. Current procedure for updating a document is inaccurate
-   1. Shouldn't reference to last SHA-1 in log
-   1. Should reference previous SHA-1 for when the document was changed
-      1. Can get this from VS Code
-1. Makes more sense to proofread the diff right before a version update
-   1. Compare the diff on changed documents versus the previous version
-   1. Then, should tag top of file with: .. 0.2.0 etc.
-   1. Re-do all proofreading for 0.2.0 release and tag appropriately
-   1. Also need to change the description in the concepts-documentation
-      1. Shows a SHA-1 at the top of the file
-      1. Also do this in the proofreading an original file procedure
-1. Need to check the file diff since the last version commit
-   1. Consider if the file has been added
-      1. Then proofread the whole file
-   1. If the file has been modified
-      1. Proofread just the diff
-   1. If the file has been moved and modified
-      1. Need to do the diff against the file before it was moved
-         1. Because a moved file shows up as a complete "add"
-1. :std:doc: -> :doc:, same with :ref: should be on documentation page
-   1. Link to sphinx saying the std isn't needed
+## If BibTex works
+1. Document the extension at Sphinx tools page
+1. Create a "writing" procedure
+1. https://sphinxcontrib-bibtex.readthedocs.io/en/latest/index.html
+1. https://www.ottobib.com/
+1. Mention the tool in the books page
+1. Follow procedure to add to a conda package
 
 ## Versioning
-1. Top-down to-do task deferral
-   1. Punt ## when too many appear
-   1. :guilabel:`View: Open View` + :guilabel:`Outline
-1. Should be in concepts section
-   1. Link to procedures page for versioning
-   1. Keep pushing new functionalities in subsequent versions
-1. Include link to https://embeddedartistry.com/blog/2017/12/7/start-using-semantic-versioning-to-give-your-version-numbers-meaning
-1. https://semver.org/
-1. Add a version page/release notes page with
-1. Add a versioning procedures page
-   1. Can also use this when releasing packages
-1. Start next commit at 0.2.0
-   1. Listed on release page as a beta
-1. Verify can load various release versions on the Sphinx website
-   1. After releasing, always increment minor version and list as beta
-1. Should go through conf.py and figure out what is going on
-   1. Can explain in concepts section what defaults are, etc.
-      1. Talk about how xref is used, folder it is in, etc.
-   1. Update license
-   1. Update copyright year
-1. yaml should freeze at last release and then update each release
-1. Immediately checkout a branch on the next version number
-1. SHA-1 for all docs before a minor rev?
-   1. See all docs that have been changed since the last version
-   1. Verify individually their proofread status
-1. make linkcheck to verify all are correct
+1. Cite email OHIO in task management
 1. https://docs.readthedocs.io/en/latest/versions.html
+1. https://docs.readthedocs.io/en/latest/webhooks.html
 1. https://git-scm.com/book/en/v2/Git-Basics-Tagging
    1. git tag v0.1-lw
    1. Need to tag the release
       1. Put two tags on master and see what happens?
       1. Use v0.2.0 and v0.1.0?
          1. Or just 0.1.0?
-1. https://docs.readthedocs.io/en/latest/webhooks.html
    1. On settings for AAAAAA on GitHub, select tags too
-1. Don't use lightweight tags because of hyphen
 
 ## Zen
 1. Spirit of alnoki's apps on Zen page
@@ -92,6 +47,7 @@
    1. "That therefore, we, the coders, are foreigners, seeking citizenship in the computer’s locale"
 1. https://realpython.com/interview-corey-schafer/
    1. I believe the most important lesson I’ve learned is that you should make content for yourself
+   1. Use "additional body elements epigraph from rest primer
 
 ## toctree structure
 1. quickstart
@@ -108,6 +64,9 @@
 
 ## Syntax/terminology
 1. :std:doc: should just be :doc: per sphinx roles
+      1.Search all for :std: and replace with :
+         1. Do this when proofreading to maximize line width
+   1. Find all for std doc and std ref
 1. Link to https://en.wikipedia.org/wiki/Command-line_interface
    1. Find all for command line and replace with :xref:
 1. Capitalization should mention that proper nouns should be capitalized
@@ -156,6 +115,9 @@
 
 ## Package deployment
 1. PEP 328
+1. yaml should freeze at last release and then update each release
+   1. Sort of depends on Travis
+1. Update license
 1. https://stackoverflow.com/questions/448271/what-is-init-py-for
 1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
 1. Ship conda with the dependencies
@@ -164,7 +126,7 @@
          1. Link is in the floating point rampage
 1. Push to conda and create procedures as you go
 
-## Conf.py autodoc
+## Settings autodoc
 1. Need a conf.py part of documentation concepts
 1. Automodule conf.py and settings.json?
 
@@ -211,7 +173,7 @@
 1. :pep:`Type hint theory <483>`
    1. Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 1. :pep:`Variable annotations <527>`
-1. :std:doc:`Typing module <python:library/typing>`
+1. :doc:`Typing module <python:library/typing>`
 
 ## Robinhood integration
 1. Services setup
@@ -279,7 +241,7 @@
 
 # 1.1.0 BTMF
 
-# Main functionailty
+## Main functionailty
 1. Adds PARDAFA and BTMF versus CRSPTMT
 1. Cast a portfolio into a Pandas dataframe then plot
 1. ABC: Annualized BTMF coefficient
@@ -309,12 +271,8 @@
 1. See other investing references from urls on Google Drive
 
 ## Numerical analysis
-1. matplotlib sampledoc tutorial shows how to embed plots
-1. numpy codebasics tutorial videos
 1. https://web.stanford.edu/~schmit/cme193/
    1. has seaborn and pandas examples
    1. Predictor of survivor on Titanic, powerful statistical modeling tools
 1. [RealPython.com Pandas optimization](https://realpython.com/fast-flexible-pandas/)
-1. Review references
-1. Pandas/matplotlib/numpy tutorial videos on iPad while getting ready
 1. Other references from Python training logs on Google Drive

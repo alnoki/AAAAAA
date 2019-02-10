@@ -121,7 +121,7 @@ Indices and tables
 
    user-guide/index
    user-guide/fundamentals
-   user-guide/versions
+   user-guide/version-list
 
 .. toctree::
    :caption: Developer guide

@@ -768,18 +768,22 @@ Syntax
 
    * Syntax for creating various table styles
 
-#. :std:doc:`Role <sphinx:usage/restructuredtext/roles>`
+#. :doc:`Role <sphinx:usage/restructuredtext/roles>`
 
    * Element that marks a piece of text, usually in-line
 
-#. :std:doc:`Directive <sphinx:usage/restructuredtext/directives>`
+#. :doc:`Directive <sphinx:usage/restructuredtext/directives>`
 
    * Element that marks a block of text
 
-#. :ref:`ref-role`
+#. :ref:`Label role <ref-role>`
 
-   * :std:doc:`Role <sphinx:usage/restructuredtext/roles>` syntax to link to
+   * :doc:`Role <sphinx:usage/restructuredtext/roles>` syntax to link to
      arbritrary documentation components
+
+#. :xref:`admonition`
+
+   * A special badge of text
 
 Engine-agnostic tools
 =====================

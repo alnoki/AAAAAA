@@ -5,6 +5,14 @@
 Version list
 ############
 
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`semver`, Numbering standards
+   :xref:`git-commit-guidelines`, Long version message guidelines
+   :ref:`versioning-procedures`, :term:`AAAAAA` usage
+
 Below is a list of versions of :term:`AAAAAA`, numbered according to
 :xref:`semantic versioning standards <semver>`. Version updates are written in
 a way that :xref:`tells the codebase what to do <commit-conventions>`, like
@@ -13,7 +21,7 @@ a way that :xref:`tells the codebase what to do <commit-conventions>`, like
 * 0.3.0
 
    * Restructure :ref:`toctrees <tools-sphinx>`
-   * Add :ref:`Versioning procedures <versioning-procedures>`
+   * Add :ref:`versioning procedures <versioning-procedures>`
 
 * 0.2.0
 

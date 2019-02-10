@@ -1,9 +1,16 @@
 .. 41bbe32
 
+.. _writing-procedures:
 
 #######
 Writing
 #######
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :ref:`tools-vs-code`, :term:`AAAAAA` conceptual explanation
 
 .. contents:: Contents
    :local:
@@ -100,6 +107,28 @@ Documenting a new topic
 Proofreading documentation
 **************************
 
+.. _writing-isolate-changes:
+
+Isolating changes
+=================
+
+This is typically done right before
+:ref:`releasing a version <versioning-releasing>`
+
+#. Use the :ref:`VS Code command palette <tools-vs-code>` to
+   :guilabel:`GitLens: Compare Working Tree with Branch or Tag...`
+#. Select the :ref:`tag <git-tagging>` of the relevant
+   :ref:`version <version-list>` to compare against
+#. Proofread :ref:`new documents <writing-proofread-new>` and
+   :ref:`changed documents <writing-proofread-changed>`
+
+.. tip::
+
+   Even if you have moved a document, :ref:`GitLens <tools-vs-code>` is often
+   able to identify that it is in a new :xref:`directory <directory>` and will
+   only display changes to the document (rather than classifying the document
+   as new)
+
 .. _writing-proofread-new:
 
 New documents
@@ -121,15 +150,13 @@ things to watch out for
    #. Verify each link in the section by clicking on it
 
 #. Do a :ref:`linkcheck <sphinx-checking-links>`
-#. When done proofreading an :ref:`.rst file <tools-restructured-text>`, use
-   the :ref:`SHA-1 <tools-git>` from a
-   :ref:`oneline commit log <git-view-project-log>` to tag the top of
-   the :ref:`.rst file <tools-restructured-text>` with a
-   :std:doc:`comment <usage/restructuredtext/basics>`:
+#. When done proofreading an :ref:`.rst file <tools-restructured-text>`, tag
+   the top with a :doc:`comment <usage/restructuredtext/basics>` that matches
+   the :ref:`current development branch version number <versioning-start-new>`
 
    .. code-block:: rest
 
-      .. f00cafe
+      .. 0.3.0
 
       .. _doc-label:
 
@@ -138,32 +165,30 @@ things to watch out for
       Document header
       ###############
 
+.. _writing-proofread-changed:
+
 Changes to a document
 =====================
 
-After you are done making changes to the :ref:`reST <tools-restructured-text>`
-file in question:
-
 #. Use :ref:`GitLens <tools-vs-code>` to inspect the history of the
    file: :guilabel:`GitLens: Show File History`
-#. The :ref:`SHA-1 tag <concepts-documentation-example>` at the top of the file
-   should be associated with the second-most-recent :ref:`commit <tools-git>`,
-   because the :ref:`proofreading procedures <writing-proofread>` always look
-   one revision back
+#. The :ref:`version comment <concepts-documentation-example>` at the top of
+   the file should identify the most-recent :ref:`version <version-list>` for
+   which the document was reviewed. Thus:
 
-   #. If this is the case, simply hit :kbd:`Esc` and continue through this
-      procedure
-   #. If this is not the case, use the :guilabel:`GitLens: Show File History`
-      view to highlight the :ref:`commit <tools-git>` that has the same
-      :ref:`SHA-1 tag <concepts-documentation-example>` as the
-      :std:doc:`comment <usage/restructuredtext/basics>` at the top of the
-      current working file and hit:
+   #. Use the :guilabel:`GitLens: Show File History`
+      view to :guilabel:`Choose from Branch or Tag History...`
+   #. Select the :ref:`tag <git-tagging>` that corresponds to the
+      :ref:`version comment <concepts-documentation-example>`
+   #. Select the first :ref:`commit <tools-git>` in the list
+   #. :guilabel:`Open Changes with Working File`
 
-      #. :kbd:`return`
-      #. :guilabel:`Open Changes with Working File`
-      #. Then, continue through this procedure
+   .. tip::
 
-#. Open a build and follow the steps for
+      If there is a warning that the document did not exist for that
+      :ref:`tag <git-tagging>`, then the document was probably moved
+
+#. Follow the steps for
    :ref:`proofreading new documents <writing-proofread-new>`, but only review
    *changes* to the document:
 

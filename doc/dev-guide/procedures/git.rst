@@ -11,6 +11,7 @@ Git
    :header: "Reference", "Topic"
    :align: center
 
+   :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`commit-conventions`, Tell codebase what to do
@@ -239,8 +240,14 @@ Tagging
 
 #. :ref:`View the project log <git-view-project-log>` to verify the
    :xref:`commit <git-commit>` in question
-#. Use the :ref:`VS Code integrated terminal <tools-vs-code>` to create an
-   :xref:`annotated tag <git-tag>`:
+#. Use the :ref:`VS Code integrated terminal <tools-vs-code>` to view existing
+   :xref:`tags <git-tag>`
+
+   .. code-block:: bash
+
+      git tag
+
+#. Create an :xref:`annotated tag <git-tag>`:
 
    .. code-block:: bash
 

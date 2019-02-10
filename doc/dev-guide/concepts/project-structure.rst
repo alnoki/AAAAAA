@@ -28,7 +28,6 @@ Some select demonstrative contents of the :xref:`AAAAAA-repo`:
            AAAAAA/
                __init__.py
                ledger.py
-               utilities.py
        test/
            test_ledger.py
            test_utilities.py
@@ -41,7 +40,6 @@ Some select demonstrative contents of the :xref:`AAAAAA-repo`:
                ledger.ipynb
            src/
                ledger.ipynb
-               utilities.ipynb
        .vscode/
            settings.json
        .gitignore
@@ -64,4 +62,4 @@ Some select demonstrative contents of the :xref:`AAAAAA-repo`:
    ``a6.yml`` , Specifies the :term:`a6 environment <a6>`
    ``setup.py`` , Configuration for :ref:`tools-pytest`
    ``README.md`` , Points to :term:`AAAAAA` homepage
-   ``TODO.md`` , Planned development tasks
+   ``TODO.md`` , Development :ref:`task planning <versioning-td3>`

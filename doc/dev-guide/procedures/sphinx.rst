@@ -11,10 +11,11 @@ Sphinx
    :header: "Reference", "Topic"
    :align: center
 
+   :ref:`tools-sphinx`, :term:`AAAAAA` conceptual explanation
    :xref:`Practical Sphinx presentation <Willing-Sphinx>`, "Common commands"
    :xref:`Project setup screencast <Yusuf-Sphinx-RTD>`, "How projects work"
-   :std:doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`, "
-   Official tutorial"
+   :doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`, "Official
+   tutorial"
 
 .. contents:: Contents
    :local:
@@ -209,12 +210,16 @@ Referencing external links
 
    * After this step, the link can be moved above the delimiter
      :ref:`comment <python:comments>` in
-     :std:doc:`conf.py <sphinx:usage/configuration>`
+     :ref:`conf.py <tools-sphinx>`
 
-.. Tip::
-   As long as links aren't put above the delimiter
-   :ref:`comments <python:comments>` until after they are put
-   into :ref:`links <references-links>`, links can be sorted in batches
+.. tip::
+
+   * As long as links aren't put above the delimiter
+     :ref:`comment <python:comments>` until after they are put
+     into :ref:`links <references-links>`, links can be sorted in batches
+   * If you put a link in documentation and in :ref:`links <references-links>`
+     first, you can bypass the delimiter :ref:`comment <python:comments>` when
+     adding to :ref:`conf.py <tools-sphinx>`
 
 .. _sphinx-checking-links:
 

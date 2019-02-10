@@ -71,8 +71,8 @@ Documentation structure
 
 .. _concepts-documentation-style:
 
-Style
-=====
+General style
+=============
 
 :term:`AAAAAA` adopt stylistic recommendations from common sources, with some
 particular emphases:
@@ -81,8 +81,8 @@ particular emphases:
    :header: "Reference", "Topic"
    :align: center
 
-   :std:doc:`Python Developer's Guide <py-dev-guide:documenting>`, "
-   General :ref:`reST <tools-restructured-text>` style guide"
+   :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "General
+   :ref:`reST <tools-restructured-text>` style guide"
    :xref:`Doc8`, ":ref:`Conda package <tools-anaconda>` to check
    :ref:`reST <tools-restructured-text>` style [#]_"
 
@@ -91,9 +91,12 @@ particular emphases:
 .. [#] Automatically runs via the :xref:`RST-preview-ext` for
    :ref:`tools-vs-code`
 
-General syntax
---------------
+Specific syntax
+---------------
 
+#. Nothing should be prefixed with ``:std:`` because components of the
+   :doc:`standard domain <sphinx:usage/restructuredtext/domains>` do not
+   require it
 #. :ref:`Labels <ref-role>` should be lowercase hyphenated, and should use
    similar categorical naming when possible:
 
@@ -109,16 +112,16 @@ General syntax
    * :ref:`Links <references-links>` are here
    * Here are some :ref:`links <references-links>`
 
-#. There should be non-link text between two different links so that the links
-   can clearly be differentiated:
+#. There should be regular text between two different links so that the
+   :ref:`links <references-links>` can clearly be differentiated:
 
    .. csv-table::
       :header: Yes, NO!!!
       :align: center
 
-      ":std:doc:`Extensions <sphinx:usage/extensions/index>` for
-      :std:doc:`Sphinx <sphinx:intro>`", ":std:doc:`Sphinx <sphinx:intro>`
-      :std:doc:`extensions <sphinx:usage/extensions/index>`"
+      ":doc:`Extensions <sphinx:usage/extensions/index>` for
+      :doc:`Sphinx <sphinx:intro>`", ":std:doc:`Sphinx <sphinx:intro>`
+      :doc:`extensions <sphinx:usage/extensions/index>`"
 
 Whitespace
 ----------
@@ -126,12 +129,15 @@ Whitespace
 #. Indent 3 spaces (especially for
    :xref:`nested lists <reST-list-indentation>`)
 #. Lines should be a maximum length of 79 characters, unless
-   :std:doc:`role content <sphinx:usage/restructuredtext/roles>` can't be
-   broken up (this is okay)
+   :doc:`role content <sphinx:usage/restructuredtext/roles>` can't be broken up
+   (this is okay)
 #. Use 2 lines of whitespace above anything that is
-   :std:doc:`overlined <py-dev-guide:documenting>`
+   :doc:`overlined <py-dev-guide:documenting>`
 #. Use a single, unescaped space before
-   :std:doc:`footnotes <sphinx:usage/restructuredtext/basics>`
+   :doc:`footnotes <sphinx:usage/restructuredtext/basics>`
+#. Use a blank line after the
+   :doc:`directive <sphinx:usage/restructuredtext/directives>` in an
+   :xref:`admonition <admonition>`
 
 .. _concepts-documentation-example:
 
@@ -139,14 +145,15 @@ Simple example
 ==============
 
 .. note::
+
    Per the :ref:`proofreading procedures <writing-proofread>`, there should be
-   a :std:doc:`reST comment <usage/restructuredtext/basics>` with
-   a :ref:`SHA-1 <tools-git>` tag at the top of
-   :ref:`.rst <tools-restructured-text>` files that have been proofread
+   a :doc:`reST comment <usage/restructuredtext/basics>` with a
+   :ref:`version number <version-list>` tag at the top of
+   :ref:`.rst <tools-restructured-text>` files
 
 .. code-block:: rest
 
-   .. f00cafe
+   .. 0.3.0
 
    .. _my-label:
 
@@ -172,7 +179,12 @@ Simple example
    Section title
    =============
 
-   Welcome to this section. No double overline needed here!
+   Welcome to this section. No double overline needed here! Let's talk about
+   :ref:`documentation <concepts-documentation>`
+
+   .. admonition:: How about this nice custom admonition?
+
+      Check out this blank line ^^
 
    Subsection title
    ----------------
@@ -183,6 +195,7 @@ Simple example
    .. [#] Footnote from the above section
 
 .. tip::
+
    The :ref:`.rst <tools-restructured-text>` files in :term:`AAAAAA` should
    clearly portray other relevant stylistic components. Look around in them for
    more examples

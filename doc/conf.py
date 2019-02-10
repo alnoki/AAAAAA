@@ -427,5 +427,7 @@ xref_links = {
     'fee': ('Fee', url['Wiki pg'] + 'Fee'),
     'bank': ('Bank', url['Wiki pg'] + 'Bank'),
     'semver': ("Semantic Versioning", 'https://semver.org/'),
+    'admonition': ('Admonition', url['docutils'] +
+                   'docs/ref/rst/directives.html#admonitions'),
     # New links below, sorted links above
     }

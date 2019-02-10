@@ -11,9 +11,9 @@ Conda
    :header: "Reference", "Topic"
    :align: center
 
+   :ref:`tools-anaconda`, :term:`AAAAAA` conceptual explanation
    :std:doc:`conda:user-guide/tasks/manage-environments`, "Official practical
    reference"
-   :ref:`tools-anaconda`, General information
 
 .. contents:: Contents
    :local:
