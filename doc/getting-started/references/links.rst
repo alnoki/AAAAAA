@@ -476,6 +476,10 @@ Core commands
 
    * Switch between :xref:`branches <git-branch>`
 
+#. :xref:`git-merge`
+
+   * Combine :xref:`branches <git-branch>`
+
 Text manipulation
 =================
 

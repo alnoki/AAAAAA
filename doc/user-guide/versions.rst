@@ -12,6 +12,9 @@ a way that :xref:`tells the codebase what to do <commit-conventions>`, like
 
 * 0.3.0
 
+   * Restructure :ref:`toctrees <tools-sphinx>`
+   * Add :ref:`Versioning procedures <versioning-procedures>`
+
 * 0.2.0
 
    * Document :py:class:`AAAAAA.ledger.Transaction` with :ref:`tools-napoleon`

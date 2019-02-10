@@ -227,3 +227,16 @@ Checking links
    .. code-block:: bash
 
       make linkcheck
+
+.. _sphinx-update-labels:
+
+Updating labels
+===============
+
+#. With an :ref:`active build running <sphinx-building-documentation>`,
+   inspect :ref:`labels <ref-role>` using
+   :ref:`intersphinx <sphinx-intersphinx>` on ``_build/html/objects.inv``
+#. Verify the proper :ref:`label style <concepts-documentation-style>`
+#. Update any :ref:`labels <ref-role>` via the
+   :ref:`VS code command palette <tools-vs-code>`:
+   :guilabel:`Search: Replace in Files`

@@ -3,9 +3,9 @@
 .. _quickstart:
 
 
-###########
-Quick start
-###########
+##########
+Quickstart
+##########
 
 If you want to try out some basic :term:`AAAAAA` functionality, then
 follow the below steps:

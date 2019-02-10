@@ -358,6 +358,7 @@ xref_links = {
     'git-branch': ('git-branch', url['git-scm'] + 'docs/git-branch'),
     'git-tag': ('git-tag', url['git-scm'] + 'docs/git-tag'),
     'git-checkout': ('git-checkout', url['git-scm'] + 'docs/git-checkout'),
+    'git-merge': ('git-merge', url['git-scm'] + 'docs/git-merge'),
     'git-setup': ("Git setup", url['git-scm'] + 'book/en/v2/Getting-Started-'
                   'First-Time-Git-Setup'),
     'git-commit-guidelines':

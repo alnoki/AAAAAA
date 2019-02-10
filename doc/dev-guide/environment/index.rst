@@ -14,7 +14,7 @@ completely :xref:`open-source`
 Before you begin, you will need
 :std:doc:`Miniconda <conda:user-guide/install/download>`, which will
 give you access to :xref:`Python` and :xref:`Anaconda`. If you participated in
-the :ref:`quick start <quickstart>` guide, then you should already have
+the :ref:`quickstart <quickstart>` guide, then you should already have
 :std:doc:`Miniconda <conda:user-guide/install/download>`
 
 Any configurations, settings, and tools that you might need are described

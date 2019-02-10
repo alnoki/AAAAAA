@@ -262,7 +262,7 @@ the visual appearance of this website!
    :header: "Reference", "Topic"
    :align: center
 
-   :xref:`Quick start tutorial <Yusuf-Sphinx-RTD>`, "Starting a
+   :xref:`Quickstart tutorial <Yusuf-Sphinx-RTD>`, "Starting a
    :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
    project"
    :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample

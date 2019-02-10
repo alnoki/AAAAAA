@@ -14,6 +14,7 @@ Git
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`commit-conventions`, Tell codebase what to do
+   :xref:`git-commit-guidelines`, Long message guidelines
 
 .. contents:: Contents
    :local:
@@ -309,6 +310,41 @@ Branching
    .. code-block:: bash
 
       git push -u origin dev/0.3.0
+
+.. _git-merging:
+
+*******
+Merging
+*******
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`git-branch`, Manage independent commit sequences
+   :xref:`git-checkout`, Switch :xref:`branches <git-branch>`
+   :xref:`git-merge`, Combine :xref:`branches <git-branch>`
+
+#. Use the :ref:`VS Code integrated terminal <tools-vs-code>` to
+   :xref:`view available branches <git-branch>`:
+
+   .. code-block:: bash
+
+      git branch
+
+#. :xref:`Checkout <git-checkout>` the appropriate :xref:`branch <git-branch>`:
+
+   .. code-block:: bash
+
+      git checkout master
+
+#. :xref:`Merge <git-merge>` the desired :xref:`branch <git-branch>`
+
+   .. code-block:: bash
+
+      git merge dev/0.3.0
+
+#. :ref:`Verify the project log <git-view-project-log>`
 
 .. _git-change-commit-history:
 

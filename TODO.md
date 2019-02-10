@@ -1,36 +1,9 @@
-Viewing local build: http://localhost:8000/_build/html/index.html
-
-# Reading
-1. https://embeddedartistry.com/blog/2017/12/7/start-using-semantic-versioning-to-give-your-version-numbers-meaning (included below)
-1. https://realpython.com/documenting-python-code/ (already linked)
-
 # 0.3.0 Website restructuring
 
 ## New version pushing
-1. Commit and tag
-1. Verify quickstart works
-1. Verify merge to master is correct
-1. Push with tags
-1. Say make linkcheck
 1. Then proofread
-1. Verify python -msphinx.ext.intersphinx _build/html/objects.inv
-
-## Starting a new version
-1. Need to immediately start a dev/0.3.0 branch to avoid 0.3.0 tag
-   1. Update conf.py as well
-1. After a merge, it makes sense to use a long tag comment
-   1. The last commit comment will likely just involve minor changes
-1. The "next release" branch shouldn't have just the name of the next number
-   1. call it 0.3.0-branch?
-1. https://softwareengineering.stackexchange.com/questions/230438/in-git-is-it-a-bad-idea-to-create-a-tag-with-the-same-name-as-a-deleted-branch
-   1. Then can do git push tag
+1. Update the read the docs checkbox for the project
 1. Need to update the "active versions" on readthedocs
-
-##
-1. Is module index still broken?
-
-## Examples page
-1. Tip to open the nb viewer
 
 ## Proofreading procedures
 1. Should make version update procedures first so they can be pointed to?
@@ -121,56 +94,17 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. I believe the most important lesson I’ve learned is that you should make content for yourself
 
 ## toctree structure
-1. Intro
-   1. Quickstart
-   1. What next? page
-      1. Describes the site
-      1. Mention more info on tools in tools page
-      1. Say how to get started with Python, etc.
-      1. :doc:`python:faq` getting started
-      1. :doc:`python:faq/programming` anything specific: keyword args, etc.
+1. quickstart
+   1. Mention you have just started the python interpreter with link
+1. What next? page
+   1. Describes the site
+   1. Talk about references
+   1. Mention more info on tools in tools page
+   1. Say how to get started with Python, etc.
+   1. :doc:`python:faq` getting started
+   1. :doc:`python:faq/programming` anything specific: keyword args, etc.
    1. TOC for everything page?
-   1. Maybe have references here
-1. For developers
-   1. Versioning
-   1. Concepts
-   1. Tools
-   1. Procedures
-1. Software
-1. Test code (?)
-1. References
-
-## Jupyter
-1. Verify all Jupyter notebooks are linked
-1. Link a Jupyter notebook per Carol Willing video
-
-## Conf.py autodoc
-1. Need a conf.py part of documentation concepts
-1. Automodule conf.py and settings.json?
-
-## Documentation structure
-1. Figure out how to have index page be toc-blank like on Sphinx, etc.
-   1. Have a comprehensive TOC somewhere else?
-1. Verify that objects.inv is in order
-
-## Package structuring and imports
-1. PEP 328
-1. https://stackoverflow.com/questions/448271/what-is-init-py-for
-1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
-
-## myPy
-1. MyPy type linter
-   1. https://www.python.org/dev/peps/pep-0526/
-   1. https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
-      1. Get the mypy linter going in the conda package
-   1. VS Code linter
-      1. https://code.visualstudio.com/docs/python/linting
-         1. Make a type checking procedures page
-         1. Talk about how to disable the pep8 colon warning but leave mypy on
-1. :pep:`Type hint theory <483>`
-   1. Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
-1. :pep:`Variable annotations <527>`
-1. :std:doc:`Typing module <python:library/typing>`
+1. Fix module index
 
 ## Syntax/terminology
 1. :std:doc: should just be :doc: per sphinx roles
@@ -192,12 +126,6 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Link the tables generator somewhere on tools
 1. Use markdown link to say what TODO.md is made from
 
-## autodoc test code
-1. Document test_ledger.py
-   1. Add a section to common tasks about testing
-   1. May need to update the quickstart guide
-1. Document test_utilities.py
-
 ## Git environment
 1. https://stackoverflow.com/questions/24046846
 1. https://stackoverflow.com/questions/3459744
@@ -209,19 +137,54 @@ Viewing local build: http://localhost:8000/_build/html/index.html
    1. Git tower reset local commit as a tip in committing process
 1. Describe long message
 
-## Sharing
-1. Show jason the attention admonition with the napoleon example
+## src updates
+1. use datetime.datetime with zulu time - call the instance variable "when"
+1. Restructure other attributes as necessary
+1. change kinda to a dict of str to tuple(bool,bool)
+   1. bools say is associated with ticker
+   1. Second says does it result in add or subtract to buying power
+1. overload + to add two transactions and yield effect on the brokerage
 
-## Imports
+# 0.4.0
+
+## matplotlib theme feature implementation
+1. matplotlib sample doc
+1. Have an example page in iPython
+   1. Show link to the actual notebook so people can play around with it
+1. Integrate plots
+1. Link Jupyter
+
+## Package deployment
+1. PEP 328
+1. https://stackoverflow.com/questions/448271/what-is-init-py-for
+1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
+1. Ship conda with the dependencies
+   1. Then can install in the quick start
+      1. Mention you have just started the python interpreter with link
+         1. Link is in the floating point rampage
+1. Push to conda and create procedures as you go
+
+## Conf.py autodoc
+1. Need a conf.py part of documentation concepts
+1. Automodule conf.py and settings.json?
+
+## autodoc test code
+1. Document test_ledger.py
+   1. Add a section to common tasks about testing
+   1. May need to update the quickstart guide
+1. Document test_utilities.py
 1. Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger for tests
-
-# 0.4.0 Linking nbs
+1. tests should be motivated by the examples page
 
 ## Doc coverage
 1. Figure out how to do this
    1. The packaging video on iPad may help
 
 ## Jupyter
+1. Verify all Jupyter notebooks are linked
+1. Link a Jupyter notebook per Carol Willing video
+1. Make an examples page with Jupyter notebook to follow along
+1. Tip to open the nb viewer
 1. TOC for all Jupyter notebooks?
 1. Need a way to include he nbs directory
 1. Need a table that says which doc pages link to which nbs
@@ -232,12 +195,23 @@ Viewing local build: http://localhost:8000/_build/html/index.html
 1. Procedure for linking an nb says the two places that must be update
    1. Link to this procedure in the nbs concepts page
    1. Link to it in the nbs toc page
+1. examples page is a jupyter notebook you can reset and run all cells
 
-# 0.5.0 Robinhood
+# 0.5.0
 
-## Class restructuring
-1. use datetime.datetime with zulu time - call the instance variable "when"
-1. Restructure other attributes as necessary
+## myPy
+1. MyPy type linter
+   1. https://www.python.org/dev/peps/pep-0526/
+   1. https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
+      1. Get the mypy linter going in the conda package
+   1. VS Code linter
+      1. https://code.visualstudio.com/docs/python/linting
+         1. Make a type checking procedures page
+         1. Talk about how to disable the pep8 colon warning but leave mypy on
+1. :pep:`Type hint theory <483>`
+   1. Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
+1. :pep:`Variable annotations <527>`
+1. :std:doc:`Typing module <python:library/typing>`
 
 ## Robinhood integration
 1. Services setup
