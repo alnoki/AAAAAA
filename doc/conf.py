@@ -222,6 +222,7 @@ intersphinx_mapping = {
                       'latest', None),
     'napoleon': ('https://sphinxcontrib-napoleon.readthedocs.io/en/latest/',
                  None),
+    'bibtex': ('https://sphinxcontrib-bibtex.readthedocs.io/en/latest', None),
 }
 
 # Base urls used by xrefs extension
@@ -430,5 +431,8 @@ xref_links = {
     'semver': ("Semantic Versioning", 'https://semver.org/'),
     'admonition': ('Admonition', url['docutils'] +
                    'docs/ref/rst/directives.html#admonitions'),
+    'ottobib': ('OttoBib', 'https://www.ottobib.com'),
+    'bibtex': ('BibTeX', 'http://www.bibtex.org'),
+    'ISBN': ('ISBN', url['Wiki pg'] + 'International_Standard_Book_Number'),
     # New links below, sorted links above
     }

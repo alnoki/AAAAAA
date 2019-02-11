@@ -145,12 +145,15 @@ There are several command-line style text navigators that go along with
    :xref:`git-commit-guidelines`, Contribution guidelines
    :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
 
+
+*************
+Documentation
+*************
+
 .. _tools-sphinx:
 
-
-******
 Sphinx
-******
+======
 
 :std:doc:`Sphinx <sphinx:intro>` is the documentation engine that creates all
 the documentation for :term:`AAAAAA` and even for
@@ -165,39 +168,40 @@ linearly navigable structure that ensures access to all pages of documentation.
 a mobile-friendly viewing experience with a modern look
 
 :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>` enable additional
-functionality and several are used in :term:`AAAAAA`
+functionality and several are used in :term:`AAAAAA`:
 
 .. csv-table:: :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`
    in :term:`AAAAAA`
    :header: "Extension", "Purpose"
    :align: center
 
-   :ref:`Intersphinx <sphinx-intersphinx>`, "Link to other
-   :std:doc:`Sphinx <sphinx:intro>` projects"
+   :ref:`Intersphinx <sphinx-intersphinx>`, "Create
+   :ref:`links <references-links>` to other :doc:`Sphinx <sphinx:intro>`
+   projects"
    :ref:`xref <sphinx-xref>`, "Reference external
    :ref:`links <references-links>`"
+   :ref:`tools-napoleon`, Document code components
+   :ref:`tools-BibTeX`, Cite books
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"
    :align: center
 
-   :std:doc:`Python Developer's Guide<py-dev-guide:documenting>`, "
+   :doc:`Python Developer's Guide<py-dev-guide:documenting>`, "
    :xref:`Python` guide to using :std:doc:`Sphinx <sphinx:intro>`"
-   :std:doc:`Sphinx <sphinx:intro>`, Official documentation
+   :doc:`Sphinx <sphinx:intro>`, Official documentation
    :xref:`Practical use seminar <Willing-Sphinx>`, "Practical commands and
    functions"
    :ref:`References extension configuration <sublime-with-sphinx:use the external links extension>`, "
-   :std:doc:`Extension <sphinx:usage/extensions/index>` installation and
+   :doc:`Extension <sphinx:usage/extensions/index>` installation and
    configuration"
-   :std:doc:`conf.py <sphinx:usage/configuration>`, Configuration settings
+   :doc:`conf.py <sphinx:usage/configuration>`, Configuration settings
    :ref:`Sphinx procedures <sphinx-procedures>`, :term:`AAAAAA` usage
 
 .. _tools-restructured-text:
 
-
-****************
 reStructuredText
-****************
+================
 
 :xref:`reStructuredText <reST-documentation>` (``reST``) is a markup language
 containing syntax to generate fancy components like ``this``, :guilabel:`this`,
@@ -209,8 +213,9 @@ marks a piece of text (usually in-line), and the
 :std:doc:`directive <sphinx:usage/restructuredtext/directives>`, which marks a
 block of text
 
-:std:doc:`reST <sphinx:usage/restructuredtext/basics>` files have an ``.rst``
-extension, and :ref:`tools-sphinx` parses them whenever documentation is built
+:doc:`reST <sphinx:usage/restructuredtext/basics>` files have an ``.rst``
+extension, and :ref:`tools-sphinx` converts them whenever documentation is
+built
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"
@@ -239,10 +244,8 @@ page
    :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, via the
    :guilabel:`Edit on GitHub` feature
 
-
-*************
 Read the Docs
-*************
+=============
 
 :std:doc:`Read the Docs<rtfd:index>` is a free online repository that hosts
 :std:doc:`Sphinx <sphinx:intro>` projects, and even provides its own
@@ -263,12 +266,30 @@ the visual appearance of this website!
    documentation elements"
    :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
 
+Sphinx extensions
+=================
+
 .. _tools-napoleon:
 
-
-********
 Napoleon
-********
+--------
+
+:std:doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
+:ref:`Sphinx extension <tools-sphinx>` that parses code and
+creates documentation elements from :ref:`docstrings <python:tut-docstrings>`
+and :pep:`type annotations <484>`. It uses the same
+:ref:`directives <tools-restructured-text>` as
+:doc:`autodoc <sphinx:usage/extensions/autodoc>`, but it
+can accept :std:ref:`NumPy docstrings <numpy:format>`
+
+:doc:`Napoleon <sphinx:usage/extensions/napoleon>` and
+:doc:`autodoc <sphinx:usage/extensions/autodoc>` both parse
+:ref:`docstrings <python:tut-docstrings>` into syntax (like that used for
+:ref:`field lists <sphinx:info-field-lists>`) which is native to
+:ref:`reST <tools-restructured-text>`
+
+:ref:`Docstrings <python:tut-docstrings>` are annotated using the
+:ref:`Python domain <sphinx:python-roles>`
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"
@@ -296,22 +317,28 @@ Napoleon
    :ref:`sphinx:info-field-lists`, "Resultant
    :ref:`reST <tools-restructured-text>` syntax"
 
-:std:doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
-:ref:`Sphinx extension <tools-sphinx>` that parses code and
-creates documentation elements from :ref:`docstrings <python:tut-docstrings>`
-and :pep:`type annotations <484>`. It uses the same
-:ref:`directives <tools-restructured-text>` as
-:doc:`autodoc <sphinx:usage/extensions/autodoc>`, but it
-can accept :std:ref:`NumPy docstrings <numpy:format>`
+.. _tools-BibTeX:
 
-:doc:`Napoleon <sphinx:usage/extensions/napoleon>` and
-:doc:`autodoc <sphinx:usage/extensions/autodoc>` both parse
-:ref:`docstrings <python:tut-docstrings>` into syntax (like that used for
-:ref:`field lists <sphinx:info-field-lists>`) which is native to
-:ref:`reST <tools-restructured-text>`
+BibTeX
+------
 
-:ref:`Docstrings <python:tut-docstrings>` are annotated using the
-:ref:`Python domain <sphinx:python-roles>`
+:xref:`bibtex` is a special type of citation syntax that :term:`AAAAAA` use
+to cite :ref:`books <references-books>`. The
+:doc:`BibTeX extension <bibtex:index>` converts
+:ref:`refs.bib <concepts-documentation-structure>` into formatted
+:ref:`book citations <references-books>`
+
+If know the :xref:`ISBN` for a particular :ref:`book <references-books>`, you
+can usually get the :xref:`bibtex` from :xref:`ottobib`
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`bibtex`, Citation syntax
+   :doc:`BibTeX extension <bibtex:index>`, Parses :xref:`bibtex`
+   :xref:`ottobib`, :xref:`bibtex` database for :ref:`books <references-books>`
+   :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
 
 .. _tools-vs-code:
 

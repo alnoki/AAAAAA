@@ -75,7 +75,7 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
    to have in your tree
 #. Update ``where_to_start`` to the :xref:`directory <directory>` that you
    would like to write about
-#. Highlight the text in the scratch file
+#. Highlight the whole file
 #. Use the :ref:`command palette <tools-vs-code>` to select
    :guilabel:`Python: Run Selection/Line in Python Terminal` then hit
    :kbd:`enter` from inside the

@@ -8,8 +8,8 @@ Links
 #####
 
 This is a centralized and comprehensive list of online resources related to
-:term:`AAAAAA`, and is managed according to the
-:ref:`managing referenences procedures <sphinx-managing-references>`
+:term:`AAAAAA`, and is managed according to
+:ref:`references procedures <sphinx-managing-references>`
 
 Links are not necessarily in order, but links with high priority are usually
 placed at the top of a section
@@ -682,6 +682,22 @@ Managing references
 
    * Instructions to reference numerical analysis and plotting tools via
      :std:doc:`Intersphinx <usage/extensions/intersphinx>`
+
+#. :xref:`bibtex`
+
+   * Citation management file format
+
+#. :doc:`BibTeX extension <bibtex:index>`
+
+   * :ref:`Sphinx extension <tools-sphinx>` for citing with :xref:`bibtex`
+
+#. :xref:`ottobib`
+
+   * :xref:`bibtex` database for books
+
+#. :xref:`ISBN`
+
+   * Unique identifier for books
 
 Showing code
 ------------

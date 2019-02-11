@@ -30,30 +30,44 @@ Sphinx
    :ref:`Sphinx <tools-sphinx>` works, but this is an elaboration of the
    specific components in :term:`AAAAAA`
 
+.. _concepts-documentation-structure:
+
 Documentation structure
 =======================
 
 .. code-block:: none
 
-   AAAAAA/
-       doc/
-           exts/
-               xref.py
-               ...
-           conf.py
-           Makefile
-           make.bat
-           index.rst
-           procedures/
-           setup/
-               quickstart.rst
-               developer.rst
-               ...
-               concepts/
-                   project-structure.rst
-                   tools.rst
-                   ...
-           ...
+    AAAAAA/
+        doc/
+            exts/
+                xref.py
+            conf.py
+            Makefile
+            make.bat
+            index.rst
+            getting-started/
+                quickstart.rst
+                ...
+                references/
+                    index.rst
+                    refs.bib
+                    books.rst
+                    links.rst
+            user-guide/
+                index.rst
+                fundamentals.rst
+            dev-guide/
+                concepts/
+                    index.rst
+                    tools.rst
+                    ...
+                environment/
+                    index.rst
+                    documenting.rst
+                    ...
+                procedures/
+                    writing.rst
+                    ...
 
 .. csv-table::
    :header: "Name", "Function"
@@ -63,11 +77,12 @@ Documentation structure
    :std:doc:`extensions <sphinx:usage/extensions/index>`"
    ``conf.py``, :std:doc:`Configuration <sphinx:usage/configuration>`
    "``Makefile`` , ``make.bat``", :ref:`sphinx-building-documentation`
-   ``index.rst`` , :term:`AAAAAA` documentation homepage
-   "``procedures/`` , ``setup/``, etc.", "
+   ``index.rst`` (top-level) , :term:`AAAAAA` documentation homepage
+   "``getting-started/`` , ``user-guide/``, etc.", "
    Documentation :xref:`directories <directory>`"
-   "``quickstart.rst`` , ``developer.rst`` , etc. ", "
+   "``quickstart.rst`` , ``fundamentals.rst`` , etc. ", "
    :ref:`tools-restructured-text` files"
+   ``refs.bib``, :ref:`tools-bibtex` citations
 
 .. _concepts-documentation-style:
 
