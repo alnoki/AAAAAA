@@ -28,6 +28,11 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    :ref:`tools-vs-code`, Task management environment
    :ref:`concepts-project-dir-tree`, :term:`AAAAAA` project structure
    :xref:`Markdown`, Syntax specification
+   :term:`OHIO`, Task management philosophy
+
+.. tip::
+
+   Chant :term:`OHIO` while doing this
 
 #. Open :ref:`TODO.md <concepts-project-dir-tree>` in :ref:`tools-vs-code`
 #. From the :ref:`command palette <tools-vs-code>`:
