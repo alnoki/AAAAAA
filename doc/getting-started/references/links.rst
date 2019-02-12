@@ -699,6 +699,18 @@ Managing references
 
    * Unique identifier for books
 
+#. :xref:`bibtex-syntax`
+
+   * Syntax for identifying specific citation components
+
+#. :xref:`cite-multiple-authors`
+
+   * Use of ``et. al``
+
+#. :xref:`book`
+
+   * Information source
+
 Showing code
 ------------
 
@@ -791,6 +803,10 @@ Syntax
 #. :doc:`Directive <sphinx:usage/restructuredtext/directives>`
 
    * Element that marks a block of text
+
+#. :rst:dir:`toctree`
+
+   * Project structure management
 
 #. :ref:`Label role <ref-role>`
 

@@ -203,6 +203,7 @@ Simple example
 
    Subsection title
    ----------------
+
    Welcome to this subsection. No double overline needed here!
 
    .. rubric:: Footnotes
@@ -223,8 +224,8 @@ Jupyter Notebooks
 .. note::
 
    The :ref:`Tools: Jupyter <tools-jupyter>` section explains how
-   :ref:`Jupyter <tools-Jupyter>` works, but is an elaboration of the specific
-   components in :term:`AAAAAA`
+   :ref:`Jupyter <tools-Jupyter>` works, but this is an elaboration of the
+   specific components in :term:`AAAAAA`
 
 .. code-block:: none
 

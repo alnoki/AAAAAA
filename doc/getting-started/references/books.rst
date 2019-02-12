@@ -5,13 +5,24 @@
 Books
 #####
 
+Below is a comprehensive list of :xref:`books <book>` referenced throughout
+:term:`AAAAAA`. Citations are managed using :ref:`BibTeX <tools-bibtex>`
+according to :ref:`book reference procedures <sphinx-reference-book>`
+
+.. tip::
+
+   You can access the :xref:`ISBN` (or other information) for each
+   :xref:`book <book>` by clicking the :ref:`BibTeX link <tools-bibtex>` at
+   the top of each entry, which will look something like:
+   :cite:`Foo <on-managing-yourself>`
+
 .. _book-on-managing-yourself:
 
 ********************
 On Managing Yourself
 ********************
 
-.. csv-table:: :cite:`on-managing-yourself`
+.. csv-table:: :cite:`Foo <on-managing-yourself>`
    :header: "Page(s)", "Topic"
    :align: center
 

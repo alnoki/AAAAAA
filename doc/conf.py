@@ -434,5 +434,11 @@ xref_links = {
     'ottobib': ('OttoBib', 'https://www.ottobib.com'),
     'bibtex': ('BibTeX', 'http://www.bibtex.org'),
     'ISBN': ('ISBN', url['Wiki pg'] + 'International_Standard_Book_Number'),
+    'bibtex-syntax': ("BibTeX Entry and Field Types", 'http://bib-it'
+                      '.sourceforge.net/help/fieldsAndEntryTypes.php#editor'),
+    'cite-multiple-authors':
+        ("Convention for citing multiple authors",
+         'https://research.moreheadstate.edu/c.php?g=107001&p=695202'),
+    'book': ('Book', url['Wiki pg'] + 'Book'),
     # New links below, sorted links above
     }

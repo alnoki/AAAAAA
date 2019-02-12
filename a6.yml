@@ -9,6 +9,7 @@ dependencies:
   - sphinx
   - sphinx_rtd_theme
   - doc8
+  - sphinxcontrib-bibtex
   - jupyter
   - jupyter_contrib_nbextensions
   - numpy

@@ -83,6 +83,8 @@ The :ref:`developer setup <dev-env-intro>` describes how to
          :ref:`conda <conda:channels-glossary>`"
          :xref:`Doc8 <Doc8>`, Check documentation syntax, "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
+         :ref:`tools-bibtex`, :ref:`Book citations <references-books>`, "
+         :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
          :xref:`Jupyter Notebook <Jupyter>`, Interactive analysis, "
          :ref:`dev-env-analyzing`","
          :ref:`conda <conda:channels-glossary>`"
@@ -175,10 +177,10 @@ functionality and several are used in :term:`AAAAAA`:
    :header: "Extension", "Purpose"
    :align: center
 
-   :ref:`Intersphinx <sphinx-intersphinx>`, "Create
+   :ref:`Intersphinx <tools-intersphinx>`, "Create
    :ref:`links <references-links>` to other :doc:`Sphinx <sphinx:intro>`
    projects"
-   :ref:`xref <sphinx-xref>`, "Reference external
+   :ref:`xref <tools-xref>`, "Reference external
    :ref:`links <references-links>`"
    :ref:`tools-napoleon`, Document code components
    :ref:`tools-BibTeX`, Cite books
@@ -269,6 +271,28 @@ the visual appearance of this website!
 Sphinx extensions
 =================
 
+.. _tools-intersphinx:
+
+Intersphinx
+-----------
+
+:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>` helps manage
+:ref:`links <references-links>` to other :ref:`tools-sphinx` projects
+
+Usage is described at :ref:`intersphinx procedures <sphinx-intersphinx>`
+
+.. _tools-xref:
+
+xref
+----
+
+:xref:`Michael Jones' xref extension <xref-ext>` helps manage
+:ref:`links <references-links>` to external content that can not be accessed
+via :ref:`intersphinx <tools-intersphinx>`. A simple
+:ref:`role <tools-restructured-text>` is used to insert
+:ref:`links <references-links>`, and usage is described at
+:ref:`xref procedures <sphinx-xref>`
+
 .. _tools-napoleon:
 
 Napoleon
@@ -317,7 +341,7 @@ can accept :std:ref:`NumPy docstrings <numpy:format>`
    :ref:`sphinx:info-field-lists`, "Resultant
    :ref:`reST <tools-restructured-text>` syntax"
 
-.. _tools-BibTeX:
+.. _tools-bibtex:
 
 BibTeX
 ------
@@ -335,10 +359,14 @@ can usually get the :xref:`bibtex` from :xref:`ottobib`
    :header: "Reference", "Topic"
    :align: center
 
-   :xref:`bibtex`, Citation syntax
+   :xref:`book`, Information source
+   :xref:`bibtex`, Citation file format
    :doc:`BibTeX extension <bibtex:index>`, Parses :xref:`bibtex`
    :xref:`ottobib`, :xref:`bibtex` database for :ref:`books <references-books>`
    :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
+   :xref:`bibtex-syntax`, Syntax specifications
+   :xref:`cite-multiple-authors`, Use of ``et. al``
+   :ref:`BibTeX procedures <sphinx-reference-book>`, :term:`AAAAAA` usage
 
 .. _tools-vs-code:
 

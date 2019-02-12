@@ -121,7 +121,7 @@ Using Intersphinx
       :header: "Category in objects.inv", "Role to use"
       :align: center
 
-      ``std:doc``, ``:std:doc:``
+      ``std:doc``, ``:doc:``
       ``rst:directive``, ``:rst:dir:``
       ``std:label``, ``:ref:``
 
@@ -245,3 +245,73 @@ Updating labels
 #. Update any :ref:`labels <ref-role>` via the
    :ref:`VS code command palette <tools-vs-code>`:
    :guilabel:`Search: Replace in Files`
+
+.. _sphinx-reference-book:
+
+Referencing books
+=================
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :ref:`tools-bibtex`, :term:`AAAAAA` conceptual explanation
+   :xref:`book`, Information source
+   :xref:`bibtex`, File format
+   :doc:`BibTeX extension <bibtex:index>`, Parses :xref:`bibtex`
+   :xref:`ottobib`, :xref:`bibtex` database for :ref:`books <references-books>`
+   :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
+   :ref:`refs.bib <concepts-documentation>`, :xref:`bibtex` citation collection
+   :xref:`bibtex-syntax`, Syntax specifications
+   :xref:`cite-multiple-authors`, Use of ``et. al``
+
+#. Check :xref:`ottobib` for the relevant :xref:`ISBN`
+#. Use the :xref:`bibtex` option to add a :xref:`book entry <bibtex-syntax>` to
+   :ref:`refs.bib <concepts-documentation>`
+
+   * A ``book`` :xref:`entry <bibtex-syntax>` requires at least ``author`` (or
+     ``editor``), ``title``, ``publisher``, and ``year``
+     :xref:`fields <bibtex-syntax>`
+   * Consider :xref:`et. al conventions <cite-multiple-authors>` for multiple
+     authors
+
+#. Add an entry to :ref:`books <references-books>`
+
+   * Use a :ref:`heading <concepts-documentation-example>` so that
+     :rst:dir:`toctree` can index the entry
+
+   * Use a :ref:`label <concepts-documentation>` that appends ``book-`` to the
+     first line of the :xref:`bibtex` in
+     :ref:`refs.bib <concepts-documentation>`
+
+   .. code-block:: rest
+      :emphasize-lines: 1, 7
+
+      .. _book-on-managing-yourself:
+
+      ********************
+      On Managing Yourself
+      ********************
+
+      .. csv-table:: :cite:`on-managing-yourself`
+         :header: "Page(s)", "Topic"
+         :align: center
+
+   .. code-block:: none
+      :emphasize-lines: 1
+
+      @Book{on-managing-yourself,
+      author = {Clayton M. Christensen et. al},
+      title = {HBR's 10 Must Reads: On Managing Yourself},
+      publisher = {Harvard Business Review Press},
+      year = {2010},
+      address = {Boston, Massachusetts},
+      isbn = {978-1-4221-5799-2}
+      }
+
+.. tip::
+
+   The :doc:`BibTeX extension <bibtex:index>` is unreceptive to
+   :std:doc:`role titles <sphinx:usage/restructuredtext/roles>`
+
+
