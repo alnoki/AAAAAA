@@ -1,14 +1,10 @@
 # 0.3.0 Website restructuring
 
 ## Versioning
-1. https://docs.readthedocs.io/en/latest/webhooks.html
-1. https://docs.readthedocs.io/en/latest/versions.html
-   1. On settings for AAAAAA on GitHub, select tags too
-1. Update the date YYYY-MM-DD on version list
-   1. This should be one of the last versioning items
-   1. Should explain this at the top of the versioning list
-1. 0.3.0 should add BibTeX mention
 1. Update project dir tree
+   1. Need to say which ones must be updated
+      1. The code tree, sphinx tree, etc.
+      1. Cross-link with the tree code
 
 ## Writing procedures
 1. Create a tools entry
@@ -94,11 +90,24 @@
       1. Put it in a sidebar?
       1. See rtd documentation
 1. Replace :std: -> :
+1. See where to remove RTD sphinx theme from
 
 ## New version pushing
 1. Make 0.3.0 active so you can view it on RTD when doing procedures
 
 # 0.4.0
+
+## matplotlib theme feature implementation
+1. matplotlib sample doc
+1. Have an example page in iPython
+   1. Show link to the actual notebook so people can play around with it
+1. Integrate plots
+1. Link Jupyter
+1. Remove RTD Sphinx theme from conda
+   1. Use conda procedures to see where to remove
+   1. Remove mention in the rtd section
+   1. Use deprecated feature? Or just mention in rtd section
+
 
 ## Content card
 1. Front
@@ -134,13 +143,6 @@
    1. bools say is associated with ticker
    1. Second says does it result in add or subtract to buying power
 1. overload + to add two transactions and yield effect on the brokerage
-
-## matplotlib theme feature implementation
-1. matplotlib sample doc
-1. Have an example page in iPython
-   1. Show link to the actual notebook so people can play around with it
-1. Integrate plots
-1. Link Jupyter
 
 ## Package deployment
 1. PEP 328
@@ -188,6 +190,8 @@
    1. Link to it in the nbs toc page
 1. examples page is a jupyter notebook you can reset and run all cells
 1. Use one common file to prototype LaTeX
+1. The Anaconda table needs to link to a purpose
+   1. For Jupyter, numpy, matplotlib, and pandas
 
 # 0.5.0
 

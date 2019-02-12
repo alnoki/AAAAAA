@@ -11,6 +11,8 @@ Versioning
    :ref:`version-list`, :term:`AAAAAA` versions
    :xref:`semver`, Numbering standards
    :xref:`git-commit-guidelines`, Long version message guidelines
+   :ref:`tools-read-the-docs`, Automated :ref:`version <version-list>` support
+   :ref:`tools-git`, :ref:`Version <version-list>` identification
 
 .. contents:: Contents
    :local:
@@ -107,6 +109,7 @@ At this point you should be working on a
 #. Finalize any updates to the :ref:`version list <version-list>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
    most recent :ref:`release <version-list>`
+#. Update the ``YYYY-MM-DD`` on the :ref:`version list <version-list>`
 #. :ref:`Commit but do not push <git-committing>`
 #. :ref:`Merge <git-merging>` the
    :ref:`development branch <versioning-start-new>` in to the

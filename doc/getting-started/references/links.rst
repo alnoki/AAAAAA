@@ -33,7 +33,7 @@ General
 
    * Definitive reference for the :xref:`Python` computer language
 
-#. :std:doc:`python:tutorial/index`
+#. :doc:`python:tutorial/index`
 
    * Official :xref:`Python` tutorial from :xref:`Python.org <Python>`
 
@@ -41,11 +41,11 @@ General
 
    * Official :xref:`Python` style guide
 
-#. :std:doc:`python:howto/functional`
+#. :doc:`python:howto/functional`
 
    * Official tutorial on :xref:`Python` programming techniques
 
-#. :std:doc:`python:howto/index`
+#. :doc:`python:howto/index`
 
    * Official in-depth :xref:`Python` tutorials for various advanced topics
 
@@ -635,24 +635,31 @@ With Read the Docs
 
 #. :xref:`Yusuf-Sphinx-RTD`
 
-   * Setting up a project using :std:doc:`quickstart <sphinx:usage/quickstart>`
-   * :std:doc:`toctree <sphinx:usage/quickstart>` and associated documentation
+   * Setting up a project using :doc:`quickstart <sphinx:usage/quickstart>`
+   * :doc:`toctree <sphinx:usage/quickstart>` and associated documentation
      structure
-   * Basic :std:doc:`reST <usage/restructuredtext/basics>` syntax
+   * Basic :doc:`reST <usage/restructuredtext/basics>` syntax
 
-#. :std:doc:`Read the Docs<rtfd:index>`
+#. :doc:`Read the Docs<rtfd:index>`
 
    * Online repository for hosting software documentation
 
-#. :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
+#. :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
 
-   * Tutorial for starting a :std:doc:`Sphinx <sphinx:intro>` project hosted on
-     :std:doc:`Read the Docs<rtfd:index>`
+   * Tutorial for starting a :doc:`Sphinx <sphinx:intro>` project hosted on
+     :doc:`Read the Docs<rtfd:index>`
 
-#. :std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
+#. :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
 
-   * A :std:doc:`Sphinx <sphinx:intro>` theme for creating a mobile-friendly
-     webpage layout
+   * Contains sample :ref:`tools-restructured-text` syntax
+
+#. :doc:`rtfd:webhooks`
+
+   * Automatic project modification detection
+
+#. :doc:`rtfd:versions`
+
+   * Automatic support for :ref:`versions <version-list>`
 
 Managing references
 -------------------

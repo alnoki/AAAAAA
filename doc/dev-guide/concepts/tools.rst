@@ -10,6 +10,35 @@ Tools
 .. contents::
    :local:
 
+.. _tools-python:
+
+******
+Python
+******
+
+:xref:`Python` is an :xref:`open-source computer language <open-source>` with
+various applications. :term:`AAAAAA` are written in :xref:`Python`, using
+assorted :ref:`packages <tools-anaconda>`
+
+The :ref:`AAAAAA user guide <guide-intro>` teaches :xref:`Python` as it
+describes various features of :term:`AAAAAA`. The
+:ref:`code concepts <concepts-code>` describe some additional specific
+:xref:`Python` considerations in :term:`AAAAAA`
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`Python.org <Python>`, Official information
+   :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
+   :xref:`Python`"
+   :doc:`python:tutorial/index`, Official tutorial
+   :doc:`python:howto/functional`, Functional techniques
+   :doc:`python:howto/index`, Specific usage cases
+   :doc:`tutorial/interpreter`, Mechanism that executes :xref:`Python`
+   :ref:`AAAAAA user guide <guide-intro>`, :xref:`Software <open-source>` info
+   :ref:`Code concepts <concepts-code>`, Specific considerations
+
 .. _tools-anaconda:
 
 
@@ -38,8 +67,6 @@ different :ref:`conda channels <conda:channels-glossary>`
    :std:doc:`conda:index`, Official reference
    :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`, "Common
    :std:doc:`conda <conda:index>` commands"
-   :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
-   :xref:`Python`"
    :ref:`Conda procedures <conda-procedures>`, :term:`AAAAAA` usage
 
 The :ref:`developer setup <dev-env-intro>` describes how to
@@ -65,43 +92,47 @@ The :ref:`developer setup <dev-env-intro>` describes how to
          :header: "Package", "Function", "Setup Phase", "Channel"
          :align: center
 
-         :xref:`Python`, Code creation, "
+         :xref:`Python`, :ref:`Code <tools-python>` creation, "
          :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
-         :std:doc:`conda <conda:index>`, Package management, "
+         :doc:`conda <conda:index>`, ":ref:`Package management <conda-procedures>`", "
          :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
-         :pep:`8`, Check code style, "
+         :pep:`8`, Check :ref:`code style <concepts-code>`, "
          :ref:`Documenting <dev-env-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
-         :std:doc:`Sphinx <sphinx:intro>` , Create documentation, "
+         :ref:`tools-sphinx` , "
+         :ref:`Create documentation <sphinx-procedures>`", "
          :ref:`Documenting <dev-env-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
-         :std:doc:`RTD Sphinx Theme <rtd-sphinx-theme:index>`, "Documentation
+         :doc:`RTD Sphinx Theme <rtd-sphinx-theme:index>`, "Documentation
          appearance", "
          :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
-         :xref:`Doc8 <Doc8>`, Check documentation syntax, "
+         :xref:`Doc8 <Doc8>`, "Check
+         :ref:`documentation syntax <concepts-documentation>`", "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
          :ref:`tools-bibtex`, :ref:`Book citations <references-books>`, "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
-         :xref:`Jupyter Notebook <Jupyter>`, Interactive analysis, "
+         :ref:`Jupyter Notebooks <tools-jupyter>`, Interactive analysis, "
          :ref:`dev-env-analyzing`","
          :ref:`conda <conda:channels-glossary>`"
-         :std:doc:`Notebook Extensions <nb-extensions:index>`, "Extra analysis
-         tools", :ref:`dev-env-analyzing`, :xref:`conda-forge`
-         :std:doc:`NumPy <numpy:about>`, "Number processing", "
+         :doc:`Notebook Extensions <nb-extensions:index>`, "Enhance
+         :ref:`Jupyter <tools-jupyter>`", :ref:`dev-env-analyzing`, "
+         :xref:`conda-forge`"
+         :doc:`NumPy <numpy:about>`, "Number processing", "
          :ref:`dev-env-analyzing`", :ref:`conda <conda:channels-glossary>`
-         :std:doc:`Matplotlib <matplotlib:index>`, "Data plotting", "
+         :doc:`Matplotlib <matplotlib:index>`, "Data plotting", "
          :ref:`dev-env-analyzing`", "
          :ref:`conda <conda:channels-glossary>`"
-         :std:doc:`pandas <pandas:index>`, "Dataset management", "
+         :doc:`pandas <pandas:index>`, "Dataset management", "
          :ref:`dev-env-analyzing`", "
          :ref:`conda <conda:channels-glossary>`"
-         :std:doc:`pip <python:installing/index>`, Configuring test code, "
+         :doc:`pip <python:installing/index>`, "
+         :ref:`Configuring test code <conda-pip-AAAAAA>`", "
          :ref:`dev-env-testing`", :ref:`conda <conda:channels-glossary>`
-         :std:doc:`pytest <pytest:index>`, Code testing, "
-         :ref:`dev-env-testing`", "
+         :ref:`pytest <tools-pytest>`, "
+         :ref:`Code testing <pytest-procedures>`", ":ref:`dev-env-testing`", "
          :ref:`conda <conda:channels-glossary>`"
 
 .. _tools-git:
@@ -122,9 +153,9 @@ a unique identifier that can be accessed by viewing a
 :xref:`Tags <git-tag>`, which provide a unique identifier for
 :xref:`commits <git-commit>`, and :xref:`branches <git-branch>`, which enable
 independent sequences of :xref:`commits <git-commit>`, are used to manage
-:ref:`project versions <version-list>`
-
-:xref:`GitHub` is a free service that hosts the :xref:`AAAAAA-repo`
+:ref:`project versions <version-list>` via integration between
+:ref:`tools-read-the-docs` and :xref:`GitHub`, a free service that hosts the
+:xref:`AAAAAA-repo`
 
 There are several command-line style text navigators that go along with
 :xref:`Git <git-manual>`
@@ -146,6 +177,7 @@ There are several command-line style text navigators that go along with
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`git-commit-guidelines`, Contribution guidelines
    :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
+   :ref:`tools-read-the-docs`, Automatic :ref:`version <version-list>` tracking
 
 
 *************
@@ -246,12 +278,18 @@ page
    :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, via the
    :guilabel:`Edit on GitHub` feature
 
+.. _tools-read-the-docs:
+
 Read the Docs
 =============
 
-:std:doc:`Read the Docs<rtfd:index>` is a free online repository that hosts
-:std:doc:`Sphinx <sphinx:intro>` projects, and even provides its own
-:std:doc:`Sphinx Theme <rtd-sphinx-theme:index>`
+:doc:`Read the Docs<rtfd:index>` is a free online repository that hosts
+:doc:`Sphinx <sphinx:intro>` projects, and even provides its own
+:doc:`Sphinx Theme <rtd-sphinx-theme:index>`
+
+:doc:`Read the Docs<rtfd:index>` uses :doc:`webhooks <rtfd:webhooks>` to
+automatically detect any :ref:`git <tools-git>` updates, and supports multiple
+project documentation :doc:`versions <rtfd:versions>`
 
 :term:`AAAAAA` use the
 :std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which generates
@@ -262,11 +300,14 @@ the visual appearance of this website!
    :align: center
 
    :xref:`Quickstart tutorial <Yusuf-Sphinx-RTD>`, "Starting a
-   :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
+   :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
    project"
-   :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
+   :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
    documentation elements"
+   :doc:`rtfd:webhooks`, Automatic project modification detection
+   :doc:`rtfd:versions`, Automatic :ref:`version <version-list>` support
    :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
+   :ref:`versioning-procedures`, :term:`AAAAAA` usage
 
 Sphinx extensions
 =================
