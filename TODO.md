@@ -1,5 +1,24 @@
 # 0.3.0 Website restructuring
 
+## Add to procedures
+1. https://pypi.org/project/sphinx-autobuild/
+1. Add to conda per procedures for the forge
+1. Added to doc/makefile exactly from the instructions
+   1. Document how you changed the file and why it works
+1. Looks like there's a mac problem with hooking events
+1. From inside the doc folder
+   1. sphinx-autobuild . ./_build/html -B -s 0
+   1. Sometimes hooks, sometimes not
+   1. After awhile, stops "hooking"
+   1. The reload works, but sometimes it doesn't load new pages
+   1. https://www.gnu.org/software/make/manual/make.html#Phony-Targets
+   1. Appears that if you manually go to http://127.0.0.1:8000 that it works
+   1. Also can try in the makefile
+
+.PHONY: doc
+doc:
+	sphinx-autobuild . _build/html -B -s 0
+
 ## Versioning
 1. Update project dir tree
    1. Need to say which ones must be updated
@@ -97,6 +116,16 @@
 
 # 0.4.0
 
+## plot directive
+1. https://matplotlib.org/sampledoc/extensions.html
+1. Appears to be included with matplotlib
+1. https://matplotlib.org/devel/plot_directive.html
+1. Need to include matplotlib and numpy in documenting package
+1. Make a factorial plot on the homepage
+   1. If you want to run this, you may need to install matplotlib with anaconda
+      1. See what happens when you do it from inside python
+         1. What pops up?
+
 ## matplotlib theme feature implementation
 1. matplotlib sample doc
 1. Have an example page in iPython
@@ -107,6 +136,9 @@
    1. Use conda procedures to see where to remove
    1. Remove mention in the rtd section
    1. Use deprecated feature? Or just mention in rtd section
+1. Disclaimers for RTD
+   1. Can't render as well on mobile
+   1. Need to update the RTD theme section
 
 
 ## Content card
@@ -118,7 +150,7 @@
 1. On back, explanation field list
 1. Use version 0.3 field list
 
-## Git environment
+## Git
 1. https://stackoverflow.com/questions/24046846
 1. https://stackoverflow.com/questions/3459744
 1. https://stackoverflow.com/questions/11553374
@@ -132,6 +164,9 @@
    1. Makes a .swp file
    1. Remove the .swp file and it should be alright
    1. At .git/COMMIT_MSG.swp
+1. Checking out a remote
+   1. git checkout -b integration/adc2.07zb/ahrs2.08zb origin/integration/adc2.07zb/ahrs2.08zb
+   1. Straight from the man page
 
 ## src updates
 1. Explain how Transaction is, of course, all part of a module
@@ -192,6 +227,10 @@
 1. Use one common file to prototype LaTeX
 1. The Anaconda table needs to link to a purpose
    1. For Jupyter, numpy, matplotlib, and pandas
+1. https://nbsphinx.readthedocs.io/en/rtd-theme/index.html
+   1. Can embed jupyter plots
+1. Can use Jupyter to prototype, matplotlib to embed
+   1. However, matplotlib can take some time to load
 
 # 0.5.0
 
