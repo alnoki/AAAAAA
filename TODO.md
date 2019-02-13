@@ -1,23 +1,23 @@
 # 0.3.0 Website restructuring
 
-## Add to procedures
+## Autobuild usage
 1. https://pypi.org/project/sphinx-autobuild/
-1. Add to conda per procedures for the forge
-1. Added to doc/makefile exactly from the instructions
-   1. Document how you changed the file and why it works
-1. Looks like there's a mac problem with hooking events
-1. From inside the doc folder
-   1. sphinx-autobuild . ./_build/html -B -s 0
-   1. Sometimes hooks, sometimes not
-   1. After awhile, stops "hooking"
-   1. The reload works, but sometimes it doesn't load new pages
-   1. https://www.gnu.org/software/make/manual/make.html#Phony-Targets
-   1. Appears that if you manually go to http://127.0.0.1:8000 that it works
-   1. Also can try in the makefile
-
-.PHONY: doc
-doc:
-	sphinx-autobuild . _build/html -B -s 0
+1. Add to tools page
+1. From docs folder use
+   1. sphinx-autobuild . ./_build/html -B -s 1
+      1. The -s 0 appears not to open a browser
+      1. Will open a browser the first time (-B) with a 1s start delay (-s)
+      1. Will be served at http://127.0.0.1:8000
+      1. Quit by ctrl + c
+1. Once the browser is opened to the server:
+   1. It will cause pages that are viewing the server to reload
+      1. Any time any of the sphinx documents are changed
+      1. Doesn't matter how the window got opened
+      1. Appears autobuild sends a notification to the browser
+         1. Reload this page
+1. Will not open a new window for any new changed documents
+1. Need to still navigate to the page eventually
+1. Add to conda table per procedures for the forge
 
 ## Versioning
 1. Update project dir tree
@@ -66,19 +66,23 @@ doc:
    1. Describes the site
    1. Talk about references
    1. Mention more info on tools in tools page
-   1. Say how to get started with Python, etc.
+   1. TOC for everything page?
+1. Say how to get started with Python, etc. on tools page
    1. :doc:`python:faq` getting started
    1. :doc:`python:faq/programming` anything specific: keyword args, etc.
-   1. TOC for everything page?
 1. Need to check dir tree during version completion
    1. There are several to check
    1. Have the "dir tree" procedure list a table of the directories that exist
       1. Then can update them when doing version updates
 1. Software also has an auto-api section?
    1. May enable module index
+1. Tools: what does it do, concepts/specifics: how does alnoki use it
+   1. Split up the structure
+   1. Make a table somewhere in an index page
 
 ## Syntax/terminology
-1. source code, code, etc. should link to open source wikipedia
+1. Link to command link
+1. source code, code, etc. should link to python tools page
 1. :std:doc: should just be :doc: per sphinx roles
       1.Search all for :std: and replace with :
          1. Do this when proofreading to maximize line width
@@ -125,6 +129,7 @@ doc:
    1. If you want to run this, you may need to install matplotlib with anaconda
       1. See what happens when you do it from inside python
          1. What pops up?
+1. Try out on homepage
 
 ## matplotlib theme feature implementation
 1. matplotlib sample doc
@@ -140,6 +145,26 @@ doc:
    1. Can't render as well on mobile
    1. Need to update the RTD theme section
 
+## Wrapping autobuild
+1. Make it run in command line
+   1. Only open html files that have been changed, after the build started
+   1. Shows how the argument parser, etc. works from command line
+   1. Appears that it only opens a browser the first time
+1. Run your own python script that looks for touched .html files
+   1. Open a new window if the browser doesn't already have it open
+   1. How to know whether to open a new window or to reload the old one...
+      1. Need to check if the server isn't already "serving" the page?
+1. Don't bother integrating with makefiles, it doesn't work on windows too...
+   1. https://www.gnu.org/software/make/manual/make.html#Phony-Targets
+1. Later, may want to incorporate --watch jupyter notebooks
+   1. Just incorporate to the autobuilder
+      1. The wrapper should then handle the html monitoring correctly
+1. Potentially just have one script to call
+   1. Make sure python doesn't go crazy and open eveything
+      1. Only open changed pages, not new pages?
+      1. Guard: only if the .rst and the .html were changed?
+   1. Make clean at the end?
+      1. Would this make you have to re-intersphinx everytime?
 
 ## Content card
 1. Front
@@ -167,8 +192,13 @@ doc:
 1. Checking out a remote
    1. git checkout -b integration/adc2.07zb/ahrs2.08zb origin/integration/adc2.07zb/ahrs2.08zb
    1. Straight from the man page
+   1. git checkout -b dev/0.3.0 --track origin/dev/0.3.0
 
 ## src updates
+1. Transaction class then explains how file structure is
+   1. For importing the module, etc.
+1. Then say we need to talk about the dir structure
+   1. Then make the dir tree script
 1. Explain how Transaction is, of course, all part of a module
    1. Then describe automodule and show below
    1. Then, enable modindex
