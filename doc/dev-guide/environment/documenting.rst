@@ -105,12 +105,13 @@ Documenting
      typing :command:`which python`
 
 #. Use the :xref:`VS-Code-terminal` to
-   :std:doc:`install <conda:commands/install>` the :xref:`Doc8` and
-   the :ref:`BibTeX extension <tools-bibtex>`:
+   :doc:`install <conda:commands/install>` a few more
+   :ref:`packages <conda:concept-conda-package>` that come from the
+   :ref:`conda-forge <tools-anaconda>`:
 
    .. code-block:: bash
 
-      conda install -c conda-forge doc8 sphinxcontrib-bibtex
+      conda install -c conda-forge doc8 sphinxcontrib-bibtex sphinx-autobuild
 
 #. Install the :xref:`RST-preview-ext` for :xref:`VS-Code`
 #. If you don't already have it, :xref:`download Git <git-download>`

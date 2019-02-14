@@ -241,6 +241,7 @@ url = {
     'git-scm': 'https://git-scm.com/',
     'linux-die': 'https://linux.die.net/man/1/',
     'VS Code': 'https://code.visualstudio.com/',
+    'pypi': 'https://pypi.org/'
 }
 
 xref_links = {
@@ -440,5 +441,10 @@ xref_links = {
         ("Convention for citing multiple authors",
          'https://research.moreheadstate.edu/c.php?g=107001&p=695202'),
     'book': ('Book', url['Wiki pg'] + 'Book'),
+    'sphinx-autobuild': ('sphinx-autobuild', url['pypi'] +
+                         'project/sphinx-autobuild/'),
+    'internet': ('Internet', url['Wiki pg'] + 'Internet'),
+    'website': ('Website', url['Wiki pg'] + 'Website'),
+    'web-browser': ('Web browser', url['Wiki pg'] + 'Web_browser'),
     # New links below, sorted links above
     }

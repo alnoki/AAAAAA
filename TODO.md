@@ -1,23 +1,10 @@
 # 0.3.0 Website restructuring
 
-## Autobuild usage
-1. https://pypi.org/project/sphinx-autobuild/
-1. Add to tools page
-1. From docs folder use
-   1. sphinx-autobuild . ./_build/html -B -s 1
-      1. The -s 0 appears not to open a browser
-      1. Will open a browser the first time (-B) with a 1s start delay (-s)
-      1. Will be served at http://127.0.0.1:8000
-      1. Quit by ctrl + c
-1. Once the browser is opened to the server:
-   1. It will cause pages that are viewing the server to reload
-      1. Any time any of the sphinx documents are changed
-      1. Doesn't matter how the window got opened
-      1. Appears autobuild sends a notification to the browser
-         1. Reload this page
-1. Will not open a new window for any new changed documents
-1. Need to still navigate to the page eventually
-1. Add to conda table per procedures for the forge
+## Mac env
+1. Uninstall miniconda
+1. clear bash profile
+1. Reinstall miniconda
+1. Import a6 and tidy up
 
 ## Versioning
 1. Update project dir tree
@@ -81,7 +68,10 @@
    1. Make a table somewhere in an index page
 
 ## Syntax/terminology
-1. Link to command link
+1. Mention :xref:`internet` early on, in "what next"?
+   1. Also, :xref:`Google`, :xref:`Wikipedia`, :xref:`YouTube`
+   1. :xref:`Open-source software <open-source>`
+1. Link to command line and find all
 1. source code, code, etc. should link to python tools page
 1. :std:doc: should just be :doc: per sphinx roles
       1.Search all for :std: and replace with :
@@ -165,6 +155,8 @@
       1. Guard: only if the .rst and the .html were changed?
    1. Make clean at the end?
       1. Would this make you have to re-intersphinx everytime?
+1. Keep in mind that autobuild sends out some sort of ping or hook
+   1. You could somehow monitor this?
 
 ## Content card
 1. Front

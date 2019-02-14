@@ -51,14 +51,14 @@ General
 
 #. :xref:`RealPython`
 
-   * Comprehensive blog-style website with examples, guides, tips, etc.
+   * Comprehensive :xref:`website <website>` with examples, guides, tips, etc.
 
 #. :doc:`tutorial/interpreter`
 
    * The mechanism that runs :xref:`Python` code
 
-Projects
-========
+Project structure
+=================
 
 #. :ref:`python:tut-packages`
 
@@ -186,6 +186,9 @@ Classes
 Environments
 ============
 
+Anaconda
+--------
+
 #. :xref:`Anaconda`
 
    * :xref:`Python` package dependency manager and environment configurator
@@ -266,38 +269,6 @@ Conda syntax
 
    * List the :ref:`conda packages <conda:concept-conda-package>` in a
      :ref:`conda environment <conda:concept-conda-env>`
-
-OS-specific
-============
-
-#. :xref:`OS`
-
-   * Computer system resource manager
-
-#. :xref:`Mac OS<Mac>`
-
-   * :xref:`Wikipedia` article about the :xref:`Mac OS<Mac>`
-
-#. :xref:`Windows OS<Windows>`
-
-   * :xref:`Wikipedia` article about the :xref:`Windows OS<Windows>`
-
-#. :xref:`Linux OS family<Linux>`
-
-   * :xref:`Wikipedia` article about the :xref:`Linux OS family<Linux>`
-
-#. :xref:`cmd.exe-invocation`
-
-   * :xref:`Windows` command line
-
-#. :xref:`bash-man-page`
-
-   * Command line for :xref:`Mac` and :xref:`Linux`
-
-#. :xref:`Change-bash-prompt`
-
-   * How to change :xref:`bash <bash-man-page>` prompt to a custom string like
-     ``$``
 
 
 ********
@@ -570,43 +541,52 @@ Practical use
       10:15, Incorporating :ref:`Jupyter Notebooks <tools-jupyter>`
       13:00, Checking spelling
       14:00, Incorporating images
-      15:15, Including code
+      15:15, :ref:`Including code <tools-napoleon>`
       17:00, Continuous integration
-      20:00, :std:doc:`Autodoc <sphinx:usage/extensions/autodoc>`
+      20:00, :doc:`Autodoc <sphinx:usage/extensions/autodoc>`
       24:15, :ref:`Themes <tools-sphinx>`
+
+#. :xref:`sphinx-autobuild`
+
+   * Automatically update documentation builds
 
 #. :xref:`Writer-intro-to-Sphinx`
 
    * General explanation of using
-     :std:doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
+     :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
      , written by Eric Holscher, co-founder of
-     :std:doc:`Read the Docs<rtfd:index>`
+     :doc:`Read the Docs<rtfd:index>`
+
+#. :doc:`HTTP server <python:library/http.server>`
+
+   * :ref:`Python package <python:tut-packages>` that creates a
+     :xref:`website <website>` for testing out documentation
 
 Usage specifics
 ---------------
 
-#. :std:doc:`sphinx:usage/extensions/index`
+#. :doc:`sphinx:usage/extensions/index`
 
-   * Additional functionalities for :std:doc:`Sphinx <sphinx:intro>` engine
+   * Additional functionalities for :doc:`Sphinx <sphinx:intro>` engine
 
-#. :std:doc:`conf.py usage<sphinx:usage/configuration>`
+#. :doc:`conf.py usage<sphinx:usage/configuration>`
 
-   * How to configure a :std:doc:`Sphinx <sphinx:intro>` project
+   * How to configure a :doc:`Sphinx <sphinx:intro>` project
 
 #. :ref:`sphinx:toctree-directive`
 
-   * :std:doc:`Directive <sphinx:usage/restructuredtext/directives>` for
+   * :doc:`Directive <sphinx:usage/restructuredtext/directives>` for
      creating project document structure
 
-#. :std:doc:`Autodoc extension <sphinx:usage/extensions/autodoc>`
+#. :doc:`Autodoc extension <sphinx:usage/extensions/autodoc>`
 
-   * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` for generating
+   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` for generating
      documentation straight from :xref:`Python` source code
 
 #. :ref:`sublime-with-sphinx:use the external links extension`
 
    * Instructions for installing an example
-     :std:doc:`Sphinx extension <sphinx:usage/extensions/index>`
+     :doc:`Sphinx extension <sphinx:usage/extensions/index>`
    * Similar to :ref:`link management <sphinx-managing-references>` in
      :term:`AAAAAA`
 
@@ -844,15 +824,6 @@ Engine-agnostic tools
      and :xref:`Jupyter Notebooks <Jupyter>`
 
 
-***********
-Mathematics
-***********
-
-#. :xref:`factorial-definition`
-
-   * :xref:`Wikipedia` factorial page
-
-
 *****
 Tools
 *****
@@ -980,8 +951,53 @@ Extensions
 General computer information
 ****************************
 
+OS specifics
+============
+
+#. :xref:`OS`
+
+   * Computer system resource manager
+
+#. :xref:`Mac OS<Mac>`
+
+   * :xref:`Wikipedia` article about the :xref:`Mac OS<Mac>`
+
+#. :xref:`Windows OS<Windows>`
+
+   * :xref:`Wikipedia` article about the :xref:`Windows OS<Windows>`
+
+#. :xref:`Linux OS family<Linux>`
+
+   * :xref:`Wikipedia` article about the :xref:`Linux OS family<Linux>`
+
+#. :xref:`cmd.exe-invocation`
+
+   * :xref:`Windows` command line
+
+#. :xref:`bash-man-page`
+
+   * Command line for :xref:`Mac` and :xref:`Linux`
+
+#. :xref:`Change-bash-prompt`
+
+   * How to change :xref:`bash <bash-man-page>` prompt to a custom string like
+     ``$``
+
+
 Online information
 ==================
+
+#. :xref:`internet`
+
+   * An interconnected system of information
+
+#. :xref:`website`
+
+   * A way to view content on the :xref:`internet`
+
+#. :xref:`web-browser`
+
+   * A viewer for a :xref:`website <website>`
 
 #. :xref:`Google`
 
@@ -1093,3 +1109,12 @@ Money definitions
 #. :xref:`bank`
 
    * An institution that manages :xref:`money <money>`
+
+
+***********
+Mathematics
+***********
+
+#. :xref:`factorial-definition`
+
+   * :xref:`Wikipedia` factorial page

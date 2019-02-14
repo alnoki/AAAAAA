@@ -81,7 +81,11 @@ Creating a6 from scratch
 
    .. code-block:: bash
 
-      conda install -c conda-forge doc8 jupyter_contrib_nbextensions sphinxcontrib-bibtex
+      conda install -c conda-forge doc8 jupyter_contrib_nbextensions sphinxcontrib-bibtex sphinx-autobuild
+
+   .. note::
+      Be sure to copy and paste the whole box! It may scroll to the right on
+      your screen
 
 #. :ref:`Install AAAAAA for testing <conda-pip-AAAAAA>`
 #. :ref:`Tidy up <conda-tidy-up>`

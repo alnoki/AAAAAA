@@ -27,35 +27,94 @@ Sphinx
 Building documentation
 **********************
 
+.. _sphinx-building-manually:
+
+Manually
+========
+
 Per :xref:`Willing-Sphinx`:
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
    inside the :ref:`documentation root directory<concepts-project-dir-tree>` if
    it is not already :ref:`active <conda:activate-env>`
 #. From the :ref:`VS Code integrated terminal <tools-vs-code>`, make a new
-   build then start a local server:
+   build of documentation then start a
+   :doc:`server <python:library/http.server>`
 
    .. code-block:: bash
 
       make html
       python -m http.server
 
-#. Open http://localhost:8000/_build/html/index.html in a browser to view the
-   build
+#. Open http://localhost:8000/_build/html/index.html in a
+   :xref:`web browser <web-browser>` to view the build
 #. You can update the :ref:`.rst files <tools-restructured-text>` and make
-   another build, but don't start another server (unless you want an
+   another build, but don't start another
+   :doc:`server <python:library/http.server>` (unless you want an
    :xref:`http-socket-error`):
 
    .. code-block:: bash
 
       make html
 
-#. Refresh the browser to see changes
+#. Refresh the :xref:`browser <web-browser>` to see changes
 #. Before :ref:`committing <git-committing>`, clear out the build files:
 
    .. code-block:: bash
 
       make clean
+
+.. tip::
+
+   You can :ref:`automate this process <sphinx-autobuilding>` if you want quick
+   updates, like if you are
+   :ref:`proofreading documentation <writing-proofread>`
+
+.. _sphinx-autobuilding:
+
+Automatically
+=============
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :ref:`tools-sphinx-autobuild`, :term:`AAAAAA` conceptual description
+   :xref:`sphinx-autobuild`, Official user manual
+
+#. Follow the same steps as the
+   :ref:`manual build procedure <sphinx-building-manually>`, except use the
+   following to start a :doc:`server <python:library/http.server>`:
+
+   .. code-block:: bash
+
+      sphinx-autobuild sphinx-autobuild . ./_build/html -B -s 1
+
+   .. csv-table:: :xref:`Autobuild options <sphinx-autobuild>`
+      :header: "Reference", "Topic"
+      :align: center
+
+      ``-B``, Automatically open :xref:`browser <web-browser>`
+      ``-s``, Delay slightly [#]_ before opening :xref:`browser <web-browser>`
+
+   * This should automatically open a :xref:`web browser <web-browser>`
+   * The :doc:`server <python:library/http.server>` should be at
+     http://127.0.0.1:8000
+
+#. Use :kbd:`control-c` to stop the :doc:`server <python:library/http.server>`
+#. Keep in mind:
+
+   * Once the :doc:`server <python:library/http.server>` is running, saved
+     changes to any :ref:`.rst files <tools-restructured-text>` should cause
+     your :xref:`web browser <web-browser>` to update whatever part of the
+     :xref:`website <website>` you are viewing
+   * You will still need to manually navigate to whatever part of the
+     :xref:`website <website>` you want to view
+
+.. rubric:: Footnotes
+
+.. [#] If you try to use no delay at all, ``-s 0``, the
+   :xref:`browser <web-browser>` might not open
 
 .. _sphinx-managing-references:
 

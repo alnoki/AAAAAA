@@ -50,23 +50,24 @@ Anaconda
 :ref:`software packages <conda:concept-conda-package>` that are free to
 download and use. The base :xref:`Anaconda` collection has way more
 :ref:`packages <conda:concept-conda-package>` than :term:`AAAAAA` require, so
-you can use :std:doc:`Miniconda<conda:user-guide/install/index>` to acess only
-the ones that you need
+you can use :doc:`Miniconda<conda:user-guide/install/index>` to acess only the
+ones that you need
 
 You can manage these :ref:`packages <conda:concept-conda-package>` using
-:std:doc:`conda <conda:index>`, a command-line configurator that automatically
-checks dependencies and maintains compatibility between
+:doc:`conda <conda:index>`, a configurator that automatically checks
+dependencies and maintains compatibility between
 :ref:`packages <conda:concept-conda-package>`.
 :ref:`conda:concept-conda-package` can be downloaded from
-different :ref:`conda channels <conda:channels-glossary>`
+different :ref:`conda channels <conda:channels-glossary>`, like the
+:xref:`conda-forge`
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"
    :align: center
 
-   :std:doc:`conda:index`, Official reference
-   :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`, "Common
-   :std:doc:`conda <conda:index>` commands"
+   :doc:`conda:index`, Official reference
+   :doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`, "Common
+   :doc:`conda <conda:index>` commands"
    :ref:`Conda procedures <conda-procedures>`, :term:`AAAAAA` usage
 
 The :ref:`developer setup <dev-env-intro>` describes how to
@@ -113,6 +114,9 @@ The :ref:`developer setup <dev-env-intro>` describes how to
          :ref:`documentation syntax <concepts-documentation>`", "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
          :ref:`tools-bibtex`, :ref:`Book citations <references-books>`, "
+         :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
+         :ref:`tools-sphinx-autobuild`, "
+         :ref:`Auto-update documentation <sphinx-autobuilding>`", "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
          :ref:`Jupyter Notebooks <tools-jupyter>`, Interactive analysis, "
          :ref:`dev-env-analyzing`","
@@ -231,6 +235,8 @@ functionality and several are used in :term:`AAAAAA`:
    configuration"
    :doc:`conf.py <sphinx:usage/configuration>`, Configuration settings
    :ref:`Sphinx procedures <sphinx-procedures>`, :term:`AAAAAA` usage
+   :ref:`tools-sphinx-autobuild`, ":ref:`Automatic <sphinx-autobuilding>`
+   documentation production"
 
 .. _tools-restructured-text:
 
@@ -266,7 +272,7 @@ built
    :std:doc:`roles <sphinx:usage/restructuredtext/roles>` and
    :std:doc:`directives <sphinx:usage/restructuredtext/directives>`"
 
-Many :ref:`tools-sphinx` documentation websites have an
+Many :ref:`tools-sphinx` documentation :xref:`websites <website>` have an
 :guilabel:`Edit on GitHub` (or similar) feature at
 the top of each page. This feature will display the
 :std:doc:`reST <sphinx:usage/restructuredtext/basics>` file that created the
@@ -293,7 +299,7 @@ project documentation :doc:`versions <rtfd:versions>`
 
 :term:`AAAAAA` use the
 :std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which generates
-the visual appearance of this website!
+the visual appearance of this :xref:`website <website>`!
 
 .. csv-table:: Select references
    :header: "Reference", "Topic"
@@ -408,6 +414,26 @@ can usually get the :xref:`bibtex` from :xref:`ottobib`
    :xref:`bibtex-syntax`, Syntax specifications
    :xref:`cite-multiple-authors`, Use of ``et. al``
    :ref:`BibTeX procedures <sphinx-reference-book>`, :term:`AAAAAA` usage
+
+.. _tools-sphinx-autobuild:
+
+sphinx-autobuild
+================
+
+:xref:`sphinx-autobuild` is a :ref:`package <tools-anaconda>` that automates
+the iterative process of :ref:`manual builds <sphinx-building-manually>`, which
+is helpful when :ref:`proofreading documentation <writing-proofread>`
+
+.. csv-table:: Select references
+   :header: "Reference", "Topic"
+   :align: center
+
+   :xref:`sphinx-autobuild`, User manual
+   :ref:`tools-sphinx`, Tool to make documentation
+   :ref:`Building manually <sphinx-building-manually>`, "Manual
+   :term:`AAAAAA` usage"
+   :ref:`Building automatically <sphinx-autobuilding>`, "Automated
+   :term:`AAAAAA` usage"
 
 .. _tools-vs-code:
 
