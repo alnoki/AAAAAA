@@ -1,5 +1,7 @@
 .. 5863379
 
+.. _concepts-project-structure:
+
 #################
 Project structure
 #################
@@ -53,7 +55,7 @@ Some select demonstrative contents of the :xref:`AAAAAA-repo`:
    :align: center
 
    ``AAAAAA/``, Project root :xref:`directory <directory>`
-   ``src/`` , Source code
+   ``src/`` , :xref:`Source code <open-source>`
    ``test/`` , :ref:`tools-pytest` code
    ``doc/`` , :ref:`tools-sphinx` documentation
    ``nbs/`` , :ref:`tools-jupyter` notebooks

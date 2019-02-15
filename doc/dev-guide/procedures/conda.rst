@@ -8,7 +8,7 @@ Conda
 #####
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`tools-anaconda`, :term:`AAAAAA` conceptual explanation
@@ -26,7 +26,7 @@ Tidying up
 **********
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
-#. Use :std:doc:`conda:commands/update` to get the latest
+#. Use :doc:`conda:commands/update` to get the latest
    :ref:`packages <conda:concept-conda-package>`:
 
    .. code-block:: bash
@@ -39,13 +39,13 @@ Tidying up
       as possible from the official
       :ref:`conda channel <conda:channels-glossary>`
 
-#. Use :std:doc:`conda:commands/clean` to get rid of excess files:
+#. Use :doc:`conda:commands/clean` to get rid of excess files:
 
    .. code-block:: bash
 
       conda clean --all
 
-#. Use :std:doc:`conda:commands/list` to inspect the new
+#. Use :doc:`conda:commands/list` to inspect the new
    :ref:`conda environment <conda:concept-conda-env>`:
 
    .. code-block:: bash
@@ -62,7 +62,7 @@ Creating a6 from scratch
 #. Use the :ref:`packages table <concepts-packages-table>` to indentify which
    :ref:`packages <conda:concept-conda-package>` you need
 #. :ref:`Start up conda <conda:starting-conda>`, then use
-   :std:doc:`conda:commands/create` to make a new
+   :doc:`conda:commands/create` to make a new
    :ref:`conda environment <conda:concept-conda-env>` with
    :ref:`packages <conda:concept-conda-package>` from
    the :ref:`conda channel <conda:channels-glossary>`:
@@ -76,7 +76,7 @@ Creating a6 from scratch
       your screen
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
-#. :std:doc:`Install <conda:commands/install>` the remaining
+#. :doc:`Install <conda:commands/install>` the remaining
    :ref:`packages <conda:concept-conda-package>` from :xref:`conda-forge`:
 
    .. code-block:: bash

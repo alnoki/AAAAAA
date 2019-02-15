@@ -83,7 +83,7 @@ Starting a new version
    :ref:`version numbers <version-list>` numbers (and potentially copyright)
 #. Add an entry to the :ref:`version list <version-list>`
 
-   * Document changes as you go, in language that
+   * Document changes as you go, in a way that
      :xref:`tells the codebase what to do <commit-conventions>`
 
 .. _versioning-releasing:
@@ -108,10 +108,12 @@ At this point you should be working on a
 
 #. Finalize any updates to the :ref:`version list <version-list>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
-   most recent :ref:`release <version-list>` s
-#. If you updated the
-   :ref:`documentation exampe <concepts-documentation-example>`, verify it
-   actually :ref:`builds <sphinx-building-documentation>`
+   most recent :ref:`release <version-list>`
+
+   * Once you start, go through from the first
+     :ref:`.rst file <tools-restructured-text>` to the last, only making edits
+     for the current :ref:`.rst file <tools-restructured-text>` you are on
+
 #. Update the ``YYYY-MM-DD`` on the :ref:`version list <version-list>`
 #. :ref:`Commit but do not push <git-committing>`
 #. :ref:`Merge <git-merging>` the

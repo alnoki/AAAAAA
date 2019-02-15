@@ -47,6 +47,7 @@ In accordance with :std:doc:`test code recommendations <pytest:goodpractices>`,
            test_utilities.py
            ...
 
+.. _concepts-code-style:
 
 *****
 Style
@@ -82,12 +83,13 @@ Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
 **********************************************************************
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
+   :ref:`tools-napoleon`, Create pretty documentation elements
    :pep:`257`, :ref:`Docstring <python:tut-docstrings>` conventions
-   :pep:`484`, Syntax to annotate :std:doc:`types <python:library/stdtypes>`
-   :std:ref:`NumPy docstrings <numpy:format>`, "
+   :pep:`484`, Syntax to annotate :doc:`types <python:library/stdtypes>`
+   :ref:`NumPy docstrings <numpy:format>`, "
    :ref:`Docstring <python:tut-docstrings>` style"
 
 Code is enhanced with :ref:`docstrings <python:tut-docstrings>` and
@@ -104,19 +106,16 @@ create pretty documentation elements that explain code:
    :param str how: you gon' do that?
    :param str where: are you 'splaining it?
    :param datetime.date when: do we receive the coupons you promised?
-   :param int how_many: times you gon' do dis befo' I smack-a-you?
+   :param int how_many: parcels of knowledge?
    :return: with newfound knowledge
-   :rtype: str
+   :rtype: object
    :raises ValueError: if the explanaion is not understood
    :raises TypeError: if the explanation is in the wrong language
 
 .. attention::
+
    We interrupt your drooling to return to :xref:`alnoki <alnoki-repos>`
    addressing you in the second person
-
-If you click :guilabel:`[source]`, you will be taken to the original code. Once
-you are there, if you click :guilabel:`[docs]`, you will be taken back to
-documentation
 
 Conveniently, documentation elements can be created with simple
 :ref:`reST directives <tools-restructured-text>` like:
@@ -124,3 +123,7 @@ Conveniently, documentation elements can be created with simple
 .. code-block:: rest
 
    .. autoclass:: AAAAAA.ledger.Transaction
+
+.. seealso::
+
+   :py:class:`AAAAAA.ledger.Transaction` (<- yes, that's a :xref:`link <URL>`)

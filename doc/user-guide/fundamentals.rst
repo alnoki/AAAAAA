@@ -5,6 +5,8 @@ Transactions
 .. contents::
    :local:
 
+.. _guide-fin-background:
+
 ***************
 Background info
 ***************
@@ -42,12 +44,12 @@ Mechanics
 :py:class:`~AAAAAA.ledger.Transaction`, is a :ref:`class <python:tut-classes>`,
 which is a special type of :term:`object <python:object>`:
 
-.. tip::
-   You can click :guilabel:`[source]` below to view the original code,
-   then click :guilabel:`[docs]` to return
-
 .. autoclass:: AAAAAA.ledger.Transaction
    :undoc-members:
+
+.. tip::
+   You can click :guilabel:`[source]` above to view the original
+   :ref:`code <tools-python>`, then click :guilabel:`[docs]` to return
 
 :py:class:`~AAAAAA.ledger.Transaction` has a
 :ref:`namespace <python:tut-scopes>` with various

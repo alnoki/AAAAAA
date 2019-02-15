@@ -17,7 +17,7 @@ Below is a list of versions of :term:`AAAAAA`, numbered according to
 :xref:`semantic versioning standards <semver>`, and dated in order of
 increasing chronological specificity : ``MAJOR.MINOR.PATCH`` (``YYYY-MM-DD``)
 
-Modifications are written in a way that
+Modifications are explained in a way that
 :xref:`tells the codebase what to do <commit-conventions>`, like in
 :ref:`commit messages <git-committing>`
 
@@ -35,6 +35,7 @@ Modifications are written in a way that
      for :ref:`books <references-books>`
    * Add :ref:`tools-sphinx-autobuild` support and
      :ref:`procedures <sphinx-autobuilding>`
+   * Add :ref:`the spirit of alnoki's apps <zen-spirit>`
 
 * 0.2.0 (2019-02-08)
 

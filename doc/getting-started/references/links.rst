@@ -394,6 +394,9 @@ Versioning
 
    * Specific language style for contributing to a project
 
+#. :xref:`mvp-development`
+
+   * An incremental way to create features
 
 *******************
 Git version control
@@ -981,6 +984,12 @@ OS specifics
 
    * :xref:`Wikipedia` article about the :xref:`Linux OS family<Linux>`
 
+#. :xref:`torvalds-interview`
+
+   * Creator of :xref:`Linux`
+   * :xref:`Cited <citation>` at
+     :ref:`the spirit of alnoki's apps <zen-spirit>`
+
 #. :xref:`command-line`
 
    * A direct way to communicate with an :xref:`operating system <OS>`
@@ -1141,3 +1150,21 @@ Mathematics
 #. :xref:`factorial-definition`
 
    * :xref:`Wikipedia` factorial page
+
+
+**********
+Philosophy
+**********
+
+Places worth visiting
+=====================
+
+#. :xref:`msfc-lab`
+
+   * Flight testing procedures :xref:`cited <citation>` in
+     :ref:`zen-aipaip`
+
+#. :xref:`caye-caulker`
+
+   * Island with the mantra *go slow*, :xref:`cited <citation>` in
+     :ref:`zen-aipaip`

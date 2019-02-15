@@ -155,6 +155,10 @@ Procedures
 Proofreading documentation
 **************************
 
+.. tip::
+
+   Enjoy the content and :ref:`go slow <zen-spirit>`
+
 .. _writing-isolate-changes:
 
 Isolating changes
@@ -170,12 +174,10 @@ This is typically done right before
 #. Proofread :ref:`new documents <writing-proofread-new>` and
    :ref:`changed documents <writing-proofread-changed>`
 
-.. tip::
-
-   Even if you have moved a document, :ref:`GitLens <tools-vs-code>` is often
-   able to identify that it is in a new :xref:`directory <directory>` and will
-   only display changes to the document (rather than classifying the document
-   as new)
+      * Even if you have moved something, :ref:`GitLens <tools-vs-code>` is
+        often able to identify that it is in a new
+        :xref:`directory <directory>` and will only display changes to the
+        document (rather than classifying the document as new)
 
 .. _writing-proofread-new:
 
@@ -192,8 +194,8 @@ things to watch out for
 #. Go through one :ref:`minor section <concepts-documentation-example>` at a
    time
 
-   #. Read the browser-rendered text out loud and make any corrections in
-      :ref:`tools-vs-code`, then try a
+   #. Read the browser-rendered text :ref:`out loud <zen-aipaip>` and make any
+      corrections in :ref:`tools-vs-code`, then try a
       :ref:`new build <sphinx-building-documentation>`
    #. Verify each link in the section by clicking on it
 

@@ -1,28 +1,12 @@
 # 0.3.0 Website restructuring
 
-## Documentation example
-1. Make it an orphan page and literal include it
-   1. If so, remove it from versioning procedure
-   1. Intentionally break it to see that sphinx can't build
-      1. Because maybe orphan pages don't get built
+## Mac env
+1. Uninstall miniconda
+1. clear bash profile
+1. Reinstall miniconda
+1. Import a6 and tidy up
 
 ## Zen
-1. Spirit of alnoki's apps on Zen page
-   1. Show OHIO reference
-   1. Functional programming is easiest to read, understand, and test
-      1. Link to functional programming reference
-   1. Should be open source
-   1. Incremental versioning per the link above
-      1. Each one should be an MVP (minimum viable prototype)
-         1. Link
-   1. Hyperlink to anything a novice might not understand
-   1. Show how it's done, in case you forget later
-   1. Open source and free as much as possible
-1. AAAAAA term should say (colloquially referred to as alnoki's apps)
-1. Tools should be concepts, code/documentation pages should be specifics
-   1. Setup have concepts and specifics section?
-   1. Code.rst should be specifics
-   1. Move the theory in Code.rst to tools page
 1. Cite "_why" and how we get to "live in the computer"
    1. _why's poingnant guide to Ruby
    1. https://poignant.guide/book/chapter-3.html
@@ -32,6 +16,9 @@
    1. Use "additional body elements epigraph from rest primer
 1. Your legacy is your documentation
 1. Section on writing tests and packaging in dev-guide
+1. If you want it, make it - Linus interview
+1. Resultant citation:
+   1.
 
 ## toctree structure
 1. Remove mod index
@@ -56,13 +43,10 @@
    1. Make a table somewhere in an index page
 
 ## Syntax/terminology
+1. Warning that mobile view is iffy
 1. Link command line in the Python tools section
 1. Link directory in the Python tools section
 1. Have the what's next place link to :xref:`link` and :xref:`the-internet`
-1. Re-file references
-1. Tom Bryan NASA MSFC link
-   1. Flight robotics laboratory?
-1. Cite url wiki pg
 1. Mention :xref:`internet` early on, in "what next"?
    1. Also, :xref:`Google`, :xref:`Wikipedia`, :xref:`YouTube`
    1. :xref:`Open-source software <open-source>`
@@ -90,27 +74,6 @@
 1. Link the tables generator somewhere on tools
 1. Use markdown link to say what TODO.md is made from
 
-## Mac env
-1. Uninstall miniconda
-1. clear bash profile
-1. Reinstall miniconda
-1. Import a6 and tidy up
-
-## Proofreading all docs
-1. Field list in code
-   1. should return an obj
-   1. How many - parcels of knowledge?
-   1. Put a sidebar next to it to compress it left?
-      1. Put it in a sidebar?
-      1. See rtd documentation
-1. Replace :std: -> :
-1. See where to remove RTD sphinx theme from
-1. Go slow
-   1. Caye Caulker in Belize
-
-## New version pushing
-1. Make 0.3.0 active so you can view it on RTD when doing procedures
-
 # 0.4.0
 
 ## Packaging
@@ -133,6 +96,13 @@
       1. Mention you have just started the python interpreter with link
          1. Link is in the floating point rampage
 1. Push to conda and create procedures as you go
+1. https://packaging.python.org/tutorials/packaging-projects/
+   1. Go through the tutorial and upload to test pypi
+1. https://choosealicense.com/
+   1. Probably MIT
+      1. Need to have a versioning section that says to update year
+1. https://packaging.python.org/guides/distributing-packages-using-setuptools/
+   1. More info about setup tools
 
 ## utils.py
 1. arg parse from early on in python tutorial
@@ -211,6 +181,7 @@
          1. * 'everywhere' : ("The internet", url['Wiki pg] + 'Universe')
    1. Have your email and your website
 1. On back, explanation field list
+   1. Just make the window smaller in order to view it
 1. Use version 0.3 field list
 
 ## Git

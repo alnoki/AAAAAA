@@ -451,5 +451,13 @@ xref_links = {
     'citation': ('Citation', url['Wiki pg'] + 'Citation'),
     'command-line': ("Command line", url['Wiki pg'] +
                      'Command-line_interface'),
+    'msfc-lab':
+    ("NASA Marshall Space Flight Center Flight Robotics Laboratory",
+     'https://archive.org/details/NASAMarshallTV-yrt04t5ZYDo'),
+    'caye-caulker': ("Caye Caulker", url['Wiki pg'] + 'Caye_Caulker'),
+    'mvp-development': ("Minimum Viable Prototype (MVP)",
+                        url['Wiki pg'] + 'Minimum_viable_product'),
+    'torvalds-interview': ('Linus Torvalds interview', url['YT vid'] +
+                           'o8NPllzkFhE'),
     # New links below, sorted links above
     }

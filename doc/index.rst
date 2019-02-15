@@ -15,10 +15,11 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 .. glossary::
 
    AAAAAA
-      Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA) are
-      a growing collection of financial analysis tools. Development is
-      performed in the :xref:`Python` computer language, using additional
-      :ref:`packages <conda:concept-conda-package>` developed by the
+      Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA),
+      colloquially referred to as *alnoki's apps*, are a growing collection of
+      :ref:`financial analysis <guide-fin-background>` tools. Development is
+      performed in the :xref:`Python computer language <Python>` , using
+      additional :ref:`packages <conda:concept-conda-package>` developed by the
       :xref:`open-source` community
 
 
