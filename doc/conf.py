@@ -445,6 +445,11 @@ xref_links = {
                          'project/sphinx-autobuild/'),
     'internet': ('Internet', url['Wiki pg'] + 'Internet'),
     'website': ('Website', url['Wiki pg'] + 'Website'),
-    'web-browser': ('Web browser', url['Wiki pg'] + 'Web_browser'),
+    'web-browser': ("Web browser", url['Wiki pg'] + 'Web_browser'),
+    'webpage': ("Webpage", url['Wiki pg'] + 'Web_page'),
+    'URL': ("Uniform Resource Locator (URL)", url['Wiki pg'] + 'URL'),
+    'citation': ('Citation', url['Wiki pg'] + 'Citation'),
+    'command-line': ("Command line", url['Wiki pg'] +
+                     'Command-line_interface'),
     # New links below, sorted links above
     }

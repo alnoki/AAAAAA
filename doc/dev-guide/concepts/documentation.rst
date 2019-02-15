@@ -121,13 +121,20 @@ Specific syntax
 #. See :ref:`the packages table <concepts-packages-table>` for some sample
    :ref:`csv-table <sphinx:table-directives>` syntax with appropriate line
    breaks
+
+   * You should only need ``"`` in :ref:`csv-tables <sphinx:table-directives>`
+     to escape line breaks, so don't use them for the
+     :doc:`directive options <sphinx:usage/restructuredtext/directives>`
+     listed after ``:header:``
+
 #. :ref:`Link <references-links>` capitalization should be natural with regard
    to the rest of the sentence
 
    * :ref:`Links <references-links>` are here
    * Here are some :ref:`links <references-links>`
 
-#. There should be regular text between two different links so that the
+#. There should be regular text between two different
+   :ref:`links <references-links>` so that the
    :ref:`links <references-links>` can clearly be differentiated:
 
    .. csv-table::
@@ -191,11 +198,19 @@ Simple example
 
    Welcome to this section! Don't forget the double overline! [#]_
 
+   .. csv-table:: Reference, Topic example (NOT "Reference", "Topic")
+      :header: Reference, Topic
+      :align: center
+
+      :ref:`concepts-documentation-example`, This example
+      :term:`OHIO`, Task management philosophy
+
    Section title
    =============
 
    Welcome to this section. No double overline needed here! Let's talk about
    :ref:`documentation <concepts-documentation>`
+   (NOT :ref:`documentation <concepts-documentation>`)
 
    .. admonition:: How about this nice custom admonition?
 
@@ -226,6 +241,8 @@ Jupyter Notebooks
    The :ref:`Tools: Jupyter <tools-jupyter>` section explains how
    :ref:`Jupyter <tools-Jupyter>` works, but this is an elaboration of the
    specific components in :term:`AAAAAA`
+
+.. _concepts-jupyter-nbs-structure:
 
 .. code-block:: none
 

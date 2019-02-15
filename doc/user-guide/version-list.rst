@@ -6,7 +6,7 @@ Version list
 ############
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :xref:`semver`, Numbering standards
@@ -23,15 +23,18 @@ Modifications are written in a way that
 
 .. tip::
 
-   :term:`AAAAAA` has custom standards for
+   If you manage your own :ref:`Python package <python:tut-packages>` and you
+   want to know how this is done, see the
    :ref:`versioning procedures <versioning-procedures>`
 
 * 0.3.0
 
    * Restructure :ref:`toctrees <tools-sphinx>`
    * Add :ref:`versioning procedures <versioning-procedures>`
-   * Add :ref:`BibTeX <tools-bibtex>` support for
-     :ref:`book <references-books>` citations
+   * Add :ref:`BibTeX <tools-bibtex>` to create :xref:`citations <citation>`
+     for :ref:`books <references-books>`
+   * Add :ref:`tools-sphinx-autobuild` support and
+     :ref:`procedures <sphinx-autobuilding>`
 
 * 0.2.0 (2019-02-08)
 

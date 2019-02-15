@@ -76,7 +76,7 @@ Automatically
 =============
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`tools-sphinx-autobuild`, :term:`AAAAAA` conceptual description
@@ -88,10 +88,10 @@ Automatically
 
    .. code-block:: bash
 
-      sphinx-autobuild sphinx-autobuild . ./_build/html -B -s 1
+      sphinx-autobuild sphinx-autobuild . _build/html -B -s 1
 
    .. csv-table:: :xref:`Autobuild options <sphinx-autobuild>`
-      :header: "Reference", "Topic"
+      :header: Reference, Topic
       :align: center
 
       ``-B``, Automatically open :xref:`browser <web-browser>`
@@ -107,9 +107,9 @@ Automatically
    * Once the :doc:`server <python:library/http.server>` is running, saved
      changes to any :ref:`.rst files <tools-restructured-text>` should cause
      your :xref:`web browser <web-browser>` to update whatever part of the
-     :xref:`website <website>` you are viewing
+     :xref:`webpage <website>` you are viewing
    * You will still need to manually navigate to whatever part of the
-     :xref:`website <website>` you want to view
+     :xref:`webpage <website>` you want to view
 
 .. rubric:: Footnotes
 
@@ -153,8 +153,9 @@ Using Intersphinx
       * ``.io/en/latest/``
       * ``.com/en/latest/``
 
-#. Add the project's root to
-   :std:doc:`conf.py <sphinx:usage/configuration>`:
+#. Add the project's base :xref:`URL <URL>` to the ``intersphinx_mapping``
+   :ref:`dictionary <python:tut-dictionaries>` in
+   :ref:`conf.py <tools-sphinx>`:
 
    .. code-block:: python
 
@@ -167,7 +168,7 @@ Using Intersphinx
             ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
          ...
 
-#. Inspect the :std:doc:`objects.inv mapping <sphinx:usage/extensions/intersphinx>`
+#. Inspect the :doc:`objects.inv mapping <sphinx:usage/extensions/intersphinx>`
 
    * For large outputs, consider using a command line program (like
      :program:`Terminal` on a :xref:`Mac`), which can be maximized to full
@@ -224,10 +225,10 @@ Referencing external links
    Related configuration and usage"
 
 #. Add a reference to the link in
-   :std:doc:`conf.py <sphinx:usage/configuration>`
+   :doc:`conf.py <sphinx:usage/configuration>`
 
    * If the link has a common base link, like in a
-     :xref:`YouTube video <YouTube>`, add it to the ``url`` mapping
+     :xref:`YouTube video <YouTube>`, add it to the :xref:`URL <URL>` mapping
      :ref:`dictionary <python:tut-dictionaries>`:
 
      .. code-block:: python
@@ -320,7 +321,8 @@ Referencing books
    :doc:`BibTeX extension <bibtex:index>`, Parses :xref:`bibtex`
    :xref:`ottobib`, :xref:`bibtex` database for :ref:`books <references-books>`
    :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
-   :ref:`refs.bib <concepts-documentation>`, :xref:`bibtex` citation collection
+   :ref:`refs.bib <concepts-documentation>`, "Collection of
+   :xref:`bibtex`-style :xref:`citations <citation>`"
    :xref:`bibtex-syntax`, Syntax specifications
    :xref:`cite-multiple-authors`, Use of ``et. al``
 
@@ -331,8 +333,8 @@ Referencing books
    * A ``book`` :xref:`entry <bibtex-syntax>` requires at least ``author`` (or
      ``editor``), ``title``, ``publisher``, and ``year``
      :xref:`fields <bibtex-syntax>`
-   * Consider :xref:`et. al conventions <cite-multiple-authors>` for multiple
-     authors
+   * Consider
+     :xref:`et. al conventions for multiple authors<cite-multiple-authors>`
 
 #. Add an entry to :ref:`books <references-books>`
 

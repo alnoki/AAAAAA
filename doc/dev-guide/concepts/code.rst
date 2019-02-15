@@ -30,6 +30,8 @@ Structure
 In accordance with :std:doc:`test code recommendations <pytest:goodpractices>`,
 :term:`AAAAAA` code is structured as follows:
 
+.. _concepts-code-structure:
+
 .. code-block:: none
 
    AAAAAA/

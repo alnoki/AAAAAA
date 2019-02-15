@@ -1,23 +1,10 @@
 # 0.3.0 Website restructuring
 
-## Mac env
-1. Uninstall miniconda
-1. clear bash profile
-1. Reinstall miniconda
-1. Import a6 and tidy up
-
-## Versioning
-1. Update project dir tree
-   1. Need to say which ones must be updated
-      1. The code tree, sphinx tree, etc.
-      1. Cross-link with the tree code
-
-## Writing procedures
-1. Create a tools entry
-   1. Make sure to reciprically cross-reference
-   1. Copy links from the tools page and the procedures page
-   1. Gather links first
-   1. If adding a sphinx extension, add links to the sphinx extensions table
+## Documentation example
+1. Make it an orphan page and literal include it
+   1. If so, remove it from versioning procedure
+   1. Intentionally break it to see that sphinx can't build
+      1. Because maybe orphan pages don't get built
 
 ## Zen
 1. Spirit of alnoki's apps on Zen page
@@ -44,6 +31,7 @@
    1. I believe the most important lesson I’ve learned is that you should make content for yourself
    1. Use "additional body elements epigraph from rest primer
 1. Your legacy is your documentation
+1. Section on writing tests and packaging in dev-guide
 
 ## toctree structure
 1. Remove mod index
@@ -68,6 +56,13 @@
    1. Make a table somewhere in an index page
 
 ## Syntax/terminology
+1. Link command line in the Python tools section
+1. Link directory in the Python tools section
+1. Have the what's next place link to :xref:`link` and :xref:`the-internet`
+1. Re-file references
+1. Tom Bryan NASA MSFC link
+   1. Flight robotics laboratory?
+1. Cite url wiki pg
 1. Mention :xref:`internet` early on, in "what next"?
    1. Also, :xref:`Google`, :xref:`Wikipedia`, :xref:`YouTube`
    1. :xref:`Open-source software <open-source>`
@@ -95,6 +90,12 @@
 1. Link the tables generator somewhere on tools
 1. Use markdown link to say what TODO.md is made from
 
+## Mac env
+1. Uninstall miniconda
+1. clear bash profile
+1. Reinstall miniconda
+1. Import a6 and tidy up
+
 ## Proofreading all docs
 1. Field list in code
    1. should return an obj
@@ -104,11 +105,44 @@
       1. See rtd documentation
 1. Replace :std: -> :
 1. See where to remove RTD sphinx theme from
+1. Go slow
+   1. Caye Caulker in Belize
 
 ## New version pushing
 1. Make 0.3.0 active so you can view it on RTD when doing procedures
 
 # 0.4.0
+
+## Packaging
+1. Do this first!
+1. Try out with the 0.3.0 codebase
+1. First get onto PyPi
+    1. https://packaging.python.org/tutorials/packaging-projects/
+1. Then, can try adding to conda-forge
+    1. https://conda-forge.org/docs/
+    1. There is a sample file that just points to PyPi
+    1. https://github.com/conda-forge/staged-recipes/blob/master/recipes/example/meta.yaml
+1. PEP 328
+1. yaml should freeze at last release and then update each release
+   1. Sort of depends on Travis
+1. Update license
+1. https://stackoverflow.com/questions/448271/what-is-init-py-for
+1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
+1. Ship conda with the dependencies
+   1. Then can install in the quick start
+      1. Mention you have just started the python interpreter with link
+         1. Link is in the floating point rampage
+1. Push to conda and create procedures as you go
+
+## utils.py
+1. arg parse from early on in python tutorial
+1. Talk about utils.py in AAAAAA root?
+    1. code for writing dir tree
+        1. Take command line args
+1. Wrapper for sphinx-autobuild
+    1. Says which folders to watch
+    1. Simple command line prompt:
+        1. python utils -doc
 
 ## plot directive
 1. https://matplotlib.org/sampledoc/extensions.html
@@ -157,8 +191,20 @@
       1. Would this make you have to re-intersphinx everytime?
 1. Keep in mind that autobuild sends out some sort of ping or hook
    1. You could somehow monitor this?
+1. See https://docs.python.org/3/tutorial/modules.html
+1. Have the wrapper put the output to the console
+   1. See autobuild for how this is done, because it wraps sphinx
+   1. https://docs.python.org/3/library/argparse.html#module-argparse
+1. Watch the server that autobuild makes
+   1. https://pythonhosted.org/watchdog/index.html
+   1. It should send out some sort of ping that says to reload
+   1. Only open a new browser window if the html file in question isn't served
+      1. And if a reload ping came
+1. When the html file changes, the autobuild console should say so
+   1. Have the wrapper look for this and then open up a new browser?
 
 ## Content card
+1. AnaKAHNndaKAHN 2019
 1. Front
    1. :term:`AAAAAA`: link :xref:`everywhere`
       1. At bottom:
@@ -200,19 +246,14 @@
    1. bools say is associated with ticker
    1. Second says does it result in add or subtract to buying power
 1. overload + to add two transactions and yield effect on the brokerage
-
-## Package deployment
-1. PEP 328
-1. yaml should freeze at last release and then update each release
-   1. Sort of depends on Travis
-1. Update license
-1. https://stackoverflow.com/questions/448271/what-is-init-py-for
-1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
-1. Ship conda with the dependencies
-   1. Then can install in the quick start
-      1. Mention you have just started the python interpreter with link
-         1. Link is in the floating point rampage
-1. Push to conda and create procedures as you go
+1. As you segway into explaining file structure
+   1. https://docs.python.org/3/tutorial/modules.html
+   1. Should help you get ready to package on conda
+1. Add to python tools description as you go
+1. Run https://docs.python.org/3/tutorial/modules.html#the-dir-function
+1. https://docs.python.org/3/tutorial/modules.html#packages
+1. Then, use https://docs.python.org/3/library/argparse.html#module-argparse
+   1. Draw a dir tree?
 
 ## Settings autodoc
 1. Need a conf.py part of documentation concepts
@@ -229,8 +270,11 @@
 ## Doc coverage
 1. Figure out how to do this
    1. The packaging video on iPad may help
+1. Doc coverage is a sphinx extension
 
 ## Jupyter
+1. All jupyter notebooks should be able to be viewed
+   1. If you add one, must be able to access it from the AAAAAA nb viewer link
 1. Verify all Jupyter notebooks are linked
 1. Link a Jupyter notebook per Carol Willing video
 1. Make an examples page with Jupyter notebook to follow along

@@ -7,12 +7,18 @@
 Links
 #####
 
-This is a centralized and comprehensive list of online resources related to
-:term:`AAAAAA`, and is managed according to
-:ref:`references procedures <sphinx-managing-references>`
+This is a centralized and comprehensive list of :xref:`online <internet>`
+information related to :term:`AAAAAA` documentation, in
+:xref:`URL` format
 
-Links are not necessarily in order, but links with high priority are usually
-placed at the top of a section
+:xref:`Links <URL>` are not necessarily in order, but :xref:`links <URL>` with
+high priority are usually placed at the top of a section
+
+.. tip::
+
+   If you manage a :xref:`website <website>` using :ref:`Sphinx <tools-sphinx>`
+   and you want to create a list like this, see the
+   :ref:`references procedures <sphinx-managing-references>`
 
 .. contents:: Contents
    :local:
@@ -191,19 +197,19 @@ Anaconda
 
 #. :xref:`Anaconda`
 
-   * :xref:`Python` package dependency manager and environment configurator
+   * A manager for :ref:`Python packages <python:tut-packages>`
 
-#. :std:doc:`anaconda:anaconda/index`
+#. :doc:`anaconda:anaconda/index`
 
    * Documentation for :xref:`Anaconda`
 
-#. :std:doc:`Miniconda<conda:user-guide/install/index>`
+#. :doc:`Miniconda<conda:user-guide/install/index>`
 
    * Abbreviated version of :xref:`Anaconda` that is quick to download
 
-#. :std:doc:`conda:index`
+#. :doc:`conda:index`
 
-   * Command line configurator for :xref:`Anaconda`
+   * :xref:`command-line` configurator for :xref:`Anaconda`
 
 #. :ref:`conda:starting-conda`
 
@@ -226,24 +232,24 @@ Anaconda
 
    * A community-driven :ref:`conda channel <conda:channels-glossary>`
 
-#. :std:doc:`pip <python:installing/index>`
+#. :doc:`pip <python:installing/index>`
 
    * General installer for :xref:`Python` software
    * Used to :ref:`configure a6 <conda-pip-AAAAAA>` for use with
-     :std:doc:`pytest <pytest:index>`
+     :doc:`pytest <pytest:index>`
 
 Conda syntax
 ------------
 
-#. :std:doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`
+#. :doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`
 
-   * Quick reference for common :std:doc:`conda <conda:index>` commands
+   * Quick reference for common :doc:`conda <conda:index>` commands
 
-#. :std:doc:`conda:commands/create`
+#. :doc:`conda:commands/create`
 
    * Make a new :ref:`conda environment <conda:concept-conda-env>`
 
-#. :std:doc:`conda:commands/install`
+#. :doc:`conda:commands/install`
 
    * Add a :ref:`package <conda:concept-conda-package>` to a
      :ref:`conda environment <conda:concept-conda-env>`
@@ -252,20 +258,20 @@ Conda syntax
 
    * Enable use of a :ref:`conda environment <conda:concept-conda-env>`
 
-#. :std:doc:`conda:user-guide/tasks/manage-environments`
+#. :doc:`conda:user-guide/tasks/manage-environments`
 
    * Exporting and importing :ref:`environment <conda:concept-conda-env>` files
 
-#. :std:doc:`conda:commands/clean`
+#. :doc:`conda:commands/clean`
 
    * Removing unnecessary :ref:`conda packages <conda:concept-conda-package>`
 
-#. :std:doc:`conda:commands/update`
+#. :doc:`conda:commands/update`
 
    * Get the most recent version of
      :ref:`conda packages <conda:concept-conda-package>`
 
-#. :std:doc:`conda:commands/list`
+#. :doc:`conda:commands/list`
 
    * List the :ref:`conda packages <conda:concept-conda-package>` in a
      :ref:`conda environment <conda:concept-conda-env>`
@@ -670,13 +676,18 @@ Managing references
    * Instructions to reference numerical analysis and plotting tools via
      :std:doc:`Intersphinx <usage/extensions/intersphinx>`
 
+#. :xref:`citation`
+
+   * A way to reference a source of information
+
 #. :xref:`bibtex`
 
-   * Citation management file format
+   * :xref:`citation` management file format
 
 #. :doc:`BibTeX extension <bibtex:index>`
 
-   * :ref:`Sphinx extension <tools-sphinx>` for citing with :xref:`bibtex`
+   * :ref:`Sphinx extension <tools-sphinx>` for :xref:`citing <citation>` with
+     :xref:`bibtex`
 
 #. :xref:`ottobib`
 
@@ -970,13 +981,17 @@ OS specifics
 
    * :xref:`Wikipedia` article about the :xref:`Linux OS family<Linux>`
 
+#. :xref:`command-line`
+
+   * A direct way to communicate with an :xref:`operating system <OS>`
+
 #. :xref:`cmd.exe-invocation`
 
-   * :xref:`Windows` command line
+   * :xref:`command-line` for :xref:`Windows`
 
 #. :xref:`bash-man-page`
 
-   * Command line for :xref:`Mac` and :xref:`Linux`
+   * :xref:`command-line` for :xref:`Mac` and :xref:`Linux`
 
 #. :xref:`Change-bash-prompt`
 
@@ -999,13 +1014,21 @@ Online information
 
    * A viewer for a :xref:`website <website>`
 
+#. :xref:`webpage`
+
+   * What a :xref:`web browser <web-browser>` shows
+
+#. :xref:`URL`
+
+   * A way to locate a :xref:`webpage <webpage>`
+
 #. :xref:`Google`
 
-   * Preferred online search engine for general topic inquiries
+   * Preferred way to search for :xref:`online <internet>` information
 
 #. :xref:`Wikipedia`
 
-   * Preferred online encyclopedia
+   * Preferred source of :xref:`online <internet>` information
 
 #. :xref:`YouTube`
 
@@ -1013,7 +1036,7 @@ Online information
 
 #. :xref:`Open-source software <open-source>`
 
-   * :xref:`Wikipedia` article
+   * Public way to share code
 
 Software design standards
 =========================
@@ -1047,7 +1070,7 @@ Securities mechanics
 
 #. :xref:`finance-share`
 
-   * A single unit representing fractional owenership
+   * A single unit representing fractional ownership
 
 #. :xref:`finance-stock`
 

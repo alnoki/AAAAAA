@@ -82,23 +82,71 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
    :ref:`VS Code integrated terminal <tools-vs-code>`
 
 
+.. _writing-new-topic:
+
 ***********************
 Documenting a new topic
 ***********************
 
-#. Gather :ref:`references <sphinx-managing-references>` first, preferably in a
-   batch
-#. Add a descripion of any :ref:`links <references-links>` or
-   :ref:`books <references-books>` to :ref:`references <references>`
-#. Use the new :ref:`reference <references>` in documentation
-#. When appropriate, link to :ref:`tools <concepts-tools>` or other similar
-   documentation pages that have already been created rather than creating a
-   new :ref:`link <references-links>` outside of :term:`AAAAAA`
+#. :ref:`Gather necessary references <sphinx-managing-references>` first,
+   preferably in a batch
+
+   * These should be concentrated at a centralized :term:`AAAAAA` conceptual
+     explanation, usually at the :ref:`tools page <concepts-tools>`
+   * Use a :ref:`csv-table <sphinx:table-directives>` of
+     :ref:`references <references>` at the central conceptual explanation:
+
+     .. code-block:: rest
+
+        .. csv-table:: Select references
+           :header: Reference, Topic
+           :align: center
+
+           :ref:`tools-vs-code`, Task management environment
+           :ref:`concepts-project-dir-tree`, :term:`AAAAAA` project structure
+           :xref:`Markdown`, Syntax specification
+           :term:`OHIO`, Task management philosophy
+
+#. Use a :ref:`reference label <concepts-documentation-style>` in
+   documentation to refer to the core conceptual explanation
 
 .. tip::
 
    Avoid creating identical documentation in several places that must be
    multiply maintained
+
+Procedures
+==========
+
+#. Any new :ref:`procedures <procedures>` should be reciprocally cross-linked
+   with a conceptual explanation, using
+   :ref:`reference tables <writing-new-topic>`
+
+   #. The first row of the :ref:`table <writing-new-topic>` in the
+      :ref:`procedure explanation <procedures>` should be a
+      :ref:`reference label <concepts-documentation-style>` for the concept
+
+      * Because the conceptual explanation should be the primary source of
+        information when attempting the :ref:`procedure <procedures>`
+
+   #. The last row of the :ref:`table <writing-new-topic>` in the conceptual
+      explanation should be a
+      :ref:`reference label <concepts-documentation-style>` for the
+      :ref:`procedure explanation <procedures>`
+
+      * Because :ref:`procedures <procedures>` should be attempted only after
+        grasping conceptual explanations
+
+   .. csv-table:: Examples
+      :header: :ref:`Procedure <procedures>`, Topic
+      :align: center
+
+      :ref:`Git procedures <git-procedures>`, :ref:`Tools: Git <tools-git>`
+      :ref:`Versioning procedures <versioning-procedures>`, :ref:`version-list`
+
+#. Add to the :ref:`a6 package table <concepts-packages-table>` or
+   :ref:`Sphinx extension table <tools-sphinx>`, for example, if it makes sense
+   for your new :ref:`procedure <procedures>`
 
 .. _writing-proofread:
 

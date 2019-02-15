@@ -24,7 +24,7 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
 ***************************************************
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`tools-vs-code`, Task management environment
@@ -43,7 +43,7 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    * :guilabel:`Outline`
 
    .. csv-table:: :xref:`Markdown headers <Markdown>`
-      :header: "Level", "Meaning"
+      :header: Level, Meaning
       :align: center
 
       ``#``, :ref:`Versions <version-list>`
@@ -99,16 +99,19 @@ At this point you should be working on a
 #. Do a :ref:`link check <sphinx-checking-links>`
 #. :ref:`Update labels <sphinx-update-labels>`
 #. Verify that the :ref:`quickstart <quickstart>` works
-#. Any new :ref:`procedures <procedures>` should be reciprocally cross-linked
-   with a conceptual explanation, using first-row <--> last-row references
+#. Verify and :ref:`update directory trees <writing-make-dir-tree>`
 
-   * :ref:`Git procedures <git-procedures>` <--> :ref:`Tools: Git <tools-git>`
-   * :ref:`Versioning procedures <versioning-procedures>` <-->
-     :ref:`version-list`
+   * :ref:`AAAAAA <concepts-project-dir-tree>`
+   * :ref:`Documentation <concepts-documentation-structure>`
+   * :ref:`Jupyter Notebooks <concepts-jupyter-nbs-structure>`
+   * :ref:`Code <concepts-code-structure>`
 
 #. Finalize any updates to the :ref:`version list <version-list>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
-   most recent :ref:`release <version-list>`
+   most recent :ref:`release <version-list>` s
+#. If you updated the
+   :ref:`documentation exampe <concepts-documentation-example>`, verify it
+   actually :ref:`builds <sphinx-building-documentation>`
 #. Update the ``YYYY-MM-DD`` on the :ref:`version list <version-list>`
 #. :ref:`Commit but do not push <git-committing>`
 #. :ref:`Merge <git-merging>` the

@@ -161,8 +161,8 @@ independent sequences of :xref:`commits <git-commit>`, are used to manage
 :ref:`tools-read-the-docs` and :xref:`GitHub`, a free service that hosts the
 :xref:`AAAAAA-repo`
 
-There are several command-line style text navigators that go along with
-:xref:`Git <git-manual>`
+There are several :xref:`command line<command-line>` style text navigators that
+go along with :xref:`Git <git-manual>`
 
 .. csv-table:: Text navigators
    :header: "Tool", "Topic"
@@ -180,9 +180,8 @@ There are several command-line style text navigators that go along with
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`git-commit-guidelines`, Contribution guidelines
-   :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
    :ref:`tools-read-the-docs`, Automatic :ref:`version <version-list>` tracking
-
+   :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
 
 *************
 Documentation
@@ -210,7 +209,7 @@ functionality and several are used in :term:`AAAAAA`:
 
 .. csv-table:: :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`
    in :term:`AAAAAA`
-   :header: "Extension", "Purpose"
+   :header: Extension, Purpose
    :align: center
 
    :ref:`Intersphinx <tools-intersphinx>`, "Create
@@ -226,7 +225,7 @@ functionality and several are used in :term:`AAAAAA`:
    :align: center
 
    :doc:`Python Developer's Guide<py-dev-guide:documenting>`, "
-   :xref:`Python` guide to using :std:doc:`Sphinx <sphinx:intro>`"
+   :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
    :doc:`Sphinx <sphinx:intro>`, Official documentation
    :xref:`Practical use seminar <Willing-Sphinx>`, "Practical commands and
    functions"
@@ -250,7 +249,7 @@ or :menuselection:`t --> h --> i --> s`
 The two most fundamental :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
 components are the :std:doc:`role <sphinx:usage/restructuredtext/roles>`, which
 marks a piece of text (usually in-line), and the
-:std:doc:`directive <sphinx:usage/restructuredtext/directives>`, which marks a
+:doc:`directive <sphinx:usage/restructuredtext/directives>`, which marks a
 block of text
 
 :doc:`reST <sphinx:usage/restructuredtext/basics>` files have an ``.rst``
