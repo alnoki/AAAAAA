@@ -13,6 +13,7 @@ pytest
    :ref:`tools-pytest`, :term:`AAAAAA` conceptual explanation
    :std:doc:`pytest:index`, Official documentation
 
+.. _pytest-discover-tests:
 
 *****************
 Discovering tests
@@ -20,14 +21,15 @@ Discovering tests
 
 #. Verify that you can run :ref:`tools-pytest` in the
    :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
-   :ref:`AAAAAA project root directory <concepts-project-dir-tree>`
+   :ref:`AAAAAA project root directory <concepts-project-dir-tree>`, using
+   :term:`a6`
 
    .. code-block:: bash
 
       pytest
 
    * This should yield output that looks like the
-     :std:doc:`pytest documentation <pytest:index>`
+     :doc:`pytest documentation <pytest:index>`
 
 #. Use the :ref:`VS Code command palette <tools-vs-code>` to select
    :guilabel:`Python: Discover Unit Tests`
@@ -40,7 +42,7 @@ Discovering tests
       version for :ref:`tools-pytest`
 
       #. :ref:`activate <conda:activate-env>` the :term:`a6 environment <a6>`
-      #. Use :std:doc:`conda:commands/install` with the appropriate version
+      #. Use :doc:`conda:commands/install` with the appropriate version
          number syntax from the
          :std:doc:`conda cheatsheet <conda:user-guide/cheatsheet>`. For
          example:

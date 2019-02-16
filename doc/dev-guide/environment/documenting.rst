@@ -61,7 +61,7 @@ Documenting
      .. code-block:: text
 
         # Activate a6 conda environment when bash login session starts
-        source activate a6
+        conda activate a6
 
    * On :xref:`Windows`, append ``"a6"`` to the
      ``"terminal.integrated.shellArgs.windows"`` setting from above:

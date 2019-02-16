@@ -24,6 +24,10 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 #. Read documentation out loud [#]_
 #. :xref:`Py <Python>` like you :ref:`reST <tools-restructured-text>`,
    :ref:`reST <tools-restructured-text>` like you :xref:`Py <Python>` [#]_
+#. "We, the :xref:`coders <open-source>`, are foreigners, seeking citizenship in
+   the computer’s locale" [#]_, so respect the house rules
+#. Your legacy is the documentation
+#. Make content for yourself because you like it [#]_
 
 
 .. _zen-spirit:
@@ -46,6 +50,7 @@ The spirit of alnoki's apps
 #. Add content to :ref:`versions <version-list>` incrementally, like you are
    making a :xref:`mvp-development`
 
+
 ***************
 Further reading
 ***************
@@ -66,9 +71,13 @@ Need some more inspiration? Try::
 .. [#] From a comment by Brett Glasner, that whiteboarding is the most
    fun part of :xref:`software <open-source>` design
 .. [#] Recommeded in :xref:`Willing-Sphinx`
-.. [#] Adapted from advice given by Tom C. Bryan of the :xref:`msfc-lab` (fly
-   like you test, test like you fly) that flight testing and flight operations
+.. [#] Adapted from advice given by Tom C. Bryan of the :xref:`msfc-lab` (*fly
+   like you test, test like you fly*) that flight testing and flight operations
    should be identical - to indicate that software development in practice
    should match procedural documentation
+.. [#] From :xref:`why-poignant-guide`
+.. [#] From a :xref:`Corey Schafer interview <schafer-interview>`: *I believe
+   the most important lesson I’ve learned is that you should make content for
+   yourself*
 .. [#] Taken from various elements in a :xref:`torvalds-interview`
 .. [#] Mantra of :xref:`caye-caulker`

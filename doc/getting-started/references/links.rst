@@ -55,6 +55,14 @@ General
 
    * Official in-depth :xref:`Python` tutorials for various advanced topics
 
+#. :doc:`python:faq/index`
+
+   * In-depth answers to specific questions about core functionality
+
+#. :doc:`python:faq/programming`
+
+   * Syntax, methods, best practices
+
 #. :xref:`RealPython`
 
    * Comprehensive :xref:`website <website>` with examples, guides, tips, etc.
@@ -62,6 +70,7 @@ General
 #. :doc:`tutorial/interpreter`
 
    * The mechanism that runs :xref:`Python` code
+
 
 Project structure
 =================
@@ -287,18 +296,18 @@ Numerical Analysis
 NumPy
 -----
 
-#. :std:doc:`numpy:about`
+#. :doc:`numpy:about`
 
    * Fundamental :ref:`package <conda:concept-conda-package>` for scientific
      :xref:`Python` computing
 
-#. :std:doc:`numpy:user/quickstart`
+#. :doc:`numpy:user/quickstart`
 
-   * Official :std:doc:`NumPy <numpy:about>` tutorial
+   * Official :doc:`NumPy <numpy:about>` tutorial
 
 #. :xref:`codebasics-numpy`
 
-   * Recommended :std:doc:`NumPy <numpy:about>` tutorial on :xref:`YouTube`
+   * Recommended :doc:`NumPy <numpy:about>` tutorial on :xref:`YouTube`
 
 Matplotlib
 ----------
@@ -334,7 +343,7 @@ pandas
 pytest
 ======
 
-#. :std:doc:`pytest <pytest:index>`
+#. :doc:`pytest <pytest:index>`
 
    * Framework for writing test code
 
@@ -715,19 +724,24 @@ Managing references
 Showing code
 ------------
 
+#. :rst:dir:`code-block`
+
+   * :doc:`Directive <sphinx:usage/restructuredtext/directives>` to show
+     sections of :ref:`code <tools-python>`
+
 #. :doc:`Autodoc <sphinx:usage/extensions/autodoc>`
 
-   * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
-     content from code :ref:`docstrings <python:tut-docstrings>`
+   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to include content
+     from code :ref:`docstrings <python:tut-docstrings>`
 
 #. :ref:`NumPy docstrings <numpy:format>`
 
    * :ref:`Docstring <python:tut-docstrings>` format provided by
-     :std:doc:`NumPy <numpy:about>`
+     :doc:`NumPy <numpy:about>`
 
 #. :doc:`Napoleon <sphinx:usage/extensions/napoleon>`
 
-   * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
+   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
      content from :ref:`NumPy docstrings <numpy:format>`
 
 #. :pep:`257`
@@ -824,13 +838,13 @@ Engine-agnostic tools
 #. :xref:`tables-generator`
 
    * Online tool to format tables in :xref:`Markdown`,
-     :std:doc:`usage/restructuredtext/basics`, and plain text
+     :doc:`usage/restructuredtext/basics`, and plain text
 
 #. :xref:`LaTeX`
 
    * Typesetting system for documenting equations in
      :xref:`Jupyter Notebooks <Jupyter>` and in
-     :std:doc:`Sphinx <sphinx:intro>`
+     :doc:`Sphinx <sphinx:intro>`
 
 #. :xref:`Markdown`
 
@@ -961,9 +975,28 @@ Extensions
    * Fix for syntax highlighter bug in :xref:`RST-preview-ext`
 
 
-****************************
-General computer information
-****************************
+*********
+Computers
+*********
+
+General
+=======
+
+#. :xref:`computer`
+
+   * A system for manipulating information
+
+#. :xref:`mobile-device`
+
+   * A small, portable :xref:`computer <computer>`
+
+#. :xref:`source-code`
+
+   * A way to communicate to a :xref:`computer <computer>`
+
+#. :xref:`copy-paste`
+
+   * The easiest way to share  :xref:`source code <source-code>`
 
 OS specifics
 ============
@@ -1066,6 +1099,11 @@ Software design standards
 
    * Manufacturer of :xref:`DO-178B Level A <DO-178B>` aviation products
 
+#. :xref:`why-poignant-guide`
+
+   * Explanation of :xref:`software <open-source>`, mentioned in
+     :ref:`zen-aipaip`
+
 *********
 Financial
 *********
@@ -1155,6 +1193,13 @@ Mathematics
 **********
 Philosophy
 **********
+
+Personal motivation
+===================
+
+#. :xref:`schafer-interview`
+
+   * Reasons for making content, :xref:`cited <citation>` in :ref:`zen-aipaip`
 
 Places worth visiting
 =====================

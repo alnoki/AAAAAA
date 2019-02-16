@@ -1,83 +1,19 @@
-# 0.3.0 Website restructuring
-
-## Mac env
-1. Uninstall miniconda
-1. clear bash profile
-1. Reinstall miniconda
-1. Import a6 and tidy up
-
-## Zen
-1. Cite "_why" and how we get to "live in the computer"
-   1. _why's poingnant guide to Ruby
-   1. https://poignant.guide/book/chapter-3.html
-   1. "That therefore, we, the coders, are foreigners, seeking citizenship in the computer’s locale"
-1. https://realpython.com/interview-corey-schafer/
-   1. I believe the most important lesson I’ve learned is that you should make content for yourself
-   1. Use "additional body elements epigraph from rest primer
-1. Your legacy is your documentation
-1. Section on writing tests and packaging in dev-guide
-1. If you want it, make it - Linus interview
-1. Resultant citation:
-   1.
-
-## toctree structure
-1. Remove mod index
-1. quickstart
-   1. Mention you have just started the python interpreter with link
-1. What next? page
-   1. Describes the site
-   1. Talk about references
-   1. Mention more info on tools in tools page
-   1. TOC for everything page?
-1. Say how to get started with Python, etc. on tools page
-   1. :doc:`python:faq` getting started
-   1. :doc:`python:faq/programming` anything specific: keyword args, etc.
-1. Need to check dir tree during version completion
-   1. There are several to check
-   1. Have the "dir tree" procedure list a table of the directories that exist
-      1. Then can update them when doing version updates
-1. Software also has an auto-api section?
-   1. May enable module index
-1. Tools: what does it do, concepts/specifics: how does alnoki use it
-   1. Split up the structure
-   1. Make a table somewhere in an index page
-
-## Syntax/terminology
-1. Warning that mobile view is iffy
-1. Link command line in the Python tools section
-1. Link directory in the Python tools section
-1. Have the what's next place link to :xref:`link` and :xref:`the-internet`
-1. Mention :xref:`internet` early on, in "what next"?
-   1. Also, :xref:`Google`, :xref:`Wikipedia`, :xref:`YouTube`
-   1. :xref:`Open-source software <open-source>`
-1. Link to command line and find all
-1. source code, code, etc. should link to python tools page
-1. :std:doc: should just be :doc: per sphinx roles
-      1.Search all for :std: and replace with :
-         1. Do this when proofreading to maximize line width
-   1. Find all for std doc and std ref
-1. Link to https://en.wikipedia.org/wiki/Command-line_interface
-   1. Find all for command line and replace with :xref:
-1. Capitalization should mention that proper nouns should be capitalized
-   1. Consider the NumPy package
-   1. Consider the pandas package
-   1. Pandas package
-1. Line break in documentation also say ..code-block can go over a line
-1. Give all csv-table a title
-   1. Use find all
-1. Say how information sources (google, wikipedia, etc.) are used
-   1. In open-source section
-1. Conda procedures should add a link to pip (already in links)
-1. Show how */#. spacing works in style guide
-   1. Level indentation always 3 spaces
-   1. Only one space since the * or the #.
-1. Link the tables generator somewhere on tools
-1. Use markdown link to say what TODO.md is made from
-
 # 0.4.0
+
+## Notes from proofreading
+
+## External references extension
+1. Look for that which has 'url[' in it
+   1. Only do super common ones
+      1. Don't do Stack OF, because its redirect links are huge
+1. Wikipedia page for sure
+   1. Use the extension that creates a role :wikipg:`money`
+      1. Verify you can give it a custom title first, before you migrate
+   1. Migrate all first, then use diff to check out link text rendering
 
 ## Packaging
 1. Do this first!
+1. Section on writing tests and packaging in dev-guide
 1. Try out with the 0.3.0 codebase
 1. First get onto PyPi
     1. https://packaging.python.org/tutorials/packaging-projects/
@@ -124,6 +60,7 @@
       1. See what happens when you do it from inside python
          1. What pops up?
 1. Try out on homepage
+   1. Do sqrt(x!) ?
 
 ## matplotlib theme feature implementation
 1. matplotlib sample doc
@@ -225,6 +162,7 @@
 1. https://docs.python.org/3/tutorial/modules.html#packages
 1. Then, use https://docs.python.org/3/library/argparse.html#module-argparse
    1. Draw a dir tree?
+1. Uncomment module index on homepage, verify it works
 
 ## Settings autodoc
 1. Need a conf.py part of documentation concepts
@@ -270,6 +208,13 @@
    1. However, matplotlib can take some time to load
 
 # 0.5.0
+
+## Conda-forge packaging
+
+## Doc
+1. TOC for everything page?
+1. Software also has an auto-api section?
+   1. May enable module index
 
 ## myPy
 1. MyPy type linter

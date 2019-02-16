@@ -17,8 +17,8 @@ Python
 ******
 
 :xref:`Python` is an :xref:`open-source computer language <open-source>` with
-various applications. :term:`AAAAAA` are written in :xref:`Python`, using
-assorted :ref:`packages <tools-anaconda>`
+various applications. The :xref:`source code <source-code>` for :term:`AAAAAA`
+are written in :xref:`Python`, using assorted :ref:`packages <tools-anaconda>`
 
 The :ref:`AAAAAA user guide <guide-intro>` teaches :xref:`Python` as it
 describes various features of :term:`AAAAAA`. The
@@ -26,15 +26,17 @@ describes various features of :term:`AAAAAA`. The
 :xref:`Python` considerations in :term:`AAAAAA`
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :xref:`Python.org <Python>`, Official information
    :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
-   :xref:`Python`"
+   :xref:`Python` (recommended tutorial)"
    :doc:`python:tutorial/index`, Official tutorial
    :doc:`python:howto/functional`, Functional techniques
    :doc:`python:howto/index`, Specific usage cases
+   :doc:`python:faq/index`, Core functionality
+   :doc:`python:faq/programming`, Methods and recommended practices
    :doc:`tutorial/interpreter`, Mechanism that executes :xref:`Python`
    :ref:`AAAAAA user guide <guide-intro>`, :xref:`Software <open-source>` info
    :ref:`Code concepts <concepts-code>`, Specific considerations
@@ -197,11 +199,11 @@ the documentation for :term:`AAAAAA` and even for
 :std:doc:`Python itself <python:tutorial/index>`. Sphinx is built on the
 :ref:`tools-restructured-text` (``reST``) markup language
 
-:std:doc:`Sphinx <sphinx:intro>` has a
+:doc:`Sphinx <sphinx:intro>` has a
 :ref:`table of contents <sphinx:toctree-directive>` feature, which provides a
 linearly navigable structure that ensures access to all pages of documentation.
 :term:`AAAAAA` are documented using the
-:std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides
+:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides
 a mobile-friendly viewing experience with a modern look
 
 :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>` enable additional
@@ -313,6 +315,8 @@ the visual appearance of this :xref:`website <website>`!
    :doc:`rtfd:versions`, Automatic :ref:`version <version-list>` support
    :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
    :ref:`versioning-procedures`, :term:`AAAAAA` usage
+
+.. _tools-sphinx-extensions:
 
 Sphinx extensions
 =================
@@ -447,7 +451,9 @@ develop, to document, and to test code
 The :xref:`AAAAAA-repo` comes with a collection of
 :xref:`VS-Code-settings` that will automatically configure most of your
 workspace. If you completed the :ref:`developer setup <dev-env-intro>`, then
-all the relevant settings should already be installed!
+all the relevant settings should already be installed! These settings will
+help with things like :ref:`code style <concepts-code-style>` and
+:ref:`test discovery <pytest-discover-tests>`
 
 You can also download the :xref:`VS Code Insider Edition <VS-Code-insiders>`,
 which has all the latest features and bug fixes, although it may not be as
@@ -455,7 +461,7 @@ stable as the most recent official release
 
 .. csv-table:: :xref:`VS Code extensions <VS-Code-extensions>` used with
    :term:`AAAAAA`
-   :header: "Extension", "Purpose", "Setup Phase"
+   :header: Extension, Purpose, Setup Phase
    :align: center
 
    :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate code, "
@@ -463,15 +469,15 @@ stable as the most recent official release
    :xref:`Python <VS-Code-Python-ext>`, Developing :xref:`Python`, "
    :ref:`Documenting <dev-env-documenting>`"
    :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "Editing
-   :std:doc:`reST <sphinx:usage/restructuredtext/basics>` ", "
+   :doc:`reST <sphinx:usage/restructuredtext/basics>` ", "
    :ref:`Documenting <dev-env-documenting>`"
    :xref:`GitLens <GitLens>`, "Advanced :xref:`Git <git-manual>`
    functionality", :ref:`Documenting <dev-env-documenting>`
    :xref:`Python Test Explorer <Test-explorer-UI>`, "Testing with
-   :std:doc:`pytest <pytest:index>`", :ref:`Testing <dev-env-testing>`
+   :doc:`pytest <pytest:index>`", :ref:`Testing <dev-env-testing>`
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :xref:`Python integration <VS-Code-Python-tutorial>`, "Official tutorial for

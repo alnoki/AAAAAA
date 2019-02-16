@@ -1,4 +1,4 @@
-.. 14a4fa4
+.. 0.3.0
 
 
 ########
@@ -17,9 +17,10 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
    AAAAAA
       Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA),
       colloquially referred to as *alnoki's apps*, are a growing collection of
-      :ref:`financial analysis <guide-fin-background>` tools. Development is
-      performed in the :xref:`Python computer language <Python>` , using
-      additional :ref:`packages <conda:concept-conda-package>` developed by the
+      :ref:`financial analysis <guide-fin-background>` tools.
+      :xref:`source-code` is written in the
+      :xref:`Python computer language <Python>`, using additional
+      :ref:`packages <python:tut-packages>` developed by the
       :xref:`open-source` community
 
 
@@ -27,31 +28,32 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 Python?
 *******
 
-A bit of :xref:`Python` can be executed on most computers with minimal effort,
-using :py:func:`python:print`:
+A bit of :xref:`Python` can be executed on most :xref:`computers <computer>`
+with minimal effort, using :py:func:`python:print`:
 
-#. Open the command line on your specific machine:
+#. Open the :xref:`command line <command-line>` on your particular
+   :xref:`computer <computer>`:
 
 .. csv-table::
-   :header: :xref:`OS` , "Command line"
+   :header: :xref:`OS` , Command line
    :align: center
 
+   :xref:`Linux`, Terminal
    :xref:`Mac`, Terminal
    :xref:`Windows`, Command Prompt
-   :xref:`Linux`, Terminal
 
 #. Type :command:`python` and hit :kbd:`return`
 
    #. If this doesn't work then you probably don't have :xref:`Python`, but you
-      can get it for free!
+      can get it for :xref:`free <money`!
 
       #. Download
-         :std:doc:`Miniconda <conda:user-guide/install/download>`
+         :doc:`Miniconda <conda:user-guide/install/download>`
       #. :ref:`Start up conda <conda:starting-conda>`
       #. Type :command:`python` and hit :kbd:`return`
 
-#. Copy and paste the below contents to the command line then hit
-   :kbd:`return`:
+#. :xref:`Copy and paste <copy-paste>` the below contents to the
+   :xref:`command line <command-line>` then hit :kbd:`return`:
 
    .. code-block:: python
 
@@ -64,17 +66,18 @@ using :py:func:`python:print`:
       for i in range(5):
           print("Please be aware of the number", i)
 
-   .. tip::
-      This :xref:`Python` input ends with an indented line, so hit
-      :kbd:`return` twice after copy-pasting the above contents
+   * This :xref:`Python` input ends with an indented line, so hit
+     :kbd:`return` twice after :xref:`copy-pasting <copy-paste>` the above
+     contents
 
-#. How about some :xref:`factorials <factorial-definition>`?  The "factorial of
-   x" is represented by:
+#. How about some :xref:`factorials <factorial-definition>`?  The
+   ":xref:`factorial <factorial-definition>` of x" is represented by:
 
    .. math::
+
       x! = \begin{cases}
                1 & x = 0 \\
-               \displaystyle \prod_{k=1}^{x} k & x > 0 \\
+               \displaystyle \prod_{ k = 1 } ^ { x } k & x > 0 \\
             \end{cases}
 
    .. code-block:: python
@@ -86,15 +89,17 @@ using :py:func:`python:print`:
               print("Please be aware of the number", x,
                      "with factorial", factorial)
 
-   .. note::
-      This :xref:`Python` input ends with an indented line, so don't forget to
-      hit :kbd:`return` twice
+   .. admonition:: Don't forget
+
+      This :xref:`Python` input ends with an indented line, so hit
+      :kbd:`return` twice
 
 Congratulations!!!
 
 .. tip::
-   Hit the :guilabel:`Next` button at the top or the bottom of the page to
-   continue
+
+   Hit the :guilabel:`Next` button at the top or the bottom of this
+   :xref:`webpage <webpage` to continue
 
 
 ******************
@@ -102,8 +107,9 @@ Indices and tables
 ******************
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
+
+.. * :ref:`modindex` goes in between the two above
 
 .. toctree::
    :caption: Getting started
@@ -113,7 +119,6 @@ Indices and tables
    getting-started/quickstart
    getting-started/what-next
    getting-started/references/index
-
 
 .. toctree::
    :caption: User guide
@@ -132,6 +137,3 @@ Indices and tables
    dev-guide/environment/index
    dev-guide/concepts/index
    dev-guide/procedures/index
-
-
-

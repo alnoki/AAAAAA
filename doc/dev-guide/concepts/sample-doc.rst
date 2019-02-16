@@ -13,10 +13,14 @@ Part title
 
 Welcome to this document! Don't forget the double overline!
 
-#. Item 1
-#. Item 2 (no vertical whitespace)
+#. Item 1 (one space after '#.')
+#. Item 2 (no vertical whitespace above)
 
-   #. Item 3 (needs vertical whitespace)
+   * Item 3 (needs vertical whitespace above)
+   * Item 4 (one space after '*')
+
+      * Item 5 (indented 3 spaces)
+
 
 *************
 Chapter title

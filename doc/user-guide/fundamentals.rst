@@ -7,9 +7,9 @@ Transactions
 
 .. _guide-fin-background:
 
-***************
-Background info
-***************
+*************************
+Background financial info
+*************************
 
 A :xref:`brokerage <brokerage>` facilitates the buying or selling of
 :xref:`securities <finance-security>`, which are tradable forms of
@@ -48,6 +48,7 @@ which is a special type of :term:`object <python:object>`:
    :undoc-members:
 
 .. tip::
+
    You can click :guilabel:`[source]` above to view the original
    :ref:`code <tools-python>`, then click :guilabel:`[docs]` to return
 

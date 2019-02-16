@@ -128,10 +128,13 @@ Specific syntax
      listed after ``:header:``
 
 #. :ref:`Link <references-links>` capitalization should be natural with regard
-   to the rest of the sentence
+   to the rest of the sentence, unless the thing you are describing has special
+   capitalization
 
    * :ref:`Links <references-links>` are here
    * Here are some :ref:`links <references-links>`
+   * The :doc:`NumPy package <numpy:about>` thinks it is special
+   * :doc:`pytest <pytest:index>` does too
 
 #. There should be regular text between two different
    :ref:`links <references-links>` so that the
@@ -151,8 +154,10 @@ Whitespace
 #. Indent 3 spaces (especially for
    :xref:`nested lists <reST-list-indentation>`)
 #. Lines should be a maximum length of 79 characters, unless
-   :doc:`role content <sphinx:usage/restructuredtext/roles>` can't be broken up
-   (this is okay)
+
+   * :doc:`role content <sphinx:usage/restructuredtext/roles>` can't be broken up
+   * You are using a :rst:dir:`code-block` that itself conforms to :pep:`8`
+
 #. Use 2 lines of whitespace above anything that is
    :doc:`overlined <py-dev-guide:documenting>`
 #. Use a single, unescaped space before
@@ -160,6 +165,7 @@ Whitespace
 #. Use a blank line after the
    :doc:`directive <sphinx:usage/restructuredtext/directives>` in an
    :xref:`admonition <admonition>`
+#. Indent a single space after ``#.`` or after ``*``
 
 .. _concepts-documentation-example:
 

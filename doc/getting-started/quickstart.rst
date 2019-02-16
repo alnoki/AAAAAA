@@ -18,6 +18,10 @@ follow the below steps:
    :xref:`directory <directory>` of the
    :xref:`archive you just downloaded <AAAAAA-zip-archive>`
 #. Type :command:`python` and hit :kbd:`return`
+
+   * Rejoice, for you have just started the
+     :doc:`Python interpreter <tutorial/interpreter>`
+
 #. Copy-paste the following and hit :kbd:`return`
 
    .. code-block:: python

@@ -334,8 +334,8 @@ xref_links = {
                            url['RealPython'] + 'documenting-python-code/'),
     'open-source': ('open-source', url['Wiki pg'] + 'Open-source_software'),
     'RealPython': ('RealPython.com', url['RealPython']),
-    'AAAAAA-zip-archive': ('AAAAAA repository archive', url['GitHub'] +
-                           'alnoki/AAAAAA/archive/master.zip'),
+    'AAAAAA-zip-archive': ('AAAAAA repository archive', 'https://codeload.'
+                           'github.com/alnoki/AAAAAA/zip/master'),
     'VS-Code-settings': ("VS Code settings", url['VS Code doc'] +
                          'getstarted/settings'),
     'VS-Code-terminal': ("integrated terminal", url['VS Code doc'] +
@@ -352,7 +352,7 @@ xref_links = {
     'Doc8': ("Doc8 reST linter", url['conda-forge'] + 'doc8'),
     'git-manual': ("Git manual", url['git-scm'] + 'docs/user-manual.html'),
     'git-download': ("Git download", url['git-scm'] + 'downloads'),
-    'git-book': ("Git book", url['git-scm'] + 'book'),
+    'git-book': ("Git book", url['git-scm'] + 'book/en/v2'),
     'git-config': ('git-config', url['git-scm'] + 'docs/git-config'),
     'git-log': ('git-log', url['git-scm'] + 'docs/git-log'),
     'git-commit': ('git-commit', url['git-scm'] + 'docs/git-commit'),
@@ -459,5 +459,14 @@ xref_links = {
                         url['Wiki pg'] + 'Minimum_viable_product'),
     'torvalds-interview': ('Linus Torvalds interview', url['YT vid'] +
                            'o8NPllzkFhE'),
+    'why-poignant-guide': ("_why's (Poignant) Guide to Ruby, Chapter 3",
+                           'https://poignant.guide/book/chapter-3.html'),
+    'schafer-interview': ("Corey Schafer interview from RealPython",
+                          url['RealPython'] + 'interview-corey-schafer/'),
+    'computer': ('Computer', url['Wiki pg'] + 'Computer'),
+    'mobile-device': ("Mobile device", url['Wiki pg'] + 'Mobile_device'),
+    'source-code': ("Source code", url['Wiki pg'] + 'Source_code'),
+    'copy-paste': ("Cut, copy, and paste", url['Wiki pg'] +
+                   'Cut,_copy,_and_paste'),
     # New links below, sorted links above
     }

@@ -96,8 +96,15 @@ Releasing a new version
 At this point you should be working on a
 :ref:`development branch <versioning-start-new>`
 
-#. Do a :ref:`link check <sphinx-checking-links>`
 #. :ref:`Update labels <sphinx-update-labels>`
+#. Do a :ref:`link check <sphinx-checking-links>`
+
+   * :ref:`End the active autobuild <sphinx-autobuilding>`
+     (which should leave ghost content at its particular :xref:`URL <URL>`),
+     then :ref:`serve a manual build <sphinx-building-manually>` for this,
+     since each process has an associated :xref:`URL <URL>` that must be
+     checked
+
 #. Verify that the :ref:`quickstart <quickstart>` works
 #. Verify and :ref:`update directory trees <writing-make-dir-tree>`
 

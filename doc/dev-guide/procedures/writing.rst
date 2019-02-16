@@ -33,6 +33,7 @@ Maximizing screen estate
    * :guilabel:`View: Toggle Status Bar Visibility`
    * :guilabel:`View: Toggle Centered Layout`
    * :guilabel:`View: Join All Editor Groups`
+   * :guilabel:`Workspaces: Duplicate Workspace in New Window`
 
 #. For full-screen:
 

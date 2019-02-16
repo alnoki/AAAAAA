@@ -299,7 +299,8 @@ Updating labels
 ===============
 
 #. With an :ref:`active build running <sphinx-building-documentation>`,
-   inspect :ref:`labels <ref-role>` using
+   inspect :ref:`labels <ref-role>` from inside the
+   :ref:`documentation root directory <concepts-project-dir-tree>` using
    :ref:`intersphinx <sphinx-intersphinx>` on ``_build/html/objects.inv``
 #. Verify the proper :ref:`label style <concepts-documentation-style>`
 #. Update any :ref:`labels <ref-role>` via the
@@ -326,8 +327,10 @@ Referencing books
    :xref:`bibtex-syntax`, Syntax specifications
    :xref:`cite-multiple-authors`, Use of ``et. al``
 
-#. Check :xref:`ottobib` for the relevant :xref:`ISBN`
-#. Use the :xref:`bibtex` option to add a :xref:`book entry <bibtex-syntax>` to
+#. Check :xref:`ottobib` for your :xref:`ISBN` and
+   :xref:`copy-paste <copy-paste>` the :xref:`bibtex` option into
+   :ref:`refs.bib <concepts-documentation>`
+#. Verify that you added a :xref:`book entry <bibtex-syntax>` in
    :ref:`refs.bib <concepts-documentation>`
 
    * A ``book`` :xref:`entry <bibtex-syntax>` requires at least ``author`` (or
@@ -336,39 +339,41 @@ Referencing books
    * Consider
      :xref:`et. al conventions for multiple authors<cite-multiple-authors>`
 
-#. Add an entry to :ref:`books <references-books>`
+#. Add an entry to :ref:`books <references-books>` via
+   ``:cite:`bib-book-name```
 
    * Use a :ref:`heading <concepts-documentation-example>` so that
      :rst:dir:`toctree` can index the entry
 
-   * Use a :ref:`label <concepts-documentation>` that appends ``book-`` to the
-     first line of the :xref:`bibtex` in
+   * Use a :ref:`label <concepts-documentation>` that starts with ``book-`` in
+     :ref:`books <references-books>`, and with ``bib-`` in
      :ref:`refs.bib <concepts-documentation>`
 
    .. code-block:: rest
-      :emphasize-lines: 1, 7
+      :emphasize-lines: 1, 8
 
       .. _book-on-managing-yourself:
+
 
       ********************
       On Managing Yourself
       ********************
 
-      .. csv-table:: :cite:`on-managing-yourself`
-         :header: "Page(s)", "Topic"
+      .. csv-table:: :cite:`bib-on-managing-yourself`
+         :header: Page(s), Topic
          :align: center
 
    .. code-block:: none
       :emphasize-lines: 1
 
-      @Book{on-managing-yourself,
-      author = {Clayton M. Christensen et. al},
-      title = {HBR's 10 Must Reads: On Managing Yourself},
-      publisher = {Harvard Business Review Press},
-      year = {2010},
-      address = {Boston, Massachusetts},
-      isbn = {978-1-4221-5799-2}
-      }
+      @Book{bib-on-managing-yourself,
+       author = {Clayton M. Christensen et. al},
+       title = {HBR's 10 Must Reads: On Managing Yourself},
+       publisher = {Harvard Business Review Press},
+       year = {2010},
+       address = {Boston, Massachusetts},
+       isbn = {978-1-4221-5799-2}
+       }
 
 .. tip::
 

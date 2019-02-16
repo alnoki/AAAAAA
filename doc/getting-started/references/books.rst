@@ -15,16 +15,17 @@ Below is a comprehensive list of :xref:`books <book>` referenced throughout
    You can access the :xref:`ISBN` (or other information) for each
    :xref:`book <book>` by clicking the :ref:`BibTeX link <tools-bibtex>` at
    the top of each entry, which will look something like:
-   :cite:`Foo <on-managing-yourself>`
+   :cite:`bib-on-managing-yourself`
 
 .. _book-on-managing-yourself:
+
 
 ********************
 On Managing Yourself
 ********************
 
-.. csv-table:: :cite:`Foo <on-managing-yourself>`
-   :header: "Page(s)", "Topic"
+.. csv-table:: :cite:`bib-on-managing-yourself`
+   :header: Page(s), Topic
    :align: center
 
    "82 \, 91", :term:`OHIO`
