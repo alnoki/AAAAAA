@@ -1,3 +1,6 @@
+1. Search :std: at the end to evaluate your effectiveness
+1. :ref:`sphinx:info-field-lists` on the E4 page
+
 # 0.4.0
 
 ## Notes from proofreading (file elsewhere)
@@ -5,7 +8,7 @@
    1. Also use a link to :xref:`software`
 1. Try putting py:function:explanation in text somewhere
    1. User guide warning to show what you won't be able to see
-      1. This is a sample, but the real ones might not show up
+      1. This is a sample, but the real ones might not show ups
 1. Should have an index.rst for dev-guide
    1. Add to doc structure tree
    1. Then, on the what-next page, re-do the links to these places
@@ -27,9 +30,32 @@ around
    1. Should still read in the major section you are on
 1. Need a references link to print() (from homepage)
 1. Link for wiki pg to download
+   1. Git links general: download git
    1. Put on the quickstart
+   1. Put in the link for to :xref:`download` the AAAAAA repository
+   1. Put in link page for miniconda quick to download
+1. Upload
+   1. Link in push
+   1. Will also use with PyPI
+1. The conda package is lowercase in-line
+   1. Need to update on the pages before the links page
+1. https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
+   1. For the sphinx-autobuild
+   1. And for dev.py
+1. Search links for the word plot and link to matplotlib?
+1. Find all for tutorial/interpreter (some instances may not have python:)
+   1. Same for copy-paste
+   1. Finda all for open-source - should read "open-source" need hyphen
+      1. Have a documentation checklist for common ones
+1. The Internet should be capitalized at the end of a sentence, the Internet
+1. Tag the version comment before you go through the document
+1. Reading out loud in a british accent is way more fun
+1. doctest block like the user guide on the homepage and quickstart
 
 ## External references extension
+1. Should be a subsection of managing external links procedure
+   1. "Common links"
+1. https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension
 1. Restructured role revolution "r3"
 1. Add to the exts dir on the doc dir tree
 1. Look for that which has 'url[' in it
@@ -41,6 +67,8 @@ around
    1. Migrate all first, then use diff to check out link text rendering
 
 ## Packaging
+1. Tools section on PyPI
+1. Currently, the link to pip already exists
 1. Do this first!
 1. Section on writing tests and packaging in dev-guide
 1. Try out with the 0.3.0 codebase
@@ -172,6 +200,7 @@ around
    1. git checkout -b dev/0.3.0 --track origin/dev/0.3.0
 
 ## src updates
+1. xref in transaction source code
 1. Transaction class then explains how file structure is
    1. For importing the module, etc.
 1. Then say we need to talk about the dir structure
@@ -201,6 +230,8 @@ around
 
 ## Test code
 1. Have a test index in the developer's guide
+   1. The pytest entry on the links page should link here
+      1. Framework for :ref:`writing test code <test-index>`
 1. Document test_ledger.py
    1. Add a section to common tasks about testing
    1. May need to update the quickstart guide

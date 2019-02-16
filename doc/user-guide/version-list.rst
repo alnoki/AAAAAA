@@ -1,5 +1,7 @@
+.. 0.3.0
 
 .. _version-list:
+
 
 ############
 Version list

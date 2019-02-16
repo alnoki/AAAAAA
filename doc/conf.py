@@ -418,7 +418,7 @@ xref_links = {
     'corporation': ('Corporation', url['Wiki pg'] + 'Corporation'),
     'brokerage': ('Brokerage', url['Wiki pg'] + 'Brokerage_firm'),
     'ticker-symbol': ("Ticker symbol", url['Wiki pg'] + 'Ticker_symbol'),
-    'finance-share': ('Share', url['Wiki pg'] + 'Ticker_symbol'),
+    'finance-share': ('Share', url['Wiki pg'] + 'Share_(finance)'),
     'finance-transaction': ("Financial transaction", url['Wiki pg'] +
                             'Financial_transaction'),
     'money': ('Money', url['Wiki pg'] + 'Money'),
@@ -436,7 +436,7 @@ xref_links = {
     'bibtex': ('BibTeX', 'http://www.bibtex.org'),
     'ISBN': ('ISBN', url['Wiki pg'] + 'International_Standard_Book_Number'),
     'bibtex-syntax': ("BibTeX Entry and Field Types", 'http://bib-it'
-                      '.sourceforge.net/help/fieldsAndEntryTypes.php#editor'),
+                      '.sourceforge.net/help/fieldsAndEntryTypes.php'),
     'cite-multiple-authors':
         ("Convention for citing multiple authors",
          'https://research.moreheadstate.edu/c.php?g=107001&p=695202'),

@@ -1,3 +1,5 @@
+.. 0.3.0
+
 .. _references-books:
 
 
@@ -17,6 +19,9 @@ Below is a comprehensive list of :xref:`books <book>` referenced throughout
    the top of each entry, which will look something like:
    :cite:`bib-on-managing-yourself`
 
+.. contents:: Books
+   :local:
+
 .. _book-on-managing-yourself:
 
 
@@ -28,7 +33,7 @@ On Managing Yourself
    :header: Page(s), Topic
    :align: center
 
-   "82 \, 91", :term:`OHIO`
+   "82 , 91", :term:`OHIO`
 
 .. glossary::
 

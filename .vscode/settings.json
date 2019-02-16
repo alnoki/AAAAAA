@@ -16,7 +16,6 @@
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
     "workbench.editor.showTabs": false,
-    "workbench.editor.closeEmptyGroups": false,
     "workbench.editor.highlightModifiedTabs": true,
 
 

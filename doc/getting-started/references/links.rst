@@ -1,8 +1,5 @@
 .. 0.3.0:
 
-.. Project structure
-   =================
-
 .. _references-links:
 
 
@@ -84,7 +81,7 @@ Project structure
 
 #. :xref:`print-dir-tree`
 
-   * Sample :xref:`code <source-code>` create a :xref:`directory <directory>`
+   * Sample :xref:`code <source-code>` to make a :xref:`directory <directory>`
      tree
    * Adapted for the :ref:`directory tree procedure <writing-make-dir-tree>`
 
@@ -92,40 +89,47 @@ Project structure
 
    * Cataloging structure for :xref:`computer <computer>` data
 
+#. :doc:`pip <python:installing/index>`
+
+   * General installer for :ref:`packages <python:tut-packages>`
+   * Used to :ref:`configure a6 <conda-pip-AAAAAA>` for use with
+     :doc:`pytest <pytest:index>`
+
 Text
 ====
 
 #. :xref:`Python-quote-convention`
 
-   * Recommendation for using ``'`` vs ``"`` in :xref:`Python`
+   * Recommendation for using ``'`` vs ``"`` in :xref:`strings <string>`
 
 #. :ref:`python:comments`
 
-   * Documentation inside code that is human-readable
+   * Documentation inside :xref:`code <source-code>`
 
 #. :ref:`python:tut-docstrings`
 
-   * :ref:`python:comments` for specific :xref:`Python` code components
+   * :ref:`python:comments` for specific :xref:`Python` components
 
 Types
 =====
 
-#. :std:doc:`python:library/stdtypes`
+#. :doc:`python:library/stdtypes`
 
    * Standard :xref:`Python` data structures
 
 #. :term:`Object <python:object>`
 
-   * The most basic :std:doc:`type <python:library/stdtypes>` upon which others
-     are based
+   * The most basic :doc:`type <python:library/stdtypes>`, from which others
+     are derived
 
-#. :std:ref:`python:tut-dictionaries`
+#. :ref:`python:tut-dictionaries`
 
-   * A :std:doc:`type <python:library/stdtypes>` containing *key: value* pairs
+   * A :doc:`type <python:library/stdtypes>` containing *key: value* pairs
 
 #. :xref:`realpython-type-checking`
 
-   * Guide to using correct :std:doc:`types <python:library/stdtypes>` in code
+   * How to verify correct :doc:`types <python:library/stdtypes>` in
+     :xref:`source code <source-code>`
 
 #. :ref:`python:tut-numbers`
 
@@ -153,7 +157,7 @@ Control flow
 
 #. :ref:`Functions <python:tut-functions>`
 
-   * Specified processes that can act on :term:`arguments <python:argument>`
+   * Processes that can act on :term:`arguments <python:argument>`
 
 #. :ref:`python:tut-defaultargs`
 
@@ -197,7 +201,7 @@ Classes
 #. :py:class:`python:property`
 
    * A special :term:`python:attribute` of a :ref:`class <python:tut-classes>`
-     which can be a function of
+     which can be a :ref:`function <python:tut-functions>`
      :ref:`instance variables <python:tut-class-and-instance-variables>`
    * :py:attr:`AAAAAA.ledger.Transaction.per_share_amount` is a
      :py:class:`python:property`
@@ -218,7 +222,7 @@ Anaconda
 
 #. :doc:`Miniconda<conda:user-guide/install/index>`
 
-   * Abbreviated version of :xref:`Anaconda` that is quick to download
+   * Small manageable version of :xref:`Anaconda`
 
 #. :doc:`conda:index`
 
@@ -226,11 +230,11 @@ Anaconda
 
 #. :ref:`conda:starting-conda`
 
-   * Invocation methods for :std:doc:`conda <conda:index>`
+   * Invocation methods for :doc:`conda <conda:index>`
 
 #. :ref:`Conda package <conda:concept-conda-package>`
 
-   * A collection of :xref:`Python` software contained in :xref:`Anaconda`
+   * :ref:`Python package <python:tut-packages>` managed by :xref:`Anaconda`
 
 #. :ref:`Conda environment <conda:concept-conda-env>`
 
@@ -244,12 +248,6 @@ Anaconda
 #. :xref:`conda-forge`
 
    * A community-driven :ref:`conda channel <conda:channels-glossary>`
-
-#. :doc:`pip <python:installing/index>`
-
-   * General installer for :xref:`Python` software
-   * Used to :ref:`configure a6 <conda-pip-AAAAAA>` for use with
-     :doc:`pytest <pytest:index>`
 
 Conda syntax
 ------------
@@ -300,10 +298,10 @@ Numerical Analysis
 NumPy
 -----
 
-#. :doc:`numpy:about`
+#. :doc:`NumPy <numpy:about>`
 
-   * Fundamental :ref:`package <conda:concept-conda-package>` for scientific
-     :xref:`Python` computing
+   * Fundamental :ref:`package <conda:concept-conda-package>` for advanced
+     numerical :xref:`Python`
 
 #. :doc:`numpy:user/quickstart`
 
@@ -316,33 +314,33 @@ NumPy
 Matplotlib
 ----------
 
-#. :std:doc:`Matplotlib <matplotlib:index>`
+#. :doc:`Matplotlib <matplotlib:index>`
 
    * Plotting tool for numerical data
 
-#. :std:doc:`matplotlib:tutorials/index`
+#. :doc:`matplotlib:tutorials/index`
 
-   * Instructions to use :std:doc:`Matplotlib <matplotlib:index>`
+   * Instructions to use :doc:`Matplotlib <matplotlib:index>`
 
 #. :xref:`codebasics-matplotlib`
 
-   * Recommended :std:doc:`Matplotlib <matplotlib:index>` tutorial on
+   * Recommended :doc:`Matplotlib <matplotlib:index>` tutorial on
      :xref:`YouTube`
 
 pandas
 ------
 
-#. :std:doc:`pandas <pandas:index>`
+#. :doc:`pandas <pandas:index>`
 
    * For handling datasets
 
-#. :std:doc:`pandas:getting_started/10min`
+#. :doc:`pandas:getting_started/10min`
 
-   * Official :std:doc:`pandas <pandas:index>` tutorial
+   * Official :doc:`pandas <pandas:index>` tutorial
 
 #. :xref:`codebasics-pandas`
 
-   * Recommended :std:doc:`pandas <pandas:index>` tutorial on :xref:`YouTube`
+   * Recommended :doc:`pandas <pandas:index>` tutorial on :xref:`YouTube`
 
 pytest
 ======
@@ -353,20 +351,21 @@ pytest
 
 #. :xref:`codebasics-pytest`
 
-   * Recommended :std:doc:`pytest <pytest:index>` tutorial on :xref:`YouTube`
+   * Recommended :doc:`pytest <pytest:index>` tutorial on :xref:`YouTube`
 
-#. :std:doc:`pytest tutorials <pytest:contents>`
+#. :doc:`pytest tutorials <pytest:contents>`
 
-   * Official comprehensive :std:doc:`pytest <pytest:index>` walkthroughs
+   * Official comprehensive :doc:`pytest <pytest:index>` walkthroughs
 
-#. :std:doc:`pytest:goodpractices`
+#. :doc:`pytest:goodpractices`
 
-   * Configuring :std:doc:`pytest <pytest:index>` to run with :term:`a6`
+   * Configuring :doc:`pytest <pytest:index>` to run with :term:`a6`
 
 #. :xref:`pytest-discovery-issue`
 
-   * :xref:`VS-Code` integration problem upon release of
-     :std:doc:`pytest <pytest:index>`
+   * A potential problem (and solution) when using :xref:`VS-Code` with
+     :doc:`pytest <pytest:index>`
+
 
 ******************
 Project management
@@ -377,31 +376,32 @@ AAAAAA codebase
 
 #. :xref:`AAAAAA-repo`
 
-   * :xref:`GitHub` repository for :term:`AAAAAA` source code, test code, and
-     documentation
+   * :xref:`GitHub` repository for :term:`AAAAAA` project contents
 
 #. :xref:`alnoki-repos`
 
-   * Assorted :xref:`Jupyter Notebooks <Jupyter>` and code from other tutorials
+   * Assorted :xref:`Jupyter Notebooks <Jupyter>` and
+     :xref:`code <source-code>` from other tutorials
 
 #. :xref:`GitHub`
 
-   * Online repository for software projects
+   * :xref:`Online <internet>` repository for
+     :xref:`software <software>` projects
 
 #. :xref:`AAAAAA-zip-archive`
 
-   * Compressed archive of :xref:`AAAAAA-repo` that is quick to download
+   * Fastest way to access the :xref:`AAAAAA-repo`
 
 Versioning
 ==========
 
 #. :xref:`semver`
 
-   * Guidelines for version number of style ``MAJOR.MINOR.PATCH``
+   * :ref:`Version number <version-list>` guidelines: ``MAJOR.MINOR.PATCH``
 
 #. :xref:`git-commit-guidelines`
 
-   * General guidelines for contributing to a project
+   * General guidelines for describing contributions to a project
 
 #. :xref:`commit-conventions`
 
@@ -409,7 +409,8 @@ Versioning
 
 #. :xref:`mvp-development`
 
-   * An incremental way to create features
+   * An incremental way to create or add features
+
 
 *******************
 Git version control
@@ -443,7 +444,7 @@ Core commands
 
 #. :xref:`git-config`
 
-   * Set up user credentials
+   * Setup user credentials
 
 #. :xref:`git-log`
 
@@ -486,18 +487,18 @@ Text manipulation
 
 #. :xref:`Vim-tutorial`
 
-   * Learn :xref:`Vim` in several minutes
+   * Learn :xref:`Vim <Vim>`
 
 #. :xref:`Vim-cheatsheet`
 
-   * Common :xref:`Vim` commands
+   * Common :xref:`Vim <Vim>` commands
 
 Special features
 ================
 
 #. :xref:`git-log-formatting`
 
-   * Special formatting options for :xref:`git-log`
+   * Special options for inspecting :xref:`git-log`
 
 #. :xref:`list-git-developers`
 
@@ -520,10 +521,10 @@ Documentation
 General
 =======
 
-#. :std:doc:`Official Python Developer's Guide to Documenting Python <py-dev-guide:documenting>`
+#. :doc:`Python Developer's Guide to Documenting Python <py-dev-guide:documenting>`
 
-   * General :std:doc:`Sphinx <sphinx:intro>` use and
-     :std:doc:`reStructuredTest <usage/restructuredtext/basics>` style guide
+   * Guide to general :doc:`Sphinx <sphinx:intro>` use
+   * :doc:`reStructuredTest <usage/restructuredtext/basics>` style guide
 
 #. :xref:`RealPython Guide to Documenting Python <documenting-python>`
 
@@ -536,28 +537,48 @@ Sphinx
 Practical use
 -------------
 
-#. :std:doc:`Sphinx <sphinx:intro>`
+#. :doc:`Sphinx <sphinx:intro>`
 
-   * Official documentation for the :std:doc:`Sphinx <sphinx:intro>`
+   * Official documentation for the :doc:`Sphinx <sphinx:intro>`
      documentation engine
 
-#. :std:doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`
+#. :doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`
 
-   * How to start a documentation project from scratch
+   * How to start a new documentation project
 
-#. :std:doc:`Matplotlib sampledoc tutorial <matplotlib-sampledoc:index>`
+#. :doc:`Matplotlib sampledoc tutorial <matplotlib-sampledoc:index>`
 
    * Quick walkthrough with practical syntax examples
    * Interactive :xref:`Python` examples, using plots
 
 #. :xref:`Willing-Sphinx`
 
-   * Common workflow tasks
-   * :ref:`sphinx-checking-links`
+   * Common workflow tasks [#]_, like
+     :ref:`checking links <sphinx-checking-links>`
    * Team development ideologies
 
+#. :xref:`sphinx-autobuild`
+
+   * Automatically update
+     :ref:`documentation builds <sphinx-building-documentation>`
+
+#. :xref:`Writer-intro-to-Sphinx`
+
+   * General explanation of using
+     :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
+   * From Eric Holscher, co-founder of
+     :doc:`Read the Docs<rtfd:index>`
+
+#. :doc:`HTTP server <python:library/http.server>`
+
+   * :ref:`Python package <python:tut-packages>` that creates a
+     :xref:`website <website>` for viewing documentation
+
+.. rubric:: Footnotes
+
+.. [#]
    .. csv-table::
-      :header: "Time in video", "Topic"
+      :header: Time in video, Topic
       :align: center
 
       10:15, Incorporating :ref:`Jupyter Notebooks <tools-jupyter>`
@@ -566,30 +587,14 @@ Practical use
       15:15, :ref:`Including code <tools-napoleon>`
       17:00, Continuous integration
       20:00, :doc:`Autodoc <sphinx:usage/extensions/autodoc>`
-      24:15, :ref:`Themes <tools-sphinx>`
-
-#. :xref:`sphinx-autobuild`
-
-   * Automatically update documentation builds
-
-#. :xref:`Writer-intro-to-Sphinx`
-
-   * General explanation of using
-     :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
-     , written by Eric Holscher, co-founder of
-     :doc:`Read the Docs<rtfd:index>`
-
-#. :doc:`HTTP server <python:library/http.server>`
-
-   * :ref:`Python package <python:tut-packages>` that creates a
-     :xref:`website <website>` for testing out documentation
+      24:15, :ref:`Themes <tools-read-the-docs>`
 
 Usage specifics
 ---------------
 
 #. :doc:`sphinx:usage/extensions/index`
 
-   * Additional functionalities for :doc:`Sphinx <sphinx:intro>` engine
+   * Additional :doc:`Sphinx <sphinx:intro>` functionality
 
 #. :doc:`conf.py usage<sphinx:usage/configuration>`
 
@@ -603,34 +608,35 @@ Usage specifics
 #. :doc:`Autodoc extension <sphinx:usage/extensions/autodoc>`
 
    * :doc:`Sphinx extension <sphinx:usage/extensions/index>` for generating
-     documentation straight from :xref:`Python` source code
+     documentation straight from :xref:`source code <source-code>`
 
 #. :ref:`sublime-with-sphinx:use the external links extension`
 
    * Instructions for installing an example
      :doc:`Sphinx extension <sphinx:usage/extensions/index>`
-   * Similar to :ref:`link management <sphinx-managing-references>` in
+   * Similar to :ref:`external link management <sphinx-xref>` in
      :term:`AAAAAA`
 
 #. :rst:role:`sphinx:math`
 
-   * :std:doc:`Role <sphinx:usage/restructuredtext/roles>` for using
+   * :doc:`Role <sphinx:usage/restructuredtext/roles>` for using
      :xref:`LaTeX` in-line
 
 #. :rst:dir:`sphinx:math`
 
-   * :std:doc:`Directive <sphinx:usage/restructuredtext/directives>` for using
+   * :doc:`Directive <sphinx:usage/restructuredtext/directives>` for using
      :xref:`LaTeX` on its own line
 
 #. :xref:`http socket error fix <http-socket-error>`
 
-   * Managing errors during documentation builds
+   * Potential problem (and solution) when
+     :ref:`building documentatoin <sphinx-building-documentation>`
 
-#. :std:doc:`sphinx:usage/restructuredtext/domains`
+#. :doc:`sphinx:usage/restructuredtext/domains`
 
    * Collection of
-     :std:doc:`directives <sphinx:usage/restructuredtext/directives>` and
-     :std:doc:`roles <sphinx:usage/restructuredtext/roles>` for specific topics
+     :doc:`directives <sphinx:usage/restructuredtext/directives>` and
+     :doc:`roles <sphinx:usage/restructuredtext/roles>` for specific topics
 
 With Read the Docs
 ------------------
@@ -638,13 +644,13 @@ With Read the Docs
 #. :xref:`Yusuf-Sphinx-RTD`
 
    * Setting up a project using :doc:`quickstart <sphinx:usage/quickstart>`
-   * :doc:`toctree <sphinx:usage/quickstart>` and associated documentation
-     structure
-   * Basic :doc:`reST <usage/restructuredtext/basics>` syntax
+   * :rst:dir:`toctree` and associated documentation structure
+   * Basic :ref:`tools-restructured-text` syntax
 
 #. :doc:`Read the Docs<rtfd:index>`
 
-   * Online repository for hosting software documentation
+   * :xref:`Online <internet>` repository for :xref:`software <software>`
+     documentation
 
 #. :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
 
@@ -666,64 +672,66 @@ With Read the Docs
 Managing references
 -------------------
 
-#. :std:doc:`Intersphinx extension <sphinx:usage/extensions/intersphinx>`
+#. :doc:`Intersphinx extension <sphinx:usage/extensions/intersphinx>`
 
-   * Official :std:doc:`Sphinx <sphinx:intro>` documentation for referencing
-     other :std:doc:`Sphinx <sphinx:intro>` projects
+   * Official :doc:`Sphinx <sphinx:intro>` documentation for referencing
+     other :doc:`Sphinx <sphinx:intro>` projects
 
 #. :xref:`xref-ext`
 
-   * :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to manage
-     common external references in a project
+   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to manage
+     common :ref:`links <references-links>` in a project
 
 #. :xref:`intersphinx-inv-targets`
 
    * Explains how to interpret
-     :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>` files when
-     using :std:doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
+     :doc:`objects.inv <sphinx:usage/extensions/intersphinx>` files when
+     using :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
 
 #. :xref:`intersphinx-inv-parser`
 
    * Sample code for analyzing
-     :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>` files
+     :doc:`objects.inv <sphinx:usage/extensions/intersphinx>` files
 
 #. :xref:`intersphinx-numpy-matplotlib`
 
-   * Instructions to reference numerical analysis and plotting tools via
-     :std:doc:`Intersphinx <usage/extensions/intersphinx>`
+   * Instructions to for using
+     :doc:`Intersphinx <usage/extensions/intersphinx>` with specific
+     :ref:`packages <python:tut-packages>`
 
 #. :xref:`citation`
 
-   * A way to reference a source of information
+   * A way to create a :ref:`reference <references>` to a source of information
 
 #. :xref:`bibtex`
 
-   * :xref:`citation` management file format
+   * :xref:`citation` management format
 
 #. :doc:`BibTeX extension <bibtex:index>`
 
    * :ref:`Sphinx extension <tools-sphinx>` for :xref:`citing <citation>` with
      :xref:`bibtex`
 
-#. :xref:`ottobib`
+#. :xref:`book`
 
-   * :xref:`bibtex` database for books
+   * Information source
 
 #. :xref:`ISBN`
 
-   * Unique identifier for books
+   * Unique identifier for :xref:`books <book>`
+
+#. :xref:`ottobib`
+
+   * Provides :xref:`bibtex` data for a :xref:`book <book>` with a given
+     :xref:`ISBN`
 
 #. :xref:`bibtex-syntax`
 
-   * Syntax for identifying specific citation components
+   * Syntax for identifying specific :xref:`citation <citation>` components
 
 #. :xref:`cite-multiple-authors`
 
    * Use of ``et. al``
-
-#. :xref:`book`
-
-   * Information source
 
 Showing code
 ------------
@@ -731,7 +739,7 @@ Showing code
 #. :rst:dir:`code-block`
 
    * :doc:`Directive <sphinx:usage/restructuredtext/directives>` to show
-     sections of :ref:`code <tools-python>`
+     sections of :xref:`code <source-code>`
 
 #. :doc:`Autodoc <sphinx:usage/extensions/autodoc>`
 
@@ -754,14 +762,15 @@ Showing code
 
 #. :pep:`Type annotations <484>`
 
-   * Syntax to indicate :std:doc:`types <python:library/stdtypes>` in code
+   * Syntax to indicate :doc:`types <python:library/stdtypes>` in
+     :xref:`code <source-code>`
 
 #. :ref:`sphinx:python-roles`
 
-   * :std:doc:`Domain <sphinx:usage/restructuredtext/domains>` for documenting
-     :xref:`Python` components
+   * :doc:`Sphinx Domain <sphinx:usage/restructuredtext/domains>` for
+     documenting :xref:`Python` components
 
-#. :std:doc:`Read the Docs sample Python module <demo/api>`
+#. :doc:`Read the Docs sample Python module <demo/api>`
 
    * Sample syntax for :doc:`autodoc <sphinx:usage/extensions/autodoc>`
 
@@ -772,7 +781,8 @@ Showing code
 
 #. :ref:`sphinx:info-field-lists`
 
-   * Syntax that :doc:`napoleon <sphinx:usage/extensions/napoleon>` produces
+   * :ref:`tools-restructured-text` syntax that
+     :doc:`napoleon <sphinx:usage/extensions/napoleon>` produces
 
 reStructuredText
 ================
@@ -780,40 +790,40 @@ reStructuredText
 General
 -------
 
-#. :std:doc:`sphinx:usage/restructuredtext/basics`
+#. :doc:`sphinx:usage/restructuredtext/basics`
 
-   * :std:doc:`Sphinx <sphinx:intro>` explanation of
-     :std:doc:`reST <sphinx:usage/restructuredtext/basics>` markup language
+   * :doc:`Sphinx <sphinx:intro>` explanation of
+     :doc:`reST <sphinx:usage/restructuredtext/basics>` markup language
 
 #. :xref:`reST-documentation`
 
-   * Official :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+   * Official :doc:`reST <sphinx:usage/restructuredtext/basics>`
      documentation
 
 #. :xref:`quick-reST`
 
    * Quick reference with
-     :std:doc:`reST <sphinx:usage/restructuredtext/basics>` examples
+     :doc:`reST <sphinx:usage/restructuredtext/basics>` examples
 
 #. :xref:`Doc8`
 
-   * Style checker for :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+   * Style checker for :doc:`reST <sphinx:usage/restructuredtext/basics>`
 
 Syntax
 ------
 
 #. :xref:`reST-cheatsheet`
 
-   * Quick reference for :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
+   * Quick reference for :doc:`reST <sphinx:usage/restructuredtext/basics>`
      usage
 
 #. :xref:`reST-list-indentation`
 
-   * Explanation of nested list syntax
+   * Syntax tip
 
 #. :ref:`Tables <sphinx:table-directives>`
 
-   * Syntax for creating various table styles
+   * Syntax options
 
 #. :doc:`Role <sphinx:usage/restructuredtext/roles>`
 
@@ -829,20 +839,27 @@ Syntax
 
 #. :ref:`Label role <ref-role>`
 
-   * :doc:`Role <sphinx:usage/restructuredtext/roles>` syntax to link to
-     arbritrary documentation components
+   * :doc:`Role <sphinx:usage/restructuredtext/roles>` syntax to
+     :xref:`link <URL>` to arbritrary documentation locations
 
 #. :xref:`admonition`
 
-   * A special badge of text
+   * A special badge of text [#]_
+
+.. rubric:: Footnotes
+
+.. [#]
+      .. danger::
+
+         This is an :xref:`admonotion <admonition>`
 
 Engine-agnostic tools
 =====================
 
 #. :xref:`tables-generator`
 
-   * Online tool to format tables in :xref:`Markdown`,
-     :doc:`usage/restructuredtext/basics`, and plain text
+   * :xref:`Online <internet>` tool to format tables in :xref:`LaTeX`,
+     :xref:`Markdown`, :ref:`tools-restructured-text`, and plain text
 
 #. :xref:`LaTeX`
 
@@ -852,9 +869,9 @@ Engine-agnostic tools
 
 #. :xref:`Markdown`
 
-   * Language syntax used to generate tables, lists, etc. for :xref:`GitHub`
-     and :xref:`Jupyter Notebooks <Jupyter>`
-
+   * Language syntax used to generate tables, lists, and other components
+   * Used for :xref:`GitHub`, :xref:`Jupyter Notebooks <Jupyter>`, and
+     :ref:`AAAAAA task management <versioning-td3>`
 
 *****
 Tools
@@ -868,41 +885,42 @@ General
 
 #. :xref:`Jupyter Notebooks <Jupyter>`
 
-   * Interactive :xref:`Python` notebook format used for algorithm development
-   * Code, :xref:`LaTeX`, :xref:`Markdown`, and plotting in one document
+   * Interactive :xref:`Python` environment
+   * :xref:`Code <source-code>`, :xref:`LaTeX`, :xref:`Markdown`, and plotting
+     in one document
 
 #. :xref:`Schafer-Jupyter`
 
-   * Recommended starting point for learning to use
-     :xref:`Jupyter Notebooks <Jupyter>`
-   * Tutorial video produced by :xref:`Corey Schafer <Corey-Schafer-vids>`
+   * Recommended for learning to use :xref:`Jupyter Notebooks <Jupyter>`
+   * Tutorial video from :xref:`Corey Schafer <Corey-Schafer-vids>`
 
 #. :xref:`AAAAAA-nbs`
 
-   * Online viewer for :xref:`Jupyter Notebooks <Jupyter>` in :term:`AAAAAA`
+   * :xref:`Online <internet>` viewer for :xref:`Jupyter Notebooks <Jupyter>`
+     in :term:`AAAAAA`
 
 Extensions
 ----------
 
-#. :std:doc:`nb-extensions:index`
+#. :doc:`nb-extensions:index`
 
    * Additional functionality for :xref:`Jupyter Notebooks <Jupyter>`
 
-#. :std:doc:`nb-extensions:nbextensions/collapsible_headings/readme`
+#. :doc:`nb-extensions:nbextensions/collapsible_headings/readme`
 
    * Section navigation and management
 
-#. :std:doc:`nb-extensions:nbextensions/toc2/README`
+#. :doc:`nb-extensions:nbextensions/toc2/README`
 
    * Automatic section linking
 
-#. :std:doc:`nb-extensions:nbextensions/varInspector/README`
+#. :doc:`nb-extensions:nbextensions/varInspector/README`
 
    * Inspect data values
 
 #. :xref:`live-md-preview`
 
-   * Preview :xref:`Markdown` and :xref:`LaTeX` syntax real-time
+   * Preview :xref:`Markdown` and :xref:`LaTeX`
 
 VS Code
 =======
@@ -912,8 +930,8 @@ General
 
 #. :xref:`VS-Code`
 
-   * Preferred :xref:`open-source` environment for software development,
-     documentation, and testing
+   * :xref:`Open-source <open-source>` environment for
+     :xref:`software <software>` development
    * Has a collection of :xref:`extensions <VS-Code-extensions>` developed by
      the :xref:`open-source` community
 
@@ -923,27 +941,27 @@ General
 
 #. :xref:`VS-Code-Python-tutorial`
 
-   * Tutorial for using :xref:`Python` in :xref:`VS-Code`
+   * Setup and basic usage
 
 #. :xref:`VS-Code-unit-testing`
 
-   * Enables use of :std:doc:`pytest <pytest:index>` with :xref:`VS-Code`
+   * Use :ref:`tools-pytest`
 
 #. :xref:`VS-Code-settings`
 
-   * Explanation of user configurations via ``settings.json``
+   * Configurations in ``settings.json``
 
 #. :xref:`VS Code integrated terminal <VS-Code-terminal>`
 
-   * Description of using a terminal inside :xref:`VS-Code`
+   * Using a :xref:`command line <command-line>`
 
 #. :xref:`VS Code command palette <command-palette>`
 
-   * Direct input for various development commands in :xref:`VS-Code`
+   * Direct input for :xref:`software <software>` commands
 
 #. :xref:`VS-Code-insiders`
 
-   * Has the latest features, may be unstable
+   * Has the latest features, may have problems
 
 Extensions
 ----------
@@ -954,29 +972,29 @@ Extensions
 
 #. :xref:`VS-Code-Python-ext`
 
-   * Syntax highlighting, autocomplete, etc.
+   * Work with :ref:`tools-python`
 
 #. :xref:`Selecting the Python interpreter <VS-Code-interpreter>`
 
-   * Selecting the version of :xref:`Python` to use in :xref:`VS-Code`
+   * Integrate the :doc:`Python interpreter <python:tutorial/interpreter>`
 
 #. :xref:`Test-explorer-UI`
 
-   * Graphical interface that enables use of :std:doc:`pytest <pytest:index>`
+   * Work with :ref:`tools-pytest`
 
 #. :xref:`VS-Code-bookmarks-ext`
 
-   * Tool for marking and navigating to lines in code
+   * Mark and navigate :xref:`source code <source-code>`
 
 #. :xref:`RST-preview-ext`
 
    * Syntax highlighting for
-     :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
-   * Limited live preview functionality
+     :ref:`tools-restructured-text`
+   * Limited preview functionality
 
 #. :xref:`doc8-newline-issue`
 
-   * Fix for syntax highlighter bug in :xref:`RST-preview-ext`
+   * Fix for syntax highlight problem in :xref:`RST-preview-ext`
 
 
 *********
@@ -988,7 +1006,7 @@ General
 
 #. :xref:`computer`
 
-   * A system for manipulating information
+   * A system that manipulates information
 
 #. :xref:`mobile-device`
 
@@ -1004,7 +1022,7 @@ General
 
 #. :xref:`copy-paste`
 
-   * The easiest way to share  :xref:`source code <source-code>`
+   * One way to share :xref:`source code <source-code>`
 
 #. :xref:`string`
 
@@ -1052,7 +1070,6 @@ OS specifics
    * How to change :xref:`bash <bash-man-page>` prompt to a custom
      :xref:`string <string>` like ``$``
 
-
 Online information
 ==================
 
@@ -1090,18 +1107,18 @@ Online information
 
 #. :xref:`Open-source software <open-source>`
 
-   * Public way to share code
+   * Public way to share :xref:`source code <source-code>`
 
 Software design standards
 =========================
 
 #. :xref:`219-Design`
 
-   * Embedded systems design consulting firm
+   * *Smart product* design consulting firm
 
 #. :xref:`DO-178B`
 
-   * Software design assurance standards for aviation devices
+   * :xref:`Software <software>` design standards for aviation devices
 
 #. :xref:`Attitude Heading and Reference System (AHRS) <AHRS>`
 
@@ -1113,8 +1130,7 @@ Software design standards
 
 #. :xref:`why-poignant-guide`
 
-   * Explanation of :xref:`software <open-source>`, mentioned in
-     :ref:`zen-aipaip`
+   * Explanation of :xref:`software <software>`, mentioned in :ref:`zen-aipaip`
 
 *********
 Financial
@@ -1165,7 +1181,7 @@ Money definitions
 
 #. :xref:`medium-of-exchange`
 
-   * A widely accepted token that can be exhanged for something else
+   * A widely accepted token that can be exchanged for something else
 
 #. :xref:`money`
 
@@ -1199,7 +1215,7 @@ Mathematics
 
 #. :xref:`factorial-definition`
 
-   * :xref:`Wikipedia` factorial page
+   * :xref:`Wikipedia` page for :math:`x!`
 
 
 **********
@@ -1211,7 +1227,8 @@ Personal motivation
 
 #. :xref:`schafer-interview`
 
-   * Reasons for making content, :xref:`cited <citation>` in :ref:`zen-aipaip`
+   * Reasons for making content
+   * :xref:`Cited <citation>` in :ref:`zen-aipaip`
 
 Places worth visiting
 =====================

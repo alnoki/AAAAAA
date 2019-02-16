@@ -84,4 +84,4 @@ See :xref:`Google`
 You want information about information and information about how to share information
 *************************************************************************************
 
-You must be talking about :xref:`the internet <internet>`
+You must be talking about :xref:`the Internet <internet>`
