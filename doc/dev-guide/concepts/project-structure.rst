@@ -11,7 +11,7 @@ Project structure
 Access
 ******
 
-:term:`AAAAAA` source code and documentation is available at the
+:xref:`source-code` and documentation for :term:`AAAAAA` is located at the
 :xref:`AAAAAA-repo`, which is hosted by :xref:`GitHub`
 
 .. _concepts-project-dir-tree:
@@ -51,11 +51,11 @@ Some select demonstrative contents of the :xref:`AAAAAA-repo`:
        TODO.md
 
 .. csv-table:: Project contents
-   :header: "Name", "Function"
+   :header: Name, Function
    :align: center
 
    ``AAAAAA/``, Project root :xref:`directory <directory>`
-   ``src/`` , :xref:`Source code <open-source>`
+   ``src/`` , :xref:`Source code <source-code>` (in :ref:`tools-Python`)
    ``test/`` , :ref:`tools-pytest` code
    ``doc/`` , :ref:`tools-sphinx` documentation
    ``nbs/`` , :ref:`tools-jupyter` notebooks
@@ -63,5 +63,5 @@ Some select demonstrative contents of the :xref:`AAAAAA-repo`:
    ``.gitignore`` , :ref:`tools-git` configuration
    ``a6.yml`` , Specifies the :term:`a6 environment <a6>`
    ``setup.py`` , Configuration for :ref:`tools-pytest`
-   ``README.md`` , Points to :term:`AAAAAA` homepage
-   ``TODO.md`` , Development :ref:`task planning <versioning-td3>`
+   ``README.md`` , Reference to :xref:`website <website>` for :term:`AAAAAA`
+   ``TODO.md`` , :ref:`Task planning <versioning-td3>`

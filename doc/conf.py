@@ -349,7 +349,7 @@ xref_links = {
                               'alefragnani.Bookmarks'),
     'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
     'bash-man-page': ("bash shell manual", url['linux-die'] + 'bash'),
-    'Doc8': ("Doc8 reST linter", url['conda-forge'] + 'doc8'),
+    'Doc8': ("Doc8 reST syntax checker", url['conda-forge'] + 'doc8'),
     'git-manual': ("Git manual", url['git-scm'] + 'docs/user-manual.html'),
     'git-download': ("Git download", url['git-scm'] + 'downloads'),
     'git-book': ("Git book", url['git-scm'] + 'book/en/v2'),
@@ -468,5 +468,7 @@ xref_links = {
     'source-code': ("Source code", url['Wiki pg'] + 'Source_code'),
     'copy-paste': ("Cut, copy, and paste", url['Wiki pg'] +
                    'Cut,_copy,_and_paste'),
+    'software': ('Software', url['Wiki pg'] + 'Software'),
+    'string': ('String', url['Wiki pg'] +'String_(computer_science)'),
     # New links below, sorted links above
     }

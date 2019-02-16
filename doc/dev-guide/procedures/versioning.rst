@@ -113,16 +113,17 @@ At this point you should be working on a
    * :ref:`Jupyter Notebooks <concepts-jupyter-nbs-structure>`
    * :ref:`Code <concepts-code-structure>`
 
-#. Finalize any updates to the :ref:`version list <version-list>`
+#. Finalize feature additions in the :ref:`version list <version-list>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
    most recent :ref:`release <version-list>`
 
-   * Once you start, go through from the first
-     :ref:`.rst file <tools-restructured-text>` to the last, only making edits
-     for the current :ref:`.rst file <tools-restructured-text>` you are on
+   * :term:`OHIO` from the first :ref:`.rst file <tools-restructured-text>` to
+     the last, editing only the
+     :ref:`.rst file <tools-restructured-text>` you are on
+   * Feel free to add some :ref:`to-dos <versioning-td3>` for later, though
 
 #. Update the ``YYYY-MM-DD`` on the :ref:`version list <version-list>`
-#. :ref:`Commit but do not push <git-committing>`
+#. :ref:`Commit and push <git-committing>`
 #. :ref:`Merge <git-merging>` the
    :ref:`development branch <versioning-start-new>` in to the
    :xref:`master branch <git-manual>`

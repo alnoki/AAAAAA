@@ -33,14 +33,16 @@ Modifications are explained in a way that
    * Add :ref:`versioning procedures <versioning-procedures>`
    * Add :ref:`BibTeX <tools-bibtex>` to create :xref:`citations <citation>`
      for :ref:`books <references-books>`
-   * Add :ref:`tools-sphinx-autobuild` support and
+   * Add :ref:`tools-sphinx-autobuild` support and associated
      :ref:`procedures <sphinx-autobuilding>`
    * Add :ref:`the spirit of alnoki's apps <zen-spirit>`
 
 * 0.2.0 (2019-02-08)
 
-   * Document :py:class:`AAAAAA.ledger.Transaction` with :ref:`tools-napoleon`
+   * Document :py:class:`AAAAAA.ledger.Transaction` with
+     :ref:`napoleon <tools-napoleon>`
 
 * 0.1.0 (2019-01-30)
 
-   * Add :ref:`tools-sphinx` website with development references
+   * Create :xref:`website <website>`, using :ref:`tools-sphinx`, with notes on
+     how to make a :xref:`website <website>`, using :ref:`tools-sphinx`!

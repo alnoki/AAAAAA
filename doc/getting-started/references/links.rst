@@ -1,4 +1,7 @@
-.. 14a4fa4:
+.. 0.3.0:
+
+.. Project structure
+   =================
 
 .. _references-links:
 
@@ -8,8 +11,8 @@ Links
 #####
 
 This is a centralized and comprehensive list of :xref:`online <internet>`
-information related to :term:`AAAAAA` documentation, in
-:xref:`URL` format
+information :xref:`cited <citation>` throughout :term:`AAAAAA` documentation,
+in :xref:`URL` format
 
 :xref:`Links <URL>` are not necessarily in order, but :xref:`links <URL>` with
 high priority are usually placed at the top of a section
@@ -37,19 +40,19 @@ General
 
 #. :xref:`Python.org <Python>`
 
-   * Definitive reference for the :xref:`Python` computer language
+   * Definitive reference for the :xref:`Python`
 
 #. :doc:`python:tutorial/index`
 
-   * Official :xref:`Python` tutorial from :xref:`Python.org <Python>`
+   * Official :xref:`Python` tutorial
 
 #. :pep:`8`
 
-   * Official :xref:`Python` style guide
+   * Official :xref:`Python` style guide for :xref:`source code <source-code>`
 
 #. :doc:`python:howto/functional`
 
-   * Official tutorial on :xref:`Python` programming techniques
+   * Official tutorial on :xref:`Python` techniques
 
 #. :doc:`python:howto/index`
 
@@ -69,24 +72,25 @@ General
 
 #. :doc:`tutorial/interpreter`
 
-   * The mechanism that runs :xref:`Python` code
-
+   * Instructions for the mechanism that runs :xref:`Python` code
 
 Project structure
 =================
 
 #. :ref:`python:tut-packages`
 
-   * Structuring of code and :xref:`directories <directory>` in a project
+   * Structuring of :xref:`source code <source-code>` and
+     :xref:`directories <directory>` in a project
 
 #. :xref:`print-dir-tree`
 
-   * Sample code to print out a :xref:`directory <directory>` tree
-   * Adapted for :ref:`directory tree procedure <writing-make-dir-tree>`
+   * Sample :xref:`code <source-code>` create a :xref:`directory <directory>`
+     tree
+   * Adapted for the :ref:`directory tree procedure <writing-make-dir-tree>`
 
 #. :xref:`directory`
 
-   * Cataloging structure with references to computer data
+   * Cataloging structure for :xref:`computer <computer>` data
 
 Text
 ====
@@ -994,16 +998,24 @@ General
 
    * A way to communicate to a :xref:`computer <computer>`
 
+#. :xref:`software`
+
+   * A structured collection of :xref:`source code <source-code>`
+
 #. :xref:`copy-paste`
 
    * The easiest way to share  :xref:`source code <source-code>`
+
+#. :xref:`string`
+
+   * How a :xref:`computer <computer>` stores text
 
 OS specifics
 ============
 
 #. :xref:`OS`
 
-   * Computer system resource manager
+   * :xref:`computer` resource manager
 
 #. :xref:`Mac OS<Mac>`
 
@@ -1037,8 +1049,8 @@ OS specifics
 
 #. :xref:`Change-bash-prompt`
 
-   * How to change :xref:`bash <bash-man-page>` prompt to a custom string like
-     ``$``
+   * How to change :xref:`bash <bash-man-page>` prompt to a custom
+     :xref:`string <string>` like ``$``
 
 
 Online information

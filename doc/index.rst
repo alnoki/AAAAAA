@@ -15,10 +15,10 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 .. glossary::
 
    AAAAAA
-      Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA),
-      colloquially referred to as *alnoki's apps*, are a growing collection of
-      :ref:`financial analysis <guide-fin-background>` tools.
-      :xref:`source-code` is written in the
+      :xref:`Alnoki <alnoki-repos>`'s Algorithmic Analysis Asset Allocation
+      Applications (AAAAAA), colloquially referred to as *alnoki's apps*, are a
+      growing collection of :ref:`financial analysis <guide-fin-background>`
+      tools. :xref:`source-code` is written in the
       :xref:`Python computer language <Python>`, using additional
       :ref:`packages <python:tut-packages>` developed by the
       :xref:`open-source` community
@@ -49,8 +49,11 @@ with minimal effort, using :py:func:`python:print`:
 
       #. Download
          :doc:`Miniconda <conda:user-guide/install/download>`
-      #. :ref:`Start up conda <conda:starting-conda>`
+      #. :ref:`Start up Conda <conda:starting-conda>`
       #. Type :command:`python` and hit :kbd:`return`
+
+         * Rejoice, for you have just started the
+           :doc:`Python interpreter <tutorial/interpreter>`
 
 #. :xref:`Copy and paste <copy-paste>` the below contents to the
    :xref:`command line <command-line>` then hit :kbd:`return`:

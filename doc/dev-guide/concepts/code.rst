@@ -40,12 +40,9 @@ In accordance with :std:doc:`test code recommendations <pytest:goodpractices>`,
            AAAAAA/
                __init__.py
                ledger.py
-               utilities.py
-               ...
        test/
            test_ledger.py
            test_utilities.py
-           ...
 
 .. _concepts-code-style:
 

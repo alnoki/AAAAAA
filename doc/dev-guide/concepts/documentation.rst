@@ -11,7 +11,7 @@ Documentation
    :local:
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :std:doc:`Python Developer's Guide <py-dev-guide:documenting>`, "Official
@@ -27,8 +27,8 @@ Sphinx
 .. note::
 
    The :ref:`Tools: Sphinx <tools-sphinx>` section explains how
-   :ref:`Sphinx <tools-sphinx>` works, but this is an elaboration of the
-   specific components in :term:`AAAAAA`
+   :ref:`Sphinx <tools-sphinx>` works, but this is an elaboration of
+   specific documentation components in :term:`AAAAAA`
 
 .. _concepts-documentation-structure:
 
@@ -47,7 +47,7 @@ Documentation structure
             index.rst
             getting-started/
                 quickstart.rst
-                ...
+                what-next.rst
                 references/
                     index.rst
                     refs.bib
@@ -56,17 +56,19 @@ Documentation structure
             user-guide/
                 index.rst
                 fundamentals.rst
+                ...
             dev-guide/
-                concepts/
-                    index.rst
-                    tools.rst
-                    ...
                 environment/
                     index.rst
                     documenting.rst
                     ...
+                concepts/
+                    index.rst
+                    tools.rst
+                    ...
                 procedures/
-                    writing.rst
+                    index.rst
+                    conda.rst
                     ...
 
 .. csv-table::
@@ -74,15 +76,18 @@ Documentation structure
    :align: center
 
    ``exts/``, ":xref:`Directory <directory>` for
-   :std:doc:`extensions <sphinx:usage/extensions/index>`"
-   ``conf.py``, :std:doc:`Configuration <sphinx:usage/configuration>`
+   :doc:`extensions <sphinx:usage/extensions/index>`"
+   ``conf.py``, ":doc:`Configuration <sphinx:usage/configuration>` for
+   :ref:`tools-sphinx`"
    "``Makefile`` , ``make.bat``", :ref:`sphinx-building-documentation`
-   ``index.rst`` (top-level) , :term:`AAAAAA` documentation homepage
+   ``index.rst`` (top-level) , ":term:`AAAAAA` documentation
+   :xref:`homepage <webpage>`"
    "``getting-started/`` , ``user-guide/``, etc.", "
    Documentation :xref:`directories <directory>`"
-   "``quickstart.rst`` , ``fundamentals.rst`` , etc. ", "
-   :ref:`tools-restructured-text` files"
-   ``refs.bib``, :ref:`tools-bibtex` citations
+   "``quickstart.rst`` , ``what-next.rst`` , etc. ", "
+   :ref:`tools-restructured-text` documents"
+   ``refs.bib``, ":xref:`Citations <citation>` for
+   :ref:`books <references-books>` (in :ref:`tools-bibtex` format)"
 
 .. _concepts-documentation-style:
 
@@ -135,6 +140,8 @@ Specific syntax
    * Here are some :ref:`links <references-links>`
    * The :doc:`NumPy package <numpy:about>` thinks it is special
    * :doc:`pytest <pytest:index>` does too
+   * Not too sure about :ref:`napoleon <tools-napoleon>`
+     (or it is :ref:`tools-napoleon`???)
 
 #. There should be regular text between two different
    :ref:`links <references-links>` so that the
@@ -208,20 +215,21 @@ Jupyter Notebooks
        nbs/
            dev/
                ledger.ipynb
-               ...
            src/
                ledger.ipynb
                utilities.ipynb
-               ...
 
 .. csv-table::
-   :header: "Name", "Style"
+   :header: Name, Style
    :align: center
 
    ``dev/``, Created during development
-   ``src/``, Complements source code
+   ``src/``, Complements :xref:`source code <source-code>`
+   "``ledger.ipynb``, ``utilities.ipynb``, etc.", "
+   :ref:`Jupyter Notebooks <tools-jupyter>`"
 
 
 .. tip::
-   This :xref:`AAAAAA-nbs` opens at the ``nbs/`` directory and can render any
-   :ref:`Jupyter Notebook <tools-jupyter>` in the :xref:`AAAAAA-repo`
+   This :xref:`AAAAAA-nbs` opens at the ``nbs/`` :xref:`directory <directory>`
+   and can render any :ref:`Jupyter Notebook <tools-jupyter>` in the
+   :xref:`AAAAAA-repo`

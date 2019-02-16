@@ -1,9 +1,13 @@
+.. 0.3.0
+
+
 ##########
 What next?
 ##########
 
 .. contents:: Which of the following describes you?
    :local:
+
 
 *********************************
 You have no idea what is going on
@@ -18,10 +22,11 @@ like :xref:`Python.org <Python>`, :xref:`Wikipedia`, or :xref:`YouTube`.
 Typically this information is accompanied by a conceptual explanation that fits
 within the context of :term:`AAAAAA`
 
-You will soon learn that :term:`AAAAAA` lives within the magical,
+You will soon learn that :term:`AAAAAA` live within the magical,
 :xref:`open source <open-source>` world of :ref:`tools-python`. Indeed, you
 shall learn that which you need as you follow the :guilabel:`next`-lit path
 that has befallen you in :term:`AAAAAA`
+
 
 *********************************
 You don't want to get sidetracked
@@ -30,6 +35,7 @@ You don't want to get sidetracked
 Keep on hitting :guilabel:`next`! Lucky for you, this :xref:`website <website>`
 is made with :ref:`tools-sphinx` and as such you can visit every
 :xref:`page <webpage>` in a logical linear order without having to think twice
+
 
 **********************************
 You are curious about the software
@@ -54,8 +60,9 @@ At the :ref:`tools section <concepts-tools>`, you will learn that
 :xref:`alnoki <alnoki-repos>` uses :ref:`tools-sphinx` and a host of
 :ref:`extensions <tools-sphinx-extensions>`
 to create content that is hosted by :doc:`Read the Docs<rtfd:index>`. There are
-also a host of additional :ref:`development concepts <concepts>` and
-:ref:`custom procedures <procedures>` to be had on your developmental journey
+also plenty of :ref:`development concepts <concepts>` and
+:ref:`custom procedures <procedures>` to be had on your journey
+
 
 *******************************************
 You want a comprehensive list of references
@@ -65,15 +72,16 @@ Check out the :ref:`references <references>`! Per the
 :ref:`reference management procedures <sphinx-managing-references>`, they are
 consolidated into one place
 
+
 ***********************************************
 You are interested in acquiring a vintage mixer
 ***********************************************
 
 See :xref:`Google`
 
+
 *************************************************************************************
 You want information about information and information about how to share information
 *************************************************************************************
 
 You must be talking about :xref:`the internet <internet>`
-

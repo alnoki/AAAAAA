@@ -1,4 +1,4 @@
-.. 5333f1a
+.. 0.3.0
 
 .. _quickstart:
 
@@ -10,11 +10,11 @@ Quickstart
 If you want to try out some basic :term:`AAAAAA` functionality, then
 follow the below steps:
 
-#. :std:doc:`Download Miniconda <conda:user-guide/install/download>` (a variant
+#. :doc:`Download Miniconda <conda:user-guide/install/download>` (a variant
    of :xref:`Anaconda`), which will give you quick access to :xref:`Python` if
-   your :xref:`operating system <OS>` did not come pre-loaded with it
+   your :xref:`operating system <OS>` did not come with :xref:`Python`
 #. Download the :xref:`AAAAAA-zip-archive`
-#. :ref:`Start up Conda <conda:starting-conda>` and navigate to the root
+#. :ref:`Start up Conda <conda:starting-conda>` in the root
    :xref:`directory <directory>` of the
    :xref:`archive you just downloaded <AAAAAA-zip-archive>`
 #. Type :command:`python` and hit :kbd:`return`
@@ -22,7 +22,7 @@ follow the below steps:
    * Rejoice, for you have just started the
      :doc:`Python interpreter <tutorial/interpreter>`
 
-#. Copy-paste the following and hit :kbd:`return`
+#. :xref:`Copy and paste <copy-paste>` the following and hit :kbd:`return`
 
    .. code-block:: python
 
@@ -30,10 +30,11 @@ follow the below steps:
       import decimal  # Lets you work with $$.¢¢
       from src.AAAAAA.ledger import Transaction  # From AAAAAA codebase
       my_transaction = Transaction(
-          when=datetime.date(1994, 6, 19), total_amount=decimal.Decimal('24.48'),
+         when=datetime.date(1994, 6, 19), total_amount=decimal.Decimal('24.48'),
           kind='Buy', symbol='ALNOKI', num_shares=12)
 
-#. You just paid $24.48 for 12 :xref:`shares <finance-share>`
+#. You just :xref:`paid <finance-transaction>` 24 :xref:`dollars <USD>` and 48
+   :xref:`cents <finance-cent>` for 12 :xref:`shares <finance-share>`
 
    .. code-block:: python
 

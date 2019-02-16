@@ -1,8 +1,37 @@
 # 0.4.0
 
-## Notes from proofreading
+## Notes from proofreading (file elsewhere)
+1. AAAAAA should link to double triple alpha
+   1. Also use a link to :xref:`software`
+1. Try putting py:function:explanation in text somewhere
+   1. User guide warning to show what you won't be able to see
+      1. This is a sample, but the real ones might not show up
+1. Should have an index.rst for dev-guide
+   1. Add to doc structure tree
+   1. Then, on the what-next page, re-do the links to these places
+1. Should have index.rst for every .rst dir
+   1. In a spirit of apps
+      1. Because it tells you where to go next
+1. If not on an anchor (.html#heading-title), livereload doesn't jump
+around
+1. Add a csv table to the concepts-code page once you have more references
+   1. Packges, __init__, setup.py, etc.
+1. Add in links to the zen page, they are lacking
+   1. Do this after a few versions
+1. Documentation page section about AAAAAA live within, not live(S) within
+1. When proofreading, in .rst, look at anything that isn't rendered white
+   1. You already looked at the white part when reading the site
+   1. When you see, :term:`aaaaaa`, say *alnoki's apps*
+      1. Link to the documentation page
+   1. Clear cookies and make every link turn purple
+   1. Should still read in the major section you are on
+1. Need a references link to print() (from homepage)
+1. Link for wiki pg to download
+   1. Put on the quickstart
 
 ## External references extension
+1. Restructured role revolution "r3"
+1. Add to the exts dir on the doc dir tree
 1. Look for that which has 'url[' in it
    1. Only do super common ones
       1. Don't do Stack OF, because its redirect links are huge
@@ -75,6 +104,7 @@
 1. Disclaimers for RTD
    1. Can't render as well on mobile
    1. Need to update the RTD theme section
+1. Try out log base 16 of factorial of x
 
 ## Wrapping autobuild
 1. Make it run in command line
@@ -122,6 +152,7 @@
 1. Use version 0.3 field list
 
 ## Git
+1. Explain .gitignore and link to project tree
 1. https://stackoverflow.com/questions/24046846
 1. https://stackoverflow.com/questions/3459744
 1. https://stackoverflow.com/questions/11553374
@@ -168,7 +199,8 @@
 1. Need a conf.py part of documentation concepts
 1. Automodule conf.py and settings.json?
 
-## autodoc test code
+## Test code
+1. Have a test index in the developer's guide
 1. Document test_ledger.py
    1. Add a section to common tasks about testing
    1. May need to update the quickstart guide
