@@ -31,16 +31,16 @@ Python?
 A bit of :xref:`Python` can be executed on most :xref:`computers <computer>`
 with minimal effort, using :py:func:`python:print`:
 
-#. Open the :xref:`command line <command-line>` on your particular
+#. Open the :xref:`command line <command-line>` on your
    :xref:`computer <computer>`:
 
 .. csv-table::
    :header: :xref:`OS` , Command line
    :align: center
 
-   :xref:`Linux`, Terminal
-   :xref:`Mac`, Terminal
-   :xref:`Windows`, Command Prompt
+   :xref:`Linux`, :program:`Terminal`
+   :xref:`Mac`, :program:`Terminal`
+   :xref:`Windows`, :program:`Command Prompt`
 
 #. Type :command:`python` and hit :kbd:`return`
 

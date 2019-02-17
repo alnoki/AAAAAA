@@ -137,6 +137,8 @@ Per :doc:`pytest integration practices <pytest:goodpractices>`:
 
 #. :ref:`Tidy up <conda-tidy-up>`
 
+.. _conda-use-new-package:
+
 
 *******************
 Using a new package

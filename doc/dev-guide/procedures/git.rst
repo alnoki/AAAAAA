@@ -8,7 +8,7 @@ Git
 ###
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`tools-git`, :term:`AAAAAA` conceptual explanation

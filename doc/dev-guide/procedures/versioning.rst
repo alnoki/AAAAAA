@@ -1,11 +1,14 @@
+.. 0.3.0
+
 .. _versioning-procedures:
+
 
 ##########
 Versioning
 ##########
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`version-list`, :term:`AAAAAA` conceptual explanation
@@ -79,8 +82,8 @@ Starting a new version
 #. Create a new :ref:`development branch <git-branching>` named in accordance
    with :xref:`semantic versioning standards <semver>`:
    ``dev/MAJOR.MINOR.PATCH``
-#. In :ref:`conf.py <tools-sphinx>` update
-   :ref:`version numbers <version-list>` numbers (and potentially copyright)
+#. In :ref:`conf.py <concepts-documentation-structure>`, update
+   :ref:`version numbers <version-list>` (and potentially copyright year)
 #. Add an entry to the :ref:`version list <version-list>`
 
    * Document changes as you go, in a way that
@@ -98,13 +101,6 @@ At this point you should be working on a
 
 #. :ref:`Update labels <sphinx-update-labels>`
 #. Do a :ref:`link check <sphinx-checking-links>`
-
-   * :ref:`End the active autobuild <sphinx-autobuilding>`
-     (which should leave ghost content at its particular :xref:`URL <URL>`),
-     then :ref:`serve a manual build <sphinx-building-manually>` for this,
-     since each process has an associated :xref:`URL <URL>` that must be
-     checked
-
 #. Verify that the :ref:`quickstart <quickstart>` works
 #. Verify and :ref:`update directory trees <writing-make-dir-tree>`
 

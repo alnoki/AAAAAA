@@ -1,4 +1,4 @@
-.. 41bbe32
+.. 0.3.0
 
 .. _sphinx-procedures:
 
@@ -8,12 +8,12 @@ Sphinx
 ######
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`tools-sphinx`, :term:`AAAAAA` conceptual explanation
-   :xref:`Practical Sphinx presentation <Willing-Sphinx>`, "Common commands"
-   :xref:`Project setup screencast <Yusuf-Sphinx-RTD>`, "How projects work"
+   :xref:`Practical Sphinx presentation <Willing-Sphinx>`, Common usage
+   :xref:`Project setup screencast <Yusuf-Sphinx-RTD>`, Start a project
    :doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`, "Official
    tutorial"
 
@@ -37,9 +37,8 @@ Per :xref:`Willing-Sphinx`:
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
    inside the :ref:`documentation root directory<concepts-project-dir-tree>` if
    it is not already :ref:`active <conda:activate-env>`
-#. From the :ref:`VS Code integrated terminal <tools-vs-code>`, make a new
-   build of documentation then start a
-   :doc:`server <python:library/http.server>`
+#. From the :ref:`VS Code integrated terminal <tools-vs-code>`, make
+   documentation then start a :doc:`server <python:library/http.server>`
 
    .. code-block:: bash
 
@@ -47,9 +46,10 @@ Per :xref:`Willing-Sphinx`:
       python -m http.server
 
 #. Open http://localhost:8000/_build/html/index.html in a
-   :xref:`web browser <web-browser>` to view the build
-#. You can update the :ref:`.rst files <tools-restructured-text>` and make
-   another build, but don't start another
+   :xref:`web browser <web-browser>` to view the documentation
+   :xref:`website <website>`
+#. You can update the :ref:`.rst <tools-restructured-text>` documents and
+   repeat the process, but don't start another
    :doc:`server <python:library/http.server>` (unless you want an
    :xref:`http-socket-error`):
 
@@ -58,7 +58,7 @@ Per :xref:`Willing-Sphinx`:
       make html
 
 #. Refresh the :xref:`browser <web-browser>` to see changes
-#. Before :ref:`committing <git-committing>`, clear out the build files:
+#. Before :ref:`committing <git-committing>`, clear out the build:
 
    .. code-block:: bash
 
@@ -82,15 +82,16 @@ Automatically
    :ref:`tools-sphinx-autobuild`, :term:`AAAAAA` conceptual description
    :xref:`sphinx-autobuild`, Official user manual
 
-#. Follow the same steps as the
-   :ref:`manual build procedure <sphinx-building-manually>`, except use the
-   following to start a :doc:`server <python:library/http.server>`:
+#. Like in the :ref:`manual build procedure <sphinx-building-manually>`,
+   use the :term:`a6 environment <a6>` inside the
+   :ref:`documentation root directory<concepts-project-dir-tree>` via the
+   :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 
       sphinx-autobuild sphinx-autobuild . _build/html -B -s 1
 
-   .. csv-table:: :xref:`Autobuild options <sphinx-autobuild>`
+   .. csv-table:: :xref:`sphinx-autobuild options <sphinx-autobuild>`
       :header: Reference, Topic
       :align: center
 
@@ -105,11 +106,11 @@ Automatically
 #. Keep in mind:
 
    * Once the :doc:`server <python:library/http.server>` is running, saved
-     changes to any :ref:`.rst files <tools-restructured-text>` should cause
-     your :xref:`web browser <web-browser>` to update whatever part of the
-     :xref:`webpage <website>` you are viewing
-   * You will still need to manually navigate to whatever part of the
-     :xref:`webpage <website>` you want to view
+     changes to any :ref:`.rst <tools-restructured-text>` documents should
+     cause your :xref:`web browser <web-browser>` to update whatever part of
+     the :xref:`website <website>` you are viewing
+   * You will still need to manually navigate to the :xref:`webpage <webpage>`
+     you want to view
 
 .. rubric:: Footnotes
 
@@ -129,28 +130,29 @@ Using Intersphinx
 =================
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`tools-intersphinx`, :term:`AAAAAA` conceptual explanation
-   :std:doc:`sphinx.ext.intersphinx <sphinx:usage/extensions/intersphinx>`, "
-   :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` documentation"
+   :doc:`sphinx.ext.intersphinx <sphinx:usage/extensions/intersphinx>`, "
+   :doc:`Sphinx extension <sphinx:usage/extensions/index>` documentation"
    :xref:`Intersphinx reference syntax <intersphinx-inv-targets>`, "Syntax
    explanation"
-   :xref:`Intersphinx inventory parser <intersphinx-inv-parser>`, "For viewing
-   large map outputs"
+   :xref:`Intersphinx inventory parser <intersphinx-inv-parser>`, "For
+   referencing large projects"
 
 #. Locate the project's
-   :std:doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
+   :doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
    mapping, using the :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 
       python -msphinx.ext.intersphinx http://www.sphinx-doc.org/en/master/objects.inv
 
-   * You may have to experiment with the project root link. Some common
-     endings:
+   * You may have to experiment with the project base :xref:`URL <URL>`. Some
+     common endings:
 
+      * ``org/en/master/``
       * ``.io/en/latest/``
       * ``.com/en/latest/``
 
@@ -170,48 +172,75 @@ Using Intersphinx
          ...
 
 #. Inspect the :doc:`objects.inv mapping <sphinx:usage/extensions/intersphinx>`
+   from the project in question
 
-   * For large outputs, consider using a command line program (like
-     :program:`Terminal` on a :xref:`Mac`), which can be maximized to full
-     screen
+   * For large outputs, consider using a :xref:`command line <command-line>`
+     instead of the :ref:`VS Code integrated terminal <tools-vs-code>` (but
+     make sure to use :term:`a6`)
 
-#. Locate the desired target in the mapping output and link to it using a
-   corresponding :std:doc:`role <sphinx:usage/restructuredtext/roles>`:
+#. Locate the desired target in the output and :ref:`link <references-links>`
+   to it using a corresponding
+   :doc:`role <sphinx:usage/restructuredtext/roles>`:
 
-   .. csv-table:: Referencing select mapping outputs
-      :header: "Category in objects.inv", "Role to use"
+   .. csv-table:: Referencing select outputs
+      :header: Category in objects.inv, Role to use
       :align: center
 
       ``std:doc``, ``:doc:``
       ``rst:directive``, ``:rst:dir:``
       ``std:label``, ``:ref:``
 
-#. Documentation pages, under ``std:doc``, are arranged like the project's
-   :ref:`table of contents <sphinx:toctree-directive>`, so you can figure
-   out the :std:doc:`role target <sphinx:usage/restructuredtext/roles>` from
-   the link that a web browser uses to render the documentation page:
+#. Documentation :xref:`webpages <webpage>`, under ``std:doc``, are arranged
+   like the project's :ref:`table of contents <sphinx:toctree-directive>`, so
+   you can figure out the
+   :doc:`role target <sphinx:usage/restructuredtext/roles>` from
+   the :xref:`URL <URL>` that a :xref:`browser <web-browser>` displays for the
+   particular :xref:`webpage <webpage>`. Consider
+   https://docs.python.org/3/tutorial/introduction.html:
 
-   * https://docs.python.org/3/tutorial/introduction.html
-     (**tutorial/introduction**) yields
+   .. csv-table:: :xref:`URL <URL>` decomposition
+      :header: Portion, Interpretation, In role target
+      :align: center
 
-     .. code-block:: rest
+      ``https://docs.python.org/3/``, Base from from ``intersphinx_mapping``,"
+      ``python:``"
+      ``tutorial/introduction.html``, Desired :xref:`webpage <webpage>`, "
+      ``tutorial/introduction``"
 
-        Here is a :std:doc:`tutorial <python:tutorial/introduction>`
+#. You can optionally define your own
+   :doc:`role title <sphinx:usage/restructuredtext/roles>`:
 
-#. Add a description of the link to :ref:`links <references-links>`
-#. :std:doc:`Add a link role <sphinx:usage/restructuredtext/roles>` to
+   .. code-block:: rest
+      :caption: :doc:`python:tutorial/introduction`
+
+      :doc:`python:tutorial/introduction`
+
+   .. code-block:: rest
+      :caption: :doc:`A most beauteous tutorial <python:tutorial/introduction>`
+
+      :doc:`A most beauteous tutorial <python:tutorial/introduction>`
+
+#. Add a description of the :xref:`link <URL>` to
+   :ref:`links <references-links>`
+#. Add a :doc:`role <sphinx:usage/restructuredtext/roles>` to
    documentation using the appropriate
    :ref:`capitalization <concepts-documentation-style>`. For example:
 
    .. code-block:: rest
 
-      Read about :std:doc:`Sphinx roles <sphinx:usage/restructuredtext/roles>`
+      Read about :doc:`Sphinx roles <sphinx:usage/restructuredtext/roles>`
 
-.. tip::
+.. note::
+
+   When possible, use ``:ref:`` instead of ``:doc:``, because the project's
+   :ref:`table of contents <sphinx:toctree-directive>` may change
+
+.. seealso::
 
    :xref:`intersphinx-numpy-matplotlib` has instructions for referencing
-   :std:doc:`NumPy <numpy:about>` and :std:doc:`Matplotlib <matplotlib:index>`
-
+   :doc:`NumPy <numpy:about>` and :doc:`Matplotlib <matplotlib:index>`, though
+   standard procedures from above are usually sufficient for :term:`AAAAAA`
+   documentation
 
 .. _sphinx-xref:
 
@@ -219,19 +248,19 @@ Referencing external links
 ==========================
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
-   :ref:`tools-xref`, :term:`AAAAAA` usage
-   :xref:`Sphinx xref extension <xref-ext>`, Manages external links
+   :ref:`tools-xref`, :term:`AAAAAA` conceptual explanation
+   :xref:`Sphinx xref extension <xref-ext>`, User manual
    :ref:`Using a references extension <sublime-with-sphinx:use the external links extension>`, "
-   Related configuration and usage"
+   Similar configuration and usage"
 
-#. Add a reference to the link in
-   :doc:`conf.py <sphinx:usage/configuration>`
+#. Add your :xref:`URL <URL>` to :doc:`conf.py <sphinx:usage/configuration>`:
 
-   * If the link has a common base link, like in a
-     :xref:`YouTube video <YouTube>`, add it to the :xref:`URL <URL>` mapping
+   * If the :ref:`link <references-links>` has a common base
+     :xref:`URL <URL>`, like in a :xref:`YouTube video <YouTube>`, first add
+     the base to the :xref:`URL <URL>` mapping
      :ref:`dictionary <python:tut-dictionaries>`:
 
      .. code-block:: python
@@ -242,8 +271,8 @@ Referencing external links
            'YT vid': 'https://www.youtube.com/watch?v=',  # Video
            ...
 
-   * Put new links in the ``xref_links`` mapping
-     :ref:`dictionary <python:tut-dictionaries>` below the delimiter
+   * Put your (potentially decomposed) :xref:`URL <URL>` in the ``xref_links``
+     mapping :ref:`dictionary <python:tut-dictionaries>` below the delimiter
      :ref:`comment <python:comments>`
 
      .. code-block:: python
@@ -261,27 +290,38 @@ Referencing external links
                'vscode-restructuredtext/issues/84'),
            }
 
-#. :std:doc:`Add a link role <sphinx:usage/restructuredtext/roles>` to
-   documentation using the appropriate
-   :ref:`capitalization <concepts-documentation-style>`. For example:
+#. Add a :doc:`link role <sphinx:usage/restructuredtext/roles>` to
+   :ref:`.rst <tools-restructured-text>` documentation using the appropriate
+   :ref:`capitalization <concepts-documentation-style>` and an optional
+   :doc:`role title <sphinx:usage/restructuredtext/roles>`:
 
    .. code-block:: rest
+      :caption: :xref:`xref-ext`
 
-      Read about the :xref:`xref extension <xref-ext>`
+      :xref:`xref-ext`
 
-#. Add a description of the link to :ref:`links <references-links>`
+   .. code-block:: rest
+      :caption: :xref:`xref extension <xref-ext>`
 
-   * After this step, the link can be moved above the delimiter
+      :xref:`xref extension <xref-ext>`
+
+#. Add a description of the :xref:`URL <URL>` to
+   :ref:`links <references-links>`
+
+   * After this step, the :xref:`URL <URL>` can be moved above the delimiter
      :ref:`comment <python:comments>` in
-     :ref:`conf.py <tools-sphinx>`
+     :doc:`conf.py <sphinx:usage/configuration>`
 
-.. tip::
+.. admonition:: Optimality considerations
 
-   * As long as links aren't put above the delimiter
+   * As long as :xref:`URLs <URL>` aren't put above the delimiter
      :ref:`comment <python:comments>` until after they are put
-     into :ref:`links <references-links>`, links can be sorted in batches
-   * If you put a link in documentation and in :ref:`links <references-links>`
-     first, you can bypass the delimiter :ref:`comment <python:comments>` when
+     into :ref:`links <references-links>`, :xref:`URLs <URL>` can be sorted in
+     **reasonably sized** batches
+   * If you put a :ref:`link <references-links>` in
+     :ref:`.rst <tools-restructured-text>` documentation and in
+     :ref:`links <references-links>` first, you can bypass the delimiter
+     :ref:`comment <python:comments>` altogether when
      adding to :ref:`conf.py <tools-sphinx>`
 
 .. _sphinx-checking-links:
@@ -289,8 +329,15 @@ Referencing external links
 Checking links
 ==============
 
-#. With a :ref:`build server running<sphinx-building-documentation>`, use the
-   :ref:`integrated terminal <tools-vs-code>` to enter:
+Per :xref:`Willing-Sphinx`:
+
+#. :ref:`End the active autobuild <sphinx-autobuilding>`
+   (which should leave ghost content at its particular :xref:`URL <URL>`),
+   then :ref:`serve a manual build <sphinx-building-manually>` for this,
+   since each process has an associated :xref:`URL <URL>` that must be
+   checked
+#. With a :ref:`manual build server running <sphinx-building-manually>`, use
+   the :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 
@@ -301,10 +348,11 @@ Checking links
 Updating labels
 ===============
 
-#. With an :ref:`active build running <sphinx-building-documentation>`,
-   inspect :ref:`labels <ref-role>` from inside the
-   :ref:`documentation root directory <concepts-project-dir-tree>` using
-   :ref:`intersphinx <sphinx-intersphinx>` on ``_build/html/objects.inv``
+#. With an :ref:`active build running <sphinx-building-documentation>`, open
+   the :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
+   :ref:`documentation root directory <concepts-project-dir-tree>`
+#. Use :ref:`intersphinx <sphinx-intersphinx>` on ``_build/html/objects.inv``
+   to inspect inspect :ref:`labels <ref-role>` for :term:`AAAAAA`
 #. Verify the proper :ref:`label style <concepts-documentation-style>`
 #. Update any :ref:`labels <ref-role>` via the
    :ref:`VS code command palette <tools-vs-code>`:
@@ -316,14 +364,15 @@ Referencing books
 =================
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`tools-bibtex`, :term:`AAAAAA` conceptual explanation
    :xref:`book`, Information source
-   :xref:`bibtex`, File format
-   :doc:`BibTeX extension <bibtex:index>`, Parses :xref:`bibtex`
-   :xref:`ottobib`, :xref:`bibtex` database for :ref:`books <references-books>`
+   :xref:`bibtex`, :xref:`citation` format
+   :doc:`BibTeX extension <bibtex:index>`, Converts :xref:`bibtex`
+   :xref:`ottobib`, "Get :xref:`bibtex` for your
+   :ref:`book <references-books>`"
    :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
    :ref:`refs.bib <concepts-documentation>`, "Collection of
    :xref:`bibtex`-style :xref:`citations <citation>`"
@@ -334,7 +383,7 @@ Referencing books
    :xref:`copy-paste <copy-paste>` the :xref:`bibtex` option into
    :ref:`refs.bib <concepts-documentation>`
 #. Verify that you added a :xref:`book entry <bibtex-syntax>` in
-   :ref:`refs.bib <concepts-documentation>`
+   :ref:`refs.bib <concepts-documentation-structure>`
 
    * A ``book`` :xref:`entry <bibtex-syntax>` requires at least ``author`` (or
      ``editor``), ``title``, ``publisher``, and ``year``
@@ -342,15 +391,15 @@ Referencing books
    * Consider
      :xref:`et. al conventions for multiple authors<cite-multiple-authors>`
 
-#. Add an entry to :ref:`books <references-books>` via
+#. Add a :ref:`role <ref-role>` to :ref:`books <references-books>` via
    ``:cite:`bib-book-name```
 
    * Use a :ref:`heading <concepts-documentation-example>` so that
      :rst:dir:`toctree` can index the entry
 
-   * Use a :ref:`label <concepts-documentation>` that starts with ``book-`` in
-     :ref:`books <references-books>`, and with ``bib-`` in
-     :ref:`refs.bib <concepts-documentation>`
+   * Use a :ref:`label <concepts-documentation-style>` that starts with
+     ``book-`` in :ref:`books <references-books>`, and with ``bib-`` in
+     :ref:`refs.bib <concepts-documentation-structure>`
 
    .. code-block:: rest
       :emphasize-lines: 1, 8
@@ -381,4 +430,4 @@ Referencing books
 .. tip::
 
    The :doc:`BibTeX extension <bibtex:index>` is unreceptive to
-   :std:doc:`role titles <sphinx:usage/restructuredtext/roles>`
+   :doc:`role titles <sphinx:usage/restructuredtext/roles>`

@@ -7,10 +7,10 @@
 Books
 #####
 
-Below is a comprehensive list of :xref:`books <book>` referenced throughout
-:term:`AAAAAA`. :xref:`Citations <citation>` are managed using
-:ref:`BibTeX <tools-bibtex>` according to
-:ref:`book reference procedures <sphinx-reference-book>`
+This is a centralized and comprehensive list of :xref:`books <book>`
+:xref:`cited <citation>` throughout :term:`AAAAAA`.
+:xref:`Citations <citation>` are managed using :ref:`BibTeX <tools-bibtex>`,
+according to :ref:`book reference procedures <sphinx-reference-book>`
 
 .. tip::
 

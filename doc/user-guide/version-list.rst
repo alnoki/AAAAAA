@@ -29,7 +29,7 @@ Modifications are explained in a way that
    want to know how this is done, see the
    :ref:`versioning procedures <versioning-procedures>`
 
-* 0.3.0
+* 0.3.0 (2019-02-17)
 
    * Restructure :ref:`toctrees <tools-sphinx>`
    * Add :ref:`versioning procedures <versioning-procedures>`

@@ -13,7 +13,7 @@ What next?
 You have no idea what is going on
 *********************************
 
-You are in the right place! :term:`AAAAAA` requires no specialized background
+You are in the right place! :term:`AAAAAA` require no specialized background
 knowledge, so keep on hitting :guilabel:`next`
 
 Information is usually accompanied by a relevant :xref:`URL`, also known as a

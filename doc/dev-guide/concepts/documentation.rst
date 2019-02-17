@@ -118,6 +118,10 @@ Specific syntax
 #. Nothing should be prefixed with ``:std:`` because components of the
    :doc:`standard domain <sphinx:usage/restructuredtext/domains>` do not
    require it
+#. Use :ref:`labels <sphinx:ref-role>` (``:ref:``) to reference content within
+   :term:`AAAAAA` rather than specific :ref:`.rst <tools-restructured-text>`
+   (``:doc:``) refrences, since the
+   :ref:`toctrees <sphinx:toctree-directive>` are constantly evolving
 #. :ref:`Labels <sphinx:ref-role>` should be ``lowercase-hyphenated``, and
    should use similar categorical naming when possible:
 

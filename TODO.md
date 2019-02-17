@@ -1,10 +1,9 @@
-1. Search :std: at the end to evaluate your effectiveness
-   1. And :header: "
-1. Does pushing a tag push the merged master?
-
 # 0.4.0
 
 ## Proofreading followup
+1. Follow td3
+1. Does pushing a tag push the merged master?
+   1. If so, verify in version procedures and in git procedures
 1. AAAAAA should link to double triple alpha
    1. Also use a link to :xref:`software`
 1. Try putting py:function:explanation in text somewhere
@@ -39,8 +38,12 @@ around
    1. Also on the concepts index page (downloading them all)
    1. Also on anaconda tools page
 1. wiki pg for "file"
+   1. In changes to a document writing procedure
    1. rst file on tools-restructured-text
    1. Git procedure for commiting
+   1. And in writing about a project tree
+1. wiki pg for "save a file"
+   1. Find all for places where it should be linked
 1. Upload
    1. Link in push, a couple places find all for "upload" on git page
    1. Will also use with PyPI
@@ -83,6 +86,36 @@ around
 1. What about pulling a branch from the aaaaaa repo?
 1. The index for procedures assumes you've already read everything else
    1. It's going to be direct and basically notes to yourself
+1. Proofread with a silly voice
+1. RegEx link from Lance
+1. Using cite external links for the wiki page will create a new link
+   1. But, it is not error checked
+   1. xref does error checking.....
+1. Use the :guilabel:`raw` on GitHub
+   1. find all for view on github
+1. Find all for .rst - use a or an before it?
+1. Find all for document and replace with file?
+1. Use same ISO standard that Robinhood uses for dates in version list
+   1. Mention in src updates, for planning the when instance attribute
+1. When diffing in stage changes, confirm new tag at top of .rst file
+
+## toctree stubbing
+1. Re-do labels for user-guide and dev-guide
+1. First page (index) in user/dev guide should be "how to use this guide"
+1. PyPI is a tool in "distributing" section
+1. Need stubs for the testing index and developer guide index
+   1. Re write links to these places in there parent indices and in what-next
+1. Put in a stub for the examples page
+   1. Say can do either in the interpreter or in Jupyter notebook
+   1. Then put in a link from jupyter page
+   1. Python tools section should link here
+1. Procedures page should say what different procedures are for
+   1. A table  of procedure pages, and a link to a conceptual explanation(s)
+1. All toctrees should have similar comment below them
+   1. Add to writing procedure
+   1. Use find all to find all toctrees
+1. Procedures are not as tutorialesque, more of a checklist
+1. Explain in version link how some additions are pertinent to developers too
 
 ## External references extension
 1. Should be a subsection of managing external links procedure
@@ -134,16 +167,6 @@ around
    1. In the Anaconda a6 table
    1. Also, the Code testing link should go to the test index
    1. And, the numerical analysis parts should get links
-
-## utils.py
-1. arg parse from early on in python tutorial
-1. Talk about utils.py in AAAAAA root?
-    1. code for writing dir tree
-        1. Take command line args
-1. Wrapper for sphinx-autobuild
-    1. Says which folders to watch
-    1. Simple command line prompt:
-        1. python utils -doc
 
 ## plot directive
 1. https://matplotlib.org/sampledoc/extensions.html
@@ -205,6 +228,25 @@ around
       1. And if a reload ping came
 1. When the html file changes, the autobuild console should say so
    1. Have the wrapper look for this and then open up a new browser?
+
+## adp.py
+1. autodoc it on the procedures index page
+1. Cite the checklist manifesto
+1. arg parse from early on in python tutorial
+1. Talk about utils.py in AAAAAA root?
+    1. code for writing dir tree
+        1. Take command line args
+1. Wrapper for sphinx-autobuild
+    1. Says which folders to watch
+    1. Simple command line prompt:
+        1. python utils -doc
+1. Explain how the terminal opens at top aaaaaa dir, so use argparse
+   1. For wrapping autobuild, etc.
+1. Use the command line options style of table
+   1. See the RTD theme
+   1. Add this to the sphinx autobuild options once you know how to do it
+1. Have one that automatically opens a :ref: or a :doc:
+   1. python adp ref-tools-restructured-text
 
 ## Content card
 1. AnaKAHNndaKAHN 2019
@@ -275,6 +317,7 @@ around
    1. Also then review the sphinx settings section
 
 ## Test code
+1. Cite DO-178B
 1. Have a test index in the developer's guide
    1. The pytest entry on the links page should link here
       1. Framework for :ref:`writing test code <test-index>`

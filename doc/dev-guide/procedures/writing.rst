@@ -1,13 +1,14 @@
-.. 41bbe32
+.. 0.3.0
 
 .. _writing-procedures:
+
 
 #######
 Writing
 #######
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`tools-vs-code`, :term:`AAAAAA` conceptual explanation
@@ -33,6 +34,10 @@ Maximizing screen estate
    * :guilabel:`View: Toggle Status Bar Visibility`
    * :guilabel:`View: Toggle Centered Layout`
    * :guilabel:`View: Join All Editor Groups`
+   * :guilabel:`View: New Editor Group to the Right`
+   * :guilabel:`View: New Editor Group Below`
+   * :guilabel:`View: Zoom In`
+   * :guilabel:`View: Zoom Out`
    * :guilabel:`Workspaces: Duplicate Workspace in New Window`
 
 #. For full-screen:
@@ -73,7 +78,7 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
               print(f'{subindent}{f}')
 
 #. Modify ``base_indent`` and ``branch_symbol`` to symbols that you would like
-   to have in your tree
+   to have in your :ref:`tree <concepts-project-dir-tree>`
 #. Update ``where_to_start`` to the :xref:`directory <directory>` that you
    would like to write about
 #. Highlight the whole file
@@ -82,8 +87,8 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
    :kbd:`enter` from inside the
    :ref:`VS Code integrated terminal <tools-vs-code>`
 
-
 .. _writing-new-topic:
+
 
 ***********************
 Documenting a new topic
@@ -93,7 +98,7 @@ Documenting a new topic
    preferably in a batch
 
    * These should be concentrated at a centralized :term:`AAAAAA` conceptual
-     explanation, usually at the :ref:`tools page <concepts-tools>`
+     explanation, usually at :ref:`tools <concepts-tools>`
    * Use a :ref:`csv-table <sphinx:table-directives>` of
      :ref:`references <references>` at the central conceptual explanation:
 
@@ -119,35 +124,37 @@ Documenting a new topic
 Procedures
 ==========
 
-#. Any new :ref:`procedures <procedures>` should be reciprocally cross-linked
-   with a conceptual explanation, using
+#. Any new :ref:`procedures <procedures>` should be reciprocally
+   cross-referenced with a conceptual explanation, using
    :ref:`reference tables <writing-new-topic>`
 
-   #. The first row of the :ref:`table <writing-new-topic>` in the
-      :ref:`procedure explanation <procedures>` should be a
-      :ref:`reference label <concepts-documentation-style>` for the concept
+   #. The first row of the :ref:`reference table <writing-new-topic>` in the
+      :ref:`procedure <procedures>` should be a
+      :ref:`reference label <concepts-documentation-style>` for the conceptual
+      explanation
 
       * Because the conceptual explanation should be the primary source of
         information when attempting the :ref:`procedure <procedures>`
-      * The topic should say say ":term:`AAAAAA` conceptual explanation"
+      * The :ref:`topic column <writing-new-topic>` should say say
+        ":term:`AAAAAA` conceptual explanation"
 
-   #. The last row of the :ref:`table <writing-new-topic>` in the conceptual
-      explanation should be a
+   #. The last row of the :ref:`reference table <writing-new-topic>` in the
+      conceptual explanation should be a
       :ref:`reference label <concepts-documentation-style>` for the
-      :ref:`procedure explanation <procedures>`
+      :ref:`procedure <procedures>`
 
       * Because :ref:`procedures <procedures>` should be attempted only after
         grasping conceptual explanations
       * The topic should say ":term:`AAAAAA` usage"
 
-   .. csv-table:: Examples
-      :header: :ref:`Procedure <procedures>`, Topic
+   .. csv-table:: Cross-referencing examples
+      :header: :ref:`Procedure <procedures>`, Conceptual explanation
       :align: center
 
       :ref:`Git procedures <git-procedures>`, :ref:`Tools: Git <tools-git>`
       :ref:`Versioning procedures <versioning-procedures>`, :ref:`version-list`
 
-#. Add to the :ref:`a6 package table <concepts-packages-table>` or
+#. :ref:`Add a new conda package <conda-use-new-package>` or update the
    :ref:`Sphinx extension table <tools-sphinx>`, for example, if it makes sense
    for your new :ref:`procedure <procedures>`
 
@@ -160,7 +167,9 @@ Proofreading documentation
 
 .. tip::
 
-   Enjoy the content and :ref:`go slow <zen-spirit>`
+   :ref:`Read out loud <zen-aipaip>` in a marginally silly voice (to enhance
+   your :ref:`enjoyment of the content <zen-spirit>`), and
+   :ref:`go slow <zen-spirit>`
 
 .. _writing-isolate-changes:
 
@@ -177,7 +186,8 @@ This is typically done right before
 #. Proofread :ref:`new documents <writing-proofread-new>` and
    :ref:`changed documents <writing-proofread-changed>`
 
-      * Even if you have moved something, :ref:`GitLens <tools-vs-code>` is
+      * Even if you have moved an :ref:`.rst <tools-restructured-text>`
+        document, :ref:`GitLens <tools-vs-code>` is
         often able to identify that it is in a new
         :xref:`directory <directory>` and will only display changes to the
         document (rather than classifying the document as new)
@@ -190,22 +200,9 @@ New documents
 See :ref:`documentation style <concepts-documentation-style>` for a list of
 things to watch out for
 
-#. Open a :ref:`live build <sphinx-building-documentation>` in a browser
-   alongside :ref:`tools-vs-code` with
-   :ref:`maximum half-screen estate <writing-max-screen-estate>`, so you can
-   make edits immediately
-#. Go through one :ref:`minor section <concepts-documentation-example>` at a
-   time
-
-   #. Read the browser-rendered text :ref:`out loud <zen-aipaip>` and make any
-      corrections in :ref:`tools-vs-code`, then try a
-      :ref:`new build <sphinx-building-documentation>`
-   #. Verify each link in the section by clicking on it
-
-#. Do a :ref:`linkcheck <sphinx-checking-links>`
-#. When done proofreading an :ref:`.rst file <tools-restructured-text>`, tag
-   the top with a :doc:`comment <usage/restructuredtext/basics>` that matches
-   the :ref:`current development branch version number <versioning-start-new>`
+#. Put a :doc:`comment <usage/restructuredtext/basics>` at the top
+   of the :ref:`.rst <tools-restructured-text>` document, to note the
+   :ref:`current development branch version number <versioning-start-new>`
 
    .. code-block:: rest
 
@@ -217,6 +214,18 @@ things to watch out for
       ###############
       Document header
       ###############
+
+#. Open an :ref:`autobuild <sphinx-autobuilding>` in a
+   :xref:`browser <web-browser>` alongside :ref:`tools-vs-code` with
+   :ref:`maximum half-screen estate <writing-max-screen-estate>`, so you can
+   make edits immediately
+#. Go through one :ref:`minor section <concepts-documentation-example>` at a
+   time
+
+   #. Read the :xref:`browser <web-browser>`-rendered text
+      :ref:`out loud <zen-aipaip>` and make any corrections in
+      :ref:`tools-vs-code`
+   #. Verify each :xref:`link <URL>` in the section by clicking on it
 
 .. _writing-proofread-changed:
 
