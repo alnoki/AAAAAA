@@ -83,15 +83,18 @@ Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
    :header: Reference, Topic
    :align: center
 
-   :ref:`tools-napoleon`, Create pretty documentation elements
+   :ref:`tools-napoleon`, :term:`AAAAAA` conceptual explanation
    :pep:`257`, :ref:`Docstring <python:tut-docstrings>` conventions
    :pep:`484`, Syntax to annotate :doc:`types <python:library/stdtypes>`
    :ref:`NumPy docstrings <numpy:format>`, "
    :ref:`Docstring <python:tut-docstrings>` style"
+   :ref:`Python domain <sphinx:python-roles>`, Syntax guide
 
 Code is enhanced with :ref:`docstrings <python:tut-docstrings>` and
 :pep:`type annotations <484>`, which enable :ref:`napoleon <tools-napoleon>` to
-create pretty documentation elements that explain code:
+create pretty documentation elements that explain
+:xref:`source code <source-code>`, like this
+:ref:`info field list <sphinx:info-field-lists>`:
 
 .. py:function:: explanation(what, who, how, where, when, how_many)
 
@@ -112,7 +115,6 @@ create pretty documentation elements that explain code:
 .. attention::
 
    We interrupt your drooling to return to :xref:`alnoki <alnoki-repos>`
-   addressing you in the second person
 
 Conveniently, documentation elements can be created with simple
 :ref:`reST directives <tools-restructured-text>` like:
@@ -121,6 +123,17 @@ Conveniently, documentation elements can be created with simple
 
    .. autoclass:: AAAAAA.ledger.Transaction
 
-.. seealso::
+After a documentation element has been created, it can be referenced using the
+the :ref:`Python domain <sphinx:python-roles>`:
+
+.. code-block:: rest
+
+   Let's talk about :py:class:`AAAAAA.ledger.Transaction`
+
+Real E\ :superscript:`4`\ s, like the example below, also have a
+:guilabel:`[source]` feature that :xref:`links <URL>` directly to
+:xref:`source code <source-code>`
+
+.. admonition:: Example
 
    :py:class:`AAAAAA.ledger.Transaction` (<- yes, that's a :xref:`link <URL>`)

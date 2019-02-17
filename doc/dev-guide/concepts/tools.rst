@@ -1,4 +1,4 @@
-.. 5863379
+.. 0.3.0
 
 .. _concepts-tools:
 
@@ -12,18 +12,21 @@ Tools
 
 .. _tools-python:
 
+
 ******
 Python
 ******
 
 :xref:`Python` is an :xref:`open-source computer language <open-source>` with
 various applications. The :xref:`source code <source-code>` for :term:`AAAAAA`
-are written in :xref:`Python`, using assorted :ref:`packages <tools-anaconda>`
+is written in :xref:`Python`, using assorted
+:ref:`packages <python:tut-packages>`
 
 The :ref:`AAAAAA user guide <guide-intro>` teaches :xref:`Python` as it
-describes various features of :term:`AAAAAA`. The
-:ref:`code concepts <concepts-code>` describe some additional specific
-:xref:`Python` considerations in :term:`AAAAAA`
+describes various features of :term:`AAAAAA`.
+:ref:`Code concepts <concepts-code>` describes some additional specific
+:xref:`Python` considerations in :term:`AAAAAA` like syntax and
+:xref:`directory <directory>` structure
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -33,13 +36,17 @@ describes various features of :term:`AAAAAA`. The
    :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
    :xref:`Python` (recommended tutorial)"
    :doc:`python:tutorial/index`, Official tutorial
-   :doc:`python:howto/functional`, Functional techniques
-   :doc:`python:howto/index`, Specific usage cases
-   :doc:`python:faq/index`, Core functionality
-   :doc:`python:faq/programming`, Methods and recommended practices
-   :doc:`tutorial/interpreter`, Mechanism that executes :xref:`Python`
-   :ref:`AAAAAA user guide <guide-intro>`, :xref:`Software <open-source>` info
-   :ref:`Code concepts <concepts-code>`, Specific considerations
+   :doc:`python:howto/functional`, ":ref:`Function <python:tut-functions>`
+   techniques"
+   :doc:`python:howto/index`, Specific use cases
+   :doc:`python:faq/index`, Common issues
+   :doc:`python:faq/programming`, Advanced technical information
+   :doc:`The Python interpreter <tutorial/interpreter>`, "Mechanism that
+   executes :xref:`source code <source-code>`"
+   :ref:`Code concepts <concepts-code>`, ":term:`AAAAAA` usage
+   (syntax, structure)"
+   :ref:`AAAAAA user guide <guide-intro>`, ":term:`AAAAAA` usage
+   (:xref:`software <software>` walkthrough)"
 
 .. _tools-anaconda:
 
@@ -49,9 +56,9 @@ Anaconda
 ********
 
 :xref:`Anaconda` contains a collection of
-:ref:`software packages <conda:concept-conda-package>` that are free to
+:ref:`Python packages <python:tut-packages>` that are :xref:`free <money>` to
 download and use. The base :xref:`Anaconda` collection has way more
-:ref:`packages <conda:concept-conda-package>` than :term:`AAAAAA` require, so
+:ref:`Python packages <python:tut-packages>` than :term:`AAAAAA` require, so
 you can use :doc:`Miniconda<conda:user-guide/install/index>` to acess only the
 ones that you need
 
@@ -64,7 +71,7 @@ different :ref:`conda channels <conda:channels-glossary>`, like the
 :xref:`conda-forge`
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :doc:`conda:index`, Official reference
@@ -72,9 +79,10 @@ different :ref:`conda channels <conda:channels-glossary>`, like the
    :doc:`conda <conda:index>` commands"
    :ref:`Conda procedures <conda-procedures>`, :term:`AAAAAA` usage
 
-The :ref:`developer setup <dev-env-intro>` describes how to
-:std:doc:`create <conda:commands/create>` a new
-:ref:`conda environment <conda:concept-conda-env>`, called :term:`a6`:
+The :ref:`developer environment setup <dev-env-intro>` describes how to
+:doc:`create <conda:commands/create>` a new
+:ref:`conda environment <conda:concept-conda-env>`, called :term:`a6`, which
+you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
 
 .. glossary::
 
@@ -83,37 +91,33 @@ The :ref:`developer setup <dev-env-intro>` describes how to
       the :ref:`packages <conda:concept-conda-package>` that :term:`AAAAAA`
       require
 
-      .. tip::
-
-         :ref:`conda-import-a6` requires less commands than the
-         :ref:`developer setup <dev-env-intro>`
-
       .. _concepts-packages-table:
 
       .. csv-table:: :ref:`conda:concept-conda-package` required for
          :term:`AAAAAA`
-         :header: "Package", "Function", "Setup Phase", "Channel"
+         :header: Package, Function, Setup Phase, Channel
          :align: center
 
-         :xref:`Python`, :ref:`Code <tools-python>` creation, "
+         :xref:`Python`, :xref:`source-code` creation, "
          :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
-         :doc:`conda <conda:index>`, ":ref:`Package management <conda-procedures>`", "
+         :doc:`conda <conda:index>`, "
+         :ref:`Package <conda:concept-conda-package>` management", "
          :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
-         :pep:`8`, Check :ref:`code style <concepts-code>`, "
+         :pep:`8`, Check :ref:`code style <concepts-code-style>`, "
          :ref:`Documenting <dev-env-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
          :ref:`tools-sphinx` , "
-         :ref:`Create documentation <sphinx-procedures>`", "
+         :ref:`Build documentation <sphinx-building-documentation>`", "
          :ref:`Documenting <dev-env-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
-         :doc:`RTD Sphinx Theme <rtd-sphinx-theme:index>`, "Documentation
-         appearance", "
+         :doc:`RTD Sphinx Theme <rtd-sphinx-theme:index>`, "
+         :ref:`Documentation appearance <tools-read-the-docs>`", "
          :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
          :xref:`Doc8 <Doc8>`, "Check
-         :ref:`documentation syntax <concepts-documentation>`", "
+         :ref:`documentation style <concepts-documentation-style>`", "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
          :ref:`tools-bibtex`, :ref:`Book citations <references-books>`, "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
@@ -153,21 +157,20 @@ Git
 allows the project to be updated with :xref:`commits <git-commit>`, which are
 like snapshots in time that describe minor changes to the project throughout
 its history. Each :xref:`commit <git-commit>` is identified by a :xref:`sha1`,
-a unique identifier that can be accessed by viewing a
-:xref:`commit log <git-log>`
+a unique identifier that can be accessed by
+:ref:`viewing the project log <git-view-project-log>`
 
 :xref:`Tags <git-tag>`, which provide a unique identifier for
 :xref:`commits <git-commit>`, and :xref:`branches <git-branch>`, which enable
 independent sequences of :xref:`commits <git-commit>`, are used to manage
-:ref:`project versions <version-list>` via integration between
-:ref:`tools-read-the-docs` and :xref:`GitHub`, a free service that hosts the
-:xref:`AAAAAA-repo`
+:ref:`project versions <version-list>` on :xref:`GitHub`, a
+:xref:`free <money>` service that hosts the :xref:`AAAAAA-repo`
 
-There are several :xref:`command line<command-line>` style text navigators that
-go along with :xref:`Git <git-manual>`
+There are several :xref:`command line<command-line>` text navigators that go
+along with :xref:`Git <git-manual>`:
 
 .. csv-table:: Text navigators
-   :header: "Tool", "Topic"
+   :header: Tool, Usage
    :align: center
 
    :xref:`Vim <Vim-tutorial>`, ":ref:`Configuring <git-setup>` and
@@ -176,13 +179,15 @@ go along with :xref:`Git <git-manual>`
    :ref:`Viewing project history <git-view-project-log>`"
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`git-commit-guidelines`, Contribution guidelines
-   :ref:`tools-read-the-docs`, Automatic :ref:`version <version-list>` tracking
+   :doc:`Documentation webhooks <rtfd:webhooks>`, "Automatic
+   :ref:`versioning <version-list>` integration"
+   :xref:`Vim`, Official information
    :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
 
 *************
@@ -194,50 +199,51 @@ Documentation
 Sphinx
 ======
 
-:std:doc:`Sphinx <sphinx:intro>` is the documentation engine that creates all
-the documentation for :term:`AAAAAA` and even for
-:std:doc:`Python itself <python:tutorial/index>`. Sphinx is built on the
+:doc:`Sphinx <sphinx:intro>` is the documentation engine that
+:ref:`builds <sphinx-building-documentation>` the
+the documentation :xref:`website <website>` for :term:`AAAAAA` and even for
+:doc:`Python itself <py-dev-guide:documenting>`. Sphinx is built on the
 :ref:`tools-restructured-text` (``reST``) markup language
 
 :doc:`Sphinx <sphinx:intro>` has a
 :ref:`table of contents <sphinx:toctree-directive>` feature, which provides a
 linearly navigable structure that ensures access to all pages of documentation.
 :term:`AAAAAA` are documented using the
-:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides
-a mobile-friendly viewing experience with a modern look
+:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides the
+visual layout of this :xref:`website <website>`
 
-:std:doc:`Sphinx extensions <sphinx:usage/extensions/index>` enable additional
+:doc:`Sphinx extensions <sphinx:usage/extensions/index>` enable additional
 functionality and several are used in :term:`AAAAAA`:
 
-.. csv-table:: :std:doc:`Sphinx extensions <sphinx:usage/extensions/index>`
+.. csv-table:: :doc:`Sphinx extensions <sphinx:usage/extensions/index>`
    in :term:`AAAAAA`
    :header: Extension, Purpose
    :align: center
 
-   :ref:`Intersphinx <tools-intersphinx>`, "Create
-   :ref:`links <references-links>` to other :doc:`Sphinx <sphinx:intro>`
-   projects"
-   :ref:`xref <tools-xref>`, "Reference external
-   :ref:`links <references-links>`"
-   :ref:`tools-napoleon`, Document code components
-   :ref:`tools-BibTeX`, Cite books
+   :ref:`Intersphinx <tools-intersphinx>`, "
+   :ref:`Create links <sphinx-intersphinx>` to other
+   :doc:`Sphinx <sphinx:intro>` projects"
+   :ref:`xref <tools-xref>`, ":ref:`Create links <sphinx-xref>` to other
+   :xref:`URLs <URL>`"
+   :ref:`tools-napoleon`, :ref:`Document code components <concepts-code-e4>`
+   :ref:`tools-BibTeX`, :ref:`Cite books <sphinx-reference-book>`
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
-   :doc:`Python Developer's Guide<py-dev-guide:documenting>`, "
-   :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
    :doc:`Sphinx <sphinx:intro>`, Official documentation
-   :xref:`Practical use seminar <Willing-Sphinx>`, "Practical commands and
-   functions"
-   :ref:`References extension configuration <sublime-with-sphinx:use the external links extension>`, "
+   :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "
+   :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
+   :xref:`Practical use seminar <Willing-Sphinx>`, "Practical
+   :ref:`use examples <sphinx-procedures>`"
+   :ref:`References extension configuration example <sublime-with-sphinx:use the external links extension>`, "
    :doc:`Extension <sphinx:usage/extensions/index>` installation and
    configuration"
    :doc:`conf.py <sphinx:usage/configuration>`, Configuration settings
+   :ref:`tools-sphinx-autobuild`, "
+   :ref:`Automatic documentation building <sphinx-autobuilding>`"
    :ref:`Sphinx procedures <sphinx-procedures>`, :term:`AAAAAA` usage
-   :ref:`tools-sphinx-autobuild`, ":ref:`Automatic <sphinx-autobuilding>`
-   documentation production"
 
 .. _tools-restructured-text:
 
@@ -248,41 +254,44 @@ reStructuredText
 containing syntax to generate fancy components like ``this``, :guilabel:`this`,
 or :menuselection:`t --> h --> i --> s`
 
-The two most fundamental :std:doc:`reST <sphinx:usage/restructuredtext/basics>`
-components are the :std:doc:`role <sphinx:usage/restructuredtext/roles>`, which
+The two most fundamental :doc:`reST <sphinx:usage/restructuredtext/basics>`
+components are the :doc:`role <sphinx:usage/restructuredtext/roles>`, which
 marks a piece of text (usually in-line), and the
 :doc:`directive <sphinx:usage/restructuredtext/directives>`, which marks a
 block of text
 
 :doc:`reST <sphinx:usage/restructuredtext/basics>` files have an ``.rst``
-extension, and :ref:`tools-sphinx` converts them whenever documentation is
-built
+extension, and :ref:`tools-sphinx` converts them whenever
+:ref:`documentation is built <sphinx-building-documentation>`
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
-   :std:doc:`sphinx:usage/restructuredtext/basics`, "
-   :std:doc:`Sphinx <sphinx:intro>` tutorial on ``reST`` usage"
-   :xref:`reST-documentation`, Official documentation
+   :doc:`sphinx:usage/restructuredtext/basics`, "
+   :doc:`Sphinx <sphinx:intro>` tutorial on ``reST`` usage"
+   :xref:`reStructuredText <reST-documentation>`, Official documentation
    :xref:`quick-reST`, Practical syntax
    :xref:`reST-cheatsheet`, Quick syntax reference
-   :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
+   :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
    syntax"
-   :std:doc:`sphinx:usage/restructuredtext/domains`, "Collections of
-   :std:doc:`roles <sphinx:usage/restructuredtext/roles>` and
-   :std:doc:`directives <sphinx:usage/restructuredtext/directives>`"
+   :doc:`sphinx:usage/restructuredtext/domains`, "Collections of
+   :doc:`roles <sphinx:usage/restructuredtext/roles>` and
+   :doc:`directives <sphinx:usage/restructuredtext/directives>`"
+   :ref:`reST style <concepts-documentation-style>`, :term:`AAAAAA` usage
 
-Many :ref:`tools-sphinx` documentation :xref:`websites <website>` have an
+
+Many :ref:`tools-sphinx` documentation :xref:`website <website>` have an
 :guilabel:`Edit on GitHub` (or similar) feature at
-the top of each page. This feature will display the
-:std:doc:`reST <sphinx:usage/restructuredtext/basics>` file that created the
-page
+the top of each :xref:`webpage <webpage>`. This feature will :xref:`link <URL>`
+to the :doc:`reST <sphinx:usage/restructuredtext/basics>` file that
+:ref:`tools-sphinx` used to create the :xref:`webpage <webpage>`
 
 .. tip::
+
    You can harvest the syntax for nearly any kind of
-   :std:doc:`reST <sphinx:usage/restructuredtext/basics>` component from the
-   :std:doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, via the
+   :doc:`reST <sphinx:usage/restructuredtext/basics>` component from the
+   :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, via the
    :guilabel:`Edit on GitHub` feature
 
 .. _tools-read-the-docs:
@@ -290,31 +299,32 @@ page
 Read the Docs
 =============
 
-:doc:`Read the Docs<rtfd:index>` is a free online repository that hosts
-:doc:`Sphinx <sphinx:intro>` projects, and even provides its own
-:doc:`Sphinx Theme <rtd-sphinx-theme:index>`
+:doc:`Read the Docs<rtfd:index>` is a :xref:`free <money>` online repository
+that hosts :doc:`Sphinx <sphinx:intro>` projects, and even provides its own
+:doc:`Sphinx Theme <rtd-sphinx-theme:index>`. :doc:`Read the Docs<rtfd:index>`
+uses :doc:`webhooks <rtfd:webhooks>` to automatically detect any
+:ref:`Git <tools-git>` updates, which trigger new
+:ref:`documentation builds <sphinx-building-documentation>`.
+:doc:`Read the Docs<rtfd:index>` supports multiple project documentation
+:doc:`versions <rtfd:versions>`, too
 
-:doc:`Read the Docs<rtfd:index>` uses :doc:`webhooks <rtfd:webhooks>` to
-automatically detect any :ref:`git <tools-git>` updates, and supports multiple
-project documentation :doc:`versions <rtfd:versions>`
-
-:term:`AAAAAA` use the
-:std:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which generates
+:term:`AAAAAA` documentation uses the
+:doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which generates
 the visual appearance of this :xref:`website <website>`!
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
-   :xref:`Quickstart tutorial <Yusuf-Sphinx-RTD>`, "Starting a
+   :xref:`Quickstart tutorial <Yusuf-Sphinx-RTD>`, "Start a
    :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
    project"
    :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
-   documentation elements"
+   :ref:`tools-restructured-text` elements"
    :doc:`rtfd:webhooks`, Automatic project modification detection
    :doc:`rtfd:versions`, Automatic :ref:`version <version-list>` support
    :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
-   :ref:`versioning-procedures`, :term:`AAAAAA` usage
+   :ref:`Documentation versioning <versioning-releasing>`, :term:`AAAAAA` usage
 
 .. _tools-sphinx-extensions:
 
@@ -327,9 +337,8 @@ Intersphinx
 -----------
 
 :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>` helps manage
-:ref:`links <references-links>` to other :ref:`tools-sphinx` projects
-
-Usage is described at :ref:`intersphinx procedures <sphinx-intersphinx>`
+:ref:`links <references-links>` to other :ref:`tools-sphinx` projects, via the
+:ref:`intersphinx procedures <sphinx-intersphinx>`
 
 .. _tools-xref:
 
@@ -337,8 +346,8 @@ xref
 ----
 
 :xref:`Michael Jones' xref extension <xref-ext>` helps manage
-:ref:`links <references-links>` to external content that can not be accessed
-via :ref:`intersphinx <tools-intersphinx>`. A simple
+:ref:`links <references-links>` to arbitrary :xref:`URLs <URL>` that can not be
+accessed via :ref:`intersphinx <tools-intersphinx>`. A simple
 :ref:`role <tools-restructured-text>` is used to insert
 :ref:`links <references-links>`, and usage is described at
 :ref:`xref procedures <sphinx-xref>`
@@ -348,57 +357,61 @@ via :ref:`intersphinx <tools-intersphinx>`. A simple
 Napoleon
 --------
 
-:std:doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
-:ref:`Sphinx extension <tools-sphinx>` that parses code and
-creates documentation elements from :ref:`docstrings <python:tut-docstrings>`
-and :pep:`type annotations <484>`. It uses the same
+:doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
+:ref:`Sphinx extension <tools-sphinx>` that parses
+:xref:`source code <source-code>` and creates
+:ref:`documentation elements <concepts-code-e4>` from
+:ref:`docstrings <python:tut-docstrings>` and :pep:`type annotations <484>`. It
+uses the same
 :ref:`directives <tools-restructured-text>` as
 :doc:`autodoc <sphinx:usage/extensions/autodoc>`, but it
-can accept :std:ref:`NumPy docstrings <numpy:format>`
-
+can accept :ref:`NumPy docstrings <numpy:format>`.
 :doc:`Napoleon <sphinx:usage/extensions/napoleon>` and
-:doc:`autodoc <sphinx:usage/extensions/autodoc>` both parse
-:ref:`docstrings <python:tut-docstrings>` into syntax (like that used for
-:ref:`field lists <sphinx:info-field-lists>`) which is native to
-:ref:`reST <tools-restructured-text>`
+:doc:`autodoc <sphinx:usage/extensions/autodoc>` both convert
+:ref:`docstrings <python:tut-docstrings>` into
+:ref:`reST <tools-restructured-text>`, like that used for
+:ref:`info field lists <sphinx:info-field-lists>`
 
 :ref:`Docstrings <python:tut-docstrings>` are annotated using the
-:ref:`Python domain <sphinx:python-roles>`
+:ref:`Python domain <sphinx:python-roles>`, which is also used to reference
+:ref:`concepts-code-e4` elsewhere in documentation
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
+   :doc:`Napoleon <sphinx:usage/extensions/napoleon>`, Official reference
    :ref:`Docstrings <python:tut-docstrings>`, ":ref:`python:comments` for
-   :xref:`Python` code components"
+   special :xref:`source code <source-code>` components"
    :doc:`Autodoc <sphinx:usage/extensions/autodoc>`, "
-   :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
+   :doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
    :ref:`docstrings <python:tut-docstrings>`"
-   :std:ref:`NumPy docstrings <numpy:format>`, "
+   :ref:`NumPy docstrings <numpy:format>`, "
    :ref:`Docstrings <python:tut-docstrings>` style"
-   :pep:`Type annotations <484>`, Syntax guide
-   :doc:`Napoleon <sphinx:usage/extensions/napoleon>`, "Accepts
-   :std:ref:`NumPy docstrings <numpy:format>`"
+   :pep:`Type annotations <484>`, "Specify
+   :doc:`types <python:library/stdtypes>`"
    :ref:`Python domain <sphinx:python-roles>`, "
-   :std:doc:`Roles <sphinx:usage/restructuredtext/roles>` and
-   :std:doc:`directives <sphinx:usage/restructuredtext/directives>`"
+   :doc:`Roles <sphinx:usage/restructuredtext/roles>` and
+   :doc:`directives <sphinx:usage/restructuredtext/directives>`"
    :xref:`Type checking <realpython-type-checking>`, "
    :xref:`RealPython <RealPython>` guide"
-   :std:doc:`Sample automodule <demo/api>`, "
+   :doc:`Sample automodule <demo/api>`, "
    :doc:`Autodoc <sphinx:usage/extensions/autodoc>` demo with
-   :std:doc:`RTD Sphinx theme <rtd-sphinx-theme:index>`"
-   :doc:`Example NumPy Strings <napoleon:example_numpy>`, Example syntax
+   :doc:`RTD Sphinx theme <rtd-sphinx-theme:index>`"
+   :doc:`Example NumPy Strings <napoleon:example_numpy>`, "Example
+   :ref:`docstrings <python:tut-docstrings>`"
    :ref:`sphinx:info-field-lists`, "Resultant
    :ref:`reST <tools-restructured-text>` syntax"
+   :ref:`Napoleon example <concepts-code-e4>`, :term:`AAAAAA` usage
 
 .. _tools-bibtex:
 
 BibTeX
 ------
 
-:xref:`bibtex` is a special type of citation syntax that :term:`AAAAAA` use
-to cite :ref:`books <references-books>`. The
-:doc:`BibTeX extension <bibtex:index>` converts
+:xref:`bibtex` is a special type of :xref:`citation <citation>` syntax that
+:term:`AAAAAA` uses for :ref:`books <references-books>`. The
+:doc:`BibTeX Sphinx extension <bibtex:index>` converts
 :ref:`refs.bib <concepts-documentation-structure>` into formatted
 :ref:`book citations <references-books>`
 
@@ -406,12 +419,12 @@ If know the :xref:`ISBN` for a particular :ref:`book <references-books>`, you
 can usually get the :xref:`bibtex` from :xref:`ottobib`
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :xref:`book`, Information source
-   :xref:`bibtex`, Citation file format
-   :doc:`BibTeX extension <bibtex:index>`, Parses :xref:`bibtex`
+   :xref:`bibtex`, :xref:`Citation <citation>` format
+   :doc:`BibTeX Sphinx extension <bibtex:index>`, Converts :xref:`bibtex`
    :xref:`ottobib`, :xref:`bibtex` database for :ref:`books <references-books>`
    :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
    :xref:`bibtex-syntax`, Syntax specifications
@@ -423,12 +436,13 @@ can usually get the :xref:`bibtex` from :xref:`ottobib`
 sphinx-autobuild
 ================
 
-:xref:`sphinx-autobuild` is a :ref:`package <tools-anaconda>` that automates
-the iterative process of :ref:`manual builds <sphinx-building-manually>`, which
+:xref:`sphinx-autobuild` is a :ref:`package <tools-anaconda>` that
+:ref:`automates <sphinx-autobuilding>` the iterative process of
+:ref:`manual builds <sphinx-building-manually>`, which
 is helpful when :ref:`proofreading documentation <writing-proofread>`
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :xref:`sphinx-autobuild`, User manual
@@ -446,34 +460,33 @@ VS Code
 *******
 
 :xref:`VS-Code` is an integrated development environment that is used to
-develop, to document, and to test code
+develop :term:`AAAAAA`
 
 The :xref:`AAAAAA-repo` comes with a collection of
 :xref:`VS-Code-settings` that will automatically configure most of your
-workspace. If you completed the :ref:`developer setup <dev-env-intro>`, then
-all the relevant settings should already be installed! These settings will
+workspace. If you completed the
+:ref:`developer environment setup <dev-env-intro>`, then all the relevant
+settings should already be installed! These settings will
 help with things like :ref:`code style <concepts-code-style>` and
 :ref:`test discovery <pytest-discover-tests>`
 
-You can also download the :xref:`VS Code Insider Edition <VS-Code-insiders>`,
-which has all the latest features and bug fixes, although it may not be as
-stable as the most recent official release
+There is also the :xref:`VS Code Insider Edition <VS-Code-insiders>`,
+which has all the latest features but may not be completely stable
 
-.. csv-table:: :xref:`VS Code extensions <VS-Code-extensions>` used with
-   :term:`AAAAAA`
+.. csv-table:: Select :xref:`extensions <VS-Code-extensions>`
    :header: Extension, Purpose, Setup Phase
    :align: center
 
-   :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate code, "
+   :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate content, "
    :ref:`Documenting <dev-env-documenting>`"
-   :xref:`Python <VS-Code-Python-ext>`, Developing :xref:`Python`, "
+   :xref:`Python <VS-Code-Python-ext>`, Developing :ref:`tools-python`, "
    :ref:`Documenting <dev-env-documenting>`"
-   :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "Editing
-   :doc:`reST <sphinx:usage/restructuredtext/basics>` ", "
+   :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "Edit
+   :ref:`reST <tools-restructured-text>` ", "
    :ref:`Documenting <dev-env-documenting>`"
-   :xref:`GitLens <GitLens>`, "Advanced :xref:`Git <git-manual>`
+   :xref:`GitLens <GitLens>`, "Advanced :ref:`tools-git`
    functionality", :ref:`Documenting <dev-env-documenting>`
-   :xref:`Python Test Explorer <Test-explorer-UI>`, "Testing with
+   :xref:`Python Test Explorer <Test-explorer-UI>`, "Using
    :doc:`pytest <pytest:index>`", :ref:`Testing <dev-env-testing>`
 
 .. csv-table:: Select references
@@ -481,13 +494,12 @@ stable as the most recent official release
    :align: center
 
    :xref:`Python integration <VS-Code-Python-tutorial>`, "Official tutorial for
-   :xref:`Python` with :xref:`VS Code <VS-Code>`"
+   :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
    :xref:`Command palette <command-palette>`, Quickly input user commands
-   :xref:`Settings <VS-Code-settings>`, Settings configuration
-   :xref:`Integrated terminal <VS-Code-terminal>`, "Run a command line inside
-   :xref:`VS Code <VS-Code>`"
-   :xref:`VS-Code-unit-testing`, ":std:doc:`pytest <pytest:index>` integration
-   setup"
+   :xref:`Settings <VS-Code-settings>`, Environment configuration
+   :xref:`Integrated terminal <VS-Code-terminal>`, "Run a
+   :xref:`command line <command-line>` inside :xref:`VS Code <VS-Code>`"
+   :xref:`VS-Code-unit-testing`, ":ref:`tools-pytest` integration"
    :xref:`Markdown`, For :ref:`planning version features <versioning-td3>`
    :ref:`Writing procedures <writing-procedures>`, :term:`AAAAAA` usage
 
@@ -495,9 +507,10 @@ stable as the most recent official release
 
 .. [#] Requires a :xref:`doc8-newline-issue`, included in the provided
    :xref:`VS-Code-settings`
-.. [#] Offers live rendering, but is not as reliable as
-   :ref:`using a browser <sphinx-building-documentation>`. For example, fails
-   to properly render :ref:`intersphinx links <sphinx-intersphinx>`
+.. [#] Offers live previewing, but is not as reliable as using a
+   :xref:`browser <web-browser>` with :ref:`tools-sphinx-autobuild`. For
+   example, fails to properly preview
+   :ref:`intersphinx links <sphinx-intersphinx>`
 
 .. _tools-pytest:
 
@@ -506,23 +519,22 @@ stable as the most recent official release
 pytest
 ******
 
-:term:`AAAAAA` uses :std:doc:`pytest <pytest:index>`, a
-:ref:`conda package<tools-anaconda>`, to verify that code is
-functioning as expected
+:term:`AAAAAA` uses :doc:`pytest <pytest:index>`, a
+:ref:`conda package<tools-anaconda>`, to verify that
+:ref:`source code <tools-python>` is functioning as expected
 
-:xref:`VS-Code` natively integrates with :std:doc:`pytest <pytest:index>`,
+:ref:`tools-vs-code` natively integrates with :doc:`pytest <pytest:index>`,
 and additional functionality is provided by the
 :ref:`VS Code Python Test Explorer extension<tools-vs-code>`
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :doc:`pytest <pytest:index>`, Official documentation
    :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
-   :std:doc:`pytest tutorials <pytest:contents>`, Official tutorials
+   :doc:`pytest tutorials <pytest:contents>`, Official tutorials
    :ref:`pytest procedures <pytest-procedures>`, :term:`AAAAAA` usage
-
 
 .. _tools-jupyter:
 
@@ -535,46 +547,49 @@ Jupyter
 algorithm development, and can quickly render :xref:`LaTeX`
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :xref:`Corey Schafer tutorial <Schafer-Jupyter>`, "Recommended
    :xref:`YouTube` tutorial"
-   :xref:`Markdown`, "Syntax for making links, tables, etc."
-   :xref:`tables-generator`, "Table syntax generator"
+   :xref:`Markdown`, "Syntax for making :xref:`links <URL>`,
+   :xref:`tables <tables-generator>`, etc."
+   :xref:`tables-generator`, Syntax generator
 
 The interactive style of :xref:`Jupyter Notebooks <Jupyter>` make it easy to
 analyze data with numerical :ref:`conda packages <conda:concept-conda-package>`
 
 .. csv-table:: Numerical analysis :ref:`packages <conda:concept-conda-package>`
-   :header: "Package", "Official tutorial", "YouTube tutorial"
+   :header: Package, Official tutorial, YouTube tutorial
    :align: center
 
-   :std:doc:`NumPy <numpy:about>`, "
-   :std:doc:`Quickstart <numpy:user/quickstart>`", "
+   :doc:`NumPy <numpy:about>`, "
+   :doc:`Quickstart <numpy:user/quickstart>`", "
    :xref:`NumPy <codebasics-numpy>`"
-   :std:doc:`Matplotlib <matplotlib:index>`,"
-   :std:doc:`matplotlib:tutorials/index`", "
+   :doc:`Matplotlib <matplotlib:index>`,"
+   :doc:`matplotlib:tutorials/index`", "
    :xref:`Matplotlib <codebasics-matplotlib>`"
-   :std:doc:`pandas <pandas:index>`, "
-   :std:doc:`10 min tutorial <pandas:getting_started/10min>`", "
+   :doc:`pandas <pandas:index>`, "
+   :doc:`10 min tutorial <pandas:getting_started/10min>`", "
    :xref:`pandas <codebasics-pandas>`"
 
-The :std:doc:`nb-extensions:index` provide additional functionality
+The :doc:`nb-extensions:index` provide additional functionality
 
-.. csv-table:: Select :std:doc:`extensions <nb-extensions:index>`
-   :header: "Extension", "Function"
+.. csv-table:: Select :doc:`extensions <nb-extensions:index>`
+   :header: Extension, Function
    :align: center
 
-   :std:doc:`nb-extensions:nbextensions/collapsible_headings/readme`, "Section
+   :doc:`nb-extensions:nbextensions/collapsible_headings/readme`, "Section
    management"
-   :std:doc:`nb-extensions:nbextensions/toc2/README`, "Automatic section
+   :doc:`nb-extensions:nbextensions/toc2/README`, "Automatic section
    linking"
-   :std:doc:`nb-extensions:nbextensions/varInspector/README`, "Data value
+   :doc:`nb-extensions:nbextensions/varInspector/README`, "Data value
    inspection"
-   :xref:`live-md-preview`, "Quick equation rendering"
+   :xref:`live-md-preview`, "Quick previewing for :xref:`LaTeX` and
+   :xref:`tables <tables-generator>`"
 
 .. tip::
+
    This :xref:`AAAAAA-nbs` can render any :xref:`Jupyter Notebook<Jupyter>`
-   from the :xref:`AAAAAA-repo` inside of a browser, even if
-   :xref:`Jupyter <Jupyter>` isn't installed
+   from the :xref:`AAAAAA-repo` inside of a :xref:`web browser <web-browser>`,
+   even if you don't have :xref:`Jupyter <Jupyter>`

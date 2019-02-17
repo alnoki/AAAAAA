@@ -97,10 +97,11 @@ General style
 :term:`AAAAAA` adopt stylistic recommendations from common sources, with some
 particular emphases:
 
-.. csv-table:: Style references
-   :header: "Reference", "Topic"
+.. csv-table:: Select references
+   :header: Reference, Topic
    :align: center
 
+   :ref:`tools-restructured-text`, :term:`AAAAAA` conceptual explanation
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "General
    :ref:`reST <tools-restructured-text>` style guide"
    :xref:`Doc8`, ":ref:`Conda package <tools-anaconda>` to check

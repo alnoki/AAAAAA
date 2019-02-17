@@ -53,7 +53,7 @@ which is a special type of :term:`object <python:object>`:
 .. tip::
 
    You can click :guilabel:`[source]` above to view the original
-   :ref:`code <source-code>`, then click :guilabel:`[docs]` to return
+   :xref:`code <source-code>`, then click :guilabel:`[docs]` to return
 
 :py:class:`~AAAAAA.ledger.Transaction` has a
 :ref:`namespace <python:tut-scopes>` with various

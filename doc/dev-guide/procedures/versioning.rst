@@ -8,7 +8,7 @@ Versioning
    :header: "Reference", "Topic"
    :align: center
 
-   :ref:`version-list`, :term:`AAAAAA` versions
+   :ref:`version-list`, :term:`AAAAAA` conceptual explanation
    :xref:`semver`, Numbering standards
    :xref:`git-commit-guidelines`, Long version message guidelines
    :ref:`tools-read-the-docs`, Automated :ref:`version <version-list>` support

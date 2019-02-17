@@ -1,4 +1,4 @@
-.. 5333f1a
+.. 0.3.0
 
 .. _dev-env-documenting:
 
@@ -10,7 +10,7 @@ Documenting
 #. Install :xref:`VS-Code` and the :xref:`VS-Code-bookmarks-ext`
 #. Update the :xref:`VS-Code-terminal` ``USER SETTINGS`` in
    :xref:`settings.json <VS-Code-settings>` so that you can use
-   :ref:`conda <conda:starting-conda>`
+   :ref:`Conda <conda:starting-conda>`:
 
    * On a :xref:`Mac`, add the following options to configure
      :xref:`bash login mode invocation<bash-man-page>`:
@@ -25,19 +25,24 @@ Documenting
    * On :xref:`Windows`, use the ``/K``
      :xref:`cmd.exe option <cmd.exe-invocation>` to run
      :ref:`Anaconda Prompt <conda:starting-conda>` (adapted for your username
-     and machine):
+     and :xref:`computer <computer>`):
 
      .. code-block:: json
 
         {
             "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
             "terminal.integrated.shellArgs.windows": ["/K",
-                 "C:\\Users\\alnoki\\AppData\\Local\\Continuum\\miniconda3\\Scripts\\activate.bat"],
+                "C:\\Users\\alnoki\\AppData\\Local\\Continuum\\miniconda3\\Scripts\\activate.bat"],
         }
+
+     .. note::
+
+        Be sure to :xref:`copy and paste <copy-paste>` the whole box! It may
+        scroll to the right
 
 #. Use the :xref:`command-palette` to open a new :xref:`VS-Code-terminal` and
    enter the following command to
-   :std:doc:`create <conda:commands/create>` a new
+   :doc:`create <conda:commands/create>` a new
    :ref:`conda environment <conda:concept-conda-env>`, called
    :term:`a6`, that has the necessary
    :ref:`packages <conda:concept-conda-package>`:
@@ -74,7 +79,6 @@ Documenting
                 "C:\\Users\\alnoki\\AppData\\Local\\Continuum\\miniconda3\\Scripts\\activate.bat",
                 "a6"],
         }
-
 
 #. Install the :xref:`VS Code Python extension <VS-Code-Python-ext>` and use
    the :xref:`command-palette` to
@@ -113,7 +117,7 @@ Documenting
 
       conda install -c conda-forge doc8 sphinxcontrib-bibtex sphinx-autobuild
 
-#. Install the :xref:`RST-preview-ext` for :xref:`VS-Code`
+#. Install the :xref:`RST-preview-ext`
 #. If you don't already have it, :xref:`download Git <git-download>`
 
    * To figure out if you have it, open the :xref:`VS-Code-terminal` and type:
@@ -122,7 +126,7 @@ Documenting
 
         git --version
 
-#. Install the :xref:`GitLens` for :xref:`VS-Code`
+#. Install the :xref:`GitLens`
 #. Use the :xref:`command-palette` to :xref:`clone <git-clone>` the
    :xref:`AAAAAA-repo`
 
@@ -132,6 +136,7 @@ Documenting
 
 #. At this point you should be able to
    :ref:`build the documentation <sphinx-building-documentation>` and play
-   around with the :ref:`reference management <sphinx-managing-references>` features
+   around with the :ref:`reference management <sphinx-managing-references>`
+   features
 
 Congratulations!!!

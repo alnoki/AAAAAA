@@ -34,6 +34,7 @@ Tidying up
       conda update --all
 
    .. tip::
+
       This will usually get as many
       :ref:`packages <conda:concept-conda-package>`
       as possible from the official
@@ -72,8 +73,8 @@ Creating a6 from scratch
       conda create -n a6 python conda pep8 sphinx sphinx_rtd_theme jupyter numpy matplotlib pandas pip pytest
 
    .. note::
-      Be sure to copy and paste the whole box! It may scroll to the right on
-      your screen
+
+      Be sure to copy and paste the whole box! It may scroll to the right
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
 #. :doc:`Install <conda:commands/install>` the remaining
@@ -84,8 +85,8 @@ Creating a6 from scratch
       conda install -c conda-forge doc8 jupyter_contrib_nbextensions sphinxcontrib-bibtex sphinx-autobuild
 
    .. note::
-      Be sure to copy and paste the whole box! It may scroll to the right on
-      your screen
+
+      Be sure to copy and paste the whole box! It may scroll to the right
 
 #. :ref:`Install AAAAAA for testing <conda-pip-AAAAAA>`
 #. :ref:`Tidy up <conda-tidy-up>`

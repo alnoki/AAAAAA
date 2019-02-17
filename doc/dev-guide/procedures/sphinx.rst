@@ -132,6 +132,7 @@ Using Intersphinx
    :header: "Reference", "Topic"
    :align: center
 
+   :ref:`tools-intersphinx`, :term:`AAAAAA` conceptual explanation
    :std:doc:`sphinx.ext.intersphinx <sphinx:usage/extensions/intersphinx>`, "
    :std:doc:`Sphinx extension <sphinx:usage/extensions/index>` documentation"
    :xref:`Intersphinx reference syntax <intersphinx-inv-targets>`, "Syntax
@@ -207,6 +208,7 @@ Using Intersphinx
       Read about :std:doc:`Sphinx roles <sphinx:usage/restructuredtext/roles>`
 
 .. tip::
+
    :xref:`intersphinx-numpy-matplotlib` has instructions for referencing
    :std:doc:`NumPy <numpy:about>` and :std:doc:`Matplotlib <matplotlib:index>`
 
@@ -220,6 +222,7 @@ Referencing external links
    :header: "Reference", "Topic"
    :align: center
 
+   :ref:`tools-xref`, :term:`AAAAAA` usage
    :xref:`Sphinx xref extension <xref-ext>`, Manages external links
    :ref:`Using a references extension <sublime-with-sphinx:use the external links extension>`, "
    Related configuration and usage"

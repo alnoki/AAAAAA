@@ -1,9 +1,9 @@
 1. Search :std: at the end to evaluate your effectiveness
-1. :ref:`sphinx:info-field-lists` on the E4 page
+   1. And :header: "
 
 # 0.4.0
 
-## Notes from proofreading (file elsewhere)
+## Proofreading followup
 1. AAAAAA should link to double triple alpha
    1. Also use a link to :xref:`software`
 1. Try putting py:function:explanation in text somewhere
@@ -30,15 +30,20 @@ around
    1. Should still read in the major section you are on
 1. Need a references link to print() (from homepage)
 1. Link for wiki pg to download
-   1. Git links general: download git
+   1. On the VS Code tools page
+   1. Git links general: download Git
    1. Put on the quickstart
    1. Put in the link for to :xref:`download` the AAAAAA repository
    1. Put in link page for miniconda quick to download
+   1. Also on the concepts index page (downloading them all)
+   1. Also on anaconda tools page
+1. wiki pg for "file"
 1. Upload
    1. Link in push
    1. Will also use with PyPI
 1. The conda package is lowercase in-line
    1. Need to update on the pages before the links page
+   1. Git is uppercase in-line
 1. https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
    1. For the sphinx-autobuild
    1. And for dev.py
@@ -51,6 +56,17 @@ around
 1. Tag the version comment before you go through the document
 1. Reading out loud in a british accent is way more fun
 1. doctest block like the user guide on the homepage and quickstart
+1. Directive should indent to the same leve as the text after the * or the #.
+   1. This is not easy after a *
+1. Add git-clone to the git links page
+1. Use conda tidy up when doing tests to make sure everything still works
+1. Get pytest from home dir to actually run....
+1. All toctrees should have
+   1. .. If you add to the toctree, explain what it is above
+1. Matplotlib plotting need to change packages setup phase
+   1. Also go off conda install procedure
+1. Link at the top of the user guide, per the writing tools procedure
+   1. :term:`AAAAAA` conceptual explanation
 
 ## External references extension
 1. Should be a subsection of managing external links procedure
@@ -67,6 +83,8 @@ around
    1. Migrate all first, then use diff to check out link text rendering
 
 ## Packaging
+1. https://anaconda.org/conda-forge/doc8
+   1. This one is showing on anaconda cloud....
 1. Tools section on PyPI
 1. Currently, the link to pip already exists
 1. Do this first!
@@ -96,6 +114,10 @@ around
       1. Need to have a versioning section that says to update year
 1. https://packaging.python.org/guides/distributing-packages-using-setuptools/
    1. More info about setup tools
+1. The examples page (if in Jupyter) should link to interactive analysis
+   1. In the Anaconda a6 table
+   1. Also, the Code testing link should go to the test index
+   1. And, the numerical analysis parts should get links
 
 ## utils.py
 1. arg parse from early on in python tutorial
@@ -223,10 +245,18 @@ around
 1. Then, use https://docs.python.org/3/library/argparse.html#module-argparse
    1. Draw a dir tree?
 1. Uncomment module index on homepage, verify it works
+1. Re-write the jupyter section after the jupyter examples page is live
+   1. Will need aaaaaa usage on the examples page
+   1. The numerical analysis packages should link to tools-numpy, etc.
+1. Tables can line break in the title without quotes
+   1. See VS code extensions
 
 ## Settings autodoc
 1. Need a conf.py part of documentation concepts
+   1. Then can hyperlink the conf.py part in the Sphinx references table
 1. Automodule conf.py and settings.json?
+   1. If you do this, then be sure to review the links in the vs code section
+   1. Also then review the sphinx settings section
 
 ## Test code
 1. Have a test index in the developer's guide

@@ -129,6 +129,7 @@ Procedures
 
       * Because the conceptual explanation should be the primary source of
         information when attempting the :ref:`procedure <procedures>`
+      * The topic should say say ":term:`AAAAAA` conceptual explanation"
 
    #. The last row of the :ref:`table <writing-new-topic>` in the conceptual
       explanation should be a
@@ -137,6 +138,7 @@ Procedures
 
       * Because :ref:`procedures <procedures>` should be attempted only after
         grasping conceptual explanations
+      * The topic should say ":term:`AAAAAA` usage"
 
    .. csv-table:: Examples
       :header: :ref:`Procedure <procedures>`, Topic
