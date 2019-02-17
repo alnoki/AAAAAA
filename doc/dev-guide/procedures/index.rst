@@ -1,3 +1,5 @@
+.. 0.3.0
+
 .. _procedures:
 
 **********
@@ -14,3 +16,5 @@ Procedures
    sphinx
    writing
    versioning
+
+.. If you add to the toctree, explain what it is above

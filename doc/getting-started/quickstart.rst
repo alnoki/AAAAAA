@@ -14,7 +14,7 @@ follow the below steps:
    of :xref:`Anaconda`), which will give you quick access to :xref:`Python` if
    your :xref:`operating system <OS>` did not come with :xref:`Python`
 #. Download the :xref:`AAAAAA-zip-archive`
-#. :ref:`Start up Conda <conda:starting-conda>` in the root
+#. :ref:`Start up conda <conda:starting-conda>` in the root
    :xref:`directory <directory>` of the
    :xref:`archive you just downloaded <AAAAAA-zip-archive>`
 #. Type :command:`python` and hit :kbd:`return`

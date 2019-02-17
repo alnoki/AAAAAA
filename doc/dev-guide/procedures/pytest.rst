@@ -1,4 +1,4 @@
-.. 5863379
+.. 0.3.0
 
 .. _pytest-procedures:
 
@@ -7,11 +7,11 @@ pytest
 ######
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`tools-pytest`, :term:`AAAAAA` conceptual explanation
-   :std:doc:`pytest:index`, Official documentation
+   :doc:`pytest:index`, Official documentation
 
 .. _pytest-discover-tests:
 
@@ -33,23 +33,26 @@ Discovering tests
 
 #. Use the :ref:`VS Code command palette <tools-vs-code>` to select
    :guilabel:`Python: Discover Unit Tests`
-#. If this fails, you may be experiencing a :xref:`pytest-discovery-issue`
-   that is associated with a new :ref:`tools-pytest` release. You can either:
 
-   #. Use the :xref:`VS Code Insider Edition <VS-Code-insiders>`, if a fix has
-      recently been made available
-   #. Temporarily use an older :ref:`package <conda:concept-conda-package>`
-      version for :ref:`tools-pytest`
+   #. If this fails, you may be experiencing a :xref:`pytest-discovery-issue`
+      that is associated with a new :ref:`version <version-list>` of
+      :ref:`tools-pytest`. You can either:
 
-      #. :ref:`activate <conda:activate-env>` the :term:`a6 environment <a6>`
-      #. Use :doc:`conda:commands/install` with the appropriate version
-         number syntax from the
-         :std:doc:`conda cheatsheet <conda:user-guide/cheatsheet>`. For
-         example:
+      #. Use the :xref:`VS Code Insider Edition <VS-Code-insiders>`, if a fix
+         has recently been made available
+      #. Temporarily use an older :ref:`package <conda:concept-conda-package>`
+         of :ref:`tools-pytest`, colloquially known as a *pop*:
 
-         .. code-block:: bash
+         #. :ref:`Activate <conda:activate-env>` the
+            :term:`a6 environment <a6>`
+         #. Use :doc:`conda:commands/install` with the appropriate
+            :ref:`version number <version-list>` syntax from the
+            :doc:`conda cheatsheet <conda:user-guide/cheatsheet>`. For
+            example:
 
-            conda install "pytest<=4.0.0"
+            .. code-block:: bash
+
+               conda install "pytest<=4.0.0"
 
 #. Use the :ref:`VS Code command palette <tools-vs-code>` to select
    :guilabel:`Python: Discover Unit Tests`

@@ -382,5 +382,3 @@ Referencing books
 
    The :doc:`BibTeX extension <bibtex:index>` is unreceptive to
    :std:doc:`role titles <sphinx:usage/restructuredtext/roles>`
-
-

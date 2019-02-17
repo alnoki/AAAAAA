@@ -1,5 +1,6 @@
 1. Search :std: at the end to evaluate your effectiveness
    1. And :header: "
+1. Does pushing a tag push the merged master?
 
 # 0.4.0
 
@@ -38,9 +39,12 @@ around
    1. Also on the concepts index page (downloading them all)
    1. Also on anaconda tools page
 1. wiki pg for "file"
+   1. rst file on tools-restructured-text
+   1. Git procedure for commiting
 1. Upload
-   1. Link in push
+   1. Link in push, a couple places find all for "upload" on git page
    1. Will also use with PyPI
+   1. Also in Git table for upload to github
 1. The conda package is lowercase in-line
    1. Need to update on the pages before the links page
    1. Git is uppercase in-line
@@ -67,6 +71,18 @@ around
    1. Also go off conda install procedure
 1. Link at the top of the user guide, per the writing tools procedure
    1. :term:`AAAAAA` conceptual explanation
+1. Verify tools-sphinx links to :ref:`concepts-documentation-structure`
+1. dev-guide needs and index.rst and should be on documentation structure
+1. Do a name, function table (like in documentation.rst) on code.rst later
+1. Search for :ref:`Labels <ref-role>` - should have sphinx:ref-role
+1. See what sample-doc looks like
+   1. Beware of how the literalinclude directive will be affected
+1. After making a packaging section, link to it from the top of the code.rst pg
+1. Re-write/re-link zen in a later version
+1. Put an explanation on the procedures page
+1. What about pulling a branch from the aaaaaa repo?
+1. The index for procedures assumes you've already read everything else
+   1. It's going to be direct and basically notes to yourself
 
 ## External references extension
 1. Should be a subsection of managing external links procedure
@@ -275,6 +291,7 @@ around
 1. Doc coverage is a sphinx extension
 
 ## Jupyter
+1. Update the documentation.rst jupyter section
 1. All jupyter notebooks should be able to be viewed
    1. If you add one, must be able to access it from the AAAAAA nb viewer link
 1. Verify all Jupyter notebooks are linked

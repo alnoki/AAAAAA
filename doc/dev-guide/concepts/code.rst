@@ -1,4 +1,4 @@
-.. 5863379
+.. 0.3.0
 
 .. _concepts-code:
 
@@ -9,9 +9,9 @@ Code
 
 .. note::
 
-   The :ref:`Tools: Anaconda <tools-anaconda>` section explains how
-   :ref:`Python and it associated packages <tools-anaconda>` work and the
-   :ref:`user guide <guide-intro>` is a walkthrough of software features, but
+   The :ref:`Tools: Python <tools-python>` section explains how
+   :ref:`Python` works and the :ref:`user guide <guide-intro>` is a walkthrough
+   of :xref:`software <software>` features in :term:`AAAAAA`, but
    this is an elaboration of the specific components in :term:`AAAAAA` from a
    developer's perspective
 
@@ -21,14 +21,14 @@ Structure
 *********
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
    :ref:`python:tut-packages`, :xref:`Directory <directory>` structuring
-   :std:doc:`pytest:goodpractices`, Integrating :ref:`test code <tools-pytest>`
+   :doc:`pytest:goodpractices`, Integrating :ref:`test code <tools-pytest>`
 
-In accordance with :std:doc:`test code recommendations <pytest:goodpractices>`,
-:term:`AAAAAA` code is structured as follows:
+In accordance with :doc:`test code recommendations <pytest:goodpractices>`,
+:term:`AAAAAA` is structured as follows:
 
 .. _concepts-code-structure:
 
@@ -46,16 +46,17 @@ In accordance with :std:doc:`test code recommendations <pytest:goodpractices>`,
 
 .. _concepts-code-style:
 
+
 *****
 Style
 *****
 
 .. csv-table:: Select references
-   :header: "Reference", "Topic"
+   :header: Reference, Topic
    :align: center
 
-   :pep:`8`, Official :xref:`Python` style guide
-   :pep:`257`, :ref:`docstring <python:tut-docstrings>` conventions
+   :pep:`8`, Official :ref:`tools-python` style guide
+   :pep:`257`, :ref:`Docstring <python:tut-docstrings>` conventions
 
 #. Items of particuar emphasis:
 
@@ -72,8 +73,8 @@ Style
       symbol_like = 'begin_index'  # Symbol-like term
       natural = "Documentation optimality"  # Natural language message
 
-
 .. _concepts-code-e4:
+
 
 **********************************************************************
 Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
@@ -90,10 +91,11 @@ Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
    :ref:`Docstring <python:tut-docstrings>` style"
    :ref:`Python domain <sphinx:python-roles>`, Syntax guide
 
-Code is enhanced with :ref:`docstrings <python:tut-docstrings>` and
-:pep:`type annotations <484>`, which enable :ref:`napoleon <tools-napoleon>` to
-create pretty documentation elements that explain
-:xref:`source code <source-code>`, like this
+:ref:`Source code <guide-intro>` is enhanced with :pep:`type annotations <484>`
+and :ref:`docstrings <python:tut-docstrings>` containing
+:ref:`Python domain <sphinx:python-roles>` syntax, so that
+:ref:`napoleon <tools-napoleon>` can create pretty documentation
+elements that explain :xref:`source code <source-code>`, like this
 :ref:`info field list <sphinx:info-field-lists>`:
 
 .. py:function:: explanation(what, who, how, where, when, how_many)
@@ -124,7 +126,7 @@ Conveniently, documentation elements can be created with simple
    .. autoclass:: AAAAAA.ledger.Transaction
 
 After a documentation element has been created, it can be referenced using the
-the :ref:`Python domain <sphinx:python-roles>`:
+:ref:`Python domain <sphinx:python-roles>`:
 
 .. code-block:: rest
 

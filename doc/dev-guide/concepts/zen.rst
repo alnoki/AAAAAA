@@ -1,4 +1,4 @@
-.. 5863379
+.. 0.3.0
 
 
 ###
@@ -14,18 +14,22 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 #. Silly acronyms actually help with remembering things
 #. Testing and documenting up front prevents massive runtime debug headaches
 #. Have DRY (don't repeat yourself) [#]_ code: decompose as much as possible
-#. Documentation should enable another to re-write source and test code [#]_
+#. Documentation should enable another to re-write :xref:`source <source-code>`
+   and test code [#]_
 #. Have STUPID simple tests. [#]_ Don't recursively "test the test code"
-#. Documenting & testing adds perspective beyond source code development alone
+#. Documenting & testing adds perspective beyond
+   :xref:`source code <source-code>` development alone
 #. Consider :xref:`DO-178B` as a model for software design assurance [#]_
 #. Legacy conventions shant prevent the adoption of a new worthwhile philosopy
 #. Play around and "whiteboard" :xref:`software <open-source>` during initial
    stages [#]_
 #. Read documentation out loud [#]_
-#. :xref:`Py <Python>` like you :ref:`reST <tools-restructured-text>`,
-   :ref:`reST <tools-restructured-text>` like you :xref:`Py <Python>` [#]_
-#. "We, the :xref:`coders <open-source>`, are foreigners, seeking citizenship in
-   the computer’s locale" [#]_, so respect the house rules
+#. :ref:`Py <tools-python>` like you :ref:`reST <tools-restructured-text>`,
+   :ref:`reST <tools-restructured-text>` like you
+   :ref:`Py <tools-python>` [#]_
+#. "We, the :xref:`coders <open-source>`, are foreigners, seeking citizenship
+   in the :xref:`computer <computer>`’s locale" [#]_, so respect the house
+   rules
 #. Your legacy is the documentation
 #. Make content for yourself because you like it [#]_
 
@@ -36,7 +40,7 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 The spirit of alnoki's apps
 ***************************
 
-#. :xref:`open-source`, ``d00d``
+#. :xref:`Open-source <open-source>`, ``d00d``
 #. :ref:`concepts-tools` should be :xref:`free <money>`, otherwise,
    make them yourself [#]_
 #. When in doubt, :ref:`link <references-links>` (or you might forget later)
@@ -73,8 +77,9 @@ Need some more inspiration? Try::
 .. [#] Recommeded in :xref:`Willing-Sphinx`
 .. [#] Adapted from advice given by Tom C. Bryan of the :xref:`msfc-lab` (*fly
    like you test, test like you fly*) that flight testing and flight operations
-   should be identical - to indicate that software development in practice
-   should match procedural documentation
+   should be identical - to indicate that :xref:`software <software>`
+   development in practice should match
+   :ref:`procedural documentation <procedures>`
 .. [#] From :xref:`why-poignant-guide`
 .. [#] From a :xref:`Corey Schafer interview <schafer-interview>`: *I believe
    the most important lesson I’ve learned is that you should make content for

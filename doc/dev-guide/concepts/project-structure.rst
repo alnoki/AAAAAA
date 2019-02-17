@@ -1,6 +1,7 @@
-.. 5863379
+.. 0.3.0
 
 .. _concepts-project-structure:
+
 
 #################
 Project structure
@@ -11,8 +12,9 @@ Project structure
 Access
 ******
 
-:xref:`source-code` and documentation for :term:`AAAAAA` is located at the
-:xref:`AAAAAA-repo`, which is hosted by :xref:`GitHub`
+:xref:`source-code` and documentation
+:ref:`reST files <tools-restructured-text>` for :term:`AAAAAA` are located at
+the :xref:`AAAAAA-repo`, which is hosted by :xref:`GitHub`
 
 .. _concepts-project-dir-tree:
 
@@ -56,12 +58,13 @@ Some select demonstrative contents of the :xref:`AAAAAA-repo`:
 
    ``AAAAAA/``, Project root :xref:`directory <directory>`
    ``src/`` , :xref:`Source code <source-code>` (in :ref:`tools-Python`)
-   ``test/`` , :ref:`tools-pytest` code
+   ``test/`` , :ref:`pytest test code <tools-pytest>`
    ``doc/`` , :ref:`tools-sphinx` documentation
-   ``nbs/`` , :ref:`tools-jupyter` notebooks
+   ``nbs/`` , :ref:`Jupyter notebooks <tools-jupyter>`
    ``.vscode/`` , :ref:`tools-vs-code` settings
    ``.gitignore`` , :ref:`tools-git` configuration
-   ``a6.yml`` , Specifies the :term:`a6 environment <a6>`
+   ``a6.yml`` , :term:`a6 conda environment <a6>`
    ``setup.py`` , Configuration for :ref:`tools-pytest`
-   ``README.md`` , Reference to :xref:`website <website>` for :term:`AAAAAA`
+   ``README.md`` , "Reference to :term:`AAAAAA` documentation
+   :xref:`website <website>`"
    ``TODO.md`` , :ref:`Task planning <versioning-td3>`

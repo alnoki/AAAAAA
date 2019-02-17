@@ -1,4 +1,4 @@
-.. 5863379
+.. 0.3.0
 
 .. _conda-procedures:
 
@@ -12,8 +12,14 @@ Conda
    :align: center
 
    :ref:`tools-anaconda`, :term:`AAAAAA` conceptual explanation
-   :std:doc:`conda:user-guide/tasks/manage-environments`, "Official practical
+   :doc:`conda:user-guide/tasks/manage-environments`, "Official practical
    reference"
+
+.. attention::
+
+   Most of these instructions assume you have already done the
+   :ref:`developer environment setup <dev-env-intro>`, which will help you
+   integrate :ref:`conda <tools-anaconda>` with :ref:`tools-vs-code`
 
 .. contents:: Contents
    :local:
@@ -25,6 +31,7 @@ Conda
 Tidying up
 **********
 
+#. :ref:`Start up conda <conda:starting-conda>`
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
 #. Use :doc:`conda:commands/update` to get the latest
    :ref:`packages <conda:concept-conda-package>`:
@@ -82,7 +89,7 @@ Creating a6 from scratch
 
    .. code-block:: bash
 
-      conda install -c conda-forge doc8 jupyter_contrib_nbextensions sphinxcontrib-bibtex sphinx-autobuild
+      conda install -c conda-forge doc8 sphinxcontrib-bibtex sphinx-autobuild jupyter_contrib_nbextensions
 
    .. note::
 
@@ -100,7 +107,7 @@ Importing a6
 
 #. :ref:`Start up conda <conda:starting-conda>` from inside the
    :ref:`AAAAAA project directory <concepts-project-dir-tree>`, then
-   :std:doc:`import <conda:user-guide/tasks/manage-environments>`
+   :doc:`import <conda:user-guide/tasks/manage-environments>`
    the necessary :ref:`conda packages <concepts-packages-table>`:
 
    .. code-block:: bash
@@ -118,7 +125,7 @@ Importing a6
 Installing AAAAAA for testing
 *****************************
 
-Per :std:doc:`pytest integration practices <pytest:goodpractices>`:
+Per :doc:`pytest integration practices <pytest:goodpractices>`:
 
 #. From inside the :ref:`AAAAAA project directory <concepts-project-dir-tree>`,
    use :term:`a6` from inside the
@@ -139,11 +146,16 @@ Using a new package
 
    #. The :ref:`packages table <concepts-packages-table>`
    #. The :ref:`a6.yml file <concepts-project-dir-tree>`
-   #. The instructions for :ref:`creating a6 <conda-create-a6>`
+   #. The instructions for :ref:`creating a6 from scratch <conda-create-a6>`
+
+      * Here, use the same order for the separate
+        :ref:`channels <conda:channels-glossary>` as from top to bottom in the
+        :ref:`packages table <concepts-packages-table>`
+
    #. An installation step somewhere in the
-      :ref:`developer setup <dev-env-intro>`
+      :ref:`developer environment setup <dev-env-intro>`
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
-#. :std:doc:`Install <conda:commands/install>` the desired
+#. :doc:`Install <conda:commands/install>` the desired
    :ref:`package <concepts-packages-table>`
 #. :ref:`Tidy up <conda-tidy-up>`
