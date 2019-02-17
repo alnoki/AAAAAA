@@ -1,5 +1,24 @@
 # 0.4.0
 
+## Use the new version procedures to start
+1. The versioning procedures should say
+   1. After commit and merge, before tagging
+   1. Start an autobuild, and use the version list to write a long tag message
+1. git push --follow-tags
+
+## Extensions and rtd
+1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
+1. https://docs.readthedocs.io/en/stable/faq.html#my-project-isn-t-building-with-autodoc
+1. Verify builds pass on rtd before pushing tag
+1. Needed to have the setup.py in the exts folder
+1. Is there a generalized way to call out the extension from the internet?
+1. Just made a requirements.txt file
+   1. On my account, had to update advanced settings
+1. You need conf.py to say the bibtex, but rtd doesn
+   1. You conda it pip
+1. https://pip.pypa.io/en/latest/reference/pip_install/#example-requirements-file
+1. Will need to uncomment in conf.py to load using conda
+
 ## Proofreading followup
 1. Follow td3
 1. Does pushing a tag push the merged master?
