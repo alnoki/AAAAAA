@@ -29,7 +29,13 @@ Modifications are explained in a way that
    want to know how this is done, see the
    :ref:`versioning procedures <versioning-procedures>`
 
-# 0.3.1 (2019-02-17)
+* 0.4.0
+
+   * Add to :ref:`toctrees <tools-sphinx>`: :ref:`examples <examples>`,
+     :ref:`testing index <testing>`, :ref:`developer guide index <dev-index>`
+
+
+* 0.3.1 (2019-02-17)
 
    * Fix broken :ref:`tools-read-the-docs` integration
 

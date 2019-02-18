@@ -1,23 +1,41 @@
 # 0.4.0
 
-## Use the new version procedures to start
-1. The versioning procedures should say
-   1. After commit and merge, before tagging
-   1. Start an autobuild, and use the version list to write a long tag message
-1. git push --follow-tags
+## toctree stubbing
+1. Re-do labels for user-guide and dev-guide
+   1. dev-... and user-...
+1. First page (index) in user/dev guide should be "how to use this guide"
+1. PyPI is a tool in "distributing" section
+1. Need stubs for the testing index and developer guide index
+   1. Re write links to these places in there parent indices and in what-next
+1. Put in a stub for the examples page
+   1. Say can do either in the interpreter or in Jupyter notebook
+   1. Then put in a link from jupyter page
+   1. Python tools section should link here
+1. Procedures page should say what different procedures are for
+   1. A table  of procedure pages, and a link to a conceptual explanation(s)
+1. All toctrees should have similar comment below them
+   1. Add to writing procedure
+   1. Use find all to find all toctrees
+1. Procedures are not as tutorialesque, more of a checklist
+1. Explain in version link how some additions are pertinent to developers too
+1. Most content from dev-env setup should go dev index
+1. Update dir trees
 
-## Extensions and rtd
-1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
-1. https://docs.readthedocs.io/en/stable/faq.html#my-project-isn-t-building-with-autodoc
-1. Verify builds pass on rtd before pushing tag
-1. Needed to have the setup.py in the exts folder
-1. Is there a generalized way to call out the extension from the internet?
-1. Just made a requirements.txt file
-   1. On my account, had to update advanced settings
-1. You need conf.py to say the bibtex, but rtd doesn
-   1. You conda it pip
-1. https://pip.pypa.io/en/latest/reference/pip_install/#example-requirements-file
-1. Will need to uncomment in conf.py to load using conda
+## External references extension
+1. Should be a subsection of managing external links procedure
+   1. "Common links"
+1. https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension
+1. Restructured role revolution "r3"
+1. Add to the exts dir on the doc dir tree
+1. Look for that which has 'url[' in it
+   1. Only do super common ones
+      1. Don't do Stack OF, because its redirect links are huge
+1. Wikipedia page for sure
+   1. Use the extension that creates a role :wikipg:`money`
+      1. Verify you can give it a custom title first, before you migrate
+   1. Migrate all first, then use diff to check out link text rendering
+1. Use it, is okay that no error checking
+   1. That's what linkcheck and manual inspection are for
 
 ## Proofreading followup
 1. Follow td3
@@ -117,38 +135,231 @@ around
 1. Use same ISO standard that Robinhood uses for dates in version list
    1. Mention in src updates, for planning the when instance attribute
 1. When diffing in stage changes, confirm new tag at top of .rst file
+1. 2.4 on what next has too much whitespace (just on mobile?)
+1. Take out warning about e4s not showing up
+1. Fire up conda capitalization in fundamentals.rst
+1. Link to "markup language"
+1. conda config --set ssl_verify false
+1. Conda create a6 from scratch should say from inside top dir
 
-## toctree stubbing
-1. Re-do labels for user-guide and dev-guide
-1. First page (index) in user/dev guide should be "how to use this guide"
-1. PyPI is a tool in "distributing" section
-1. Need stubs for the testing index and developer guide index
-   1. Re write links to these places in there parent indices and in what-next
-1. Put in a stub for the examples page
-   1. Say can do either in the interpreter or in Jupyter notebook
-   1. Then put in a link from jupyter page
-   1. Python tools section should link here
-1. Procedures page should say what different procedures are for
-   1. A table  of procedure pages, and a link to a conceptual explanation(s)
-1. All toctrees should have similar comment below them
-   1. Add to writing procedure
-   1. Use find all to find all toctrees
-1. Procedures are not as tutorialesque, more of a checklist
-1. Explain in version link how some additions are pertinent to developers too
+## Versioning procedure updates
+1. The versioning procedures should say
+   1. After commit and merge, before tagging:
+   1. Start an autobuild, and use the version list to write a long tag message
+1. git push --follow-tags
 
-## External references extension
-1. Should be a subsection of managing external links procedure
-   1. "Common links"
-1. https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension
-1. Restructured role revolution "r3"
-1. Add to the exts dir on the doc dir tree
-1. Look for that which has 'url[' in it
-   1. Only do super common ones
-      1. Don't do Stack OF, because its redirect links are huge
-1. Wikipedia page for sure
-   1. Use the extension that creates a role :wikipg:`money`
-      1. Verify you can give it a custom title first, before you migrate
-   1. Migrate all first, then use diff to check out link text rendering
+## Git
+1. Explain .gitignore and link to project tree
+1. https://stackoverflow.com/questions/24046846
+1. https://stackoverflow.com/questions/3459744
+1. https://stackoverflow.com/questions/11553374
+1. Link to the git commit conventions
+1. Explain the Git theme for Vim?
+   1. Shows up on current windows machine but not
+1. Add configuration to dev setup
+   1. Git tower reset local commit as a tip in committing process
+1. Describe long message
+1. 325 error occurs if you quit Vim improperly
+   1. Makes a .swp file
+   1. Remove the .swp file and it should be alright
+   1. At .git/COMMIT_MSG.swp
+1. Checking out a remote
+   1. git checkout -b integration/adc2.07zb/ahrs2.08zb origin/integration/adc2.07zb/ahrs2.08zb
+   1. Straight from the man page
+   1. git checkout -b dev/0.3.0 --track origin/dev/0.3.0
+1. git push --follow-tags
+   1. The real way to push master after tagging it
+
+## Extensions and rtd
+1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
+1. https://docs.readthedocs.io/en/stable/faq.html#my-project-isn-t-building-with-autodoc
+1. Verify builds pass on rtd before pushing tag
+1. Needed to have the setup.py in the exts folder
+1. Is there a generalized way to call out the extension from the internet?
+1. Just made a requirements.txt file
+   1. On my account, had to update advanced settings
+1. You need conf.py to say the bibtex, but rtd doesn
+   1. You conda it pip
+1. https://pip.pypa.io/en/latest/reference/pip_install/#example-requirements-file
+1. Will need to uncomment in conf.py to load using conda
+1. Mention how xref is 9 years old, so simply downloaded it
+   1. No way to require it through PyPI - or is there?
+1. sphinx extension table have column that says need to specify
+   1. Probably in requirements.txt
+1. Get bibtex rubric to show up on rtd
+
+# 0.5.0
+
+## Jupyter
+1. Update the documentation.rst jupyter section
+1. All jupyter notebooks should be able to be viewed
+   1. If you add one, must be able to access it from the AAAAAA nb viewer link
+1. Verify all Jupyter notebooks are linked
+1. Link a Jupyter notebook per Carol Willing video
+1. Make an examples page with Jupyter notebook to follow along
+1. Tip to open the nb viewer
+1. TOC for all Jupyter notebooks?
+1. Need a way to include he nbs directory
+1. Need a table that says which doc pages link to which nbs
+1. Each doc that links to an nb also says which nb it links to
+1. Add to nbs concepts page
+   1. Say links in them may not be in links page
+   1. Core content is distilled into .rst
+1. Procedure for linking an nb says the two places that must be update
+   1. Link to this procedure in the nbs concepts page
+   1. Link to it in the nbs toc page
+1. examples page is a jupyter notebook you can reset and run all cells
+1. Use one common file to prototype LaTeX
+1. The Anaconda table needs to link to a purpose
+   1. For Jupyter, numpy, matplotlib, and pandas
+1. https://nbsphinx.readthedocs.io/en/rtd-theme/index.html
+   1. Can embed jupyter plots
+1. Can use Jupyter to prototype, matplotlib to embed
+   1. However, matplotlib can take some time to load
+
+## Doc coverage
+1. Figure out how to do this
+   1. The packaging video on iPad may help
+1. Doc coverage is a sphinx extension
+
+## Test code
+1. Cite DO-178B
+1. Have a test index in the developer's guide
+   1. The pytest entry on the links page should link here
+      1. Framework for :ref:`writing test code <test-index>`
+1. Document test_ledger.py
+   1. Add a section to common tasks about testing
+   1. May need to update the quickstart guide
+1. Document test_utilities.py
+1. Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger for tests
+1. tests should be motivated by the examples page
+
+## Settings autodoc
+1. Need a conf.py part of documentation concepts
+   1. Then can hyperlink the conf.py part in the Sphinx references table
+1. Automodule conf.py and settings.json?
+   1. If you do this, then be sure to review the links in the vs code section
+   1. Also then review the sphinx settings section
+
+## src updates
+1. xref in transaction source code
+1. Transaction class then explains how file structure is
+   1. For importing the module, etc.
+1. Then say we need to talk about the dir structure
+   1. Then make the dir tree script
+1. Explain how Transaction is, of course, all part of a module
+   1. Then describe automodule and show below
+   1. Then, enable modindex
+1. use datetime.datetime with zulu time - call the instance variable "when"
+1. Restructure other attributes as necessary
+1. change kinda to a dict of str to tuple(bool,bool)
+   1. bools say is associated with ticker
+   1. Second says does it result in add or subtract to buying power
+1. overload + to add two transactions and yield effect on the brokerage
+1. As you segway into explaining file structure
+   1. https://docs.python.org/3/tutorial/modules.html
+   1. Should help you get ready to package on conda
+1. Add to python tools description as you go
+1. Run https://docs.python.org/3/tutorial/modules.html#the-dir-function
+1. https://docs.python.org/3/tutorial/modules.html#packages
+1. Then, use https://docs.python.org/3/library/argparse.html#module-argparse
+   1. Draw a dir tree?
+1. Uncomment module index on homepage, verify it works
+1. Re-write the jupyter section after the jupyter examples page is live
+   1. Will need aaaaaa usage on the examples page
+   1. The numerical analysis packages should link to tools-numpy, etc.
+1. Tables can line break in the title without quotes
+   1. See VS code extensions
+
+## Content card
+1. AnaKAHNndaKAHN 2019
+1. Front
+   1. :term:`AAAAAA`: link :xref:`everywhere`
+      1. At bottom:
+         1. * 'everywhere' : ("The internet", url['Wiki pg] + 'Universe')
+   1. Have your email and your website
+1. On back, explanation field list
+   1. Just make the window smaller in order to view it
+1. Use version 0.3 field list
+
+## adp.py
+1. autodoc it on the procedures index page
+1. Cite the checklist manifesto
+1. arg parse from early on in python tutorial
+1. Talk about utils.py in AAAAAA root?
+    1. code for writing dir tree
+        1. Take command line args
+1. Wrapper for sphinx-autobuild
+    1. Says which folders to watch
+    1. Simple command line prompt:
+        1. python utils -doc
+1. Explain how the terminal opens at top aaaaaa dir, so use argparse
+   1. For wrapping autobuild, etc.
+1. Use the command line options style of table
+   1. See the RTD theme
+   1. Add this to the sphinx autobuild options once you know how to do it
+1. Have one that automatically opens a :ref: or a :doc:
+   1. python adp ref-tools-restructured-text
+
+## Wrapping autobuild
+1. Make it run in command line
+   1. Only open html files that have been changed, after the build started
+   1. Shows how the argument parser, etc. works from command line
+   1. Appears that it only opens a browser the first time
+1. Run your own python script that looks for touched .html files
+   1. Open a new window if the browser doesn't already have it open
+   1. How to know whether to open a new window or to reload the old one...
+      1. Need to check if the server isn't already "serving" the page?
+1. Don't bother integrating with makefiles, it doesn't work on windows too...
+   1. https://www.gnu.org/software/make/manual/make.html#Phony-Targets
+1. Later, may want to incorporate --watch jupyter notebooks
+   1. Just incorporate to the autobuilder
+      1. The wrapper should then handle the html monitoring correctly
+1. Potentially just have one script to call
+   1. Make sure python doesn't go crazy and open eveything
+      1. Only open changed pages, not new pages?
+      1. Guard: only if the .rst and the .html were changed?
+   1. Make clean at the end?
+      1. Would this make you have to re-intersphinx everytime?
+1. Keep in mind that autobuild sends out some sort of ping or hook
+   1. You could somehow monitor this?
+1. See https://docs.python.org/3/tutorial/modules.html
+1. Have the wrapper put the output to the console
+   1. See autobuild for how this is done, because it wraps sphinx
+   1. https://docs.python.org/3/library/argparse.html#module-argparse
+1. Watch the server that autobuild makes
+   1. https://pythonhosted.org/watchdog/index.html
+   1. It should send out some sort of ping that says to reload
+   1. Only open a new browser window if the html file in question isn't served
+      1. And if a reload ping came
+1. When the html file changes, the autobuild console should say so
+   1. Have the wrapper look for this and then open up a new browser?
+
+## plot directive
+1. https://matplotlib.org/sampledoc/extensions.html
+1. Appears to be included with matplotlib
+1. https://matplotlib.org/devel/plot_directive.html
+1. Need to include matplotlib and numpy in documenting package
+1. Make a factorial plot on the homepage
+   1. If you want to run this, you may need to install matplotlib with anaconda
+      1. See what happens when you do it from inside python
+         1. What pops up?
+1. Try out on homepage
+
+## matplotlib theme feature implementation
+1. matplotlib sample doc
+1. Have an example page in iPython
+   1. Show link to the actual notebook so people can play around with it
+1. Integrate plots
+1. Link Jupyter
+1. Remove RTD Sphinx theme from conda
+   1. Use conda procedures to see where to remove
+   1. Remove mention in the rtd section
+   1. Use deprecated feature? Or just mention in rtd section
+1. Disclaimers for RTD
+   1. Can't render as well on mobile
+   1. Need to update the RTD theme section
+1. Try out log base 16 of factorial of x
 
 ## Packaging
 1. https://anaconda.org/conda-forge/doc8
@@ -187,200 +398,6 @@ around
    1. Also, the Code testing link should go to the test index
    1. And, the numerical analysis parts should get links
 
-## plot directive
-1. https://matplotlib.org/sampledoc/extensions.html
-1. Appears to be included with matplotlib
-1. https://matplotlib.org/devel/plot_directive.html
-1. Need to include matplotlib and numpy in documenting package
-1. Make a factorial plot on the homepage
-   1. If you want to run this, you may need to install matplotlib with anaconda
-      1. See what happens when you do it from inside python
-         1. What pops up?
-1. Try out on homepage
-   1. Do sqrt(x!) ?
-
-## matplotlib theme feature implementation
-1. matplotlib sample doc
-1. Have an example page in iPython
-   1. Show link to the actual notebook so people can play around with it
-1. Integrate plots
-1. Link Jupyter
-1. Remove RTD Sphinx theme from conda
-   1. Use conda procedures to see where to remove
-   1. Remove mention in the rtd section
-   1. Use deprecated feature? Or just mention in rtd section
-1. Disclaimers for RTD
-   1. Can't render as well on mobile
-   1. Need to update the RTD theme section
-1. Try out log base 16 of factorial of x
-
-## Wrapping autobuild
-1. Make it run in command line
-   1. Only open html files that have been changed, after the build started
-   1. Shows how the argument parser, etc. works from command line
-   1. Appears that it only opens a browser the first time
-1. Run your own python script that looks for touched .html files
-   1. Open a new window if the browser doesn't already have it open
-   1. How to know whether to open a new window or to reload the old one...
-      1. Need to check if the server isn't already "serving" the page?
-1. Don't bother integrating with makefiles, it doesn't work on windows too...
-   1. https://www.gnu.org/software/make/manual/make.html#Phony-Targets
-1. Later, may want to incorporate --watch jupyter notebooks
-   1. Just incorporate to the autobuilder
-      1. The wrapper should then handle the html monitoring correctly
-1. Potentially just have one script to call
-   1. Make sure python doesn't go crazy and open eveything
-      1. Only open changed pages, not new pages?
-      1. Guard: only if the .rst and the .html were changed?
-   1. Make clean at the end?
-      1. Would this make you have to re-intersphinx everytime?
-1. Keep in mind that autobuild sends out some sort of ping or hook
-   1. You could somehow monitor this?
-1. See https://docs.python.org/3/tutorial/modules.html
-1. Have the wrapper put the output to the console
-   1. See autobuild for how this is done, because it wraps sphinx
-   1. https://docs.python.org/3/library/argparse.html#module-argparse
-1. Watch the server that autobuild makes
-   1. https://pythonhosted.org/watchdog/index.html
-   1. It should send out some sort of ping that says to reload
-   1. Only open a new browser window if the html file in question isn't served
-      1. And if a reload ping came
-1. When the html file changes, the autobuild console should say so
-   1. Have the wrapper look for this and then open up a new browser?
-
-## adp.py
-1. autodoc it on the procedures index page
-1. Cite the checklist manifesto
-1. arg parse from early on in python tutorial
-1. Talk about utils.py in AAAAAA root?
-    1. code for writing dir tree
-        1. Take command line args
-1. Wrapper for sphinx-autobuild
-    1. Says which folders to watch
-    1. Simple command line prompt:
-        1. python utils -doc
-1. Explain how the terminal opens at top aaaaaa dir, so use argparse
-   1. For wrapping autobuild, etc.
-1. Use the command line options style of table
-   1. See the RTD theme
-   1. Add this to the sphinx autobuild options once you know how to do it
-1. Have one that automatically opens a :ref: or a :doc:
-   1. python adp ref-tools-restructured-text
-
-## Content card
-1. AnaKAHNndaKAHN 2019
-1. Front
-   1. :term:`AAAAAA`: link :xref:`everywhere`
-      1. At bottom:
-         1. * 'everywhere' : ("The internet", url['Wiki pg] + 'Universe')
-   1. Have your email and your website
-1. On back, explanation field list
-   1. Just make the window smaller in order to view it
-1. Use version 0.3 field list
-
-## Git
-1. Explain .gitignore and link to project tree
-1. https://stackoverflow.com/questions/24046846
-1. https://stackoverflow.com/questions/3459744
-1. https://stackoverflow.com/questions/11553374
-1. Link to the git commit conventions
-1. Explain the Git theme for Vim?
-   1. Shows up on current windows machine but not
-1. Add configuration to dev setup
-   1. Git tower reset local commit as a tip in committing process
-1. Describe long message
-1. 325 error occurs if you quit Vim improperly
-   1. Makes a .swp file
-   1. Remove the .swp file and it should be alright
-   1. At .git/COMMIT_MSG.swp
-1. Checking out a remote
-   1. git checkout -b integration/adc2.07zb/ahrs2.08zb origin/integration/adc2.07zb/ahrs2.08zb
-   1. Straight from the man page
-   1. git checkout -b dev/0.3.0 --track origin/dev/0.3.0
-
-## src updates
-1. xref in transaction source code
-1. Transaction class then explains how file structure is
-   1. For importing the module, etc.
-1. Then say we need to talk about the dir structure
-   1. Then make the dir tree script
-1. Explain how Transaction is, of course, all part of a module
-   1. Then describe automodule and show below
-   1. Then, enable modindex
-1. use datetime.datetime with zulu time - call the instance variable "when"
-1. Restructure other attributes as necessary
-1. change kinda to a dict of str to tuple(bool,bool)
-   1. bools say is associated with ticker
-   1. Second says does it result in add or subtract to buying power
-1. overload + to add two transactions and yield effect on the brokerage
-1. As you segway into explaining file structure
-   1. https://docs.python.org/3/tutorial/modules.html
-   1. Should help you get ready to package on conda
-1. Add to python tools description as you go
-1. Run https://docs.python.org/3/tutorial/modules.html#the-dir-function
-1. https://docs.python.org/3/tutorial/modules.html#packages
-1. Then, use https://docs.python.org/3/library/argparse.html#module-argparse
-   1. Draw a dir tree?
-1. Uncomment module index on homepage, verify it works
-1. Re-write the jupyter section after the jupyter examples page is live
-   1. Will need aaaaaa usage on the examples page
-   1. The numerical analysis packages should link to tools-numpy, etc.
-1. Tables can line break in the title without quotes
-   1. See VS code extensions
-
-## Settings autodoc
-1. Need a conf.py part of documentation concepts
-   1. Then can hyperlink the conf.py part in the Sphinx references table
-1. Automodule conf.py and settings.json?
-   1. If you do this, then be sure to review the links in the vs code section
-   1. Also then review the sphinx settings section
-
-## Test code
-1. Cite DO-178B
-1. Have a test index in the developer's guide
-   1. The pytest entry on the links page should link here
-      1. Framework for :ref:`writing test code <test-index>`
-1. Document test_ledger.py
-   1. Add a section to common tasks about testing
-   1. May need to update the quickstart guide
-1. Document test_utilities.py
-1. Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger for tests
-1. tests should be motivated by the examples page
-
-## Doc coverage
-1. Figure out how to do this
-   1. The packaging video on iPad may help
-1. Doc coverage is a sphinx extension
-
-## Jupyter
-1. Update the documentation.rst jupyter section
-1. All jupyter notebooks should be able to be viewed
-   1. If you add one, must be able to access it from the AAAAAA nb viewer link
-1. Verify all Jupyter notebooks are linked
-1. Link a Jupyter notebook per Carol Willing video
-1. Make an examples page with Jupyter notebook to follow along
-1. Tip to open the nb viewer
-1. TOC for all Jupyter notebooks?
-1. Need a way to include he nbs directory
-1. Need a table that says which doc pages link to which nbs
-1. Each doc that links to an nb also says which nb it links to
-1. Add to nbs concepts page
-   1. Say links in them may not be in links page
-   1. Core content is distilled into .rst
-1. Procedure for linking an nb says the two places that must be update
-   1. Link to this procedure in the nbs concepts page
-   1. Link to it in the nbs toc page
-1. examples page is a jupyter notebook you can reset and run all cells
-1. Use one common file to prototype LaTeX
-1. The Anaconda table needs to link to a purpose
-   1. For Jupyter, numpy, matplotlib, and pandas
-1. https://nbsphinx.readthedocs.io/en/rtd-theme/index.html
-   1. Can embed jupyter plots
-1. Can use Jupyter to prototype, matplotlib to embed
-   1. However, matplotlib can take some time to load
-
-# 0.5.0
-
 ## Conda-forge packaging
 
 ## Doc
@@ -412,6 +429,15 @@ around
    1. EDGAR
 1. Use Corey Schafer password tutorial
 
+## Downloading transaction history from Robinhood
+1. If transaction type isn't recognized, just skip over it
+   1. Print out that a .json object was obtained that was unknown
+1. After downloading, the pandas portfolio parser (PPP) does checksum
+   1. Does net portfolio amount equal buying power?
+1. Need a logger / other way to harvest syntax from others
+   1. What does a stock split or withdrawal look like?
+      1. You can easily simulate withdrawal, then can put right back in
+
 ## Robinhood API references
 1. [Unofficial Robinhood API documentation](https://github.com/sanko/Robinhood)
 1. GitHub Robinhood modules
@@ -428,6 +454,10 @@ around
       1. By merit of existing, it has already been sanitized
          1. Thus can go straight back into transactions
    1. Would already have sanitized data
+
+# 0.6.0
+
+## Full proofread
 
 # 1.0.0 Package release
 
@@ -477,25 +507,26 @@ around
 # 1.2.0 and on
 
 ## General ideas
-1. Books
-   1. Header for each book is the name
-   1. Include ISBN, author
-   1. CSV table with a page number and the concept
-   1. For The Intelligent investor, can link to another "concepts page"
-      1. The 7-step checklist, etc.
 1. See all notebook entries since Dec 26
-1. Robinhood interface to Google sheets
-1. RODCA with LaTeX
+   1. Leisurely review paper notebook notes for more ideas
+1. Robinhood interface to Google sheets?
+   1. Make an AAAAAA GSheet and update the associated GDrive document ledger
+1. RODCA with LaTeX?
 1. Do some fun stats first just for fun
    1. Those goons at instutions don't know DSP
    1. The patterns are there
+
+## Investing philosophy page?
+1. For The Intelligent investor, can link to another "concepts page"
+   1. The 7-step checklist, etc.
+1. See other investing references from urls on Google Drive
+1. Warren Buffet BRK website
+   1. Fair price wonderful company vs wonderful price fair company
+1. Easy to be small guy vs hunting elephants
+1. Growth in book value per year as a metric?
 1. Standard and Poors facilitated the 2009 crisis
    1. This is why we use CRSPTMT
       1. Also it is academic
-
-1. Make an AAAAAA GSheet and update the associated GDrive document ledger
-1. Leisurely review paper notebook notes for more ideas
-1. See other investing references from urls on Google Drive
 
 ## Numerical analysis
 1. https://web.stanford.edu/~schmit/cme193/

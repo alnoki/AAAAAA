@@ -89,6 +89,9 @@ Starting a new version
    * Document changes as you go, in a way that
      :xref:`tells the codebase what to do <commit-conventions>`
 
+#. :ref:`Tidy up conda <conda-tidy-up>`
+#. :ref:`versioning-td3`
+
 .. _versioning-releasing:
 
 
