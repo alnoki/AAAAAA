@@ -130,7 +130,7 @@ Indices and tables
    :numbered:
 
    user-guide/index
-   user-guide/fundamentals
+   user-guide/transactions
    user-guide/version-list
 
 .. toctree::

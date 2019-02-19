@@ -46,5 +46,5 @@ Congratulations!!!
 
 .. tip::
 
-   Hit the :guilabel:`Next` button at the top or the bottom of the page to
-   continue
+   Hit the :guilabel:`Next` button at the top or the bottom of the
+   :xref:`webpage <webpage>` to continue

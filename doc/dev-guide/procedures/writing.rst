@@ -115,6 +115,8 @@ Documenting a new topic
 
 #. Use a :ref:`reference label <concepts-documentation-style>` in
    documentation to refer to the core conceptual explanation
+#. Update any relevant ``index.rst`` :ref:`toctree <sphinx:toctree-directive>`
+   descriptions, and potentially the :ref:`what-next` section
 
 .. tip::
 

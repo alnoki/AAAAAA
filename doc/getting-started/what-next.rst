@@ -1,5 +1,7 @@
 .. 0.3.0
 
+.. _what-next:
+
 
 ##########
 What next?
@@ -34,12 +36,13 @@ You don't want to get sidetracked
 
 Keep on hitting :guilabel:`next`! Lucky for you, this :xref:`website <website>`
 is made with :ref:`tools-sphinx` and as such you can visit every
-:xref:`page <webpage>` in a logical linear order without having to think twice
+:xref:`webpage <webpage>` in a logical linear order without having to think
+twice
 
 
-**********************************
-You are curious about the software
-**********************************
+****************************************
+You are curious about using the software
+****************************************
 
 Head on over to the :ref:`user guide <user-intro>`! It is accompanied by
 examples of :ref:`tools-python` concepts that will clarify the use of
@@ -53,16 +56,8 @@ You want to make a website or a software package like this
 If you want to know how :term:`AAAAAA` are made, how this
 :xref:`website <website>` is made, or
 how to re-create the :ref:`development environment <dev-env-intro>` that
-:xref:`alnoki <alnoki-repos>` uses, start at the
-:ref:`developer environment setup <dev-env-intro>`
-
-At the :ref:`tools section <concepts-tools>`, you will learn that
-:xref:`alnoki <alnoki-repos>` uses :ref:`tools-sphinx` and a host of
-:ref:`extensions <tools-sphinx-extensions>`
-to create content that is hosted by :doc:`Read the Docs<rtfd:index>`. There are
-also plenty of :ref:`development concepts <concepts>` and
-:ref:`custom procedures <procedures>` to be had on your journey
-
+:xref:`alnoki <alnoki-repos>` uses, head over to the
+:ref:`developer guide <dev-intro>`
 
 *******************************************
 You want a comprehensive list of references

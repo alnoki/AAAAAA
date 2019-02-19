@@ -53,7 +53,7 @@ which is a special type of :term:`object <python:object>`:
 .. tip::
 
    You can click :guilabel:`[source]` above to view the original
-   :xref:`code <source-code>`, then click :guilabel:`[docs]` to return
+   :xref:`source code <source-code>`, then click :guilabel:`[docs]` to return
 
 :py:class:`~AAAAAA.ledger.Transaction` has a
 :ref:`namespace <python:tut-scopes>` with various
@@ -104,8 +104,8 @@ A word (or several) about precision
 Clearly you need to :ref:`work with numbers <python:tut-numbers>`, and it makes
 sense to have an :py:obj:`python:int` number of :xref:`shares <finance-share>`
 
-But, and I repeat, **BUT**: does it make sense to buy something that costs
-exactly ``$110.1200000000000045474735088646411895751953125`` ?!?!?!?
+But does it make sense to buy something that costs exactly
+``$110.1200000000000045474735088646411895751953125`` ?!?!?!?
 
 .. admonition:: This just in
 

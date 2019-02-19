@@ -23,12 +23,13 @@ Python
 :xref:`Python` is an :xref:`open-source computer language <open-source>` with
 various applications. The :xref:`source code <source-code>` for :term:`AAAAAA`
 is written in :xref:`Python`, using assorted
-:ref:`packages <python:tut-packages>`
+:ref:`packages <python:tut-packages>`. See the :ref:`examples <examples>`
+section for a showcase of :term:`AAAAAA` functionality
 
 The :ref:`AAAAAA user guide <user-intro>` teaches :xref:`Python` as it
 describes various features of :term:`AAAAAA`.
-:ref:`Code concepts <concepts-code>` describes some additional specific
-:xref:`Python` considerations in :term:`AAAAAA` like syntax and
+The :ref:`code concepts <concepts-code>` section describes some additional
+specific :xref:`Python` considerations in :term:`AAAAAA` like syntax and
 :xref:`directory <directory>` structure
 
 .. csv-table:: Select references

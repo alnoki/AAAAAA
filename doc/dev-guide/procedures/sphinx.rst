@@ -124,6 +124,9 @@ Automatically
 Managing references
 *******************
 
+.. contents:: Contents
+   :local:
+
 .. _sphinx-intersphinx:
 
 Using Intersphinx

@@ -1,14 +1,7 @@
 # 0.4.0
 
 ## toctree stubbing
-1. Need stubs for the testing index and developer guide index
-   1. Re write links to these places in there parent indices and in what-next
-1. Put in a stub for the examples page
-   1. Say can do either in the interpreter or in Jupyter notebook
-   1. Then put in a link from jupyter page
-   1. Python tools section should link here
-1. Procedures page should say what different procedures are for
-   1. A table  of procedure pages, and a link to a conceptual explanation(s)
+1. Verify the what-next link in writing is working?
 1. All toctrees should have similar comment below them
    1. Add to writing procedure
    1. Use find all to find all toctrees
@@ -33,6 +26,36 @@
    1. Migrate all first, then use diff to check out link text rendering
 1. Use it, is okay that no error checking
    1. That's what linkcheck and manual inspection are for
+
+## Links to add in
+1. Link for wiki pg to download
+   1. On dev guide intro
+   1. On the VS Code tools page
+   1. Git links general: download Git
+   1. Put on the quickstart
+   1. Put in the link for to :xref:`download` the AAAAAA repository
+   1. Put in link page for miniconda quick to download
+   1. Also on the concepts index page (downloading them all)
+   1. Also on anaconda tools page
+1. :wiki-pg:`install`
+   1. dev env intro
+   1. dev guide intro
+1. wiki pg for "file"
+   1. In changes to a document writing procedure
+   1. rst file on tools-restructured-text
+   1. Git procedure for commiting
+   1. And in writing about a project tree
+   1. On developer guide intro
+1. wiki pg for "save a file"
+   1. Find all for places where it should be linked
+1. Upload
+   1. Link in push, a couple places find all for "upload" on git page
+   1. Will also use with PyPI
+   1. Also in Git table for upload to github
+1. Copy and paste link for admonition on conda procedure
+1. Finance
+   1. main index in aaaaaa
+   1. user-intro
 
 ## Proofreading followup
 1. Follow td3
@@ -120,33 +143,6 @@ around
 1. conda config --set ssl_verify false
 1. Conda create a6 from scratch should say from inside top dir
 
-## Links to add in
-1. Link for wiki pg to download
-   1. On dev guide intro
-   1. On the VS Code tools page
-   1. Git links general: download Git
-   1. Put on the quickstart
-   1. Put in the link for to :xref:`download` the AAAAAA repository
-   1. Put in link page for miniconda quick to download
-   1. Also on the concepts index page (downloading them all)
-   1. Also on anaconda tools page
-1. :wiki-pg:`install`
-   1. dev env intro
-   1. dev guide intro
-1. wiki pg for "file"
-   1. In changes to a document writing procedure
-   1. rst file on tools-restructured-text
-   1. Git procedure for commiting
-   1. And in writing about a project tree
-   1. On developer guide intro
-1. wiki pg for "save a file"
-   1. Find all for places where it should be linked
-1. Upload
-   1. Link in push, a couple places find all for "upload" on git page
-   1. Will also use with PyPI
-   1. Also in Git table for upload to github
-1. Copy and paste link for admonition on conda procedure
-
 ## Versioning procedure updates
 1. The versioning procedures should say
    1. After commit and merge, before tagging:
@@ -192,8 +188,15 @@ around
 1. sphinx extension table have column that says need to specify
    1. Probably in requirements.txt
 1. Get bibtex rubric to show up on rtd
+1. Review https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
+   1. Update at necssary and take out the default options
 
 # 0.5.0
+
+## Examples page
+1. Say can do either in the interpreter or in Jupyter notebook
+1. Then put in a link from jupyter page
+1. Python tools section should link here
 
 ## Jupyter
 1. Update the documentation.rst jupyter section

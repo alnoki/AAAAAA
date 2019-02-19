@@ -6,7 +6,14 @@
 Introduction
 ############
 
-*Coming soon*
+If you haven't already taken a look at the :ref:`examples <examples>`
+section, which showcases select :term:`AAAAAA` functionality, you may want to
+start there
+
+This guide explains, with more depth than the
+:ref:`examples <examples>` section, the various
+:ref:`tools-python` concepts associated with :term:`AAAAAA` and presents a
+closer look at the :xref:`source code <source-code>`
 
 .. tip::
    Keep on hitting the :guilabel:`Next` button at the top or the bottom of the

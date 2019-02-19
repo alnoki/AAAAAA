@@ -73,6 +73,7 @@ Documentation structure
                     index.rst
                 distributing/
                     index.rst
+                    ...
                 procedures/
                     index.rst
                     conda.rst

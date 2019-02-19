@@ -1,0 +1,5 @@
+.. _distribute-documentation:
+
+#############
+Documentation
+#############
