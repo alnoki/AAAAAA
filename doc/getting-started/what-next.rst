@@ -41,7 +41,7 @@ is made with :ref:`tools-sphinx` and as such you can visit every
 You are curious about the software
 **********************************
 
-Head on over to the :ref:`user guide <guide-intro>`! It is accompanied by
+Head on over to the :ref:`user guide <user-intro>`! It is accompanied by
 examples of :ref:`tools-python` concepts that will clarify the use of
 :term:`AAAAAA` for :xref:`security <finance-security>` analysis
 

@@ -7,7 +7,7 @@ Transactions
 .. contents::
    :local:
 
-.. _guide-fin-background:
+.. _user-fin-background:
 
 *************************
 Background financial info

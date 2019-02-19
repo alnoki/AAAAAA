@@ -20,20 +20,8 @@ Any configurations, settings, and :ref:`tools <concepts-tools>` that you might
 need are described in the following instructions, so get ready to install some
 :xref:`free software <open-source>`!
 
-After the installation, there are some
-:ref:`conceptual descriptions <concepts>` that should explain all of the
-:xref:`software <software>` and familiarize you with developing :term:`AAAAAA`
-
-.. tip::
-   Keep on hitting the :guilabel:`Next` button at the top or the bottom of the
-   page!
-
-   It will allow you to sequentially visit every page in :term:`AAAAAA`
-   documentation in a logical order
-
-
 .. toctree::
-   :caption: Developer setup
+   :caption: Developer environment setup
    :maxdepth: -1
 
    documenting

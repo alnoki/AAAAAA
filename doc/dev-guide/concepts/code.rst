@@ -10,7 +10,7 @@ Code
 .. note::
 
    The :ref:`Tools: Python <tools-python>` section explains how
-   :ref:`Python` works and the :ref:`user guide <guide-intro>` is a walkthrough
+   :ref:`Python` works and the :ref:`user guide <user-intro>` is a walkthrough
    of :xref:`software <software>` features in :term:`AAAAAA`, but
    this is an elaboration of the specific components in :term:`AAAAAA` from a
    developer's perspective
@@ -91,7 +91,7 @@ Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
    :ref:`Docstring <python:tut-docstrings>` style"
    :ref:`Python domain <sphinx:python-roles>`, Syntax guide
 
-:ref:`Source code <guide-intro>` is enhanced with :pep:`type annotations <484>`
+:ref:`Source code <user-intro>` is enhanced with :pep:`type annotations <484>`
 and :ref:`docstrings <python:tut-docstrings>` containing
 :ref:`Python domain <sphinx:python-roles>` syntax, so that
 :ref:`napoleon <tools-napoleon>` can create pretty documentation

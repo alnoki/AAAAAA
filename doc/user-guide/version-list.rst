@@ -32,7 +32,9 @@ Modifications are explained in a way that
 * 0.4.0
 
    * Add to :ref:`toctrees <tools-sphinx>`: :ref:`examples <examples>`,
-     :ref:`testing index <testing>`, :ref:`developer guide index <dev-index>`
+     :ref:`testing intro <testing-intro>`,
+     :ref:`developer guide intro <dev-intro>`,
+     :ref:`distribution intro <distribute-intro>`
 
 
 * 0.3.1 (2019-02-17)

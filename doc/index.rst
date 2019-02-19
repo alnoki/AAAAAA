@@ -17,7 +17,7 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
    AAAAAA
       :xref:`Alnoki <alnoki-repos>`'s Algorithmic Analysis Asset Allocation
       Applications (AAAAAA), colloquially referred to as *alnoki's apps*, are a
-      growing collection of :ref:`financial analysis <guide-fin-background>`
+      growing collection of :ref:`financial analysis <user-fin-background>`
       tools. :xref:`source-code` is written in the
       :xref:`Python computer language <Python>`, using additional
       :ref:`packages <python:tut-packages>` developed by the
@@ -116,16 +116,17 @@ Indices and tables
 
 .. toctree::
    :caption: Getting started
-   :maxdepth: 2
+   :maxdepth: 1
    :numbered:
 
    getting-started/quickstart
+   getting-started/examples
    getting-started/what-next
    getting-started/references/index
 
 .. toctree::
    :caption: User guide
-   :maxdepth: 2
+   :maxdepth: 1
    :numbered:
 
    user-guide/index
@@ -134,9 +135,12 @@ Indices and tables
 
 .. toctree::
    :caption: Developer guide
-   :maxdepth: 2
+   :maxdepth: 1
    :numbered:
 
+   dev-guide/index
    dev-guide/environment/index
    dev-guide/concepts/index
+   dev-guide/testing/index
+   dev-guide/distributing/index
    dev-guide/procedures/index

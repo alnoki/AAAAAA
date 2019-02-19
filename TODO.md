@@ -1,10 +1,6 @@
 # 0.4.0
 
 ## toctree stubbing
-1. Re-do labels for user-guide and dev-guide
-   1. dev-... and user-...
-1. First page (index) in user/dev guide should be "how to use this guide"
-1. PyPI is a tool in "distributing" section
 1. Need stubs for the testing index and developer guide index
    1. Re write links to these places in there parent indices and in what-next
 1. Put in a stub for the examples page
@@ -20,6 +16,7 @@
 1. Explain in version link how some additions are pertinent to developers too
 1. Most content from dev-env setup should go dev index
 1. Update dir trees
+1. Add descriptions for the new .rst files listed on the version page
 
 ## External references extension
 1. Should be a subsection of managing external links procedure
@@ -66,25 +63,6 @@ around
    1. Clear cookies and make every link turn purple
    1. Should still read in the major section you are on
 1. Need a references link to print() (from homepage)
-1. Link for wiki pg to download
-   1. On the VS Code tools page
-   1. Git links general: download Git
-   1. Put on the quickstart
-   1. Put in the link for to :xref:`download` the AAAAAA repository
-   1. Put in link page for miniconda quick to download
-   1. Also on the concepts index page (downloading them all)
-   1. Also on anaconda tools page
-1. wiki pg for "file"
-   1. In changes to a document writing procedure
-   1. rst file on tools-restructured-text
-   1. Git procedure for commiting
-   1. And in writing about a project tree
-1. wiki pg for "save a file"
-   1. Find all for places where it should be linked
-1. Upload
-   1. Link in push, a couple places find all for "upload" on git page
-   1. Will also use with PyPI
-   1. Also in Git table for upload to github
 1. The conda package is lowercase in-line
    1. Need to update on the pages before the links page
    1. Git is uppercase in-line
@@ -141,6 +119,33 @@ around
 1. Link to "markup language"
 1. conda config --set ssl_verify false
 1. Conda create a6 from scratch should say from inside top dir
+
+## Links to add in
+1. Link for wiki pg to download
+   1. On dev guide intro
+   1. On the VS Code tools page
+   1. Git links general: download Git
+   1. Put on the quickstart
+   1. Put in the link for to :xref:`download` the AAAAAA repository
+   1. Put in link page for miniconda quick to download
+   1. Also on the concepts index page (downloading them all)
+   1. Also on anaconda tools page
+1. :wiki-pg:`install`
+   1. dev env intro
+   1. dev guide intro
+1. wiki pg for "file"
+   1. In changes to a document writing procedure
+   1. rst file on tools-restructured-text
+   1. Git procedure for commiting
+   1. And in writing about a project tree
+   1. On developer guide intro
+1. wiki pg for "save a file"
+   1. Find all for places where it should be linked
+1. Upload
+   1. Link in push, a couple places find all for "upload" on git page
+   1. Will also use with PyPI
+   1. Also in Git table for upload to github
+1. Copy and paste link for admonition on conda procedure
 
 ## Versioning procedure updates
 1. The versioning procedures should say
@@ -456,6 +461,12 @@ around
    1. Would already have sanitized data
 
 # 0.6.0
+
+## Pandas ledger class
+1. Make a ledger a sub class of a dataframe
+   1. Use super like in https://realpython.com/python-super/
+      1. Also has inheritance tutorials, OOP:
+         1. https://realpython.com/python3-object-oriented-programming/
 
 ## Full proofread
 

@@ -45,8 +45,10 @@ Documentation structure
             Makefile
             make.bat
             index.rst
+            requirements.txt
             getting-started/
                 quickstart.rst
+                examples.rst
                 what-next.rst
                 references/
                     index.rst
@@ -58,6 +60,7 @@ Documentation structure
                 fundamentals.rst
                 ...
             dev-guide/
+                index.rst
                 environment/
                     index.rst
                     documenting.rst
@@ -66,6 +69,10 @@ Documentation structure
                     index.rst
                     tools.rst
                     ...
+                testing/
+                    index.rst
+                distributing/
+                    index.rst
                 procedures/
                     index.rst
                     conda.rst
@@ -179,6 +186,8 @@ Specific syntax
         :ref:`tools-napoleon`, :ref:`napoleon <tools-napoleon>`
         :xref:`internet`, :xref:`internet`
         :xref:`Open-source <open-source>`, :xref:`open-source <open-source>`
+        :ref:`Intersphinx <tools-intersphinx>`, "
+        :ref:`Intersphinx <tools-intersphinx>`"
 
 Whitespace
 ----------
@@ -260,7 +269,7 @@ Jupyter Notebooks
    :align: center
 
    ``dev/``, Created during development
-   ``src/``, Complements :ref:`source code <guide-intro>`
+   ``src/``, Complements :ref:`source code <user-intro>`
    "``ledger.ipynb``, ``utilities.ipynb``, etc.", "
    :ref:`Jupyter Notebooks <tools-jupyter>`"
 

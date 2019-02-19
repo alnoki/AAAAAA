@@ -10,19 +10,22 @@ Tools
 .. contents::
    :local:
 
+
+****
+Core
+****
+
 .. _tools-python:
 
-
-******
 Python
-******
+======
 
 :xref:`Python` is an :xref:`open-source computer language <open-source>` with
 various applications. The :xref:`source code <source-code>` for :term:`AAAAAA`
 is written in :xref:`Python`, using assorted
 :ref:`packages <python:tut-packages>`
 
-The :ref:`AAAAAA user guide <guide-intro>` teaches :xref:`Python` as it
+The :ref:`AAAAAA user guide <user-intro>` teaches :xref:`Python` as it
 describes various features of :term:`AAAAAA`.
 :ref:`Code concepts <concepts-code>` describes some additional specific
 :xref:`Python` considerations in :term:`AAAAAA` like syntax and
@@ -45,15 +48,13 @@ describes various features of :term:`AAAAAA`.
    executes :xref:`source code <source-code>`"
    :ref:`Code concepts <concepts-code>`, ":term:`AAAAAA` usage
    (syntax, structure)"
-   :ref:`AAAAAA user guide <guide-intro>`, ":term:`AAAAAA` usage
+   :ref:`AAAAAA user guide <user-intro>`, ":term:`AAAAAA` usage
    (:xref:`software <software>` walkthrough)"
 
 .. _tools-anaconda:
 
-
-********
 Anaconda
-********
+========
 
 :xref:`Anaconda` contains a collection of
 :ref:`Python packages <python:tut-packages>` that are :xref:`free <money>` to
@@ -147,10 +148,8 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
 
 .. _tools-git:
 
-
-***
 Git
-***
+===
 
 :xref:`Git <git-manual>` is used create and track changes to the
 :xref:`AAAAAA-repo`. :xref:`Git <git-manual>` is a version control system that
@@ -189,6 +188,65 @@ along with :xref:`Git <git-manual>`:
    :ref:`versioning <version-list>` integration"
    :xref:`Vim`, Official information
    :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
+
+.. _tools-vs-code:
+
+VS Code
+=======
+
+:xref:`VS-Code` is an integrated development environment that is used to
+develop :term:`AAAAAA`
+
+The :xref:`AAAAAA-repo` comes with a collection of
+:xref:`VS-Code-settings` that will automatically configure most of your
+workspace. If you completed the
+:ref:`developer environment setup <dev-env-intro>`, then all the relevant
+settings should already be installed! These settings will
+help with things like :ref:`code style <concepts-code-style>` and
+:ref:`test discovery <pytest-discover-tests>`
+
+There is also the :xref:`VS Code Insider Edition <VS-Code-insiders>`,
+which has all the latest features but may not be completely stable
+
+.. csv-table:: Select :xref:`extensions <VS-Code-extensions>`
+   :header: Extension, Purpose, Setup Phase
+   :align: center
+
+   :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate content, "
+   :ref:`Documenting <dev-env-documenting>`"
+   :xref:`Python <VS-Code-Python-ext>`, Developing :ref:`tools-python`, "
+   :ref:`Documenting <dev-env-documenting>`"
+   :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "Edit
+   :ref:`reST <tools-restructured-text>` ", "
+   :ref:`Documenting <dev-env-documenting>`"
+   :xref:`GitLens <GitLens>`, "Advanced :ref:`tools-git`
+   functionality", :ref:`Documenting <dev-env-documenting>`
+   :xref:`Python Test Explorer <Test-explorer-UI>`, "Using
+   :doc:`pytest <pytest:index>`", :ref:`Testing <dev-env-testing>`
+
+.. csv-table:: Select references
+   :header: Reference, Topic
+   :align: center
+
+   :xref:`Python integration <VS-Code-Python-tutorial>`, "Official tutorial for
+   :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
+   :xref:`Command palette <command-palette>`, Quickly input user commands
+   :xref:`Settings <VS-Code-settings>`, Environment configuration
+   :xref:`Integrated terminal <VS-Code-terminal>`, "Run a
+   :xref:`command line <command-line>` inside :xref:`VS Code <VS-Code>`"
+   :xref:`VS-Code-unit-testing`, ":ref:`tools-pytest` integration"
+   :xref:`Markdown`, For :ref:`planning version features <versioning-td3>`
+   :ref:`Writing procedures <writing-procedures>`, :term:`AAAAAA` usage
+
+.. rubric:: Footnotes
+
+.. [#] Requires a :xref:`doc8-newline-issue`, included in the provided
+   :xref:`VS-Code-settings`
+.. [#] Offers live previewing, but is not as reliable as using a
+   :xref:`browser <web-browser>` with :ref:`tools-sphinx-autobuild`. For
+   example, fails to properly preview
+   :ref:`intersphinx links <sphinx-intersphinx>`
+
 
 *************
 Documentation
@@ -452,96 +510,15 @@ is helpful when :ref:`proofreading documentation <writing-proofread>`
    :ref:`Building automatically <sphinx-autobuilding>`, "Automated
    :term:`AAAAAA` usage"
 
-.. _tools-vs-code:
 
-
-*******
-VS Code
-*******
-
-:xref:`VS-Code` is an integrated development environment that is used to
-develop :term:`AAAAAA`
-
-The :xref:`AAAAAA-repo` comes with a collection of
-:xref:`VS-Code-settings` that will automatically configure most of your
-workspace. If you completed the
-:ref:`developer environment setup <dev-env-intro>`, then all the relevant
-settings should already be installed! These settings will
-help with things like :ref:`code style <concepts-code-style>` and
-:ref:`test discovery <pytest-discover-tests>`
-
-There is also the :xref:`VS Code Insider Edition <VS-Code-insiders>`,
-which has all the latest features but may not be completely stable
-
-.. csv-table:: Select :xref:`extensions <VS-Code-extensions>`
-   :header: Extension, Purpose, Setup Phase
-   :align: center
-
-   :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate content, "
-   :ref:`Documenting <dev-env-documenting>`"
-   :xref:`Python <VS-Code-Python-ext>`, Developing :ref:`tools-python`, "
-   :ref:`Documenting <dev-env-documenting>`"
-   :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "Edit
-   :ref:`reST <tools-restructured-text>` ", "
-   :ref:`Documenting <dev-env-documenting>`"
-   :xref:`GitLens <GitLens>`, "Advanced :ref:`tools-git`
-   functionality", :ref:`Documenting <dev-env-documenting>`
-   :xref:`Python Test Explorer <Test-explorer-UI>`, "Using
-   :doc:`pytest <pytest:index>`", :ref:`Testing <dev-env-testing>`
-
-.. csv-table:: Select references
-   :header: Reference, Topic
-   :align: center
-
-   :xref:`Python integration <VS-Code-Python-tutorial>`, "Official tutorial for
-   :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
-   :xref:`Command palette <command-palette>`, Quickly input user commands
-   :xref:`Settings <VS-Code-settings>`, Environment configuration
-   :xref:`Integrated terminal <VS-Code-terminal>`, "Run a
-   :xref:`command line <command-line>` inside :xref:`VS Code <VS-Code>`"
-   :xref:`VS-Code-unit-testing`, ":ref:`tools-pytest` integration"
-   :xref:`Markdown`, For :ref:`planning version features <versioning-td3>`
-   :ref:`Writing procedures <writing-procedures>`, :term:`AAAAAA` usage
-
-.. rubric:: Footnotes
-
-.. [#] Requires a :xref:`doc8-newline-issue`, included in the provided
-   :xref:`VS-Code-settings`
-.. [#] Offers live previewing, but is not as reliable as using a
-   :xref:`browser <web-browser>` with :ref:`tools-sphinx-autobuild`. For
-   example, fails to properly preview
-   :ref:`intersphinx links <sphinx-intersphinx>`
-
-.. _tools-pytest:
-
-
-******
-pytest
-******
-
-:term:`AAAAAA` uses :doc:`pytest <pytest:index>`, a
-:ref:`conda package<tools-anaconda>`, to verify that
-:ref:`source code <tools-python>` is functioning as expected
-
-:ref:`tools-vs-code` natively integrates with :doc:`pytest <pytest:index>`,
-and additional functionality is provided by the
-:ref:`VS Code Python Test Explorer extension<tools-vs-code>`
-
-.. csv-table:: Select references
-   :header: Reference, Topic
-   :align: center
-
-   :doc:`pytest <pytest:index>`, Official documentation
-   :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
-   :doc:`pytest tutorials <pytest:contents>`, Official tutorials
-   :ref:`pytest procedures <pytest-procedures>`, :term:`AAAAAA` usage
+********
+Analysis
+********
 
 .. _tools-jupyter:
 
-
-*******
 Jupyter
-*******
+=======
 
 :xref:`Jupyter Notebooks <Jupyter>` enable an interactive style of
 algorithm development, and can quickly render :xref:`LaTeX`
@@ -593,3 +570,38 @@ The :doc:`nb-extensions:index` provide additional functionality
    This :xref:`AAAAAA-nbs` can render any :xref:`Jupyter Notebook<Jupyter>`
    from the :xref:`AAAAAA-repo` inside of a :xref:`web browser <web-browser>`,
    even if you don't have :xref:`Jupyter <Jupyter>`
+
+
+*******
+Testing
+*******
+
+.. _tools-pytest:
+
+pytest
+======
+
+:term:`AAAAAA` uses :doc:`pytest <pytest:index>`, a
+:ref:`conda package<tools-anaconda>`, to verify that
+:ref:`source code <tools-python>` is functioning as expected
+
+:ref:`tools-vs-code` natively integrates with :doc:`pytest <pytest:index>`,
+and additional functionality is provided by the
+:ref:`VS Code Python Test Explorer extension<tools-vs-code>`
+
+.. csv-table:: Select references
+   :header: Reference, Topic
+   :align: center
+
+   :doc:`pytest <pytest:index>`, Official documentation
+   :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
+   :doc:`pytest tutorials <pytest:contents>`, Official tutorials
+   :ref:`pytest procedures <pytest-procedures>`, :term:`AAAAAA` usage
+
+
+************
+Distributing
+************
+
+PyPI
+====
