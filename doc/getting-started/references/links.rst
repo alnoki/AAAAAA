@@ -429,7 +429,7 @@ General
 
 #. :xref:`git-download`
 
-   * Download :xref:`Git <git-manual>`
+   * Get :xref:`Git <git-manual>`
 
 #. :xref:`git-setup`
 
@@ -682,6 +682,11 @@ Managing references
    * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to manage
      common :ref:`links <references-links>` in a project
 
+#. :doc:`extlinks <sphinx:usage/extensions/extlinks>`
+
+   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` for improved
+     handling of :ref:`sphinx-xref base URLs <sphinx-xref>`
+
 #. :xref:`intersphinx-inv-targets`
 
    * Explains how to interpret
@@ -928,6 +933,10 @@ VS Code
 General
 -------
 
+#. :wiki-pg:`Integrated development environment <Integrated_development_environment>`
+
+   * :wiki-pg:`Software` that is used to make :wiki-pg:`software`
+
 #. :xref:`VS-Code`
 
    * :xref:`Open-source <open-source>` environment for
@@ -1028,6 +1037,18 @@ General
 
    * How a :xref:`computer <computer>` stores text
 
+#. :wiki-pg:`Install <Installation_(computer_programs)>`
+
+   * Provide :wiki-pg:`software` for a :wiki-pg:`computer`
+
+#. :wiki-pg:`File <Computer_file>`
+
+   * A way to store data in a :wiki-pg:`computer`
+
+#. :wiki-pg:`Filename extension <Filename_extension>`
+
+   * A way to identify the type of a :wiki-pg:`file <Computer_file>`
+
 OS specifics
 ============
 
@@ -1039,9 +1060,9 @@ OS specifics
 
    * :xref:`Wikipedia` article about the :xref:`Mac OS<Mac>`
 
-#. :xref:`Windows OS<Windows>`
+#. :wiki-pg:`Mircosoft Windows <Microsoft_Windows>`
 
-   * :xref:`Wikipedia` article about the :xref:`Windows OS<Windows>`
+   * A common :xref:`operating system <OS>`
 
 #. :xref:`Linux OS family<Linux>`
 
@@ -1059,7 +1080,7 @@ OS specifics
 
 #. :xref:`cmd.exe-invocation`
 
-   * :xref:`command-line` for :xref:`Windows`
+   * :xref:`command-line` for :wiki-pg:`Windows <Microsoft_Windows>`
 
 #. :xref:`bash-man-page`
 
@@ -1108,6 +1129,18 @@ Online information
 #. :xref:`Open-source software <open-source>`
 
    * Public way to share :xref:`source code <source-code>`
+
+#. :wiki-pg:`Download`
+
+   * Gather information from the :wiki-pg:`Internet`
+
+#. :wiki-pg:`Upload`
+
+   * Provide information to the :wiki-pg:`Internet`
+
+#. :xref:`stack-overflow`
+
+   * Community that provides answers to :wiki-pg:`computer` questions
 
 Software design standards
 =========================
@@ -1179,6 +1212,10 @@ Securities mechanics
 Money definitions
 =================
 
+#. :wiki-pg:`Finance`
+
+   * The management of :wiki-pg:`money`
+
 #. :xref:`medium-of-exchange`
 
    * A widely accepted token that can be exchanged for something else
@@ -1213,9 +1250,9 @@ Money definitions
 Mathematics
 ***********
 
-#. :xref:`factorial-definition`
+#. :wiki-pg:`Factorial`
 
-   * :xref:`Wikipedia` page for :math:`x!`
+   * :math:`x! = x(x - 1)(x - 2)...`
 
 
 **********

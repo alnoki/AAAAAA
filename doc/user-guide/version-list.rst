@@ -17,7 +17,10 @@ Version list
 
 Below is a list of versions of :term:`AAAAAA`, numbered according to
 :xref:`semantic versioning standards <semver>`, and dated in order of
-increasing chronological specificity : ``MAJOR.MINOR.PATCH`` (``YYYY-MM-DD``)
+increasing chronological specificity : ``MAJOR.MINOR.PATCH`` (``YYYY-MM-DD``).
+Features below are relevant to both :ref:`users <user-intro>` and
+:ref:`developers <dev-intro>` alike, and usually include a relevant
+:wiki-pg:`link <URL>` to somewhere in :term:`AAAAAA`
 
 Modifications are explained in a way that
 :xref:`tells the codebase what to do <commit-conventions>`, like in
@@ -32,10 +35,10 @@ Modifications are explained in a way that
 * 0.4.0
 
    * Add to :ref:`toctrees <tools-sphinx>`: :ref:`examples <examples>`,
-     :ref:`testing intro <testing-intro>`,
      :ref:`developer guide intro <dev-intro>`,
+     :ref:`testing intro <testing-intro>`,
      :ref:`distribution intro <distribute-intro>`
-
+   * Add :ref:`tools-extlinks` support and :ref:`procedures <sphinx-extlinks>`
 
 * 0.3.1 (2019-02-17)
 

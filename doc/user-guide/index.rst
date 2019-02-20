@@ -11,8 +11,8 @@ section, which showcases select :term:`AAAAAA` functionality, you may want to
 start there
 
 This guide explains, with more depth than the
-:ref:`examples <examples>` section, the various
-:ref:`tools-python` concepts associated with :term:`AAAAAA` and presents a
+:ref:`examples <examples>` section, the various :ref:`tools-python` and
+:wiki-pg:`finance` concepts associated with :term:`AAAAAA`, while presenting a
 closer look at the :xref:`source code <source-code>`
 
 .. tip::

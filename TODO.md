@@ -1,61 +1,17 @@
 # 0.4.0
 
-## toctree stubbing
-1. Verify the what-next link in writing is working?
-1. All toctrees should have similar comment below them
-   1. Add to writing procedure
-   1. Use find all to find all toctrees
-1. Procedures are not as tutorialesque, more of a checklist
-1. Explain in version link how some additions are pertinent to developers too
-1. Most content from dev-env setup should go dev index
-1. Update dir trees
-1. Add descriptions for the new .rst files listed on the version page
+## extlinks note
+1. Linking to :wiki-pg:`finance` is not okay, need :wiki-pg:`finance <Finance>`
+   1. Make link check - some are broken
+      1. May need to link check often
+1. Hyperlink to markup language
 
-## External references extension
-1. Should be a subsection of managing external links procedure
-   1. "Common links"
-1. https://sublime-and-sphinx-guide.readthedocs.io/en/latest/references.html#use-the-external-links-extension
-1. Restructured role revolution "r3"
-1. Add to the exts dir on the doc dir tree
-1. Look for that which has 'url[' in it
-   1. Only do super common ones
-      1. Don't do Stack OF, because its redirect links are huge
-1. Wikipedia page for sure
-   1. Use the extension that creates a role :wikipg:`money`
-      1. Verify you can give it a custom title first, before you migrate
-   1. Migrate all first, then use diff to check out link text rendering
-1. Use it, is okay that no error checking
-   1. That's what linkcheck and manual inspection are for
-
-## Links to add in
-1. Link for wiki pg to download
-   1. On dev guide intro
-   1. On the VS Code tools page
-   1. Git links general: download Git
-   1. Put on the quickstart
-   1. Put in the link for to :xref:`download` the AAAAAA repository
-   1. Put in link page for miniconda quick to download
-   1. Also on the concepts index page (downloading them all)
-   1. Also on anaconda tools page
-1. :wiki-pg:`install`
-   1. dev env intro
-   1. dev guide intro
-1. wiki pg for "file"
-   1. In changes to a document writing procedure
-   1. rst file on tools-restructured-text
-   1. Git procedure for commiting
-   1. And in writing about a project tree
-   1. On developer guide intro
-1. wiki pg for "save a file"
-   1. Find all for places where it should be linked
-1. Upload
-   1. Link in push, a couple places find all for "upload" on git page
-   1. Will also use with PyPI
-   1. Also in Git table for upload to github
-1. Copy and paste link for admonition on conda procedure
-1. Finance
-   1. main index in aaaaaa
-   1. user-intro
+## Links audit: 1 at the start, 1 at the end of your session
+1. Use find all for the xref-key
+1. RealPython
+1. Wikipedia
+1. Git
+1. Py like you rest, rest like you Py
 
 ## Proofreading followup
 1. Follow td3
@@ -245,7 +201,8 @@ around
 ## Settings autodoc
 1. Need a conf.py part of documentation concepts
    1. Then can hyperlink the conf.py part in the Sphinx references table
-1. Automodule conf.py and settings.json?
+1. https://stackoverflow.com/questions/46689334
+1. Automodule conf.py and settings.json
    1. If you do this, then be sure to review the links in the vs code section
    1. Also then review the sphinx settings section
 

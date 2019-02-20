@@ -17,8 +17,8 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
    AAAAAA
       :xref:`Alnoki <alnoki-repos>`'s Algorithmic Analysis Asset Allocation
       Applications (AAAAAA), colloquially referred to as *alnoki's apps*, are a
-      growing collection of :ref:`financial analysis <user-fin-background>`
-      tools. :xref:`source-code` is written in the
+      growing collection of :wiki-pg:`financial <Finance>` analysis
+      :wiki-pg:`software` tools. :xref:`source-code` is written in the
       :xref:`Python computer language <Python>`, using additional
       :ref:`packages <python:tut-packages>` developed by the
       :xref:`open-source` community
@@ -40,7 +40,7 @@ with minimal effort, using :py:func:`python:print`:
 
    :xref:`Linux`, :program:`Terminal`
    :xref:`Mac`, :program:`Terminal`
-   :xref:`Windows`, :program:`Command Prompt`
+   :wiki-pg:`Windows <Microsoft_Windows>`, :program:`Command Prompt`
 
 #. Type :command:`python` and hit :kbd:`return`
 
@@ -73,8 +73,14 @@ with minimal effort, using :py:func:`python:print`:
      :kbd:`return` twice after :xref:`copy-pasting <copy-paste>` the above
      contents
 
-#. How about some :xref:`factorials <factorial-definition>`?  The
-   ":xref:`factorial <factorial-definition>` of x" is represented by:
+#. How about some :wiki-pg:`factorials <Factorial>`?  The
+   ":wiki-pg:`factorial <Factorial>` of :math:`x`" is given by:
+
+   .. math::
+
+      x! = x(x-1)(x-2)\ldots
+
+   More eloquently:
 
    .. math::
 

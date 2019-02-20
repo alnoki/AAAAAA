@@ -22,7 +22,7 @@ Documenting
             "terminal.integrated.shellArgs.osx": [ "-l" ],
         }
 
-   * On :xref:`Windows`, use the ``/K``
+   * On :wiki-pg:`Windows <Microsoft_Windows>`, use the ``/K``
      :xref:`cmd.exe option <cmd.exe-invocation>` to run
      :ref:`Anaconda Prompt <conda:starting-conda>` (adapted for your username
      and :xref:`computer <computer>`):
@@ -68,7 +68,7 @@ Documenting
         # Activate a6 conda environment when bash login session starts
         conda activate a6
 
-   * On :xref:`Windows`, append ``"a6"`` to the
+   * On :wiki-pg:`Windows <Microsoft_Windows>`, append ``"a6"`` to the
      ``"terminal.integrated.shellArgs.windows"`` setting from above:
 
      .. code-block:: json
@@ -96,7 +96,7 @@ Documenting
             "python.pythonPath": "~/miniconda3/envs/a6/bin/python"
         }
 
-   * On :xref:`Windows`, this should look like:
+   * On :wiki-pg:`Windows <Microsoft_Windows>`, this should look like:
 
      .. code-block:: json
 

@@ -245,10 +245,49 @@ Using Intersphinx
    standard procedures from above are usually sufficient for :term:`AAAAAA`
    documentation
 
-.. _sphinx-xref:
+.. _sphinx-reference-urls:
 
 Referencing external links
 ==========================
+
+For :ref:`links <references-links>` that can not be managed with
+:ref:`Intersphinx <sphinx-intersphinx>`, use either :ref:`sphinx-xref` or
+:ref:`sphinx-extlinks`. Most of the time you can use :ref:`sphinx-xref`, but if
+the :wiki-pg:`webpage` you want to :wiki-pg:`cite <citation>` comes from a
+:wiki-pg:`website` that you often use, it makes sense to use
+:ref:`sphinx-extlinks` as long as the :wiki-pg:`website` has a simple
+organizational pattern. For example, you could use :ref:`sphinx-extlinks` for:
+
+#. :wiki-pg:`Wikipedia articles <wikipedia>`, like
+   https://en.wikipedia.org/wiki/Download:
+
+   .. code-block:: rest
+      :caption: Efficient :doc:`role <sphinx:usage/restructuredtext/roles>`
+
+      :wiki-pg:`Download`
+
+#. :real-py:`RealPython tutorials <>`, like
+   https://realpython.com/python-type-checking:
+
+   .. code-block:: rest
+      :caption: Efficient :doc:`role <sphinx:usage/restructuredtext/roles>`
+
+      :real-py:`python-type-checking`
+
+It would not make sense to use :ref:`sphinx-extlinks` for:
+
+* :xref:`Stack Overflow questions <stack-overflow>`, like
+  https://stackoverflow.com/questions/1441010/the-shortest-possible-output-from-git-log-containing-author-and-date:
+
+  .. code-block:: rest
+     :caption: Inefficient :doc:`role <sphinx:usage/restructuredtext/roles>`
+
+     :stack-overflow:`1441010/the-shortest-possible-output-from-git-log-containing-author-and-date`
+
+.. _sphinx-xref:
+
+xref
+----
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -256,8 +295,6 @@ Referencing external links
 
    :ref:`tools-xref`, :term:`AAAAAA` conceptual explanation
    :xref:`Sphinx xref extension <xref-ext>`, User manual
-   :ref:`Using a references extension <sublime-with-sphinx:use the external links extension>`, "
-   Similar configuration and usage"
 
 #. Add your :xref:`URL <URL>` to :doc:`conf.py <sphinx:usage/configuration>`:
 
@@ -326,6 +363,51 @@ Referencing external links
      :ref:`links <references-links>` first, you can bypass the delimiter
      :ref:`comment <python:comments>` altogether when
      adding to :ref:`conf.py <tools-sphinx>`
+
+.. _sphinx-extlinks:
+
+extlinks
+--------
+
+.. csv-table:: Select references
+   :header: Reference, Topic
+   :align: center
+
+   :ref:`tools-extlinks`, :term:`AAAAAA` conceptual explanation
+   :doc:`extlinks <sphinx:usage/extensions/extlinks>`, Official documentation
+   :ref:`Using a references extension <sublime-with-sphinx:use the external links extension>`, "
+   Related configuration and usage"
+
+#. Usage is nearly identical to that of :ref:`sphinx-xref`, but instead add
+   your base :wiki-pg:`URL` to ``extlinks``
+#. After you have added the base :wiki-pg:`URL`, you will then have access to
+   a new custom :doc:`role <sphinx:usage/restructuredtext/roles>`:
+
+   .. code-block:: rest
+      :caption: Yields :wiki-pg:`download`
+
+      :wiki-pg:`download`
+
+#. For most :wiki-pg:`websites <website>` other than :wiki-pg:`Wikipedia`, you
+   will want to add in a
+   :doc:`role title <sphinx:usage/restructuredtext/roles>`:
+
+   .. code-block:: rest
+      :caption: Yields :real-py:`python-type-checking`
+
+      :real-py:`python-type-checking`
+
+   .. code-block:: rest
+      :caption: Yields :real-py:`type checking guide <python-type-checking>`
+
+      :real-py:`type checking guide <python-type-checking>`
+
+.. tip::
+
+   Although you could use :ref:`sphinx-extlinks` to create a :wiki-pg:`URL`
+   that is not actually associated with a :wiki-pg:`webpage`, the
+   :ref:`link checking procedure <sphinx-checking-links>` will identify such
+   errors
 
 .. _sphinx-checking-links:
 

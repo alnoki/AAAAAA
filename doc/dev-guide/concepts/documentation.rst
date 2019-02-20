@@ -189,6 +189,7 @@ Specific syntax
         :xref:`Open-source <open-source>`, :xref:`open-source <open-source>`
         :ref:`Intersphinx <tools-intersphinx>`, "
         :ref:`Intersphinx <tools-intersphinx>`"
+        :xref:`Git <git-manual>`, :xref:`Git <git-manual>`
 
 Whitespace
 ----------

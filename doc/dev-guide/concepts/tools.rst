@@ -59,7 +59,7 @@ Anaconda
 
 :xref:`Anaconda` contains a collection of
 :ref:`Python packages <python:tut-packages>` that are :xref:`free <money>` to
-download and use. The base :xref:`Anaconda` collection has way more
+:wiki-pg:`download` and use. The base :xref:`Anaconda` collection has way more
 :ref:`Python packages <python:tut-packages>` than :term:`AAAAAA` require, so
 you can use :doc:`Miniconda<conda:user-guide/install/index>` to acess only the
 ones that you need
@@ -195,14 +195,17 @@ along with :xref:`Git <git-manual>`:
 VS Code
 =======
 
-:xref:`VS-Code` is an integrated development environment that is used to
-develop :term:`AAAAAA`
+:xref:`VS-Code` is an
+:wiki-pg:`integrated development environment (IDE)
+<Integrated_development_environment>`
+that is used to create :term:`AAAAAA`
 
 The :xref:`AAAAAA-repo` comes with a collection of
 :xref:`VS-Code-settings` that will automatically configure most of your
-workspace. If you completed the
+:wiki-pg:`software` workspace. If you completed the
 :ref:`developer environment setup <dev-env-intro>`, then all the relevant
-settings should already be installed! These settings will
+settings should already be
+:wiki-pg:`installed <Installation_(computer_programs)>`! These settings will
 help with things like :ref:`code style <concepts-code-style>` and
 :ref:`test discovery <pytest-discover-tests>`
 
@@ -282,7 +285,9 @@ functionality and several are used in :term:`AAAAAA`:
    :ref:`Intersphinx <tools-intersphinx>`, "
    :ref:`Create links <sphinx-intersphinx>` to other
    :doc:`Sphinx <sphinx:intro>` projects"
-   :ref:`xref <tools-xref>`, ":ref:`Create links <sphinx-xref>` to other
+   :ref:`xref <tools-xref>`, ":ref:`Create links <sphinx-xref>` to arbitrary
+   :xref:`URLs <URL>`"
+   :ref:`tools-extlinks`, ":ref:`Create links <sphinx-xref>` to common
    :xref:`URLs <URL>`"
    :ref:`tools-napoleon`, :ref:`Document code components <concepts-code-e4>`
    :ref:`tools-BibTeX`, :ref:`Cite books <sphinx-reference-book>`
@@ -319,9 +324,10 @@ marks a piece of text (usually in-line), and the
 :doc:`directive <sphinx:usage/restructuredtext/directives>`, which marks a
 block of text
 
-:doc:`reST <sphinx:usage/restructuredtext/basics>` files have an ``.rst``
-extension, and :ref:`tools-sphinx` converts them whenever
-:ref:`documentation is built <sphinx-building-documentation>`
+:wiki-pg:`Files <Computer_file>` that contain
+:doc:`reST <sphinx:usage/restructuredtext/basics>` have an ``.rst``
+:wiki-pg:`extension <Filename_extension>`, and :ref:`tools-sphinx` converts
+them whenever :ref:`documentation is built <sphinx-building-documentation>`
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -390,31 +396,25 @@ the visual appearance of this :xref:`website <website>`!
 Sphinx extensions
 =================
 
+.. contents::
+   :local:
+
+Included with Sphinx
+--------------------
+
 .. _tools-intersphinx:
 
 Intersphinx
------------
+^^^^^^^^^^^
 
 :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>` helps manage
 :ref:`links <references-links>` to other :ref:`tools-sphinx` projects, via the
 :ref:`intersphinx procedures <sphinx-intersphinx>`
 
-.. _tools-xref:
-
-xref
-----
-
-:xref:`Michael Jones' xref extension <xref-ext>` helps manage
-:ref:`links <references-links>` to arbitrary :xref:`URLs <URL>` that can not be
-accessed via :ref:`intersphinx <tools-intersphinx>`. A simple
-:ref:`role <tools-restructured-text>` is used to insert
-:ref:`links <references-links>`, and usage is described at
-:ref:`xref procedures <sphinx-xref>`
-
 .. _tools-napoleon:
 
 Napoleon
---------
+^^^^^^^^
 
 :doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
 :ref:`Sphinx extension <tools-sphinx>` that parses
@@ -463,10 +463,35 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
    :ref:`reST <tools-restructured-text>` syntax"
    :ref:`Napoleon example <concepts-code-e4>`, :term:`AAAAAA` usage
 
+.. _tools-extlinks:
+
+extlinks
+^^^^^^^^
+
+The :doc:`extlinks extension <sphinx:usage/extensions/extlinks>` functions like
+:ref:`tools-xref`, but is exceptionally efficient
+:ref:`for common websites <sphinx-reference-urls>`. Usage is
+described at :ref:`extlinks procedures <sphinx-extlinks>`
+
+Not included with Sphinx
+------------------------
+
+.. _tools-xref:
+
+xref
+^^^^
+
+:xref:`Michael Jones' xref extension <xref-ext>` helps manage
+:ref:`links <references-links>` to arbitrary :xref:`URLs <URL>` that can not be
+accessed via :ref:`intersphinx <tools-intersphinx>`. A simple
+:ref:`role <tools-restructured-text>` is used to insert
+:ref:`links <references-links>`, and usage is described at
+:ref:`xref procedures <sphinx-xref>`
+
 .. _tools-bibtex:
 
 BibTeX
-------
+^^^^^^
 
 :xref:`bibtex` is a special type of :xref:`citation <citation>` syntax that
 :term:`AAAAAA` uses for :ref:`books <references-books>`. The

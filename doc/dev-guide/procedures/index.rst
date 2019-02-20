@@ -6,6 +6,8 @@
 Procedures
 **********
 
+Here are some :term:`checklist`-like instructions for common development tasks
+
 .. toctree::
    :caption: Procedures
    :maxdepth: -1
@@ -16,5 +18,3 @@ Procedures
    sphinx
    writing
    versioning
-
-.. If you add to the toctree, explain what it is above

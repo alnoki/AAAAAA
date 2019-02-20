@@ -81,7 +81,8 @@ Creating a6 from scratch
 
    .. note::
 
-      Be sure to copy and paste the whole box! It may scroll to the right
+      Be sure to :wiki-pg:`copy and paste <Cut,_copy,_and_paste>` the whole
+      box! It may scroll to the right
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
 #. :doc:`Install <conda:commands/install>` the remaining
@@ -93,7 +94,8 @@ Creating a6 from scratch
 
    .. note::
 
-      Be sure to copy and paste the whole box! It may scroll to the right
+      Be sure to :wiki-pg:`copy and paste <Cut,_copy,_and_paste>` the whole
+      box! It may scroll to the right
 
 #. :ref:`Install AAAAAA for testing <conda-pip-AAAAAA>`
 #. :ref:`Tidy up <conda-tidy-up>`

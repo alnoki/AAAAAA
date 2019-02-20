@@ -116,7 +116,7 @@ Documenting a new topic
 #. Use a :ref:`reference label <concepts-documentation-style>` in
    documentation to refer to the core conceptual explanation
 #. Update any relevant ``index.rst`` :ref:`toctree <sphinx:toctree-directive>`
-   descriptions, and potentially the :ref:`what-next` section
+   descriptions, and potentially the :ref:`what next? <what-next>` section
 
 .. tip::
 
@@ -237,8 +237,9 @@ Changes to a document
 #. Use :ref:`GitLens <tools-vs-code>` to inspect the history of the
    file: :guilabel:`GitLens: Show File History`
 #. The :ref:`version comment <concepts-documentation-example>` at the top of
-   the file should identify the most-recent :ref:`version <version-list>` for
-   which the document was reviewed. Thus:
+   the :wiki-pg:`file <Computer_file>` should identify the most-recent
+   :ref:`version <version-list>` for
+   which the :wiki-pg:`file <Computer_file>` was reviewed. Thus:
 
    #. Use the :guilabel:`GitLens: Show File History`
       view to :guilabel:`Choose from Branch or Tag History...`

@@ -169,7 +169,7 @@ Committing
 
    :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
    :xref:`git-commit`, Create snapshot of project changes
-   :xref:`git-push`, Upload changes to :xref:`GitHub`
+   :xref:`git-push`, :wiki-pg:`Upload` changes to :xref:`GitHub`
    :xref:`Message conventions <commit-conventions>`, "Tell the
    :xref:`codebase <software>` what to do"
 
@@ -179,9 +179,10 @@ Committing
    .. code-block:: bash
 
       git pull
-      git log
+      git log3
 
-#. Save and close any open project files
+#. :wiki-pg:`Save and close <Computer_file>` any open project
+   :wiki-pg:`files <Computer_file>`
 #. :ref:`Update your Git credentials <git-credentials>` and verify as needed
 #. Use the :ref:`VS Code command palette <tools-vs-code>` to select:
 
@@ -252,7 +253,7 @@ Tagging
    :xref:`git-tag`, Assign a unique identifier to a :xref:`commit <git-commit>`
    :xref:`Message style <commit-conventions>`, "Tell the
    :xref:`codebase <software>` what to do"
-   :xref:`git-push`, Upload changes to :xref:`GitHub`
+   :xref:`git-push`, :wiki-pg:`Upload` changes to :xref:`GitHub`
    :xref:`git-commit-guidelines`, Long message guidelines
 
 

@@ -17,7 +17,8 @@ the :ref:`quickstart <quickstart>`, then you should already have
 :doc:`Miniconda <conda:user-guide/install/download>`
 
 Any configurations, settings, and :ref:`tools <concepts-tools>` that you might
-need are described in the following instructions, so get ready to install some
+need are described in the following instructions, so get ready to
+:wiki-pg:`install <Installation_(computer_programs)>` some
 :xref:`free software <open-source>`!
 
 .. toctree::

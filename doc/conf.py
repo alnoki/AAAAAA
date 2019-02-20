@@ -45,6 +45,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.intersphinx',
     'sphinx.ext.napoleon',
+    'sphinx.ext.extlinks',
     # Not included with Sphinx:
     'xref',
     'sphinxcontrib.bibtex',
@@ -226,6 +227,12 @@ intersphinx_mapping = {
     'bibtex': ('https://sphinxcontrib-bibtex.readthedocs.io/en/latest', None),
 }
 
+# For sphinx.ext.extlinks
+extlinks = {
+    'wiki-pg': ('https://en.wikipedia.org/wiki/%s', ''),
+    'real-py': ('https://realpython.com/%s', ''),
+}
+
 # Base urls used by xrefs extension
 url = {
     'GitHub': 'https://github.com/',
@@ -273,8 +280,6 @@ xref_links = {
     'intersphinx-inv-targets':
         ("Intersphinx objects.inv explanation", url['Stack OF'] +
          '45699577/how-to-link-to-root-page-in-intersphinx'),
-    'factorial-definition':
-        ("Definition of factorial", url['Wiki pg'] + 'Factorial'),
     'GitLens': ("GitLens extension", url['VS Code ext'] + 'eamodio.gitlens'),
     'VS-Code-Python-ext':
         ("Python extension", url['VS Code ext'] + 'ms-python.python'),
@@ -298,7 +303,6 @@ xref_links = {
     'quick-reST': ("Quick reST reference",
                    url['docutils'] + 'docs/user/rst/quickref.html'),
     'Mac': ('Mac', url['Wiki pg'] + 'Macintosh_operating_systems'),
-    'Windows': ('Windows', url['Wiki pg'] + 'Microsoft_Windows'),
     'Linux': ('Linux', url['Wiki pg'] + 'Linux'),
     'Wikipedia': ('Wikipedia', 'https://www.wikipedia.org'),
     'Google': ('Google', 'https://www.google.com'),
@@ -470,6 +474,7 @@ xref_links = {
     'copy-paste': ("Cut, copy, and paste", url['Wiki pg'] +
                    'Cut,_copy,_and_paste'),
     'software': ('Software', url['Wiki pg'] + 'Software'),
-    'string': ('String', url['Wiki pg'] +'String_(computer_science)'),
+    'string': ('String', url['Wiki pg'] + 'String_(computer_science)'),
     # New links below, sorted links above
-    }
+    'stack-overflow': ("Stack Overflow", url['Stack OF']),
+}
