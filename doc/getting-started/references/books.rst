@@ -59,7 +59,6 @@ The Checklist Manifesto
 
    13, Why use a :term:`checklist`?
 
-
 .. glossary::
 
    checklist

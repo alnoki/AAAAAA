@@ -59,10 +59,10 @@ Anaconda
 
 :xref:`Anaconda` contains a collection of
 :ref:`Python packages <python:tut-packages>` that are :xref:`free <money>` to
-:wiki-pg:`download` and use. The base :xref:`Anaconda` collection has way more
-:ref:`Python packages <python:tut-packages>` than :term:`AAAAAA` require, so
-you can use :doc:`Miniconda<conda:user-guide/install/index>` to acess only the
-ones that you need
+:wiki-pg:`download <Download>` and use. The base :xref:`Anaconda` collection
+has way more :ref:`Python packages <python:tut-packages>` than :term:`AAAAAA`
+require, so you can use :doc:`Miniconda<conda:user-guide/install/index>` to
+access only the ones that you need
 
 You can manage these :ref:`packages <conda:concept-conda-package>` using
 :doc:`conda <conda:index>`, a configurator that automatically checks
@@ -202,7 +202,7 @@ that is used to create :term:`AAAAAA`
 
 The :xref:`AAAAAA-repo` comes with a collection of
 :xref:`VS-Code-settings` that will automatically configure most of your
-:wiki-pg:`software` workspace. If you completed the
+:wiki-pg:`software <Software>` workspace. If you completed the
 :ref:`developer environment setup <dev-env-intro>`, then all the relevant
 settings should already be
 :wiki-pg:`installed <Installation_(computer_programs)>`! These settings will
@@ -264,8 +264,9 @@ Sphinx
 :doc:`Sphinx <sphinx:intro>` is the documentation engine that
 :ref:`builds <sphinx-building-documentation>` the
 the documentation :xref:`website <website>` for :term:`AAAAAA` and even for
-:doc:`Python itself <py-dev-guide:documenting>`. Sphinx is built on the
-:ref:`tools-restructured-text` (``reST``) markup language
+:doc:`Python itself <py-dev-guide:documenting>`. Sphinx is built on
+:ref:`tools-restructured-text` (``reST``), a particular style of
+:wiki-pg:`markup language <Markup_language>`
 
 :doc:`Sphinx <sphinx:intro>` has a
 :ref:`table of contents <sphinx:toctree-directive>` feature, which provides a
@@ -314,7 +315,8 @@ functionality and several are used in :term:`AAAAAA`:
 reStructuredText
 ================
 
-:xref:`reStructuredText <reST-documentation>` (``reST``) is a markup language
+:xref:`reStructuredText <reST-documentation>` (``reST``) is a
+:wiki-pg:`markup language <Markup_language>`
 containing syntax to generate fancy components like ``this``, :guilabel:`this`,
 or :menuselection:`t --> h --> i --> s`
 

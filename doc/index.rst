@@ -16,10 +16,12 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 
    AAAAAA
       :xref:`Alnoki <alnoki-repos>`'s Algorithmic Analysis Asset Allocation
-      Applications (AAAAAA), colloquially referred to as *alnoki's apps*, are a
+      Applications (AAAAAA or
+      :wiki-pg:`double-triple Alfa <NATO_phonetic_alphabet>`), colloquially
+      referred to as *alnoki's apps*, are a
       growing collection of :wiki-pg:`financial <Finance>` analysis
-      :wiki-pg:`software` tools. :xref:`source-code` is written in the
-      :xref:`Python computer language <Python>`, using additional
+      :wiki-pg:`software <Software>` tools. :xref:`source-code` is written in
+      the :xref:`Python computer language <Python>`, using additional
       :ref:`packages <python:tut-packages>` developed by the
       :xref:`open-source` community
 
@@ -38,8 +40,8 @@ with minimal effort, using :py:func:`python:print`:
    :header: :xref:`OS` , Command line
    :align: center
 
-   :xref:`Linux`, :program:`Terminal`
-   :xref:`Mac`, :program:`Terminal`
+   :wiki-pg:`Linux`, :program:`Terminal`
+   :wiki-pg:`Mac <Macintosh_operating_systems>`, :program:`Terminal`
    :wiki-pg:`Windows <Microsoft_Windows>`, :program:`Command Prompt`
 
 #. Type :command:`python` and hit :kbd:`return`
@@ -150,3 +152,6 @@ Indices and tables
    dev-guide/testing/index
    dev-guide/distributing/index
    dev-guide/procedures/index
+
+Congratulations on reaching the end of this :wiki-pg:`webpage <Webpage>`! As a
+reward, treat yourself to an :py:func:`explanation`

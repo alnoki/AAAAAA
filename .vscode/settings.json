@@ -6,8 +6,8 @@
     // General viewing
     "workbench.colorTheme": "Default Dark+",
     "editor.tokenColorCustomizations": {
-        "comments": "#3CB371",
-        "strings": "#FF00FF"
+        "comments": "#3CB371", // MediumSeaGreen
+        "strings": "#FF00FF" // Fuchsia
     },
     "editor.minimap.enabled": false,
     "zenMode.centerLayout": false,
@@ -33,15 +33,15 @@
         "editor.rulers": [71, 79],
         "editor.tabSize": 4,
     },
-    "[restructuredtext]": {
+    "[restructuredtext]": { // Per Python developer guide
         "editor.rulers": [79],
         "editor.tabSize": 3,
     },
-    "[markdown]": {
+    "[markdown]": { // Match reST
         "editor.rulers": [79],
         "editor.tabSize": 3,
     },
-    "[jsonc]":{
+    "[jsonc]":{ // json with comments (this file)
         "editor.tabSize": 4,
     },
     "[json]":{

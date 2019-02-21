@@ -54,7 +54,7 @@ You want to make a website or a software package like this
 **********************************************************
 
 If you want to know how :term:`AAAAAA` are made, how this
-:xref:`website <website>` is made, or
+:wiki-pg:`website <Website>` is made, or
 how to re-create the :ref:`development environment <dev-env-intro>` that
 :xref:`alnoki <alnoki-repos>` uses, head over to the
 :ref:`developer guide <dev-intro>`

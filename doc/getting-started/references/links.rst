@@ -89,6 +89,11 @@ Project structure
 
    * Cataloging structure for :xref:`computer <computer>` data
 
+#. :wiki-pg:`Path <Path_(computing)>`
+
+   * Identifier for a :wiki-pg:`directory <Directory_(computing)>` or
+     :wiki-pg:`file <Computer_file>`
+
 #. :doc:`pip <python:installing/index>`
 
    * General installer for :ref:`packages <python:tut-packages>`
@@ -798,7 +803,8 @@ General
 #. :doc:`sphinx:usage/restructuredtext/basics`
 
    * :doc:`Sphinx <sphinx:intro>` explanation of
-     :doc:`reST <sphinx:usage/restructuredtext/basics>` markup language
+     :doc:`reST <sphinx:usage/restructuredtext/basics>`, a particular
+     :wiki-pg:`markup language <Markup_language>`
 
 #. :xref:`reST-documentation`
 
@@ -872,11 +878,19 @@ Engine-agnostic tools
      :xref:`Jupyter Notebooks <Jupyter>` and in
      :doc:`Sphinx <sphinx:intro>`
 
+#. :wiki-pg:`Markup language <Markup_language>`
+
+   * A fancy way to create documents in a :wiki-pg:`computer <Computer>`
+
 #. :xref:`Markdown`
 
    * Language syntax used to generate tables, lists, and other components
    * Used for :xref:`GitHub`, :xref:`Jupyter Notebooks <Jupyter>`, and
      :ref:`AAAAAA task management <versioning-td3>`
+
+#. :wiki-pg:`NATO phonetic alphabet <NATO_phonetic_alphabet>`
+
+   * A: ``Alfa``, B: ``Bravo``, and so on
 
 *****
 Tools
@@ -935,7 +949,7 @@ General
 
 #. :wiki-pg:`Integrated development environment <Integrated_development_environment>`
 
-   * :wiki-pg:`Software` that is used to make :wiki-pg:`software`
+   * :wiki-pg:`Software` that is used to make :wiki-pg:`software <Software>`
 
 #. :xref:`VS-Code`
 
@@ -1039,15 +1053,24 @@ General
 
 #. :wiki-pg:`Install <Installation_(computer_programs)>`
 
-   * Provide :wiki-pg:`software` for a :wiki-pg:`computer`
+   * Provide :wiki-pg:`software <Software>` for a
+     :wiki-pg:`computer <Computer>`
 
 #. :wiki-pg:`File <Computer_file>`
 
-   * A way to store data in a :wiki-pg:`computer`
+   * A way to store data in a :wiki-pg:`computer <Computer>`
 
 #. :wiki-pg:`Filename extension <Filename_extension>`
 
    * A way to identify the type of a :wiki-pg:`file <Computer_file>`
+
+#. :wiki-pg:`Web colors <Web_colors>`
+
+   * Colors for the :wiki-pg:`Internet`
+
+#. :wiki-pg:`Point and click <Point_and_click>`
+
+   * One way to use a :wiki-pg:`computer <Computer>`
 
 OS specifics
 ============
@@ -1056,21 +1079,22 @@ OS specifics
 
    * :xref:`computer` resource manager
 
-#. :xref:`Mac OS<Mac>`
+#. :wiki-pg:`Mac OS <Macintosh_operating_systems>`
 
-   * :xref:`Wikipedia` article about the :xref:`Mac OS<Mac>`
+   * A common :xref:`operating system <OS>`
 
 #. :wiki-pg:`Mircosoft Windows <Microsoft_Windows>`
 
    * A common :xref:`operating system <OS>`
 
-#. :xref:`Linux OS family<Linux>`
+#. :wiki-pg:`Linux`
 
-   * :xref:`Wikipedia` article about the :xref:`Linux OS family<Linux>`
+   * A common :xref:`operating system <OS>`, which is
+     :wiki-pg:`open-source <Open-source_software>`
 
 #. :xref:`torvalds-interview`
 
-   * Creator of :xref:`Linux`
+   * Creator of :wiki-pg:`Linux`
    * :xref:`Cited <citation>` at
      :ref:`the spirit of alnoki's apps <zen-spirit>`
 
@@ -1084,7 +1108,8 @@ OS specifics
 
 #. :xref:`bash-man-page`
 
-   * :xref:`command-line` for :xref:`Mac` and :xref:`Linux`
+   * :xref:`command-line` for :wiki-pg:`Mac <Macintosh_operating_systems>`
+     and :wiki-pg:`Linux`
 
 #. :xref:`Change-bash-prompt`
 
@@ -1105,6 +1130,11 @@ Online information
 #. :xref:`web-browser`
 
    * A viewer for a :xref:`website <website>`
+
+#. :wiki-pg:`Web browsing history <Web_browsing_history>`
+
+   * :ref:`Identify links <writing-proofread-new>` you have not
+     :wiki-pg:`clicked <Point_and_click>`
 
 #. :xref:`webpage`
 
@@ -1140,7 +1170,9 @@ Online information
 
 #. :xref:`stack-overflow`
 
-   * Community that provides answers to :wiki-pg:`computer` questions
+   * Community :wiki-pg:`website <Website>` that provides answers to
+     :wiki-pg:`computer <Computer>` questions
+
 
 Software design standards
 =========================
@@ -1214,7 +1246,7 @@ Money definitions
 
 #. :wiki-pg:`Finance`
 
-   * The management of :wiki-pg:`money`
+   * The management of :wiki-pg:`money <Money>`
 
 #. :xref:`medium-of-exchange`
 

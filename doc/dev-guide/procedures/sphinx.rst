@@ -111,6 +111,10 @@ Automatically
      the :xref:`website <website>` you are viewing
    * You will still need to manually navigate to the :xref:`webpage <webpage>`
      you want to view
+   * If your :wiki-pg:`web browser <Web_browser>` is set to a :wiki-pg:`URL`
+     that ends with ``.html``, the :xref:`webpage <webpage>` will refresh in
+     the same vertical position, but you may not be granted this luxury if the
+     :wiki-pg:`URL` ends with something like ``.html#a-heading-you-clicked-on``
 
 .. rubric:: Footnotes
 
@@ -253,12 +257,12 @@ Referencing external links
 For :ref:`links <references-links>` that can not be managed with
 :ref:`Intersphinx <sphinx-intersphinx>`, use either :ref:`sphinx-xref` or
 :ref:`sphinx-extlinks`. Most of the time you can use :ref:`sphinx-xref`, but if
-the :wiki-pg:`webpage` you want to :wiki-pg:`cite <citation>` comes from a
-:wiki-pg:`website` that you often use, it makes sense to use
-:ref:`sphinx-extlinks` as long as the :wiki-pg:`website` has a simple
+the :wiki-pg:`webpage <Webpage>` you want to :wiki-pg:`cite <Citation>` comes
+from a :wiki-pg:`website <Website>` that you often use, it makes sense to use
+:ref:`sphinx-extlinks` as long as the :wiki-pg:`website <Website>` has a simple
 organizational pattern. For example, you could use :ref:`sphinx-extlinks` for:
 
-#. :wiki-pg:`Wikipedia articles <wikipedia>`, like
+#. :wiki-pg:`Wikipedia articles <Wikipedia>`, like
    https://en.wikipedia.org/wiki/Download:
 
    .. code-block:: rest
@@ -384,11 +388,23 @@ extlinks
    a new custom :doc:`role <sphinx:usage/restructuredtext/roles>`:
 
    .. code-block:: rest
-      :caption: Yields :wiki-pg:`download`
+      :caption: Yields :wiki-pg:`Internet`
 
-      :wiki-pg:`download`
+      :wiki-pg:`Internet`
 
-#. For most :wiki-pg:`websites <website>` other than :wiki-pg:`Wikipedia`, you
+   .. code-block:: rest
+      :caption: Yields :wiki-pg:`download <Download>`
+
+      :wiki-pg:`download <Download>`
+
+   .. note::
+
+      The :ref:`link checker <sphinx-checking-links>` is particular about
+      capitalization for :wiki-pg:`Wikipedia`, so make sure to use
+      the exact :wiki-pg:`string <String_(computer_science)>` from the end of
+      the :wiki-pg:`URL`: ``Download``, not ``download``
+
+#. For most :wiki-pg:`websites <Website>` other than :wiki-pg:`Wikipedia`, you
    will want to add in a
    :doc:`role title <sphinx:usage/restructuredtext/roles>`:
 
@@ -405,7 +421,7 @@ extlinks
 .. tip::
 
    Although you could use :ref:`sphinx-extlinks` to create a :wiki-pg:`URL`
-   that is not actually associated with a :wiki-pg:`webpage`, the
+   that is not actually associated with a :wiki-pg:`webpage <Webpage>`, the
    :ref:`link checking procedure <sphinx-checking-links>` will identify such
    errors
 

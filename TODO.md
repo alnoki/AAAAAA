@@ -1,11 +1,5 @@
 # 0.4.0
 
-## extlinks note
-1. Linking to :wiki-pg:`finance` is not okay, need :wiki-pg:`finance <Finance>`
-   1. Make link check - some are broken
-      1. May need to link check often
-1. Hyperlink to markup language
-
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Use find all for the xref-key
 1. RealPython
@@ -14,33 +8,6 @@
 1. Py like you rest, rest like you Py
 
 ## Proofreading followup
-1. Follow td3
-1. Does pushing a tag push the merged master?
-   1. If so, verify in version procedures and in git procedures
-1. AAAAAA should link to double triple alpha
-   1. Also use a link to :xref:`software`
-1. Try putting py:function:explanation in text somewhere
-   1. User guide warning to show what you won't be able to see
-      1. This is a sample, but the real ones might not show ups
-1. Should have an index.rst for dev-guide
-   1. Add to doc structure tree
-   1. Then, on the what-next page, re-do the links to these places
-1. Should have index.rst for every .rst dir
-   1. In a spirit of apps
-      1. Because it tells you where to go next
-1. If not on an anchor (.html#heading-title), livereload doesn't jump
-around
-1. Add a csv table to the concepts-code page once you have more references
-   1. Packges, __init__, setup.py, etc.
-1. Add in links to the zen page, they are lacking
-   1. Do this after a few versions
-1. Documentation page section about AAAAAA live within, not live(S) within
-1. When proofreading, in .rst, look at anything that isn't rendered white
-   1. You already looked at the white part when reading the site
-   1. When you see, :term:`aaaaaa`, say *alnoki's apps*
-      1. Link to the documentation page
-   1. Clear cookies and make every link turn purple
-   1. Should still read in the major section you are on
 1. Need a references link to print() (from homepage)
 1. The conda package is lowercase in-line
    1. Need to update on the pages before the links page
@@ -98,6 +65,8 @@ around
 1. Link to "markup language"
 1. conda config --set ssl_verify false
 1. Conda create a6 from scratch should say from inside top dir
+1. Cite iso 8061 (or whatever robinhood uses)
+   1. Put on versioning page for time explanation
 
 ## Versioning procedure updates
 1. The versioning procedures should say
@@ -106,6 +75,8 @@ around
 1. git push --follow-tags
 
 ## Git
+1. git checkout --track origin/dev/0.4.0
+   1. Will get from origin
 1. Explain .gitignore and link to project tree
 1. https://stackoverflow.com/questions/24046846
 1. https://stackoverflow.com/questions/3459744
@@ -128,6 +99,7 @@ around
    1. The real way to push master after tagging it
 
 ## Extensions and rtd
+1. As a documentation section under distributing section
 1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
 1. https://docs.readthedocs.io/en/stable/faq.html#my-project-isn-t-building-with-autodoc
 1. Verify builds pass on rtd before pushing tag
@@ -199,6 +171,8 @@ around
 1. tests should be motivated by the examples page
 
 ## Settings autodoc
+1. :wiki-pg:`Web_colors` already in links
+1. link to "linter"
 1. Need a conf.py part of documentation concepts
    1. Then can hyperlink the conf.py part in the Sphinx references table
 1. https://stackoverflow.com/questions/46689334
@@ -207,6 +181,7 @@ around
    1. Also then review the sphinx settings section
 
 ## src updates
+1. ISO 8061 (or whatever robinhood uses) for dates
 1. xref in transaction source code
 1. Transaction class then explains how file structure is
    1. For importing the module, etc.
@@ -235,6 +210,9 @@ around
    1. The numerical analysis packages should link to tools-numpy, etc.
 1. Tables can line break in the title without quotes
    1. See VS code extensions
+1. Add a csv table to the concepts-code page once you have more references
+   1. Packges, __init__, setup.py, etc.
+   1. As you go through and explain
 
 ## Content card
 1. AnaKAHNndaKAHN 2019
@@ -421,6 +399,9 @@ around
    1. Would already have sanitized data
 
 # 0.6.0
+
+## Zen page updates
+1. Go through and re-write/re-link once there are more places to link to
 
 ## Pandas ledger class
 1. Make a ledger a sub class of a dataframe

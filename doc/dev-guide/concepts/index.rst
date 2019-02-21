@@ -10,7 +10,7 @@ Concepts
 All of the :ref:`tools <concepts-tools>` used to create :term:`AAAAAA` are
 :xref:`free <money>`, and most are :xref:`open-source`. If you completed the
 :ref:`developer environment setup <dev-env-intro>` then you will have just
-finished :wiki-pg:`dowloading <download>` all of them
+finished :wiki-pg:`dowloading <Download>` all of them
 
 * :ref:`Tools <concepts-tools>` describes the core concepts of things like
   :ref:`tools-git` and :ref:`tools-sphinx`, but not precise :term:`AAAAAA` use

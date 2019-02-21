@@ -224,10 +224,24 @@ things to watch out for
 #. Go through one :ref:`minor section <concepts-documentation-example>` at a
    time
 
+   #. :wiki-pg:`Clear your browser history <Web_browsing_history>` so you can
+      tell which :wiki-pg:`URLs <URL>` to :wiki-pg:`click <Point_and_click>`
    #. Read the :xref:`browser <web-browser>`-rendered text
       :ref:`out loud <zen-aipaip>` and make any corrections in
       :ref:`tools-vs-code`
-   #. Verify each :xref:`link <URL>` in the section by clicking on it
+   #. Verify each :xref:`link <URL>` in the section by
+      :wiki-pg:`clicking <Point_and_click>` on it
+   #. Review parts of the :ref:`.rst file <tools-restructured-text>` that do
+      not show up as :wiki-pg:`white <Web_colors>` in the
+      :ref:`RST preview extension <tools-vs-code>`
+   #. When you see :term:`AAAAAA` in the :wiki-pg:`webpage <Webpage>`, read it
+      :ref:`out loud <zen-aipaip>` as *alnoki's apps*:
+
+      .. csv-table:: Grammar
+         :header: Correct, NO!!!!!!!!!
+         :align: center
+
+         :term:`AAAAAA` **are** splendid, :term:`AAAAAA` **is** doomed
 
 .. _writing-proofread-changed:
 

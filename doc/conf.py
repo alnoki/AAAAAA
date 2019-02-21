@@ -235,15 +235,15 @@ extlinks = {
 
 # Base urls used by xrefs extension
 url = {
+    'Wiki pg': 'https://en.wikipedia.org/wiki/',  # Article
     'GitHub': 'https://github.com/',
     'YT vid': 'https://www.youtube.com/watch?v=',  # Video
     'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
     'Stack OF': 'https://stackoverflow.com/questions/',  # Question
-    'Wiki pg': 'https://en.wikipedia.org/wiki/',  # Article
     'VS Code ext': 'https://marketplace.visualstudio.com/items?itemName=',
     'VS Code doc': 'https://code.visualstudio.com/docs/',
     'docutils': 'http://docutils.sourceforge.net/',
-    'GitHub help': 'https://help.github.com/articles/',
+    'GitHub help': 'https://help.github.com/en/articles/',
     'RealPython': 'https://realpython.com/',
     'conda-forge': 'https://anaconda.org/conda-forge/',
     'git-scm': 'https://git-scm.com/',
@@ -302,8 +302,6 @@ xref_links = {
         "reStructuredText documentation", url['docutils'] + 'rst.html'),
     'quick-reST': ("Quick reST reference",
                    url['docutils'] + 'docs/user/rst/quickref.html'),
-    'Mac': ('Mac', url['Wiki pg'] + 'Macintosh_operating_systems'),
-    'Linux': ('Linux', url['Wiki pg'] + 'Linux'),
     'Wikipedia': ('Wikipedia', 'https://www.wikipedia.org'),
     'Google': ('Google', 'https://www.google.com'),
     'Garmin': ("Garmin Ltd.", url['Wiki pg'] + 'Garmin'),

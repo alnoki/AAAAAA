@@ -12,8 +12,8 @@ start there
 
 This guide explains, with more depth than the
 :ref:`examples <examples>` section, the various :ref:`tools-python` and
-:wiki-pg:`finance` concepts associated with :term:`AAAAAA`, while presenting a
-closer look at the :xref:`source code <source-code>`
+:wiki-pg:`finance <Finance>` concepts associated with :term:`AAAAAA`, while
+presenting a closer look at the :xref:`source code <source-code>`
 
 .. tip::
    Keep on hitting the :guilabel:`Next` button at the top or the bottom of the

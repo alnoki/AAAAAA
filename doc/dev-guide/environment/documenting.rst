@@ -12,8 +12,8 @@ Documenting
    :xref:`settings.json <VS-Code-settings>` so that you can use
    :ref:`Conda <conda:starting-conda>`:
 
-   * On a :xref:`Mac`, add the following options to configure
-     :xref:`bash login mode invocation<bash-man-page>`:
+   * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, add the following
+     options to configure :xref:`bash login mode invocation<bash-man-page>`:
 
      .. code-block:: json
 
@@ -54,13 +54,13 @@ Documenting
 #. Configure the :xref:`VS-Code-terminal` to automatically
    :ref:`activate <conda:activate-env>` the :term:`a6 evironment <a6>`:
 
-   * On a :xref:`Mac`, there is no :xref:`bash <bash-man-page>` equivalent to
-     the ``/K`` :xref:`cmd.exe option <cmd.exe-invocation>`, so the easiest
-     way to :ref:`activate <conda:activate-env>` the
-     :term:`a6 environment <a6>` is to add
-     the following line to :xref:`~/.bash_profile <bash-man-page>`, which will
-     execute any time a :xref:`bash login mode <bash-man-page>` session starts
-     (even outside of the
+   * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, there is no
+     :xref:`bash <bash-man-page>` equivalent to the ``/K``
+     :xref:`cmd.exe option <cmd.exe-invocation>`, so the easiest way to
+     :ref:`activate <conda:activate-env>` the :term:`a6 environment <a6>` is to
+     add the following line to :xref:`~/.bash_profile <bash-man-page>`, which
+     will execute any time a :xref:`bash login mode <bash-man-page>` session
+     starts (even outside of the
      :xref:`VS Code integrated terminal <VS-Code-terminal>`):
 
      .. code-block:: text
@@ -84,11 +84,12 @@ Documenting
    the :xref:`command-palette` to
    :xref:`select the intepreter <VS-Code-interpreter>` for :term:`a6`
 
-   * This should add a setting for your machine-specific path to
-     :xref:`settings.json <VS-Code-settings>`. If it is added to ``WORKSPACE
-     SETTINGS`` in :xref:`settings.json <VS-Code-settings>`, make sure to
-     put it in ``USER SETTINGS`` instead
-   * On a :xref:`Mac`, this should look like:
+   * This should add a setting for your :wiki-pg:`computer <Computer>`-specific
+     :wiki-pg:`path <Path_(computing)>` to
+     :xref:`settings.json <VS-Code-settings>`. If it is added to
+     ``WORKSPACE SETTINGS`` in :xref:`settings.json <VS-Code-settings>`, make
+     sure to put it in ``USER SETTINGS`` instead
+   * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, this should look like:
 
      .. code-block:: json
 

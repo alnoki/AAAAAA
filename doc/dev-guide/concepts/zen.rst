@@ -55,7 +55,9 @@ The spirit of alnoki's apps
    easy to understand and test
 #. Add content to :ref:`versions <version-list>` incrementally, like you are
    making a :xref:`mvp-development`
-
+#. Add an ``index.rst`` in
+   :ref:`documentation directories <concepts-documentation-structure>` so you
+   can find what you are looking for
 
 ***************
 Further reading
