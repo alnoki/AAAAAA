@@ -9,11 +9,15 @@ Code
 
 .. note::
 
-   The :ref:`Tools: Python <tools-python>` section explains how
-   :ref:`Python` works and the :ref:`user guide <user-intro>` is a walkthrough
-   of :xref:`software <software>` features in :term:`AAAAAA`, but
-   this is an elaboration of the specific components in :term:`AAAAAA` from a
+   The :ref:`concepts-tools` section explains general :ref:`tools-python` and
+   :ref:`tools-pytest` concepts, the :ref:`user guide <user-intro>` is a
+   walkthrough of :xref:`software <software>` features in :term:`AAAAAA`,
+   and the :ref:`testing <testing-intro>` section is a walkthrough of
+   :ref:`pytest code <tools-pytest>`, but this is an elaboration of
+   specific components in :term:`AAAAAA` from a
    developer's perspective
+
+.. _concepts-code-structure:
 
 
 *********
@@ -24,13 +28,13 @@ Structure
    :header: Reference, Topic
    :align: center
 
+   :ref:`tools-python`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-pytest`, :term:`AAAAAA` conceptual explanation
    :ref:`python:tut-packages`, :xref:`Directory <directory>` structuring
    :doc:`pytest:goodpractices`, Integrating :ref:`test code <tools-pytest>`
 
 In accordance with :doc:`test code recommendations <pytest:goodpractices>`,
 :term:`AAAAAA` is structured as follows:
-
-.. _concepts-code-structure:
 
 .. code-block:: none
 

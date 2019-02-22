@@ -1,10 +1,8 @@
-.. This file will be tested to make sure it builds, but it isn't in a toctree
-
 :orphan:
 
 .. 0.3.0
 
-.. _my-label:
+.. _sample-doc:
 
 
 ##########

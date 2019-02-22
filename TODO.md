@@ -8,65 +8,29 @@
 1. Py like you rest, rest like you Py
 
 ## Proofreading followup
-1. Need a references link to print() (from homepage)
-1. The conda package is lowercase in-line
-   1. Need to update on the pages before the links page
-   1. Git is uppercase in-line
-1. https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
-   1. For the sphinx-autobuild
-   1. And for dev.py
-1. Search links for the word plot and link to matplotlib?
-1. Find all for tutorial/interpreter (some instances may not have python:)
-   1. Same for copy-paste
-   1. Finda all for open-source - should read "open-source" need hyphen
-      1. Have a documentation checklist for common ones
-1. The Internet should be capitalized at the end of a sentence, the Internet
-1. Tag the version comment before you go through the document
-1. Reading out loud in a british accent is way more fun
-1. doctest block like the user guide on the homepage and quickstart
-1. Directive should indent to the same leve as the text after the * or the #.
-   1. This is not easy after a *
-1. Add git-clone to the git links page
-1. Use conda tidy up when doing tests to make sure everything still works
-1. Get pytest from home dir to actually run....
-1. All toctrees should have
-   1. .. If you add to the toctree, explain what it is above
-1. Matplotlib plotting need to change packages setup phase
-   1. Also go off conda install procedure
-1. Link at the top of the user guide, per the writing tools procedure
-   1. :term:`AAAAAA` conceptual explanation
-1. Verify tools-sphinx links to :ref:`concepts-documentation-structure`
-1. dev-guide needs and index.rst and should be on documentation structure
-1. Do a name, function table (like in documentation.rst) on code.rst later
-1. Search for :ref:`Labels <ref-role>` - should have sphinx:ref-role
-1. See what sample-doc looks like
-   1. Beware of how the literalinclude directive will be affected
-1. After making a packaging section, link to it from the top of the code.rst pg
-1. Re-write/re-link zen in a later version
-1. Put an explanation on the procedures page
-1. What about pulling a branch from the aaaaaa repo?
-1. The index for procedures assumes you've already read everything else
-   1. It's going to be direct and basically notes to yourself
-1. Proofread with a silly voice
-1. RegEx link from Lance
-1. Using cite external links for the wiki page will create a new link
-   1. But, it is not error checked
-   1. xref does error checking.....
-1. Use the :guilabel:`raw` on GitHub
-   1. find all for view on github
-1. Find all for .rst - use a or an before it?
-1. Find all for document and replace with file?
 1. Use same ISO standard that Robinhood uses for dates in version list
    1. Mention in src updates, for planning the when instance attribute
 1. When diffing in stage changes, confirm new tag at top of .rst file
-1. 2.4 on what next has too much whitespace (just on mobile?)
-1. Take out warning about e4s not showing up
-1. Fire up conda capitalization in fundamentals.rst
-1. Link to "markup language"
 1. conda config --set ssl_verify false
 1. Conda create a6 from scratch should say from inside top dir
 1. Cite iso 8061 (or whatever robinhood uses)
    1. Put on versioning page for time explanation
+1. Take out "its okay for a role to break 79 characters"
+   1. Link to linter
+      1. Put in the quick reference of links to use when proofreading
+   1. Use rest linter output to fix
+   1. Instead, say just break inside the <>
+
+## Writing section
+1. Has VS Code section
+   1. Link to VS code in the tools page, and recipricollay
+   1. Show how to get tokens, language rulers, select colors, show web colors
+      1. Already have links
+1. Create a concepts settings page
+   1. Mention that you are showing them for help
+      1. Okay if people have their own prefs
+   1. Link to the vs code tools pg, procedures, etc.
+   1. Here you would also autodoc conf.py
 
 ## Versioning procedure updates
 1. The versioning procedures should say
@@ -75,6 +39,7 @@
 1. git push --follow-tags
 
 ## Git
+1. Make the Vim theme under settings concepts?
 1. git checkout --track origin/dev/0.4.0
    1. Will get from origin
 1. Explain .gitignore and link to project tree
@@ -99,6 +64,12 @@
    1. The real way to push master after tagging it
 
 ## Extensions and rtd
+1. It works, see 0.4.0 live build
+1. dist-docs should use the label for which sphinx exts come which sphinx
+   1. Then don't need to manage a table of included/not included
+1. Describe how xref is old (iso 8061) so just downloaded it outright
+   1. Link 8061 under financial?
+      1. It's how robinhood does it...
 1. As a documentation section under distributing section
 1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
 1. https://docs.readthedocs.io/en/stable/faq.html#my-project-isn-t-building-with-autodoc
@@ -118,6 +89,22 @@
 1. Get bibtex rubric to show up on rtd
 1. Review https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
    1. Update at necssary and take out the default options
+
+## Proofreading links to incorporate
+1. :wiki-pg:`Click <Point_and_click>`
+1. :wiki-pg:`Typing`
+1. :wiki-pg:`HTML`
+1. :wiki-pg:`Install <Installation_(computer_programs)>`
+1. :wiki-pg:`Download`
+1. :wiki-pg:`Filename extension <Filename_extension>`
+1. :wiki-pg:`File <Computer_file>`
+1. :wiki-pg:`Open-source_software`
+1. :wiki-pg:`Character <Character_(computing)>`
+1. :wiki-pg:`String <String_(computer_science)>`
+1. :wiki-pg:`Line <Line_(text_file)>`
+1. :wiki-pg:`Line break <Newline>`
+1. :wiki-pg:`Whitespace <Whitespace_character>`
+1. :wiki-pg:`Indentation <Indentation_(typesetting)>`
 
 # 0.5.0
 
@@ -158,7 +145,8 @@
    1. The packaging video on iPad may help
 1. Doc coverage is a sphinx extension
 
-## Test code
+## pytest
+1. Get pytest from home dir to actually run....
 1. Cite DO-178B
 1. Have a test index in the developer's guide
    1. The pytest entry on the links page should link here
@@ -169,8 +157,18 @@
 1. Document test_utilities.py
 1. Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger for tests
 1. tests should be motivated by the examples page
+1. On the code structure page, update the dir tree
+   1. Use a table for each of the components like on the other dir trees
+      1. name, function
 
-## Settings autodoc
+## Settings concept
+1. Vim and Git setup?
+1. VS Code
+   1. Colors via textmate
+   1. https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector
+      1. :guilabel:`Developer: Inspect TM Scopes` then add to settings.json
+   1. https://stackoverflow.com/questions/46689334
+   1. https://github.com/Microsoft/vscode/pull/29393
 1. :wiki-pg:`Web_colors` already in links
 1. link to "linter"
 1. Need a conf.py part of documentation concepts
@@ -226,6 +224,7 @@
 1. Use version 0.3 field list
 
 ## adp.py
+1. https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
 1. autodoc it on the procedures index page
 1. Cite the checklist manifesto
 1. arg parse from early on in python tutorial
@@ -279,6 +278,10 @@
    1. Have the wrapper look for this and then open up a new browser?
 
 ## plot directive
+1. Matplotlib plotting need to change packages setup phase
+   1. Also go off conda install procedure
+   1. Same for numpy and pandas? Since will embed them?
+1. Search links for the word plot and link to matplotlib tools section
 1. https://matplotlib.org/sampledoc/extensions.html
 1. Appears to be included with matplotlib
 1. https://matplotlib.org/devel/plot_directive.html
@@ -288,23 +291,19 @@
       1. See what happens when you do it from inside python
          1. What pops up?
 1. Try out on homepage
-
-## matplotlib theme feature implementation
+1. Search links for the word plot and link to matplotlib?
+1. Create a section in tools on Matplotlib
 1. matplotlib sample doc
 1. Have an example page in iPython
    1. Show link to the actual notebook so people can play around with it
 1. Integrate plots
 1. Link Jupyter
-1. Remove RTD Sphinx theme from conda
-   1. Use conda procedures to see where to remove
-   1. Remove mention in the rtd section
-   1. Use deprecated feature? Or just mention in rtd section
-1. Disclaimers for RTD
-   1. Can't render as well on mobile
-   1. Need to update the RTD theme section
 1. Try out log base 16 of factorial of x
 
+
 ## Packaging
+1. After making a packaging section, link to it from the top of the code.rst pg
+1. Reciprically link with the project directory structure
 1. https://anaconda.org/conda-forge/doc8
    1. This one is showing on anaconda cloud....
 1. Tools section on PyPI
@@ -349,6 +348,7 @@
    1. May enable module index
 
 ## myPy
+1. ttps://code.visualstudio.com/docs/python/settings-reference#_mypy
 1. MyPy type linter
    1. https://www.python.org/dev/peps/pep-0526/
    1. https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html

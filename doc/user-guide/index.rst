@@ -15,9 +15,19 @@ This guide explains, with more depth than the
 :wiki-pg:`finance <Finance>` concepts associated with :term:`AAAAAA`, while
 presenting a closer look at the :xref:`source code <source-code>`
 
+.. csv-table:: Select references
+   :header: Reference, Topic
+   :align: center
+
+   :ref:`tools-python`, :term:`AAAAAA` conceptual explanation
+   :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
+   :xref:`Python` (recommended tutorial)"
+   :doc:`python:tutorial/index`, Official tutorial
+
 .. tip::
-   Keep on hitting the :guilabel:`Next` button at the top or the bottom of the
-   :xref:`webpage <webpage>`!
+
+   Keep on :wiki-pg:`clicking <Point_and_click>` the :guilabel:`Next` button
+   at the top or the bottom of the :xref:`webpage <webpage>`!
 
    It will allow you to sequentially visit every :xref:`webpage <webpage>` in
    :term:`AAAAAA` documentation in a logical order

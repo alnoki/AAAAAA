@@ -1,4 +1,4 @@
-.. _distribute-documentation:
+.. _dist-documentation:
 
 #############
 Documentation

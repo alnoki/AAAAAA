@@ -21,7 +21,7 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 #. Have STUPID simple tests. [#]_ Don't recursively "test the test code"
 #. Documenting & testing adds perspective beyond
    :xref:`source code <source-code>` development alone
-#. Consider :xref:`DO-178B` as a model for software design assurance [#]_
+#. Consider :wiki-pg:`DO-178B` as a model for software design assurance [#]_
 #. Legacy conventions shant prevent the adoption of a new worthwhile philosopy
 #. Play around and "whiteboard" :xref:`software <open-source>` during initial
    stages [#]_
@@ -71,11 +71,11 @@ Need some more inspiration? Try::
 
 .. [#] Acronym from :xref:`Corey Schafer <Corey-Schafer-vids>`
 .. [#] From Software Requirements Documents (SWRDs) and Software Design
-   Documents (SDDs) standards at :xref:`Garmin`
+   Documents (SDDs) standards at :wiki-pg:`Garmin`
 .. [#] From a tip that embedded systems code should be "stupid simple", given
    by Daniel Santos, co-founder of :xref:`219-Design`
-.. [#] :xref:`AHRS` products from :xref:`Garmin` are
-   :xref:`DO-178B Level A<DO-178B>`
+.. [#] :wiki-pg:`AHRS <Attitude_and_heading_reference_system>` products from
+   :wiki-pg:`Garmin` are :wiki-pg:`DO-178B Level A <DO-178B>`
 .. [#] From a comment by Brett Glasner, that whiteboarding is the most
    fun part of :xref:`software <open-source>` design
 .. [#] Recommeded in :xref:`Willing-Sphinx`

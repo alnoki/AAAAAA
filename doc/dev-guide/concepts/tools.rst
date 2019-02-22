@@ -47,6 +47,7 @@ specific :xref:`Python` considerations in :term:`AAAAAA` like syntax and
    :doc:`python:faq/programming`, Advanced technical information
    :doc:`The Python interpreter <tutorial/interpreter>`, "Mechanism that
    executes :xref:`source code <source-code>`"
+   :ref:`Code structure <concepts-code-structure>`, :term:`AAAAAA` components
    :ref:`Code concepts <concepts-code>`, ":term:`AAAAAA` usage
    (syntax, structure)"
    :ref:`AAAAAA user guide <user-intro>`, ":term:`AAAAAA` usage
@@ -264,9 +265,10 @@ Sphinx
 :doc:`Sphinx <sphinx:intro>` is the documentation engine that
 :ref:`builds <sphinx-building-documentation>` the
 the documentation :xref:`website <website>` for :term:`AAAAAA` and even for
-:doc:`Python itself <py-dev-guide:documenting>`. Sphinx is built on
+:doc:`Python itself <py-dev-guide:documenting>`. Sphinx uses
 :ref:`tools-restructured-text` (``reST``), a particular style of
-:wiki-pg:`markup language <Markup_language>`
+:wiki-pg:`markup language <Markup_language>`, which it converts to
+:wiki-pg:`HTML` when :ref:`building a website <sphinx-building-documentation>`
 
 :doc:`Sphinx <sphinx:intro>` has a
 :ref:`table of contents <sphinx:toctree-directive>` feature, which provides a
@@ -308,6 +310,8 @@ functionality and several are used in :term:`AAAAAA`:
    :doc:`conf.py <sphinx:usage/configuration>`, Configuration settings
    :ref:`tools-sphinx-autobuild`, "
    :ref:`Automatic documentation building <sphinx-autobuilding>`"
+   :ref:`Documentation structure <concepts-documentation-structure>`, "
+   :term:`AAAAAA` components"
    :ref:`Sphinx procedures <sphinx-procedures>`, :term:`AAAAAA` usage
 
 .. _tools-restructured-text:
@@ -329,7 +333,8 @@ block of text
 :wiki-pg:`Files <Computer_file>` that contain
 :doc:`reST <sphinx:usage/restructuredtext/basics>` have an ``.rst``
 :wiki-pg:`extension <Filename_extension>`, and :ref:`tools-sphinx` converts
-them whenever :ref:`documentation is built <sphinx-building-documentation>`
+them to :wiki-pg:`HTML` whenever
+:ref:`documentation is built <sphinx-building-documentation>`
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -350,9 +355,10 @@ them whenever :ref:`documentation is built <sphinx-building-documentation>`
 
 Many :ref:`tools-sphinx` documentation :xref:`website <website>` have an
 :guilabel:`Edit on GitHub` (or similar) feature at
-the top of each :xref:`webpage <webpage>`. This feature will :xref:`link <URL>`
-to the :doc:`reST <sphinx:usage/restructuredtext/basics>` file that
-:ref:`tools-sphinx` used to create the :xref:`webpage <webpage>`
+the top/bottom of each :xref:`webpage <webpage>`. This feature will
+:xref:`link <URL>` to the
+:doc:`reST file <sphinx:usage/restructuredtext/basics>`
+that :ref:`tools-sphinx` used to create the :xref:`webpage <webpage>`
 
 .. tip::
 
@@ -360,6 +366,10 @@ to the :doc:`reST <sphinx:usage/restructuredtext/basics>` file that
    :doc:`reST <sphinx:usage/restructuredtext/basics>` component from the
    :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, via the
    :guilabel:`Edit on GitHub` feature
+
+   After :wiki-pg:`clicking <Point_and_click>` :guilabel:`Edit on GitHub`, look
+   for a :guilabel:`Raw` button, which should show you the
+   :doc:`reST <sphinx:usage/restructuredtext/basics>`
 
 .. _tools-read-the-docs:
 
@@ -560,6 +570,8 @@ algorithm development, and can quickly render :xref:`LaTeX`
    :xref:`Markdown`, "Syntax for making :xref:`links <URL>`,
    :xref:`tables <tables-generator>`, etc."
    :xref:`tables-generator`, Syntax generator
+   :ref:`Notebook structure <concepts-jupyter-nbs-structure>`, "
+   :term:`AAAAAA` components"
 
 The interactive style of :xref:`Jupyter Notebooks <Jupyter>` make it easy to
 analyze data with numerical :ref:`conda packages <conda:concept-conda-package>`
@@ -624,6 +636,8 @@ and additional functionality is provided by the
    :doc:`pytest <pytest:index>`, Official documentation
    :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
    :doc:`pytest tutorials <pytest:contents>`, Official tutorials
+   :ref:`Code structure <concepts-code-structure>`, :term:`AAAAAA` components
+   :ref:`testing <testing-intro>`, :term:`AAAAAA` walkthrough
    :ref:`pytest procedures <pytest-procedures>`, :term:`AAAAAA` usage
 
 

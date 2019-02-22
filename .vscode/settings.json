@@ -7,7 +7,27 @@
     "workbench.colorTheme": "Default Dark+",
     "editor.tokenColorCustomizations": {
         "comments": "#3CB371", // MediumSeaGreen
-        "strings": "#FF00FF" // Fuchsia
+        "strings": "#FF00FF", // Fuchsia
+        "textMateRules": [
+            {
+            "scope": "string.quoted.docstring.multi.python",
+            "settings": {
+                "foreground": "#98FB98" // PaleGreen
+                },
+            },
+            {
+                "scope": "string.other.interpreted.restructuredtext",
+                "settings": {
+                    "foreground": "#3CB371", // MediumSeaGreen
+                },
+            },
+            {
+                "scope": "support.directive.restructuredtext",
+                "settings": {
+                    "foreground": "#00FFFF", // Aqua
+                },
+            },
+        ],
     },
     "editor.minimap.enabled": false,
     "zenMode.centerLayout": false,

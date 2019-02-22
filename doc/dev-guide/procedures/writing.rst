@@ -56,7 +56,8 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
 
 #. Use the :ref:`VS Code command palette <tools-vs-code>` to select
    :guilabel:`File: New Untitled File`
-#. Copy-paste the below contents to the new file:
+#. :wiki-pg:`Copy and paste <Cut,_copy,_and_paste>` the below contents to the
+   new :wiki-pg:`file <Computer_file>`:
 
    .. code-block:: python
 
@@ -81,10 +82,11 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
    to have in your :ref:`tree <concepts-project-dir-tree>`
 #. Update ``where_to_start`` to the :xref:`directory <directory>` that you
    would like to write about
-#. Highlight the whole file
+#. Select all the :wiki-pg:`line <Line_(text_file)>` in the
+   :wiki-pg:`file <Computer_file>`
 #. Use the :ref:`command palette <tools-vs-code>` to select
-   :guilabel:`Python: Run Selection/Line in Python Terminal` then hit
-   :kbd:`enter` from inside the
+   :guilabel:`Python: Run Selection/Line in Python Terminal` then
+   :wiki-pg:`type <Typing>` :kbd:`enter` from inside the
    :ref:`VS Code integrated terminal <tools-vs-code>`
 
 .. _writing-new-topic:
@@ -238,7 +240,7 @@ things to watch out for
       :ref:`out loud <zen-aipaip>` as *alnoki's apps*:
 
       .. csv-table:: Grammar
-         :header: Correct, NO!!!!!!!!!
+         :header: Yes, NO!!!
          :align: center
 
          :term:`AAAAAA` **are** splendid, :term:`AAAAAA` **is** doomed

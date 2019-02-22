@@ -37,7 +37,7 @@ Modifications are explained in a way that
    * Add to :ref:`toctrees <tools-sphinx>`: :ref:`examples <examples>`,
      :ref:`developer guide intro <dev-intro>`,
      :ref:`testing intro <testing-intro>`,
-     :ref:`distribution intro <distribute-intro>`
+     :ref:`distribution intro <dist-intro>`
    * Add :ref:`tools-extlinks` support and :ref:`procedures <sphinx-extlinks>`
    * Add :term:`checklist` explanation from :ref:`book-checklist-manifesto`
 

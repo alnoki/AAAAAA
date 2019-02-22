@@ -47,7 +47,8 @@ Tidying up
       as possible from the official
       :ref:`conda channel <conda:channels-glossary>`
 
-#. Use :doc:`conda:commands/clean` to get rid of excess files:
+#. Use :doc:`conda:commands/clean` to get rid of excess
+   :wiki-pg:`files <Computer_file>`:
 
    .. code-block:: bash
 

@@ -85,7 +85,8 @@ Per :xref:`git-config`:
 
 #. Type :kbd:`Esc`, then ``:x``, then :kbd:`return`, to
    :xref:`save and close <Vim-cheatsheet>`
-#. To check that the credentials have updated:
+#. To check that the :wiki-pg:`user credentials <User_(computing)>` have
+   updated:
 
    .. code-block:: bash
 

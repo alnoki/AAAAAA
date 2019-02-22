@@ -17,15 +17,16 @@ create :term:`AAAAAA`, and the specific ways that they are used in
 
 The :ref:`testing section <testing-intro>` is *coming soon*
 
-The :ref:`distributing section <distribute-intro>` is *coming soon*
+The :ref:`distributing section <dist-intro>` is *coming soon*
 
 The :ref:`procedures section <procedures>` contains :term:`checklist`-like
 instructions for common development tasks, like
 :ref:`managing references with Sphinx <sphinx-managing-references>`
 
 .. tip::
-   Keep on hitting the :guilabel:`Next` button at the top or the bottom of the
-   :xref:`webpage <webpage>`!
+
+   Keep on :wiki-pg:`clicking <Point_and_click>` the :guilabel:`Next` button
+   at the top or the bottom of the :xref:`webpage <webpage>`!
 
    It will allow you to sequentially visit every :xref:`webpage <webpage>` in
    :term:`AAAAAA` documentation in a logical order

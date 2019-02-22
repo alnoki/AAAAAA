@@ -91,12 +91,10 @@ Automatically
 
       sphinx-autobuild sphinx-autobuild . _build/html -B -s 1
 
-   .. csv-table:: :xref:`sphinx-autobuild options <sphinx-autobuild>`
-      :header: Reference, Topic
-      :align: center
+   :xref:`sphinx-autobuild options <sphinx-autobuild>`:
 
-      ``-B``, Automatically open :xref:`browser <web-browser>`
-      ``-s``, Delay slightly [#]_ before opening :xref:`browser <web-browser>`
+      -B    Automatically open :xref:`browser <web-browser>`
+      -s    Delay slightly [#]_ before opening :xref:`browser <web-browser>`
 
    * This should automatically open a :xref:`web browser <web-browser>`
    * The :doc:`server <python:library/http.server>` should be at
@@ -453,9 +451,9 @@ Updating labels
    the :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
    :ref:`documentation root directory <concepts-project-dir-tree>`
 #. Use :ref:`intersphinx <sphinx-intersphinx>` on ``_build/html/objects.inv``
-   to inspect inspect :ref:`labels <ref-role>` for :term:`AAAAAA`
+   to inspect inspect :ref:`labels <sphinx:ref-role>` for :term:`AAAAAA`
 #. Verify the proper :ref:`label style <concepts-documentation-style>`
-#. Update any :ref:`labels <ref-role>` via the
+#. Update any :ref:`labels <sphinx:ref-role>` via the
    :ref:`VS code command palette <tools-vs-code>`:
    :guilabel:`Search: Replace in Files`
 
@@ -492,7 +490,7 @@ Referencing books
    * Consider
      :xref:`et. al conventions for multiple authors<cite-multiple-authors>`
 
-#. Add a :ref:`role <ref-role>` to :ref:`books <references-books>` via
+#. Add a :ref:`role <sphinx:ref-role>` to :ref:`books <references-books>` via
    ``:cite:`bib-book-name```
 
    * Use a :ref:`heading <concepts-documentation-example>` so that

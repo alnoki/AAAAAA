@@ -30,8 +30,8 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 Python?
 *******
 
-A bit of :xref:`Python` can be executed on most :xref:`computers <computer>`
-with minimal effort, using :py:func:`python:print`:
+You can use a bit of :xref:`Python` on most :xref:`computers <computer>` with
+minimal effort, using :py:func:`python:print`:
 
 #. Open the :xref:`command line <command-line>` on your
    :xref:`computer <computer>`:
@@ -44,21 +44,23 @@ with minimal effort, using :py:func:`python:print`:
    :wiki-pg:`Mac <Macintosh_operating_systems>`, :program:`Terminal`
    :wiki-pg:`Windows <Microsoft_Windows>`, :program:`Command Prompt`
 
-#. Type :command:`python` and hit :kbd:`return`
+#. :wiki-pg:`Type <Typing>` :command:`python` then :wiki-pg:`type <Typing>`
+   :kbd:`return`
 
    #. If this doesn't work then you probably don't have :xref:`Python`, but you
       can get it for :xref:`free <money`!
 
-      #. Download
-         :doc:`Miniconda <conda:user-guide/install/download>`
+      #. :doc:`Download Miniconda <conda:user-guide/install/download>`
       #. :ref:`Start up Conda <conda:starting-conda>`
-      #. Type :command:`python` and hit :kbd:`return`
+      #. :wiki-pg:`Type <Typing>` :command:`python` then
+         :wiki-pg:`type <Typing>` :kbd:`return`
 
          * Rejoice, for you have just started the
            :doc:`Python interpreter <tutorial/interpreter>`
 
 #. :xref:`Copy and paste <copy-paste>` the below contents to the
-   :xref:`command line <command-line>` then hit :kbd:`return`:
+   :xref:`command line <command-line>` then :wiki-pg:`type <Typing>`
+   :kbd:`return`:
 
    .. code-block:: python
 
@@ -71,7 +73,9 @@ with minimal effort, using :py:func:`python:print`:
       for i in range(5):
           print("Please be aware of the number", i)
 
-   * This :xref:`Python` input ends with an indented line, so hit
+   * This :xref:`Python` input ends with an indented
+     :wiki-pg:`line of code <Source_lines_of_code>`, so
+     :wiki-pg:`type <Typing>`
      :kbd:`return` twice after :xref:`copy-pasting <copy-paste>` the above
      contents
 
@@ -102,15 +106,17 @@ with minimal effort, using :py:func:`python:print`:
 
    .. admonition:: Don't forget
 
-      This :xref:`Python` input ends with an indented line, so hit
+      This :xref:`Python` input ends with an indented
+      :wiki-pg:`line of code <Source_lines_of_code>`, so
+      :wiki-pg:`type <Typing>`
       :kbd:`return` twice
 
 Congratulations!!!
 
 .. tip::
 
-   Hit the :guilabel:`Next` button at the top or the bottom of this
-   :xref:`webpage <webpage` to continue
+   :wiki-pg:`Click <Point_and_click>` the :guilabel:`Next` button at the top
+   or the bottom of this :xref:`webpage <webpage` to continue
 
 
 ******************

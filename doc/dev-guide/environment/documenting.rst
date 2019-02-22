@@ -128,7 +128,7 @@ Documenting
         git --version
 
 #. Install the :xref:`GitLens`
-#. Use the :xref:`command-palette` to :xref:`clone <git-clone>` the
+#. Use the :xref:`command-palette` to :git-doc:`git-clone` the
    :xref:`AAAAAA-repo`
 
    * This will include all of the

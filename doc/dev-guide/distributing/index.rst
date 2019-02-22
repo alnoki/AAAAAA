@@ -1,4 +1,4 @@
-.. _distribute-intro:
+.. _dist-intro:
 
 ############
 Distributing

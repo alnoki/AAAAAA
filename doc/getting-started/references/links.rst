@@ -85,15 +85,6 @@ Project structure
      tree
    * Adapted for the :ref:`directory tree procedure <writing-make-dir-tree>`
 
-#. :xref:`directory`
-
-   * Cataloging structure for :xref:`computer <computer>` data
-
-#. :wiki-pg:`Path <Path_(computing)>`
-
-   * Identifier for a :wiki-pg:`directory <Directory_(computing)>` or
-     :wiki-pg:`file <Computer_file>`
-
 #. :doc:`pip <python:installing/index>`
 
    * General installer for :ref:`packages <python:tut-packages>`
@@ -114,6 +105,10 @@ Text
 #. :ref:`python:tut-docstrings`
 
    * :ref:`python:comments` for specific :xref:`Python` components
+
+#. :py:func:`python:print`
+
+   * Display a :wiki-pg:`string <String_(computer_science)>`
 
 Types
 =====
@@ -276,7 +271,7 @@ Conda syntax
 
 #. :doc:`conda:user-guide/tasks/manage-environments`
 
-   * Exporting and importing :ref:`environment <conda:concept-conda-env>` files
+   * Exporting and importing :ref:`environment files<conda:concept-conda-env>`
 
 #. :doc:`conda:commands/clean`
 
@@ -447,9 +442,13 @@ General
 Core commands
 =============
 
+#. :git-doc:`git-clone`
+
+   * :wiki-pg:`Download` a :wiki-pg:`software <Software>` project
+
 #. :xref:`git-config`
 
-   * Setup user credentials
+   * Setup :wiki-pg:`user credentials <User_(computing)>`
 
 #. :xref:`git-log`
 
@@ -694,14 +693,13 @@ Managing references
 
 #. :xref:`intersphinx-inv-targets`
 
-   * Explains how to interpret
-     :doc:`objects.inv <sphinx:usage/extensions/intersphinx>` files when
-     using :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
+   * Interpretation of :doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
+     when using :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
 
 #. :xref:`intersphinx-inv-parser`
 
    * Sample code for analyzing
-     :doc:`objects.inv <sphinx:usage/extensions/intersphinx>` files
+     :doc:`objects.inv <sphinx:usage/extensions/intersphinx>` maps
 
 #. :xref:`intersphinx-numpy-matplotlib`
 
@@ -848,7 +846,7 @@ Syntax
 
    * Project structure management
 
-#. :ref:`Label role <ref-role>`
+#. :ref:`Label role <sphinx:ref-role>`
 
    * :doc:`Role <sphinx:usage/restructuredtext/roles>` syntax to
      :xref:`link <URL>` to arbritrary documentation locations
@@ -1031,30 +1029,61 @@ General
 
    * A system that manipulates information
 
+#. :wiki-pg:`User <User_(computing)>`
+
+   * Who is using a :wiki-pg:`computer <Computer>`
+
 #. :xref:`mobile-device`
 
    * A small, portable :xref:`computer <computer>`
 
-#. :xref:`source-code`
-
-   * A way to communicate to a :xref:`computer <computer>`
-
-#. :xref:`software`
-
-   * A structured collection of :xref:`source code <source-code>`
-
-#. :xref:`copy-paste`
+#. :wiki-pg:`Copy-paste <Cut,_copy,_and_paste>`
 
    * One way to share :xref:`source code <source-code>`
 
-#. :xref:`string`
+#. :wiki-pg:`Typing`
 
-   * How a :xref:`computer <computer>` stores text
+   * How to create :wiki-pg:`strings <String_(computer_science)>`
+
+#. :wiki-pg:`Web colors <Web_colors>`
+
+   * Colors for the :wiki-pg:`Internet`
+
+#. :wiki-pg:`Point and click <Point_and_click>`
+
+   * One way to use a :wiki-pg:`computer <Computer>`
+
+Software
+========
+
+#. :wiki-pg:`Source code <Source_code>`
+
+   * A way to communicate to a :xref:`computer <computer>`
+
+#. :wiki-pg:`Software`
+
+   * A structured collection of :xref:`source code <source-code>`
+
+#. :wiki-pg:`Line of code <Source_lines_of_code>`
+
+   * One portion of :wiki-pg:`source code <Source_code>`
 
 #. :wiki-pg:`Install <Installation_(computer_programs)>`
 
    * Provide :wiki-pg:`software <Software>` for a
      :wiki-pg:`computer <Computer>`
+
+Data storage
+============
+
+#. :wiki-pg:`Directory <Directory_(computing)>`
+
+   * Cataloging structure for :xref:`computer <computer>` data
+
+#. :wiki-pg:`Path <Path_(computing)>`
+
+   * Identifier for a :wiki-pg:`directory <Directory_(computing)>` or
+     :wiki-pg:`file <Computer_file>`
 
 #. :wiki-pg:`File <Computer_file>`
 
@@ -1064,13 +1093,30 @@ General
 
    * A way to identify the type of a :wiki-pg:`file <Computer_file>`
 
-#. :wiki-pg:`Web colors <Web_colors>`
+#. :wiki-pg:`Character <Character_(computing)>`
 
-   * Colors for the :wiki-pg:`Internet`
+   * Usually, a text symbol
 
-#. :wiki-pg:`Point and click <Point_and_click>`
+#. :wiki-pg:`String <String_(computer_science)>`
 
-   * One way to use a :wiki-pg:`computer <Computer>`
+   * How a :wiki-pg:`computer <Computer>` stores
+     :wiki-pg:`characters <Character_(computing)>`
+
+#. :wiki-pg:`Line <Line_(text_file)>`
+
+   * A sequence of :wiki-pg:`characters <Character_(computing)>`
+
+#. :wiki-pg:`Line break <Newline>`
+
+   * A way to indicate the end of a :wiki-pg:`line <Line_(text_file)>`
+
+#. :wiki-pg:`Whitespace <Whitespace_character>`
+
+   * A way to separate :wiki-pg:`characters <Character_(computing)>`
+
+#. :wiki-pg:`Indentation <Indentation_(typesetting)>`
+
+   * One style of :wiki-pg:`whitespace <Whitespace_character>`
 
 OS specifics
 ============
@@ -1140,6 +1186,11 @@ Online information
 
    * What a :xref:`web browser <web-browser>` shows
 
+#. :wiki-pg:`HTML`
+
+   * Standard :wiki-pg:`markup language <Markup_language>` for
+     :wiki-pg:`webpages <Webpage>`
+
 #. :xref:`URL`
 
    * A way to locate a :xref:`webpage <webpage>`
@@ -1181,17 +1232,18 @@ Software design standards
 
    * *Smart product* design consulting firm
 
-#. :xref:`DO-178B`
+#. :wiki-pg:`DO-178B`
 
    * :xref:`Software <software>` design standards for aviation devices
 
-#. :xref:`Attitude Heading and Reference System (AHRS) <AHRS>`
+#. :wiki-pg:`Attitude Heading and Reference System (AHRS)
+   <Attitude_and_heading_reference_system>`
 
-   * Aviation device certified to :xref:`DO-178B Level A <DO-178B>`
+   * Aviation device certified to :wiki-pg:`DO-178B Level A <DO-178B>`
 
-#. :xref:`Garmin`
+#. :wiki-pg:`Garmin Ltd. <Garmin>`
 
-   * Manufacturer of :xref:`DO-178B Level A <DO-178B>` aviation products
+   * Manufacturer of :wiki-pg:`DO-178B Level A <DO-178B>` aviation products
 
 #. :xref:`why-poignant-guide`
 

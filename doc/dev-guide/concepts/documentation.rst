@@ -142,18 +142,34 @@ Specific syntax
         via the :ref:`updating labels procedure <sphinx-update-labels>`
 
 #. See the :ref:`a6 packages table <concepts-packages-table>` for some sample
-   :ref:`csv-table <sphinx:table-directives>` syntax with appropriate line
-   breaks
+   :ref:`csv-table <sphinx:table-directives>` syntax with appropriate
+   :wiki-pg:`line breaks <Newline>`
 
    * You should only need ``"`` in :ref:`csv-tables <sphinx:table-directives>`
-     to escape line breaks for data entries, so don't use them for the
+     for :wiki-pg:`line breaks <Newline>` in data entries, so don't use them
+     for the
      :doc:`directive options <sphinx:usage/restructuredtext/directives>`
      listed after ``:header:`` (even if the ``:header:``
      :doc:`directive options <sphinx:usage/restructuredtext/directives>` have
      a line break)
 
-#. There should be regular text between two different
-   :ref:`links <references-links>` so that the
+#. If a :doc:`directive option <sphinx:usage/restructuredtext/directives>` has
+   a :wiki-pg:`line break <Newline>`, make sure to
+   :wiki-pg:`indent <Indentation_(typesetting)>` the following
+   :wiki-pg:`line <Source_lines_of_code>` if it starts with a
+   :doc:`role <sphinx:usage/restructuredtext/roles>`:
+
+   .. code-block:: rest
+
+      .. literalinclude:: sample-doc.rst
+         :caption: What the :ref:`reST <tools-restructured-text>` for
+            :ref:`sample-doc.rst <sample-doc>` looks like:
+
+   * Otherwise, simply :wiki-pg:`line break <Newline>` without
+     :wiki-pg:`indenting <Indentation_(typesetting)>`
+
+#. There should be regular :wiki-pg:`text <Character_(computing)>` between two
+   different :ref:`links <references-links>` so that the
    :ref:`links <references-links>` can clearly be differentiated:
 
    .. csv-table::
@@ -190,42 +206,51 @@ Specific syntax
         :ref:`Intersphinx <tools-intersphinx>`, "
         :ref:`Intersphinx <tools-intersphinx>`"
         :xref:`Git <git-manual>`, :xref:`Git <git-manual>`
+        :ref:`Miniconda <tools-anaconda>`, :ref:`Miniconda <tools-anaconda>`
 
 Whitespace
 ----------
 
-#. Use a blank line at the end of :ref:`.rst <tools-restructured-text>`
-   documents
-#. Indent 3 spaces (especially for
+#. Use a :wiki-pg:`blank line <Newline>` at the end of
+   :ref:`.rst files <tools-restructured-text>`
+#. :wiki-pg:`Indent <Indentation_(typesetting)>` 3
+   :wiki-pg:`spaces <Whitespace_character>` (especially for
    :xref:`nested lists <reST-list-indentation>`)
-#. Lines should be a maximum length of 79 characters, unless
+#. :wiki-pg:`Lines <Line_(text_file)>` should be a maximum length of 79
+   :wiki-pg:`characters <Character_(computing)>`, unless
 
    * :doc:`Role content <sphinx:usage/restructuredtext/roles>` can't be broken
      up
    * You are using a :rst:dir:`code-block` that itself conforms to :pep:`8` or
      similar
 
-#. Use 2 lines of whitespace above anything that is
-   :doc:`overlined <py-dev-guide:documenting>`
-#. Use a single, unescaped space before
+#. Use 2 :wiki-pg:`lines <Line_(text_file)>` of
+   :wiki-pg:`whitespace <Whitespace_character>` above any
+   :doc:`overlined headings <py-dev-guide:documenting>`
+#. Use a single :wiki-pg:`space <Whitespace_character>` before
    :doc:`footnotes <sphinx:usage/restructuredtext/basics>`
-#. Use a blank line after most
+#. Use a :wiki-pg:`blank line <Line_(text_file)>` after most
    :doc:`directives <sphinx:usage/restructuredtext/directives>`, like in an
    :xref:`admonition <admonition>`
-#. Indent a single space after ``#.`` or after ``*``
+#. :wiki-pg:`Indent <Indentation_(typesetting)>` a single
+   :wiki-pg:`space <Whitespace_character>` after ``#.`` or
+   after ``*``
 
    .. note::
 
       If using a
       :doc:`directive <sphinx:usage/restructuredtext/directives>` underneath
       ``#.`` or ``*``, make sure
-      its ``..`` aligns with the text that is singly-spaced after ``#.`` or
-      ``*``
+      its ``..`` :wiki-pg:`aligns <Indentation_(typesetting)>` with the
+      :wiki-pg:`text <Character_(computing)>`
+      that is singly-:wiki-pg:`spaced <Whitespace_character>` after ``#.``
+      or ``*``
 
 .. _concepts-documentation-example:
 
 Simple example
 ==============
+
 
 Per the :ref:`proofreading procedures <writing-proofread>`, there should be
 a :doc:`reST comment <usage/restructuredtext/basics>` with a
@@ -233,9 +258,14 @@ a :doc:`reST comment <usage/restructuredtext/basics>` with a
 :doc:`reST comment <usage/restructuredtext/basics>`)  at the top of
 :ref:`.rst <tools-restructured-text>` documents
 
+Though it is not included in a :ref:`toctree <sphinx:toctree-directive>`, check
+out :ref:`sample-doc.rst <sample-doc>`!
+
 .. literalinclude:: sample-doc.rst
+   :caption: What the :ref:`reST <tools-restructured-text>` for
+      :ref:`sample-doc.rst <sample-doc>` looks like:
    :language: rest
-   :lines: 5-
+   :lines: 3-
 
 .. tip::
 

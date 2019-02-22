@@ -231,42 +231,50 @@ intersphinx_mapping = {
 extlinks = {
     'wiki-pg': ('https://en.wikipedia.org/wiki/%s', ''),
     'real-py': ('https://realpython.com/%s', ''),
+    'git-doc': ('https://git-scm.com/docs/%s', ''),
 }
 
 # Base urls used by xrefs extension
 url = {
     'Wiki pg': 'https://en.wikipedia.org/wiki/',  # Article
     'GitHub': 'https://github.com/',
+    'VS Code doc': 'https://code.visualstudio.com/docs/',
+    'RealPython': 'https://realpython.com/',
+    'git-scm': 'https://git-scm.com/',
+    'VS Code': 'https://code.visualstudio.com/',
+
+    # Use extlinks for above
+
     'YT vid': 'https://www.youtube.com/watch?v=',  # Video
     'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
     'Stack OF': 'https://stackoverflow.com/questions/',  # Question
     'VS Code ext': 'https://marketplace.visualstudio.com/items?itemName=',
-    'VS Code doc': 'https://code.visualstudio.com/docs/',
     'docutils': 'http://docutils.sourceforge.net/',
     'GitHub help': 'https://help.github.com/en/articles/',
-    'RealPython': 'https://realpython.com/',
     'conda-forge': 'https://anaconda.org/conda-forge/',
-    'git-scm': 'https://git-scm.com/',
     'linux-die': 'https://linux.die.net/man/1/',
-    'VS Code': 'https://code.visualstudio.com/',
     'pypi': 'https://pypi.org/'
 }
 
 xref_links = {
-    'Python': ('Python', 'https://www.python.org'),
-    'xref-ext': ("Michael Jones' sphinx-xref repository",
-                 url['GitHub'] + 'michaeljones/sphinx-xref'),
+    # YouTube videos
     'Willing-Sphinx': ("Carol Willing's Practical Sphinx talk from PyCon 2018",
                        url['YT vid'] + '0ROZRNZkPS8'),
     'Yusuf-Sphinx-RTD': ("Mahdi Yusuf's Sphinx & Read the Docs screencast",
                          url['YT vid'] + 'oJsUvBQyHBs'),
+    # YouTube playlists
+    'Corey-Schafer-vids': ("Corey Schafer YouTube playlist: Python Tutorials",
+                           url['YT PL'] + '-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU'),
+
+    'Python': ('Python', 'https://www.python.org'),
+    'xref-ext': ("Michael Jones' sphinx-xref repository",
+                 url['GitHub'] + 'michaeljones/sphinx-xref'),
+
     'Anaconda': ('Anaconda', 'https://www.anaconda.com'),
     'AAAAAA-repo': ("AAAAAA repository", url['GitHub'] + 'alnoki/AAAAAA'),
     'Change-bash-prompt': ("Cyberciti.biz instructions to change bash prompt",
                            'https://www.cyberciti.biz/tips/howto-linux-unix-'
                            'bash-shell-setup-prompt.html'),
-    'Corey-Schafer-vids': ("Corey Schafer YouTube playlist: Python Tutorials",
-                           url['YT PL'] + '-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU'),
     'alnoki-repos': ("alnoki's GitHub repositories",
                      url['GitHub'] + 'alnoki?tab=repositories'),
     'intersphinx-numpy-matplotlib':
@@ -304,10 +312,7 @@ xref_links = {
                    url['docutils'] + 'docs/user/rst/quickref.html'),
     'Wikipedia': ('Wikipedia', 'https://www.wikipedia.org'),
     'Google': ('Google', 'https://www.google.com'),
-    'Garmin': ("Garmin Ltd.", url['Wiki pg'] + 'Garmin'),
     '219-Design': ("219 Design", 'https://www.219design.com/who-we-are/'),
-    'DO-178B': ('DO-178B', url['Wiki pg'] + 'DO-178B'),
-    'AHRS': ('AHRS', url['Wiki pg'] + 'Attitude_and_heading_reference_system'),
     'Python-quote-convention':
         ("Python quote convention", url['Stack OF'] + '56011/single-quotes-vs-'
          'double-quotes-in-python'),
