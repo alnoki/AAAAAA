@@ -300,7 +300,7 @@ Jupyter Notebooks
    :header: Name, Function
    :align: center
 
-   ``dev/``, Created during development
+   ``dev/``, Created during :wiki-pg:`development <Software_development>`
    ``src/``, Complements :ref:`source code <user-intro>`
    "``ledger.ipynb``, ``utilities.ipynb``, etc.", "
    :ref:`Jupyter Notebooks <tools-jupyter>`"

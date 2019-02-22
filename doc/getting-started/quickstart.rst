@@ -17,7 +17,8 @@ follow the below steps:
 #. :ref:`Start up conda <conda:starting-conda>` in the root
    :xref:`directory <directory>` of the
    :xref:`archive you just downloaded <AAAAAA-zip-archive>`
-#. Type :command:`python` and hit :kbd:`return`
+#. :wiki-pg:`Type <Typing>` :command:`python` then :wiki-pg:`type <Typing>`
+   :kbd:`return`
 
    * Rejoice, for you have just started the
      :doc:`Python interpreter <tutorial/interpreter>`

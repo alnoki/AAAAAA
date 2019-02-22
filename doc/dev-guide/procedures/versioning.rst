@@ -64,8 +64,10 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    * Repeat until the topic that you started with is back at the top of the set
      for the current :ref:`version <version-list>`
 
-#. Re-order the topics in a logically progressive development sequence
-#. Develop with a similar treatment of items/topics
+#. Re-order the topics in a logically progressive
+   :wiki-pg:`development <Software_development>` sequence
+#. :wiki-pg:`Develop <Software_development>` with a similar treatment of
+   items/topics
 
    * Start at the top and work your way down
    * Re-ordering shouldn't be necessary

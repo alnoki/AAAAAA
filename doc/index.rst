@@ -15,14 +15,16 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 .. glossary::
 
    AAAAAA
-      :xref:`Alnoki <alnoki-repos>`'s Algorithmic Analysis Asset Allocation
-      Applications (AAAAAA or
-      :wiki-pg:`double-triple Alfa <NATO_phonetic_alphabet>`), colloquially
-      referred to as *alnoki's apps*, are a
-      growing collection of :wiki-pg:`financial <Finance>` analysis
-      :wiki-pg:`software <Software>` tools. :xref:`source-code` is written in
-      the :xref:`Python computer language <Python>`, using additional
-      :ref:`packages <python:tut-packages>` developed by the
+      :xref:`Alnoki <alnoki-repos>`'s :wiki-pg:`Algorithmic <Algorithm>`
+      Analysis :wiki-pg:`Asset Allocation <Financial_asset>` Applications
+      (AAAAAA or :wiki-pg:`double-triple Alfa <NATO_phonetic_alphabet>`),
+      colloquially referred to as *alnoki's apps*, are a growing collection of
+      :wiki-pg:`financial <Finance>` analysis
+      :wiki-pg:`software <Software>` tools.
+      :wiki-pg:`Source code <Source_code>` is written in the
+      :xref:`Python computer language <Python>`, and uses
+      :ref:`packages <python:tut-packages>` that have been
+      :wiki-pg:`developed <Software_development>` by the
       :xref:`open-source` community
 
 

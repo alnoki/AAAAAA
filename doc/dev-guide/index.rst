@@ -20,8 +20,8 @@ The :ref:`testing section <testing-intro>` is *coming soon*
 The :ref:`distributing section <dist-intro>` is *coming soon*
 
 The :ref:`procedures section <procedures>` contains :term:`checklist`-like
-instructions for common development tasks, like
-:ref:`managing references with Sphinx <sphinx-managing-references>`
+instructions for common :wiki-pg:`development <Software_development>` tasks,
+like :ref:`managing references with Sphinx <sphinx-managing-references>`
 
 .. tip::
 

@@ -81,9 +81,9 @@ Need some more inspiration? Try::
 .. [#] Recommeded in :xref:`Willing-Sphinx`
 .. [#] Adapted from advice given by Tom C. Bryan of the :xref:`msfc-lab` (*fly
    like you test, test like you fly*) that flight testing and flight operations
-   should be identical - to indicate that :xref:`software <software>`
-   development in practice should match
-   :ref:`procedural documentation <procedures>`
+   should be identical - to indicate that
+   :wiki-pg:`software development <Software_development>` in practice should
+   match :ref:`procedural documentation <procedures>`
 .. [#] From :xref:`why-poignant-guide`
 .. [#] From a :xref:`Corey Schafer interview <schafer-interview>`: *I believe
    the most important lesson I’ve learned is that you should make content for

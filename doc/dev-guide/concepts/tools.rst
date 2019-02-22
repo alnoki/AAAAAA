@@ -493,7 +493,7 @@ Not included with Sphinx
 xref
 ^^^^
 
-:xref:`Michael Jones' xref extension <xref-ext>` helps manage
+:github:`Michael Jones' xref extension <michaeljones/sphinx-xref>` helps manage
 :ref:`links <references-links>` to arbitrary :xref:`URLs <URL>` that can not be
 accessed via :ref:`intersphinx <tools-intersphinx>`. A simple
 :ref:`role <tools-restructured-text>` is used to insert
@@ -558,8 +558,10 @@ Analysis
 Jupyter
 =======
 
-:xref:`Jupyter Notebooks <Jupyter>` enable an interactive style of
-algorithm development, and can quickly render :xref:`LaTeX`
+:xref:`Jupyter Notebooks <Jupyter>` enable an interactive
+:wiki-pg:`development <Software_development>` style for creating
+:wiki-pg:`algorithms <Algorithms>`, and
+can quickly render :xref:`LaTeX`
 
 .. csv-table:: Select references
    :header: Reference, Topic

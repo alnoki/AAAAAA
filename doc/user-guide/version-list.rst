@@ -16,8 +16,8 @@ Version list
    :ref:`versioning-procedures`, :term:`AAAAAA` usage
 
 Below is a list of versions of :term:`AAAAAA`, numbered according to
-:xref:`semantic versioning standards <semver>`, and dated in order of
-increasing chronological specificity : ``MAJOR.MINOR.PATCH`` (``YYYY-MM-DD``).
+:xref:`semantic versioning standards <semver>`, and dated according to
+:wiki-pg:`ISO 8601 <ISO_8601>`: ``MAJOR.MINOR.PATCH`` (``YYYY-MM-DD``).
 Features below are relevant to both :ref:`users <user-intro>` and
 :ref:`developers <dev-intro>` alike, and usually include a relevant
 :wiki-pg:`link <URL>` to somewhere in :term:`AAAAAA`

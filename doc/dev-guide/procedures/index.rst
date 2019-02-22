@@ -6,7 +6,8 @@
 Procedures
 **********
 
-Here are some :term:`checklist`-like instructions for common development tasks,
+Here are some :term:`checklist`-like instructions for common
+:wiki-pg:`development <Software_development>` tasks,
 which assume at least a rough understanding of concepts from the
 :ref:`developer guide <dev-intro>`
 

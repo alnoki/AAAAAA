@@ -13,7 +13,13 @@ start there
 This guide explains, with more depth than the
 :ref:`examples <examples>` section, the various :ref:`tools-python` and
 :wiki-pg:`finance <Finance>` concepts associated with :term:`AAAAAA`, while
-presenting a closer look at the :xref:`source code <source-code>`
+presenting a closer look at the :xref:`source code <source-code>`. You do not
+need any background knowledge on :xref:`Python` or
+:wiki-pg:`sofware <Software>` in general, as this guide is designed to teach
+you all that you need to know in order to use :term:`AAAAAA`. Concepts are
+presented in a logical sequence (as long as you keep
+:wiki-pg:`clicking <Point_and_click>` :guilabel:`Next`!) that is designed to
+be self-contained, but if you want more resources there a few select ones below
 
 .. csv-table:: Select references
    :header: Reference, Topic

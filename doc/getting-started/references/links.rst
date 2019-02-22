@@ -525,7 +525,8 @@ Documentation
 General
 =======
 
-#. :doc:`Python Developer's Guide to Documenting Python <py-dev-guide:documenting>`
+#. :doc:`Python Developer's Guide to Documenting Python
+   <py-dev-guide:documenting>`
 
    * Guide to general :doc:`Sphinx <sphinx:intro>` use
    * :doc:`reStructuredTest <usage/restructuredtext/basics>` style guide
@@ -559,7 +560,7 @@ Practical use
 
    * Common workflow tasks [#]_, like
      :ref:`checking links <sphinx-checking-links>`
-   * Team development ideologies
+   * Team :wiki-pg:`development <Software_development>` ideologies
 
 #. :xref:`sphinx-autobuild`
 
@@ -681,7 +682,7 @@ Managing references
    * Official :doc:`Sphinx <sphinx:intro>` documentation for referencing
      other :doc:`Sphinx <sphinx:intro>` projects
 
-#. :xref:`xref-ext`
+#. :github:`Michael Jones' xref extension <michaeljones/sphinx-xref>`
 
    * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to manage
      common :ref:`links <references-links>` in a project
@@ -945,14 +946,15 @@ VS Code
 General
 -------
 
-#. :wiki-pg:`Integrated development environment <Integrated_development_environment>`
+#. :wiki-pg:`Integrated development environment
+   <Integrated_development_environment>`
 
    * :wiki-pg:`Software` that is used to make :wiki-pg:`software <Software>`
 
 #. :xref:`VS-Code`
 
    * :xref:`Open-source <open-source>` environment for
-     :xref:`software <software>` development
+     :wiki-pg:`software development <Software_development>`
    * Has a collection of :xref:`extensions <VS-Code-extensions>` developed by
      the :xref:`open-source` community
 
@@ -1029,10 +1031,6 @@ General
 
    * A system that manipulates information
 
-#. :wiki-pg:`User <User_(computing)>`
-
-   * Who is using a :wiki-pg:`computer <Computer>`
-
 #. :xref:`mobile-device`
 
    * A small, portable :xref:`computer <computer>`
@@ -1053,6 +1051,10 @@ General
 
    * One way to use a :wiki-pg:`computer <Computer>`
 
+#. :wiki-pg:`Rendering <Rendering_(computer_graphics)>`
+
+   * Creating visualizations on a :wiki-pg:`computer <Computer>`
+
 Software
 ========
 
@@ -1064,6 +1066,18 @@ Software
 
    * A structured collection of :xref:`source code <source-code>`
 
+#. :wiki-pg:`User <User_(computing)>`
+
+   * Who is using :wiki-pg:`software <Software>`
+
+#. :wiki-pg:`Developer <Programmer>`
+
+   * Who is creating :wiki-pg:`software <Software>`
+
+#. :wiki-pg:`Development <Software_development>`
+
+   * Making :wiki-pg:`software <Software>`
+
 #. :wiki-pg:`Line of code <Source_lines_of_code>`
 
    * One portion of :wiki-pg:`source code <Source_code>`
@@ -1072,6 +1086,10 @@ Software
 
    * Provide :wiki-pg:`software <Software>` for a
      :wiki-pg:`computer <Computer>`
+
+#. :wiki-pg:`Algorithm`
+
+   * A :wiki-pg:`software <Software>` process
 
 Data storage
 ============
@@ -1117,6 +1135,10 @@ Data storage
 #. :wiki-pg:`Indentation <Indentation_(typesetting)>`
 
    * One style of :wiki-pg:`whitespace <Whitespace_character>`
+
+#. :wiki-pg:`ISO 8601 <ISO_8601>`
+
+   * How to describe when something happened
 
 OS specifics
 ============

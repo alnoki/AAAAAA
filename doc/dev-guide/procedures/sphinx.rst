@@ -254,8 +254,8 @@ Referencing external links
 
 For :ref:`links <references-links>` that can not be managed with
 :ref:`Intersphinx <sphinx-intersphinx>`, use either :ref:`sphinx-xref` or
-:ref:`sphinx-extlinks`. Most of the time you can use :ref:`sphinx-xref`, but if
-the :wiki-pg:`webpage <Webpage>` you want to :wiki-pg:`cite <Citation>` comes
+:ref:`sphinx-extlinks`. In general you can use :ref:`sphinx-xref`, but if the
+:wiki-pg:`webpage <Webpage>` you want to :wiki-pg:`cite <Citation>` comes
 from a :wiki-pg:`website <Website>` that you often use, it makes sense to use
 :ref:`sphinx-extlinks` as long as the :wiki-pg:`website <Website>` has a simple
 organizational pattern. For example, you could use :ref:`sphinx-extlinks` for:
@@ -278,13 +278,27 @@ organizational pattern. For example, you could use :ref:`sphinx-extlinks` for:
 
 It would not make sense to use :ref:`sphinx-extlinks` for:
 
-* :xref:`Stack Overflow questions <stack-overflow>`, like
-  https://stackoverflow.com/questions/1441010/the-shortest-possible-output-from-git-log-containing-author-and-date:
+#. :xref:`Stack Overflow questions <stack-overflow>`, like
+   https://stackoverflow.com/questions/1441010/the-shortest-possible-output-from-git-log-containing-author-and-date:
 
-  .. code-block:: rest
-     :caption: Inefficient :doc:`role <sphinx:usage/restructuredtext/roles>`
+   .. code-block:: rest
+      :caption: (Hypothetical) inefficient
+         :doc:`role <sphinx:usage/restructuredtext/roles>`
 
-     :stack-overflow:`1441010/the-shortest-possible-output-from-git-log-containing-author-and-date`
+      :stack-overflow:`1441010/the-shortest-possible-output-from-git-log-containing-author-and-date`
+
+   * How many :wiki-pg:`characters <Character_(computing)>` is that?
+
+#. :xref:`YouTube videos <YouTube>`, like
+   https://www.youtube.com/watch?v=0ROZRNZkPS8
+
+   .. code-block:: rest
+      :caption: (Hypothetical) confusing
+         :doc:`role <sphinx:usage/restructuredtext/roles>`
+
+      :yt-vid:`0ROZRNZkPS8`
+
+   * What does ``0ROZRNZkPS8`` mean?
 
 .. _sphinx-xref:
 
@@ -296,12 +310,14 @@ xref
    :align: center
 
    :ref:`tools-xref`, :term:`AAAAAA` conceptual explanation
-   :xref:`Sphinx xref extension <xref-ext>`, User manual
+   :github:`Sphinx xref extension <michaeljones/sphinx-xref>`, User manual
 
 #. Add your :xref:`URL <URL>` to :doc:`conf.py <sphinx:usage/configuration>`:
 
-   * If the :ref:`link <references-links>` has a common base
-     :xref:`URL <URL>`, like in a :xref:`YouTube video <YouTube>`, first add
+   * If the :ref:`link <references-links>` is from a common
+     :wiki-pg:`website <Website>` that has a
+     :ref:`complicated URL pattern <sphinx-reference-urls>` (like for a
+     :xref:`YouTube video <YouTube>`), first add
      the base to the :xref:`URL <URL>` mapping
      :ref:`dictionary <python:tut-dictionaries>`:
 
@@ -309,28 +325,34 @@ xref
 
         # Base urls used by xrefs extension
         url = {
-           'GitHub': 'https://github.com/',
-           'YT vid': 'https://www.youtube.com/watch?v=',  # Video
-           ...
+            'YT vid': 'https://www.youtube.com/watch?v=',  # Video
+            'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
+            'Stack OF': 'https://stackoverflow.com/questions/',  # Question
+            ...
 
    * Put your (potentially decomposed) :xref:`URL <URL>` in the ``xref_links``
-     mapping :ref:`dictionary <python:tut-dictionaries>` below the delimiter
-     :ref:`comment <python:comments>`
+     mapping :ref:`dictionary <python:tut-dictionaries>` below the
+     :ref:`comment <python:comments>` that reads ``New links below, sorted
+     links above``
 
      .. code-block:: python
 
         xref_links = {
-           'Python': ('Python', 'https://www.python.org'),
-           'xref-ext': ("Michael Jones' sphinx-xref repository",
-                       url['GitHub'] + 'michaeljones/sphinx-xref'),
-           ...
-           'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
-                          'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
-           # New links below, sorted links above
-           'doc8-newline-issue':
-               ("Doc8 newline issue fix", url['GitHub'] + 'vscode-restructuredtext/'
-               'vscode-restructuredtext/issues/84'),
-           }
+            # YouTube videos
+            'Willing-Sphinx': ("Carol Willing's Practical Sphinx talk from PyCon 2018",
+                               url['YT vid'] + '0ROZRNZkPS8'),
+            'Yusuf-Sphinx-RTD': ("Mahdi Yusuf's Sphinx & Read the Docs screencast",
+                                 url['YT vid'] + 'oJsUvBQyHBs'),
+            # YouTube playlists
+            'Corey-Schafer-vids': ("Corey Schafer YouTube playlist: Python Tutorials",
+                                   url['YT PL'] + '-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU'),
+            # Other
+            'Python': ('Python', 'https://www.python.org'),
+            ...
+            'semver': ("Semantic Versioning", 'https://semver.org/'),
+            # New links below, sorted links above
+            'ottobib': ('OttoBib', 'https://www.ottobib.com'),
+        }
 
 #. Add a :doc:`link role <sphinx:usage/restructuredtext/roles>` to
    :ref:`.rst <tools-restructured-text>` documentation using the appropriate
@@ -338,14 +360,14 @@ xref
    :doc:`role title <sphinx:usage/restructuredtext/roles>`:
 
    .. code-block:: rest
-      :caption: :xref:`xref-ext`
+      :caption: :xref:`Python`
 
-      :xref:`xref-ext`
+      :xref:`Python`
 
    .. code-block:: rest
-      :caption: :xref:`xref extension <xref-ext>`
+      :caption: :xref:`Python.org <Python>`
 
-      :xref:`xref extension <xref-ext>`
+      :xref:`Python.org <Python>`
 
 #. Add a description of the :xref:`URL <URL>` to
    :ref:`links <references-links>`

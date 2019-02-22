@@ -15,7 +15,7 @@ Code
    and the :ref:`testing <testing-intro>` section is a walkthrough of
    :ref:`pytest code <tools-pytest>`, but this is an elaboration of
    specific components in :term:`AAAAAA` from a
-   developer's perspective
+   :wiki-pg:`developer <Programmer>`'s perspective
 
 .. _concepts-code-structure:
 

@@ -1,14 +1,16 @@
 # 0.4.0
 
 ## Links audit: 1 at the start, 1 at the end of your session
-1. Use find all for the xref-key
-1. RealPython
-1. Wikipedia
-1. Git
 1. Py like you rest, rest like you Py
 
 ## Proofreading followup
+1. https://stackoverflow.com/questions/3814926/git-commit-date
+   1. https://git-scm.com/docs/git-show
+   1. Use git show -s --format=%cI 0.1.0 for version tags
+   1. Get of the time of the commit that got merged (before merge)
+   1. Was email on 0.1.0 wrong?
 1. Use same ISO standard that Robinhood uses for dates in version list
+   1. https://stackoverflow.com/questions/3814926/git-commit-date
    1. Mention in src updates, for planning the when instance attribute
 1. When diffing in stage changes, confirm new tag at top of .rst file
 1. conda config --set ssl_verify false
@@ -64,6 +66,10 @@
    1. The real way to push master after tagging it
 
 ## Extensions and rtd
+1. :term:`AAAAAA` was started with the sphinx-quickstart
+1. After you do quickstart, you have a project, but you want to upload it, etc.
+   1. Thus you need to think about extensions
+1. Need to update the requirements.txt files
 1. It works, see 0.4.0 live build
 1. dist-docs should use the label for which sphinx exts come which sphinx
    1. Then don't need to manage a table of included/not included
@@ -105,6 +111,11 @@
 1. :wiki-pg:`Line break <Newline>`
 1. :wiki-pg:`Whitespace <Whitespace_character>`
 1. :wiki-pg:`Indentation <Indentation_(typesetting)>`
+1. :wiki-pg:`User <User_(computing)>`
+1. :wiki-pg:`Developer <Programmer>`
+1. :wiki-pg:`Development <Software_development>`
+1. :wiki-pg:`Algorithm`
+1. :wiki-pg:`Rendering_(computer_graphics)`
 
 # 0.5.0
 
@@ -179,6 +190,7 @@
    1. Also then review the sphinx settings section
 
 ## src updates
+1. Give an example of initializing a transaction class
 1. ISO 8061 (or whatever robinhood uses) for dates
 1. xref in transaction source code
 1. Transaction class then explains how file structure is
@@ -278,6 +290,12 @@
    1. Have the wrapper look for this and then open up a new browser?
 
 ## plot directive
+1. On home page
+1. Feeling super fancy?
+   1. Exit interpreter
+   1. Conda install matplotlib
+   1. Then do the matplotlib code
+1. Use the in-line version that shows the sample and the plot
 1. Matplotlib plotting need to change packages setup phase
    1. Also go off conda install procedure
    1. Same for numpy and pandas? Since will embed them?
@@ -363,14 +381,7 @@
 1. :doc:`Typing module <python:library/typing>`
 
 ## Robinhood integration
-1. Services setup
-   1. Robinhood
-   1. Will require its own setup section, adding to .yaml, etc
-1. Can do later:
-   1. AlphaVantage
-   1. Google Sheets
-   1. EDGAR
-1. Use Corey Schafer password tutorial
+
 
 ## Downloading transaction history from Robinhood
 1. If transaction type isn't recognized, just skip over it
@@ -381,12 +392,6 @@
    1. What does a stock split or withdrawal look like?
       1. You can easily simulate withdrawal, then can put right back in
 
-## Robinhood API references
-1. [Unofficial Robinhood API documentation](https://github.com/sanko/Robinhood)
-1. GitHub Robinhood modules
-   1. [version with 736 stars](https://github.com/Jamonek/Robinhood)
-   1. [version with 30 stars](https://github.com/westonplatter/fast_arrow)
-   1. [version with 27 stars](https://github.com/mstrum/robinhood-python)
 
 ## Transaction updates
 1. When transaction init gets an error, should
@@ -400,6 +405,38 @@
 
 # 0.6.0
 
+## Robinhood time
+1. https://stackabuse.com/converting-strings-to-datetime-in-python/
+   1. Do strptime
+   1. https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+   1. Have a robinhood.py file
+      1. module variable robinhood.date_format
+         1. '%b %d %Y %I:%M%p' or similar
+1. https://docs.python.org/3/library/datetime.html#datetime.datetime
+   1. Looks like robinhood is already in correct format
+   1. https://github.com/sanko/Robinhood/blob/master/Order.md#place-an-order
+1. Assume all times are zulu to avoid confusion
+1. Use a Naive timezone, assume zulu
+
+## Robinhood integration
+1. Services setup
+   1. Robinhood
+   1. Will require its own setup section, adding to .yaml, etc
+1. Can do later:
+   1. AlphaVantage
+   1. Google Sheets
+   1. EDGAR
+1. Use Corey Schafer password tutorial
+1. [Unofficial Robinhood API documentation](https://github.com/sanko/Robinhood)
+1. GitHub Robinhood modules
+   1. [version with 736 stars](https://github.com/Jamonek/Robinhood)
+   1. [version with 30 stars](https://github.com/westonplatter/fast_arrow)
+   1. [version with 27 stars](https://github.com/mstrum/robinhood-python)
+1. RegEx
+   1. https://regexr.com/
+
+
+
 ## Zen page updates
 1. Go through and re-write/re-link once there are more places to link to
 
@@ -410,6 +447,12 @@
          1. https://realpython.com/python3-object-oriented-programming/
 
 ## Full proofread
+
+# 0.7.0
+
+## robinhood user data
+1. Have a .txt file that denotes portfolios
+1. Have a way you can use google drive to store data
 
 # 1.0.0 Package release
 
