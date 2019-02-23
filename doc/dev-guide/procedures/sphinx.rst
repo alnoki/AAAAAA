@@ -37,8 +37,9 @@ Per :xref:`Willing-Sphinx`:
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
    inside the :ref:`documentation root directory<concepts-project-dir-tree>` if
    it is not already :ref:`active <conda:activate-env>`
-#. From the :ref:`VS Code integrated terminal <tools-vs-code>`, make
-   documentation then start a :doc:`server <python:library/http.server>`
+#. From the :ref:`VS Code integrated terminal <tools-vs-code>`, make the
+   :wiki-pg:`HTML` for :wiki-pg:`documentation <Software_documentation>` then
+   start a :doc:`server <python:library/http.server>`
 
    .. code-block:: bash
 
@@ -46,10 +47,10 @@ Per :xref:`Willing-Sphinx`:
       python -m http.server
 
 #. Open http://localhost:8000/_build/html/index.html in a
-   :xref:`web browser <web-browser>` to view the documentation
-   :xref:`website <website>`
-#. You can update the :ref:`.rst <tools-restructured-text>` documents and
-   repeat the process, but don't start another
+   :xref:`web browser <web-browser>` to view the :xref:`website <website>` for
+   :wiki-pg:`documentation <Software_documentation>`
+#. You can update the :ref:`.rst files <tools-restructured-text>` and repeat
+   the process, but don't start another
    :doc:`server <python:library/http.server>` (unless you want an
    :xref:`http-socket-error`):
 
@@ -104,7 +105,7 @@ Automatically
 #. Keep in mind:
 
    * Once the :doc:`server <python:library/http.server>` is running, saved
-     changes to any :ref:`.rst <tools-restructured-text>` documents should
+     changes to any :ref:`.rst files <tools-restructured-text>` should
      cause your :xref:`web browser <web-browser>` to update whatever part of
      the :xref:`website <website>` you are viewing
    * You will still need to manually navigate to the :xref:`webpage <webpage>`
@@ -140,7 +141,7 @@ Using Intersphinx
 
    :ref:`tools-intersphinx`, :term:`AAAAAA` conceptual explanation
    :doc:`sphinx.ext.intersphinx <sphinx:usage/extensions/intersphinx>`, "
-   :doc:`Sphinx extension <sphinx:usage/extensions/index>` documentation"
+   Official :wiki-pg:`documentation <Software_documentation>`"
    :xref:`Intersphinx reference syntax <intersphinx-inv-targets>`, "Syntax
    explanation"
    :xref:`Intersphinx inventory parser <intersphinx-inv-parser>`, "For
@@ -195,10 +196,11 @@ Using Intersphinx
       ``rst:directive``, ``:rst:dir:``
       ``std:label``, ``:ref:``
 
-#. Documentation :xref:`webpages <webpage>`, under ``std:doc``, are arranged
-   like the project's :ref:`table of contents <sphinx:toctree-directive>`, so
-   you can figure out the
-   :doc:`role target <sphinx:usage/restructuredtext/roles>` from
+#. :xref:`Webpages <webpage>` of
+   :wiki-pg:`documentation <Software_documentation>`, under ``std:doc``, are
+   arranged like the project's
+   :ref:`table of contents <sphinx:toctree-directive>`, so you can figure out
+   the :doc:`role target <sphinx:usage/restructuredtext/roles>` from
    the :xref:`URL <URL>` that a :xref:`browser <web-browser>` displays for the
    particular :xref:`webpage <webpage>`. Consider
    https://docs.python.org/3/tutorial/introduction.html:
@@ -228,7 +230,7 @@ Using Intersphinx
 #. Add a description of the :xref:`link <URL>` to
    :ref:`links <references-links>`
 #. Add a :doc:`role <sphinx:usage/restructuredtext/roles>` to
-   documentation using the appropriate
+   :wiki-pg:`documentation <Software_documentation>` using the appropriate
    :ref:`capitalization <concepts-documentation-style>`. For example:
 
    .. code-block:: rest
@@ -245,7 +247,6 @@ Using Intersphinx
    :xref:`intersphinx-numpy-matplotlib` has instructions for referencing
    :doc:`NumPy <numpy:about>` and :doc:`Matplotlib <matplotlib:index>`, though
    standard procedures from above are usually sufficient for :term:`AAAAAA`
-   documentation
 
 .. _sphinx-reference-urls:
 
@@ -355,7 +356,7 @@ xref
         }
 
 #. Add a :doc:`link role <sphinx:usage/restructuredtext/roles>` to
-   :ref:`.rst <tools-restructured-text>` documentation using the appropriate
+   :ref:`.rst files <tools-restructured-text>` using the appropriate
    :ref:`capitalization <concepts-documentation-style>` and an optional
    :doc:`role title <sphinx:usage/restructuredtext/roles>`:
 
@@ -383,7 +384,7 @@ xref
      into :ref:`links <references-links>`, :xref:`URLs <URL>` can be sorted in
      **reasonably sized** batches
    * If you put a :ref:`link <references-links>` in
-     :ref:`.rst <tools-restructured-text>` documentation and in
+     :ref:`.rst files <tools-restructured-text>` and in
      :ref:`links <references-links>` first, you can bypass the delimiter
      :ref:`comment <python:comments>` altogether when
      adding to :ref:`conf.py <tools-sphinx>`
@@ -398,7 +399,8 @@ extlinks
    :align: center
 
    :ref:`tools-extlinks`, :term:`AAAAAA` conceptual explanation
-   :doc:`extlinks <sphinx:usage/extensions/extlinks>`, Official documentation
+   :doc:`extlinks <sphinx:usage/extensions/extlinks>`, "Official
+   :wiki-pg:`documentation <Software_documentation>`"
    :ref:`Using a references extension <sublime-with-sphinx:use the external links extension>`, "
    Related configuration and usage"
 
@@ -452,12 +454,8 @@ Checking links
 
 Per :xref:`Willing-Sphinx`:
 
-#. :ref:`End the active autobuild <sphinx-autobuilding>`
-   (which should leave ghost content at its particular :xref:`URL <URL>`),
-   then :ref:`serve a manual build <sphinx-building-manually>` for this,
-   since each process has an associated :xref:`URL <URL>` that must be
-   checked
-#. With a :ref:`manual build server running <sphinx-building-manually>`, use
+#. From inside the
+   :ref:`documentation root directory <concepts-documentation-structure>`, use
    the :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash

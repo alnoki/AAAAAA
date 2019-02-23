@@ -15,9 +15,10 @@ Documentation
    :align: center
 
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "Official
-   :xref:`Python` guide to documenting"
+   :xref:`Python` guide to :wiki-pg:`documenting <Software_documentation>`"
    :xref:`RealPython guide to documenting Python <documenting-python>`, "
-   General :xref:`Python` documentation practices"
+   General :wiki-pg:`documentation <Software_documentation>` practices for
+   :xref:`Python`"
 
 
 ******
@@ -28,7 +29,8 @@ Sphinx
 
    The :ref:`Tools: Sphinx <tools-sphinx>` section explains how
    :ref:`Sphinx <tools-sphinx>` works, but this is an elaboration of
-   specific documentation components in :term:`AAAAAA`
+   specific :wiki-pg:`documentation <Software_documentation>` components in
+   :term:`AAAAAA`
 
 .. _concepts-documentation-structure:
 
@@ -88,12 +90,13 @@ Documentation structure
    ``conf.py``, ":doc:`Configuration <sphinx:usage/configuration>` for
    :ref:`tools-sphinx`"
    "``Makefile`` , ``make.bat``", :ref:`sphinx-building-documentation`
-   ``index.rst`` (top-level) , ":term:`AAAAAA` documentation
-   :xref:`homepage <webpage>`"
+   ``index.rst`` (top-level) , ":xref:`homepage <webpage>` of
+   :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`"
    "``getting-started/`` , ``user-guide/``, etc.", "
-   Documentation :xref:`directories <directory>`"
+   :xref:`Directories <directory>` for
+   :wiki-pg:`documentation <Software_documentation>`"
    "``quickstart.rst`` , ``what-next.rst`` , etc. ", "
-   :ref:`tools-restructured-text` documents"
+   :wiki-pg:`Files <Computer_file>` with :ref:`tools-restructured-text`"
    ``refs.bib``, ":xref:`Citations <citation>` for
    :ref:`books <references-books>` (in :ref:`tools-bibtex` format)"
 
@@ -208,8 +211,8 @@ Specific syntax
         :xref:`Git <git-manual>`, :xref:`Git <git-manual>`
         :ref:`Miniconda <tools-anaconda>`, :ref:`Miniconda <tools-anaconda>`
 
-Whitespace
-----------
+Whitespace and line breaking
+----------------------------
 
 #. Use a :wiki-pg:`blank line <Newline>` at the end of
    :ref:`.rst files <tools-restructured-text>`
@@ -217,12 +220,14 @@ Whitespace
    :wiki-pg:`spaces <Whitespace_character>` (especially for
    :xref:`nested lists <reST-list-indentation>`)
 #. :wiki-pg:`Lines <Line_(text_file)>` should be a maximum length of 79
-   :wiki-pg:`characters <Character_(computing)>`, unless
+   :wiki-pg:`characters <Character_(computing)>`, unless you are using a
+   :rst:dir:`code-block` that itself conforms to :pep:`8` or an appropriate
+   standard
 
-   * :doc:`Role content <sphinx:usage/restructuredtext/roles>` can't be broken
-     up
-   * You are using a :rst:dir:`code-block` that itself conforms to :pep:`8` or
-     similar
+      * When you use a :wiki-pg:`line break <Newline>` for a
+        :doc:`role <sphinx:usage/restructuredtext/roles>`, do it between the
+        :doc:`title <sphinx:usage/restructuredtext/roles>` and the
+        :doc:`target <sphinx:usage/restructuredtext/roles>`
 
 #. Use 2 :wiki-pg:`lines <Line_(text_file)>` of
    :wiki-pg:`whitespace <Whitespace_character>` above any
@@ -256,7 +261,7 @@ Per the :ref:`proofreading procedures <writing-proofread>`, there should be
 a :doc:`reST comment <usage/restructuredtext/basics>` with a
 :ref:`version number <version-list>` tag (in the form of a
 :doc:`reST comment <usage/restructuredtext/basics>`)  at the top of
-:ref:`.rst <tools-restructured-text>` documents
+:ref:`.rst files <tools-restructured-text>`
 
 Though it is not included in a :ref:`toctree <sphinx:toctree-directive>`, check
 out :ref:`sample-doc.rst <sample-doc>`!
@@ -269,7 +274,7 @@ out :ref:`sample-doc.rst <sample-doc>`!
 
 .. tip::
 
-   The :ref:`.rst <tools-restructured-text>` documents in :term:`AAAAAA` should
+   The :ref:`.rst files <tools-restructured-text>` in :term:`AAAAAA` should
    clearly portray other relevant stylistic components. Look around in them for
    more examples
 
@@ -306,6 +311,9 @@ Jupyter Notebooks
    :ref:`Jupyter Notebooks <tools-jupyter>`"
 
 .. tip::
+
    This :xref:`AAAAAA-nbs` opens at the ``nbs/`` :xref:`directory <directory>`
-   and can render any :ref:`Jupyter Notebook <tools-jupyter>` in the
-   :xref:`AAAAAA-repo`
+   and can render any any :xref:`Jupyter Notebook<Jupyter>` from the
+   :github:`AAAAAA repository <alnoki/AAAAAA>` inside of a
+   :xref:`web browser <web-browser>`, even if you don't have
+   :xref:`Jupyter <Jupyter>`

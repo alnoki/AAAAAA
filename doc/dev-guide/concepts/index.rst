@@ -18,12 +18,14 @@ finished :wiki-pg:`dowloading <Download>` all of them
   :xref:`links <URL>` to :ref:`procedures <procedures>` or other specific
   instructions
 * :ref:`concepts-project-structure` describes the contents of the
-  :xref:`AAAAAA-repo` and provides :xref:`links <URL>` related to each
-  component
-* :ref:`concepts-documentation` describes the structure of contents related
+  :github:`AAAAAA repository <alnoki/AAAAAA>` and provides :xref:`links <URL>`
+  related to each component
+* :ref:`concepts-documentation` describes the
+  :wiki-pg:`files tructure <Computer_file>` of contents related
   to :ref:`tools-Sphinx` and :ref:`tools-Jupyter`, and provides
   :ref:`syntax guidelines <concepts-documentation-style>`
-* :ref:`concepts-code` describes the structure of contents related to
+* :ref:`concepts-code` describes the
+  :wiki-pg:`files tructure <Computer_file>` of contents related to
   :ref:`Python source code <tools-python>` and
   :ref:`pytest test code <tools-pytest>`, as well as some
   :ref:`syntax guidelines <concepts-code-style>`

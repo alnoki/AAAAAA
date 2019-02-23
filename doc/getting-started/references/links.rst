@@ -8,7 +8,8 @@ Links
 #####
 
 This is a centralized and comprehensive list of :xref:`online <internet>`
-information :xref:`cited <citation>` throughout :term:`AAAAAA` documentation,
+information :xref:`cited <citation>` throughout
+:wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`,
 in :xref:`URL` format
 
 :xref:`Links <URL>` are not necessarily in order, but :xref:`links <URL>` with
@@ -100,7 +101,8 @@ Text
 
 #. :ref:`python:comments`
 
-   * Documentation inside :xref:`code <source-code>`
+   * :wiki-pg:`Documentation <Software_documentation>` inside
+     :xref:`code <source-code>`
 
 #. :ref:`python:tut-docstrings`
 
@@ -218,7 +220,7 @@ Anaconda
 
 #. :doc:`anaconda:anaconda/index`
 
-   * Documentation for :xref:`Anaconda`
+   * Official :wiki-pg:`documentation <Software_documentation>`
 
 #. :doc:`Miniconda<conda:user-guide/install/index>`
 
@@ -374,11 +376,11 @@ Project management
 AAAAAA codebase
 ===============
 
-#. :xref:`AAAAAA-repo`
+#. ::github:`AAAAAA repository <alnoki/AAAAAA>`
 
-   * :xref:`GitHub` repository for :term:`AAAAAA` project contents
+   * :xref:`GitHub` repository for :term:`AAAAAA` project
 
-#. :xref:`alnoki-repos`
+#. :github:`alnoki's GitHub repositories <alnoki>`
 
    * Assorted :xref:`Jupyter Notebooks <Jupyter>` and
      :xref:`code <source-code>` from other tutorials
@@ -390,7 +392,8 @@ AAAAAA codebase
 
 #. :xref:`AAAAAA-zip-archive`
 
-   * Fastest way to access the :xref:`AAAAAA-repo`
+   * Quick way to :wiki-pg:`download <Download>` the
+     :github:`AAAAAA repository <alnoki/AAAAAA>`
 
 Versioning
 ==========
@@ -418,6 +421,10 @@ Git version control
 
 General
 =======
+
+#. :wiki-pg:`Version control <Version_control>`
+
+   * A way to track changes to :wiki-pg:`files <Computer_file>`
 
 #. :xref:`git-manual`
 
@@ -533,8 +540,8 @@ General
 
 #. :xref:`RealPython Guide to Documenting Python <documenting-python>`
 
-   * Recommended practices for documenting :xref:`Python`
-   * Tips and examples from :xref:`RealPython`
+   * Recommended :wiki-pg:`documentation <Software_documentation>` practices
+     :xref:`Python`
 
 Sphinx
 ======
@@ -544,12 +551,14 @@ Practical use
 
 #. :doc:`Sphinx <sphinx:intro>`
 
-   * Official documentation for the :doc:`Sphinx <sphinx:intro>`
-     documentation engine
+   * Official :wiki-pg:`documentation <Software_documentation>` for the
+     :doc:`Sphinx <sphinx:intro>` engine, which creates
+     :wiki-pg:`documentation <Software_documentation>`
 
 #. :doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`
 
-   * How to start a new documentation project
+   * How to start a new :wiki-pg:`documentation <Software_documentation>`
+     project
 
 #. :doc:`Matplotlib sampledoc tutorial <matplotlib-sampledoc:index>`
 
@@ -577,7 +586,8 @@ Practical use
 #. :doc:`HTTP server <python:library/http.server>`
 
    * :ref:`Python package <python:tut-packages>` that creates a
-     :xref:`website <website>` for viewing documentation
+     :xref:`website <website>` for viewing
+     :wiki-pg:`documentation <Software_documentation>`
 
 .. rubric:: Footnotes
 
@@ -608,12 +618,14 @@ Usage specifics
 #. :ref:`sphinx:toctree-directive`
 
    * :doc:`Directive <sphinx:usage/restructuredtext/directives>` for
-     creating project document structure
+     creating project :wiki-pg:`documentation <Software_documentation>`
+     structure
 
 #. :doc:`Autodoc extension <sphinx:usage/extensions/autodoc>`
 
    * :doc:`Sphinx extension <sphinx:usage/extensions/index>` for generating
-     documentation straight from :xref:`source code <source-code>`
+     :wiki-pg:`documentation <Software_documentation>` directly from
+     :xref:`source code <source-code>`
 
 #. :ref:`sublime-with-sphinx:use the external links extension`
 
@@ -635,7 +647,7 @@ Usage specifics
 #. :xref:`http socket error fix <http-socket-error>`
 
    * Potential problem (and solution) when
-     :ref:`building documentatoin <sphinx-building-documentation>`
+     :ref:`building documentation <sphinx-building-documentation>`
 
 #. :doc:`sphinx:usage/restructuredtext/domains`
 
@@ -649,13 +661,14 @@ With Read the Docs
 #. :xref:`Yusuf-Sphinx-RTD`
 
    * Setting up a project using :doc:`quickstart <sphinx:usage/quickstart>`
-   * :rst:dir:`toctree` and associated documentation structure
+   * :rst:dir:`toctree` and associated
+     :wiki-pg:`documentation <Software_documentation>` structure
    * Basic :ref:`tools-restructured-text` syntax
 
 #. :doc:`Read the Docs<rtfd:index>`
 
-   * :xref:`Online <internet>` repository for :xref:`software <software>`
-     documentation
+   * :xref:`Online <internet>` repository for
+     :wiki-pg:`software documentation <Software_documentation>`
 
 #. :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
 
@@ -679,8 +692,9 @@ Managing references
 
 #. :doc:`Intersphinx extension <sphinx:usage/extensions/intersphinx>`
 
-   * Official :doc:`Sphinx <sphinx:intro>` documentation for referencing
-     other :doc:`Sphinx <sphinx:intro>` projects
+   * Official :wiki-pg:`documentation <Software_documentation>`
+   * For :ref:`linking <references-links>` to other
+     :doc:`Sphinx <sphinx:intro>` projects
 
 #. :github:`Michael Jones' xref extension <michaeljones/sphinx-xref>`
 
@@ -777,7 +791,7 @@ Showing code
 #. :ref:`sphinx:python-roles`
 
    * :doc:`Sphinx Domain <sphinx:usage/restructuredtext/domains>` for
-     documenting :xref:`Python` components
+     :xref:`Python` component :wiki-pg:`documentation <Software_documentation>`
 
 #. :doc:`Read the Docs sample Python module <demo/api>`
 
@@ -807,8 +821,7 @@ General
 
 #. :xref:`reST-documentation`
 
-   * Official :doc:`reST <sphinx:usage/restructuredtext/basics>`
-     documentation
+   * Official :wiki-pg:`documentation <Software_documentation>`
 
 #. :xref:`quick-reST`
 
@@ -850,7 +863,8 @@ Syntax
 #. :ref:`Label role <sphinx:ref-role>`
 
    * :doc:`Role <sphinx:usage/restructuredtext/roles>` syntax to
-     :xref:`link <URL>` to arbritrary documentation locations
+     :xref:`link <URL>` to arbritrary
+     :wiki-pg:`documentation <Software_documentation>` locations
 
 #. :xref:`admonition`
 
@@ -873,13 +887,14 @@ Engine-agnostic tools
 
 #. :xref:`LaTeX`
 
-   * Typesetting system for documenting equations in
+   * System for :wiki-pg:`documentating <Software_documentation>` equations in
      :xref:`Jupyter Notebooks <Jupyter>` and in
      :doc:`Sphinx <sphinx:intro>`
 
 #. :wiki-pg:`Markup language <Markup_language>`
 
-   * A fancy way to create documents in a :wiki-pg:`computer <Computer>`
+   * A way to create :wiki-pg:`documentation <Software_documentation>` in
+     a :wiki-pg:`computer <Computer>`
 
 #. :xref:`Markdown`
 
@@ -905,7 +920,7 @@ General
 
    * Interactive :xref:`Python` environment
    * :xref:`Code <source-code>`, :xref:`LaTeX`, :xref:`Markdown`, and plotting
-     in one document
+     in one :wiki-pg:`file <Computer_file>`
 
 #. :xref:`Schafer-Jupyter`
 
@@ -1031,6 +1046,9 @@ General
 
    * A system that manipulates information
 
+Interfaces
+==========
+
 #. :xref:`mobile-device`
 
    * A small, portable :xref:`computer <computer>`
@@ -1055,6 +1073,10 @@ General
 
    * Creating visualizations on a :wiki-pg:`computer <Computer>`
 
+#. :wiki-pg:`Scrolling`
+
+   * Moving visualizations around
+
 Software
 ========
 
@@ -1065,6 +1087,10 @@ Software
 #. :wiki-pg:`Software`
 
    * A structured collection of :xref:`source code <source-code>`
+
+#. :wiki-pg:`Documentation <Software_documentation>`
+
+   * Describes how :wiki-pg:`software <Software>` works
 
 #. :wiki-pg:`User <User_(computing)>`
 
@@ -1090,6 +1116,10 @@ Software
 #. :wiki-pg:`Algorithm`
 
    * A :wiki-pg:`software <Software>` process
+
+#. :wiki-pg:`Linter <Lint_(software)>`
+
+   * Check :wiki-pg:`source code <Source_code>` for syntax or style errors
 
 Data storage
 ============
@@ -1136,9 +1166,26 @@ Data storage
 
    * One style of :wiki-pg:`whitespace <Whitespace_character>`
 
+Time
+====
+
+#. :wiki-pg:`Time`
+
+   * The passage of events
+
+#. :wiki-pg:`Time standard <Time_standard>`
+
+   * A way to measure :wiki-pg:`time <Time>`
+
 #. :wiki-pg:`ISO 8601 <ISO_8601>`
 
-   * How to describe when something happened
+   * A specific way to represent :wiki-pg:`time <Time>` data
+
+#. :wiki-pg:`UTC <Coordinated_Universal_Time>`
+
+   * A :wiki-pg:`time standard <Time_standard>` that works with
+     :wiki-pg:`ISO 8601 <ISO_8601>`
+
 
 OS specifics
 ============
@@ -1189,7 +1236,8 @@ Online information
 
 #. :xref:`internet`
 
-   * An interconnected system of information
+   * An interconnected system of :wiki-pg:`computers <Computer>` and
+     information
 
 #. :xref:`website`
 
@@ -1245,6 +1293,11 @@ Online information
 
    * Community :wiki-pg:`website <Website>` that provides answers to
      :wiki-pg:`computer <Computer>` questions
+
+#. :wiki-pg:`Host <Host_(network)>`
+
+   * A :wiki-pg:`computer <Computer>` that provides resources to other
+     :wiki-pg:`computers <Computer>` via the :wiki-pg:`Internet`
 
 
 Software design standards

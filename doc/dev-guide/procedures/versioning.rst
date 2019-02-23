@@ -88,8 +88,8 @@ Starting a new version
    :ref:`version numbers <version-list>` (and potentially copyright year)
 #. Add an entry to the :ref:`version list <version-list>`
 
-   * Document changes as you go, in a way that
-     :xref:`tells the codebase what to do <commit-conventions>`
+   * :wiki-pg:`Document <Software_documentation>` changes as you go, in a way
+     that :xref:`tells the codebase what to do <commit-conventions>`
 
 #. :ref:`Tidy up conda <conda-tidy-up>`
 #. :ref:`versioning-td3`
@@ -124,12 +124,16 @@ At this point you should be working on a
    * Feel free to add some :ref:`to-dos <versioning-td3>` for later, though
 
 #. Update the ``YYYY-MM-DD`` on the :ref:`version list <version-list>`
-#. :ref:`Commit and push <git-committing>`
+#. :ref:`Commit and push <git-committing>`, making sure to verify
+   :ref:`version tag comments <writing-proofread-new>` when
+   :ref:`staging changes <git-committing>`
 #. :ref:`Merge <git-merging>` the
    :ref:`development branch <versioning-start-new>` in to the
    :xref:`master branch <git-manual>`
 #. :ref:`Tag and push <git-tagging>` with a
-   :xref:`long message <git-commit-guidelines>` that describes the release
-#. On your :doc:`Read the Docs<rtfd:index>` account:
+   :xref:`long message <git-commit-guidelines>` that describes the
+   :ref:`version <version-list>`
+#. In :doc:`Read the Docs<rtfd:index>`:
 
-   * :menuselection:`Projects --> AAAAAA --> Versions --> Inactive Versions --> X.Y.Z --> Edit --> Active`
+   * :menuselection:`Projects --> AAAAAA --> Versions --> Inactive Versions
+     --> MAJOR.MINOR.PATCH --> Edit --> Active`

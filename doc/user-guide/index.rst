@@ -35,5 +35,6 @@ be self-contained, but if you want more resources there a few select ones below
    Keep on :wiki-pg:`clicking <Point_and_click>` the :guilabel:`Next` button
    at the top or the bottom of the :xref:`webpage <webpage>`!
 
-   It will allow you to sequentially visit every :xref:`webpage <webpage>` in
-   :term:`AAAAAA` documentation in a logical order
+   It will allow you to sequentially visit all :xref:`webpages <webpage>` of
+   :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`
+   in a logical order

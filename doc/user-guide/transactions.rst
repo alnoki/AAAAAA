@@ -117,8 +117,7 @@ That is why :py:attr:`~AAAAAA.ledger.Transaction.total_amount` is a
 Okay, alnoki is fired up
 ========================
 
-You bet your bottom :xref:`dollar (USD) <USD>` that
-:xref:`alnoki <alnoki-repos>`
+You bet your bottom :xref:`dollar (USD) <USD>` that :github:`alnoki <alnoki>`
 is on a :doc:`floating point precision <python:tutorial/floatingpoint>` rampage
 
 If you don't already know how

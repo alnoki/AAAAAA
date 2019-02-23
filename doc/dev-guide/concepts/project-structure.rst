@@ -12,9 +12,10 @@ Project structure
 Access
 ******
 
-:xref:`source-code` and documentation
-:ref:`reST files <tools-restructured-text>` for :term:`AAAAAA` are located at
-the :xref:`AAAAAA-repo`, which is hosted by :xref:`GitHub`
+:xref:`source-code` and :wiki-pg:`documentation <Software_documentation>`
+for :term:`AAAAAA` are located at the
+:github:`AAAAAA repository <alnoki/AAAAAA>`, which is
+:wiki-pg:`hosted <Host_(network)>` by :xref:`GitHub`
 
 .. _concepts-project-dir-tree:
 
@@ -23,7 +24,8 @@ the :xref:`AAAAAA-repo`, which is hosted by :xref:`GitHub`
 Contents
 ********
 
-Some select demonstrative contents of the :xref:`AAAAAA-repo`:
+Some select demonstrative contents of the
+:github:`AAAAAA repository <alnoki/AAAAAA>`:
 
 .. code-block:: none
 
@@ -59,12 +61,14 @@ Some select demonstrative contents of the :xref:`AAAAAA-repo`:
    ``AAAAAA/``, Project root :xref:`directory <directory>`
    ``src/`` , :xref:`Source code <source-code>` (in :ref:`tools-Python`)
    ``test/`` , :ref:`pytest test code <tools-pytest>`
-   ``doc/`` , :ref:`tools-sphinx` documentation
+   ``doc/`` , ":ref:`tools-sphinx`-style
+   :wiki-pg:`documentation <Software_documentation>`"
    ``nbs/`` , :ref:`Jupyter notebooks <tools-jupyter>`
    ``.vscode/`` , :ref:`tools-vs-code` settings
    ``.gitignore`` , :ref:`tools-git` configuration
    ``a6.yml`` , :term:`a6 conda environment <a6>`
    ``setup.py`` , Configuration for :ref:`tools-pytest`
-   ``README.md`` , "Reference to :term:`AAAAAA` documentation
+   ``README.md`` , "Contains :wiki-pg:`URL` for
+   :wiki-pg:`documentation <Software_documentation>`
    :xref:`website <website>`"
    ``TODO.md`` , :ref:`Task planning <versioning-td3>`

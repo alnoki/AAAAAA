@@ -7,13 +7,12 @@ Introduction
 
 The :ref:`environment setup <dev-env-intro>` will help you
 :wiki-pg:`install <Installation_(computer_programs)>` the
-:ref:`tools <concepts-tools>` that :xref:`alnoki <alnoki-repos>` uses to
-create :term:`AAAAAA`
+:ref:`tools <concepts-tools>` that :github:`alnoki` uses to create
+:term:`AAAAAA`
 
 The :ref:`concepts section <concepts>` provides concise conceptual explanations
-of the :ref:`tools <concepts-tools>` that :xref:`alnoki <alnoki-repos>` uses to
-create :term:`AAAAAA`, and the specific ways that they are used in
-:term:`AAAAAA`
+of the :ref:`tools <concepts-tools>` that :github:`alnoki` uses to create
+:term:`AAAAAA`, and the specific ways that they are used in :term:`AAAAAA`
 
 The :ref:`testing section <testing-intro>` is *coming soon*
 
@@ -28,5 +27,6 @@ like :ref:`managing references with Sphinx <sphinx-managing-references>`
    Keep on :wiki-pg:`clicking <Point_and_click>` the :guilabel:`Next` button
    at the top or the bottom of the :xref:`webpage <webpage>`!
 
-   It will allow you to sequentially visit every :xref:`webpage <webpage>` in
-   :term:`AAAAAA` documentation in a logical order
+   It will allow you to sequentially visit all :xref:`webpages <webpage>` of
+   :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`
+   in a logical order

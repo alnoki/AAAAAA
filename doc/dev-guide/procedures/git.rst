@@ -236,7 +236,7 @@ Committing
       git push
       git log
 
-#. Verify results at the :xref:`AAAAAA-repo`
+#. Verify results at the :github:`AAAAAA repository <alnoki/AAAAAA>`
 
 
 .. _git-tagging:
@@ -290,7 +290,7 @@ Tagging
 
       git push 0.3.0
 
-#. Verify results at the :xref:`AAAAAA-repo`
+#. Verify results at the :github:`AAAAAA repository <alnoki/AAAAAA>`
 
 .. _git-branching:
 
@@ -333,7 +333,8 @@ Branching
 .. tip::
 
    The first time you :ref:`commit <git-committing>` a new
-   :xref:`branch <git-branch>` to the :xref:`AAAAAA-repo`, make sure to
+   :xref:`branch <git-branch>` to the
+   :github:`AAAAAA repository <alnoki/AAAAAA>`, make sure to
    :xref:`set upstream tracking <git-push>`:
 
    .. code-block:: bash

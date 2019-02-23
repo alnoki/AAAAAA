@@ -108,7 +108,8 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
          :ref:`Package <conda:concept-conda-package>` management", "
          :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
-         :pep:`8`, Check :ref:`code style <concepts-code-style>`, "
+         :pep:`8`, ":wiki-pg:`Linter <Lint_(software)>` for
+         :ref:`code style <concepts-code-style>`","
          :ref:`Documenting <dev-env-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
          :ref:`tools-sphinx` , "
@@ -153,19 +154,22 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
 Git
 ===
 
-:xref:`Git <git-manual>` is used create and track changes to the
-:xref:`AAAAAA-repo`. :xref:`Git <git-manual>` is a version control system that
-allows the project to be updated with :xref:`commits <git-commit>`, which are
-like snapshots in time that describe minor changes to the project throughout
-its history. Each :xref:`commit <git-commit>` is identified by a :xref:`sha1`,
-a unique identifier that can be accessed by
+:xref:`Git <git-manual>` is used manage changes to
+:wiki-pg:`files <Computer_file>` in the
+:github:`AAAAAA repository <alnoki/AAAAAA>`. :xref:`Git <git-manual>` is a
+:wiki-pg:`version control <Version_control>` system that allows :term:`AAAAAA`
+to be updated with :xref:`commits <git-commit>`, which are like snapshots in
+:wiki-pg:`time <Time>` that describe minor changes to :term:`AAAAAA`. Each
+:xref:`commit <git-commit>` is identified by a :xref:`sha1`, a unique
+identifier that can be accessed by
 :ref:`viewing the project log <git-view-project-log>`
 
 :xref:`Tags <git-tag>`, which provide a unique identifier for
 :xref:`commits <git-commit>`, and :xref:`branches <git-branch>`, which enable
 independent sequences of :xref:`commits <git-commit>`, are used to manage
 :ref:`project versions <version-list>` on :xref:`GitHub`, a
-:xref:`free <money>` service that hosts the :xref:`AAAAAA-repo`
+:xref:`free <money>` service that :wiki-pg:`hosts <Host_(network)>` the
+:github:`AAAAAA repository <alnoki/AAAAAA>` for :wiki-pg:`free <Money>`
 
 There are several :xref:`command line<command-line>` text navigators that go
 along with :xref:`Git <git-manual>`:
@@ -201,7 +205,7 @@ VS Code
 <Integrated_development_environment>`
 that is used to create :term:`AAAAAA`
 
-The :xref:`AAAAAA-repo` comes with a collection of
+The :github:`AAAAAA repository <alnoki/AAAAAA>` comes with a collection of
 :xref:`VS-Code-settings` that will automatically configure most of your
 :wiki-pg:`software <Software>` workspace. If you completed the
 :ref:`developer environment setup <dev-env-intro>`, then all the relevant
@@ -221,7 +225,8 @@ which has all the latest features but may not be completely stable
    :ref:`Documenting <dev-env-documenting>`"
    :xref:`Python <VS-Code-Python-ext>`, Developing :ref:`tools-python`, "
    :ref:`Documenting <dev-env-documenting>`"
-   :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "Edit
+   :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "
+   :wiki-pg:`Linter <Lint_(software)>` for
    :ref:`reST <tools-restructured-text>` ", "
    :ref:`Documenting <dev-env-documenting>`"
    :xref:`GitLens <GitLens>`, "Advanced :ref:`tools-git`
@@ -262,9 +267,10 @@ Documentation
 Sphinx
 ======
 
-:doc:`Sphinx <sphinx:intro>` is the documentation engine that
+:doc:`Sphinx <sphinx:intro>` is the
+:wiki-pg:`documentation <Software_documentation>` engine that
 :ref:`builds <sphinx-building-documentation>` the
-the documentation :xref:`website <website>` for :term:`AAAAAA` and even for
+:xref:`website <website>` for :term:`AAAAAA` and even for
 :doc:`Python itself <py-dev-guide:documenting>`. Sphinx uses
 :ref:`tools-restructured-text` (``reST``), a particular style of
 :wiki-pg:`markup language <Markup_language>`, which it converts to
@@ -272,8 +278,10 @@ the documentation :xref:`website <website>` for :term:`AAAAAA` and even for
 
 :doc:`Sphinx <sphinx:intro>` has a
 :ref:`table of contents <sphinx:toctree-directive>` feature, which provides a
-linearly navigable structure that ensures access to all pages of documentation.
-:term:`AAAAAA` are documented using the
+linearly navigable structure that ensures access to all
+:wiki-pg:`pages <Webpage>` of
+:wiki-pg:`Documentation <Software_documentation>`.
+:term:`AAAAAA` are :wiki-pg:`documented <Software_documentation>` using the
 :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides the
 visual layout of this :xref:`website <website>`
 
@@ -299,7 +307,8 @@ functionality and several are used in :term:`AAAAAA`:
    :header: Reference, Topic
    :align: center
 
-   :doc:`Sphinx <sphinx:intro>`, Official documentation
+   :doc:`Sphinx <sphinx:intro>`, "Official
+   :wiki-pg:`documentation <Software_documentation>`"
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "
    :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
    :xref:`Practical use seminar <Willing-Sphinx>`, "Practical
@@ -342,7 +351,8 @@ them to :wiki-pg:`HTML` whenever
 
    :doc:`sphinx:usage/restructuredtext/basics`, "
    :doc:`Sphinx <sphinx:intro>` tutorial on ``reST`` usage"
-   :xref:`reStructuredText <reST-documentation>`, Official documentation
+   :xref:`reStructuredText <reST-documentation>`, "Official
+   :wiki-pg:`documentation <Software_documentation>`"
    :xref:`quick-reST`, Practical syntax
    :xref:`reST-cheatsheet`, Quick syntax reference
    :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
@@ -353,7 +363,8 @@ them to :wiki-pg:`HTML` whenever
    :ref:`reST style <concepts-documentation-style>`, :term:`AAAAAA` usage
 
 
-Many :ref:`tools-sphinx` documentation :xref:`website <website>` have an
+Many :ref:`tools-sphinx`-style :xref:`websites <website>` for
+:wiki-pg:`documentation <Software_documentation>` have an
 :guilabel:`Edit on GitHub` (or similar) feature at
 the top/bottom of each :xref:`webpage <webpage>`. This feature will
 :xref:`link <URL>` to the
@@ -376,16 +387,18 @@ that :ref:`tools-sphinx` used to create the :xref:`webpage <webpage>`
 Read the Docs
 =============
 
-:doc:`Read the Docs<rtfd:index>` is a :xref:`free <money>` online repository
-that hosts :doc:`Sphinx <sphinx:intro>` projects, and even provides its own
+:doc:`Read the Docs<rtfd:index>` is a :xref:`free <money>` provider of
+:wiki-pg:`hosting services <Host_(network)>` for
+:doc:`Sphinx <sphinx:intro>` projects, and even provides its own
 :doc:`Sphinx Theme <rtd-sphinx-theme:index>`. :doc:`Read the Docs<rtfd:index>`
 uses :doc:`webhooks <rtfd:webhooks>` to automatically detect any
 :ref:`Git <tools-git>` updates, which trigger new
 :ref:`documentation builds <sphinx-building-documentation>`.
-:doc:`Read the Docs<rtfd:index>` supports multiple project documentation
-:doc:`versions <rtfd:versions>`, too
+:doc:`Read the Docs<rtfd:index>` also supports multiple
+:doc:`versions <rtfd:versions>` of
+:wiki-pg:`documentation <Software_documentation>`
 
-:term:`AAAAAA` documentation uses the
+:wiki-pg:`Documentation <Software_documentation>` for :term:`AAAAAA` uses the
 :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which generates
 the visual appearance of this :xref:`website <website>`!
 
@@ -445,7 +458,8 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
 
 :ref:`Docstrings <python:tut-docstrings>` are annotated using the
 :ref:`Python domain <sphinx:python-roles>`, which is also used to reference
-:ref:`concepts-code-e4` elsewhere in documentation
+:ref:`concepts-code-e4` elsewhere in
+:wiki-pg:`documentation <Software_documentation>`
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -542,7 +556,8 @@ is helpful when :ref:`proofreading documentation <writing-proofread>`
    :align: center
 
    :xref:`sphinx-autobuild`, User manual
-   :ref:`tools-sphinx`, Tool to make documentation
+   :ref:`tools-sphinx`, :ref:`Tool <concepts-tools>` to make
+   :wiki-pg:`documentation <Software_documentation>`
    :ref:`Building manually <sphinx-building-manually>`, "Manual
    :term:`AAAAAA` usage"
    :ref:`Building automatically <sphinx-autobuilding>`, "Automated
@@ -610,8 +625,9 @@ The :doc:`nb-extensions:index` provide additional functionality
 .. tip::
 
    This :xref:`AAAAAA-nbs` can render any :xref:`Jupyter Notebook<Jupyter>`
-   from the :xref:`AAAAAA-repo` inside of a :xref:`web browser <web-browser>`,
-   even if you don't have :xref:`Jupyter <Jupyter>`
+   from the :github:`AAAAAA repository <alnoki/AAAAAA>` inside of a
+   :xref:`web browser <web-browser>`, even if you don't have
+   :xref:`Jupyter <Jupyter>`
 
 
 *******
@@ -635,7 +651,8 @@ and additional functionality is provided by the
    :header: Reference, Topic
    :align: center
 
-   :doc:`pytest <pytest:index>`, Official documentation
+   :doc:`pytest <pytest:index>`, "Official
+   :wiki-pg:`documentation <Software_documentation>`"
    :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
    :doc:`pytest tutorials <pytest:contents>`, Official tutorials
    :ref:`Code structure <concepts-code-structure>`, :term:`AAAAAA` components

@@ -14,25 +14,26 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 *******************************************************************************************
 
 #. Silly acronyms actually help with remembering things
-#. Testing and documenting up front prevents massive runtime debug headaches
+#. Testing and :wiki-pg:`documenting <Software_documentation>` up front
+   prevents massive runtime debug headaches
 #. Have DRY (don't repeat yourself) [#]_ code: decompose as much as possible
-#. Documentation should enable another to re-write :xref:`source <source-code>`
-   and test code [#]_
+#. :wiki-pg:`Documentation <Software_documentation>` should enable another to
+   re-write :xref:`source <source-code>` and test code [#]_
 #. Have STUPID simple tests. [#]_ Don't recursively "test the test code"
-#. Documenting & testing adds perspective beyond
-   :xref:`source code <source-code>` development alone
+#. :wiki-pg:`Documenting <Software_documentation>` & testing adds perspective
+   beyond :xref:`source code <source-code>` development alone
 #. Consider :wiki-pg:`DO-178B` as a model for software design assurance [#]_
 #. Legacy conventions shant prevent the adoption of a new worthwhile philosopy
 #. Play around and "whiteboard" :xref:`software <open-source>` during initial
    stages [#]_
-#. Read documentation out loud [#]_
+#. Read :wiki-pg:`documentation <Software_documentation>` out loud [#]_
 #. :ref:`Py <tools-python>` like you :ref:`reST <tools-restructured-text>`,
    :ref:`reST <tools-restructured-text>` like you
    :ref:`Py <tools-python>` [#]_
 #. "We, the :xref:`coders <open-source>`, are foreigners, seeking citizenship
    in the :xref:`computer <computer>`’s locale" [#]_, so respect the house
    rules
-#. Your legacy is the documentation
+#. Your legacy is the :wiki-pg:`documentation <Software_documentation>`
 #. Make content for yourself because you like it [#]_
 
 

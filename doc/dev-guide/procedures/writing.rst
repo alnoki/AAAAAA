@@ -116,14 +116,15 @@ Documenting a new topic
            :term:`OHIO`, Task management philosophy
 
 #. Use a :ref:`reference label <concepts-documentation-style>` in
-   documentation to refer to the core conceptual explanation
+   :ref:`.rst files <tools-restructured-text>` to refer to the core conceptual
+   explanation
 #. Update any relevant ``index.rst`` :ref:`toctree <sphinx:toctree-directive>`
    descriptions, and potentially the :ref:`what next? <what-next>` section
 
 .. tip::
 
-   Avoid creating identical documentation in several places that must be
-   multiply maintained
+   Avoid creating identical :wiki-pg:`documentation <Software_documentation>`
+   in several places that must be multiply maintained
 
 Procedures
 ==========
@@ -190,11 +191,10 @@ This is typically done right before
 #. Proofread :ref:`new documents <writing-proofread-new>` and
    :ref:`changed documents <writing-proofread-changed>`
 
-      * Even if you have moved an :ref:`.rst <tools-restructured-text>`
-        document, :ref:`GitLens <tools-vs-code>` is
-        often able to identify that it is in a new
-        :xref:`directory <directory>` and will only display changes to the
-        document (rather than classifying the document as new)
+      * Even if you have moved an :ref:`.rst file <tools-restructured-text>`,
+        :ref:`GitLens <tools-vs-code>` is often able to identify that it is in
+        a new :xref:`directory <directory>` and will only display changes to
+        the :wiki-pg:`file <Computer_file>` (rather than classify it as new)
 
 .. _writing-proofread-new:
 
@@ -205,7 +205,7 @@ See :ref:`documentation style <concepts-documentation-style>` for a list of
 things to watch out for
 
 #. Put a :doc:`comment <usage/restructuredtext/basics>` at the top
-   of the :ref:`.rst <tools-restructured-text>` document, to note the
+   of the :ref:`.rst file <tools-restructured-text>`, to note the
    :ref:`current development branch version number <versioning-start-new>`
 
    .. code-block:: rest
@@ -266,12 +266,13 @@ Changes to a document
 
    .. tip::
 
-      If there is a warning that the document did not exist for that
-      :ref:`tag <git-tagging>`, then the document was probably moved
+      If there is a warning that the :wiki-pg:`file <Computer_file>` did not
+      exist for that :ref:`tag <git-tagging>`, then the
+      :wiki-pg:`file <Computer_file>` was probably moved
 
 #. Follow the steps for
    :ref:`proofreading new documents <writing-proofread-new>`, but only review
-   *changes* to the document:
+   *changes* to the :wiki-pg:`file <Computer_file>`:
 
       * Use the :ref:`VS Code command palette <tools-vs-code>` to select
         :guilabel:`Move to Next Change`

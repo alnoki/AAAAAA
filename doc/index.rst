@@ -15,7 +15,7 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 .. glossary::
 
    AAAAAA
-      :xref:`Alnoki <alnoki-repos>`'s :wiki-pg:`Algorithmic <Algorithm>`
+      :github:`Alnoki <alnoki>`'s :wiki-pg:`Algorithmic <Algorithm>`
       Analysis :wiki-pg:`Asset Allocation <Financial_asset>` Applications
       (AAAAAA or :wiki-pg:`double-triple Alfa <NATO_phonetic_alphabet>`),
       colloquially referred to as *alnoki's apps*, are a growing collection of

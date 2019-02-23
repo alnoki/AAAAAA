@@ -9,7 +9,8 @@
 Part title
 ##########
 
-Welcome to this document! Don't forget the double overline!
+Welcome to this :wiki-pg:`file <Computer_file>`! Don't forget the two
+:wiki-pg:`blank lines <Line_(text_file)>` above the overline!
 
 #. Item 1 (one space after '#.')
 #. Item 2 (no vertical whitespace above)
@@ -24,7 +25,8 @@ Welcome to this document! Don't forget the double overline!
 Chapter title
 *************
 
-Welcome to this section! Don't forget the double overline! [#]_
+Welcome to this section! Don't forget the two
+:wiki-pg:`blank lines <Line_(text_file)>` above the overline!! [#]_
 
 .. csv-table:: Reference, Topic example (NOT "Reference", "Topic")
    :header: Reference, Topic

@@ -8,7 +8,7 @@ Environment setup
 #################
 
 The steps in this section will enable you to reproduce the environment that
-:xref:`alnoki <alnoki-repos>` uses to create :term:`AAAAAA`
+:github:`alnoki` uses to create :term:`AAAAAA`
 
 Before you begin, you will need
 :doc:`Miniconda <conda:user-guide/install/download>`, which will

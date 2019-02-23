@@ -11,7 +11,8 @@ pytest
    :align: center
 
    :ref:`tools-pytest`, :term:`AAAAAA` conceptual explanation
-   :doc:`pytest:index`, Official documentation
+   :doc:`pytest:index`, "Official
+   :wiki-pg:`documentation <Software_documentation>`"
 
 .. _pytest-discover-tests:
 

@@ -98,8 +98,9 @@ Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
 :ref:`Source code <user-intro>` is enhanced with :pep:`type annotations <484>`
 and :ref:`docstrings <python:tut-docstrings>` containing
 :ref:`Python domain <sphinx:python-roles>` syntax, so that
-:ref:`napoleon <tools-napoleon>` can create pretty documentation
-elements that explain :xref:`source code <source-code>`, like this
+:ref:`napoleon <tools-napoleon>` can create pretty
+:wiki-pg:`documentation <Software_documentation>` elements that explain
+:xref:`source code <source-code>`, like this
 :ref:`info field list <sphinx:info-field-lists>`:
 
 .. py:function:: explanation(what, who, how, where, when, how_many)
@@ -120,16 +121,17 @@ elements that explain :xref:`source code <source-code>`, like this
 
 .. attention::
 
-   We interrupt your drooling to return to :xref:`alnoki <alnoki-repos>`
+   We interrupt your drooling to return to :github:`alnoki`
 
-Conveniently, documentation elements can be created with simple
-:ref:`reST directives <tools-restructured-text>` like:
+Conveniently, :wiki-pg:`documentation <Software_documentation>` elements can
+be created with simple :ref:`reST directives <tools-restructured-text>` like:
 
 .. code-block:: rest
 
    .. autoclass:: AAAAAA.ledger.Transaction
 
-After a documentation element has been created, it can be referenced using the
+After a :wiki-pg:`documentation <Software_documentation>` element has been
+created, it can be referenced using the
 :ref:`Python domain <sphinx:python-roles>`:
 
 .. code-block:: rest

@@ -202,6 +202,12 @@ epub_exclude_files = ['search.html']
 # Napoleon default settings, except turn off Google docstrings
 napoleon_google_docstring = False
 
+# Where build documentation is served
+linkcheck_ignore = [
+    r'http://localhost:8000/_build/html/index.html',  # Manual
+    r'http://127.0.0.1:8000'  # sphinx-autobuild
+]
+
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
     'sphinx': ('http://www.sphinx-doc.org/en/master/', None),
@@ -246,9 +252,12 @@ url = {
     'VS Code ext': 'https://marketplace.visualstudio.com/items?itemName=',
     # Use extlinks for above
 
+    # Use for xref
     'YT vid': 'https://www.youtube.com/watch?v=',  # Video
     'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
     'Stack OF': 'https://stackoverflow.com/questions/',  # Question
+
+    # Not sure yet
     'docutils': 'http://docutils.sourceforge.net/',
     'GitHub help': 'https://help.github.com/en/articles/',
     'conda-forge': 'https://anaconda.org/conda-forge/',
@@ -265,19 +274,7 @@ xref_links = {
     # YouTube playlists
     'Corey-Schafer-vids': ("Corey Schafer YouTube playlist: Python Tutorials",
                            url['YT PL'] + '-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU'),
-    # Other
-    'Python': ('Python', 'https://www.python.org'),
-    'semver': ("Semantic Versioning", 'https://semver.org/'),
-    'ottobib': ('OttoBib', 'https://www.ottobib.com'),
-    'Anaconda': ('Anaconda', 'https://www.anaconda.com'),
-
-    # To sort
-    'AAAAAA-repo': ("AAAAAA repository", url['GitHub'] + 'alnoki/AAAAAA'),
-    'Change-bash-prompt': ("Cyberciti.biz instructions to change bash prompt",
-                           'https://www.cyberciti.biz/tips/howto-linux-unix-'
-                           'bash-shell-setup-prompt.html'),
-    'alnoki-repos': ("alnoki's GitHub repositories",
-                     url['GitHub'] + 'alnoki?tab=repositories'),
+    # Stack Overflow
     'intersphinx-numpy-matplotlib':
         ("Intersphinx with NumPy/Matplotlib", url['Stack OF'] +
          '21538983/specifying-targets-for-intersphinx-links-to-numpy-'
@@ -289,6 +286,16 @@ xref_links = {
     'intersphinx-inv-targets':
         ("Intersphinx objects.inv explanation", url['Stack OF'] +
          '45699577/how-to-link-to-root-page-in-intersphinx'),
+    # Other
+    'Python': ('Python', 'https://www.python.org'),
+    'semver': ("Semantic Versioning", 'https://semver.org/'),
+    'ottobib': ('OttoBib', 'https://www.ottobib.com'),
+    'Anaconda': ('Anaconda', 'https://www.anaconda.com'),
+    'Change-bash-prompt': ("Cyberciti.biz instructions to change bash prompt",
+                           'https://www.cyberciti.biz/tips/howto-linux-unix-'
+                           'bash-shell-setup-prompt.html'),
+
+    # To sort
     'GitLens': ("GitLens extension", url['VS Code ext'] + 'eamodio.gitlens'),
     'VS-Code-Python-ext':
         ("Python extension", url['VS Code ext'] + 'ms-python.python'),

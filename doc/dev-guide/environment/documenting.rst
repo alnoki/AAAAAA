@@ -129,11 +129,10 @@ Documenting
 
 #. Install the :xref:`GitLens`
 #. Use the :xref:`command-palette` to :git-doc:`git-clone` the
-   :xref:`AAAAAA-repo`
+   :github:`AAAAAA repository <alnoki/AAAAAA>`
 
-   * This will include all of the
-     :xref:`VS Code settings<VS-Code-settings>` that
-     :xref:`alnoki <alnoki-repos>` uses
+   * This will include all of the :xref:`VS Code settings<VS-Code-settings>`
+     that :github:`alnoki` uses
 
 #. At this point you should be able to
    :ref:`build the documentation <sphinx-building-documentation>` and play

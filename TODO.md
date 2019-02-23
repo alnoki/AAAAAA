@@ -3,25 +3,41 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Proofreading followup
-1. https://stackoverflow.com/questions/3814926/git-commit-date
-   1. https://git-scm.com/docs/git-show
-   1. Use git show -s --format=%cI 0.1.0 for version tags
-   1. Get of the time of the commit that got merged (before merge)
-   1. Was email on 0.1.0 wrong?
-1. Use same ISO standard that Robinhood uses for dates in version list
-   1. https://stackoverflow.com/questions/3814926/git-commit-date
-   1. Mention in src updates, for planning the when instance attribute
-1. When diffing in stage changes, confirm new tag at top of .rst file
-1. conda config --set ssl_verify false
-1. Conda create a6 from scratch should say from inside top dir
-1. Cite iso 8061 (or whatever robinhood uses)
-   1. Put on versioning page for time explanation
-1. Take out "its okay for a role to break 79 characters"
-   1. Link to linter
-      1. Put in the quick reference of links to use when proofreading
-   1. Use rest linter output to fix
-   1. Instead, say just break inside the <>
+## Proofread
+1. Link to delimiter
+   1. For explaining how to put text between links
+   1. For the delimeter comment
+
+## Extensions and rtd
+1. :term:`AAAAAA` was started with the sphinx-quickstart
+1. After you do quickstart, you have a project, but you want to upload it, etc.
+   1. Thus you need to think about extensions
+1. Need to update the requirements.txt files
+1. It works, see 0.4.0 live build
+1. dist-docs should use the label for which sphinx exts come which sphinx
+   1. Then don't need to manage a table of included/not included
+1. Describe how xref is old (iso 8061) so just downloaded it outright
+   1. Link 8061 under financial?
+      1. It's how robinhood does it...
+1. As a documentation section under distributing section
+1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
+1. https://docs.readthedocs.io/en/stable/faq.html#my-project-isn-t-building-with-autodoc
+1. Verify builds pass on rtd before pushing tag
+1. Needed to have the setup.py in the exts folder
+1. Is there a generalized way to call out the extension from the internet?
+1. Just made a requirements.txt file
+   1. On my account, had to update advanced settings
+1. You need conf.py to say the bibtex, but rtd doesn
+   1. You conda it pip
+1. https://pip.pypa.io/en/latest/reference/pip_install/#example-requirements-file
+1. Will need to uncomment in conf.py to load using conda
+1. Mention how xref is 9 years old, so simply downloaded it
+   1. No way to require it through PyPI - or is there?
+1. sphinx extension table have column that says need to specify
+   1. Probably in requirements.txt
+1. Get bibtex rubric to show up on rtd
+1. Review https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
+   1. Update at necssary and take out the default options
 
 ## Writing section
 1. Has VS Code section
@@ -64,37 +80,14 @@
    1. git checkout -b dev/0.3.0 --track origin/dev/0.3.0
 1. git push --follow-tags
    1. The real way to push master after tagging it
-
-## Extensions and rtd
-1. :term:`AAAAAA` was started with the sphinx-quickstart
-1. After you do quickstart, you have a project, but you want to upload it, etc.
-   1. Thus you need to think about extensions
-1. Need to update the requirements.txt files
-1. It works, see 0.4.0 live build
-1. dist-docs should use the label for which sphinx exts come which sphinx
-   1. Then don't need to manage a table of included/not included
-1. Describe how xref is old (iso 8061) so just downloaded it outright
-   1. Link 8061 under financial?
-      1. It's how robinhood does it...
-1. As a documentation section under distributing section
-1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
-1. https://docs.readthedocs.io/en/stable/faq.html#my-project-isn-t-building-with-autodoc
-1. Verify builds pass on rtd before pushing tag
-1. Needed to have the setup.py in the exts folder
-1. Is there a generalized way to call out the extension from the internet?
-1. Just made a requirements.txt file
-   1. On my account, had to update advanced settings
-1. You need conf.py to say the bibtex, but rtd doesn
-   1. You conda it pip
-1. https://pip.pypa.io/en/latest/reference/pip_install/#example-requirements-file
-1. Will need to uncomment in conf.py to load using conda
-1. Mention how xref is 9 years old, so simply downloaded it
-   1. No way to require it through PyPI - or is there?
-1. sphinx extension table have column that says need to specify
-   1. Probably in requirements.txt
-1. Get bibtex rubric to show up on rtd
-1. Review https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
-   1. Update at necssary and take out the default options
+1. https://stackoverflow.com/questions/3814926/git-commit-date
+   1. https://git-scm.com/docs/git-show
+   1. Use git show -s --format=%cI 0.1.0 for version tags
+   1. Get of the time of the commit that got merged (before merge)
+      1. The command above will automatically get it
+   1. Update the version date after updating
+   1. https://dencode.com/en/date
+      1. Then use extended format
 
 ## Proofreading links to incorporate
 1. :wiki-pg:`Click <Point_and_click>`
@@ -116,6 +109,9 @@
 1. :wiki-pg:`Development <Software_development>`
 1. :wiki-pg:`Algorithm`
 1. :wiki-pg:`Rendering_(computer_graphics)`
+1. :wiki-pg:`Host <Host_(network)>`
+1. :wiki-pg:`Documentation <Software_documentation>`
+1. :wiki-pg:`file <Computer_file>`
 
 # 0.5.0
 
@@ -317,6 +313,8 @@
 1. Integrate plots
 1. Link Jupyter
 1. Try out log base 16 of factorial of x
+1. On links page, the jupyter general link says plotting, should link
+   1. Link to matplotlib
 
 
 ## Packaging
@@ -357,8 +355,7 @@
    1. In the Anaconda a6 table
    1. Also, the Code testing link should go to the test index
    1. And, the numerical analysis parts should get links
-
-## Conda-forge packaging
+1. Make sure to do Conda-forge packaging too
 
 ## Doc
 1. TOC for everything page?
@@ -375,13 +372,13 @@
       1. https://code.visualstudio.com/docs/python/linting
          1. Make a type checking procedures page
          1. Talk about how to disable the pep8 colon warning but leave mypy on
+1. Figure out how to show all lines in rst files that are too long
 1. :pep:`Type hint theory <483>`
    1. Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 1. :pep:`Variable annotations <527>`
 1. :doc:`Typing module <python:library/typing>`
 
 ## Robinhood integration
-
 
 ## Downloading transaction history from Robinhood
 1. If transaction type isn't recognized, just skip over it
@@ -391,7 +388,6 @@
 1. Need a logger / other way to harvest syntax from others
    1. What does a stock split or withdrawal look like?
       1. You can easily simulate withdrawal, then can put right back in
-
 
 ## Transaction updates
 1. When transaction init gets an error, should
