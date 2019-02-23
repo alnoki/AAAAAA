@@ -311,7 +311,7 @@ functionality and several are used in :term:`AAAAAA`:
    :wiki-pg:`documentation <Software_documentation>`"
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "
    :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
-   :xref:`Practical use seminar <Willing-Sphinx>`, "Practical
+   :yt-vid:`Practical use seminar <0ROZRNZkPS8>`, "Practical
    :ref:`use examples <sphinx-procedures>`"
    :ref:`References extension configuration example <sublime-with-sphinx:use the external links extension>`, "
    :doc:`Extension <sphinx:usage/extensions/index>` installation and
@@ -575,8 +575,9 @@ Jupyter
 
 :xref:`Jupyter Notebooks <Jupyter>` enable an interactive
 :wiki-pg:`development <Software_development>` style for creating
-:wiki-pg:`algorithms <Algorithms>`, and
-can quickly render :xref:`LaTeX`
+:wiki-pg:`algorithms <Algorithms>`, and for
+quickly :wiki-pg:`rendering <Rendering_(computer_graphics)>` equations in
+:xref:`LaTeX`
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -624,8 +625,10 @@ The :doc:`nb-extensions:index` provide additional functionality
 
 .. tip::
 
-   This :xref:`AAAAAA-nbs` can render any :xref:`Jupyter Notebook<Jupyter>`
-   from the :github:`AAAAAA repository <alnoki/AAAAAA>` inside of a
+   This :xref:`AAAAAA-nbs` can
+   :wiki-pg:`render <Rendering_(computer_graphics)>` any
+   :xref:`Jupyter Notebook<Jupyter>` from the
+   :github:`AAAAAA repository <alnoki/AAAAAA>` inside of a
    :xref:`web browser <web-browser>`, even if you don't have
    :xref:`Jupyter <Jupyter>`
 

@@ -144,33 +144,6 @@ Specific syntax
         You can inspect all :ref:`labels <sphinx:ref-role>` in :term:`AAAAAA`
         via the :ref:`updating labels procedure <sphinx-update-labels>`
 
-#. See the :ref:`a6 packages table <concepts-packages-table>` for some sample
-   :ref:`csv-table <sphinx:table-directives>` syntax with appropriate
-   :wiki-pg:`line breaks <Newline>`
-
-   * You should only need ``"`` in :ref:`csv-tables <sphinx:table-directives>`
-     for :wiki-pg:`line breaks <Newline>` in data entries, so don't use them
-     for the
-     :doc:`directive options <sphinx:usage/restructuredtext/directives>`
-     listed after ``:header:`` (even if the ``:header:``
-     :doc:`directive options <sphinx:usage/restructuredtext/directives>` have
-     a line break)
-
-#. If a :doc:`directive option <sphinx:usage/restructuredtext/directives>` has
-   a :wiki-pg:`line break <Newline>`, make sure to
-   :wiki-pg:`indent <Indentation_(typesetting)>` the following
-   :wiki-pg:`line <Source_lines_of_code>` if it starts with a
-   :doc:`role <sphinx:usage/restructuredtext/roles>`:
-
-   .. code-block:: rest
-
-      .. literalinclude:: sample-doc.rst
-         :caption: What the :ref:`reST <tools-restructured-text>` for
-            :ref:`sample-doc.rst <sample-doc>` looks like:
-
-   * Otherwise, simply :wiki-pg:`line break <Newline>` without
-     :wiki-pg:`indenting <Indentation_(typesetting)>`
-
 #. There should be regular :wiki-pg:`text <Character_(computing)>` between two
    different :ref:`links <references-links>` so that the
    :ref:`links <references-links>` can clearly be differentiated:
@@ -219,24 +192,6 @@ Whitespace and line breaking
 #. :wiki-pg:`Indent <Indentation_(typesetting)>` 3
    :wiki-pg:`spaces <Whitespace_character>` (especially for
    :xref:`nested lists <reST-list-indentation>`)
-#. :wiki-pg:`Lines <Line_(text_file)>` should be a maximum length of 79
-   :wiki-pg:`characters <Character_(computing)>`, unless you are using a
-   :rst:dir:`code-block` that itself conforms to :pep:`8` or an appropriate
-   standard
-
-      * When you use a :wiki-pg:`line break <Newline>` for a
-        :doc:`role <sphinx:usage/restructuredtext/roles>`, do it between the
-        :doc:`title <sphinx:usage/restructuredtext/roles>` and the
-        :doc:`target <sphinx:usage/restructuredtext/roles>`
-
-#. Use 2 :wiki-pg:`lines <Line_(text_file)>` of
-   :wiki-pg:`whitespace <Whitespace_character>` above any
-   :doc:`overlined headings <py-dev-guide:documenting>`
-#. Use a single :wiki-pg:`space <Whitespace_character>` before
-   :doc:`footnotes <sphinx:usage/restructuredtext/basics>`
-#. Use a :wiki-pg:`blank line <Line_(text_file)>` after most
-   :doc:`directives <sphinx:usage/restructuredtext/directives>`, like in an
-   :xref:`admonition <admonition>`
 #. :wiki-pg:`Indent <Indentation_(typesetting)>` a single
    :wiki-pg:`space <Whitespace_character>` after ``#.`` or
    after ``*``
@@ -251,11 +206,66 @@ Whitespace and line breaking
       that is singly-:wiki-pg:`spaced <Whitespace_character>` after ``#.``
       or ``*``
 
+#. Use 2 :wiki-pg:`lines <Line_(text_file)>` of
+   :wiki-pg:`whitespace <Whitespace_character>` above any
+   :doc:`overlined section headings <sphinx:usage/restructuredtext/basics>`
+#. :wiki-pg:`Lines <Line_(text_file)>` should be a maximum length of 79
+   :wiki-pg:`characters <Character_(computing)>`, unless you are using a
+   :rst:dir:`code-block` that itself conforms to :pep:`8` or an appropriate
+   standard. If you are using a
+   :doc:`role <sphinx:usage/restructuredtext/roles>` and you need to
+   :wiki-pg:`line break <Newline>`:
+
+      #. Place the :doc:`role <sphinx:usage/restructuredtext/roles>` on its own
+         :wiki-pg:`line <Line_(text_file)>`
+      #. If the :wiki-pg:`line <Line_(text_file)>` is still too long, then
+         :wiki-pg:`line break <Newline>` between
+         the :doc:`title <sphinx:usage/restructuredtext/roles>` and the
+         :doc:`target <sphinx:usage/restructuredtext/roles>`:
+
+         .. code-block:: rest
+
+            .. [#] Recommeded in
+               :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018
+               <0ROZRNZkPS8>`
+
+#. Use a :wiki-pg:`blank line <Line_(text_file)>` after
+   :doc:`directives <sphinx:usage/restructuredtext/directives>`, like in an
+   :xref:`admonition <admonition>`
+#. If a :doc:`directive option <sphinx:usage/restructuredtext/directives>`
+   requires a :wiki-pg:`line break <Newline>`, make sure to
+   :wiki-pg:`indent <Indentation_(typesetting)>` the following
+   :wiki-pg:`line <Source_lines_of_code>` if it starts with a
+   :doc:`role <sphinx:usage/restructuredtext/roles>`:
+
+   .. code-block:: rest
+
+      .. literalinclude:: sample-doc.rst
+         :caption: What the :ref:`reST <tools-restructured-text>` for
+            :ref:`sample-doc.rst <sample-doc>` looks like:
+
+   * Otherwise, simply :wiki-pg:`line break <Newline>` without
+     :wiki-pg:`indenting <Indentation_(typesetting)>`
+
+#. See the :ref:`a6 packages table <concepts-packages-table>` for some sample
+   :ref:`csv-table <sphinx:table-directives>` syntax with appropriate
+   :wiki-pg:`line breaks <Newline>`
+
+   * You should only need ``"`` in :ref:`csv-tables <sphinx:table-directives>`
+     for :wiki-pg:`line breaks <Newline>` in row data, so don't use them
+     for the
+     :doc:`directive options <sphinx:usage/restructuredtext/directives>`
+     listed after ``:header:`` (even if the ``:header:``
+     :doc:`directive options <sphinx:usage/restructuredtext/directives>` have
+     a line break)
+
+#. Use a single :wiki-pg:`space <Whitespace_character>` before
+   :doc:`footnotes <sphinx:usage/restructuredtext/basics>`
+
 .. _concepts-documentation-example:
 
 Simple example
 ==============
-
 
 Per the :ref:`proofreading procedures <writing-proofread>`, there should be
 a :doc:`reST comment <usage/restructuredtext/basics>` with a
@@ -313,7 +323,8 @@ Jupyter Notebooks
 .. tip::
 
    This :xref:`AAAAAA-nbs` opens at the ``nbs/`` :xref:`directory <directory>`
-   and can render any any :xref:`Jupyter Notebook<Jupyter>` from the
+   and can :wiki-pg:`render <Rendering_(computer_graphics)>` any
+   :xref:`Jupyter Notebook<Jupyter>` from the
    :github:`AAAAAA repository <alnoki/AAAAAA>` inside of a
    :xref:`web browser <web-browser>`, even if you don't have
    :xref:`Jupyter <Jupyter>`

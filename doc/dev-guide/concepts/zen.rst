@@ -79,7 +79,9 @@ Need some more inspiration? Try::
    :wiki-pg:`Garmin` are :wiki-pg:`DO-178B Level A <DO-178B>`
 .. [#] From a comment by Brett Glasner, that whiteboarding is the most
    fun part of :xref:`software <open-source>` design
-.. [#] Recommeded in :xref:`Willing-Sphinx`
+.. [#] Recommeded in
+   :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018
+   <0ROZRNZkPS8>`
 .. [#] Adapted from advice given by Tom C. Bryan of the :xref:`msfc-lab` (*fly
    like you test, test like you fly*) that flight testing and flight operations
    should be identical - to indicate that

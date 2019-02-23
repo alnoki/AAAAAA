@@ -12,7 +12,7 @@ Sphinx
    :align: center
 
    :ref:`tools-sphinx`, :term:`AAAAAA` conceptual explanation
-   :xref:`Practical Sphinx presentation <Willing-Sphinx>`, Common usage
+   :yt-vid:`Practical Sphinx presentation <0ROZRNZkPS8>`, Common usage
    :xref:`Project setup screencast <Yusuf-Sphinx-RTD>`, Start a project
    :doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`, "Official
    tutorial"
@@ -32,7 +32,8 @@ Building documentation
 Manually
 ========
 
-Per :xref:`Willing-Sphinx`:
+Per
+:yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018 <0ROZRNZkPS8>`:
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
    inside the :ref:`documentation root directory<concepts-project-dir-tree>` if
@@ -258,14 +259,13 @@ For :ref:`links <references-links>` that can not be managed with
 :ref:`sphinx-extlinks`. In general you can use :ref:`sphinx-xref`, but if the
 :wiki-pg:`webpage <Webpage>` you want to :wiki-pg:`cite <Citation>` comes
 from a :wiki-pg:`website <Website>` that you often use, it makes sense to use
-:ref:`sphinx-extlinks` as long as the :wiki-pg:`website <Website>` has a simple
-organizational pattern. For example, you could use :ref:`sphinx-extlinks` for:
+:ref:`sphinx-extlinks`:
 
 #. :wiki-pg:`Wikipedia articles <Wikipedia>`, like
    https://en.wikipedia.org/wiki/Download:
 
    .. code-block:: rest
-      :caption: Efficient :doc:`role <sphinx:usage/restructuredtext/roles>`
+      :caption: Resultant :doc:`role <sphinx:usage/restructuredtext/roles>`
 
       :wiki-pg:`Download`
 
@@ -339,15 +339,6 @@ xref
      .. code-block:: python
 
         xref_links = {
-            # YouTube videos
-            'Willing-Sphinx': ("Carol Willing's Practical Sphinx talk from PyCon 2018",
-                               url['YT vid'] + '0ROZRNZkPS8'),
-            'Yusuf-Sphinx-RTD': ("Mahdi Yusuf's Sphinx & Read the Docs screencast",
-                                 url['YT vid'] + 'oJsUvBQyHBs'),
-            # YouTube playlists
-            'Corey-Schafer-vids': ("Corey Schafer YouTube playlist: Python Tutorials",
-                                   url['YT PL'] + '-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU'),
-            # Other
             'Python': ('Python', 'https://www.python.org'),
             ...
             'semver': ("Semantic Versioning", 'https://semver.org/'),
@@ -452,7 +443,8 @@ extlinks
 Checking links
 ==============
 
-Per :xref:`Willing-Sphinx`:
+Per
+:yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018 <0ROZRNZkPS8>`:
 
 #. From inside the
    :ref:`documentation root directory <concepts-documentation-structure>`, use

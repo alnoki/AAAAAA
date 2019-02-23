@@ -7,6 +7,17 @@
 1. Link to delimiter
    1. For explaining how to put text between links
    1. For the delimeter comment
+1. Say may need to start safari second time
+1. Copy and paste the following and hit return
+   1. Should be type return on quickstart
+1. Literal include requirements.txt on documentation page
+1. Sphinx procedures get example of using a Stack OF vid for line breaks
+
+## Stubbing
+1. Configurations page: gitignore, conf.py, vs code settings
+   1. Reciprical cross links
+      1. Then can reference quickstart from rtd setup
+   1. find all for conf.py now links to config page
 
 ## Extensions and rtd
 1. :term:`AAAAAA` was started with the sphinx-quickstart
@@ -89,7 +100,7 @@
    1. https://dencode.com/en/date
       1. Then use extended format
 
-## Proofreading links to incorporate
+## quicklinks
 1. :wiki-pg:`Click <Point_and_click>`
 1. :wiki-pg:`Typing`
 1. :wiki-pg:`HTML`

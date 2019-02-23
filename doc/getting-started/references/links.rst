@@ -536,7 +536,7 @@ General
    <py-dev-guide:documenting>`
 
    * Guide to general :doc:`Sphinx <sphinx:intro>` use
-   * :doc:`reStructuredTest <usage/restructuredtext/basics>` style guide
+   * :doc:`reStructuredTest <sphinx:usage/restructuredtext/basics>` style guide
 
 #. :xref:`RealPython Guide to Documenting Python <documenting-python>`
 
@@ -565,11 +565,12 @@ Practical use
    * Quick walkthrough with practical syntax examples
    * Interactive :xref:`Python` examples, using plots
 
-#. :xref:`Willing-Sphinx`
+#. :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018
+   <0ROZRNZkPS8>`
 
-   * Common workflow tasks [#]_, like
+   * Common :wiki-pg:`development <Software_development>` tasks [#]_, like
      :ref:`checking links <sphinx-checking-links>`
-   * Team :wiki-pg:`development <Software_development>` ideologies
+   * Team :wiki-pg:`development <Software_development>` strategies
 
 #. :xref:`sphinx-autobuild`
 

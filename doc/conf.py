@@ -239,9 +239,10 @@ extlinks = {
     'real-py': ('https://realpython.com/%s', ''),
     'git-doc': ('https://git-scm.com/docs/%s', ''),
     'github': ('https://github.com/%s', ''),
+    'yt-vid': ('https://www.youtube.com/watch?v=%s', '')
 }
 
-# Base urls used by xrefs extension
+# Base urls used by xrefs extension: delete eventually after migrating
 url = {
     'Wiki pg': 'https://en.wikipedia.org/wiki/',  # Article
     'GitHub': 'https://github.com/',
@@ -267,8 +268,6 @@ url = {
 
 xref_links = {
     # YouTube videos
-    'Willing-Sphinx': ("Carol Willing's Practical Sphinx talk from PyCon 2018",
-                       url['YT vid'] + '0ROZRNZkPS8'),
     'Yusuf-Sphinx-RTD': ("Mahdi Yusuf's Sphinx & Read the Docs screencast",
                          url['YT vid'] + 'oJsUvBQyHBs'),
     # YouTube playlists
@@ -286,6 +285,7 @@ xref_links = {
     'intersphinx-inv-targets':
         ("Intersphinx objects.inv explanation", url['Stack OF'] +
          '45699577/how-to-link-to-root-page-in-intersphinx'),
+
     # Other
     'Python': ('Python', 'https://www.python.org'),
     'semver': ("Semantic Versioning", 'https://semver.org/'),

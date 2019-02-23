@@ -20,7 +20,8 @@ class Transaction:
     num_shares : :obj:`int` or :obj:`None`
         Number of associated :xref:`shares <finance-share>`
     description : :obj:`str` or :obj:`None`
-        A description, typically provided by a :xref:`brokerage <brokerage>`
+        A description, typically provided by a
+        :xref:`brokerage <brokerage>`
     kinds : :obj:`set` of :obj:`string`
         Allowed kinds of :xref:`transactions <finance-transaction>`
 

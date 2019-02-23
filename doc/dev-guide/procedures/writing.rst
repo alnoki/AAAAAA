@@ -228,8 +228,9 @@ things to watch out for
 
    #. :wiki-pg:`Clear your browser history <Web_browsing_history>` so you can
       tell which :wiki-pg:`URLs <URL>` to :wiki-pg:`click <Point_and_click>`
-   #. Read the :xref:`browser <web-browser>`-rendered text
-      :ref:`out loud <zen-aipaip>` and make any corrections in
+   #. Read, :ref:`out loud <zen-aipaip>`, the :wiki-pg:`webpage <Webpage>` that
+      is :wiki-pg:`rendered <Rendering_(computer_graphics)>` by your
+      :xref:`browser <web-browser>` and make any corrections in
       :ref:`tools-vs-code`
    #. Verify each :xref:`link <URL>` in the section by
       :wiki-pg:`clicking <Point_and_click>` on it
