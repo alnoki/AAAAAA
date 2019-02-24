@@ -3,16 +3,16 @@
 // Settings are specified if they defer from defaults
 // See default workspace settings for more info
 {
-    // General viewing
+    // Colors
     "workbench.colorTheme": "Default Dark+",
     "editor.tokenColorCustomizations": {
         "comments": "#3CB371", // MediumSeaGreen
-        "strings": "#FF00FF", // Fuchsia
+        "strings": "#BA45BA", // From sphinx-autobuild output
         "textMateRules": [
             {
             "scope": "string.quoted.docstring.multi.python",
             "settings": {
-                "foreground": "#98FB98" // PaleGreen
+                "foreground": "#00FA9A" // MediumSpringGreen
                 },
             },
             {
@@ -29,6 +29,8 @@
             },
         ],
     },
+
+    // Viewing
     "editor.minimap.enabled": false,
     "zenMode.centerLayout": false,
     "editor.mouseWheelZoom": true,
@@ -36,7 +38,6 @@
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
     "workbench.editor.showTabs": false,
-    "workbench.editor.highlightModifiedTabs": true,
 
 
     // Whitespace
@@ -92,9 +93,4 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "gitlens.advanced.telemetry.enabled": false,
-
-
-    // Version control
-    "git.autofetch": true,
-
 }

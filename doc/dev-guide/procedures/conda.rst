@@ -109,7 +109,7 @@ Importing a6
 ************
 
 #. :ref:`Start up conda <conda:starting-conda>` from inside the
-   :ref:`AAAAAA project directory <concepts-project-dir-tree>`, then
+   :ref:`AAAAAA project directory <concepts-project-tree>`, then
    :doc:`import <conda:user-guide/tasks/manage-environments>`
    the necessary :ref:`conda packages <concepts-packages-table>`:
 
@@ -130,8 +130,8 @@ Installing AAAAAA for testing
 
 Per :doc:`pytest integration practices <pytest:goodpractices>`:
 
-#. From inside the :ref:`AAAAAA project directory <concepts-project-dir-tree>`,
-   use :term:`a6` from inside the
+#. From inside the :ref:`AAAAAA project directory <concepts-project-tree>`, use
+   :term:`a6` from inside the
    :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
@@ -150,7 +150,7 @@ Using a new package
 #. Add the :ref:`package <conda:concept-conda-package>` to
 
    #. The :ref:`packages table <concepts-packages-table>`
-   #. The :ref:`a6.yml file <concepts-project-dir-tree>`
+   #. The :ref:`a6.yml file <concepts-project-tree>`
    #. The instructions for :ref:`creating a6 from scratch <conda-create-a6>`
 
       * Here, use the same order for the separate

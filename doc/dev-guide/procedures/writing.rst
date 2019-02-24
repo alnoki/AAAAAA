@@ -52,7 +52,7 @@ Creating a directory tree
 *************************
 
 Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
-:ref:`AAAAAA project tree <concepts-project-dir-tree>`:
+:ref:`AAAAAA project tree <concepts-project-tree>`:
 
 #. Use the :ref:`VS Code command palette <tools-vs-code>` to select
    :guilabel:`File: New Untitled File`
@@ -79,7 +79,7 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
               print(f'{subindent}{f}')
 
 #. Modify ``base_indent`` and ``branch_symbol`` to symbols that you would like
-   to have in your :ref:`tree <concepts-project-dir-tree>`
+   to have in your :ref:`tree <concepts-project-tree>`
 #. Update ``where_to_start`` to the :xref:`directory <directory>` that you
    would like to write about
 #. Select all the :wiki-pg:`line <Line_(text_file)>` in the
@@ -111,11 +111,11 @@ Documenting a new topic
            :align: center
 
            :ref:`tools-vs-code`, Task management environment
-           :ref:`concepts-project-dir-tree`, :term:`AAAAAA` project structure
+           :ref:`concepts-project-tree`, :term:`AAAAAA` project structure
            :xref:`Markdown`, Syntax specification
            :term:`OHIO`, Task management philosophy
 
-#. Use a :ref:`reference label <concepts-documentation-style>` in
+#. Use a :ref:`reference label <concepts-doc-style>` in
    :ref:`.rst files <tools-restructured-text>` to refer to the core conceptual
    explanation
 #. Update any relevant ``index.rst`` :ref:`toctree <sphinx:toctree-directive>`
@@ -135,7 +135,7 @@ Procedures
 
    #. The first row of the :ref:`reference table <writing-new-topic>` in the
       :ref:`procedure <procedures>` should be a
-      :ref:`reference label <concepts-documentation-style>` for the conceptual
+      :ref:`reference label <concepts-doc-style>` for the conceptual
       explanation
 
       * Because the conceptual explanation should be the primary source of
@@ -145,7 +145,7 @@ Procedures
 
    #. The last row of the :ref:`reference table <writing-new-topic>` in the
       conceptual explanation should be a
-      :ref:`reference label <concepts-documentation-style>` for the
+      :ref:`reference label <concepts-doc-style>` for the
       :ref:`procedure <procedures>`
 
       * Because :ref:`procedures <procedures>` should be attempted only after
@@ -201,8 +201,8 @@ This is typically done right before
 New documents
 =============
 
-See :ref:`documentation style <concepts-documentation-style>` for a list of
-things to watch out for
+See :ref:`documentation style <concepts-doc-style>` for a list of things to
+watch out for
 
 #. Put a :doc:`comment <usage/restructuredtext/basics>` at the top
    of the :ref:`.rst file <tools-restructured-text>`, to note the
@@ -223,8 +223,7 @@ things to watch out for
    :xref:`browser <web-browser>` alongside :ref:`tools-vs-code` with
    :ref:`maximum half-screen estate <writing-max-screen-estate>`, so you can
    make edits immediately
-#. Go through one :ref:`minor section <concepts-documentation-example>` at a
-   time
+#. Go through one :ref:`minor section <concepts-doc-example>` at a time
 
    #. :wiki-pg:`Clear your browser history <Web_browsing_history>` so you can
       tell which :wiki-pg:`URLs <URL>` to :wiki-pg:`click <Point_and_click>`
@@ -253,15 +252,15 @@ Changes to a document
 
 #. Use :ref:`GitLens <tools-vs-code>` to inspect the history of the
    file: :guilabel:`GitLens: Show File History`
-#. The :ref:`version comment <concepts-documentation-example>` at the top of
-   the :wiki-pg:`file <Computer_file>` should identify the most-recent
-   :ref:`version <version-list>` for
-   which the :wiki-pg:`file <Computer_file>` was reviewed. Thus:
+#. The :ref:`version comment <concepts-doc-example>` at the top of the
+   :wiki-pg:`file <Computer_file>` should identify the
+   :wiki-pg:`most-recent <Time>` :ref:`version <version-list>` for which the
+   :wiki-pg:`file <Computer_file>` was reviewed. Thus:
 
    #. Use the :guilabel:`GitLens: Show File History`
       view to :guilabel:`Choose from Branch or Tag History...`
    #. Select the :ref:`tag <git-tagging>` that corresponds to the
-      :ref:`version comment <concepts-documentation-example>`
+      :ref:`version comment <concepts-doc-example>`
    #. Select the first :ref:`commit <tools-git>` in the list
    #. :guilabel:`Open Changes with Working File`
 

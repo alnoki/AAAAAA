@@ -22,7 +22,7 @@ Discovering tests
 
 #. Verify that you can run :ref:`tools-pytest` in the
    :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
-   :ref:`AAAAAA project root directory <concepts-project-dir-tree>`, using
+   :ref:`AAAAAA project root directory <concepts-project-tree>`, using
    :term:`a6`
 
    .. code-block:: bash

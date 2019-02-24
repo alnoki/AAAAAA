@@ -15,3 +15,4 @@ test/__pycache__/__init__.cpython-37.pyc
 .pytest_cache/v/cache/stepwise
 .pytest_cache/v/cache/nodeids
 .pytest_cache/v/cache/lastfailed
+doc/__pycache__/conf.cpython-37.pyc

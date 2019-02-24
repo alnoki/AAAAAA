@@ -57,8 +57,8 @@ The spirit of alnoki's apps
 #. Add content to :ref:`versions <version-list>` incrementally, like you are
    making a :xref:`mvp-development`
 #. Add an ``index.rst`` in
-   :ref:`documentation directories <concepts-documentation-structure>` so you
-   can find what you are looking for
+   :ref:`documentation directories <concepts-doc-tree>` so you can find what
+   you are looking for
 
 ***************
 Further reading
@@ -70,7 +70,7 @@ Need some more inspiration? Try::
 
 .. rubric:: Footnotes
 
-.. [#] Acronym from :xref:`Corey Schafer <Corey-Schafer-vids>`
+.. [#] Acronym from :yt-pl:`Corey Schafer <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`
 .. [#] From Software Requirements Documents (SWRDs) and Software Design
    Documents (SDDs) standards at :wiki-pg:`Garmin`
 .. [#] From a tip that embedded systems code should be "stupid simple", given

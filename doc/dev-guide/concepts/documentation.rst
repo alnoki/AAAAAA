@@ -1,6 +1,6 @@
 .. 0.3.0
 
-.. _concepts-documentation:
+.. _concepts-doc:
 
 
 #############
@@ -32,10 +32,10 @@ Sphinx
    specific :wiki-pg:`documentation <Software_documentation>` components in
    :term:`AAAAAA`
 
-.. _concepts-documentation-structure:
+.. _concepts-doc-tree:
 
-Documentation structure
-=======================
+Structure
+=========
 
 .. code-block:: none
 
@@ -89,7 +89,7 @@ Documentation structure
    :doc:`extensions <sphinx:usage/extensions/index>`"
    ``conf.py``, ":doc:`Configuration <sphinx:usage/configuration>` for
    :ref:`tools-sphinx`"
-   "``Makefile`` , ``make.bat``", :ref:`sphinx-building-documentation`
+   "``Makefile`` , ``make.bat``", :ref:`sphinx-building-doc`
    ``index.rst`` (top-level) , ":xref:`homepage <webpage>` of
    :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`"
    "``getting-started/`` , ``user-guide/``, etc.", "
@@ -100,7 +100,7 @@ Documentation structure
    ``refs.bib``, ":xref:`Citations <citation>` for
    :ref:`books <references-books>` (in :ref:`tools-bibtex` format)"
 
-.. _concepts-documentation-style:
+.. _concepts-doc-style:
 
 Style
 =====
@@ -184,6 +184,8 @@ Specific syntax
         :xref:`Git <git-manual>`, :xref:`Git <git-manual>`
         :ref:`Miniconda <tools-anaconda>`, :ref:`Miniconda <tools-anaconda>`
 
+.. _concepts-doc-whitespace:
+
 Whitespace and line breaking
 ----------------------------
 
@@ -217,11 +219,19 @@ Whitespace and line breaking
    :wiki-pg:`line break <Newline>`:
 
       #. Place the :doc:`role <sphinx:usage/restructuredtext/roles>` on its own
-         :wiki-pg:`line <Line_(text_file)>`
+         :wiki-pg:`line <Line_(text_file)>`:
+
+         .. code-block:: rest
+
+            Use 2 :wiki-pg:`lines <Line_(text_file)>` of
+            :wiki-pg:`whitespace <Whitespace_character>` above any
+            :doc:`overlined section headings <sphinx:usage/restructuredtext/basics>`
+
       #. If the :wiki-pg:`line <Line_(text_file)>` is still too long, then
          :wiki-pg:`line break <Newline>` between
          the :doc:`title <sphinx:usage/restructuredtext/roles>` and the
-         :doc:`target <sphinx:usage/restructuredtext/roles>`:
+         :doc:`target <sphinx:usage/restructuredtext/roles>`, with the ``<`` at
+         the beginning of a :wiki-pg:`new line <Newline>`:
 
          .. code-block:: rest
 
@@ -229,9 +239,39 @@ Whitespace and line breaking
                :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018
                <0ROZRNZkPS8>`
 
-#. Use a :wiki-pg:`blank line <Line_(text_file)>` after
-   :doc:`directives <sphinx:usage/restructuredtext/directives>`, like in an
-   :xref:`admonition <admonition>`
+      #. If the :wiki-pg:`line <Line_(text_file)>` is still too long, then use
+         a ``\`` to :wiki-pg:`escape <Delimiter>` a
+         :wiki-pg:`new line <Newline>` inside the
+         :doc:`target <sphinx:usage/restructuredtext/roles>` and/or
+         :doc:`title <sphinx:usage/restructuredtext/roles>`:
+
+         .. code-block:: rest
+
+            :stack-q:`https://stackoverflow.com/questions/1441010/the-shortest-possible\
+            -output-from-git-log-containing-author-and-date
+            <1441010/the-shortest-possible-output-from-git-log-containing-author-and-\
+            date>`:
+
+         * Note that this works, it just doesn't
+           :wiki-pg:`render <Rendering_(computer_graphics)>` with
+           :wiki-pg:`colors <Web_colors>` in the above :rst:dir:`code-block`
+           because of the ``\``-:wiki-pg:`escapes <Delimiter>` for
+           :wiki-pg:`new lines <Newline>`
+
+#. Use a :wiki-pg:`blank line <Line_(text_file)>` before
+   :doc:`directive content <sphinx:usage/restructuredtext/directives>`, but
+   not before
+   :doc:`directive options <sphinx:usage/restructuredtext/directives>`:
+
+   .. code-block:: rest
+
+      .. csv-table:: Select references
+         :header: Reference, Topic
+         :align: center
+
+         :xref:`Python.org <Python>`, Official information
+         :doc:`python:tutorial/index`, Official tutorial
+
 #. If a :doc:`directive option <sphinx:usage/restructuredtext/directives>`
    requires a :wiki-pg:`line break <Newline>`, make sure to
    :wiki-pg:`indent <Indentation_(typesetting)>` the following
@@ -262,7 +302,7 @@ Whitespace and line breaking
 #. Use a single :wiki-pg:`space <Whitespace_character>` before
    :doc:`footnotes <sphinx:usage/restructuredtext/basics>`
 
-.. _concepts-documentation-example:
+.. _concepts-doc-example:
 
 Simple example
 ==============
@@ -299,7 +339,7 @@ Jupyter Notebooks
    :ref:`Jupyter <tools-Jupyter>` works, but this is an elaboration of
    specific components in :term:`AAAAAA`
 
-.. _concepts-jupyter-nbs-structure:
+.. _concepts-jupyter-nbs-tree:
 
 .. code-block:: none
 

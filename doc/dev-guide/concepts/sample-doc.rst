@@ -38,7 +38,7 @@ Welcome to this
    :header: Reference, Topic
    :align: center
 
-   :ref:`concepts-documentation-example`, "A
+   :ref:`concepts-doc-example`, "A
    :wiki-pg:`render <Rendering_(computer_graphics)>` of the
    :ref:`reST <tools-restructured-text>` for this :wiki-pg:`webpage <Webpage>`"
    :term:`OHIO`, :wiki-pg:`Development <Software_development>` philosophy [#]_
@@ -49,8 +49,8 @@ Section title
 Welcome to this :doc:`section <sphinx:usage/restructuredtext/basics>`! Only one
 :wiki-pg:`blank line <Line_(text_file)>` needed above the
 :doc:`section heading <sphinx:usage/restructuredtext/basics>`! Let's discuss
-:ref:`documentation <concepts-documentation>` (NOT ``:std:ref:`documentation
-<concepts-documentation>``) for :term:`AAAAAA`, which is a specific type of
+:ref:`documentation <concepts-doc>` (NOT ``:std:ref:`documentation
+<concepts-doc>``) for :term:`AAAAAA`, which is a specific type of
 :wiki-pg:`software documentation <Software_documentation>`
 
 .. admonition:: How about this custom :xref:`admonition <admonition>`?

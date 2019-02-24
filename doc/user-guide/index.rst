@@ -26,7 +26,7 @@ be self-contained, but if you want more resources there a few select ones below
    :align: center
 
    :ref:`tools-python`, :term:`AAAAAA` conceptual explanation
-   :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
+   :yt-pl:`Corey Schafer tutorials <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`, "Learn
    :xref:`Python` (recommended tutorial)"
    :doc:`python:tutorial/index`, Official tutorial
 

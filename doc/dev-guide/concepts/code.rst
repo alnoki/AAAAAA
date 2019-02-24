@@ -17,7 +17,7 @@ Code
    specific components in :term:`AAAAAA` from a
    :wiki-pg:`developer <Programmer>`'s perspective
 
-.. _concepts-code-structure:
+.. _concepts-code-tree:
 
 
 *********
@@ -116,7 +116,7 @@ and :ref:`docstrings <python:tut-docstrings>` containing
    :param int how_many: parcels of knowledge?
    :return: with newfound knowledge
    :rtype: object
-   :raises ValueError: if the explanaion is not understood
+   :raises ValueError: if the explanation is not understood
    :raises TypeError: if the explanation is in the wrong language
 
 .. attention::

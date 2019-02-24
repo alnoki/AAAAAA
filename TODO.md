@@ -3,21 +3,19 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Proofread
-1. Link to delimiter
-   1. For explaining how to put text between links
-   1. For the delimeter comment
-1. Say may need to start safari second time
-1. Copy and paste the following and hit return
-   1. Should be type return on quickstart
-1. Literal include requirements.txt on documentation page
-1. Sphinx procedures get example of using a Stack OF vid for line breaks
-
-## Stubbing
-1. Configurations page: gitignore, conf.py, vs code settings
-   1. Reciprical cross links
+## Configurations page
+1. Add a configs dir tree at the top
+1. Reciprical cross links
       1. Then can reference quickstart from rtd setup
-   1. find all for conf.py now links to config page
+1. find all for conf.py now links to config page
+1. Make sure rtd page still works alright
+
+## Version list
+1. Mention how autodocced conf.py
+1. Update version list with stubs for configurations page
+
+## Developer page
+1. Say definitely try out the screencast
 
 ## Extensions and rtd
 1. :term:`AAAAAA` was started with the sphinx-quickstart
@@ -100,7 +98,8 @@
    1. https://dencode.com/en/date
       1. Then use extended format
 
-## quicklinks
+## quicklink
+1. :wiki-pg:`scroll <Scrolling>`
 1. :wiki-pg:`Click <Point_and_click>`
 1. :wiki-pg:`Typing`
 1. :wiki-pg:`HTML`
@@ -123,6 +122,7 @@
 1. :wiki-pg:`Host <Host_(network)>`
 1. :wiki-pg:`Documentation <Software_documentation>`
 1. :wiki-pg:`file <Computer_file>`
+1. :wiki-pg:`Delimiter`
 
 # 0.5.0
 
@@ -372,6 +372,9 @@
 1. TOC for everything page?
 1. Software also has an auto-api section?
    1. May enable module index
+1. When conda finally gets sphinx rtd theme 0.4.3 (or whatever it is)
+   1. Are the settings different?
+      1. How far down can the stick TOC go?
 
 ## myPy
 1. ttps://code.visualstudio.com/docs/python/settings-reference#_mypy

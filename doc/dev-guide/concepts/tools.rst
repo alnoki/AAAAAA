@@ -37,7 +37,7 @@ specific :xref:`Python` considerations in :term:`AAAAAA` like syntax and
    :align: center
 
    :xref:`Python.org <Python>`, Official information
-   :xref:`Corey Schafer tutorials <Corey-Schafer-vids>`, "Learn
+   :yt-pl:`Corey Schafer tutorials <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`, "Learn
    :xref:`Python` (recommended tutorial)"
    :doc:`python:tutorial/index`, Official tutorial
    :doc:`python:howto/functional`, ":ref:`Function <python:tut-functions>`
@@ -47,7 +47,7 @@ specific :xref:`Python` considerations in :term:`AAAAAA` like syntax and
    :doc:`python:faq/programming`, Advanced technical information
    :doc:`The Python interpreter <tutorial/interpreter>`, "Mechanism that
    executes :xref:`source code <source-code>`"
-   :ref:`Code structure <concepts-code-structure>`, :term:`AAAAAA` components
+   :ref:`Code structure <concepts-code-tree>`, :term:`AAAAAA` components
    :ref:`Code concepts <concepts-code>`, ":term:`AAAAAA` usage
    (syntax, structure)"
    :ref:`AAAAAA user guide <user-intro>`, ":term:`AAAAAA` usage
@@ -113,7 +113,7 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
          :ref:`Documenting <dev-env-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
          :ref:`tools-sphinx` , "
-         :ref:`Build documentation <sphinx-building-documentation>`", "
+         :ref:`Build documentation <sphinx-building-doc>`", "
          :ref:`Documenting <dev-env-documenting>`","
          :ref:`conda <conda:channels-glossary>`"
          :doc:`RTD Sphinx Theme <rtd-sphinx-theme:index>`, "
@@ -121,7 +121,7 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
          :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
          :xref:`Doc8 <Doc8>`, "Check
-         :ref:`documentation style <concepts-documentation-style>`", "
+         :ref:`documentation style <concepts-doc-style>`", "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
          :ref:`tools-bibtex`, :ref:`Book citations <references-books>`, "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
@@ -269,12 +269,11 @@ Sphinx
 
 :doc:`Sphinx <sphinx:intro>` is the
 :wiki-pg:`documentation <Software_documentation>` engine that
-:ref:`builds <sphinx-building-documentation>` the
-:xref:`website <website>` for :term:`AAAAAA` and even for
-:doc:`Python itself <py-dev-guide:documenting>`. Sphinx uses
-:ref:`tools-restructured-text` (``reST``), a particular style of
+:ref:`builds <sphinx-building-doc>` the :xref:`website <website>` for
+:term:`AAAAAA` and even for :doc:`Python itself <py-dev-guide:documenting>`.
+Sphinx uses :ref:`tools-restructured-text` (``reST``), a particular style of
 :wiki-pg:`markup language <Markup_language>`, which it converts to
-:wiki-pg:`HTML` when :ref:`building a website <sphinx-building-documentation>`
+:wiki-pg:`HTML` when :ref:`building a website <sphinx-building-doc>`
 
 :doc:`Sphinx <sphinx:intro>` has a
 :ref:`table of contents <sphinx:toctree-directive>` feature, which provides a
@@ -319,8 +318,8 @@ functionality and several are used in :term:`AAAAAA`:
    :doc:`conf.py <sphinx:usage/configuration>`, Configuration settings
    :ref:`tools-sphinx-autobuild`, "
    :ref:`Automatic documentation building <sphinx-autobuilding>`"
-   :ref:`Documentation structure <concepts-documentation-structure>`, "
-   :term:`AAAAAA` components"
+   :ref:`Documentation structure <concepts-doc-tree>`, ":term:`AAAAAA`
+   components"
    :ref:`Sphinx procedures <sphinx-procedures>`, :term:`AAAAAA` usage
 
 .. _tools-restructured-text:
@@ -343,7 +342,7 @@ block of text
 :doc:`reST <sphinx:usage/restructuredtext/basics>` have an ``.rst``
 :wiki-pg:`extension <Filename_extension>`, and :ref:`tools-sphinx` converts
 them to :wiki-pg:`HTML` whenever
-:ref:`documentation is built <sphinx-building-documentation>`
+:ref:`documentation is built <sphinx-building-doc>`
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -360,7 +359,7 @@ them to :wiki-pg:`HTML` whenever
    :doc:`sphinx:usage/restructuredtext/domains`, "Collections of
    :doc:`roles <sphinx:usage/restructuredtext/roles>` and
    :doc:`directives <sphinx:usage/restructuredtext/directives>`"
-   :ref:`reST style <concepts-documentation-style>`, :term:`AAAAAA` usage
+   :ref:`reST style <concepts-doc-style>`, :term:`AAAAAA` usage
 
 
 Many :ref:`tools-sphinx`-style :xref:`websites <website>` for
@@ -393,7 +392,7 @@ Read the Docs
 :doc:`Sphinx Theme <rtd-sphinx-theme:index>`. :doc:`Read the Docs<rtfd:index>`
 uses :doc:`webhooks <rtfd:webhooks>` to automatically detect any
 :ref:`Git <tools-git>` updates, which trigger new
-:ref:`documentation builds <sphinx-building-documentation>`.
+:ref:`documentation builds <sphinx-building-doc>`.
 :doc:`Read the Docs<rtfd:index>` also supports multiple
 :doc:`versions <rtfd:versions>` of
 :wiki-pg:`documentation <Software_documentation>`
@@ -406,7 +405,7 @@ the visual appearance of this :xref:`website <website>`!
    :header: Reference, Topic
    :align: center
 
-   :xref:`Quickstart tutorial <Yusuf-Sphinx-RTD>`, "Start a
+   :yt-vid:`Quickstart tutorial <oJsUvBQyHBs>`, "Start a
    :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
    project"
    :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
@@ -522,7 +521,7 @@ BibTeX
 :xref:`bibtex` is a special type of :xref:`citation <citation>` syntax that
 :term:`AAAAAA` uses for :ref:`books <references-books>`. The
 :doc:`BibTeX Sphinx extension <bibtex:index>` converts
-:ref:`refs.bib <concepts-documentation-structure>` into formatted
+:ref:`refs.bib <concepts-doc-tree>` into formatted
 :ref:`book citations <references-books>`
 
 If know the :xref:`ISBN` for a particular :ref:`book <references-books>`, you
@@ -588,7 +587,7 @@ quickly :wiki-pg:`rendering <Rendering_(computer_graphics)>` equations in
    :xref:`Markdown`, "Syntax for making :xref:`links <URL>`,
    :xref:`tables <tables-generator>`, etc."
    :xref:`tables-generator`, Syntax generator
-   :ref:`Notebook structure <concepts-jupyter-nbs-structure>`, "
+   :ref:`Notebook structure <concepts-jupyter-nbs-tree>`, "
    :term:`AAAAAA` components"
 
 The interactive style of :xref:`Jupyter Notebooks <Jupyter>` make it easy to
@@ -658,7 +657,7 @@ and additional functionality is provided by the
    :wiki-pg:`documentation <Software_documentation>`"
    :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
    :doc:`pytest tutorials <pytest:contents>`, Official tutorials
-   :ref:`Code structure <concepts-code-structure>`, :term:`AAAAAA` components
+   :ref:`Code structure <concepts-code-tree>`, :term:`AAAAAA` components
    :ref:`testing <testing-intro>`, :term:`AAAAAA` walkthrough
    :ref:`pytest procedures <pytest-procedures>`, :term:`AAAAAA` usage
 

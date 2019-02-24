@@ -47,6 +47,8 @@ explained in a way that
    * Add :term:`checklist` explanation from :ref:`book-checklist-manifesto`
    * Define :wiki-pg:`time standards <Time_standard>` for
      :ref:`versions <version-list>`
+   * Add :ref:`reST syntax <tools-restructured-text>` to
+     :ref:`sample-doc <sample-doc>`
 
 * 0.3.1 (2019-02-17T19:41:19Z)
 

@@ -32,7 +32,8 @@ Python
 General
 =======
 
-#. :xref:`Corey-Schafer-vids`
+#. :yt-pl:`Corey Schafer YouTube playlist: Python Tutorials
+   <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`
 
    * Recommended starting point for learning :xref:`Python`
 
@@ -91,6 +92,11 @@ Project structure
    * General installer for :ref:`packages <python:tut-packages>`
    * Used to :ref:`configure a6 <conda-pip-AAAAAA>` for use with
      :doc:`pytest <pytest:index>`
+
+#. :ref:`Module <python:tut-modules>`
+
+   * A :wiki-pg:`file <Computer_file>` that ends with a ``.py``
+     :wiki-pg:`extension <Filename_extension>`
 
 Text
 ====
@@ -574,8 +580,7 @@ Practical use
 
 #. :xref:`sphinx-autobuild`
 
-   * Automatically update
-     :ref:`documentation builds <sphinx-building-documentation>`
+   * Automatically update :ref:`documentation builds <sphinx-building-doc>`
 
 #. :xref:`Writer-intro-to-Sphinx`
 
@@ -630,8 +635,8 @@ Usage specifics
 
 #. :ref:`sublime-with-sphinx:use the external links extension`
 
-   * Instructions for installing an example
-     :doc:`Sphinx extension <sphinx:usage/extensions/index>`
+   * Instructions for :wiki-pg:`installing <Installation_(computer_programs)>`
+     an example :doc:`Sphinx extension <sphinx:usage/extensions/index>`
    * Similar to :ref:`external link management <sphinx-xref>` in
      :term:`AAAAAA`
 
@@ -648,7 +653,7 @@ Usage specifics
 #. :xref:`http socket error fix <http-socket-error>`
 
    * Potential problem (and solution) when
-     :ref:`building documentation <sphinx-building-documentation>`
+     :ref:`building documentation <sphinx-building-doc>`
 
 #. :doc:`sphinx:usage/restructuredtext/domains`
 
@@ -659,7 +664,7 @@ Usage specifics
 With Read the Docs
 ------------------
 
-#. :xref:`Yusuf-Sphinx-RTD`
+#. :yt-vid:`Mahdi Yusuf's Sphinx & Read the Docs screencast <oJsUvBQyHBs>`
 
    * Setting up a project using :doc:`quickstart <sphinx:usage/quickstart>`
    * :rst:dir:`toctree` and associated
@@ -679,6 +684,11 @@ With Read the Docs
 #. :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
 
    * Contains sample :ref:`tools-restructured-text` syntax
+
+#. :doc:`Read the Docs Sphinx Theme configuration
+   <rtd-sphinx-theme:configuring>`
+
+   * Values to use in :ref:`conf.py <configs-conf-py>`
 
 #. :doc:`rtfd:webhooks`
 
@@ -717,7 +727,9 @@ Managing references
    * Sample code for analyzing
      :doc:`objects.inv <sphinx:usage/extensions/intersphinx>` maps
 
-#. :xref:`intersphinx-numpy-matplotlib`
+#. :stack-q:`Intersphinx with NumPy/Matplotlib
+   <21538983/specifying-targets-for-intersphinx-links-to-numpy-scipy-and-\
+   matplotlib>`
 
    * Instructions to for using
      :doc:`Intersphinx <usage/extensions/intersphinx>` with specific
@@ -757,13 +769,23 @@ Managing references
 
    * Use of ``et. al``
 
+#. :wiki-pg:`Copyright`
+
+   * Defines rules for using content
+
 Showing code
 ------------
 
 #. :rst:dir:`code-block`
 
    * :doc:`Directive <sphinx:usage/restructuredtext/directives>` to show
-     sections of :xref:`code <source-code>`
+     sections of :wiki-pg:`code <Source_code>`
+
+#. :rst:dir:`literalinclude`
+
+   * :doc:`Directive <sphinx:usage/restructuredtext/directives>` to show
+     sections of :wiki-pg:`code <Source_code>`, directly from a
+     :wiki-pg:`file <Computer_file>`
 
 #. :doc:`Autodoc <sphinx:usage/extensions/autodoc>`
 
@@ -926,7 +948,8 @@ General
 #. :xref:`Schafer-Jupyter`
 
    * Recommended for learning to use :xref:`Jupyter Notebooks <Jupyter>`
-   * Tutorial video from :xref:`Corey Schafer <Corey-Schafer-vids>`
+   * Tutorial video from
+     :yt-pl:`Corey Schafer <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`
 
 #. :xref:`AAAAAA-nbs`
 
@@ -1167,6 +1190,10 @@ Data storage
 
    * One style of :wiki-pg:`whitespace <Whitespace_character>`
 
+#. :wiki-pg:`Delimiter`
+
+   * A data boundary marker
+
 Time
 ====
 
@@ -1231,6 +1258,10 @@ OS specifics
 
    * How to change :xref:`bash <bash-man-page>` prompt to a custom
      :xref:`string <string>` like ``$``
+
+#. :wiki-pg:`Exit status <Exit_status>`
+
+   * A report from :wiki-pg:`software <Software>` when it is done
 
 Online information
 ==================

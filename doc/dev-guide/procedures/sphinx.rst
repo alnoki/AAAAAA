@@ -13,14 +13,14 @@ Sphinx
 
    :ref:`tools-sphinx`, :term:`AAAAAA` conceptual explanation
    :yt-vid:`Practical Sphinx presentation <0ROZRNZkPS8>`, Common usage
-   :xref:`Project setup screencast <Yusuf-Sphinx-RTD>`, Start a project
+   :yt-vid:`Project setup screencast <oJsUvBQyHBs>`, Start a project
    :doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`, "Official
    tutorial"
 
 .. contents:: Contents
    :local:
 
-.. _sphinx-building-documentation:
+.. _sphinx-building-doc:
 
 
 **********************
@@ -36,8 +36,8 @@ Per
 :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018 <0ROZRNZkPS8>`:
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
-   inside the :ref:`documentation root directory<concepts-project-dir-tree>` if
-   it is not already :ref:`active <conda:activate-env>`
+   inside the :ref:`documentation root directory<concepts-project-tree>` if it
+   is not already :ref:`active <conda:activate-env>`
 #. From the :ref:`VS Code integrated terminal <tools-vs-code>`, make the
    :wiki-pg:`HTML` for :wiki-pg:`documentation <Software_documentation>` then
    start a :doc:`server <python:library/http.server>`
@@ -86,7 +86,7 @@ Automatically
 
 #. Like in the :ref:`manual build procedure <sphinx-building-manually>`,
    use the :term:`a6 environment <a6>` inside the
-   :ref:`documentation root directory<concepts-project-dir-tree>` via the
+   :ref:`documentation root directory<concepts-project-tree>` via the
    :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
@@ -96,7 +96,8 @@ Automatically
    :xref:`sphinx-autobuild options <sphinx-autobuild>`:
 
       -B    Automatically open :xref:`browser <web-browser>`
-      -s    Delay slightly [#]_ before opening :xref:`browser <web-browser>`
+      -s    :wiki-pg:`Delay <Time>` [#]_ before opening
+            :xref:`browser <web-browser>`
 
    * This should automatically open a :xref:`web browser <web-browser>`
    * The :doc:`server <python:library/http.server>` should be at
@@ -105,20 +106,29 @@ Automatically
 #. Use :kbd:`control-c` to stop the :doc:`server <python:library/http.server>`
 #. Keep in mind:
 
-   * Once the :doc:`server <python:library/http.server>` is running, saved
-     changes to any :ref:`.rst files <tools-restructured-text>` should
-     cause your :xref:`web browser <web-browser>` to update whatever part of
-     the :xref:`website <website>` you are viewing
+   * Once the :doc:`server <python:library/http.server>` is running,
+     :wiki-pg:`saved <Computer_file>` changes to any
+     :ref:`.rst files <tools-restructured-text>` should cause your
+     :xref:`web browser <web-browser>` to update whatever part of the
+     :xref:`website <website>` you are viewing
    * You will still need to manually navigate to the :xref:`webpage <webpage>`
      you want to view
    * If your :wiki-pg:`web browser <Web_browser>` is set to a :wiki-pg:`URL`
-     that ends with ``.html``, the :xref:`webpage <webpage>` will refresh in
-     the same vertical position, but you may not be granted this luxury if the
-     :wiki-pg:`URL` ends with something like ``.html#a-heading-you-clicked-on``
+     that ends with ``.html``, the :xref:`webpage <webpage>` will
+     :wiki-pg:`refresh <Web_browser>` in the same
+     :wiki-pg:`vertical position <Scrolling>`, but you may not be granted this
+     luxury if the :wiki-pg:`URL` ends with something like
+     ``.html#a-heading-you-clicked-on``
+   * For some reason, at least on a
+     :wiki-pg:`Mac <Macintosh_operating_systems>`, you may need to
+     :wiki-pg:`quit <Exit_status>` your :wiki-pg:`web browser <Web_browser>`,
+     stop :ref:`tools-sphinx-autobuild` via :kbd:`control-c` and then re-do
+     the above before the auto-:wiki-pg:`refresh <Web_browser>` behavior will
+     work
 
 .. rubric:: Footnotes
 
-.. [#] If you try to use no delay at all, ``-s 0``, the
+.. [#] If you try to use no :wiki-pg:`delay <Time>` at all, ``-s 0``, the
    :xref:`browser <web-browser>` might not open
 
 .. _sphinx-managing-references:
@@ -210,8 +220,7 @@ Using Intersphinx
       :header: Portion, Interpretation, In role target
       :align: center
 
-      ``https://docs.python.org/3/``, Base from from ``intersphinx_mapping``,"
-      ``python:``"
+      ``https://docs.python.org/3/``, Base :wiki-pg:`URL`, ``python:``
       ``tutorial/introduction.html``, Desired :xref:`webpage <webpage>`, "
       ``tutorial/introduction``"
 
@@ -232,7 +241,7 @@ Using Intersphinx
    :ref:`links <references-links>`
 #. Add a :doc:`role <sphinx:usage/restructuredtext/roles>` to
    :wiki-pg:`documentation <Software_documentation>` using the appropriate
-   :ref:`capitalization <concepts-documentation-style>`. For example:
+   :ref:`capitalization <concepts-doc-style>`. For example:
 
    .. code-block:: rest
 
@@ -241,11 +250,13 @@ Using Intersphinx
 .. note::
 
    When possible, use ``:ref:`` instead of ``:doc:``, because the project's
-   :ref:`table of contents <sphinx:toctree-directive>` may change
+   :ref:`toctree <sphinx:toctree-directive>` may change
 
 .. seealso::
 
-   :xref:`intersphinx-numpy-matplotlib` has instructions for referencing
+   :stack-q:`Intersphinx with NumPy/Matplotlib
+   <21538983/specifying-targets-for-intersphinx-links-to-numpy-scipy-and-\
+   matplotlib>` has instructions for referencing
    :doc:`NumPy <numpy:about>` and :doc:`Matplotlib <matplotlib:index>`, though
    standard procedures from above are usually sufficient for :term:`AAAAAA`
 
@@ -273,33 +284,31 @@ from a :wiki-pg:`website <Website>` that you often use, it makes sense to use
    https://realpython.com/python-type-checking:
 
    .. code-block:: rest
-      :caption: Efficient :doc:`role <sphinx:usage/restructuredtext/roles>`
+      :caption: Resultant :doc:`role <sphinx:usage/restructuredtext/roles>`
 
       :real-py:`python-type-checking`
 
-It would not make sense to use :ref:`sphinx-extlinks` for:
-
-#. :xref:`Stack Overflow questions <stack-overflow>`, like
-   https://stackoverflow.com/questions/1441010/the-shortest-possible-output-from-git-log-containing-author-and-date:
-
-   .. code-block:: rest
-      :caption: (Hypothetical) inefficient
-         :doc:`role <sphinx:usage/restructuredtext/roles>`
-
-      :stack-overflow:`1441010/the-shortest-possible-output-from-git-log-containing-author-and-date`
-
-   * How many :wiki-pg:`characters <Character_(computing)>` is that?
-
-#. :xref:`YouTube videos <YouTube>`, like
-   https://www.youtube.com/watch?v=0ROZRNZkPS8
+#. Even :xref:`Stack Overflow questions <stack-overflow>`, like
+   :stack-q:`https://stackoverflow.com/questions/1441010/the-shortest-possible\
+   -output-from-git-log-containing-author-and-date
+   <1441010/the-shortest-possible-output-from-git-log-containing-author-and-\
+   date>`:
 
    .. code-block:: rest
-      :caption: (Hypothetical) confusing
-         :doc:`role <sphinx:usage/restructuredtext/roles>`
+      :caption: Resultant :doc:`role <sphinx:usage/restructuredtext/roles>`
 
-      :yt-vid:`0ROZRNZkPS8`
+      :stack-q:`https://stackoverflow.com/questions/1441010/the-shortest-possible\
+      -output-from-git-log-containing-author-and-date
+      <1441010/the-shortest-possible-output-from-git-log-containing-author-and-\
+      date>`
 
-   * What does ``0ROZRNZkPS8`` mean?
+   * Note that this works, it just doesn't
+     :wiki-pg:`render <Rendering_(computer_graphics)>` with
+     :wiki-pg:`colors <Web_colors>` in the above :rst:dir:`code-block` because
+     of the ``\``-:wiki-pg:`escapes <Delimiter>` for
+     :wiki-pg:`new lines <Newline>`
+   * This is still in compliance with
+     :ref:`line breaking standards <concepts-doc-whitespace>`
 
 .. _sphinx-xref:
 
@@ -313,28 +322,11 @@ xref
    :ref:`tools-xref`, :term:`AAAAAA` conceptual explanation
    :github:`Sphinx xref extension <michaeljones/sphinx-xref>`, User manual
 
-#. Add your :xref:`URL <URL>` to :doc:`conf.py <sphinx:usage/configuration>`:
-
-   * If the :ref:`link <references-links>` is from a common
-     :wiki-pg:`website <Website>` that has a
-     :ref:`complicated URL pattern <sphinx-reference-urls>` (like for a
-     :xref:`YouTube video <YouTube>`), first add
-     the base to the :xref:`URL <URL>` mapping
-     :ref:`dictionary <python:tut-dictionaries>`:
-
-     .. code-block:: python
-
-        # Base urls used by xrefs extension
-        url = {
-            'YT vid': 'https://www.youtube.com/watch?v=',  # Video
-            'YT PL': 'https://www.youtube.com/playlist?list=PL',  # Playlist
-            'Stack OF': 'https://stackoverflow.com/questions/',  # Question
-            ...
-
-   * Put your (potentially decomposed) :xref:`URL <URL>` in the ``xref_links``
-     mapping :ref:`dictionary <python:tut-dictionaries>` below the
-     :ref:`comment <python:comments>` that reads ``New links below, sorted
-     links above``
+#. Add your :xref:`URL <URL>` to the ``xref_links``
+   :ref:`dictionary <python:tut-dictionaries>` in
+   :ref:`conf.py <concepts-doc-tree>`, below the
+   :wiki-pg:`delimeter <Delimiter>`-style :ref:`comment <python:comments>`
+   that reads ``New links below, sorted links above``
 
      .. code-block:: python
 
@@ -348,7 +340,7 @@ xref
 
 #. Add a :doc:`link role <sphinx:usage/restructuredtext/roles>` to
    :ref:`.rst files <tools-restructured-text>` using the appropriate
-   :ref:`capitalization <concepts-documentation-style>` and an optional
+   :ref:`capitalization <concepts-doc-style>` and an optional
    :doc:`role title <sphinx:usage/restructuredtext/roles>`:
 
    .. code-block:: rest
@@ -361,24 +353,23 @@ xref
 
       :xref:`Python.org <Python>`
 
-#. Add a description of the :xref:`URL <URL>` to
-   :ref:`links <references-links>`
+#. Add a description of the :wiki-pg:`URL` to :ref:`links <references-links>`
 
-   * After this step, the :xref:`URL <URL>` can be moved above the delimiter
-     :ref:`comment <python:comments>` in
-     :doc:`conf.py <sphinx:usage/configuration>`
+   * After this step, the :xref:`URL <URL>` can be moved above the
+     :wiki-pg:`delimiter <Delimiter>`-stye :ref:`comment <python:comments>`
+     from :doc:`conf.py <sphinx:usage/configuration>`
 
 .. admonition:: Optimality considerations
 
-   * As long as :xref:`URLs <URL>` aren't put above the delimiter
-     :ref:`comment <python:comments>` until after they are put
-     into :ref:`links <references-links>`, :xref:`URLs <URL>` can be sorted in
-     **reasonably sized** batches
+   * As long as :xref:`URLs <URL>` aren't put above the
+     :wiki-pg:`delimiter <Delimiter>`-stye :ref:`comment <python:comments>`
+     until after they are put into :ref:`links <references-links>`,
+     :xref:`URLs <URL>` can be sorted in **reasonably sized** batches
    * If you put a :ref:`link <references-links>` in
      :ref:`.rst files <tools-restructured-text>` and in
-     :ref:`links <references-links>` first, you can bypass the delimiter
-     :ref:`comment <python:comments>` altogether when
-     adding to :ref:`conf.py <tools-sphinx>`
+     :ref:`links <references-links>` first, you can bypass the
+     :wiki-pg:`delimiter <Delimiter>`-stye :ref:`comment <python:comments>`
+     altogether when adding to :ref:`conf.py <tools-sphinx>`
 
 .. _sphinx-extlinks:
 
@@ -395,8 +386,18 @@ extlinks
    :ref:`Using a references extension <sublime-with-sphinx:use the external links extension>`, "
    Related configuration and usage"
 
-#. Usage is nearly identical to that of :ref:`sphinx-xref`, but instead add
-   your base :wiki-pg:`URL` to ``extlinks``
+#. Add your base :wiki-pg:`URL` to the ``extlinks``
+   :ref:`dictionary <python:tut-dictionaries>` in
+   :ref:`conf.py <concepts-doc-tree>`, with a ``%s`` at the end:
+
+   .. code-block:: python
+
+      extlinks = {
+          'wiki-pg': ('https://en.wikipedia.org/wiki/%s', ''),
+          'real-py': ('https://realpython.com/%s', ''),
+          ...
+      }
+
 #. After you have added the base :wiki-pg:`URL`, you will then have access to
    a new custom :doc:`role <sphinx:usage/restructuredtext/roles>`:
 
@@ -431,6 +432,11 @@ extlinks
 
       :real-py:`type checking guide <python-type-checking>`
 
+#. Add a description of the :wiki-pg:`URL` to :ref:`links <references-links>`,
+   then add your custom :doc:`role <sphinx:usage/restructuredtext/roles>` to
+   :wiki-pg:`documentation <Software_documentation>` using the appropriate
+   :ref:`capitalization <concepts-doc-style>`
+
 .. tip::
 
    Although you could use :ref:`sphinx-extlinks` to create a :wiki-pg:`URL`
@@ -447,8 +453,8 @@ Per
 :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018 <0ROZRNZkPS8>`:
 
 #. From inside the
-   :ref:`documentation root directory <concepts-documentation-structure>`, use
-   the :ref:`VS Code integrated terminal <tools-vs-code>`:
+   :ref:`documentation root directory <concepts-doc-tree>`, use the
+   :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 
@@ -459,12 +465,12 @@ Per
 Updating labels
 ===============
 
-#. With an :ref:`active build running <sphinx-building-documentation>`, open
-   the :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
-   :ref:`documentation root directory <concepts-project-dir-tree>`
+#. With an :ref:`active build running <sphinx-building-doc>`, open the
+   :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
+   :ref:`documentation root directory <concepts-project-tree>`
 #. Use :ref:`intersphinx <sphinx-intersphinx>` on ``_build/html/objects.inv``
    to inspect inspect :ref:`labels <sphinx:ref-role>` for :term:`AAAAAA`
-#. Verify the proper :ref:`label style <concepts-documentation-style>`
+#. Verify the proper :ref:`label style <concepts-doc-style>`
 #. Update any :ref:`labels <sphinx:ref-role>` via the
    :ref:`VS code command palette <tools-vs-code>`:
    :guilabel:`Search: Replace in Files`
@@ -485,16 +491,16 @@ Referencing books
    :xref:`ottobib`, "Get :xref:`bibtex` for your
    :ref:`book <references-books>`"
    :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
-   :ref:`refs.bib <concepts-documentation>`, "Collection of
-   :xref:`bibtex`-style :xref:`citations <citation>`"
+   :ref:`refs.bib <concepts-doc>`, "Collection of :xref:`bibtex`-style
+   :xref:`citations <citation>`"
    :xref:`bibtex-syntax`, Syntax specifications
    :xref:`cite-multiple-authors`, Use of ``et. al``
 
 #. Check :xref:`ottobib` for your :xref:`ISBN` and
    :xref:`copy-paste <copy-paste>` the :xref:`bibtex` option into
-   :ref:`refs.bib <concepts-documentation>`
+   :ref:`refs.bib <concepts-doc>`
 #. Verify that you added a :xref:`book entry <bibtex-syntax>` in
-   :ref:`refs.bib <concepts-documentation-structure>`
+   :ref:`refs.bib <concepts-doc-tree>`
 
    * A ``book`` :xref:`entry <bibtex-syntax>` requires at least ``author`` (or
      ``editor``), ``title``, ``publisher``, and ``year``
@@ -505,12 +511,12 @@ Referencing books
 #. Add a :ref:`role <sphinx:ref-role>` to :ref:`books <references-books>` via
    ``:cite:`bib-book-name```
 
-   * Use a :ref:`heading <concepts-documentation-example>` so that
-     :rst:dir:`toctree` can index the entry
+   * Use a :ref:`heading <concepts-doc-example>` so that :rst:dir:`toctree` can
+     index the entry
 
-   * Use a :ref:`label <concepts-documentation-style>` that starts with
-     ``book-`` in :ref:`books <references-books>`, and with ``bib-`` in
-     :ref:`refs.bib <concepts-documentation-structure>`
+   * Use a :ref:`label <concepts-doc-style>` that starts with ``book-`` in
+     :ref:`books <references-books>`, and with ``bib-`` in
+     :ref:`refs.bib <concepts-doc-tree>`
 
    .. code-block:: rest
       :emphasize-lines: 1, 8

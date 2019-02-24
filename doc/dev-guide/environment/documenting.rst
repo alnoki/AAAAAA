@@ -135,8 +135,7 @@ Documenting
      that :github:`alnoki` uses
 
 #. At this point you should be able to
-   :ref:`build the documentation <sphinx-building-documentation>` and play
-   around with the :ref:`reference management <sphinx-managing-references>`
-   features
+   :ref:`build the documentation <sphinx-building-doc>` and play around with
+   the :ref:`reference management <sphinx-managing-references>` features
 
 Congratulations!!!

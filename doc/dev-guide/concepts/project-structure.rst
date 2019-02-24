@@ -17,7 +17,7 @@ for :term:`AAAAAA` are located at the
 :github:`AAAAAA repository <alnoki/AAAAAA>`, which is
 :wiki-pg:`hosted <Host_(network)>` by :xref:`GitHub`
 
-.. _concepts-project-dir-tree:
+.. _concepts-project-tree:
 
 
 ********

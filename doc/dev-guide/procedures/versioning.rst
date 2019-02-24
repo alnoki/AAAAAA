@@ -31,7 +31,7 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    :align: center
 
    :ref:`tools-vs-code`, Task management environment
-   :ref:`concepts-project-dir-tree`, :term:`AAAAAA` project structure
+   :ref:`concepts-project-tree`, :term:`AAAAAA` project structure
    :xref:`Markdown`, Syntax specification
    :term:`OHIO`, Task management philosophy
 
@@ -39,7 +39,7 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
 
    Chant :term:`OHIO` while doing this
 
-#. Open :ref:`TODO.md <concepts-project-dir-tree>` in :ref:`tools-vs-code`
+#. Open :ref:`TODO.md <concepts-project-tree>` in :ref:`tools-vs-code`
 #. From the :ref:`command palette <tools-vs-code>`:
 
    * :guilabel:`View: Open View`
@@ -84,7 +84,7 @@ Starting a new version
 #. Create a new :ref:`development branch <git-branching>` named in accordance
    with :xref:`semantic versioning standards <semver>`:
    ``dev/MAJOR.MINOR.PATCH``
-#. In :ref:`conf.py <concepts-documentation-structure>`, update
+#. In :ref:`conf.py <concepts-doc-tree>`, update
    :ref:`version numbers <version-list>` (and potentially copyright year)
 #. Add an entry to the :ref:`version list <version-list>`
 
@@ -109,10 +109,10 @@ At this point you should be working on a
 #. Verify that the :ref:`quickstart <quickstart>` works
 #. Verify and :ref:`update directory trees <writing-make-dir-tree>`
 
-   * :ref:`AAAAAA <concepts-project-dir-tree>`
-   * :ref:`Documentation <concepts-documentation-structure>`
-   * :ref:`Jupyter Notebooks <concepts-jupyter-nbs-structure>`
-   * :ref:`Code <concepts-code-structure>`
+   * :ref:`AAAAAA <concepts-project-tree>`
+   * :ref:`Documentation <concepts-doc-tree>`
+   * :ref:`Jupyter Notebooks <concepts-jupyter-nbs-tree>`
+   * :ref:`Code <concepts-code-tree>`
 
 #. Finalize feature additions in the :ref:`version list <version-list>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
