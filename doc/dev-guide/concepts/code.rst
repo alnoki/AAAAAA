@@ -106,7 +106,8 @@ and :ref:`docstrings <python:tut-docstrings>` containing
 .. py:function:: explanation(what, who, how, where, when, how_many)
 
    Explain something to somebody in a certain way at a certain place on a
-   certain day, a certain number of timey times
+   certain :wiki-pg:`day <ISO_8601>`, a certain number of
+   :wiki-pg:`timey times <Time>`
 
    :param object what: are you trying to explain?
    :param str who: even cares?

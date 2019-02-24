@@ -30,23 +30,25 @@ Setting up
 Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
 :xref:`git-setup`:
 
-#. Configure your identity:
+#. Configure your :wiki-pg:`identity <User_(computing)>`:
 
    .. code-block:: bash
 
       git config --global user.name alnoki
       git config --global user.email 43892045+alnoki@users.noreply.github.com
 
-#. Set :xref:`Vim` as the default editor and use it to verify your identity:
+#. Set :xref:`Vim` as the default editor and use it to verify your
+   :wiki-pg:`identity <User_(computing)>`:
 
    .. code-block:: bash
 
       git config --global core.editor Vim
       git config --global -e
 
-#. At this point, you will be in the :xref:`Vim`. If you your identity looks
-   right, you can :xref:`exit without saving <Vim-cheatsheet>` by typing
-   ``:q!`` then :kbd:`return`
+#. At this point, you will be in the :xref:`Vim`. If you your
+   :wiki-pg:`identity <User_(computing)>` looks right, you can
+   :xref:`exit without saving <Vim-cheatsheet>` by
+   :wiki-pg:`typing <Typing>` ``:q!`` then :kbd:`return`
 
 .. csv-table:: Learning :xref:`Vim`
    :header: Reference, Topic

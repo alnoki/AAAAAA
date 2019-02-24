@@ -3,12 +3,20 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
+## Proofread
+1. find all for "command"
+1. Then must do for syntax too, add `Syntax_(programming_languages)`
+
 ## Configurations page
 1. Add a configs dir tree at the top
 1. Reciprical cross links
       1. Then can reference quickstart from rtd setup
 1. find all for conf.py now links to config page
 1. Make sure rtd page still works alright
+1. Complete conf.py
+1. For Jupyter?
+   1. NB extensions, etc.
+1. Figure out a vs code color, from wiki pg, for strings
 
 ## Version list
 1. Mention how autodocced conf.py

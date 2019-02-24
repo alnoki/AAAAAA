@@ -82,7 +82,7 @@ Automatically
    :align: center
 
    :ref:`tools-sphinx-autobuild`, :term:`AAAAAA` conceptual description
-   :xref:`sphinx-autobuild`, Official user manual
+   :xref:`sphinx-autobuild`, Official :wiki-pg:`user <User_(computing)>` manual
 
 #. Like in the :ref:`manual build procedure <sphinx-building-manually>`,
    use the :term:`a6 environment <a6>` inside the
@@ -153,10 +153,13 @@ Using Intersphinx
    :ref:`tools-intersphinx`, :term:`AAAAAA` conceptual explanation
    :doc:`sphinx.ext.intersphinx <sphinx:usage/extensions/intersphinx>`, "
    Official :wiki-pg:`documentation <Software_documentation>`"
-   :xref:`Intersphinx reference syntax <intersphinx-inv-targets>`, "Syntax
+   ":stack-q:`Intersphinx reference syntax
+   <45699577/how-to-link-to-root-page-in-intersphinx>`", "Syntax
    explanation"
-   :xref:`Intersphinx inventory parser <intersphinx-inv-parser>`, "For
-   referencing large projects"
+   ":stack-q:`Intersphinx inventory parser
+   <30939867/how-to-properly-write-cross-references-to-external-\
+   documentation-with-intersphin>`", "For :ref:`linking <references-links>`
+   to large projects"
 
 #. Locate the project's
    :doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
@@ -320,7 +323,8 @@ xref
    :align: center
 
    :ref:`tools-xref`, :term:`AAAAAA` conceptual explanation
-   :github:`Sphinx xref extension <michaeljones/sphinx-xref>`, User manual
+   :github:`Sphinx xref extension <michaeljones/sphinx-xref>`, "
+   :wiki-pg:`User <User_(computing)>` manual"
 
 #. Add your :xref:`URL <URL>` to the ``xref_links``
    :ref:`dictionary <python:tut-dictionaries>` in
@@ -383,8 +387,9 @@ extlinks
    :ref:`tools-extlinks`, :term:`AAAAAA` conceptual explanation
    :doc:`extlinks <sphinx:usage/extensions/extlinks>`, "Official
    :wiki-pg:`documentation <Software_documentation>`"
-   :ref:`Using a references extension <sublime-with-sphinx:use the external links extension>`, "
-   Related configuration and usage"
+   ":ref:`Using a references extension
+   <sublime-with-sphinx:use the external links extension>`", "
+   Related :ref:`configuration <configs-conf-py>` and usage"
 
 #. Add your base :wiki-pg:`URL` to the ``extlinks``
    :ref:`dictionary <python:tut-dictionaries>` in

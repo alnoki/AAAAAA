@@ -8,7 +8,8 @@ Environment setup
 #################
 
 The steps in this section will enable you to reproduce the environment that
-:github:`alnoki` uses to create :term:`AAAAAA`
+:github:`alnoki` uses to create :term:`AAAAAA`, which will all be explained
+afterwards in the :ref:`concepts <concepts-intro>` section
 
 Before you begin, you will need
 :doc:`Miniconda <conda:user-guide/install/download>`, which will
@@ -16,8 +17,9 @@ give you access to :xref:`Python` and :xref:`Anaconda`. If you participated in
 the :ref:`quickstart <quickstart>`, then you should already have
 :doc:`Miniconda <conda:user-guide/install/download>`
 
-Any configurations, settings, and :ref:`tools <concepts-tools>` that you might
-need are described in the following instructions, so get ready to
+Any :ref:`tools <concepts-tools>` and :ref:`configurations <concepts-configs>`
+that you might need will be :wiki-pg:`downloaded <Download>` throughout the
+the following instructions, so get ready to
 :wiki-pg:`install <Installation_(computer_programs)>` some
 :xref:`free software <open-source>`!
 

@@ -717,14 +717,17 @@ Managing references
    * :doc:`Sphinx extension <sphinx:usage/extensions/index>` for improved
      handling of :ref:`sphinx-xref base URLs <sphinx-xref>`
 
-#. :xref:`intersphinx-inv-targets`
+#. :stack-q:`Intersphinx objects.inv explanation
+   <45699577/how-to-link-to-root-page-in-intersphinx>`
 
    * Interpretation of :doc:`objects.inv <sphinx:usage/extensions/intersphinx>`
      when using :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>`
 
-#. :xref:`intersphinx-inv-parser`
+#. :stack-q:`Intersphinx inventory parser
+   <30939867/how-to-properly-write-cross-references-to-external-documentation-\
+   with-intersphin>`
 
-   * Sample code for analyzing
+   * Sample :wiki-pg:`code <Source_code>` for analyzing
      :doc:`objects.inv <sphinx:usage/extensions/intersphinx>` maps
 
 #. :stack-q:`Intersphinx with NumPy/Matplotlib

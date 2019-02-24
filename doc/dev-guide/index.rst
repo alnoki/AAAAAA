@@ -7,13 +7,13 @@ Introduction
 
 The :ref:`environment setup <dev-env-intro>` will help you
 :wiki-pg:`install <Installation_(computer_programs)>` the
-:ref:`tools <concepts-tools>` that :github:`alnoki` uses to create
-:term:`AAAAAA`
+:ref:`tools <concepts-tools>` and :ref:`configurations <concepts-configs>`
+that :github:`alnoki` uses to create :term:`AAAAAA`
 
-The :ref:`concepts section <concepts>` provides conceptual explanations of the
-:ref:`tools <concepts-tools>` and :ref:`configurations <concepts-configs>` that
-:github:`alnoki` uses to create :term:`AAAAAA`, and the specific ways that
-they are used
+The :ref:`concepts section <concepts-intro>` provides conceptual explanations
+of the :ref:`tools <concepts-tools>` and
+:ref:`configurations <concepts-configs>` that :github:`alnoki` uses to create
+:term:`AAAAAA`, and the specific ways that they are used
 
 The :ref:`testing section <testing-intro>` is *coming soon*
 

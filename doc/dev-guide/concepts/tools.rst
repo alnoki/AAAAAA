@@ -66,21 +66,23 @@ require, so you can use :doc:`Miniconda<conda:user-guide/install/index>` to
 access only the ones that you need
 
 You can manage these :ref:`packages <conda:concept-conda-package>` using
-:doc:`conda <conda:index>`, a configurator that automatically checks
-dependencies and maintains compatibility between
+:doc:`conda <conda:index>`, a :wiki-pg:`command line <Command_line>` utility
+that automatically checks dependencies and maintains compatibility between
 :ref:`packages <conda:concept-conda-package>`.
 :ref:`conda:concept-conda-package` can be downloaded from
 different :ref:`conda channels <conda:channels-glossary>`, like the
 :xref:`conda-forge`
 
-.. csv-table:: Select references
+.. csv-table:: :doc:`conda:index` references
    :header: Reference, Topic
    :align: center
 
    :doc:`conda:index`, Official reference
    :doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`, "Common
-   :doc:`conda <conda:index>` commands"
+   :wiki-pg:`commands <Command_line>` for :doc:`conda <conda:index>`"
    :ref:`Conda procedures <conda-procedures>`, :term:`AAAAAA` usage
+   :doc:`Miniconda <conda:user-guide/install/download>`, ":wiki-pg:`URL <URL>`
+   for :wiki-pg:`download <Download>`"
 
 The :ref:`developer environment setup <dev-env-intro>` describes how to
 :doc:`create <conda:commands/create>` a new
@@ -240,8 +242,10 @@ which has all the latest features but may not be completely stable
 
    :xref:`Python integration <VS-Code-Python-tutorial>`, "Official tutorial for
    :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
-   :xref:`Command palette <command-palette>`, Quickly input user commands
-   :xref:`Settings <VS-Code-settings>`, Environment configuration
+   :xref:`Command palette <command-palette>`, "Quickly input
+   :wiki-pg:`commands <Command_line>`"
+   :xref:`Settings <VS-Code-settings>`, "
+   :ref:`Configuration options <configs-settings-json>`"
    :xref:`Integrated terminal <VS-Code-terminal>`, "Run a
    :xref:`command line <command-line>` inside :xref:`VS Code <VS-Code>`"
    :xref:`VS-Code-unit-testing`, ":ref:`tools-pytest` integration"
@@ -312,10 +316,11 @@ functionality and several are used in :term:`AAAAAA`:
    :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
    :yt-vid:`Practical use seminar <0ROZRNZkPS8>`, "Practical
    :ref:`use examples <sphinx-procedures>`"
-   :ref:`References extension configuration example <sublime-with-sphinx:use the external links extension>`, "
-   :doc:`Extension <sphinx:usage/extensions/index>` installation and
-   configuration"
-   :doc:`conf.py <sphinx:usage/configuration>`, Configuration settings
+   ":ref:`References extension configuration example
+   <sublime-with-sphinx:use the external links extension>`", "Similar usage and
+   :ref:`configuration <configs-conf-py>`"
+   :doc:`conf.py <sphinx:usage/configuration>`, "
+   :ref:`Configurations <configs-conf-py>`"
    :ref:`tools-sphinx-autobuild`, "
    :ref:`Automatic documentation building <sphinx-autobuilding>`"
    :ref:`Documentation structure <concepts-doc-tree>`, ":term:`AAAAAA`
@@ -554,9 +559,9 @@ is helpful when :ref:`proofreading documentation <writing-proofread>`
    :header: Reference, Topic
    :align: center
 
-   :xref:`sphinx-autobuild`, User manual
-   :ref:`tools-sphinx`, :ref:`Tool <concepts-tools>` to make
-   :wiki-pg:`documentation <Software_documentation>`
+   :xref:`sphinx-autobuild`, :wiki-pg:`User <User_(computing)>` manual
+   :ref:`tools-sphinx`, ":ref:`Tool <concepts-tools>` to make
+   :wiki-pg:`documentation <Software_documentation>`"
    :ref:`Building manually <sphinx-building-manually>`, "Manual
    :term:`AAAAAA` usage"
    :ref:`Building automatically <sphinx-autobuilding>`, "Automated
@@ -668,3 +673,5 @@ Distributing
 
 PyPI
 ====
+
+*Coming soon*

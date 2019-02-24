@@ -68,7 +68,6 @@ html_theme_options = {
     'collapse_navigation': False,
     'navigation_depth': -1,
     'prev_next_buttons_location': 'both',
-    'vcs_pageview_mode': 'raw',
 }
 """:doc:`Read the Docs theme <rtd-sphinx-theme:index>` options
 
@@ -218,16 +217,6 @@ url = {
 }
 
 xref_links = {
-    # Stack Overflow
-    'intersphinx-inv-parser':
-        ("Intersphinx inventory parser", url['Stack OF'] +
-         '30939867/how-to-properly-write-cross-references-to-external-'
-         'documentation-with-intersphin'),
-    'intersphinx-inv-targets':
-        ("Intersphinx objects.inv explanation", url['Stack OF'] +
-         '45699577/how-to-link-to-root-page-in-intersphinx'),
-
-    # Other
     'Python': ('Python', 'https://www.python.org'),
     'semver': ("Semantic Versioning", 'https://semver.org/'),
     'ottobib': ('OttoBib', 'https://www.ottobib.com'),

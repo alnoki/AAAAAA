@@ -1,6 +1,6 @@
 .. 0.3.0
 
-.. _concepts:
+.. _concepts-intro:
 
 
 ########
@@ -20,16 +20,16 @@ finished :wiki-pg:`dowloading <Download>` all of them
 * :ref:`concepts-project-structure` describes the contents of the
   :github:`AAAAAA repository <alnoki/AAAAAA>` and provides :xref:`links <URL>`
   related to each component
-* :ref:`concepts-doc` describes the :wiki-pg:`files tructure <Computer_file>`
+* :ref:`concepts-doc` describes the :wiki-pg:`file structure <Computer_file>`
   of contents related to :ref:`tools-Sphinx` and :ref:`tools-Jupyter`, and
   provides :ref:`syntax guidelines <concepts-doc-style>`
-* :ref:`concepts-configs` describes the configurations that can be
+* :ref:`concepts-configs` describes the settings that
   :wiki-pg:`downloaded <Download>` during the
   :ref:`developer environment setup <dev-env-intro>`, and how they affect
   :ref:`tools <concepts-tools>` that are used for the
   :wiki-pg:`development <Software_development>` of :term:`AAAAAA`
 * :ref:`concepts-code` describes the
-  :wiki-pg:`files tructure <Computer_file>` of contents related to
+  :wiki-pg:`file structure <Computer_file>` of contents related to
   :ref:`Python source code <tools-python>` and
   :ref:`pytest test code <tools-pytest>`, as well as some
   :ref:`syntax guidelines <concepts-code-style>`

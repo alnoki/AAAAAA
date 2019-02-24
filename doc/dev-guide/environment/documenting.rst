@@ -24,8 +24,9 @@ Documenting
 
    * On :wiki-pg:`Windows <Microsoft_Windows>`, use the ``/K``
      :xref:`cmd.exe option <cmd.exe-invocation>` to run
-     :ref:`Anaconda Prompt <conda:starting-conda>` (adapted for your username
-     and :xref:`computer <computer>`):
+     :ref:`Anaconda Prompt <conda:starting-conda>` (adapted for your
+     :wiki-pg:`username <User_(computing)>` and
+     :wiki-pg:`computer <Computer>`):
 
      .. code-block:: json
 
@@ -41,7 +42,7 @@ Documenting
         scroll to the right
 
 #. Use the :xref:`command-palette` to open a new :xref:`VS-Code-terminal` and
-   enter the following command to
+   enter the following :wiki-pg:`command <Command_line>` to
    :doc:`create <conda:commands/create>` a new
    :ref:`conda environment <conda:concept-conda-env>`, called
    :term:`a6`, that has the necessary
@@ -107,7 +108,7 @@ Documenting
 
    * You can also get this path by
      :ref:`activating <conda:activate-env>` the :term:`a6 evironment <a6>` then
-     typing :command:`which python`
+     :wiki-pg:`typing <Typing>` :command:`which python`
 
 #. Use the :xref:`VS-Code-terminal` to
    :doc:`install <conda:commands/install>` a few more

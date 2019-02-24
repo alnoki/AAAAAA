@@ -123,7 +123,7 @@ is on a :doc:`floating point precision <python:tutorial/floatingpoint>` rampage
 If you don't already know how
 :doc:`invoke the Python interpreter <tutorial/interpreter>`, please feel free
 to to grab yourself a slippery new copy of
-:doc:`miniconda <conda:user-guide/install/download>` and
+:doc:`Miniconda <conda:user-guide/install/download>` and
 :ref:`fire up conda <conda:starting-conda>` then type
 
 .. code-block:: bash
