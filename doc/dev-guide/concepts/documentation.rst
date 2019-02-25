@@ -115,12 +115,13 @@ particular emphases:
    :ref:`tools-restructured-text`, :term:`AAAAAA` conceptual explanation
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "General
    :ref:`reST <tools-restructured-text>` style guide"
-   :xref:`Doc8`, ":ref:`Conda package <tools-anaconda>` to check
-   :ref:`reST <tools-restructured-text>` style [#]_"
+   :xref:`Doc8`, ":wiki-pg:`Syntax highlighting <Syntax_highlighting>` for
+   :ref:`reST <tools-restructured-text>` [#]_"
 
 .. rubric:: Footnotes
 
-.. [#] Automatically runs via the :xref:`RST-preview-ext` for
+.. [#] Automatically :wiki-pg:`runs <Execution_(computing)>` via the
+   :vs-code-ext:`reStructuredText extension <lextudio.restructuredtext>` for
    :ref:`tools-vs-code`
 
 Specific syntax

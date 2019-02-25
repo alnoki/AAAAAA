@@ -23,7 +23,9 @@ Testing
 
       pip install -e .
 
-#. Install the :xref:`Python Test Explorer for VS Code <Test-explorer-UI>`
+#. Install the
+   :vs-code-ext:`Python Test Explorer for VS Code
+   <LittleFoxTeam.vscode-python-test-adapter>`
 #. :ref:`Tidy up <conda-tidy-up>`:
 
    .. code-block:: bash

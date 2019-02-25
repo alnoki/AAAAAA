@@ -20,12 +20,17 @@ Git
 .. contents:: Contents
    :local:
 
+.. _git-configuring:
+
+
+***********
+Configuring
+***********
+
 .. _git-setup:
 
-
-**********
 Setting up
-**********
+==========
 
 Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
 :xref:`git-setup`:
@@ -59,10 +64,8 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
 
 .. _git-credentials:
 
-
-*************************
 Updating user credentials
-*************************
+=========================
 
 Per :xref:`git-config`:
 
@@ -94,12 +97,17 @@ Per :xref:`git-config`:
 
       git config --global --list
 
+.. _git-inspect-history:
+
+
+******************
+Inspecting history
+******************
+
 .. _git-view-project-log:
 
-
-***********************
 Viewing the project log
-***********************
+=======================
 
 Per :xref:`git-log`:
 
@@ -119,20 +127,23 @@ Per :xref:`git-log`:
       ``q``, exit
       ``h``, show help
 
-.. tip::
+#. A condensed version:
 
-   A condensed version:
+   .. code-block:: bash
 
-      .. code-block:: bash
+      git log --oneline
 
-         git log --oneline
+   * Also (This might only work on a
+     :wiki-pg:`Mac <Macintosh_operating_systems>`):
+
+     .. code-block:: bash
+
+        git lg
 
 .. _git-list-committers:
 
-
-**************************
 Listing project committers
-**************************
+==========================
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -161,12 +172,44 @@ Listing project committers
 
       git log --pretty="%an, %ae, %cn, %ce"
 
+.. _git-get-time-commit:
+
+Get the time of a commit
+========================
+
+.. csv-table:: Select references
+   :header: Reference, Topic
+   :align: center
+
+   :git-doc:`git-show`, Inspect :git-doc:`tags <git-tag>`
+   :xref:`dencode`, Convert :wiki-pg:`time standards <Time_standard>`
+
+Typically you will do this once a :git-doc:`tag <git-tag>` has already been
+made
+
+#. In the :ref:`VS Code integrated terminal <tools-vs-code>`, use
+   :git-doc:`git-show` to extract the :wiki-pg:`IS0 8601<ISO_8601>`-formatted
+   :wiki-pg:`time <Time>`:
+
+   .. code-block:: bash
+
+      git show -s --format=%cI 0.3.0
+
+#. On :xref:`dencode`, convert using
+   :wiki-pg:`UTC <Coordinated_Universal_Time>` and
+   :wiki-pg:`ISO8601 Date (Extend) <ISO_8601>`
+
+.. _git-dev-tasks:
+
+
+*****************
+Development tasks
+*****************
+
 .. _git-committing:
 
-
-**********
 Committing
-**********
+==========
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -242,13 +285,34 @@ Committing
 
 #. Verify results at the :github:`AAAAAA repository <alnoki/AAAAAA>`
 
+Quick fixes
+-----------
+
+.. csv-table:: Select references
+   :header: Reference, Topic
+   :align: center
+
+   :git-doc:`git-reset`, Fix mistakes
+   :stack-q:`Vim 325 error <45489008/vim-opening-file-e325-attention-error>`, "
+   If you :ref:`commit <git-committing>` incorrectly"
+
+#. If you made a mistake in your :git-doc:`commit <git-commit>` but you haven't
+   :git-doc:`pushed yet <git-push>`, you can try again via
+   :git-doc:`git-reset`:
+
+   .. code-block:: bash
+
+      git reset --soft HEAD^
+
+#. If you are experiencing a
+   :stack-q:`Vim 325 error <45489008/vim-opening-file-e325-attention-error>`,
+   you may need to :wiki-pg:`delete <Computer_file>` (if it exists)
+   :ref:`AAAAAA/.git/COMMIT_MSG.swp <configs-git-vim>`
 
 .. _git-tagging:
 
-
-*******
 Tagging
-*******
+=======
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -288,20 +352,18 @@ Tagging
    :xref:`tells the codebase what to do <commit-conventions>` and includes
    a :xref:`lengthier description <git-commit-guidelines>` if appropriate
 #. Verify by :ref:`viewing the project log <git-view-project-log>`
-#. :xref:`Push <git-push>`:
+#. :xref:`Push with tag following <git-push>`:
 
    .. code-block:: bash
 
-      git push 0.3.0
+      git push --follow-tags
 
 #. Verify results at the :github:`AAAAAA repository <alnoki/AAAAAA>`
 
 .. _git-branching:
 
-
-*********
 Branching
-*********
+=========
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -333,10 +395,7 @@ Branching
 
       git branch
 
-
-.. tip::
-
-   The first time you :ref:`commit <git-committing>` a new
+#. The first time you :ref:`commit <git-committing>` a new
    :xref:`branch <git-branch>` to the
    :github:`AAAAAA repository <alnoki/AAAAAA>`, make sure to
    :xref:`set upstream tracking <git-push>`:
@@ -345,12 +404,17 @@ Branching
 
       git push -u origin dev/0.3.0
 
+#. To :xref:`check out <git-checkout>` a :xref:`branch <git-branch>` from the
+   :github:`AAAAAA repository <alnoki/AAAAAA>` for the first time:
+
+   .. code-block:: bash
+
+      git checkout --track origin/dev/0.4.0
+
 .. _git-merging:
 
-
-*******
 Merging
-*******
+=======
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -398,6 +462,15 @@ Changing commit credential history
    :xref:`GitHub` instructions"
    :xref:`git-branch-filtering`, "Advanced
    :wiki-pg:`syntax <Syntax_(programming_languages)>`"
+
+If you are learning :ref:`tools-git`, like :github:`alnoki` was (and still is),
+and you forget to either :ref:`set up <git-setup>` your
+:wiki-pg:`identity <User_(computing)>` and/or
+:ref:`update your credentials <git-credentials>` when using different
+:wiki-pg:`computers <Computer>`, your
+:ref:`committer list <git-list-committers>` can end up looking like total
+nonsense. You should only need to do this once, after which you will
+(hopefully) have learned your lesson
 
 .. warning::
 

@@ -16,12 +16,15 @@ Writing
 .. contents:: Contents
    :local:
 
+
+*******
+VS Code
+*******
+
 .. _writing-max-screen-estate:
 
-
-************************
 Maximizing screen estate
-************************
+========================
 
 #. For half-screen, use the :ref:`VS Code command palette <tools-vs-code>`
    to experiment with the following :wiki-pg:`commands <Command_line>`:

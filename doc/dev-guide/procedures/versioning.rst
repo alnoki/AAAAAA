@@ -133,7 +133,7 @@ At this point you should be working on a
    :xref:`master branch <git-manual>`
 #. :ref:`Tag and push <git-tagging>` with a
    :xref:`long message <git-commit-guidelines>` that describes the
-   :ref:`version <version-list>`
+   :ref:`version list additions <version-list>`
 #. In :doc:`Read the Docs<rtfd:index>`:
 
    * :menuselection:`Projects --> AAAAAA --> Versions --> Inactive Versions

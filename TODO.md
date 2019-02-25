@@ -3,105 +3,109 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-##  :xref:`mobile-device`
-1. Works for rtd in tools, say so, for rendering
-
-## Developer setup instructions
-1. Show how to install a vs code extension
-
 ## Configurations page
-1. Add a configs dir tree at the top
+1. https://pip.pypa.io/en/latest/reference/pip_install/#example-requirements-file
+   1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
+1. Describe how xref is old (iso 8061) so just downloaded it outright
+   1. Link 8061 under financial?
+      1. It's how robinhood does it...
 1. Reciprical cross links
       1. Then can reference quickstart from rtd setup
+      1. Even need to do on the trees
 1. find all for conf.py now links to config page
 1. Make sure rtd page still works alright
-1. Complete conf.py
 1. For Jupyter?
    1. NB extensions, etc.
+1. Explain .gitignore and link to project tree
+   1. Make a development task to clean it out?
+   1. Do a commit that is just cleaning out .gitignore
+1. configs-git-vim should talk about .commit_msg
+1. Create a concepts settings page
+   1. Mention that you are showing them for help
+      1. Okay if people have their own prefs
+   1. Link to the vs code tools pg, procedures, etc.
+1. Mention how xref is 9 years old, so simply downloaded it
+   1. No way to require it through PyPI - or is there?
 
 ## Extensions and rtd
 1. :term:`AAAAAA` was started with the sphinx-quickstart
 1. After you do quickstart, you have a project, but you want to upload it, etc.
    1. Thus you need to think about extensions
-1. Need to update the requirements.txt files
-1. It works, see 0.4.0 live build
-1. dist-docs should use the label for which sphinx exts come which sphinx
-   1. Then don't need to manage a table of included/not included
-1. Describe how xref is old (iso 8061) so just downloaded it outright
-   1. Link 8061 under financial?
-      1. It's how robinhood does it...
-1. As a documentation section under distributing section
-1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
-1. https://docs.readthedocs.io/en/stable/faq.html#my-project-isn-t-building-with-autodoc
 1. Verify builds pass on rtd before pushing tag
-1. Needed to have the setup.py in the exts folder
-1. Is there a generalized way to call out the extension from the internet?
 1. Just made a requirements.txt file
    1. On my account, had to update advanced settings
 1. You need conf.py to say the bibtex, but rtd doesn
-   1. You conda it pip
-1. https://pip.pypa.io/en/latest/reference/pip_install/#example-requirements-file
+   1. You conda, it pip
 1. Will need to uncomment in conf.py to load using conda
-1. Mention how xref is 9 years old, so simply downloaded it
-   1. No way to require it through PyPI - or is there?
-1. sphinx extension table have column that says need to specify
-   1. Probably in requirements.txt
-1. Get bibtex rubric to show up on rtd
-1. Review https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
-   1. Update at necssary and take out the default options
+
+## Developer setup contributing
+1. Make a "Contributing section"
+   1. Talks about how to configure git
+   1. Installs the Vim extension for VS Code
+   1. When you do this, add in a bit about using vim
+      1. Then on the Git page, other things should link to this
+1. Show how to install a vs code extension
+1. Explain installing Vim?
 
 ## Writing section
 1. Has VS Code section
    1. Link to VS code in the tools page, and recipricollay
    1. Show how to get tokens, language rulers, select colors, show web colors
       1. Already have links
-1. Create a concepts settings page
-   1. Mention that you are showing them for help
-      1. Okay if people have their own prefs
-   1. Link to the vs code tools pg, procedures, etc.
-   1. Here you would also autodoc conf.py
 
-## Versioning procedure updates
-1. The versioning procedures should say
-   1. After commit and merge, before tagging:
-   1. Start an autobuild, and use the version list to write a long tag message
-1. git push --follow-tags
+## Vim theme
 
-## Git
-1. git lg is shorthand for pretty
-1. Make the Vim theme under settings concepts?
-1. git checkout --track origin/dev/0.4.0
-   1. Will get from origin
-1. Explain .gitignore and link to project tree
+1. Just try installing it for mac first
+
+### Initial planning
+1. Should have a vim section in git procedures?
 1. https://stackoverflow.com/questions/24046846
 1. https://stackoverflow.com/questions/3459744
 1. https://stackoverflow.com/questions/11553374
 1. Link to the git commit conventions
 1. Explain the Git theme for Vim?
    1. Shows up on current windows machine but not
-1. Add configuration to dev setup
-   1. Git tower reset local commit as a tip in committing process
-1. Describe long message
-1. 325 error occurs if you quit Vim improperly
-   1. Makes a .swp file
-   1. Remove the .swp file and it should be alright
-   1. At .git/COMMIT_MSG.swp
-1. Checking out a remote
-   1. git checkout -b integration/adc2.07zb/ahrs2.08zb origin/integration/adc2.07zb/ahrs2.08zb
-   1. Straight from the man page
-   1. git checkout -b dev/0.3.0 --track origin/dev/0.3.0
-1. git push --follow-tags
-   1. The real way to push master after tagging it
-1. https://stackoverflow.com/questions/3814926/git-commit-date
-   1. https://git-scm.com/docs/git-show
-   1. Use git show -s --format=%cI 0.1.0 for version tags
-   1. Get of the time of the commit that got merged (before merge)
-      1. The command above will automatically get it
-   1. Update the version date after updating
-   1. https://dencode.com/en/date
-      1. Then use extended format
+1. Add configuration to dev setup?
 
-## quicklink
+### Simple
+1. Try downloading Vim for Mac
+   1. the wrapped developer version might not have themes
+   1. The vim downloaded one may
+   1. Guess what - there's a different one for Mac (2 links)
+      1. https://github.com/macvim-dev/macvim
+      1. https://macvim-dev.github.io/macvim/
+1. Appears its an older version
+   1. https://www.vim.org/download.php#mac
+   1. https://github.com/macvim-dev/macvim
+
+### Runtimepath
+1. Where vim stores scripts, documentation, etc
+1. https://medium.com/usevim/vim-101-runtimepath-83194d411b0a
+   1. To check your runtime path
+      1. :set runtimepath?
+   1. Help (from inside Vim)
+      1. :help 'rtp'
+1. There are a couple possible places, it might not be in the first one
+   1. Eventually
+
+### ftp
+1. File type plugins and syntax files say how to indentify files
+   1. The syntax is basically regex
+   1. the ftp then says how to render it
+1. Make the Vim theme under settings concepts?
+   1. https://vim.fandom.com/wiki/File_type_plugins
+   1. http://ftp.vim.org/pub/vim/runtime/syntax/gitcommit.vim
+   1. C:\Program Files\Git\usr\share\vim\vim80\ftplugin\gitcommit.vim
+   1. C:\Program Files\Git\usr\share\vim\vim80\syntax\gitcommit.vim
+1. Use this one (two links):
+   1. https://github.com/tpope/vim-git
+   1. https://www.vim.org/scripts/script.php?script_id=1654
+1. Checking the filetype after starting a commit:
+   1. :set ft?
+      1. filetype=gitcommit
+
+## quicklinks
+1. :wiki-pg:`run <Execution_(computing)>`
 1. :wiki-pg:`scroll <Scrolling>`
 1. :wiki-pg:`Click <Point_and_click>`
 1. :wiki-pg:`Typing`
@@ -466,6 +470,9 @@
 ## robinhood user data
 1. Have a .txt file that denotes portfolios
 1. Have a way you can use google drive to store data
+
+## alnoki's analysis archives
+1. A new section with a ton of plots
 
 # 1.0.0 Package release
 

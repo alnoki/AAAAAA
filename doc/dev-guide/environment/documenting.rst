@@ -7,13 +7,13 @@
 Documenting
 ###########
 
-#. Install :xref:`VS-Code` and the :xref:`VS-Code-bookmarks-ext`
+#. :xref:`Download VS code <VS-Code>` then the :xref:`VS-Code-bookmarks-ext`
 #. Update the :xref:`VS-Code-terminal` ``USER SETTINGS`` in
    :xref:`settings.json <VS-Code-settings>` so that you can use
    :ref:`Conda <conda:starting-conda>`:
 
    * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, add the following
-     options to configure :xref:`bash login mode invocation<bash-man-page>`:
+     options so you can use :xref:`bash login mode invocation<bash-man-page>`:
 
      .. code-block:: json
 
@@ -23,7 +23,7 @@ Documenting
         }
 
    * On :wiki-pg:`Windows <Microsoft_Windows>`, use the ``/K``
-     :xref:`cmd.exe option <cmd.exe-invocation>` to run
+     :xref:`cmd.exe option <cmd.exe-invocation>` so you can use
      :ref:`Anaconda Prompt <conda:starting-conda>` (adapted for your
      :wiki-pg:`username <User_(computing)>` and
      :wiki-pg:`computer <Computer>`):
@@ -39,7 +39,7 @@ Documenting
      .. note::
 
         Be sure to :xref:`copy and paste <copy-paste>` the whole box! It may
-        scroll to the right
+        :wiki-pg:`Scrolling <scroll>` to the right
 
 #. Use the :xref:`command-palette` to open a new :xref:`VS-Code-terminal` and
    enter the following :wiki-pg:`command <Command_line>` to
@@ -60,9 +60,9 @@ Documenting
      :xref:`cmd.exe option <cmd.exe-invocation>`, so the easiest way to
      :ref:`activate <conda:activate-env>` the :term:`a6 environment <a6>` is to
      add the following line to :xref:`~/.bash_profile <bash-man-page>`, which
-     will execute any time a :xref:`bash login mode <bash-man-page>` session
-     starts (even outside of the
-     :xref:`VS Code integrated terminal <VS-Code-terminal>`):
+     will :wiki-pg:`execute <Execution_(computing)>` any time a
+     :xref:`bash login mode <bash-man-page>` session starts (even outside of
+     the :xref:`VS Code integrated terminal <VS-Code-terminal>`):
 
      .. code-block:: text
 
@@ -120,7 +120,9 @@ Documenting
 
       conda install -c conda-forge doc8 sphinxcontrib-bibtex sphinx-autobuild
 
-#. Install the :xref:`RST-preview-ext`
+#. :wiki-pg:`Install <Installation_(computer_programs)>` the
+   :vs-code-ext:`VS Code reStructuredText extension
+   <lextudio.restructuredtext>`
 #. If you don't already have it, :xref:`download Git <git-download>`
 
    * To figure out if you have it, open the :xref:`VS-Code-terminal` and type:

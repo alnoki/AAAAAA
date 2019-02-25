@@ -255,14 +255,15 @@ which has all the latest features but may not be completely stable
    :ref:`Documenting <dev-env-documenting>`"
    :vs-code-ext:`Python <ms-python.python>`, Using :ref:`tools-python`, "
    :ref:`Documenting <dev-env-documenting>`"
-   :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "
+   :vs-code-ext:`reStructuredText <lextudio.restructuredtext>` [#]_ [#]_, "
    :wiki-pg:`Linter <Lint_(software)>` for
    :ref:`reST <tools-restructured-text>` ", "
    :ref:`Documenting <dev-env-documenting>`"
    :vs-code-ext:`GitLens <eamodio.gitlens>`, "Advanced :ref:`tools-git`
    functionality", :ref:`Documenting <dev-env-documenting>`
-   :xref:`Python Test Explorer <Test-explorer-UI>`, "Using
-   :doc:`pytest <pytest:index>`", :ref:`Testing <dev-env-testing>`
+   ":vs-code-ext:`Python Test Explorer
+   <LittleFoxTeam.vscode-python-test-adapter>`", "Using
+   :ref:`pytest <tools-pytest>`", :ref:`Testing <dev-env-testing>`
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -283,11 +284,11 @@ which has all the latest features but may not be completely stable
 .. rubric:: Footnotes
 
 .. [#] Requires a :xref:`doc8-newline-issue`, included in the provided
-   :xref:`VS-Code-settings`
-.. [#] Offers live previewing, but is not as reliable as using a
+   :ref:`VS Code settings <configs-vs-code>`
+.. [#] Offers :wiki-pg:`rendering <Rendering_(computer_graphics)>` in
+   :wiki-pg:`real-time <Time>`, but is not as reliable as using a
    :xref:`browser <web-browser>` with :ref:`tools-sphinx-autobuild`. For
-   example, fails to properly preview
-   :ref:`intersphinx links <sphinx-intersphinx>`
+   example, fails for :ref:`intersphinx links <sphinx-intersphinx>`
 
 
 *************
@@ -436,7 +437,11 @@ uses :doc:`webhooks <rtfd:webhooks>` to automatically detect any
 
 :wiki-pg:`Documentation <Software_documentation>` for :term:`AAAAAA` uses the
 :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which generates
-the visual appearance of this :xref:`website <website>`!
+the :wiki-pg:`visual appearance <Rendering_(computer_graphics)>` of this
+:xref:`website <website>`. The :doc:`theme <rtd-sphinx-theme:index>`
+even :wiki-pg:`renders <Rendering_(computer_graphics)>` on the
+:wiki-pg:`web browser <Web_browser>` for
+:wiki-pg:`mobile devices <Mobile_device>`!
 
 .. csv-table:: Select references
    :header: Reference, Topic

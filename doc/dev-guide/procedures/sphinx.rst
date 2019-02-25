@@ -176,7 +176,8 @@ Using Intersphinx
       * ``.io/en/latest/``
       * ``.com/en/latest/``
 
-#. Add the project's base :xref:`URL <URL>` to the ``intersphinx_mapping``
+#. Add the project's base :xref:`URL <URL>` to the
+   :py:data:`~conf.intersphinx_mapping`
    :ref:`dictionary <python:tut-dictionaries>` in
    :ref:`conf.py <tools-sphinx>`:
 
@@ -325,7 +326,7 @@ xref
    :github:`Sphinx xref extension <michaeljones/sphinx-xref>`, "
    :wiki-pg:`User <User_(computing)>` manual"
 
-#. Add your :xref:`URL <URL>` to the ``xref_links``
+#. Add your :xref:`URL <URL>` to the :py:data:`~conf.xref_links`
    :ref:`dictionary <python:tut-dictionaries>` in
    :ref:`conf.py <concepts-doc-tree>`, below the
    :wiki-pg:`delimeter <Delimiter>`-style :ref:`comment <python:comments>`
@@ -390,7 +391,7 @@ extlinks
    <sublime-with-sphinx:use the external links extension>`", "
    Related :ref:`configuration <configs-conf-py>` and usage"
 
-#. Add your base :wiki-pg:`URL` to the ``extlinks``
+#. Add your base :wiki-pg:`URL` to the :py:data:`~conf.extlinks`
    :ref:`dictionary <python:tut-dictionaries>` in
    :ref:`conf.py <concepts-doc-tree>`, with a ``%s`` at the end:
 

@@ -252,7 +252,7 @@ Anaconda
 
 #. :ref:`Conda channels <conda:channels-glossary>`
 
-   * A repository that hosts
+   * A :wiki-pg:`host <Host_(network)>` repository for
      :ref:`conda packages <conda:concept-conda-package>`
 
 #. :xref:`conda-forge`
@@ -493,6 +493,14 @@ Core commands
 
    * Combine :xref:`branches <git-branch>`
 
+#. :git-doc:`git-reset`
+
+   * Fix mistakes
+
+#. :git-doc:`git-show`
+
+   * Inspect :git-doc:`tags <git-tag>` and :git-doc:`commits <git-commit>`
+
 Text manipulation
 =================
 
@@ -511,6 +519,10 @@ Text manipulation
 #. :xref:`Vim-cheatsheet`
 
    * Common :wiki-pg:`commands <Command_line>` for :xref:`Vim <Vim>`
+
+#. :stack-q:`Vim E325 error <45489008/vim-opening-file-e325-attention-error>`
+
+   * Can happen when :ref:`committing <git-committing>` incorrectly
 
 Special features
 ================
@@ -681,7 +693,8 @@ With Read the Docs
 
 #. :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
 
-   * Tutorial for starting a :doc:`Sphinx <sphinx:intro>` project hosted on
+   * Tutorial for starting a :doc:`Sphinx <sphinx:intro>` project
+     :wiki-pg:`hosted <Host_(network)>` on
      :doc:`Read the Docs<rtfd:index>`
 
 #. :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
@@ -700,6 +713,11 @@ With Read the Docs
 #. :doc:`rtfd:versions`
 
    * Automatic support for :ref:`versions <version-list>`
+
+#. :doc:`rtfd:builds`
+
+   * How the :wiki-pg:`host computer <Host_(network)>` performs
+     :ref:`Sphinx build procedures <sphinx-building-doc>`
 
 Managing references
 -------------------
@@ -1049,7 +1067,8 @@ Extensions
 
    * Integrate the :doc:`Python interpreter <python:tutorial/interpreter>`
 
-#. :xref:`Test-explorer-UI`
+#. :vs-code-ext:`Python Test Explorer Extension
+   <LittleFoxTeam.vscode-python-test-adapter>`
 
    * Work with :ref:`tools-pytest`
 
@@ -1057,7 +1076,7 @@ Extensions
 
    * Mark and navigate :xref:`source code <source-code>`
 
-#. :xref:`RST-preview-ext`
+#. :vs-code-ext:`reStructuredText <lextudio.restructuredtext>`
 
    * :wiki-pg:`Syntax highlighting <Syntax_highlighting>` for
      :ref:`tools-restructured-text`
@@ -1066,7 +1085,8 @@ Extensions
 #. :xref:`doc8-newline-issue`
 
    * Fix for :wiki-pg:`syntax highlighting <Syntax_highlighting>`
-     problem in :xref:`RST-preview-ext`
+     problem in
+     :vs-code-ext:`reStructuredText extension <lextudio.restructuredtext>`
 
 
 *********
@@ -1169,6 +1189,10 @@ Software
    * :wiki-pg:`Rendering <Rendering_(computer_graphics)>` for special
      components in a :wiki-pg:`file <Computer_file>`
 
+#. :wiki-pg:`Execution <Execution_(computing)>`
+
+   * When a :wiki-pg:`computer <Computer>` uses :wiki-pg:`software <Software>`
+
 Data storage
 ============
 
@@ -1238,6 +1262,9 @@ Time
    * A :wiki-pg:`time standard <Time_standard>` that works with
      :wiki-pg:`ISO 8601 <ISO_8601>`
 
+#. :xref:`dencode`
+
+   * Convert between :wiki-pg:`time standards <Time_standard>`
 
 OS specifics
 ============

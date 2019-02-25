@@ -3,6 +3,7 @@ import sys
 sys.path.insert(0, os.path.abspath('exts'))  # For xref
 sys.path.insert(0, os.path.abspath('../src'))  # For napoleon
 sys.path.insert(0, os.path.abspath('.'))  # For conf.py in napoleon
+sys.path.insert(0, os.path.abspath('..'))  # For setup.py napoleon
 
 extensions = [
     # Included from sphinx-quickstart
@@ -33,12 +34,16 @@ Includes :ref:`extensions <tools-sphinx-extensions>` that are:
 
 project = 'AAAAAA'
 """What to call this :ref:`tools-sphinx` project"""
+
 copyright = '2019, alnoki'
 """Basic :wiki-pg:`copyright <Copyright>`"""
+
 author = 'alnoki'
 """:github:`Who <alnoki>` even made this anyways?"""
+
 version = '0.4'
 """Just ``MAJOR.MINOR`` for the :ref:`version <version-list>`"""
+
 release = '0.4.0'
 """``MAJOR.MINOR.PATCH`` for the :ref:`version <version-list>`"""
 
@@ -48,6 +53,7 @@ master_doc = 'index'
 For :term:`AAAAAA`, is inside of the
 :ref:`documentation root directory <concepts-doc-tree>`
 """
+
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 """What to ignore
 
@@ -55,6 +61,7 @@ When :ref:`building documentation <sphinx-building-doc>`, don't use
 :wiki-pg:`files <Computer_file>` or :wiki-pg:`paths <Path_(computing)>`
 with these patterns
 """
+
 html_static_path = []
 """:wiki-pg:`Directory` with supplementary data"""
 
@@ -64,6 +71,7 @@ html_theme = 'sphinx_rtd_theme'
 For :term:`AAAAAA`, use the
 :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
 """
+
 html_theme_options = {
     'collapse_navigation': False,
     'navigation_depth': -1,
@@ -71,10 +79,19 @@ html_theme_options = {
 }
 """:doc:`Read the Docs theme <rtd-sphinx-theme:index>` options
 
-These are only configured if they differ from the
-:doc:`default options <rtd-sphinx-theme:configuring>`
+These are only :ref:`configured <concepts-configs>` if they differ from
+the :doc:`default options <rtd-sphinx-theme:configuring>`
 """
 
+linkcheck_ignore = [
+    r'http://localhost:8000/_build/html/index.html',  # Manual
+    r'http://127.0.0.1:8000'  # sphinx-autobuild
+]
+"""Ignore when :ref:`checking links <sphinx-checking-links>`
+
+These :wiki-pg:`URLs <URL>` only exist when
+:ref:`building documentation <sphinx-building-doc>`, so ignore them
+"""
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
@@ -150,17 +167,6 @@ epub_title = project
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
 
-
-# -- Extension configuration -------------------------------------------------
-# Napoleon default settings, except turn off Google docstrings
-napoleon_google_docstring = False
-
-# Where build documentation is served
-linkcheck_ignore = [
-    r'http://localhost:8000/_build/html/index.html',  # Manual
-    r'http://127.0.0.1:8000'  # sphinx-autobuild
-]
-
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
     'sphinx': ('http://www.sphinx-doc.org/en/master/', None),
@@ -186,7 +192,6 @@ intersphinx_mapping = {
     'bibtex': ('https://sphinxcontrib-bibtex.readthedocs.io/en/latest', None),
 }
 
-# For sphinx.ext.extlinks
 extlinks = {
     'wiki-pg': ('https://en.wikipedia.org/wiki/%s', ''),
     'real-py': ('https://realpython.com/%s', ''),
@@ -226,18 +231,13 @@ xref_links = {
     'Change-bash-prompt':
         ("Cyberciti.biz instructions to change bash prompt", 'https://www.'
          'cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html'),
-
-    # To sort
-    'RST-preview-ext':
-        ("RST preview extension", url['VS Code ext'] +
-         'lextudio.restructuredtext'),
-    'Test-explorer-UI':
-        ("Python Test Explorer Extension", url['VS Code ext'] +
-         'LittleFoxTeam.vscode-python-test-adapter'),
+    'dencode': ("DenCode", "https://dencode.com/en/date/iso8601"),
     'VS-Code': ("Visual Studio Code", 'https://code.visualstudio.com'),
     'Jupyter': ("Project Jupyter", 'https://jupyter.org'),
+
+    # To sort
     'VS-Code-Python-tutorial':
-        ("VS Code Python tutorial", url['VS Code doc'] + 'languages/python'),
+        ("VS Code Python tutorial", url ['VS Code doc'] + 'languages/python'),
     'VS-Code-unit-testing':
         ("VS Code unit testing", url['VS Code doc'] + 'python/unit-testing'),
     'Writer-intro-to-Sphinx':
