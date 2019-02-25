@@ -47,7 +47,8 @@ Discovering tests
          #. :ref:`Activate <conda:activate-env>` the
             :term:`a6 environment <a6>`
          #. Use :doc:`conda:commands/install` with the appropriate
-            :ref:`version number <version-list>` syntax from the
+            :wiki-pg:`syntax <Syntax_(programming_languages)>` for the
+            :ref:`version number <version-list>`, from the
             :doc:`conda cheatsheet <conda:user-guide/cheatsheet>`. For
             example:
 

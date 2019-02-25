@@ -11,6 +11,32 @@ Tools
    :local:
 
 
+**************
+The Holy Grail
+**************
+
+.. _tools-google:
+
+Google
+======
+
+This is by far the most important :ref:`tool <concepts-tools>` that
+:github:`alnoki` has in the :term:`AAAAAA` arsenal
+
+Nearly everything that :github:`alnoki` has done to create :term:`AAAAAA` has
+started with :wiki-pg:`searches <Web_search_engine>` on :xref:`Google`. Because
+so many components of :term:`AAAAAA` are
+:wiki-pg:`open-source software <Open-source_software>`, the primary means of
+accessing them is the :wiki-pg:`Internet`, which :xref:`Google` has done a
+remarkable job of indexing. With the exception of a few
+:ref:`books <references-books>` (which are likely on the :wiki-pg:`Internet`,
+too), all the information you see here is
+:wiki-pg:`free <Money>`, and you can find it with :xref:`Google`
+
+It is not an exaggeration to say that you can legitimately figure out all of
+this for yourself with a :wiki-pg:`laptop <Laptop>`, access to :xref:`Google`,
+and enough curiosity. That is of course, how :github:`alnoki` did it, after all
+
 ****
 Core
 ****
@@ -29,7 +55,8 @@ section for a showcase of :term:`AAAAAA` functionality
 The :ref:`AAAAAA user guide <user-intro>` teaches :xref:`Python` as it
 describes various features of :term:`AAAAAA`.
 The :ref:`code concepts <concepts-code>` section describes some additional
-specific :xref:`Python` considerations in :term:`AAAAAA` like syntax and
+specific :xref:`Python` considerations in :term:`AAAAAA` like
+:wiki-pg:`syntax <Syntax_(programming_languages)>` and
 :xref:`directory <directory>` structure
 
 .. csv-table:: Select references
@@ -49,7 +76,8 @@ specific :xref:`Python` considerations in :term:`AAAAAA` like syntax and
    executes :xref:`source code <source-code>`"
    :ref:`Code structure <concepts-code-tree>`, :term:`AAAAAA` components
    :ref:`Code concepts <concepts-code>`, ":term:`AAAAAA` usage
-   (syntax, structure)"
+   (:wiki-pg:`syntax <Syntax_(programming_languages)>`, structure of
+   :wiki-pg:`files <Computer_file>`)"
    :ref:`AAAAAA user guide <user-intro>`, ":term:`AAAAAA` usage
    (:xref:`software <software>` walkthrough)"
 
@@ -225,13 +253,13 @@ which has all the latest features but may not be completely stable
 
    :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate content, "
    :ref:`Documenting <dev-env-documenting>`"
-   :xref:`Python <VS-Code-Python-ext>`, Developing :ref:`tools-python`, "
+   :vs-code-ext:`Python <ms-python.python>`, Using :ref:`tools-python`, "
    :ref:`Documenting <dev-env-documenting>`"
    :xref:`RST preview <RST-preview-ext>` [#]_ [#]_, "
    :wiki-pg:`Linter <Lint_(software)>` for
    :ref:`reST <tools-restructured-text>` ", "
    :ref:`Documenting <dev-env-documenting>`"
-   :xref:`GitLens <GitLens>`, "Advanced :ref:`tools-git`
+   :vs-code-ext:`GitLens <eamodio.gitlens>`, "Advanced :ref:`tools-git`
    functionality", :ref:`Documenting <dev-env-documenting>`
    :xref:`Python Test Explorer <Test-explorer-UI>`, "Using
    :doc:`pytest <pytest:index>`", :ref:`Testing <dev-env-testing>`
@@ -334,8 +362,9 @@ reStructuredText
 
 :xref:`reStructuredText <reST-documentation>` (``reST``) is a
 :wiki-pg:`markup language <Markup_language>`
-containing syntax to generate fancy components like ``this``, :guilabel:`this`,
-or :menuselection:`t --> h --> i --> s`
+containing :wiki-pg:`syntax <Syntax_(programming_languages)>` to generate fancy
+components like ``this``, :guilabel:`this`, or
+:menuselection:`t --> h --> i --> s`
 
 The two most fundamental :doc:`reST <sphinx:usage/restructuredtext/basics>`
 components are the :doc:`role <sphinx:usage/restructuredtext/roles>`, which
@@ -357,10 +386,12 @@ them to :wiki-pg:`HTML` whenever
    :doc:`Sphinx <sphinx:intro>` tutorial on ``reST`` usage"
    :xref:`reStructuredText <reST-documentation>`, "Official
    :wiki-pg:`documentation <Software_documentation>`"
-   :xref:`quick-reST`, Practical syntax
-   :xref:`reST-cheatsheet`, Quick syntax reference
+   :xref:`quick-reST`, "Practical
+   :wiki-pg:`syntax <Syntax_(programming_languages)>`"
+   :xref:`reST-cheatsheet`, "Quick
+   :wiki-pg:`syntax <Syntax_(programming_languages)>` reference"
    :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
-   syntax"
+   :wiki-pg:`syntax <Syntax_(programming_languages)>`"
    :doc:`sphinx:usage/restructuredtext/domains`, "Collections of
    :doc:`roles <sphinx:usage/restructuredtext/roles>` and
    :doc:`directives <sphinx:usage/restructuredtext/directives>`"
@@ -377,8 +408,9 @@ that :ref:`tools-sphinx` used to create the :xref:`webpage <webpage>`
 
 .. tip::
 
-   You can harvest the syntax for nearly any kind of
-   :doc:`reST <sphinx:usage/restructuredtext/basics>` component from the
+   You can harvest the :wiki-pg:`syntax <Syntax_(programming_languages)>` for
+   nearly any kind of :doc:`reST <sphinx:usage/restructuredtext/basics>`
+   component from the
    :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, via the
    :guilabel:`Edit on GitHub` feature
 
@@ -490,7 +522,7 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
    :doc:`Example NumPy Strings <napoleon:example_numpy>`, "Example
    :ref:`docstrings <python:tut-docstrings>`"
    :ref:`sphinx:info-field-lists`, "Resultant
-   :ref:`reST <tools-restructured-text>` syntax"
+   :ref:`reST syntax <tools-restructured-text>`"
    :ref:`Napoleon example <concepts-code-e4>`, :term:`AAAAAA` usage
 
 .. _tools-extlinks:
@@ -523,8 +555,9 @@ accessed via :ref:`intersphinx <tools-intersphinx>`. A simple
 BibTeX
 ^^^^^^
 
-:xref:`bibtex` is a special type of :xref:`citation <citation>` syntax that
-:term:`AAAAAA` uses for :ref:`books <references-books>`. The
+:xref:`bibtex` is a special type of
+:wiki-pg:`syntax <Syntax_(programming_languages)>` that :term:`AAAAAA` use to
+make :wiki-pg:`citations <Citation>` for :ref:`books <references-books>`. The
 :doc:`BibTeX Sphinx extension <bibtex:index>` converts
 :ref:`refs.bib <concepts-doc-tree>` into formatted
 :ref:`book citations <references-books>`
@@ -541,7 +574,8 @@ can usually get the :xref:`bibtex` from :xref:`ottobib`
    :doc:`BibTeX Sphinx extension <bibtex:index>`, Converts :xref:`bibtex`
    :xref:`ottobib`, :xref:`bibtex` database for :ref:`books <references-books>`
    :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
-   :xref:`bibtex-syntax`, Syntax specifications
+   :xref:`bibtex-syntax`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
+   specifications"
    :xref:`cite-multiple-authors`, Use of ``et. al``
    :ref:`BibTeX procedures <sphinx-reference-book>`, :term:`AAAAAA` usage
 
@@ -589,9 +623,10 @@ quickly :wiki-pg:`rendering <Rendering_(computer_graphics)>` equations in
 
    :xref:`Corey Schafer tutorial <Schafer-Jupyter>`, "Recommended
    :xref:`YouTube` tutorial"
-   :xref:`Markdown`, "Syntax for making :xref:`links <URL>`,
-   :xref:`tables <tables-generator>`, etc."
-   :xref:`tables-generator`, Syntax generator
+   :xref:`Markdown`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>` for
+   making :wiki-pg:`links <URL>`, :xref:`tables <tables-generator>`, etc."
+   :xref:`tables-generator`, "
+   :wiki-pg:`Syntax <Syntax_(programming_languages)>` generator"
    :ref:`Notebook structure <concepts-jupyter-nbs-tree>`, "
    :term:`AAAAAA` components"
 

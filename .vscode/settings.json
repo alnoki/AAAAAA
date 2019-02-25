@@ -7,7 +7,7 @@
     "workbench.colorTheme": "Default Dark+",
     "editor.tokenColorCustomizations": {
         "comments": "#3CB371", // MediumSeaGreen
-        "strings": "#BA45BA", // From sphinx-autobuild output
+        "strings": "#BA55D3", // MediumOrchid
         "textMateRules": [
             {
             "scope": "string.quoted.docstring.multi.python",

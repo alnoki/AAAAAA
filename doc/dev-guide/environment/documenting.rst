@@ -81,8 +81,9 @@ Documenting
                 "a6"],
         }
 
-#. Install the :xref:`VS Code Python extension <VS-Code-Python-ext>` and use
-   the :xref:`command-palette` to
+#. :wiki-pg:`Install <Installation_(computer_programs)>` the
+   :vs-code-ext:`VS Code Python extension <ms-python.python>` and
+   use the :xref:`command-palette` to
    :xref:`select the intepreter <VS-Code-interpreter>` for :term:`a6`
 
    * This should add a setting for your :wiki-pg:`computer <Computer>`-specific
@@ -128,7 +129,8 @@ Documenting
 
         git --version
 
-#. Install the :xref:`GitLens`
+#. :wiki-pg:`Install <Installation_(computer_programs)>` the
+   :vs-code-ext:`GitLens extension <eamodio.gitlens>`
 #. Use the :xref:`command-palette` to :git-doc:`git-clone` the
    :github:`AAAAAA repository <alnoki/AAAAAA>`
 

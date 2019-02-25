@@ -32,7 +32,8 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
 
    :ref:`tools-vs-code`, Task management environment
    :ref:`concepts-project-tree`, :term:`AAAAAA` project structure
-   :xref:`Markdown`, Syntax specification
+   :xref:`Markdown`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
+   specification"
    :term:`OHIO`, Task management philosophy
 
 .. tip::

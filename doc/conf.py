@@ -195,6 +195,8 @@ extlinks = {
     'yt-vid': ('https://www.youtube.com/watch?v=%s', ''),
     'stack-q': ('https://stackoverflow.com/questions/%s', ''),
     'yt-pl': ('https://www.youtube.com/playlist?list=PL%s', ''),
+    'vs-code-ext':
+        ('https://marketplace.visualstudio.com/items?itemName=%s', ''),
 }
 
 # Base urls used by xrefs extension: delete eventually after migrating
@@ -226,9 +228,6 @@ xref_links = {
          'cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html'),
 
     # To sort
-    'GitLens': ("GitLens extension", url['VS Code ext'] + 'eamodio.gitlens'),
-    'VS-Code-Python-ext':
-        ("Python extension", url['VS Code ext'] + 'ms-python.python'),
     'RST-preview-ext':
         ("RST preview extension", url['VS Code ext'] +
          'lextudio.restructuredtext'),

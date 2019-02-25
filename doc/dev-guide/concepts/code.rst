@@ -90,14 +90,16 @@ Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
 
    :ref:`tools-napoleon`, :term:`AAAAAA` conceptual explanation
    :pep:`257`, :ref:`Docstring <python:tut-docstrings>` conventions
-   :pep:`484`, Syntax to annotate :doc:`types <python:library/stdtypes>`
+   :pep:`484`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>` to indicate
+   :doc:`types <python:library/stdtypes>`"
    :ref:`NumPy docstrings <numpy:format>`, "
    :ref:`Docstring <python:tut-docstrings>` style"
-   :ref:`Python domain <sphinx:python-roles>`, Syntax guide
+   :ref:`Python domain <sphinx:python-roles>`, "
+   :wiki-pg:`Syntax <Syntax_(programming_languages)>` guide"
 
 :ref:`Source code <user-intro>` is enhanced with :pep:`type annotations <484>`
 and :ref:`docstrings <python:tut-docstrings>` containing
-:ref:`Python domain <sphinx:python-roles>` syntax, so that
+:ref:`Python domain <sphinx:python-roles>` components, so that
 :ref:`napoleon <tools-napoleon>` can create pretty
 :wiki-pg:`documentation <Software_documentation>` elements that explain
 :xref:`source code <source-code>`, like this

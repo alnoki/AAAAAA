@@ -42,13 +42,18 @@ explained in a way that
    * Add to :ref:`toctrees <tools-sphinx>`: :ref:`examples <examples>`,
      :ref:`developer guide intro <dev-intro>`,
      :ref:`testing intro <testing-intro>`,
-     :ref:`distribution intro <dist-intro>`
+     :ref:`distribution intro <dist-intro>`,
+     :ref:`configurations <concepts-configs>`
    * Add :ref:`tools-extlinks` support and :ref:`procedures <sphinx-extlinks>`
    * Add :term:`checklist` explanation from :ref:`book-checklist-manifesto`
    * Define :wiki-pg:`time standards <Time_standard>` for
      :ref:`versions <version-list>`
    * Add :ref:`reST syntax <tools-restructured-text>` to
      :ref:`sample-doc <sample-doc>`
+   * Add explanation of :ref:`configs-conf-py` via
+     :ref:`napoleon <tools-Napoleon>`
+   * Add :ref:`Tools: Google <tools-google>` section
+
 
 * 0.3.1 (2019-02-17T19:41:19Z)
 

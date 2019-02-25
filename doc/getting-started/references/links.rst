@@ -63,7 +63,8 @@ General
 
 #. :doc:`python:faq/programming`
 
-   * Syntax, methods, best practices
+   * :wiki-pg:`Syntax <Syntax_(programming_languages)>`, methods,
+     recommended practices
 
 #. :xref:`RealPython`
 
@@ -190,7 +191,8 @@ Classes
 
 #. :ref:`python:tut-classobjects`
 
-   * Syntax and instance concepts, like ``__init__()``
+   * :wiki-pg:`Syntax <Syntax_(programming_languages)>` and instance
+     concepts, like ``__init__()``
 
 #. :term:`Attributes <python:attribute>`
 
@@ -262,7 +264,7 @@ Conda syntax
 
 #. :doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`
 
-   * Quick reference for common :doc:`conda <conda:index>` commands
+   * Common :wiki-pg:`commands <Command_line>` for :doc:`conda <conda:index>`
 
 #. :doc:`conda:commands/create`
 
@@ -508,7 +510,7 @@ Text manipulation
 
 #. :xref:`Vim-cheatsheet`
 
-   * Common :xref:`Vim <Vim>` commands
+   * Common :wiki-pg:`commands <Command_line>` for :xref:`Vim <Vim>`
 
 Special features
 ================
@@ -568,7 +570,8 @@ Practical use
 
 #. :doc:`Matplotlib sampledoc tutorial <matplotlib-sampledoc:index>`
 
-   * Quick walkthrough with practical syntax examples
+   * Quick walkthrough with practical
+     :wiki-pg:`syntax <Syntax_(programming_languages)>` examples
    * Interactive :xref:`Python` examples, using plots
 
 #. :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018
@@ -669,7 +672,7 @@ With Read the Docs
    * Setting up a project using :doc:`quickstart <sphinx:usage/quickstart>`
    * :rst:dir:`toctree` and associated
      :wiki-pg:`documentation <Software_documentation>` structure
-   * Basic :ref:`tools-restructured-text` syntax
+   * Basic :ref:`reST syntax <tools-restructured-text>`
 
 #. :doc:`Read the Docs<rtfd:index>`
 
@@ -683,7 +686,7 @@ With Read the Docs
 
 #. :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
 
-   * Contains sample :ref:`tools-restructured-text` syntax
+   * Contains sample :ref:`reST syntax <tools-restructured-text>`
 
 #. :doc:`Read the Docs Sphinx Theme configuration
    <rtd-sphinx-theme:configuring>`
@@ -766,7 +769,8 @@ Managing references
 
 #. :xref:`bibtex-syntax`
 
-   * Syntax for identifying specific :xref:`citation <citation>` components
+   * :wiki-pg:`Syntax <Syntax_(programming_languages)>` for identifying
+     specific :xref:`citation <citation>` components
 
 #. :xref:`cite-multiple-authors`
 
@@ -811,8 +815,8 @@ Showing code
 
 #. :pep:`Type annotations <484>`
 
-   * Syntax to indicate :doc:`types <python:library/stdtypes>` in
-     :xref:`code <source-code>`
+   * :wiki-pg:`Syntax <Syntax_(programming_languages)>` to indicate
+     :doc:`types <python:library/stdtypes>` in :xref:`code <source-code>`
 
 #. :ref:`sphinx:python-roles`
 
@@ -821,16 +825,17 @@ Showing code
 
 #. :doc:`Read the Docs sample Python module <demo/api>`
 
-   * Sample syntax for :doc:`autodoc <sphinx:usage/extensions/autodoc>`
+   * Sample :wiki-pg:`syntax <Syntax_(programming_languages)>` for
+     :doc:`autodoc <sphinx:usage/extensions/autodoc>`
 
 #. :doc:`napoleon:example_numpy`
 
-   * Sample :ref:`NumPy docstring <numpy:format>` syntax for
+   * Sample :ref:`NumPy docstring syntax <numpy:format>` for
      :doc:`napoleon <sphinx:usage/extensions/napoleon>`
 
 #. :ref:`sphinx:info-field-lists`
 
-   * :ref:`tools-restructured-text` syntax that
+   * :ref:`reST syntax <tools-restructured-text>` that
      :doc:`napoleon <sphinx:usage/extensions/napoleon>` produces
 
 reStructuredText
@@ -868,11 +873,11 @@ Syntax
 
 #. :xref:`reST-list-indentation`
 
-   * Syntax tip
+   * :wiki-pg:`Syntax <Syntax_(programming_languages)>` tip
 
 #. :ref:`Tables <sphinx:table-directives>`
 
-   * Syntax options
+   * :wiki-pg:`Syntax <Syntax_(programming_languages)>` options
 
 #. :doc:`Role <sphinx:usage/restructuredtext/roles>`
 
@@ -888,8 +893,8 @@ Syntax
 
 #. :ref:`Label role <sphinx:ref-role>`
 
-   * :doc:`Role <sphinx:usage/restructuredtext/roles>` syntax to
-     :xref:`link <URL>` to arbritrary
+   * :doc:`Role syntax <sphinx:usage/restructuredtext/roles>` to
+     :wiki-pg:`link <URL>` to arbritrary
      :wiki-pg:`documentation <Software_documentation>` locations
 
 #. :xref:`admonition`
@@ -924,7 +929,8 @@ Engine-agnostic tools
 
 #. :xref:`Markdown`
 
-   * Language syntax used to generate tables, lists, and other components
+   * :wiki-pg:`Markup language <Markup_language>` used to generate
+     tables, lists, and other components
    * Used for :xref:`GitHub`, :xref:`Jupyter Notebooks <Jupyter>`, and
      :ref:`AAAAAA task management <versioning-td3>`
 
@@ -1022,7 +1028,7 @@ General
 
 #. :xref:`VS Code command palette <command-palette>`
 
-   * Direct input for :xref:`software <software>` commands
+   * Direct :wiki-pg:`command <Command_line>` input
 
 #. :xref:`VS-Code-insiders`
 
@@ -1031,11 +1037,11 @@ General
 Extensions
 ----------
 
-#. :xref:`GitLens`
+#. :vs-code-ext:`GitLens <eamodio.gitlens>`
 
    * Enhanced :ref:`tools-git` functionality
 
-#. :xref:`VS-Code-Python-ext`
+#. :vs-code-ext:`Python <ms-python.python>`
 
    * Work with :ref:`tools-python`
 
@@ -1053,13 +1059,14 @@ Extensions
 
 #. :xref:`RST-preview-ext`
 
-   * Syntax highlighting for
+   * :wiki-pg:`Syntax highlighting <Syntax_highlighting>` for
      :ref:`tools-restructured-text`
    * Limited preview functionality
 
 #. :xref:`doc8-newline-issue`
 
-   * Fix for syntax highlight problem in :xref:`RST-preview-ext`
+   * Fix for :wiki-pg:`syntax highlighting <Syntax_highlighting>`
+     problem in :xref:`RST-preview-ext`
 
 
 *********
@@ -1079,6 +1086,10 @@ Interfaces
 #. :xref:`mobile-device`
 
    * A small, portable :xref:`computer <computer>`
+
+#. :wiki-pg:`Laptop`
+
+   * A portable :xref:`computer <computer>`
 
 #. :wiki-pg:`Copy-paste <Cut,_copy,_and_paste>`
 
@@ -1146,7 +1157,17 @@ Software
 
 #. :wiki-pg:`Linter <Lint_(software)>`
 
-   * Check :wiki-pg:`source code <Source_code>` for syntax or style errors
+   * Check :wiki-pg:`source code <Source_code>` for
+     :wiki-pg:`syntax <Syntax_(programming_languages)>` or style errors
+
+#. :wiki-pg:`Syntax <Syntax_(programming_languages)>`
+
+   * :wiki-pg:`String <String_(computer_science)>` composition rules
+
+#. :wiki-pg:`Syntax highlighting <Syntax_highlighting>`
+
+   * :wiki-pg:`Rendering <Rendering_(computer_graphics)>` for special
+     components in a :wiki-pg:`file <Computer_file>`
 
 Data storage
 ============
@@ -1334,6 +1355,10 @@ Online information
    * A :wiki-pg:`computer <Computer>` that provides resources to other
      :wiki-pg:`computers <Computer>` via the :wiki-pg:`Internet`
 
+#. :wiki-pg:`Search engine <Web_search_engine>`
+
+   * A :wiki-pg:`software <Software>` system that indexes :wiki-pg:`Internet`
+     information
 
 Software design standards
 =========================

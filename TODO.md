@@ -3,9 +3,11 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Proofread
-1. find all for "command"
-1. Then must do for syntax too, add `Syntax_(programming_languages)`
+##  :xref:`mobile-device`
+1. Works for rtd in tools, say so, for rendering
+
+## Developer setup instructions
+1. Show how to install a vs code extension
 
 ## Configurations page
 1. Add a configs dir tree at the top
@@ -16,14 +18,6 @@
 1. Complete conf.py
 1. For Jupyter?
    1. NB extensions, etc.
-1. Figure out a vs code color, from wiki pg, for strings
-
-## Version list
-1. Mention how autodocced conf.py
-1. Update version list with stubs for configurations page
-
-## Developer page
-1. Say definitely try out the screencast
 
 ## Extensions and rtd
 1. :term:`AAAAAA` was started with the sphinx-quickstart
@@ -74,6 +68,7 @@
 1. git push --follow-tags
 
 ## Git
+1. git lg is shorthand for pretty
 1. Make the Vim theme under settings concepts?
 1. git checkout --track origin/dev/0.4.0
    1. Will get from origin
@@ -129,7 +124,6 @@
 1. :wiki-pg:`Rendering_(computer_graphics)`
 1. :wiki-pg:`Host <Host_(network)>`
 1. :wiki-pg:`Documentation <Software_documentation>`
-1. :wiki-pg:`file <Computer_file>`
 1. :wiki-pg:`Delimiter`
 
 # 0.5.0
@@ -464,7 +458,8 @@
       1. Also has inheritance tutorials, OOP:
          1. https://realpython.com/python3-object-oriented-programming/
 
-## Full proofread
+## Proofreading
+1. Delete base_url from conf.py or defer until later
 
 # 0.7.0
 

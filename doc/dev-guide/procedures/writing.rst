@@ -24,7 +24,7 @@ Maximizing screen estate
 ************************
 
 #. For half-screen, use the :ref:`VS Code command palette <tools-vs-code>`
-   to experiment with the following commands:
+   to experiment with the following :wiki-pg:`commands <Command_line>`:
 
    * :guilabel:`View: Toggle Tab Visibility`
    * :guilabel:`View: Toggle Maximized Panel`
@@ -112,7 +112,8 @@ Documenting a new topic
 
            :ref:`tools-vs-code`, Task management environment
            :ref:`concepts-project-tree`, :term:`AAAAAA` project structure
-           :xref:`Markdown`, Syntax specification
+           :xref:`Markdown`, "
+           :wiki-pg:`Syntax <Syntax_(programming_languages)>` specification"
            :term:`OHIO`, Task management philosophy
 
 #. Use a :ref:`reference label <concepts-doc-style>` in

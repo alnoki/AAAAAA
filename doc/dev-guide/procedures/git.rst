@@ -55,7 +55,7 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
    :align: center
 
    :xref:`Vim-tutorial`, Learn minimum necessary :xref:`Vim <Vim>`
-   :xref:`Vim-cheatsheet`, Common commands
+   :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
 
 .. _git-credentials:
 
@@ -139,9 +139,11 @@ Listing project committers
    :align: center
 
    :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
-   :xref:`git-log`, Syntax reference
+   :xref:`git-log`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
+   reference"
    :xref:`list-git-developers`, Sorting unique instances
-   :xref:`git-log-formatting`, Practical syntax examples
+   :xref:`git-log-formatting`, "Practical
+   :wiki-pg:`syntax <Syntax_(programming_languages)>` examples"
 
 #. In the :ref:`VS Code integrated terminal <tools-vs-code>`, isolate all
    unique instances of a field:
@@ -394,7 +396,8 @@ Changing commit credential history
    :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
    :xref:`Change author history <github-change-authors>`, "
    :xref:`GitHub` instructions"
-   :xref:`git-branch-filtering`, Advanced syntax
+   :xref:`git-branch-filtering`, "Advanced
+   :wiki-pg:`syntax <Syntax_(programming_languages)>`"
 
 .. warning::
 

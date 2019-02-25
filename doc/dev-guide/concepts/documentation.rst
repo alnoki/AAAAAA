@@ -164,8 +164,6 @@ Specific syntax
      :ref:`links <references-links>`
    * The :doc:`NumPy package <numpy:about>` thinks it is special
    * :doc:`pytest <pytest:index>` does too
-   * Not 100% sure about :ref:`napoleon <tools-napoleon>`
-     (or it is :ref:`tools-napoleon`???)
 
      .. csv-table:: Common Conceptual Capitalizations (C\ :superscript:`3`)
         :header: Beginning of sentence, Elsewhere
@@ -177,7 +175,7 @@ Specific syntax
         :ref:`Anaconda <tools-anaconda>`, :ref:`Anaconda <tools-anaconda>`
         :ref:`Conda <tools-anaconda>`, :ref:`conda <tools-anaconda>`
         :ref:`tools-napoleon`, :ref:`napoleon <tools-napoleon>`
-        :xref:`internet`, :xref:`internet`
+        :wiki-pg:`Internet`, :wiki-pg:`Internet`
         :xref:`Open-source <open-source>`, :xref:`open-source <open-source>`
         :ref:`Intersphinx <tools-intersphinx>`, "
         :ref:`Intersphinx <tools-intersphinx>`"
@@ -252,10 +250,10 @@ Whitespace and line breaking
             <1441010/the-shortest-possible-output-from-git-log-containing-author-and-\
             date>`:
 
-         * Note that this works, it just doesn't
-           :wiki-pg:`render <Rendering_(computer_graphics)>` with
-           :wiki-pg:`colors <Web_colors>` in the above :rst:dir:`code-block`
-           because of the ``\``-:wiki-pg:`escapes <Delimiter>` for
+         * Note that this works, but there may not be
+           :wiki-pg:`syntax highlighting <Syntax_highlighting>` in the
+           above :rst:dir:`code-block` because of the
+           ``\``-:wiki-pg:`escapes <Delimiter>` for
            :wiki-pg:`new lines <Newline>`
 
 #. Use a :wiki-pg:`blank line <Line_(text_file)>` before
@@ -288,7 +286,7 @@ Whitespace and line breaking
      :wiki-pg:`indenting <Indentation_(typesetting)>`
 
 #. See the :ref:`a6 packages table <concepts-packages-table>` for some sample
-   :ref:`csv-table <sphinx:table-directives>` syntax with appropriate
+   :ref:`csv-table syntax<sphinx:table-directives>` with appropriate
    :wiki-pg:`line breaks <Newline>`
 
    * You should only need ``"`` in :ref:`csv-tables <sphinx:table-directives>`

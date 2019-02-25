@@ -154,8 +154,8 @@ Using Intersphinx
    :doc:`sphinx.ext.intersphinx <sphinx:usage/extensions/intersphinx>`, "
    Official :wiki-pg:`documentation <Software_documentation>`"
    ":stack-q:`Intersphinx reference syntax
-   <45699577/how-to-link-to-root-page-in-intersphinx>`", "Syntax
-   explanation"
+   <45699577/how-to-link-to-root-page-in-intersphinx>`", "
+   :wiki-pg:`Syntax <Syntax_(programming_languages)>` explanation"
    ":stack-q:`Intersphinx inventory parser
    <30939867/how-to-properly-write-cross-references-to-external-\
    documentation-with-intersphin>`", "For :ref:`linking <references-links>`
@@ -305,11 +305,10 @@ from a :wiki-pg:`website <Website>` that you often use, it makes sense to use
       <1441010/the-shortest-possible-output-from-git-log-containing-author-and-\
       date>`
 
-   * Note that this works, it just doesn't
-     :wiki-pg:`render <Rendering_(computer_graphics)>` with
-     :wiki-pg:`colors <Web_colors>` in the above :rst:dir:`code-block` because
-     of the ``\``-:wiki-pg:`escapes <Delimiter>` for
-     :wiki-pg:`new lines <Newline>`
+   * Note that this works, but there may not be
+     :wiki-pg:`syntax highlighting <Syntax_highlighting>` in the above
+     :rst:dir:`code-block` because of the ``\``-:wiki-pg:`escapes <Delimiter>`
+     for :wiki-pg:`new lines <Newline>`
    * This is still in compliance with
      :ref:`line breaking standards <concepts-doc-whitespace>`
 
@@ -498,7 +497,8 @@ Referencing books
    :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
    :ref:`refs.bib <concepts-doc>`, "Collection of :xref:`bibtex`-style
    :xref:`citations <citation>`"
-   :xref:`bibtex-syntax`, Syntax specifications
+   :xref:`bibtex-syntax`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
+   specifications"
    :xref:`cite-multiple-authors`, Use of ``et. al``
 
 #. Check :xref:`ottobib` for your :xref:`ISBN` and
