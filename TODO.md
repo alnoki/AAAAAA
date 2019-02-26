@@ -1,26 +1,26 @@
-# 0.4.0
-
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
+## Proofread
+1. Update labels for configs-rtfd to configs-read-the-docs
+1. dist-doc
+
 ## Configurations page
+1. Show Vim as a machine setting?
+   1. Not everyone needs it
+   1. https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
+   1. Vim on contributing page
+      1. Just as a recommendation
+         1. Also have disclaimer admonition
+            1. No offense in the box
+         1. If you are serious, then you probably have your own methods, etc
+            1. This is intended just as a demonstration of how it can be done
 1. Reciprical cross links
       1. Then can reference quickstart from rtd setup
       1. Even need to do on the trees
-1. find all for conf.py now links to config page
-1. Make sure rtd page still works alright
-1. For Jupyter?
-   1. NB extensions, etc.
-1. Explain .gitignore and link to project tree
-   1. Make a development task to clean it out?
-   1. Do a commit that is just cleaning out .gitignore
-1. configs-git-vim should talk about .commit_msg
-1. Create a concepts settings page
-   1. Mention that you are showing them for help
-      1. Okay if people have their own prefs
-   1. Link to the vs code tools pg, procedures, etc.
-1. Explain how to go to the "admin section" and enable, etc.
-1. Explain setup.py more
+1. csv tables for all tools on the configs page
+   1. Then click through them to the other places and make sure they come back
+
 
 ## Extensions and rtd
 1. :term:`AAAAAA` was started with the sphinx-quickstart
@@ -33,6 +33,7 @@
    1. You conda, it pip
 1. Will need to uncomment in conf.py to load using conda
 1. Configs page should be a one-time thing
+1. Talk about the process of monitoring builds, etc.
 
 ## VS Code Vim keybindings
 1. Explain in contributing setup?
@@ -107,6 +108,8 @@
    1. Can embed jupyter plots
 1. Can use Jupyter to prototype, matplotlib to embed
    1. However, matplotlib can take some time to load
+1. Add a Jupyter configurations page
+   1. Talk about the notebook extensions, etc
 
 ## Doc coverage
 1. Figure out how to do this
@@ -364,6 +367,12 @@
       1. By merit of existing, it has already been sanitized
          1. Thus can go straight back into transactions
    1. Would already have sanitized data
+
+## gitignore
+1. Explain what different things can cause gitignore to have contents
+   1. Pytest/compiled python, etc
+1. Make a development task to clean it out?
+1. Do a commit that is just cleaning out .gitignore
 
 # 0.6.0
 

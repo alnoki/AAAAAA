@@ -429,6 +429,10 @@ Distribution
 
    * Help :ref:`tools-read-the-docs` identify :ref:`tools-sphinx-extensions`
 
+#. :doc:`pypa-guide:tutorials/packaging-projects`
+
+   * Create a :ref:`Python package <python:tut-packages>`
+
 
 *******************
 Git version control
@@ -460,6 +464,10 @@ General
 #. :xref:`sha1`
 
    * Unique identifier attached to each :xref:`commit <git-commit>`
+
+#. :git-doc:`.gitignore <user-manual.html#ignoring-files>`
+
+   * Ignore certain :wiki-pg:`files <Computer_file>`
 
 Core commands
 =============
@@ -650,7 +658,8 @@ Usage specifics
 
 #. :doc:`conf.py usage<sphinx:usage/configuration>`
 
-   * How to configure a :doc:`Sphinx <sphinx:intro>` project
+   * How to :ref:`configure <configs-sphinx>` a :ref:`Sphinx <tools-sphinx>`
+     project
 
 #. :ref:`sphinx:toctree-directive`
 
@@ -884,14 +893,13 @@ General
      :doc:`reST <sphinx:usage/restructuredtext/basics>`, a particular
      :wiki-pg:`markup language <Markup_language>`
 
-#. :xref:`reST-documentation`
+#. :docutils:`rst.html`
 
    * Official :wiki-pg:`documentation <Software_documentation>`
 
-#. :xref:`quick-reST`
+#. :docutils:`Quick reST <docs/user/rst/quickref.html>`
 
-   * Quick reference with
-     :doc:`reST <sphinx:usage/restructuredtext/basics>` examples
+   * Quick reference with :ref:`reST <tools-restructured-text>` examples
 
 #. :xref:`Doc8`
 

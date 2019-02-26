@@ -33,7 +33,7 @@ Structure
    :ref:`python:tut-packages`, :xref:`Directory <directory>` structuring
    :doc:`pytest:goodpractices`, Integrating :ref:`test code <tools-pytest>`
 
-In accordance with :doc:`test code recommendations <pytest:goodpractices>`,
+In accordance with :ref:`pytest configuration specifications <configs-pytest>`,
 :term:`AAAAAA` is structured as follows:
 
 .. code-block:: none

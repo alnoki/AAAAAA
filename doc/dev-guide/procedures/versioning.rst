@@ -85,8 +85,9 @@ Starting a new version
 #. Create a new :ref:`development branch <git-branching>` named in accordance
    with :xref:`semantic versioning standards <semver>`:
    ``dev/MAJOR.MINOR.PATCH``
-#. In :ref:`conf.py <concepts-doc-tree>`, update
-   :ref:`version numbers <version-list>` (and potentially copyright year)
+#. In :ref:`conf.py <configs-conf-py>`, update
+   :ref:`version numbers <version-list>` (and potentially
+   :wiki-pg:`copyright <Copyright>`)
 #. Add an entry to the :ref:`version list <version-list>`
 
    * :wiki-pg:`Document <Software_documentation>` changes as you go, in a way

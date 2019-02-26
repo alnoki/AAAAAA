@@ -179,7 +179,7 @@ Using Intersphinx
 #. Add the project's base :xref:`URL <URL>` to the
    :py:data:`~conf.intersphinx_mapping`
    :ref:`dictionary <python:tut-dictionaries>` in
-   :ref:`conf.py <tools-sphinx>`:
+   :ref:`conf.py <configs-conf-py>`:
 
    .. code-block:: python
 
@@ -328,7 +328,7 @@ xref
 
 #. Add your :xref:`URL <URL>` to the :py:data:`~conf.xref_links`
    :ref:`dictionary <python:tut-dictionaries>` in
-   :ref:`conf.py <concepts-doc-tree>`, below the
+   :ref:`conf.py <configs-conf-py>`, below the
    :wiki-pg:`delimeter <Delimiter>`-style :ref:`comment <python:comments>`
    that reads ``New links below, sorted links above``
 
@@ -361,7 +361,7 @@ xref
 
    * After this step, the :xref:`URL <URL>` can be moved above the
      :wiki-pg:`delimiter <Delimiter>`-stye :ref:`comment <python:comments>`
-     from :doc:`conf.py <sphinx:usage/configuration>`
+     from :ref:`conf.py <configs-conf-py>`
 
 .. admonition:: Optimality considerations
 
@@ -373,7 +373,7 @@ xref
      :ref:`.rst files <tools-restructured-text>` and in
      :ref:`links <references-links>` first, you can bypass the
      :wiki-pg:`delimiter <Delimiter>`-stye :ref:`comment <python:comments>`
-     altogether when adding to :ref:`conf.py <tools-sphinx>`
+     altogether when adding to :ref:`conf.py <configs-conf-py>`
 
 .. _sphinx-extlinks:
 
@@ -393,7 +393,7 @@ extlinks
 
 #. Add your base :wiki-pg:`URL` to the :py:data:`~conf.extlinks`
    :ref:`dictionary <python:tut-dictionaries>` in
-   :ref:`conf.py <concepts-doc-tree>`, with a ``%s`` at the end:
+   :ref:`conf.py <configs-conf-py>`, with a ``%s`` at the end:
 
    .. code-block:: python
 

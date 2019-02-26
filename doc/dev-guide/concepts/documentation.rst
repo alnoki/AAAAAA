@@ -87,7 +87,7 @@ Structure
 
    ``exts/``, ":xref:`Directory <directory>` for
    :doc:`extensions <sphinx:usage/extensions/index>`"
-   ``conf.py``, ":doc:`Configuration <sphinx:usage/configuration>` for
+   ``conf.py``, ":ref:`Configuration <configs-conf-py>` for
    :ref:`tools-sphinx`"
    "``Makefile`` , ``make.bat``", :ref:`sphinx-building-doc`
    ``index.rst`` (top-level) , ":xref:`homepage <webpage>` of

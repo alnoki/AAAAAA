@@ -64,6 +64,11 @@ This functionality is automatically enabled, except on a
 .gitignore
 ==========
 
+:git-doc:`.gitignore <user-manual.html#ignoring-files>` describes which
+:wiki-pg:`files <Computer_file>` in the
+:ref:`AAAAAA root directory <concepts-configs-tree>` do not need to be tracked
+by :ref:`tools-Git`
+
 .. _configs-vs-code:
 
 
@@ -208,6 +213,14 @@ Link management
 Read the Docs
 *************
 
+.. csv-table:: Select references
+   :header: Reference, Topic
+   :align: center
+
+   :ref:`tools-read-the-docs`, :term:`AAAAAA` conceptual explanation
+   :ref:`dist-documentation`, :term:`AAAAAA` usage
+
+
 .. _configs-requirements-txt:
 
 requirements.txt
@@ -231,8 +244,14 @@ included in the :ref:`exts directory <concepts-configs-tree>` of the
 :ref:`Sphinx extensions that are not built-in <tools-sphinx-exts-extra>`,
 however, must be specified in :ref:`requirements.txt <concepts-configs-tree>`:
 
-.. literalinclude:: Contents of ../../../../requirements.txt
+.. literalinclude:: ../../requirements.txt
    :caption: :ref:`requirements.txt <concepts-configs-tree>`
+
+On your :wiki-pg:`account <User_(computing)>` for :ref:`tools-read-the-docs`,
+you will need to :wiki-pg:`navigate <Web_browser>` to
+:menuselection:`Projects --> AAAAAA --> Admin --> Advanced Settings` and update
+``Requirements file:`` with the :wiki-pg:`path <Path_(computing)>` of
+:ref:`requirements.txt <concepts-configs-tree>`
 
 
 .. _configs-pytest:
@@ -247,8 +266,14 @@ pytest
 setup.py
 ========
 
-Per :doc:`official pytest recommendations <pytest:goodpractices>`:
+Per :doc:`official pytest recommendations <pytest:goodpractices>`, the
+:ref:`AAAAAA project directory <concepts-project-tree>` contains a
+:doc:`setup.py file <pypa-guide:tutorials/packaging-projects>` outside of both
+:ref:`source and test code directories <concepts-code-tree>`, with the
+:doc:`minimum available content <pytest:goodpractices>`:
 
 .. literalinclude:: ../../../setup.py
-   :caption: :ref:`setup.py <concepts-configs-tree>`
+   :caption: :ref:`AAAAAA/setup.py <concepts-configs-tree>`
    :language: python
+
+This enables :ref:`pytest discovery <pytest-discover-tests>`

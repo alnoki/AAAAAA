@@ -27,13 +27,22 @@
     },
 
 
-    // Viewing
+    // Vim integration
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "vim.useCtrlKeys": false,
+
+
+    // Declutter
+    "workbench.statusBar.feedback.visible": false,
     "editor.minimap.enabled": false,
+    "workbench.editor.showTabs": false,
+    "workbench.activityBar.visible": false,
+
+
+    // Viewing
     "zenMode.centerLayout": false,
     "breadcrumbs.enabled": true,
-    "workbench.activityBar.visible": false,
-    "workbench.statusBar.visible": false,
-    "workbench.editor.showTabs": false,
     "workbench.editor.closeEmptyGroups": false,
 
 

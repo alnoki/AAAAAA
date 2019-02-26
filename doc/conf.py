@@ -190,6 +190,7 @@ intersphinx_mapping = {
                  None),
     'bibtex': ('https://sphinxcontrib-bibtex.readthedocs.io/en/latest', None),
     'pypa': ('https://pip.pypa.io/en/latest/', None),
+    'pypa-guide': ('https://packaging.python.org/', None),
 }
 
 extlinks = {
@@ -205,6 +206,7 @@ extlinks = {
     'vs-code-doc':
         ('https://code.visualstudio.com/docs/%s', ''),
     'vim-wiki': ('https://vim.fandom.com/wiki/%s', ''),
+    'docutils': ('http://docutils.sourceforge.net/%s', ''),
 }
 
 # Base urls used by xrefs extension: delete eventually after migrating
@@ -242,10 +244,6 @@ xref_links = {
          'blog/2016/jul/1/sphinx-and-rtd-for-writers/'),
 
     # To sort
-    'reST-documentation': (
-        "reStructuredText documentation", url['docutils'] + 'rst.html'),
-    'quick-reST': ("Quick reST reference",
-                   url['docutils'] + 'docs/user/rst/quickref.html'),
     'Wikipedia': ('Wikipedia', 'https://www.wikipedia.org'),
     'Google': ('Google', 'https://www.google.com'),
     '219-Design': ("219 Design", 'https://www.219design.com/who-we-are/'),

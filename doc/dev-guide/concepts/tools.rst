@@ -366,7 +366,7 @@ functionality and several are used in :term:`AAAAAA`:
 reStructuredText
 ================
 
-:xref:`reStructuredText <reST-documentation>` (``reST``) is a
+:docutils:`reStructuredText <rst.html>` (``reST``) is a
 :wiki-pg:`markup language <Markup_language>`
 containing :wiki-pg:`syntax <Syntax_(programming_languages)>` to generate fancy
 components like ``this``, :guilabel:`this`, or
@@ -390,9 +390,9 @@ them to :wiki-pg:`HTML` whenever
 
    :doc:`sphinx:usage/restructuredtext/basics`, "
    :doc:`Sphinx <sphinx:intro>` tutorial on ``reST`` usage"
-   :xref:`reStructuredText <reST-documentation>`, "Official
+   :docutils:`reStructuredText <rst.html>`, "Official
    :wiki-pg:`documentation <Software_documentation>`"
-   :xref:`quick-reST`, "Practical
+   :docutils:`docs/user/rst/quickref.html`, "Practical
    :wiki-pg:`syntax <Syntax_(programming_languages)>`"
    :xref:`reST-cheatsheet`, "Quick
    :wiki-pg:`syntax <Syntax_(programming_languages)>` reference"
@@ -460,6 +460,8 @@ even :wiki-pg:`renders <Rendering_(computer_graphics)>` on the
    :doc:`rtfd:webhooks`, Automatic project modification detection
    :doc:`rtfd:versions`, Automatic :ref:`version <version-list>` support
    :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
+   :ref:`RTD Configurations <configs-rtfd>`, "
+   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
    :ref:`Documentation versioning <versioning-releasing>`, :term:`AAAAAA` usage
 
 .. _tools-sphinx-extensions:

@@ -11,6 +11,8 @@ pytest
    :align: center
 
    :ref:`tools-pytest`, :term:`AAAAAA` conceptual explanation
+   :ref:`configs-pytest`, ":ref:`Configuration <concepts-configs>` for
+   :term:`AAAAAA`"
    :doc:`pytest:index`, "Official
    :wiki-pg:`documentation <Software_documentation>`"
 
@@ -20,7 +22,7 @@ pytest
 Discovering tests
 *****************
 
-#. Verify that you can run :ref:`tools-pytest` in the
+#. Verify that you can use :ref:`tools-pytest` in the
    :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
    :ref:`AAAAAA project root directory <concepts-project-tree>`, using
    :term:`a6`
