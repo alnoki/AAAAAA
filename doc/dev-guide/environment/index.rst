@@ -30,3 +30,4 @@ the following instructions, so get ready to
    documenting
    analyzing
    testing
+   contributing

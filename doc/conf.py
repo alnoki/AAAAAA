@@ -3,7 +3,6 @@ import sys
 sys.path.insert(0, os.path.abspath('exts'))  # For xref
 sys.path.insert(0, os.path.abspath('../src'))  # For napoleon
 sys.path.insert(0, os.path.abspath('.'))  # For conf.py in napoleon
-sys.path.insert(0, os.path.abspath('..'))  # For setup.py napoleon
 
 extensions = [
     # Included from sphinx-quickstart
@@ -190,6 +189,7 @@ intersphinx_mapping = {
     'napoleon': ('https://sphinxcontrib-napoleon.readthedocs.io/en/latest/',
                  None),
     'bibtex': ('https://sphinxcontrib-bibtex.readthedocs.io/en/latest', None),
+    'pypa': ('https://pip.pypa.io/en/latest/', None),
 }
 
 extlinks = {
@@ -202,6 +202,9 @@ extlinks = {
     'yt-pl': ('https://www.youtube.com/playlist?list=PL%s', ''),
     'vs-code-ext':
         ('https://marketplace.visualstudio.com/items?itemName=%s', ''),
+    'vs-code-doc':
+        ('https://code.visualstudio.com/docs/%s', ''),
+    'vim-wiki': ('https://vim.fandom.com/wiki/%s', ''),
 }
 
 # Base urls used by xrefs extension: delete eventually after migrating
@@ -234,15 +237,11 @@ xref_links = {
     'dencode': ("DenCode", "https://dencode.com/en/date/iso8601"),
     'VS-Code': ("Visual Studio Code", 'https://code.visualstudio.com'),
     'Jupyter': ("Project Jupyter", 'https://jupyter.org'),
-
-    # To sort
-    'VS-Code-Python-tutorial':
-        ("VS Code Python tutorial", url ['VS Code doc'] + 'languages/python'),
-    'VS-Code-unit-testing':
-        ("VS Code unit testing", url['VS Code doc'] + 'python/unit-testing'),
     'Writer-intro-to-Sphinx':
         ("Intro to Sphinx and Read the Docs", 'http://www.ericholscher.com/'
          'blog/2016/jul/1/sphinx-and-rtd-for-writers/'),
+
+    # To sort
     'reST-documentation': (
         "reStructuredText documentation", url['docutils'] + 'rst.html'),
     'quick-reST': ("Quick reST reference",

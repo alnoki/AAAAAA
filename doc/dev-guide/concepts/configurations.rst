@@ -16,6 +16,8 @@ Configurations
        doc/
            conf.py
            requirements.txt
+           exts/
+               xref.py
        setup.py
 
 .. contents:: Contents
@@ -33,10 +35,29 @@ Git
 config
 ======
 
+:xref:`git-config` helps store your :wiki-pg:`identity <User_(computing)>` the
+way that you want it to appear in :ref:`the Git log <git-view-project-log>`,
+and allows you to :ref:`use Vim <git-setup>`. The
+:ref:`Git configuring procedures <git-configuring>` include precise
+instructions on how to get started with :xref:`git-config`, which you shouldn't
+need that often
+
 .. _configs-git-vim:
 
 Vim
 ===
+
+:xref:`Vim` is helpful for creating :ref:`commit messages <git-committing>`
+from the :ref:`VS Code integrated terminal <tools-vs-code>`, and it comes with
+:wiki-pg:`syntax highlighting <Syntax_highlighting>` that helps you figure out
+if you are adhering to :xref:`Git commit guidelines <git-commit-guidelines>`
+
+This functionality is automatically enabled, except on a
+:wiki-pg:`Mac <Macintosh_operating_systems>`, so the
+:ref:`Git setup procedure <git-setup>` includes instructions to create a
+:vim-wiki:`.vimrc file <Open_vimrc_file>` with the appropriate
+:vim-wiki:`contents <Turn_on_syntax_coloring_in_Mac_OS_X>` if you are using a
+:wiki-pg:`Mac <Macintosh_operating_systems>`
 
 .. _configs-gitignore:
 
@@ -107,7 +128,7 @@ Extensions
 .. literalinclude:: ../../conf.py
    :caption: :wiki-pg:`Path <Path_(computing)>` setup
    :language: python
-   :lines: 1-6
+   :lines: 1-5
 
 Relative to the :ref:`documentation root directory <concepts-doc-tree>`, this
 gives :ref:`tools-sphinx` access to the following
@@ -122,8 +143,6 @@ gives :ref:`tools-sphinx` access to the following
    :ref:`source code <concepts-code-tree>`"
    ``.``, "Allows :ref:`napoleon <tools-napoleon>` to access
    :doc:`conf.py <sphinx:usage/configuration>`"
-   ``.``, "Allows :ref:`napoleon <tools-napoleon>` to access
-   :ref:`setup.py for pytest <configs-pytest-setup-py>`"
 
 .. autodata:: conf.extensions
 
@@ -195,10 +214,22 @@ requirements.txt
 ================
 
 Some of the :ref:`tools-sphinx-extensions` used in :term:`AAAAAA` are not
-:doc:`built-in Sphinx extensions <sphinx:usage/extensions/index>`, so the
-:wiki-pg:`host computer <Host_(network)>` that performs the
-:doc:`Read the Docs build process <rtfd:builds>` requires that they be
-specified via
+:doc:`built-in <sphinx:usage/extensions/index>`, so the
+:wiki-pg:`remote computer <Host_(network)>` that performs the
+:doc:`Read the Docs build process <rtfd:builds>` needs information on how to
+use them
+
+Unlike the :term:`a6 conda environment <a6>` which uses
+:ref:`conda packages <conda:concept-conda-package>`, the
+:doc:`Read the Docs builder <rtfd:builds>` uses a
+:ref:`requirements file <pypa:requirements files>` that indicates which
+:ref:`PyPI packages <tools-pypi>` to :wiki-pg:`download <Download>`
+
+Because :ref:`tools-xref` is not on the :ref:`tools-pypi`, it is simply
+included in the :ref:`exts directory <concepts-configs-tree>` of the
+:ref:`documentation root directory <concepts-doc-tree>`. Other
+:ref:`Sphinx extensions that are not built-in <tools-sphinx-exts-extra>`,
+however, must be specified in :ref:`requirements.txt <concepts-configs-tree>`:
 
 .. literalinclude:: Contents of ../../../../requirements.txt
    :caption: :ref:`requirements.txt <concepts-configs-tree>`

@@ -43,7 +43,8 @@ explained in a way that
      :ref:`developer guide intro <dev-intro>`,
      :ref:`testing intro <testing-intro>`,
      :ref:`distribution intro <dist-intro>`,
-     :ref:`configurations <concepts-configs>`
+     :ref:`configurations <concepts-configs>`,
+     :ref:`contributing <dev-env-contributing>`
    * Add :ref:`tools-extlinks` support and :ref:`procedures <sphinx-extlinks>`
    * Add :term:`checklist` explanation from :ref:`book-checklist-manifesto`
    * Define :wiki-pg:`time standards <Time_standard>` for

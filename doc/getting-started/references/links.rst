@@ -422,6 +422,13 @@ Versioning
 
    * An incremental way to create or add features
 
+Distribution
+============
+
+#. :ref:`pypa:requirements files`
+
+   * Help :ref:`tools-read-the-docs` identify :ref:`tools-sphinx-extensions`
+
 
 *******************
 Git version control
@@ -523,6 +530,15 @@ Text manipulation
 #. :stack-q:`Vim E325 error <45489008/vim-opening-file-e325-attention-error>`
 
    * Can happen when :ref:`committing <git-committing>` incorrectly
+
+#. :vim-wiki:`Mac OS syntax highlighting <Turn_on_syntax_coloring_in_Mac_OS_X>`
+
+   * Enable :wiki-pg:`syntax highlighting <Syntax_highlighting>`
+
+#. :vim-wiki:`.vimrc file <Open_vimrc_file>`
+
+   * :ref:`Vim configuration file <configs-git-vim>` for
+     :wiki-pg:`syntax highlighting <Syntax_highlighting>`
 
 Special features
 ================
@@ -1026,13 +1042,13 @@ General
 
 #. :xref:`VS-Code-extensions`
 
-   * Tools to enable additional functionality
+   * Enable additional functionality
 
-#. :xref:`VS-Code-Python-tutorial`
+#. :vs-code-doc:`VS Code Python tutorial <languages/python>`
 
    * Setup and basic usage
 
-#. :xref:`VS-Code-unit-testing`
+#. :vs-code-doc:`VS Code unit testing <python/unit-testing>`
 
    * Use :ref:`tools-pytest`
 

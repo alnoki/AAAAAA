@@ -4,11 +4,6 @@
 1. Py like you rest, rest like you Py
 
 ## Configurations page
-1. https://pip.pypa.io/en/latest/reference/pip_install/#example-requirements-file
-   1. https://pip.pypa.io/en/latest/reference/pip_install/#requirements-file-format
-1. Describe how xref is old (iso 8061) so just downloaded it outright
-   1. Link 8061 under financial?
-      1. It's how robinhood does it...
 1. Reciprical cross links
       1. Then can reference quickstart from rtd setup
       1. Even need to do on the trees
@@ -24,8 +19,8 @@
    1. Mention that you are showing them for help
       1. Okay if people have their own prefs
    1. Link to the vs code tools pg, procedures, etc.
-1. Mention how xref is 9 years old, so simply downloaded it
-   1. No way to require it through PyPI - or is there?
+1. Explain how to go to the "admin section" and enable, etc.
+1. Explain setup.py more
 
 ## Extensions and rtd
 1. :term:`AAAAAA` was started with the sphinx-quickstart
@@ -37,72 +32,21 @@
 1. You need conf.py to say the bibtex, but rtd doesn
    1. You conda, it pip
 1. Will need to uncomment in conf.py to load using conda
+1. Configs page should be a one-time thing
 
-## Developer setup contributing
-1. Make a "Contributing section"
-   1. Talks about how to configure git
-   1. Installs the Vim extension for VS Code
-   1. When you do this, add in a bit about using vim
-      1. Then on the Git page, other things should link to this
+## VS Code Vim keybindings
+1. Explain in contributing setup?
+   1. Install the extension
+
+## Dev env setup
 1. Show how to install a vs code extension
-1. Explain installing Vim?
 
 ## Writing section
 1. Has VS Code section
    1. Link to VS code in the tools page, and recipricollay
    1. Show how to get tokens, language rulers, select colors, show web colors
       1. Already have links
-
-## Vim theme
-
-1. Just try installing it for mac first
-
-### Initial planning
-1. Should have a vim section in git procedures?
-1. https://stackoverflow.com/questions/24046846
-1. https://stackoverflow.com/questions/3459744
-1. https://stackoverflow.com/questions/11553374
-1. Link to the git commit conventions
-1. Explain the Git theme for Vim?
-   1. Shows up on current windows machine but not
-1. Add configuration to dev setup?
-
-### Simple
-1. Try downloading Vim for Mac
-   1. the wrapped developer version might not have themes
-   1. The vim downloaded one may
-   1. Guess what - there's a different one for Mac (2 links)
-      1. https://github.com/macvim-dev/macvim
-      1. https://macvim-dev.github.io/macvim/
-1. Appears its an older version
-   1. https://www.vim.org/download.php#mac
-   1. https://github.com/macvim-dev/macvim
-
-### Runtimepath
-1. Where vim stores scripts, documentation, etc
-1. https://medium.com/usevim/vim-101-runtimepath-83194d411b0a
-   1. To check your runtime path
-      1. :set runtimepath?
-   1. Help (from inside Vim)
-      1. :help 'rtp'
-1. There are a couple possible places, it might not be in the first one
-   1. Eventually
-
-### ftp
-1. File type plugins and syntax files say how to indentify files
-   1. The syntax is basically regex
-   1. the ftp then says how to render it
-1. Make the Vim theme under settings concepts?
-   1. https://vim.fandom.com/wiki/File_type_plugins
-   1. http://ftp.vim.org/pub/vim/runtime/syntax/gitcommit.vim
-   1. C:\Program Files\Git\usr\share\vim\vim80\ftplugin\gitcommit.vim
-   1. C:\Program Files\Git\usr\share\vim\vim80\syntax\gitcommit.vim
-1. Use this one (two links):
-   1. https://github.com/tpope/vim-git
-   1. https://www.vim.org/scripts/script.php?script_id=1654
-1. Checking the filetype after starting a commit:
-   1. :set ft?
-      1. filetype=gitcommit
+1. :guilabel:`Preferences: Open Raw Default Settings`
 
 ## quicklinks
 1. :wiki-pg:`run <Execution_(computing)>`
@@ -335,6 +279,8 @@
 
 
 ## Packaging
+1. See the project management -> distribution section of links
+   1. Update the comment for requirements files?
 1. After making a packaging section, link to it from the top of the code.rst pg
 1. Reciprically link with the project directory structure
 1. https://anaconda.org/conda-forge/doc8

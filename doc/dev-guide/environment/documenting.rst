@@ -39,7 +39,7 @@ Documenting
      .. note::
 
         Be sure to :xref:`copy and paste <copy-paste>` the whole box! It may
-        :wiki-pg:`Scrolling <scroll>` to the right
+        :wiki-pg:`scroll <Scrolling>` to the right
 
 #. Use the :xref:`command-palette` to open a new :xref:`VS-Code-terminal` and
    enter the following :wiki-pg:`command <Command_line>` to

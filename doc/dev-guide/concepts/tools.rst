@@ -223,6 +223,8 @@ along with :xref:`Git <git-manual>`:
    :doc:`Documentation webhooks <rtfd:webhooks>`, "Automatic
    :ref:`versioning <version-list>` integration"
    :xref:`Vim`, Official information
+   :ref:`Git configuration <configs-Git>`, "
+   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
    :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
 
 .. _tools-vs-code:
@@ -269,15 +271,16 @@ which has all the latest features but may not be completely stable
    :header: Reference, Topic
    :align: center
 
-   :xref:`Python integration <VS-Code-Python-tutorial>`, "Official tutorial for
-   :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
+   :vs-code-doc:`Python integration <languages/python>`, "Official tutorial
+   for :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
    :xref:`Command palette <command-palette>`, "Quickly input
    :wiki-pg:`commands <Command_line>`"
    :xref:`Settings <VS-Code-settings>`, "
    :ref:`Configuration options <configs-settings-json>`"
    :xref:`Integrated terminal <VS-Code-terminal>`, "Run a
    :xref:`command line <command-line>` inside :xref:`VS Code <VS-Code>`"
-   :xref:`VS-Code-unit-testing`, ":ref:`tools-pytest` integration"
+   :vs-code-doc:`VS Code unit testing <python/unit-testing>`,"
+   :ref:`tools-pytest` integration"
    :xref:`Markdown`, For :ref:`planning version features <versioning-td3>`
    :ref:`Writing procedures <writing-procedures>`, :term:`AAAAAA` usage
 
@@ -352,6 +355,8 @@ functionality and several are used in :term:`AAAAAA`:
    :ref:`Configurations <configs-conf-py>`"
    :ref:`tools-sphinx-autobuild`, "
    :ref:`Automatic documentation building <sphinx-autobuilding>`"
+   :ref:`Sphinx configuration <configs-sphinx>`, "
+   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
    :ref:`Documentation structure <concepts-doc-tree>`, ":term:`AAAAAA`
    components"
    :ref:`Sphinx procedures <sphinx-procedures>`, :term:`AAAAAA` usage
@@ -540,6 +545,8 @@ The :doc:`extlinks extension <sphinx:usage/extensions/extlinks>` functions like
 :ref:`for common websites <sphinx-reference-urls>`. Usage is
 described at :ref:`extlinks procedures <sphinx-extlinks>`
 
+.. _tools-sphinx-exts-extra:
+
 Not included with Sphinx
 ------------------------
 
@@ -710,6 +717,8 @@ and additional functionality is provided by the
 ************
 Distributing
 ************
+
+.. _tools-pypi:
 
 PyPI
 ====

@@ -15,7 +15,7 @@ Git
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`commit-conventions`, Tell the :xref:`codebase <software>` what to do
-   :xref:`git-commit-guidelines`, Long message guidelines
+   :xref:`git-commit-guidelines`, Message guidelines
 
 .. contents:: Contents
    :local:
@@ -26,6 +26,9 @@ Git
 ***********
 Configuring
 ***********
+
+.. contents::
+   :local:
 
 .. _git-setup:
 
@@ -55,12 +58,27 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
    :xref:`exit without saving <Vim-cheatsheet>` by
    :wiki-pg:`typing <Typing>` ``:q!`` then :kbd:`return`
 
+#. :xref:`Vim` comes with built-in
+   :wiki-pg:`syntax highlighting <Syntax_highlighting>` for
+   :ref:`commit messages <git-committing>`, but if you are using a
+   :wiki-pg:`Mac <Macintosh_operating_systems>` you may have to
+   :vim-wiki:`enable it <Turn_on_syntax_coloring_in_Mac_OS_X>`, by creating a
+   :vim-wiki:`.vimrc file <Open_vimrc_file>` at ``~/.vimrc`` with the
+   following:
+
+   .. code-block:: none
+
+      filetype plugin indent on
+      syntax on
+
 .. csv-table:: Learning :xref:`Vim`
    :header: Reference, Topic
    :align: center
 
    :xref:`Vim-tutorial`, Learn minimum necessary :xref:`Vim <Vim>`
    :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
+   :ref:`Vim configuration <configs-git-vim>`, "
+   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
 
 .. _git-credentials:
 

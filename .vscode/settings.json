@@ -1,7 +1,3 @@
-// alnoki's development environment preferences - enjoy!
-
-// Settings are specified if they defer from defaults
-// See default workspace settings for more info
 {
     // Colors
     "workbench.colorTheme": "Default Dark+",
@@ -30,14 +26,15 @@
         ],
     },
 
+
     // Viewing
     "editor.minimap.enabled": false,
     "zenMode.centerLayout": false,
-    "editor.mouseWheelZoom": true,
     "breadcrumbs.enabled": true,
     "workbench.activityBar.visible": false,
     "workbench.statusBar.visible": false,
     "workbench.editor.showTabs": false,
+    "workbench.editor.closeEmptyGroups": false,
 
 
     // Whitespace
