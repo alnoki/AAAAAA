@@ -20,7 +20,7 @@ knowledge, so keep on hitting :guilabel:`next`
 
 Information is usually accompanied by a relevant :xref:`URL`, also known as a
 :ref:`link <references-links>`, for a :xref:`webpage <webpage>` from somewhere
-like :xref:`Python.org <Python>`, :xref:`Wikipedia`, or :xref:`YouTube`.
+like :xref:`Python.org <Python>`, :wiki-pg:`Wikipedia`, or :xref:`YouTube`.
 Typically this information is accompanied by a conceptual explanation that fits
 within the context of :term:`AAAAAA`
 

@@ -102,7 +102,8 @@ Project structure
 Text
 ====
 
-#. :xref:`Python-quote-convention`
+#. :stack-q:`Python quote convention
+   <56011/single-quotes-vs-double-quotes-in-python>`:
 
    * Recommendation for using ``'`` vs ``"`` in :xref:`strings <string>`
 
@@ -516,37 +517,6 @@ Core commands
 
    * Inspect :git-doc:`tags <git-tag>` and :git-doc:`commits <git-commit>`
 
-Text manipulation
-=================
-
-#. :xref:`less-pager`
-
-   * For viewing :xref:`git-log`
-
-#. :xref:`Vim`
-
-   * For :xref:`git-config` and :xref:`git-commit`
-
-#. :xref:`Vim-tutorial`
-
-   * Learn :xref:`Vim <Vim>`
-
-#. :xref:`Vim-cheatsheet`
-
-   * Common :wiki-pg:`commands <Command_line>` for :xref:`Vim <Vim>`
-
-#. :stack-q:`Vim E325 error <45489008/vim-opening-file-e325-attention-error>`
-
-   * Can happen when :ref:`committing <git-committing>` incorrectly
-
-#. :vim-wiki:`Mac OS syntax highlighting <Turn_on_syntax_coloring_in_Mac_OS_X>`
-
-   * Enable :wiki-pg:`syntax highlighting <Syntax_highlighting>`
-
-#. :vim-wiki:`.vimrc file <Open_vimrc_file>`
-
-   * :ref:`Vim configuration file <configs-git-vim>` for
-     :wiki-pg:`syntax highlighting <Syntax_highlighting>`
 
 Special features
 ================
@@ -1112,6 +1082,45 @@ Extensions
      problem in
      :vs-code-ext:`reStructuredText extension <lextudio.restructuredtext>`
 
+#. :vs-code-ext:`Vim extension for VS code <vscodevim.vim>`
+
+   * Use :xref:`Vim <Vim>` in :ref:`tools-vs-code`
+
+Text manipulation
+-----------------
+
+#. :xref:`less-pager`
+
+   * For viewing :xref:`git-log`
+
+#. :xref:`Vim`
+
+   * For :xref:`git-config`, :xref:`git-commit`, and :ref:`tools-vs-code`
+
+#. :xref:`Vim-tutorial`
+
+   * Learn :xref:`Vim <Vim>`
+
+#. :xref:`Vim-cheatsheet`
+
+   * Common :wiki-pg:`commands <Command_line>` for :xref:`Vim <Vim>`
+
+#. :stack-q:`Vim E325 error <45489008/vim-opening-file-e325-attention-error>`
+
+   * Can happen when :ref:`committing <git-committing>` incorrectly
+
+#. :vim-wiki:`Mac OS syntax highlighting <Turn_on_syntax_coloring_in_Mac_OS_X>`
+
+   * Enable :wiki-pg:`syntax highlighting <Syntax_highlighting>`
+
+#. :vim-wiki:`.vimrc file <Open_vimrc_file>`
+
+   * :ref:`Vim configuration file <configs-git-vim>` for
+     :wiki-pg:`syntax highlighting <Syntax_highlighting>`
+
+#. :xref:`vim-learn-plan`
+
+   * Become efficient with :xref:`Vim`
 
 *********
 Computers
@@ -1376,7 +1385,7 @@ Online information
 
    * Preferred way to search for :xref:`online <internet>` information
 
-#. :xref:`Wikipedia`
+#. :wiki-pg:`Wikipedia`
 
    * Preferred source of :xref:`online <internet>` information
 

@@ -460,7 +460,7 @@ even :wiki-pg:`renders <Rendering_(computer_graphics)>` on the
    :doc:`rtfd:webhooks`, Automatic project modification detection
    :doc:`rtfd:versions`, Automatic :ref:`version <version-list>` support
    :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
-   :ref:`RTD Configurations <configs-rtfd>`, "
+   :ref:`RTD Configurations <configs-read-the-docs>`, "
    :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
    :ref:`Documentation versioning <versioning-releasing>`, :term:`AAAAAA` usage
 

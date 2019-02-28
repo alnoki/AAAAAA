@@ -242,16 +242,15 @@ xref_links = {
     'Writer-intro-to-Sphinx':
         ("Intro to Sphinx and Read the Docs", 'http://www.ericholscher.com/'
          'blog/2016/jul/1/sphinx-and-rtd-for-writers/'),
-
-    # To sort
-    'Wikipedia': ('Wikipedia', 'https://www.wikipedia.org'),
     'Google': ('Google', 'https://www.google.com'),
+    'vim-learn-plan':
+        ("How to Learn Vim", 'https://medium.com/actualize-network/how-to-'
+         'learn-vim-a-four-week-plan-cd8b376a9b85'),
     '219-Design': ("219 Design", 'https://www.219design.com/who-we-are/'),
-    'Python-quote-convention':
-        ("Python quote convention", url['Stack OF'] + '56011/single-quotes-vs-'
-         'double-quotes-in-python'),
     'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
                    'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
+
+    # To sort
     'LaTeX': ('LaTeX', url['Wiki pg'] + 'LaTeX'),
     'YouTube': ('YouTube', 'https://www.youtube.com/'),
     'doc8-newline-issue':

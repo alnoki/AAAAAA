@@ -70,7 +70,9 @@ Style
      of 72 characters
    * Two spaces should precede a :ref:`comment <python:comments>`
 
-#. Per a recommended :xref:`Python-quote-convention`:
+#. Per a recommended
+   :stack-q:`Python quote convention
+   <56011/single-quotes-vs-double-quotes-in-python>`:
 
    .. code-block:: python
 

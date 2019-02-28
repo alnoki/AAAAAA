@@ -31,6 +31,7 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
     "vim.useCtrlKeys": false,
+    "vim.startInInsertMode": true,
 
 
     // Declutter

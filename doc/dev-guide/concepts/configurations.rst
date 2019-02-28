@@ -50,14 +50,18 @@ Vim
 :xref:`Vim` is helpful for creating :ref:`commit messages <git-committing>`
 from the :ref:`VS Code integrated terminal <tools-vs-code>`, and it comes with
 :wiki-pg:`syntax highlighting <Syntax_highlighting>` that helps you figure out
-if you are adhering to :xref:`Git commit guidelines <git-commit-guidelines>`
-
+if you are adhering to :xref:`Git commit guidelines <git-commit-guidelines>`.
 This functionality is automatically enabled, except on a
 :wiki-pg:`Mac <Macintosh_operating_systems>`, so the
 :ref:`Git setup procedure <git-setup>` includes instructions to create a
 :vim-wiki:`.vimrc file <Open_vimrc_file>` with the appropriate
 :vim-wiki:`contents <Turn_on_syntax_coloring_in_Mac_OS_X>` if you are using a
 :wiki-pg:`Mac <Macintosh_operating_systems>`
+
+:xref:`Vim` is also
+:ref:`recommended as an extension to VS Code <dev-env-contributing>`, and
+its :ref:`configuration <concepts-configs>` is described in
+:ref:`configs-settings-json`
 
 .. _configs-gitignore:
 
@@ -206,7 +210,7 @@ Link management
 
    Contains :ref:`xref base URLs <sphinx-xref>`
 
-.. _configs-rtfd:
+.. _configs-read-the-docs:
 
 
 *************
@@ -218,7 +222,7 @@ Read the Docs
    :align: center
 
    :ref:`tools-read-the-docs`, :term:`AAAAAA` conceptual explanation
-   :ref:`dist-documentation`, :term:`AAAAAA` usage
+   :ref:`dist-doc`, :term:`AAAAAA` usage
 
 
 .. _configs-requirements-txt:

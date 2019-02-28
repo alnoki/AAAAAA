@@ -1,26 +1,17 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Proofread
-1. Update labels for configs-rtfd to configs-read-the-docs
-1. dist-doc
-
 ## Configurations page
-1. Show Vim as a machine setting?
-   1. Not everyone needs it
-   1. https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85
-   1. Vim on contributing page
-      1. Just as a recommendation
-         1. Also have disclaimer admonition
-            1. No offense in the box
-         1. If you are serious, then you probably have your own methods, etc
-            1. This is intended just as a demonstration of how it can be done
 1. Reciprical cross links
       1. Then can reference quickstart from rtd setup
       1. Even need to do on the trees
 1. csv tables for all tools on the configs page
    1. Then click through them to the other places and make sure they come back
-
+1. Use :annotation: ~blank~ will take out the entire data field showing up
+   1. Then can use docstring from .py file
+   1. Use to update all autodata, especiallyin conf.py
+.. autodata:: ACQdoctor.crc.crc_tbl_8408
+   :annotation:
 
 ## Extensions and rtd
 1. :term:`AAAAAA` was started with the sphinx-quickstart
@@ -35,12 +26,10 @@
 1. Configs page should be a one-time thing
 1. Talk about the process of monitoring builds, etc.
 
-## VS Code Vim keybindings
-1. Explain in contributing setup?
-   1. Install the extension
-
 ## Dev env setup
 1. Show how to install a vs code extension
+1. Zen should be the last env setup page
+   1. Make sure no references elsewhere
 
 ## Writing section
 1. Has VS Code section
@@ -48,6 +37,11 @@
    1. Show how to get tokens, language rulers, select colors, show web colors
       1. Already have links
 1. :guilabel:`Preferences: Open Raw Default Settings`
+1. VS Code its own page
+   1. Show how to view the raw settings file
+
+## Versioning
+1. Update configurations if any have changed
 
 ## quicklinks
 1. :wiki-pg:`run <Execution_(computing)>`
@@ -76,6 +70,11 @@
 1. :wiki-pg:`Delimiter`
 
 # 0.5.0
+
+## Dev Order
+1. Write up testing first before packaging
+   1. Do what you know first
+1. Update ISO8061 then do testing
 
 ## Examples page
 1. Say can do either in the interpreter or in Jupyter notebook
