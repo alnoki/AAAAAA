@@ -249,13 +249,9 @@ xref_links = {
     '219-Design': ("219 Design", 'https://www.219design.com/who-we-are/'),
     'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
                    'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
+    'YouTube': ('YouTube', 'https://www.youtube.com/'),
 
     # To sort
-    'LaTeX': ('LaTeX', url['Wiki pg'] + 'LaTeX'),
-    'YouTube': ('YouTube', 'https://www.youtube.com/'),
-    'doc8-newline-issue':
-        ("Doc8 newline issue fix", url['GitHub'] + 'vscode-restructuredtext/'
-         'vscode-restructuredtext/issues/84'),
     'reST-cheatsheet': ("reST cheatsheet", url['GitHub'] + 'ralsina/rst-'
                         'cheatsheet/blob/master/rst-cheatsheet.rst'),
     'GitHub': ('GitHub', url['GitHub']),

@@ -30,6 +30,13 @@ Configurations
 Git
 ***
 
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
+   :ref:`Tools: Git <tools-git>`, :term:`AAAAAA` conceptual explanation
+   :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
+
 .. _configs-gitconfig:
 
 config
@@ -80,6 +87,13 @@ by :ref:`tools-Git`
 VS Code
 *******
 
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, topic
+
+   :ref:`Tools: VS Code <tools-vs-code>`, :term:`AAAAAA` conceptual explanation
+   :ref:`VS Code procedures <procedures-vs-code>`, :term:`AAAAAA` usage
+
 .. _configs-settings-json:
 
 settings.json
@@ -92,21 +106,22 @@ settings.json
 Sphinx
 ******
 
-.. _configs-conf-py:
-
-conf.py
-=======
-
 .. csv-table:: Select references
    :header: Reference, topic
    :align: center
 
-   :ref:`Sphinx <tools-sphinx>`, :term:`AAAAAA` conceptual explanation
-   :ref:`tools-sphinx-extensions`, :term:`AAAAAA` functionality
+   :ref:`Tools: Sphinx <tools-sphinx>`, :term:`AAAAAA` conceptual explanation
+   :ref:`Sphinx procedures <sphinx-procedures>`, :term:`AAAAAA` usage
+   :ref:`tools-sphinx-extensions`, Extra :term:`AAAAAA` functionality
    :doc:`sphinx-quickstart <sphinx:usage/quickstart>`, Official setup assistant
    :yt-vid:`Quickstart screencast <oJsUvBQyHBs>`, Video walkthrough
    :doc:`conf.py <sphinx:usage/configuration>`, ":ref:`Sphinx <tools-sphinx>`
    settings"
+
+.. _configs-conf-py:
+
+conf.py
+=======
 
 If you create a :ref:`Sphinx project <tools-sphinx>` using
 :doc:`sphinx-quickstart <sphinx:usage/quickstart>`, you will end up

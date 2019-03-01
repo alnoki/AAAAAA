@@ -47,8 +47,8 @@ Mechanics
 :py:class:`~AAAAAA.ledger.Transaction`, is a :ref:`class <python:tut-classes>`,
 which is a special type of :term:`object <python:object>`:
 
-.. autoclass:: AAAAAA.ledger.Transaction
-   :undoc-members:
+.. automodule:: AAAAAA.ledger
+   :members: Transaction
 
 .. tip::
 

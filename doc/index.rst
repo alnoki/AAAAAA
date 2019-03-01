@@ -118,21 +118,18 @@ Congratulations!!!
 .. tip::
 
    :wiki-pg:`Click <Point_and_click>` the :guilabel:`Next` button at the top
-   or the bottom of this :xref:`webpage <webpage` to continue
+   or the bottom of this :xref:`webpage <webpage` to begin your journey
 
 
-******************
-Indices and tables
-******************
+###############
+Getting started
+###############
 
-* :ref:`genindex`
-* :ref:`search`
-
-.. * :ref:`modindex` goes in between the two above
+:ref:`Here <quickstart>` is where the :term:`AAAAAA` journey begins!
 
 .. toctree::
    :caption: Getting started
-   :maxdepth: 1
+   :hidden:
    :numbered:
 
    getting-started/quickstart
@@ -140,18 +137,32 @@ Indices and tables
    getting-started/what-next
    getting-started/references/index
 
+
+##########
+User guide
+##########
+
+:ref:`Here <user-intro>` you can learn to use :term:`AAAAAA`!
+
 .. toctree::
    :caption: User guide
-   :maxdepth: 1
+   :hidden:
    :numbered:
 
    user-guide/index
    user-guide/transactions
    user-guide/version-list
 
+
+###############
+Developer guide
+###############
+
+:ref:`Here <dev-intro>` you can learn to create :term:`AAAAAA`!
+
 .. toctree::
    :caption: Developer guide
-   :maxdepth: 1
+   :hidden:
    :numbered:
 
    dev-guide/index
@@ -161,5 +172,11 @@ Indices and tables
    dev-guide/distributing/index
    dev-guide/procedures/index
 
-Congratulations on reaching the end of this :wiki-pg:`webpage <Webpage>`! As a
-reward, treat yourself to an :py:func:`explanation`
+
+##################
+Indices and tables
+##################
+
+* :ref:`genindex`
+* :ref:`search`
+* :ref:`modindex`

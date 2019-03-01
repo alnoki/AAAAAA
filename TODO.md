@@ -5,6 +5,9 @@
 1. Reciprical cross links
       1. Then can reference quickstart from rtd setup
       1. Even need to do on the trees
+      1. Go through each table and make sure traces back
+      1. Start on Sphinx for the configs page
+      1. Labels should be procedures-sphinx, not sphinx-procedures?
 1. csv tables for all tools on the configs page
    1. Then click through them to the other places and make sure they come back
 1. Use :annotation: ~blank~ will take out the entire data field showing up
@@ -39,9 +42,18 @@
 1. :guilabel:`Preferences: Open Raw Default Settings`
 1. VS Code its own page
    1. Show how to view the raw settings file
+1. Reference tables should have AAAAAA stuff at the top
+   1. Should click through the whole pattern to see if they are all there
 
 ## Versioning
 1. Update configurations if any have changed
+
+## toctree restructuring
+1. Talk about on documenting page
+1. Verify PDF levels are correct
+1. Talk about toctree structuring on index page for this
+   1. Distribution - documenting section?
+1. BibTeX okay?
 
 ## quicklinks
 1. :wiki-pg:`run <Execution_(computing)>`

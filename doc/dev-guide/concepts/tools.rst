@@ -282,12 +282,16 @@ which has all the latest features but may not be completely stable
    :vs-code-doc:`VS Code unit testing <python/unit-testing>`,"
    :ref:`tools-pytest` integration"
    :xref:`Markdown`, For :ref:`planning version features <versioning-td3>`
-   :ref:`Writing procedures <writing-procedures>`, :term:`AAAAAA` usage
+   :ref:`VS Code configuration <configs-vs-code>`, "
+   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
+   :ref:`VS Code procedures <procedures-vs-code>`, :term:`AAAAAA` usage
 
 .. rubric:: Footnotes
 
-.. [#] Requires a :xref:`doc8-newline-issue`, included in the provided
-   :ref:`VS Code settings <configs-vs-code>`
+.. [#] Requires a
+   :github:`Doc8 newline issue fix
+   <vscode-restructuredtext/vscode-restructuredtext/issues/84>`, included in
+   the provided :ref:`VS Code settings <configs-vs-code>`
 .. [#] Offers :wiki-pg:`rendering <Rendering_(computer_graphics)>` in
    :wiki-pg:`real-time <Time>`, but is not as reliable as using a
    :xref:`browser <web-browser>` with :ref:`tools-sphinx-autobuild`. For
@@ -629,7 +633,7 @@ Jupyter
 :wiki-pg:`development <Software_development>` style for creating
 :wiki-pg:`algorithms <Algorithms>`, and for
 quickly :wiki-pg:`rendering <Rendering_(computer_graphics)>` equations in
-:xref:`LaTeX`
+:wiki-pg:`LaTeX`
 
 .. csv-table:: Select references
    :header: Reference, Topic
@@ -673,7 +677,7 @@ The :doc:`nb-extensions:index` provide additional functionality
    linking"
    :doc:`nb-extensions:nbextensions/varInspector/README`, "Data value
    inspection"
-   :xref:`live-md-preview`, "Quick previewing for :xref:`LaTeX` and
+   :xref:`live-md-preview`, "Quick previewing for :wiki-pg:`LaTeX` and
    :xref:`tables <tables-generator>`"
 
 .. tip::

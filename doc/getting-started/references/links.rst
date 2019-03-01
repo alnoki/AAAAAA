@@ -653,12 +653,12 @@ Usage specifics
 #. :rst:role:`sphinx:math`
 
    * :doc:`Role <sphinx:usage/restructuredtext/roles>` for using
-     :xref:`LaTeX` in-line
+     :wiki-pg:`LaTeX` in-:wiki-pg:`line <Source_lines_of_code>`
 
 #. :rst:dir:`sphinx:math`
 
    * :doc:`Directive <sphinx:usage/restructuredtext/directives>` for using
-     :xref:`LaTeX` on its own line
+     :wiki-pg:`LaTeX` on its own :wiki-pg:`line <Source_lines_of_code>`
 
 #. :xref:`http socket error fix <http-socket-error>`
 
@@ -893,7 +893,8 @@ Syntax
 
 #. :doc:`Role <sphinx:usage/restructuredtext/roles>`
 
-   * Element that marks a piece of text, usually in-line
+   * Element that marks a piece of text, usually
+     in-:wiki-pg:`line <Source_lines_of_code>`
 
 #. :doc:`Directive <sphinx:usage/restructuredtext/directives>`
 
@@ -925,10 +926,10 @@ Engine-agnostic tools
 
 #. :xref:`tables-generator`
 
-   * :xref:`Online <internet>` tool to format tables in :xref:`LaTeX`,
+   * :xref:`Online <internet>` tool to format tables in :wiki-pg:`LaTeX`,
      :xref:`Markdown`, :ref:`tools-restructured-text`, and plain text
 
-#. :xref:`LaTeX`
+#. :wiki-pg:`LaTeX`
 
    * System for :wiki-pg:`documentating <Software_documentation>` equations in
      :xref:`Jupyter Notebooks <Jupyter>` and in
@@ -963,8 +964,8 @@ General
 #. :xref:`Jupyter Notebooks <Jupyter>`
 
    * Interactive :xref:`Python` environment
-   * :xref:`Code <source-code>`, :xref:`LaTeX`, :xref:`Markdown`, and plotting
-     in one :wiki-pg:`file <Computer_file>`
+   * :xref:`Code <source-code>`, :wiki-pg:`LaTeX`, :xref:`Markdown`, and
+     plotting in one :wiki-pg:`file <Computer_file>`
 
 #. :xref:`Schafer-Jupyter`
 
@@ -998,7 +999,7 @@ Extensions
 
 #. :xref:`live-md-preview`
 
-   * Preview :xref:`Markdown` and :xref:`LaTeX`
+   * Preview :xref:`Markdown` and :wiki-pg:`LaTeX`
 
 VS Code
 =======
@@ -1076,7 +1077,8 @@ Extensions
      :ref:`tools-restructured-text`
    * Limited preview functionality
 
-#. :xref:`doc8-newline-issue`
+#. :github:`Doc8 newline issue fix
+   <vscode-restructuredtext/vscode-restructuredtext/issues/84>`
 
    * Fix for :wiki-pg:`syntax highlighting <Syntax_highlighting>`
      problem in

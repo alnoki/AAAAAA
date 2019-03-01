@@ -29,7 +29,8 @@ These should either be followed exactly, or updated
 
    conda
    git
-   pytest
    sphinx
+   vs-code
+   pytest
    writing
    versioning

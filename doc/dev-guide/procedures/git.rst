@@ -11,7 +11,9 @@ Git
    :header: Reference, Topic
    :align: center
 
-   :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
+   :ref:`Tools: Git <tools-git>`, :term:`AAAAAA` conceptual explanation
+   :ref:`Git configuration <configs-git>`, ":ref:`concepts-configs` for
+   :term:`AAAAAA`"
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`commit-conventions`, Tell the :xref:`codebase <software>` what to do
