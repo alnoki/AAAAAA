@@ -214,6 +214,7 @@ extlinks = {
         ('https://code.visualstudio.com/docs/%s', ''),
     'vim-wiki': ('https://vim.fandom.com/wiki/%s', ''),
     'docutils': ('http://docutils.sourceforge.net/%s', ''),
+    'github-help': ('https://help.github.com/en/articles/%s', ''),
 }
 
 # Base urls used by xrefs extension: delete eventually after migrating
@@ -257,14 +258,11 @@ xref_links = {
     'AAAAAA-nbs': ("Jupyter Notebook viewer for AAAAAA", 'https://nbviewer.'
                    'jupyter.org/github/alnoki/AAAAAA/tree/master/nbs/'),
     'YouTube': ('YouTube', 'https://www.youtube.com/'),
-
-    # To sort
-    'Markdown': ('Markdown', url['GitHub help'] + 'basic-writing-and'
-                 '-formatting-syntax/'),
-    'Schafer-Jupyter': ("Jupyter Notebook Tutorial: Introduction, Setup, and "
-                        "Walkthrough", url['YT vid'] + 'HW29067qVWk'),
+    'rtfd-account': ('Read the Docs account', 'https://readthedocs.org'),
     'tables-generator': ("Tables generator for assorted languages",
                          'http://tablesgenerator.com'),
+
+    # To sort
     'http-socket-error':
         ("http socket error", url['Stack OF'] + '19071512/socket-error-errno'
          '-48-address-already-in-use'),

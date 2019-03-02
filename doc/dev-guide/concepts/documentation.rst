@@ -189,6 +189,8 @@ Specific syntax
         :ref:`Intersphinx <tools-intersphinx>`"
         :xref:`Git <git-manual>`, :xref:`Git <git-manual>`
         :ref:`Miniconda <tools-anaconda>`, :ref:`Miniconda <tools-anaconda>`
+        :github-help:`Markdown <basic-writing-and-formatting-syntax>`, "
+        :github-help:`Markdown <basic-writing-and-formatting-syntax>`"
 
 .. _concepts-doc-whitespace:
 

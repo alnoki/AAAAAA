@@ -12,6 +12,9 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
 
 *Brought to you by alnoki*
 
+What are they?
+==============
+
 .. glossary::
 
    AAAAAA
@@ -27,10 +30,8 @@ Alnoki's Algorithmic Analysis Asset Allocation Applications (AAAAAA)
       :wiki-pg:`developed <Software_development>` by the
       :xref:`open-source` community
 
-
-*******
 Python?
-*******
+=======
 
 You can use a bit of :xref:`Python` on most :xref:`computers <computer>` with
 minimal effort, using :py:func:`python:print`:
@@ -121,9 +122,9 @@ Congratulations!!!
    or the bottom of this :xref:`webpage <webpage` to begin your journey
 
 
-###############
+***************
 Getting started
-###############
+***************
 
 :ref:`Here <quickstart>` is where the :term:`AAAAAA` journey begins!
 
@@ -138,9 +139,9 @@ Getting started
    getting-started/references/index
 
 
-##########
+**********
 User guide
-##########
+**********
 
 :ref:`Here <user-intro>` you can learn to use :term:`AAAAAA`!
 
@@ -154,9 +155,9 @@ User guide
    user-guide/version-list
 
 
-###############
+***************
 Developer guide
-###############
+***************
 
 :ref:`Here <dev-intro>` you can learn to create :term:`AAAAAA`!
 
@@ -172,10 +173,17 @@ Developer guide
    dev-guide/distributing/index
    dev-guide/procedures/index
 
+.. _indices-and-tables:
 
-##################
+
+******************
 Indices and tables
-##################
+******************
+
+This section is more useful when viewing
+:wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` as
+:wiki-pg:`website <Website>`, although most of what you see here is also
+:ref:`automatically converted to PDF format <dist-doc-pdf>`
 
 * :ref:`genindex`
 * :ref:`search`

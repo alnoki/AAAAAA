@@ -12,12 +12,13 @@ This is a centralized and comprehensive list of :xref:`books <book>`
 :xref:`Citations <citation>` are managed using :ref:`BibTeX <tools-bibtex>`,
 according to :ref:`book reference procedures <sphinx-reference-book>`
 
-.. tip::
+.. note::
 
-   You can access the :xref:`ISBN` (or other information) for each
-   :xref:`book <book>` by clicking the :ref:`BibTeX link <tools-bibtex>` at
-   the top of each entry, which will look something like:
-   :cite:`bib-on-managing-yourself`
+   If you are viewing :wiki-pg:`documentation <Software_documentation>` for
+   :term:`AAAAAA` on a :wiki-pg:`website <Website>`, the
+   :wiki-pg:`bibliography <Citation>` for these :wiki-pg:`books <Book>` should
+   be on this :wiki-pg:`webpage <Webpage>`. If you are viewing a
+   :ref:`PDF version <dist-doc-pdf>`, it will appear towards the end
 
 .. contents:: Books
    :local:

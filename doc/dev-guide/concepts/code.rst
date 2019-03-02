@@ -155,7 +155,9 @@ created, it can be referenced using the
 
 Real E\ :superscript:`4`\ s, like the example below, also have a
 :guilabel:`[source]` feature that :xref:`links <URL>` directly to
-:xref:`source code <source-code>`
+:xref:`source code <source-code>`, except when viewing
+:wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` in
+:ref:`PDF format <dist-doc-pdf>`
 
 .. admonition:: Example
 

@@ -44,8 +44,8 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    :align: center
    :header: Reference, Topic
 
-   :xref:`Markdown`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
-   specification"
+   :github-help:`Markdown <basic-writing-and-formatting-syntax>`, "
+   :wiki-pg:`Syntax <Syntax_(programming_languages)>` specification"
 
 .. tip::
 
@@ -57,7 +57,8 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    * :guilabel:`View: Open View`
    * :guilabel:`Outline`
 
-   .. csv-table:: :xref:`Markdown headers <Markdown>`
+   .. csv-table::
+      :github-help:`Markdown headers <basic-writing-and-formatting-syntax>`
       :align: center
       :header: Level, Meaning
 
@@ -106,6 +107,8 @@ Starting a new version
 
 #. :ref:`Tidy up conda <conda-tidy-up>`
 #. :ref:`versioning-td3`
+#. After you :ref:`push <git-committing>`, :ref:`enable <dist-doc-versions>`
+   the :ref:`development branch <git-branching>` on your :xref:`rtfd-account`
 
 .. _versioning-releasing:
 
@@ -142,13 +145,14 @@ At this point you should be working on a
 #. :ref:`Commit and push <git-committing>`, making sure to verify
    :ref:`version tag comments <writing-proofread-new>` when
    :ref:`staging changes <git-committing>`
+#. Verify the :ref:`build passes <dist-doc-monitor-builds>` on your
+   :xref:`rtfd-account`
 #. :ref:`Merge <git-merging>` the
    :ref:`development branch <versioning-start-new>` in to the
    :xref:`master branch <git-manual>`
 #. :ref:`Tag and push <git-tagging>` with a
    :xref:`long message <git-commit-guidelines>` that describes the
    :ref:`version list additions <version-list>`
-#. In :doc:`Read the Docs<rtfd:index>`:
-
-   * :menuselection:`Projects --> AAAAAA --> Versions --> Inactive Versions
-     --> MAJOR.MINOR.PATCH --> Edit --> Active`
+#. Use your :xref:`rtfd-account` to :ref:`disable <dist-doc-versions>` the
+   :ref:`development branch <git-branching>` and
+   :ref:`enable <dist-doc-versions>` the new :ref:`tag <git-tagging>`

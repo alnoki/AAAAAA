@@ -272,12 +272,11 @@ however, must be specified in :ref:`requirements.txt <concepts-configs-tree>`:
 .. literalinclude:: ../../requirements.txt
    :caption: :ref:`requirements.txt <concepts-configs-tree>`
 
-On your :wiki-pg:`account <User_(computing)>` for :ref:`tools-read-the-docs`,
-you will need to :wiki-pg:`navigate <Web_browser>` to
+On your :xref:`rtfd-account`, you will need to
+:wiki-pg:`navigate <Web_browser>` to
 :menuselection:`Projects --> AAAAAA --> Admin --> Advanced Settings` and update
 ``Requirements file:`` with the :wiki-pg:`path <Path_(computing)>` of
 :ref:`requirements.txt <concepts-configs-tree>`
-
 
 .. _configs-pytest:
 

@@ -1,24 +1,6 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Git add
-1. Talk about staging vs Git add -A
-   1. Use for committing
-
-## Extensions and rtd
-1. :term:`AAAAAA` was started with the sphinx-quickstart
-1. After you do quickstart, you have a project, but you want to upload it, etc.
-   1. Thus you need to think about extensions
-1. Verify builds pass on rtd before pushing tag
-1. Just made a requirements.txt file
-   1. On my account, had to update advanced settings
-1. You need conf.py to say the bibtex, but rtd doesn
-   1. You conda, it pip
-1. Will need to uncomment in conf.py to load using conda
-1. Configs page should be a one-time thing
-1. Talk about the process of monitoring builds, etc.
-1. Tip on BibTeX pg says unless viewing the PDF version
-
 ## Dev env setup
 1. Show how to install a vs code extension
 1. Zen should be the last env setup page
@@ -35,11 +17,7 @@
 1. Update VS code configurations page when all done
 
 ## toctree restructuring
-1. Talk about on documenting page
 1. Verify PDF levels are correct
-1. Talk about toctree structuring on index page for this
-   1. Distribution - documenting section?
-1. BibTeX okay?
 
 ## Tools
 1. Vim section, find all for vim links to it

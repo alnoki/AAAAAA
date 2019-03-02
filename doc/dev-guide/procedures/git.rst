@@ -249,6 +249,7 @@ Committing
    :align: center
    :header: Reference, Topic
 
+   :git-doc:`git-add`, Prepare changes
    :xref:`git-commit`, Create snapshot of project changes
    :xref:`git-push`, :wiki-pg:`Upload` changes to :github:`GitHub <>`
    :xref:`Message conventions <commit-conventions>`, "Tell the
@@ -260,7 +261,7 @@ Committing
    .. code-block:: bash
 
       git pull
-      git log3
+      git log
 
 #. :wiki-pg:`Save and close <Computer_file>` any open project
    :wiki-pg:`files <Computer_file>`
@@ -271,10 +272,14 @@ Committing
    * :guilabel:`Source Control`
 
 #. Use the :guilabel:`Source Control` interface to
-   :xref:`stage changes <git-commit>`
+   :git-doc:`stage changes <git-add>`
 
    * You may consider using the :ref:`command palette <tools-vs-code>` to
-     select :guilabel:`Git: Stage All Changes`
+     select :guilabel:`Git: Stage All Changes` or, equivalently:
+
+     .. code-block:: bash
+
+        git add -A
 
 
 #. In the :ref:`integrated terminal <tools-vs-code>`:

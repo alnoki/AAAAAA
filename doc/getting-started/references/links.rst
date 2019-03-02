@@ -489,9 +489,13 @@ Core commands
 
    * Create saved changes to a project
 
+#. :git-doc:`git-add`
+
+   * Prepare changes for :ref:`committing <git-committing>`
+
 #. :xref:`git-push`
 
-   * Upload a :xref:`commit <git-commit>`
+   * :wiki-pg:`Upload` a :xref:`commit <git-commit>`
 
 #. :xref:`git-tag`
 
@@ -714,6 +718,10 @@ With Read the Docs
    * How the :wiki-pg:`host computer <Host_(network)>` performs
      :ref:`Sphinx build procedures <sphinx-building-doc>`
 
+#. :xref:`rtfd-account`
+
+   * Interface for :ref:`distributing documentation <dist-doc>`
+
 Managing references
 -------------------
 
@@ -901,9 +909,9 @@ Syntax
 
    * Element that marks a block of text
 
-#. :rst:dir:`toctree`
+#. :rst:role:`guilabel`
 
-   * Project structure management
+   * :guilabel:`Fancy buttons`
 
 #. :ref:`Label role <sphinx:ref-role>`
 
@@ -928,7 +936,8 @@ Engine-agnostic tools
 #. :xref:`tables-generator`
 
    * :xref:`Online <internet>` tool to format tables in :wiki-pg:`LaTeX`,
-     :xref:`Markdown`, :ref:`tools-restructured-text`, and plain text
+     :github-help:`Markdown <basic-writing-and-formatting-syntax>`,
+     :ref:`tools-restructured-text`, and plain text
 
 #. :wiki-pg:`LaTeX`
 
@@ -941,7 +950,7 @@ Engine-agnostic tools
    * A way to create :wiki-pg:`documentation <Software_documentation>` in
      a :wiki-pg:`computer <Computer>`
 
-#. :xref:`Markdown`
+#. :github-help:`Markdown <basic-writing-and-formatting-syntax>`
 
    * :wiki-pg:`Markup language <Markup_language>` used to generate
      tables, lists, and other components
@@ -965,10 +974,11 @@ General
 #. :xref:`Jupyter Notebooks <Jupyter>`
 
    * Interactive :xref:`Python` environment
-   * :xref:`Code <source-code>`, :wiki-pg:`LaTeX`, :xref:`Markdown`, and
+   * :xref:`Code <source-code>`, :wiki-pg:`LaTeX`,
+     :github-help:`Markdown <basic-writing-and-formatting-syntax>`, and
      plotting in one :wiki-pg:`file <Computer_file>`
 
-#. :xref:`Schafer-Jupyter`
+#. :yt-vid:`Corey Schafer tutorial <HW29067qVWk>`
 
    * Recommended for learning to use :xref:`Jupyter Notebooks <Jupyter>`
    * Tutorial video from
@@ -1000,7 +1010,7 @@ Extensions
 
 #. :xref:`live-md-preview`
 
-   * Preview :xref:`Markdown` and :wiki-pg:`LaTeX`
+   * Preview :github-help:`Markdown <basic-writing-and-formatting-syntax>` and :wiki-pg:`LaTeX`
 
 VS Code
 =======
@@ -1277,6 +1287,10 @@ Data storage
 #. :wiki-pg:`Delimiter`
 
    * A data boundary marker
+
+#. :wiki-pg:`PDF`
+
+   * A general document :wiki-pg:`filetype <Filename_extension>`
 
 Time
 ====

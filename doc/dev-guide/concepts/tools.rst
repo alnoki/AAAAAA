@@ -307,7 +307,8 @@ which has all the latest features but may not be completely stable
    :xref:`command line <command-line>` inside :xref:`VS Code <VS-Code>`"
    :vs-code-doc:`VS Code unit testing <python/unit-testing>`,"
    :ref:`tools-pytest` integration"
-   :xref:`Markdown`, For :ref:`planning version features <versioning-td3>`
+   :github-help:`Markdown <basic-writing-and-formatting-syntax>`, "
+   :ref:`Planning version features <versioning-td3>`"
 
 .. rubric:: Footnotes
 
@@ -339,9 +340,9 @@ Sphinx uses :ref:`tools-restructured-text` (``reST``), a particular style of
 :wiki-pg:`HTML` when :ref:`building a website <sphinx-building-doc>`
 
 :doc:`Sphinx <sphinx:intro>` has a
-:ref:`table of contents <sphinx:toctree-directive>` feature, which provides a
-linearly navigable structure that ensures access to all
-:wiki-pg:`pages <Webpage>` of
+:ref:`table of contents <sphinx:toctree-directive>` feature
+(:rst:dir:`toctree`), which provides a linearly navigable structure that
+ensures access to all :wiki-pg:`pages <Webpage>` of
 :wiki-pg:`Documentation <Software_documentation>`.
 :term:`AAAAAA` are :wiki-pg:`documented <Software_documentation>` using the
 :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides the
@@ -362,6 +363,7 @@ functionality and :ref:`several are used <tools-sphinx-extensions>` in
    :ref:`Sphinx procedures <sphinx-procedures>`, Usage
    :ref:`Sphinx extensions <tools-sphinx-extensions>`, Extended functionality
    :ref:`tools-sphinx-autobuild`, Automation
+   :ref:`Distributing documentation <dist-doc>`, Walkthrough
 
 .. csv-table:: Select references
    :align: center
@@ -500,11 +502,10 @@ Sphinx extensions
 =================
 
 :term:`AAAAAA` uses some
-:doc:`built-in extensions <sphinx:usage/extensions/index>` and some that
-are not :doc:`built-in <sphinx:usage/extensions/index>` for working with
-:ref:`tools-sphinx`
+:doc:`built-in Sphinx extensions <sphinx:usage/extensions/index>` and some that
+are not :doc:`built-in <sphinx:usage/extensions/index>`
 
-.. csv-table:: Select reference within :term:`AAAAAA`
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
    :header: Reference, Purpose
 
@@ -717,9 +718,10 @@ quickly :wiki-pg:`rendering <Rendering_(computer_graphics)>` equations in
    :align: center
    :header: Reference, Topic
 
-   :xref:`Corey Schafer tutorial <Schafer-Jupyter>`, "Recommended
+   :yt-vid:`Corey Schafer tutorial <HW29067qVWk>`, "Recommended
    :xref:`YouTube` tutorial"
-   :xref:`Markdown`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>` for
+   :github-help:`Markdown <basic-writing-and-formatting-syntax>`, "
+   :wiki-pg:`Syntax <Syntax_(programming_languages)>` for
    making :wiki-pg:`links <URL>`, :xref:`tables <tables-generator>`, etc."
    :xref:`tables-generator`, "
    :wiki-pg:`Syntax <Syntax_(programming_languages)>` generator"
