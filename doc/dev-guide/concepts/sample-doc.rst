@@ -35,8 +35,8 @@ Welcome to this
 :doc:`overlined section heading <sphinx:usage/restructuredtext/basics>`! [#]_
 
 .. csv-table:: Reference, Topic example (NOT ``"Reference", "Topic"``)
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
    :ref:`concepts-doc-example`, "A
    :wiki-pg:`render <Rendering_(computer_graphics)>` of the

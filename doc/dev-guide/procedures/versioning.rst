@@ -7,15 +7,21 @@
 Versioning
 ##########
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`version-list`, :term:`AAAAAA` conceptual explanation
+   :ref:`version-list`, Conceptual explanation
+   :ref:`tools-git`, :ref:`Version <version-list>` identification
+   :ref:`tools-read-the-docs`, Automated :ref:`version <version-list>` support
+
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :xref:`semver`, Numbering standards
    :xref:`git-commit-guidelines`, Long version message guidelines
-   :ref:`tools-read-the-docs`, Automated :ref:`version <version-list>` support
-   :ref:`tools-git`, :ref:`Version <version-list>` identification
 
 .. contents:: Contents
    :local:
@@ -26,15 +32,20 @@ Versioning
 Top-down to-do task deferral (TD)\ :superscript:`3`
 ***************************************************
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
+   :term:`OHIO`, Task management philosophy
    :ref:`tools-vs-code`, Task management environment
-   :ref:`concepts-project-tree`, :term:`AAAAAA` project structure
+   :ref:`Project structure <concepts-project-tree>`, Layout
+
+.. csv-table:: Select reference
+   :align: center
+   :header: Reference, Topic
+
    :xref:`Markdown`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
    specification"
-   :term:`OHIO`, Task management philosophy
 
 .. tip::
 
@@ -47,8 +58,8 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    * :guilabel:`Outline`
 
    .. csv-table:: :xref:`Markdown headers <Markdown>`
-      :header: Level, Meaning
       :align: center
+      :header: Level, Meaning
 
       ``#``, :ref:`Versions <version-list>`
       ``##``, Topic
@@ -106,6 +117,7 @@ Releasing a new version
 At this point you should be working on a
 :ref:`development branch <versioning-start-new>`
 
+#. Update descriptions of any modified :ref:`configurations <concepts-configs>`
 #. :ref:`Update labels <sphinx-update-labels>`
 #. Do a :ref:`link check <sphinx-checking-links>`
 #. Verify that the :ref:`quickstart <quickstart>` works
@@ -115,6 +127,7 @@ At this point you should be working on a
    * :ref:`Documentation <concepts-doc-tree>`
    * :ref:`Jupyter Notebooks <concepts-jupyter-nbs-tree>`
    * :ref:`Code <concepts-code-tree>`
+   * :ref:`Configurations <concepts-configs-tree>`
 
 #. Finalize feature additions in the :ref:`version list <version-list>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
@@ -125,7 +138,7 @@ At this point you should be working on a
      :ref:`.rst file <tools-restructured-text>` you are on
    * Feel free to add some :ref:`to-dos <versioning-td3>` for later, though
 
-#. Update the ``YYYY-MM-DD`` on the :ref:`version list <version-list>`
+#. Update the :wiki-pg:`time <Time>` on the :ref:`version list <version-list>`
 #. :ref:`Commit and push <git-committing>`, making sure to verify
    :ref:`version tag comments <writing-proofread-new>` when
    :ref:`staging changes <git-committing>`

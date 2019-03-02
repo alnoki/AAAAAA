@@ -11,8 +11,8 @@ Documentation
    :local:
 
 .. csv-table:: Select references
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "Official
    :xref:`Python` guide to :wiki-pg:`documenting <Software_documentation>`"
@@ -82,8 +82,8 @@ Structure
                     ...
 
 .. csv-table::
-   :header: Name, Function
    :align: center
+   :header: Name, Function
 
    ``exts/``, ":xref:`Directory <directory>` for
    :doc:`extensions <sphinx:usage/extensions/index>`"
@@ -106,13 +106,20 @@ Style
 =====
 
 :term:`AAAAAA` adopt stylistic recommendations from common sources, with some
-particular emphases:
+particular emphases
+
+.. csv-table:: Select references within :term:`AAAAAA`
+   :align: center
+   :header: Reference, Topic
+
+   :ref:`tools-restructured-text`, Conceptual explanation
+   :ref:`tools-napoleon`, Conceptual explanation
+   :ref:`Napoleon example <concepts-code-e4>`, Usage
 
 .. csv-table:: Select references
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
-   :ref:`tools-restructured-text`, :term:`AAAAAA` conceptual explanation
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "General
    :ref:`reST <tools-restructured-text>` style guide"
    :xref:`Doc8`, ":wiki-pg:`Syntax highlighting <Syntax_highlighting>` for
@@ -150,8 +157,8 @@ Specific syntax
    :ref:`links <references-links>` can clearly be differentiated:
 
    .. csv-table::
-      :header: Yes, NO!!!
       :align: center
+      :header: Yes, NO!!!
 
       ":doc:`Extensions <sphinx:usage/extensions/index>` for
       :doc:`Sphinx <sphinx:intro>`", ":doc:`Sphinx <sphinx:intro>`
@@ -167,8 +174,8 @@ Specific syntax
    * :doc:`pytest <pytest:index>` does too
 
      .. csv-table:: Common Conceptual Capitalizations (C\ :superscript:`3`)
-        :header: Beginning of sentence, Elsewhere
         :align: center
+        :header: Beginning of sentence, Elsewhere
 
         :doc:`NumPy <numpy:about>`, :doc:`NumPy <numpy:about>`
         :doc:`pytest <pytest:index>`, :doc:`pytest <pytest:index>`
@@ -265,13 +272,13 @@ Whitespace and line breaking
    .. code-block:: rest
 
       .. csv-table:: Select references
-         :header: Reference, Topic
          :align: center
+         :header: Reference, Topic
 
          :xref:`Python.org <Python>`, Official information
          :doc:`python:tutorial/index`, Official tutorial
 
-#. If a :doc:`directive option <sphinx:usage/restructuredtext/directives>`
+#. If a :doc:`directive option <sphinx:usage/restructuredtext/basics>`
    requires a :wiki-pg:`line break <Newline>`, make sure to
    :wiki-pg:`indent <Indentation_(typesetting)>` the following
    :wiki-pg:`line <Source_lines_of_code>` if it starts with a
@@ -285,6 +292,14 @@ Whitespace and line breaking
 
    * Otherwise, simply :wiki-pg:`line break <Newline>` without
      :wiki-pg:`indenting <Indentation_(typesetting)>`
+   * Note that this does not apply to
+     :doc:`directive arguments <sphinx:usage/restructuredtext/basics>`:
+
+     .. code-block:: rest
+
+        .. csv-table:: :ref:`conda:concept-conda-package` required for
+           :term:`AAAAAA`
+           :align: center
 
 #. See the :ref:`a6 packages table <concepts-packages-table>` for some sample
    :ref:`csv-table syntax<sphinx:table-directives>` with appropriate
@@ -297,6 +312,7 @@ Whitespace and line breaking
      listed after ``:header:`` (even if the ``:header:``
      :doc:`directive options <sphinx:usage/restructuredtext/directives>` have
      a line break)
+   * For consistency, ``:align:`` should come before ``:header:``
 
 #. Use a single :wiki-pg:`space <Whitespace_character>` before
    :doc:`footnotes <sphinx:usage/restructuredtext/basics>`
@@ -351,8 +367,8 @@ Jupyter Notebooks
                utilities.ipynb
 
 .. csv-table::
-   :header: Name, Function
    :align: center
+   :header: Name, Function
 
    ``dev/``, Created during :wiki-pg:`development <Software_development>`
    ``src/``, Complements :ref:`source code <user-intro>`

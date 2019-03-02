@@ -30,8 +30,8 @@ On Managing Yourself
 ********************
 
 .. csv-table:: :cite:`bib-on-managing-yourself`
-   :header: Page(s), Topic
    :align: center
+   :header: Page(s), Topic
 
    "82 , 91", :term:`OHIO`
 
@@ -54,8 +54,8 @@ The Checklist Manifesto
 ***********************
 
 .. csv-table:: :cite:`bib-checklist-manifesto`
-   :header: Page(s), Topic
    :align: center
+   :header: Page(s), Topic
 
    13, Why use a :term:`checklist`?
 

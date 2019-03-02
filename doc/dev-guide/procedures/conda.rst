@@ -8,8 +8,8 @@ Conda
 #####
 
 .. csv-table:: Select references
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
    :ref:`tools-anaconda`, :term:`AAAAAA` conceptual explanation
    :doc:`conda:user-guide/tasks/manage-environments`, "Official practical

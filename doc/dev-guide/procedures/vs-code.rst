@@ -6,10 +6,8 @@
 VS Code
 #######
 
-.. csv-table:: Select references
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
    :header: Reference, Topic
 
-   :ref:`Tools: VS Code <tools-vs-code>`, :term:`AAAAAA` conceptual explanation
-   :ref:`VS Code configuration <configs-vs-code>`, "
-   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
+   :ref:`tools-vs-code`, Conceptual explanation

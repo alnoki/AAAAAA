@@ -7,13 +7,16 @@
 Git
 ###
 
-.. csv-table:: Select references
+.. csv-table:: Select reference within :term:`AAAAAA`
+   :align: Center
    :header: Reference, Topic
-   :align: center
 
-   :ref:`Tools: Git <tools-git>`, :term:`AAAAAA` conceptual explanation
-   :ref:`Git configuration <configs-git>`, ":ref:`concepts-configs` for
-   :term:`AAAAAA`"
+   :ref:`tools-git`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`commit-conventions`, Tell the :xref:`codebase <software>` what to do
@@ -74,8 +77,8 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
       syntax on
 
 .. csv-table:: Learning :xref:`Vim`
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
    :xref:`Vim-tutorial`, Learn minimum necessary :xref:`Vim <Vim>`
    :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
@@ -140,8 +143,8 @@ Per :xref:`git-log`:
 #. This will open the :xref:`less-pager` for text navigation
 
    .. csv-table:: Core :xref:`less commands <less-pager>`
-      :header: Key, Function
       :align: center
+      :header: Key, Function
 
       :kbd:`return`, scroll
       ``q``, exit
@@ -165,11 +168,16 @@ Per :xref:`git-log`:
 Listing project committers
 ==========================
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
-   :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-git`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :xref:`git-log`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
    reference"
    :xref:`list-git-developers`, Sorting unique instances
@@ -198,8 +206,8 @@ Get the time of a commit
 ========================
 
 .. csv-table:: Select references
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
    :git-doc:`git-show`, Inspect :git-doc:`tags <git-tag>`
    :xref:`dencode`, Convert :wiki-pg:`time standards <Time_standard>`
@@ -231,13 +239,18 @@ Development tasks
 Committing
 ==========
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
-   :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-git`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :xref:`git-commit`, Create snapshot of project changes
-   :xref:`git-push`, :wiki-pg:`Upload` changes to :xref:`GitHub`
+   :xref:`git-push`, :wiki-pg:`Upload` changes to :github:`GitHub <>`
    :xref:`Message conventions <commit-conventions>`, "Tell the
    :xref:`codebase <software>` what to do"
 
@@ -309,8 +322,8 @@ Quick fixes
 -----------
 
 .. csv-table:: Select references
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
    :git-doc:`git-reset`, Fix mistakes
    :stack-q:`Vim 325 error <45489008/vim-opening-file-e325-attention-error>`, "
@@ -334,17 +347,21 @@ Quick fixes
 Tagging
 =======
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
-   :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-git`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :xref:`git-tag`, Assign a unique identifier to a :xref:`commit <git-commit>`
    :xref:`Message style <commit-conventions>`, "Tell the
    :xref:`codebase <software>` what to do"
-   :xref:`git-push`, :wiki-pg:`Upload` changes to :xref:`GitHub`
+   :xref:`git-push`, :wiki-pg:`Upload` changes to :github:`GitHub <>`
    :xref:`git-commit-guidelines`, Long message guidelines
-
 
 #. :ref:`View the project log <git-view-project-log>` to verify the
    :xref:`commit <git-commit>` in question
@@ -385,11 +402,16 @@ Tagging
 Branching
 =========
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
-   :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-git`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :xref:`git-branch`, Manage independent :xref:`commit <git-commit>` sequences
    :xref:`git-checkout`, Switch :xref:`branches <git-branch>`
 
@@ -436,11 +458,16 @@ Branching
 Merging
 =======
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
-   :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-git`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :xref:`git-branch`, Manage independent :xref:`commit <git-commit>` sequences
    :xref:`git-checkout`, Switch :xref:`branches <git-branch>`
    :xref:`git-merge`, Combine :xref:`branches <git-branch>`
@@ -473,13 +500,18 @@ Merging
 Changing commit credential history
 **********************************
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
-   :ref:`tools-git`, :term:`AAAAAA` conceptual explanation
-   :xref:`Change author history <github-change-authors>`, "
-   :xref:`GitHub` instructions"
+   :ref:`tools-git`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
+   :xref:`Change author history <github-change-authors>`, ":github:`GitHub <>`
+   instructions"
    :xref:`git-branch-filtering`, "Advanced
    :wiki-pg:`syntax <Syntax_(programming_languages)>`"
 

@@ -30,7 +30,18 @@
     // Vim integration
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
-    "vim.useCtrlKeys": false,
+    "vim.handleKeys": {
+        "<C-P>": false, // Command pallete
+        "<C-p>": false, // Open
+        "<C-F>": false, // Find all
+        "<C-f>": false, // Find in files
+        "<C-k>": false, // Zen Mode
+        "<C-1>": false, // Editor 1
+        "<C-2>": false, // Editor 2
+        "<C-b>": false, // Side bar
+        "<C-`>": false, // Integrated terminal
+        "<C-j>": false, // Panel
+    },
 
 
     // Declutter

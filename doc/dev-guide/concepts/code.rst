@@ -24,12 +24,17 @@ Code
 Structure
 *********
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`tools-python`, :term:`AAAAAA` conceptual explanation
-   :ref:`tools-pytest`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-python`, Conceptual explanation
+   :ref:`tools-pytest`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :ref:`python:tut-packages`, :xref:`Directory <directory>` structuring
    :doc:`pytest:goodpractices`, Integrating :ref:`test code <tools-pytest>`
 
@@ -56,8 +61,8 @@ Style
 *****
 
 .. csv-table:: Select references
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
    :pep:`8`, Official :ref:`tools-python` style guide
    :pep:`257`, :ref:`Docstring <python:tut-docstrings>` conventions
@@ -86,11 +91,16 @@ Style
 Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
 **********************************************************************
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`tools-napoleon`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-napoleon`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :pep:`257`, :ref:`Docstring <python:tut-docstrings>` conventions
    :pep:`484`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>` to indicate
    :doc:`types <python:library/stdtypes>`"

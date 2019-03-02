@@ -32,8 +32,8 @@ and :term:`AAAAAA` measure :xref:`money <money>` using units of
 :xref:`United States dollars (USD) <USD>` and :xref:`cents <finance-cent>`:
 
 .. csv-table:: :xref:`money` notation in :term:`AAAAAA`
-   :header: Unit, Symbol
    :align: center
+   :header: Unit, Symbol
 
    :xref:`USD <USD>`, $
    :xref:`Cents <finance-cent>`, ¢
@@ -68,8 +68,8 @@ the possible values that can be assumed by
 :ref:`instance variable <python:tut-class-and-instance-variables>`
 
 .. csv-table:: Possible :py:attr:`~AAAAAA.ledger.Transaction.kinds`
-   :header: Kind, :xref:`ticker-symbol` associated?, Interpretation
    :align: center
+   :header: Kind, :xref:`ticker-symbol` associated?, Interpretation
 
    ``'Bank transfer'``, No, Add :xref:`money <money>` from a :xref:`bank`
    ``'Buy'``, Yes, "Pay :xref:`money <money>` for a

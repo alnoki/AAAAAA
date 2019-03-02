@@ -59,9 +59,19 @@ specific :xref:`Python` considerations in :term:`AAAAAA` like
 :wiki-pg:`syntax <Syntax_(programming_languages)>` and
 :xref:`directory <directory>` structure
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`Developer environment <dev-env-intro>`, Setup
+   :ref:`Code concepts <concepts-code>`, "
+   :wiki-pg:`Syntax <Syntax_(programming_languages)>`, structure of
+   :wiki-pg:`files <Computer_file>`"
+   :ref:`User guide <user-intro>`, Walkthrough
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
 
    :xref:`Python.org <Python>`, Official information
    :yt-pl:`Corey Schafer tutorials <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`, "Learn
@@ -74,12 +84,6 @@ specific :xref:`Python` considerations in :term:`AAAAAA` like
    :doc:`python:faq/programming`, Advanced technical information
    :doc:`The Python interpreter <tutorial/interpreter>`, "Mechanism that
    executes :xref:`source code <source-code>`"
-   :ref:`Code structure <concepts-code-tree>`, :term:`AAAAAA` components
-   :ref:`Code concepts <concepts-code>`, ":term:`AAAAAA` usage
-   (:wiki-pg:`syntax <Syntax_(programming_languages)>`, structure of
-   :wiki-pg:`files <Computer_file>`)"
-   :ref:`AAAAAA user guide <user-intro>`, ":term:`AAAAAA` usage
-   (:xref:`software <software>` walkthrough)"
 
 .. _tools-anaconda:
 
@@ -101,14 +105,21 @@ that automatically checks dependencies and maintains compatibility between
 different :ref:`conda channels <conda:channels-glossary>`, like the
 :xref:`conda-forge`
 
-.. csv-table:: :doc:`conda:index` references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`Developer environment <dev-env-intro>`, Setup
+   :ref:`Conda procedures <conda-procedures>`, Usage
+
+
+.. csv-table:: :doc:`conda:index` references
+   :align: center
+   :header: Reference, Topic
 
    :doc:`conda:index`, Official reference
    :doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`, "Common
    :wiki-pg:`commands <Command_line>` for :doc:`conda <conda:index>`"
-   :ref:`Conda procedures <conda-procedures>`, :term:`AAAAAA` usage
    :doc:`Miniconda <conda:user-guide/install/download>`, ":wiki-pg:`URL <URL>`
    for :wiki-pg:`download <Download>`"
 
@@ -128,8 +139,8 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
 
       .. csv-table:: :ref:`conda:concept-conda-package` required for
          :term:`AAAAAA`
-         :header: Package, Function, Setup Phase, Channel
          :align: center
+         :header: Package, Function, Setup Phase, Channel
 
          :xref:`Python`, :xref:`source-code` creation, "
          :ref:`Documenting <dev-env-documenting>`", "
@@ -197,35 +208,40 @@ identifier that can be accessed by
 :xref:`Tags <git-tag>`, which provide a unique identifier for
 :xref:`commits <git-commit>`, and :xref:`branches <git-branch>`, which enable
 independent sequences of :xref:`commits <git-commit>`, are used to manage
-:ref:`project versions <version-list>` on :xref:`GitHub`, a
+:ref:`project versions <version-list>` on :github:`GitHub <>`, a
 :xref:`free <money>` service that :wiki-pg:`hosts <Host_(network)>` the
 :github:`AAAAAA repository <alnoki/AAAAAA>` for :wiki-pg:`free <Money>`
 
-There are several :xref:`command line<command-line>` text navigators that go
-along with :xref:`Git <git-manual>`:
+There are several :xref:`command line<command-line>` text manipulators that go
+along with :xref:`Git <git-manual>`
 
-.. csv-table:: Text navigators
-   :header: Tool, Usage
+.. csv-table:: Text manipulators
    :align: center
+   :header: Tool, Usage
 
    :xref:`Vim <Vim-tutorial>`, ":ref:`Configuring <git-setup>` and
    :ref:`git-committing`"
    :xref:`less <less-pager>`, "
    :ref:`Viewing project history <git-view-project-log>`"
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`Developer environment <dev-env-intro>`, Setup
+   :ref:`Git configuration <configs-Git>`, Options
+   :ref:`Git procedures <git-procedures>`, Usage
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
 
    :xref:`git-manual`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`git-commit-guidelines`, Contribution guidelines
    :doc:`Documentation webhooks <rtfd:webhooks>`, "Automatic
-   :ref:`versioning <version-list>` integration"
+   :ref:`version <version-list>` support"
    :xref:`Vim`, Official information
-   :ref:`Git configuration <configs-Git>`, "
-   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
-   :ref:`Git procedures <git-procedures>`, :term:`AAAAAA` usage
 
 .. _tools-vs-code:
 
@@ -238,11 +254,13 @@ VS Code
 that is used to create :term:`AAAAAA`
 
 The :github:`AAAAAA repository <alnoki/AAAAAA>` comes with a collection of
-:xref:`VS-Code-settings` that will automatically configure most of your
+:xref:`VS-Code-settings` that will automatically
+:ref:`configure <concepts-configs>` most of your
 :wiki-pg:`software <Software>` workspace. If you completed the
 :ref:`developer environment setup <dev-env-intro>`, then all the relevant
-settings should already be
-:wiki-pg:`installed <Installation_(computer_programs)>`! These settings will
+:ref:`configurations <configs-vs-code>` should already be
+:wiki-pg:`installed <Installation_(computer_programs)>`! These
+:ref:`configurations <configs-vs-code>` will
 help with things like :ref:`code style <concepts-code-style>` and
 :ref:`test discovery <pytest-discover-tests>`
 
@@ -250,8 +268,8 @@ There is also the :xref:`VS Code Insider Edition <VS-Code-insiders>`,
 which has all the latest features but may not be completely stable
 
 .. csv-table:: Select :xref:`extensions <VS-Code-extensions>`
-   :header: Extension, Purpose, Setup Phase
    :align: center
+   :header: Extension, Purpose, Setup Phase
 
    :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate content, "
    :ref:`Documenting <dev-env-documenting>`"
@@ -267,24 +285,29 @@ which has all the latest features but may not be completely stable
    <LittleFoxTeam.vscode-python-test-adapter>`", "Using
    :ref:`pytest <tools-pytest>`", :ref:`Testing <dev-env-testing>`
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`Developer environment <dev-env-intro>`, Setup
+   :ref:`VS Code configuration <configs-vs-code>`, Options
+   :ref:`VS Code procedures <procedures-vs-code>`, Usage
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
 
    :vs-code-doc:`Python integration <languages/python>`, "Official tutorial
    for :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
    :xref:`Command palette <command-palette>`, "Quickly input
    :wiki-pg:`commands <Command_line>`"
-   :xref:`Settings <VS-Code-settings>`, "
-   :ref:`Configuration options <configs-settings-json>`"
+   :xref:`Settings <VS-Code-settings>`, "Official
+   :ref:`configuration options <configs-settings-json>`"
    :xref:`Integrated terminal <VS-Code-terminal>`, "Run a
    :xref:`command line <command-line>` inside :xref:`VS Code <VS-Code>`"
    :vs-code-doc:`VS Code unit testing <python/unit-testing>`,"
    :ref:`tools-pytest` integration"
    :xref:`Markdown`, For :ref:`planning version features <versioning-td3>`
-   :ref:`VS Code configuration <configs-vs-code>`, "
-   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
-   :ref:`VS Code procedures <procedures-vs-code>`, :term:`AAAAAA` usage
 
 .. rubric:: Footnotes
 
@@ -325,29 +348,29 @@ linearly navigable structure that ensures access to all
 visual layout of this :xref:`website <website>`
 
 :doc:`Sphinx extensions <sphinx:usage/extensions/index>` enable additional
-functionality and several are used in :term:`AAAAAA`:
+functionality and :ref:`several are used <tools-sphinx-extensions>` in
+:term:`AAAAAA`
 
-.. csv-table:: :doc:`Sphinx extensions <sphinx:usage/extensions/index>`
-   in :term:`AAAAAA`
-   :header: Extension, Purpose
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`Intersphinx <tools-intersphinx>`, "
-   :ref:`Create links <sphinx-intersphinx>` to other
-   :doc:`Sphinx <sphinx:intro>` projects"
-   :ref:`xref <tools-xref>`, ":ref:`Create links <sphinx-xref>` to arbitrary
-   :xref:`URLs <URL>`"
-   :ref:`tools-extlinks`, ":ref:`Create links <sphinx-xref>` to common
-   :xref:`URLs <URL>`"
-   :ref:`tools-napoleon`, :ref:`Document code components <concepts-code-e4>`
-   :ref:`tools-BibTeX`, :ref:`Cite books <sphinx-reference-book>`
+   :ref:`Developer environment <dev-env-intro>`, Setup
+   :ref:`Sphinx configuration <configs-sphinx>`, Options
+   :ref:`tools-restructured-text`, :wiki-pg:`Markup language <Markup_language>`
+   :ref:`Documentation structure <concepts-doc-tree>`, Specific components
+   :ref:`Sphinx procedures <sphinx-procedures>`, Usage
+   :ref:`Sphinx extensions <tools-sphinx-extensions>`, Extended functionality
+   :ref:`tools-sphinx-autobuild`, Automation
 
 .. csv-table:: Select references
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
    :doc:`Sphinx <sphinx:intro>`, "Official
    :wiki-pg:`documentation <Software_documentation>`"
+   :doc:`conf.py <sphinx:usage/configuration>`, "Official
+   :ref:`configuration options <configs-conf-py>`"
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "
    :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
    :yt-vid:`Practical use seminar <0ROZRNZkPS8>`, "Practical
@@ -355,15 +378,6 @@ functionality and several are used in :term:`AAAAAA`:
    ":ref:`References extension configuration example
    <sublime-with-sphinx:use the external links extension>`", "Similar usage and
    :ref:`configuration <configs-conf-py>`"
-   :doc:`conf.py <sphinx:usage/configuration>`, "
-   :ref:`Configurations <configs-conf-py>`"
-   :ref:`tools-sphinx-autobuild`, "
-   :ref:`Automatic documentation building <sphinx-autobuilding>`"
-   :ref:`Sphinx configuration <configs-sphinx>`, "
-   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
-   :ref:`Documentation structure <concepts-doc-tree>`, ":term:`AAAAAA`
-   components"
-   :ref:`Sphinx procedures <sphinx-procedures>`, :term:`AAAAAA` usage
 
 .. _tools-restructured-text:
 
@@ -388,9 +402,17 @@ block of text
 them to :wiki-pg:`HTML` whenever
 :ref:`documentation is built <sphinx-building-doc>`
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`reST style <concepts-doc-style>`, Style
+   :ref:`tools-sphinx`, ":wiki-pg:`Documentation <Software_documentation>`
+   engine"
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
 
    :doc:`sphinx:usage/restructuredtext/basics`, "
    :doc:`Sphinx <sphinx:intro>` tutorial on ``reST`` usage"
@@ -398,15 +420,14 @@ them to :wiki-pg:`HTML` whenever
    :wiki-pg:`documentation <Software_documentation>`"
    :docutils:`docs/user/rst/quickref.html`, "Practical
    :wiki-pg:`syntax <Syntax_(programming_languages)>`"
-   :xref:`reST-cheatsheet`, "Quick
+   ":github:`reST cheatsheet
+   <ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst>`", "Quick
    :wiki-pg:`syntax <Syntax_(programming_languages)>` reference"
    :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
    :wiki-pg:`syntax <Syntax_(programming_languages)>`"
    :doc:`sphinx:usage/restructuredtext/domains`, "Collections of
    :doc:`roles <sphinx:usage/restructuredtext/roles>` and
    :doc:`directives <sphinx:usage/restructuredtext/directives>`"
-   :ref:`reST style <concepts-doc-style>`, :term:`AAAAAA` usage
-
 
 Many :ref:`tools-sphinx`-style :xref:`websites <website>` for
 :wiki-pg:`documentation <Software_documentation>` have an
@@ -452,9 +473,17 @@ even :wiki-pg:`renders <Rendering_(computer_graphics)>` on the
 :wiki-pg:`web browser <Web_browser>` for
 :wiki-pg:`mobile devices <Mobile_device>`!
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`RTD Configurations <configs-read-the-docs>`, Options
+   :ref:`Distributing documentation <dist-doc>`, Walkthrough
+   :ref:`Documentation versioning <versioning-releasing>`, Usage
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
 
    :yt-vid:`Quickstart tutorial <oJsUvBQyHBs>`, "Start a
    :doc:`Read the Docs with Sphinx <rtfd:intro/getting-started-with-sphinx>`
@@ -464,14 +493,38 @@ even :wiki-pg:`renders <Rendering_(computer_graphics)>` on the
    :doc:`rtfd:webhooks`, Automatic project modification detection
    :doc:`rtfd:versions`, Automatic :ref:`version <version-list>` support
    :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
-   :ref:`RTD Configurations <configs-read-the-docs>`, "
-   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
-   :ref:`Documentation versioning <versioning-releasing>`, :term:`AAAAAA` usage
 
 .. _tools-sphinx-extensions:
 
 Sphinx extensions
 =================
+
+:term:`AAAAAA` uses some
+:doc:`built-in extensions <sphinx:usage/extensions/index>` and some that
+are not :doc:`built-in <sphinx:usage/extensions/index>` for working with
+:ref:`tools-sphinx`
+
+.. csv-table:: Select reference within :term:`AAAAAA`
+   :align: center
+   :header: Reference, Purpose
+
+   :ref:`Developer environment <dev-env-intro>`, Setup
+   :ref:`tools-sphinx`, Conceptual explanation
+
+.. csv-table:: :doc:`Sphinx extensions <sphinx:usage/extensions/index>`
+   in :term:`AAAAAA`
+   :align: center
+   :header: Extension, Purpose
+
+   :ref:`Intersphinx <tools-intersphinx>`, "
+   :ref:`Create links <sphinx-intersphinx>` to other
+   :doc:`Sphinx <sphinx:intro>` projects"
+   :ref:`tools-napoleon`, :ref:`Document code components <concepts-code-e4>`
+   :ref:`tools-extlinks`, ":ref:`Create links <sphinx-xref>` to common
+   :wiki-pg:`URLs <URL>`"
+   :ref:`xref <tools-xref>`, ":ref:`Create links <sphinx-xref>` to arbitrary
+   :wiki-pg:`URLs <URL>`"
+   :ref:`tools-BibTeX`, :ref:`Cite books <sphinx-reference-book>`
 
 .. contents::
    :local:
@@ -513,9 +566,16 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
 :ref:`concepts-code-e4` elsewhere in
 :wiki-pg:`documentation <Software_documentation>`
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`Documentation syntax <concepts-doc-style>`, Usage
+   :ref:`Napoleon example <concepts-code-e4>`, Usage
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
 
    :doc:`Napoleon <sphinx:usage/extensions/napoleon>`, Official reference
    :ref:`Docstrings <python:tut-docstrings>`, ":ref:`python:comments` for
@@ -539,7 +599,6 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
    :ref:`docstrings <python:tut-docstrings>`"
    :ref:`sphinx:info-field-lists`, "Resultant
    :ref:`reST syntax <tools-restructured-text>`"
-   :ref:`Napoleon example <concepts-code-e4>`, :term:`AAAAAA` usage
 
 .. _tools-extlinks:
 
@@ -583,9 +642,18 @@ make :wiki-pg:`citations <Citation>` for :ref:`books <references-books>`. The
 If know the :xref:`ISBN` for a particular :ref:`book <references-books>`, you
 can usually get the :xref:`bibtex` from :xref:`ottobib`
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`BibTeX procedures <sphinx-reference-book>`, Usage
+   :ref:`refs.bib <concepts-doc-tree>`, "
+   :wiki-pg:`File structure <Computer_file>`"
+   :ref:`references-books`, :wiki-pg:`Citation` catalogue
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
 
    :xref:`book`, Information source
    :xref:`bibtex`, :xref:`Citation <citation>` format
@@ -595,7 +663,6 @@ can usually get the :xref:`bibtex` from :xref:`ottobib`
    :xref:`bibtex-syntax`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
    specifications"
    :xref:`cite-multiple-authors`, Use of ``et. al``
-   :ref:`BibTeX procedures <sphinx-reference-book>`, :term:`AAAAAA` usage
 
 .. _tools-sphinx-autobuild:
 
@@ -607,17 +674,20 @@ sphinx-autobuild
 :ref:`manual builds <sphinx-building-manually>`, which
 is helpful when :ref:`proofreading documentation <writing-proofread>`
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`tools-sphinx`, ":wiki-pg:`Documentation <Software_documentation>`
+   engine"
+   :ref:`Building manually <sphinx-building-manually>`, Usage
+   :ref:`Building automatically <sphinx-autobuilding>`, Usage
+
+.. csv-table:: Select reference
+   :align: center
+   :header: Reference, Topic
 
    :xref:`sphinx-autobuild`, :wiki-pg:`User <User_(computing)>` manual
-   :ref:`tools-sphinx`, ":ref:`Tool <concepts-tools>` to make
-   :wiki-pg:`documentation <Software_documentation>`"
-   :ref:`Building manually <sphinx-building-manually>`, "Manual
-   :term:`AAAAAA` usage"
-   :ref:`Building automatically <sphinx-autobuilding>`, "Automated
-   :term:`AAAAAA` usage"
 
 
 ********
@@ -635,9 +705,17 @@ Jupyter
 quickly :wiki-pg:`rendering <Rendering_(computer_graphics)>` equations in
 :wiki-pg:`LaTeX`
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`Developer enviroment <dev-env-intro>`, Setup
+   :ref:`Notebook structure <concepts-jupyter-nbs-tree>`, "
+   :wiki-pg:`File <Computer_file>` layout"
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
 
    :xref:`Corey Schafer tutorial <Schafer-Jupyter>`, "Recommended
    :xref:`YouTube` tutorial"
@@ -645,15 +723,13 @@ quickly :wiki-pg:`rendering <Rendering_(computer_graphics)>` equations in
    making :wiki-pg:`links <URL>`, :xref:`tables <tables-generator>`, etc."
    :xref:`tables-generator`, "
    :wiki-pg:`Syntax <Syntax_(programming_languages)>` generator"
-   :ref:`Notebook structure <concepts-jupyter-nbs-tree>`, "
-   :term:`AAAAAA` components"
 
 The interactive style of :xref:`Jupyter Notebooks <Jupyter>` make it easy to
 analyze data with numerical :ref:`conda packages <conda:concept-conda-package>`
 
 .. csv-table:: Numerical analysis :ref:`packages <conda:concept-conda-package>`
-   :header: Package, Official tutorial, YouTube tutorial
    :align: center
+   :header: Package, Official tutorial, YouTube tutorial
 
    :doc:`NumPy <numpy:about>`, "
    :doc:`Quickstart <numpy:user/quickstart>`", "
@@ -668,8 +744,8 @@ analyze data with numerical :ref:`conda packages <conda:concept-conda-package>`
 The :doc:`nb-extensions:index` provide additional functionality
 
 .. csv-table:: Select :doc:`extensions <nb-extensions:index>`
-   :header: Extension, Function
    :align: center
+   :header: Extension, Function
 
    :doc:`nb-extensions:nbextensions/collapsible_headings/readme`, "Section
    management"
@@ -707,18 +783,24 @@ pytest
 and additional functionality is provided by the
 :ref:`VS Code Python Test Explorer extension<tools-vs-code>`
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
+
+   :ref:`Developer environment <dev-env-intro>`, Setup
+   :ref:`Code structure <concepts-code-tree>`, Specific components
+   :ref:`Testing <testing-intro>`, Walkthrough
+   :ref:`tools-vs-code`, Integration
+   :ref:`pytest procedures <pytest-procedures>`, Usage
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
 
    :doc:`pytest <pytest:index>`, "Official
    :wiki-pg:`documentation <Software_documentation>`"
    :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
    :doc:`pytest tutorials <pytest:contents>`, Official tutorials
-   :ref:`Code structure <concepts-code-tree>`, :term:`AAAAAA` components
-   :ref:`testing <testing-intro>`, :term:`AAAAAA` walkthrough
-   :ref:`pytest procedures <pytest-procedures>`, :term:`AAAAAA` usage
-
 
 ************
 Distributing

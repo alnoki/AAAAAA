@@ -48,7 +48,7 @@ indeed have :wiki-pg:`hosted <Host_(network)>` for :wiki-pg:`free <Money>`,
 some select :wiki-pg:`links <URL>` are below
 
 .. csv-table:: Start your own :ref:`tools-sphinx`-style
-      :wiki-pg:`website <Website>`, for :wiki-pg:`free <Money>`
+   :wiki-pg:`website <Website>`, for :wiki-pg:`free <Money>`
    :align: center
    :header: Reference, Topic
 

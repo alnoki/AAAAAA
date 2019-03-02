@@ -21,11 +21,17 @@ presented in a logical sequence (as long as you keep
 :wiki-pg:`clicking <Point_and_click>` :guilabel:`Next`!) that is designed to
 be self-contained, but if you want more resources there a few select ones below
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`tools-python`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-python`, Conceptual explanation
+   :ref:`Examples`, Demonstrations
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :yt-pl:`Corey Schafer tutorials <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`, "Learn
    :xref:`Python` (recommended tutorial)"
    :doc:`python:tutorial/index`, Official tutorial

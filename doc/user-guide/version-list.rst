@@ -8,13 +8,12 @@ Version list
 ############
 
 .. csv-table:: Select references
-   :header: Reference, Topic
    :align: center
+   :header: Reference, Topic
 
    :xref:`semver`, Numbering standards
    :xref:`git-commit-guidelines`, Long version message guidelines
    :wiki-pg:`ISO 8601<ISO_8601>`, :wiki-pg:`Time standards <Time_standard>`
-   :ref:`versioning-procedures`, :term:`AAAAAA` usage
 
 Below is a list of versions of :term:`AAAAAA`, numbered in accordance with
 :xref:`semantic versioning standards <semver>`. :wiki-pg:`Times <Time>` are

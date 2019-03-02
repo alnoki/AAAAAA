@@ -6,15 +6,11 @@
 pytest
 ######
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`tools-pytest`, :term:`AAAAAA` conceptual explanation
-   :ref:`configs-pytest`, ":ref:`Configuration <concepts-configs>` for
-   :term:`AAAAAA`"
-   :doc:`pytest:index`, "Official
-   :wiki-pg:`documentation <Software_documentation>`"
+   :ref:`tools-pytest`, Conceptual explanation
 
 .. _pytest-discover-tests:
 

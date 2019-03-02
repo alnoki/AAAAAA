@@ -15,7 +15,7 @@ Access
 :xref:`source-code` and :wiki-pg:`documentation <Software_documentation>`
 for :term:`AAAAAA` are located at the
 :github:`AAAAAA repository <alnoki/AAAAAA>`, which is
-:wiki-pg:`hosted <Host_(network)>` by :xref:`GitHub`
+:wiki-pg:`hosted <Host_(network)>` by :github:`GitHub <>`
 
 .. _concepts-project-tree:
 
@@ -55,8 +55,8 @@ Some select demonstrative contents of the
        TODO.md
 
 .. csv-table:: Project contents
-   :header: Name, Function
    :align: center
+   :header: Name, Function
 
    ``AAAAAA/``, Project root :xref:`directory <directory>`
    ``src/`` , :xref:`Source code <source-code>` (in :ref:`tools-Python`)

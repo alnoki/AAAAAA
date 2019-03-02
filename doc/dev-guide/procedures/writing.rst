@@ -7,11 +7,11 @@
 Writing
 #######
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`tools-vs-code`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-vs-code`, Conceptual explanation
 
 .. contents:: Contents
    :local:
@@ -104,20 +104,33 @@ Documenting a new topic
 
    * These should be concentrated at a centralized :term:`AAAAAA` conceptual
      explanation, usually at :ref:`tools <concepts-tools>`
-   * Use a :ref:`csv-table <sphinx:table-directives>` of
-     :ref:`references <references>` at the central conceptual explanation:
+   * Use 2 :ref:`csv-tables <sphinx:table-directives>` of
+     :ref:`references <references>` at the central conceptual explanation
+
+     * The first containing :wiki-pg:`links <URL>` within :term:`AAAAAA`
+
+       * See :ref:`tools-sphinx` for sample priority and nomenclature
+
+     * The second containing other :ref:`references <references>`
 
      .. code-block:: rest
 
-        .. csv-table:: Select references
-           :header: Reference, Topic
+        .. csv-table:: Select references within :term:`AAAAAA`
            :align: center
+           :header: Reference, Topic
 
-           :ref:`tools-vs-code`, Task management environment
-           :ref:`concepts-project-tree`, :term:`AAAAAA` project structure
-           :xref:`Markdown`, "
-           :wiki-pg:`Syntax <Syntax_(programming_languages)>` specification"
-           :term:`OHIO`, Task management philosophy
+           :ref:`Developer environment <dev-env-intro>`, Setup
+           :ref:`Sphinx configuration <configs-sphinx>`, Options
+           :ref:`Sphinx procedures <sphinx-procedures>`, Usage
+           ...
+
+        .. csv-table:: Select references
+           :align: center
+           :header: Reference, Topic
+
+           :doc:`Sphinx <sphinx:intro>`, "Official
+           :wiki-pg:`documentation <Software_documentation>`"
+           ...
 
 #. Use a :ref:`reference label <concepts-doc-style>` in
    :ref:`.rst files <tools-restructured-text>` to refer to the core conceptual
@@ -130,42 +143,33 @@ Documenting a new topic
    Avoid creating identical :wiki-pg:`documentation <Software_documentation>`
    in several places that must be multiply maintained
 
-Procedures
-==========
+Tools satellite topics
+======================
 
-#. Any new :ref:`procedures <procedures>` should be reciprocally
-   cross-referenced with a conceptual explanation, using
+#. Any new :ref:`tools <concepts-tools>` satellite topics, like
+   :ref:`configurations <concepts-configs>` or :ref:`procedures <procedures>`,
+   should be reciprocally cross-referenced with a conceptual explanation, using
    :ref:`reference tables <writing-new-topic>`
+#. The new satellite topic should have at least a
+   :ref:`reference table <writing-new-topic>` with one :wiki-pg:`link <URL>`
+   to a conceptual description in :term:`AAAAAA`
 
-   #. The first row of the :ref:`reference table <writing-new-topic>` in the
-      :ref:`procedure <procedures>` should be a
-      :ref:`reference label <concepts-doc-style>` for the conceptual
-      explanation
+   .. code-block:: rest
 
-      * Because the conceptual explanation should be the primary source of
-        information when attempting the :ref:`procedure <procedures>`
-      * The :ref:`topic column <writing-new-topic>` should say say
-        ":term:`AAAAAA` conceptual explanation"
+      .. csv-table:: Select reference within :term:`AAAAAA`
+         :align: center
+         :header: Reference, Topic
 
-   #. The last row of the :ref:`reference table <writing-new-topic>` in the
-      conceptual explanation should be a
-      :ref:`reference label <concepts-doc-style>` for the
-      :ref:`procedure <procedures>`
+         :ref:`tools-vs-code`, Conceptual explanation
 
-      * Because :ref:`procedures <procedures>` should be attempted only after
-        grasping conceptual explanations
-      * The topic should say ":term:`AAAAAA` usage"
-
-   .. csv-table:: Cross-referencing examples
-      :header: :ref:`Procedure <procedures>`, Conceptual explanation
-      :align: center
-
-      :ref:`Git procedures <git-procedures>`, :ref:`Tools: Git <tools-git>`
-      :ref:`Versioning procedures <versioning-procedures>`, :ref:`version-list`
-
+#. If including other :ref:`references <references>` outside of :term:`AAAAAA`,
+   add a :ref:`second references table <writing-new-topic>` to the satellite
+   topic
+#. At the :ref:`tools section <concepts-tools>`, add a :wiki-pg:`link <URL>`
+   to the satellite topic
 #. :ref:`Add a new conda package <conda-use-new-package>` or update the
-   :ref:`Sphinx extension table <tools-sphinx>`, for example, if it makes sense
-   for your new :ref:`procedure <procedures>`
+   :ref:`Sphinx extension table <tools-sphinx-extensions>`, for example, if it
+   makes sense for your new topic
 
 .. _writing-proofread:
 
@@ -244,8 +248,8 @@ watch out for
       :ref:`out loud <zen-aipaip>` as *alnoki's apps*:
 
       .. csv-table:: Grammar
-         :header: Yes, NO!!!
          :align: center
+         :header: Yes, NO!!!
 
          :term:`AAAAAA` **are** splendid, :term:`AAAAAA` **is** doomed
 

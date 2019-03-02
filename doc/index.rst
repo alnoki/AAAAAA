@@ -39,8 +39,8 @@ minimal effort, using :py:func:`python:print`:
    :xref:`computer <computer>`:
 
 .. csv-table::
-   :header: :xref:`OS` , :wiki-pg:`Command line <Command_line>`
    :align: center
+   :header: :xref:`OS` , :wiki-pg:`Command line <Command_line>`
 
    :wiki-pg:`Linux`, :program:`Terminal`
    :wiki-pg:`Mac <Macintosh_operating_systems>`, :program:`Terminal`

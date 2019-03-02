@@ -1,20 +1,9 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Configurations page
-1. Reciprical cross links
-      1. Then can reference quickstart from rtd setup
-      1. Even need to do on the trees
-      1. Go through each table and make sure traces back
-      1. Start on Sphinx for the configs page
-      1. Labels should be procedures-sphinx, not sphinx-procedures?
-1. csv tables for all tools on the configs page
-   1. Then click through them to the other places and make sure they come back
-1. Use :annotation: ~blank~ will take out the entire data field showing up
-   1. Then can use docstring from .py file
-   1. Use to update all autodata, especiallyin conf.py
-.. autodata:: ACQdoctor.crc.crc_tbl_8408
-   :annotation:
+## Git add
+1. Talk about staging vs Git add -A
+   1. Use for committing
 
 ## Extensions and rtd
 1. :term:`AAAAAA` was started with the sphinx-quickstart
@@ -28,6 +17,7 @@
 1. Will need to uncomment in conf.py to load using conda
 1. Configs page should be a one-time thing
 1. Talk about the process of monitoring builds, etc.
+1. Tip on BibTeX pg says unless viewing the PDF version
 
 ## Dev env setup
 1. Show how to install a vs code extension
@@ -42,11 +32,7 @@
 1. :guilabel:`Preferences: Open Raw Default Settings`
 1. VS Code its own page
    1. Show how to view the raw settings file
-1. Reference tables should have AAAAAA stuff at the top
-   1. Should click through the whole pattern to see if they are all there
-
-## Versioning
-1. Update configurations if any have changed
+1. Update VS code configurations page when all done
 
 ## toctree restructuring
 1. Talk about on documenting page
@@ -54,6 +40,11 @@
 1. Talk about toctree structuring on index page for this
    1. Distribution - documenting section?
 1. BibTeX okay?
+
+## Tools
+1. Vim section, find all for vim links to it
+   1. Add to Git and VS code aaaaaa references tables
+1. Dev env setup should link to tools section with references used to learn
 
 ## quicklinks
 1. :wiki-pg:`run <Execution_(computing)>`
@@ -419,8 +410,9 @@
 
 
 
-## Zen page updates
+## page updates
 1. Go through and re-write/re-link once there are more places to link to
+1. https://blog.codinghorror.com/quantity-always-trumps-quality
 
 ## Pandas ledger class
 1. Make a ledger a sub class of a dataframe

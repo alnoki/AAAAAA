@@ -387,14 +387,14 @@ AAAAAA codebase
 
 #. ::github:`AAAAAA repository <alnoki/AAAAAA>`
 
-   * :xref:`GitHub` repository for :term:`AAAAAA` project
+   * :github:`GitHub <>` repository for :term:`AAAAAA` project
 
 #. :github:`alnoki's GitHub repositories <alnoki>`
 
    * Assorted :xref:`Jupyter Notebooks <Jupyter>` and
      :xref:`code <source-code>` from other tutorials
 
-#. :xref:`GitHub`
+#. :github:`GitHub <>`
 
    * :xref:`Online <internet>` repository for
      :xref:`software <software>` projects
@@ -531,7 +531,7 @@ Special features
 
 #. :xref:`github-change-authors`
 
-   * :xref:`GitHub` instructions to re-write :xref:`git-commit` history
+   * :github:`GitHub <>` instructions to re-write :xref:`git-commit` history
 
 #. :xref:`git-branch-filtering`
 
@@ -608,8 +608,8 @@ Practical use
 
 .. [#]
    .. csv-table::
-      :header: Time in video, Topic
       :align: center
+      :header: Time in video, Topic
 
       10:15, Incorporating :ref:`Jupyter Notebooks <tools-jupyter>`
       13:00, Checking spelling
@@ -878,7 +878,8 @@ General
 Syntax
 ------
 
-#. :xref:`reST-cheatsheet`
+#. :github:`reST cheatsheet
+   <ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst>`
 
    * Quick reference for :doc:`reST <sphinx:usage/restructuredtext/basics>`
      usage
@@ -944,7 +945,7 @@ Engine-agnostic tools
 
    * :wiki-pg:`Markup language <Markup_language>` used to generate
      tables, lists, and other components
-   * Used for :xref:`GitHub`, :xref:`Jupyter Notebooks <Jupyter>`, and
+   * Used for :github:`GitHub <>`, :xref:`Jupyter Notebooks <Jupyter>`, and
      :ref:`AAAAAA task management <versioning-td3>`
 
 #. :wiki-pg:`NATO phonetic alphabet <NATO_phonetic_alphabet>`

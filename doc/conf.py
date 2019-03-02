@@ -96,6 +96,7 @@ These :wiki-pg:`URLs <URL>` only exist when
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'AAAAAAdoc'
+""""""
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -117,6 +118,7 @@ latex_elements = {
     #
     # 'figure_align': 'htbp',
 }
+""""""
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
@@ -125,6 +127,7 @@ latex_documents = [
     (master_doc, 'AAAAAA.tex', 'AAAAAA Documentation',
      'alnoki', 'manual'),
 ]
+""""""
 
 
 # -- Options for manual page output ------------------------------------------
@@ -135,6 +138,7 @@ man_pages = [
     (master_doc, 'aaaaaa', 'AAAAAA Documentation',
      [author], 1)
 ]
+""""""
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -147,12 +151,14 @@ texinfo_documents = [
      author, 'AAAAAA', 'One line description of project.',
      'Miscellaneous'),
 ]
+""""""
 
 
 # -- Options for Epub output -------------------------------------------------
 
 # Bibliographic Dublin Core info.
 epub_title = project
+""""""
 
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
@@ -165,6 +171,7 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+""""""
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
@@ -199,8 +206,8 @@ extlinks = {
     'git-doc': ('https://git-scm.com/docs/%s', ''),
     'github': ('https://github.com/%s', ''),
     'yt-vid': ('https://www.youtube.com/watch?v=%s', ''),
-    'stack-q': ('https://stackoverflow.com/questions/%s', ''),
     'yt-pl': ('https://www.youtube.com/playlist?list=PL%s', ''),
+    'stack-q': ('https://stackoverflow.com/questions/%s', ''),
     'vs-code-ext':
         ('https://marketplace.visualstudio.com/items?itemName=%s', ''),
     'vs-code-doc':
@@ -252,9 +259,6 @@ xref_links = {
     'YouTube': ('YouTube', 'https://www.youtube.com/'),
 
     # To sort
-    'reST-cheatsheet': ("reST cheatsheet", url['GitHub'] + 'ralsina/rst-'
-                        'cheatsheet/blob/master/rst-cheatsheet.rst'),
-    'GitHub': ('GitHub', url['GitHub']),
     'Markdown': ('Markdown', url['GitHub help'] + 'basic-writing-and'
                  '-formatting-syntax/'),
     'Schafer-Jupyter': ("Jupyter Notebook Tutorial: Introduction, Setup, and "

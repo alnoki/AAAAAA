@@ -7,11 +7,16 @@
 Sphinx
 ######
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`tools-sphinx`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-sphinx`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :yt-vid:`Practical Sphinx presentation <0ROZRNZkPS8>`, Common usage
    :yt-vid:`Project setup screencast <oJsUvBQyHBs>`, Start a project
    :doc:`Sphinx quickstart tutorial <sphinx:usage/quickstart>`, "Official
@@ -77,11 +82,16 @@ Per
 Automatically
 =============
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`tools-sphinx-autobuild`, :term:`AAAAAA` conceptual description
+   :ref:`tools-sphinx-autobuild`, Conceptual explanation
+
+.. csv-table:: Select reference
+   :align: center
+   :header: Reference, Topic
+
    :xref:`sphinx-autobuild`, Official :wiki-pg:`user <User_(computing)>` manual
 
 #. Like in the :ref:`manual build procedure <sphinx-building-manually>`,
@@ -146,11 +156,16 @@ Managing references
 Using Intersphinx
 =================
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
-   :ref:`tools-intersphinx`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-intersphinx`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :doc:`sphinx.ext.intersphinx <sphinx:usage/extensions/intersphinx>`, "
    Official :wiki-pg:`documentation <Software_documentation>`"
    ":stack-q:`Intersphinx reference syntax
@@ -204,8 +219,8 @@ Using Intersphinx
    :doc:`role <sphinx:usage/restructuredtext/roles>`:
 
    .. csv-table:: Referencing select outputs
-      :header: Category in objects.inv, Role to use
       :align: center
+      :header: Category in objects.inv, Role to use
 
       ``std:doc``, ``:doc:``
       ``rst:directive``, ``:rst:dir:``
@@ -221,8 +236,8 @@ Using Intersphinx
    https://docs.python.org/3/tutorial/introduction.html:
 
    .. csv-table:: :xref:`URL <URL>` decomposition
-      :header: Portion, Interpretation, In role target
       :align: center
+      :header: Portion, Interpretation, In role target
 
       ``https://docs.python.org/3/``, Base :wiki-pg:`URL`, ``python:``
       ``tutorial/introduction.html``, Desired :xref:`webpage <webpage>`, "
@@ -318,11 +333,16 @@ from a :wiki-pg:`website <Website>` that you often use, it makes sense to use
 xref
 ----
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
-   :ref:`tools-xref`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-xref`, Conceptual explanation
+
+.. csv-table:: Select reference
+   :align: center
+   :header: Reference, Topic
+
    :github:`Sphinx xref extension <michaeljones/sphinx-xref>`, "
    :wiki-pg:`User <User_(computing)>` manual"
 
@@ -380,11 +400,16 @@ xref
 extlinks
 --------
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select reference within :term:`AAAAAA`
    :align: center
+   :header: Reference, topic
 
-   :ref:`tools-extlinks`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-extlinks`, Conceptual explanation
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :doc:`extlinks <sphinx:usage/extensions/extlinks>`, "Official
    :wiki-pg:`documentation <Software_documentation>`"
    ":ref:`Using a references extension
@@ -485,19 +510,24 @@ Updating labels
 Referencing books
 =================
 
-.. csv-table:: Select references
-   :header: Reference, Topic
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
+   :header: Reference, Topic
 
-   :ref:`tools-bibtex`, :term:`AAAAAA` conceptual explanation
+   :ref:`tools-bibtex`, Conceptual explanation
+   :ref:`refs.bib <concepts-doc>`, "Collection of :xref:`bibtex`-style
+   :xref:`citations <citation>`"
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
    :xref:`book`, Information source
    :xref:`bibtex`, :xref:`citation` format
    :doc:`BibTeX extension <bibtex:index>`, Converts :xref:`bibtex`
    :xref:`ottobib`, "Get :xref:`bibtex` for your
    :ref:`book <references-books>`"
    :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
-   :ref:`refs.bib <concepts-doc>`, "Collection of :xref:`bibtex`-style
-   :xref:`citations <citation>`"
    :xref:`bibtex-syntax`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
    specifications"
    :xref:`cite-multiple-authors`, Use of ``et. al``
@@ -535,8 +565,8 @@ Referencing books
       ********************
 
       .. csv-table:: :cite:`bib-on-managing-yourself`
-         :header: Page(s), Topic
          :align: center
+         :header: Page(s), Topic
 
    .. code-block:: none
       :emphasize-lines: 1
