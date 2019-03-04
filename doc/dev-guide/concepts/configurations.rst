@@ -147,13 +147,19 @@ Starting from the beginning of the :wiki-pg:`file <Computer_file>`:
 .. contents:: Contents
    :local:
 
+Module docstring
+----------------
+
+.. automodule:: conf
+   :no-members:
+
 Extensions
 ----------
 
 .. literalinclude:: ../../conf.py
    :caption: :wiki-pg:`Path <Path_(computing)>` setup
    :language: python
-   :lines: 1-5
+   :lines: 3-7
 
 Relative to the :ref:`documentation root directory <concepts-doc-tree>`, this
 gives :ref:`tools-sphinx` access to the following

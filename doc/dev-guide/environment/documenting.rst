@@ -7,7 +7,9 @@
 Documenting
 ###########
 
-#. :xref:`Download VS code <VS-Code>` then the :xref:`VS-Code-bookmarks-ext`
+#. :xref:`Download VS code <VS-Code>` and get ready for some
+   :vs-code-doc:`extensions <editor/extension-gallery>`
+#. :wiki-pg:`Install` the :xref:`VS-Code-bookmarks-ext`
 #. Update the :xref:`VS-Code-terminal` ``USER SETTINGS`` in
    :xref:`settings.json <VS-Code-settings>` so that you can use
    :ref:`Conda <conda:starting-conda>`:
@@ -42,7 +44,8 @@ Documenting
         :wiki-pg:`scroll <Scrolling>` to the right
 
 #. Use the :xref:`command-palette` to open a new :xref:`VS-Code-terminal` and
-   enter the following :wiki-pg:`command <Command_line>` to
+   :xref:`copy and paste <copy-paste>` the following
+   :wiki-pg:`command <Command_line>` to
    :doc:`create <conda:commands/create>` a new
    :ref:`conda environment <conda:concept-conda-env>`, called
    :term:`a6`, that has the necessary

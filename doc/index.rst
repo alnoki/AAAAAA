@@ -136,7 +136,6 @@ Getting started
    getting-started/quickstart
    getting-started/examples
    getting-started/what-next
-   getting-started/references/index
 
 
 **********
@@ -152,7 +151,6 @@ User guide
 
    user-guide/index
    user-guide/transactions
-   user-guide/version-list
 
 
 ***************
@@ -180,11 +178,14 @@ Developer guide
 Indices and tables
 ******************
 
-This section is more useful when viewing
-:wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` as
-:wiki-pg:`website <Website>`, although most of what you see here is also
-:ref:`automatically converted to PDF format <dist-doc-pdf>`
+:ref:`Here <indices-intro>` you can review contents of :term:`AAAAAA`!
 
-* :ref:`genindex`
-* :ref:`search`
-* :ref:`modindex`
+.. toctree::
+   :caption: Indices
+   :hidden:
+   :numbered:
+
+   indices/index
+   indices/acronyms
+   indices/versions
+   indices/references/index

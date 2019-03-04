@@ -1,3 +1,11 @@
+""":ref:`concepts-configs` for :ref:`tools-sphinx`
+
+This is included so that the :ref:`automatic indices <indices-auto>`
+can add :ref:`configs-conf-py` to the
+:ref:`module index <modindex>` via :ref:`napoleon <tools-napoleon>`
+
+"""
+
 import os
 import sys
 sys.path.insert(0, os.path.abspath('exts'))  # For xref
@@ -29,6 +37,7 @@ Includes :ref:`extensions <tools-sphinx-extensions>` that are:
      for usage in :term:`AAAAAA`
    * Used for :term:`AAAAAA`, but not included in the
      :doc:`built-in Sphinx extensions <sphinx:usage/extensions/index>`
+
 """
 
 project = 'AAAAAA'
@@ -41,10 +50,10 @@ author = 'alnoki'
 """:github:`Who <alnoki>` even made this anyways?"""
 
 version = '0.4'
-"""Just ``MAJOR.MINOR`` for the :ref:`version <version-list>`"""
+"""Just ``MAJOR.MINOR`` for the :ref:`version <indices-versions>`"""
 
 release = '0.4.0'
-"""``MAJOR.MINOR.PATCH`` for the :ref:`version <version-list>`"""
+"""``MAJOR.MINOR.PATCH`` for the :ref:`version <indices-versions>`"""
 
 master_doc = 'index'
 """The top-level :ref:`.rst file <tools-restructured-text>`
@@ -59,6 +68,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 When :ref:`building documentation <sphinx-building-doc>`, don't use
 :wiki-pg:`files <Computer_file>` or :wiki-pg:`paths <Path_(computing)>`
 with these patterns
+
 """
 
 html_static_path = []
@@ -69,6 +79,7 @@ html_theme = 'sphinx_rtd_theme'
 
 For :term:`AAAAAA`, use the
 :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`
+
 """
 
 html_theme_options = {
@@ -80,6 +91,7 @@ html_theme_options = {
 
 These are only :ref:`configured <concepts-configs>` if they differ from
 the :doc:`default options <rtd-sphinx-theme:configuring>`
+
 """
 
 linkcheck_ignore = [
@@ -90,6 +102,7 @@ linkcheck_ignore = [
 
 These :wiki-pg:`URLs <URL>` only exist when
 :ref:`building documentation <sphinx-building-doc>`, so ignore them
+
 """
 
 # -- Options for HTMLHelp output ---------------------------------------------
@@ -263,12 +276,6 @@ xref_links = {
                          'http://tablesgenerator.com'),
 
     # To sort
-    'http-socket-error':
-        ("http socket error", url['Stack OF'] + '19071512/socket-error-errno'
-         '-48-address-already-in-use'),
-    'reST-list-indentation':
-        ("reST list indentation", url['Stack OF'] +
-         '5550089/how-to-create-a-nested-list-in-restructuredtext'),
     'documenting-python': ("Guide to Documenting Python",
                            url['RealPython'] + 'documenting-python-code/'),
     'open-source': ('open-source', url['Wiki pg'] + 'Open-source_software'),

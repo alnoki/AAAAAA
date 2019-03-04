@@ -124,20 +124,21 @@ If you don't already know how
 :doc:`invoke the Python interpreter <tutorial/interpreter>`, please feel free
 to to grab yourself a slippery new copy of
 :doc:`Miniconda <conda:user-guide/install/download>` and
-:ref:`fire up conda <conda:starting-conda>` then type
+:ref:`fire up conda <conda:starting-conda>` then :wiki-pg:`type <Typing>`
 
 .. code-block:: bash
 
    python
 
-Hit :kbd:`return` and take several deep breaths to calm your nerves, but don't
-take too many stabilitory inhalations or you may deviate from the pressing
-inquisition on hand, which continues below
+:wiki-pg:`Type <Typing>` :kbd:`return` and take several deep breaths to calm
+your nerves, but don't take too many stabilitory inhalations or you may deviate
+from the pressing inquisition on hand, which continues below
 
 .. tip::
 
    :xref:`Copy-paste <copy-paste>` each line individually (except for the
-   ``>>>``) then hit :kbd:`return`
+   ``>>>``) then :wiki-pg:`type <Typing>` :kbd:`return` if you want to play
+   with the :doc:`the Python interpreter <tutorial/interpreter>`
 
 >>> from decimal import Decimal
 >>> Decimal.from_float(110.12)

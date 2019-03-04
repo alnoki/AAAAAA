@@ -409,7 +409,7 @@ Versioning
 
 #. :xref:`semver`
 
-   * :ref:`Version number <version-list>` guidelines: ``MAJOR.MINOR.PATCH``
+   * :ref:`Version number <indices-versions>` guidelines: ``MAJOR.MINOR.PATCH``
 
 #. :xref:`git-commit-guidelines`
 
@@ -561,6 +561,10 @@ General
    * Recommended :wiki-pg:`documentation <Software_documentation>` practices
      :xref:`Python`
 
+#. :wiki-pg:`Acronym`
+
+   * A short way to say something, like :term:`AAAAAA`
+
 Sphinx
 ======
 
@@ -664,7 +668,8 @@ Usage specifics
    * :doc:`Directive <sphinx:usage/restructuredtext/directives>` for using
      :wiki-pg:`LaTeX` on its own :wiki-pg:`line <Source_lines_of_code>`
 
-#. :xref:`http socket error fix <http-socket-error>`
+#. :stack-q:`HTTP socket error fix
+   <19071512/socket-error-errno-48-address-already-in-use>`
 
    * Potential problem (and solution) when
      :ref:`building documentation <sphinx-building-doc>`
@@ -711,7 +716,7 @@ With Read the Docs
 
 #. :doc:`rtfd:versions`
 
-   * Automatic support for :ref:`versions <version-list>`
+   * Automatic support for :ref:`versions <indices-versions>`
 
 #. :doc:`rtfd:builds`
 
@@ -892,7 +897,8 @@ Syntax
    * Quick reference for :doc:`reST <sphinx:usage/restructuredtext/basics>`
      usage
 
-#. :xref:`reST-list-indentation`
+#. :stack-q:`reST list indentation
+   <5550089/how-to-create-a-nested-list-in-restructuredtext>`
 
    * :wiki-pg:`Syntax <Syntax_(programming_languages)>` tip
 
@@ -1061,6 +1067,10 @@ General
 Extensions
 ----------
 
+#. :vs-code-doc:`Managing extensions <editor/extension-gallery>`
+
+   * Official :wiki-pg:`documentation <Software_documentation>`
+
 #. :vs-code-ext:`GitLens <eamodio.gitlens>`
 
    * Enhanced :ref:`tools-git` functionality
@@ -1086,7 +1096,8 @@ Extensions
 
    * :wiki-pg:`Syntax highlighting <Syntax_highlighting>` for
      :ref:`tools-restructured-text`
-   * Limited preview functionality
+   * Limited :wiki-pg:`live rendering <Rendering_(computer_graphics)>`
+     functionality
 
 #. :github:`Doc8 newline issue fix
    <vscode-restructuredtext/vscode-restructuredtext/issues/84>`
@@ -1180,6 +1191,10 @@ Interfaces
 #. :wiki-pg:`Scrolling`
 
    * Moving visualizations around
+
+#. :wiki-pg:`Sidebar_(computing)`
+
+   * Keeps information on the side of a :wiki-pg:`program <Software>`
 
 Software
 ========

@@ -1,6 +1,6 @@
 .. 0.3.0
 
-.. _sphinx-procedures:
+.. _procedures-sphinx:
 
 
 ######
@@ -58,7 +58,8 @@ Per
 #. You can update the :ref:`.rst files <tools-restructured-text>` and repeat
    the process, but don't start another
    :doc:`server <python:library/http.server>` (unless you want an
-   :xref:`http-socket-error`):
+   :stack-q:`HTTP socket error
+   <19071512/socket-error-errno-48-address-already-in-use>`):
 
    .. code-block:: bash
 

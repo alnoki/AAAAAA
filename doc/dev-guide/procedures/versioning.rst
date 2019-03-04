@@ -1,6 +1,6 @@
 .. 0.3.0
 
-.. _versioning-procedures:
+.. _procedures-versioning:
 
 
 ##########
@@ -11,9 +11,10 @@ Versioning
    :align: center
    :header: Reference, Topic
 
-   :ref:`version-list`, Conceptual explanation
-   :ref:`tools-git`, :ref:`Version <version-list>` identification
-   :ref:`tools-read-the-docs`, Automated :ref:`version <version-list>` support
+   :ref:`indices-versions`, Conceptual explanation
+   :ref:`tools-git`, :ref:`Version <indices-versions>` identification
+   :ref:`tools-read-the-docs`, "Automated
+   :ref:`version <indices-versions>` support"
 
 
 .. csv-table:: Select references
@@ -62,20 +63,20 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
       :align: center
       :header: Level, Meaning
 
-      ``#``, :ref:`Versions <version-list>`
+      ``#``, :ref:`Versions <indices-versions>`
       ``##``, Topic
       ``1.``, Item
 
 #. Identify if the planned topic set is too much for one
-   :ref:`version <version-list>`
+   :ref:`version <indices-versions>`
 #. Starting with the topmost topic for the current
-   :ref:`version <version-list>`:
+   :ref:`version <indices-versions>`:
 
-   * Either defer the topic to the next :ref:`version <version-list>` or
+   * Either defer the topic to the next :ref:`version <indices-versions>` or
      move it to the bottom of the set for the current
-     :ref:`version <version-list>`
+     :ref:`version <indices-versions>`
    * Repeat until the topic that you started with is back at the top of the set
-     for the current :ref:`version <version-list>`
+     for the current :ref:`version <indices-versions>`
 
 #. Re-order the topics in a logically progressive
    :wiki-pg:`development <Software_development>` sequence
@@ -84,7 +85,7 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
 
    * Start at the top and work your way down
    * Re-ordering shouldn't be necessary
-   * Either defer the item to a future :ref:`version <version-list>` or
+   * Either defer the item to a future :ref:`version <indices-versions>` or
      complete it before moving on
 
 .. _versioning-start-new:
@@ -98,9 +99,9 @@ Starting a new version
    with :xref:`semantic versioning standards <semver>`:
    ``dev/MAJOR.MINOR.PATCH``
 #. In :ref:`conf.py <configs-conf-py>`, update
-   :ref:`version numbers <version-list>` (and potentially
+   :ref:`version numbers <indices-versions>` (and potentially
    :wiki-pg:`copyright <Copyright>`)
-#. Add an entry to the :ref:`version list <version-list>`
+#. Add an entry to the :ref:`version list <indices-versions>`
 
    * :wiki-pg:`Document <Software_documentation>` changes as you go, in a way
      that :xref:`tells the codebase what to do <commit-conventions>`
@@ -132,16 +133,17 @@ At this point you should be working on a
    * :ref:`Code <concepts-code-tree>`
    * :ref:`Configurations <concepts-configs-tree>`
 
-#. Finalize feature additions in the :ref:`version list <version-list>`
+#. Finalize feature additions in the :ref:`version list <indices-versions>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
-   most recent :ref:`release <version-list>`
+   most recent :ref:`release <indices-versions>`
 
    * :term:`OHIO` from the first :ref:`.rst file <tools-restructured-text>` to
      the last, editing only the
      :ref:`.rst file <tools-restructured-text>` you are on
    * Feel free to add some :ref:`to-dos <versioning-td3>` for later, though
 
-#. Update the :wiki-pg:`time <Time>` on the :ref:`version list <version-list>`
+#. Update the :wiki-pg:`time <Time>` on the
+   :ref:`version list <indices-versions>`
 #. :ref:`Commit and push <git-committing>`, making sure to verify
    :ref:`version tag comments <writing-proofread-new>` when
    :ref:`staging changes <git-committing>`
@@ -152,7 +154,7 @@ At this point you should be working on a
    :xref:`master branch <git-manual>`
 #. :ref:`Tag and push <git-tagging>` with a
    :xref:`long message <git-commit-guidelines>` that describes the
-   :ref:`version list additions <version-list>`
+   :ref:`version list additions <indices-versions>`
 #. Use your :xref:`rtfd-account` to :ref:`disable <dist-doc-versions>` the
    :ref:`development branch <git-branching>` and
    :ref:`enable <dist-doc-versions>` the new :ref:`tag <git-tagging>`

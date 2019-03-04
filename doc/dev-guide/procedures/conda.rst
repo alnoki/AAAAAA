@@ -1,6 +1,6 @@
 .. 0.3.0
 
-.. _conda-procedures:
+.. _procedures-conda:
 
 
 #####

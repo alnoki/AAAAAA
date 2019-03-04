@@ -54,8 +54,8 @@ The spirit of alnoki's apps
 #. :pep:`8` provides a repeatable and official means for formatting. Use it!!!
 #. Write :doc:`functional programs <python:howto/functional>`, which should be
    easy to understand and test
-#. Add content to :ref:`versions <version-list>` incrementally, like you are
-   making a :xref:`mvp-development`
+#. Add content to :ref:`versions <indices-versions>` incrementally, like you
+   are making a :xref:`mvp-development`
 #. Add an ``index.rst`` in
    :ref:`documentation directories <concepts-doc-tree>` so you can find what
    you are looking for

@@ -9,6 +9,7 @@ Tools
 
 .. contents::
    :local:
+   :depth: 2
 
 
 **************
@@ -110,7 +111,7 @@ different :ref:`conda channels <conda:channels-glossary>`, like the
    :header: Reference, Topic
 
    :ref:`Developer environment <dev-env-intro>`, Setup
-   :ref:`Conda procedures <conda-procedures>`, Usage
+   :ref:`Conda procedures <procedures-conda>`, Usage
 
 
 .. csv-table:: :doc:`conda:index` references
@@ -187,7 +188,7 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
          :ref:`Configuring test code <conda-pip-AAAAAA>`", "
          :ref:`dev-env-testing`", :ref:`conda <conda:channels-glossary>`
          :ref:`pytest <tools-pytest>`, "
-         :ref:`Code testing <pytest-procedures>`", ":ref:`dev-env-testing`", "
+         :ref:`Code testing <procedures-pytest>`", ":ref:`dev-env-testing`", "
          :ref:`conda <conda:channels-glossary>`"
 
 .. _tools-git:
@@ -208,7 +209,7 @@ identifier that can be accessed by
 :xref:`Tags <git-tag>`, which provide a unique identifier for
 :xref:`commits <git-commit>`, and :xref:`branches <git-branch>`, which enable
 independent sequences of :xref:`commits <git-commit>`, are used to manage
-:ref:`project versions <version-list>` on :github:`GitHub <>`, a
+:ref:`project versions <indices-versions>` on :github:`GitHub <>`, a
 :xref:`free <money>` service that :wiki-pg:`hosts <Host_(network)>` the
 :github:`AAAAAA repository <alnoki/AAAAAA>` for :wiki-pg:`free <Money>`
 
@@ -230,7 +231,7 @@ along with :xref:`Git <git-manual>`
 
    :ref:`Developer environment <dev-env-intro>`, Setup
    :ref:`Git configuration <configs-Git>`, Options
-   :ref:`Git procedures <git-procedures>`, Usage
+   :ref:`Git procedures <procedures-git>`, Usage
 
 .. csv-table:: Select references
    :align: center
@@ -240,7 +241,7 @@ along with :xref:`Git <git-manual>`
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`git-commit-guidelines`, Contribution guidelines
    :doc:`Documentation webhooks <rtfd:webhooks>`, "Automatic
-   :ref:`version <version-list>` support"
+   :ref:`version <indices-versions>` support"
    :xref:`Vim`, Official information
 
 .. _tools-vs-code:
@@ -251,7 +252,8 @@ VS Code
 :xref:`VS-Code` is an
 :wiki-pg:`integrated development environment (IDE)
 <Integrated_development_environment>`
-that is used to create :term:`AAAAAA`
+that is used to create :term:`AAAAAA`, with additional functionality provided
+by :vs-code-doc:`extensions <editor/extension-gallery>`
 
 The :github:`AAAAAA repository <alnoki/AAAAAA>` comes with a collection of
 :xref:`VS-Code-settings` that will automatically
@@ -301,8 +303,10 @@ which has all the latest features but may not be completely stable
    for :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
    :xref:`Command palette <command-palette>`, "Quickly input
    :wiki-pg:`commands <Command_line>`"
-   :xref:`Settings <VS-Code-settings>`, "Official
+   :vs-code-doc:`Settings <getstarted/settings>`, "Official
    :ref:`configuration options <configs-settings-json>`"
+   :vs-code-doc:`Extensions <editor/extension-gallery>`, "Additional
+   functionality"
    :xref:`Integrated terminal <VS-Code-terminal>`, "Run a
    :xref:`command line <command-line>` inside :xref:`VS Code <VS-Code>`"
    :vs-code-doc:`VS Code unit testing <python/unit-testing>`,"
@@ -360,7 +364,7 @@ functionality and :ref:`several are used <tools-sphinx-extensions>` in
    :ref:`Sphinx configuration <configs-sphinx>`, Options
    :ref:`tools-restructured-text`, :wiki-pg:`Markup language <Markup_language>`
    :ref:`Documentation structure <concepts-doc-tree>`, Specific components
-   :ref:`Sphinx procedures <sphinx-procedures>`, Usage
+   :ref:`Sphinx procedures <procedures-sphinx>`, Usage
    :ref:`Sphinx extensions <tools-sphinx-extensions>`, Extended functionality
    :ref:`tools-sphinx-autobuild`, Automation
    :ref:`Distributing documentation <dist-doc>`, Walkthrough
@@ -376,7 +380,7 @@ functionality and :ref:`several are used <tools-sphinx-extensions>` in
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "
    :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
    :yt-vid:`Practical use seminar <0ROZRNZkPS8>`, "Practical
-   :ref:`use examples <sphinx-procedures>`"
+   :ref:`use examples <procedures-sphinx>`"
    ":ref:`References extension configuration example
    <sublime-with-sphinx:use the external links extension>`", "Similar usage and
    :ref:`configuration <configs-conf-py>`"
@@ -493,7 +497,7 @@ even :wiki-pg:`renders <Rendering_(computer_graphics)>` on the
    :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
    :ref:`tools-restructured-text` elements"
    :doc:`rtfd:webhooks`, Automatic project modification detection
-   :doc:`rtfd:versions`, Automatic :ref:`version <version-list>` support
+   :doc:`rtfd:versions`, Automatic :ref:`version <indices-versions>` support
    :xref:`Writer-intro-to-Sphinx`, Introductory article for technical writers
 
 .. _tools-sphinx-extensions:
@@ -793,7 +797,7 @@ and additional functionality is provided by the
    :ref:`Code structure <concepts-code-tree>`, Specific components
    :ref:`Testing <testing-intro>`, Walkthrough
    :ref:`tools-vs-code`, Integration
-   :ref:`pytest procedures <pytest-procedures>`, Usage
+   :ref:`pytest procedures <procedures-pytest>`, Usage
 
 .. csv-table:: Select references
    :align: center

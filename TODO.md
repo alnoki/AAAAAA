@@ -1,28 +1,45 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Dev env setup
-1. Show how to install a vs code extension
-1. Zen should be the last env setup page
-   1. Make sure no references elsewhere
+## Version list
+1. Added acronyms pages, indices section, version statistics, restructured
+   1. Also VS Code procedures
 
 ## Writing section
-1. Has VS Code section
-   1. Link to VS code in the tools page, and recipricollay
    1. Show how to get tokens, language rulers, select colors, show web colors
+   1. Developer inspect TM scopes
       1. Already have links
-1. :guilabel:`Preferences: Open Raw Default Settings`
-1. VS Code its own page
-   1. Show how to view the raw settings file
 1. Update VS code configurations page when all done
+1. New module needs to have automodule to be in module index
+   1. Even if just show one member
 
-## toctree restructuring
-1. Verify PDF levels are correct
+## Configurations page
+1. Settings.json for user and workspace
+   1. See developer environment setup
+   1. dev env setup then go through and link back to configurations page
+
+## PDF viewing
+1. Quantity/quality goes into personal motivation
+   1. Update Zen later
 
 ## Tools
 1. Vim section, find all for vim links to it
    1. Add to Git and VS code aaaaaa references tables
 1. Dev env setup should link to tools section with references used to learn
+
+## Versioning
+1. Update acronyms, and versioning statistics table
+
+## Update version list
+1. Add sections instead of toctrees
+1. PDF page proliferation
+   1. Page count upon release
+   1. Colloquially referred to triple papa
+   1. Need a link to each acronym
+1. Mention distributing documentation guide
+1. Say all the configurations that were documented
+1. Vim support?
+1. Statistics table for PPP and acronym count
 
 ## quicklinks
 1. :wiki-pg:`run <Execution_(computing)>`

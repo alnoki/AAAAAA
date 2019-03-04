@@ -164,6 +164,11 @@ Specific syntax
       :doc:`Sphinx <sphinx:intro>`", ":doc:`Sphinx <sphinx:intro>`
       :doc:`extensions <sphinx:usage/extensions/index>`"
 
+.. _concepts-doc-ccc:
+
+Common Conceptual Capitalizations (C\ :superscript:`3`)
+-------------------------------------------------------
+
 #. :ref:`Link <references-links>` capitalization should be natural with regard
    to the rest of the sentence, unless the thing you are describing has special
    capitalization
@@ -177,20 +182,22 @@ Specific syntax
         :align: center
         :header: Beginning of sentence, Elsewhere
 
-        :doc:`NumPy <numpy:about>`, :doc:`NumPy <numpy:about>`
-        :doc:`pytest <pytest:index>`, :doc:`pytest <pytest:index>`
-        :ref:`Python <tools-python>`, :ref:`Python <tools-python>`
         :ref:`Anaconda <tools-anaconda>`, :ref:`Anaconda <tools-anaconda>`
         :ref:`Conda <tools-anaconda>`, :ref:`conda <tools-anaconda>`
-        :ref:`tools-napoleon`, :ref:`napoleon <tools-napoleon>`
+        :ref:`Docstrings <python:tut-docstrings>`, "
+        :ref:`docstrings <python:tut-docstrings>`"
+        :xref:`Git <git-manual>`, :xref:`Git <git-manual>`
         :wiki-pg:`Internet`, :wiki-pg:`Internet`
-        :xref:`Open-source <open-source>`, :xref:`open-source <open-source>`
         :ref:`Intersphinx <tools-intersphinx>`, "
         :ref:`Intersphinx <tools-intersphinx>`"
-        :xref:`Git <git-manual>`, :xref:`Git <git-manual>`
-        :ref:`Miniconda <tools-anaconda>`, :ref:`Miniconda <tools-anaconda>`
         :github-help:`Markdown <basic-writing-and-formatting-syntax>`, "
         :github-help:`Markdown <basic-writing-and-formatting-syntax>`"
+        :ref:`Miniconda <tools-anaconda>`, :ref:`Miniconda <tools-anaconda>`
+        :ref:`tools-napoleon`, :ref:`napoleon <tools-napoleon>`
+        :doc:`NumPy <numpy:about>`, :doc:`NumPy <numpy:about>`
+        :xref:`Open-source <open-source>`, :xref:`open-source <open-source>`
+        :doc:`pytest <pytest:index>`, :doc:`pytest <pytest:index>`
+        :ref:`Python <tools-python>`, :ref:`Python <tools-python>`
 
 .. _concepts-doc-whitespace:
 
@@ -201,7 +208,8 @@ Whitespace and line breaking
    :ref:`.rst files <tools-restructured-text>`
 #. :wiki-pg:`Indent <Indentation_(typesetting)>` 3
    :wiki-pg:`spaces <Whitespace_character>` (especially for
-   :xref:`nested lists <reST-list-indentation>`)
+   :stack-q:`nested lists
+   <5550089/how-to-create-a-nested-list-in-restructuredtext>`)
 #. :wiki-pg:`Indent <Indentation_(typesetting)>` a single
    :wiki-pg:`space <Whitespace_character>` after ``#.`` or
    after ``*``
@@ -326,7 +334,7 @@ Simple example
 
 Per the :ref:`proofreading procedures <writing-proofread>`, there should be
 a :doc:`reST comment <usage/restructuredtext/basics>` with a
-:ref:`version number <version-list>` tag (in the form of a
+:ref:`version number <indices-versions>` tag (in the form of a
 :doc:`reST comment <usage/restructuredtext/basics>`)  at the top of
 :ref:`.rst files <tools-restructured-text>`
 

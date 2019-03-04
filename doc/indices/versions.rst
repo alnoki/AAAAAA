@@ -1,11 +1,32 @@
 .. 0.3.0
 
-.. _version-list:
+.. _indices-versions:
 
 
-############
-Version list
-############
+########
+Versions
+########
+
+:xref:`Versions <semver>` of :term:`AAAAAA` are numbered in accordance with
+:xref:`semantic versioning standards <semver>`, using
+:wiki-pg:`ISO 8601 extended format <ISO_8601>` and
+:wiki-pg:`UTC <Coordinated_Universal_Time>` for
+:wiki-pg:`time standards <Time_standard>`
+
+.. centered:: ``MAJOR.MINOR.PATCH`` (``YYYY-MM-DD``\ T\ ``HH:MM:SS``\ Z)
+
+:ref:`versions-features` are relevant to both :ref:`users <user-intro>` and
+:ref:`developers <dev-intro>` alike, and usually include a relevant
+:wiki-pg:`link <URL>` to somewhere in :term:`AAAAAA`. Modifications are
+explained in a way that
+:xref:`tells the codebase what to do <commit-conventions>`, like in
+:ref:`commit messages <git-committing>`
+
+:ref:`versions-stats` help measure the creation of content throughout the
+:wiki-pg:`development <Software_development>` of :term:`AAAAAA`
+
+.. contents:: Contents
+   :local:
 
 .. csv-table:: Select references
    :align: center
@@ -15,26 +36,17 @@ Version list
    :xref:`git-commit-guidelines`, Long version message guidelines
    :wiki-pg:`ISO 8601<ISO_8601>`, :wiki-pg:`Time standards <Time_standard>`
 
-Below is a list of versions of :term:`AAAAAA`, numbered in accordance with
-:xref:`semantic versioning standards <semver>`. :wiki-pg:`Times <Time>` are
-described using :wiki-pg:`ISO 8601 extended format <ISO_8601>` and
-:wiki-pg:`UTC <Coordinated_Universal_Time>`, two common
-:wiki-pg:`time standards <Time_standard>`:
-
-.. centered:: ``MAJOR.MINOR.PATCH`` (``YYYY-MM-DD``\ T\ ``HH:MM:SS``\ Z)
-
-Features below are relevant to both :ref:`users <user-intro>` and
-:ref:`developers <dev-intro>` alike, and usually include a relevant
-:wiki-pg:`link <URL>` to somewhere in :term:`AAAAAA`. Modifications are
-explained in a way that
-:xref:`tells the codebase what to do <commit-conventions>`, like in
-:ref:`commit messages <git-committing>`
-
 .. tip::
 
    If you manage your own :ref:`Python package <python:tut-packages>` and you
    want to know how this is done, see the
-   :ref:`versioning procedures <versioning-procedures>`
+   :ref:`versioning procedures <procedures-versioning>`
+
+.. _versions-features:
+
+********
+Features
+********
 
 * 0.4.0
 
@@ -47,7 +59,7 @@ explained in a way that
    * Add :ref:`tools-extlinks` support and :ref:`procedures <sphinx-extlinks>`
    * Add :term:`checklist` explanation from :ref:`book-checklist-manifesto`
    * Define :wiki-pg:`time standards <Time_standard>` for
-     :ref:`versions <version-list>`
+     :ref:`versions <indices-versions>`
    * Add :ref:`reST syntax <tools-restructured-text>` to
      :ref:`sample-doc <sample-doc>`
    * Add explanation of :ref:`configs-conf-py` via
@@ -62,7 +74,7 @@ explained in a way that
 * 0.3.0 (2019-02-17T18:45:27Z)
 
    * Restructure :ref:`toctrees <tools-sphinx>`
-   * Add :ref:`versioning procedures <versioning-procedures>`
+   * Add :ref:`versioning procedures <procedures-versioning>`
    * Add :ref:`BibTeX <tools-bibtex>` to create :xref:`citations <citation>`
      for :ref:`books <references-books>`
    * Add :ref:`tools-sphinx-autobuild` support and associated
@@ -78,3 +90,30 @@ explained in a way that
 
    * Create :xref:`website <website>`, using :ref:`tools-sphinx`, with notes on
      how to make a :xref:`website <website>`, using :ref:`tools-sphinx`!
+
+
+.. _versions-stats:
+
+**********
+Statistics
+**********
+
+.. glossary::
+
+   AAA
+      Aggregate :term:`Acronym <AAACCC>` Accrual (A\ :superscript:`3`), the
+      total count of :term:`alnoki's acks <AAACCC>`, helps measure the creation
+      of memory aids in :term:`AAAAAA`
+
+   PPP
+      :wiki-pg:`PDF Page <PDF>` Proliferation (P\ :superscript:`3`), the
+      number of :wiki-pg:`pages <PDF>` in
+      :ref:`auto-generated documentation PDFs <dist-doc-pdf>`, helps
+      measure the amount of content in a
+      :ref:`version <versions-features>`
+
+.. csv-table:: :ref:`Version <versions-features>` statistics
+   :align: center
+   :header: :ref:`Version <versions-features>`, :term:`AAA`, :term:`PPP`
+
+   0.4.0, 9, 101

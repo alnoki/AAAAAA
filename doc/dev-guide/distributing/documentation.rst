@@ -96,9 +96,10 @@ will be outwardly visible when you view your :wiki-pg:`website <Website>`
 
 When you :ref:`merge <git-merging>`, it makes sense to disable the
 :ref:`development branch <versioning-start-new>` you were just working on,
-then :ref:`tag <git-tagging>` the new :ref:`version <version-list>` on the
+then :ref:`tag <git-tagging>` the new :ref:`version <indices-versions>` on the
 :xref:`master branch <git-manual>` and enable it instead, so that your
-:wiki-pg:`website <Website>` will show the latest :ref:`version <version-list>`
+:wiki-pg:`website <Website>` will show the latest
+:ref:`version <indices-versions>`
 
 .. _dist-doc-pdf:
 
@@ -112,8 +113,12 @@ of your :wiki-pg:`documentation <Software_documentation>` that you can access
 from your :xref:`rtfd-account` at
 :menuselection:`Projects --> AAAAAA --> Downloads`. The structural
 layout is dictated by the :ref:`toctrees <tools-sphinx>` in your project and
-by the :ref:`headings <concepts-doc-style>` in :py:data:`conf.master_doc`. The
-:wiki-pg:`website <Website>` is considered the primary style for :term:`AAAAAA`
+by the :ref:`headings <concepts-doc-style>` in :py:data:`conf.master_doc`
+
+The :wiki-pg:`website <Website>` is considered the primary way to view
+:wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`, but the
+:wiki-pg:`PDF` is useful for measuring the
+:ref:`amount of content generated for a version release <versions-stats>`
 
 Content is, of course, :wiki-pg:`rendered <Rendering_(computer_graphics)>`
 differently in the :wiki-pg:`PDF` and in the :wiki-pg:`website <Website>`,
@@ -125,4 +130,4 @@ especially for:
 * :wiki-pg:`URLs <URL>` in a
   :doc:`directive argument <sphinx:usage/restructuredtext/basics>` for a
   :ref:`csv-table <sphinx:table-directives>`
-* The :ref:`indices and table <indices-and-tables>` section
+* The :ref:`automatic indices <indices-auto>`

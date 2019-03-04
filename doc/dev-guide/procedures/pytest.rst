@@ -1,6 +1,6 @@
 .. 0.3.0
 
-.. _pytest-procedures:
+.. _procedures-pytest:
 
 ######
 pytest
@@ -34,19 +34,24 @@ Discovering tests
    :guilabel:`Python: Discover Unit Tests`
 
    #. If this fails, you may be experiencing a :xref:`pytest-discovery-issue`
-      that is associated with a new :ref:`version <version-list>` of
+      that is associated with a new :ref:`version <indices-versions>` of
       :ref:`tools-pytest`. You can either:
 
       #. Use the :xref:`VS Code Insider Edition <VS-Code-insiders>`, if a fix
          has recently been made available
-      #. Temporarily use an older :ref:`package <conda:concept-conda-package>`
-         of :ref:`tools-pytest`, colloquially known as a *pop*:
+      #. Temporarily use an older :term:`pop`:
+
+         .. glossary::
+
+            pop
+               :term:`package <a6>`-o-:ref:`tools-pytest`, colloquially known
+               as a *pop*
 
          #. :ref:`Activate <conda:activate-env>` the
             :term:`a6 environment <a6>`
          #. Use :doc:`conda:commands/install` with the appropriate
             :wiki-pg:`syntax <Syntax_(programming_languages)>` for the
-            :ref:`version number <version-list>`, from the
+            :ref:`version number <indices-versions>`, from the
             :doc:`conda cheatsheet <conda:user-guide/cheatsheet>`. For
             example:
 
@@ -59,3 +64,4 @@ Discovering tests
 #. Check out the
    :ref:`VS Code Test Explorer Extension <tools-vs-code>` to see if tests are
    showing up
+

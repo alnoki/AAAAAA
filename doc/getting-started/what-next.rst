@@ -16,7 +16,7 @@ You have no idea what is going on
 *********************************
 
 You are in the right place! :term:`AAAAAA` require no specialized background
-knowledge, so keep on hitting :guilabel:`next`
+knowledge, so keep on :wiki-pg:`clicking <Point_and_click>` :guilabel:`next`
 
 Information is usually accompanied by a relevant :xref:`URL`, also known as a
 :ref:`link <references-links>`, for a :xref:`webpage <webpage>` from somewhere
@@ -34,10 +34,10 @@ that has befallen you in :term:`AAAAAA`
 You don't want to get sidetracked
 *********************************
 
-Keep on hitting :guilabel:`next`! Lucky for you, this :xref:`website <website>`
-is made with :ref:`tools-sphinx` and as such you can visit every
-:xref:`webpage <webpage>` in a logical linear order without having to think
-twice
+Keep on :wiki-pg:`clicking <Point_and_click>` :guilabel:`next`! Lucky for you,
+this :xref:`website <website>` is made with :ref:`tools-sphinx` and as such you
+can view every :xref:`webpage <webpage>` in a logical linear order without
+having to think twice
 
 
 ****************************************
@@ -60,24 +60,24 @@ how to re-create the :ref:`development environment <dev-env-intro>` that
 :ref:`developer guide <dev-intro>`
 
 
-*******************************************
-You want a comprehensive list of references
-*******************************************
+**************************************************
+You want a list of references, terms, and versions
+**************************************************
 
-Check out the :ref:`references <references>`! Per the
-:ref:`reference management procedures <sphinx-managing-references>`, they are
-consolidated into one place
+Check out the :ref:`indices <indices-intro>`!
 
-
-***********************************************
-You are interested in acquiring a vintage mixer
-***********************************************
-
-See :xref:`Google`
+.. _what-next-format:
 
 
-*************************************************************************************
-You want information about information and information about how to share information
-*************************************************************************************
+************************************************************
+You would like to view this in a different format or version
+************************************************************
 
-You must be talking about :xref:`the Internet <internet>`
+:wiki-pg:`Documentation <Software_documentation>` for
+:term:`AAAAAA` as a :wiki-pg:`website <Website>` can be accessed via the
+:wiki-pg:`URL` provided at the :github:`AAAAAA repository <alnoki/AAAAAA>`
+
+Once you are at the :wiki-pg:`website <Website>`, you can access the
+:wiki-pg:`PDF` or a different :ref:`version <indices-versions>` by opening up
+the :wiki-pg:`sidebar <Sidebar_(computing)>` then
+:wiki-pg:`clicking <Point_and_click>` :guilabel:`Read the Docs`

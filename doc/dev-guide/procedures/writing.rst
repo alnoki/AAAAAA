@@ -1,51 +1,11 @@
 .. 0.3.0
 
-.. _writing-procedures:
+.. _procedures-writing:
 
 
 #######
 Writing
 #######
-
-.. csv-table:: Select reference within :term:`AAAAAA`
-   :align: center
-   :header: Reference, Topic
-
-   :ref:`tools-vs-code`, Conceptual explanation
-
-.. contents:: Contents
-   :local:
-
-
-*******
-VS Code
-*******
-
-.. _writing-max-screen-estate:
-
-Maximizing screen estate
-========================
-
-#. For half-screen, use the :ref:`VS Code command palette <tools-vs-code>`
-   to experiment with the following :wiki-pg:`commands <Command_line>`:
-
-   * :guilabel:`View: Toggle Tab Visibility`
-   * :guilabel:`View: Toggle Maximized Panel`
-   * :guilabel:`View: Toggle Panel`
-   * :guilabel:`View: Toggle Activity Bar Visibility`
-   * :guilabel:`View: Toggle Side Bar Visibility`
-   * :guilabel:`View: Toggle Status Bar Visibility`
-   * :guilabel:`View: Toggle Centered Layout`
-   * :guilabel:`View: Join All Editor Groups`
-   * :guilabel:`View: New Editor Group to the Right`
-   * :guilabel:`View: New Editor Group Below`
-   * :guilabel:`View: Zoom In`
-   * :guilabel:`View: Zoom Out`
-   * :guilabel:`Workspaces: Duplicate Workspace in New Window`
-
-#. For full-screen:
-
-   * :guilabel:`View: Toggle Zen Mode`
 
 .. _writing-make-dir-tree:
 
@@ -121,7 +81,7 @@ Documenting a new topic
 
            :ref:`Developer environment <dev-env-intro>`, Setup
            :ref:`Sphinx configuration <configs-sphinx>`, Options
-           :ref:`Sphinx procedures <sphinx-procedures>`, Usage
+           :ref:`Sphinx procedures <procedures-sphinx>`, Usage
            ...
 
         .. csv-table:: Select references
@@ -195,7 +155,7 @@ This is typically done right before
 #. Use the :ref:`VS Code command palette <tools-vs-code>` to
    :guilabel:`GitLens: Compare Working Tree with Branch or Tag...`
 #. Select the :ref:`tag <git-tagging>` of the relevant
-   :ref:`version <version-list>` to compare against
+   :ref:`version <indices-versions>` to compare against
 #. Proofread :ref:`new documents <writing-proofread-new>` and
    :ref:`changed documents <writing-proofread-changed>`
 
@@ -229,7 +189,7 @@ watch out for
 
 #. Open an :ref:`autobuild <sphinx-autobuilding>` in a
    :xref:`browser <web-browser>` alongside :ref:`tools-vs-code` with
-   :ref:`maximum half-screen estate <writing-max-screen-estate>`, so you can
+   :ref:`maximum half-screen estate <vs-code-max-screen-estate>`, so you can
    make edits immediately
 #. Go through one :ref:`minor section <concepts-doc-example>` at a time
 
@@ -262,8 +222,8 @@ Changes to a document
    file: :guilabel:`GitLens: Show File History`
 #. The :ref:`version comment <concepts-doc-example>` at the top of the
    :wiki-pg:`file <Computer_file>` should identify the
-   :wiki-pg:`most-recent <Time>` :ref:`version <version-list>` for which the
-   :wiki-pg:`file <Computer_file>` was reviewed. Thus:
+   :wiki-pg:`most-recent <Time>` :ref:`version <indices-versions>` for which
+   the :wiki-pg:`file <Computer_file>` was reviewed. Thus:
 
    #. Use the :guilabel:`GitLens: Show File History`
       view to :guilabel:`Choose from Branch or Tag History...`
