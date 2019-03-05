@@ -1,36 +1,17 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Version list
-1. Added acronyms pages, indices section, version statistics, restructured
-   1. Also VS Code procedures
-
-## Writing section
-   1. Show how to get tokens, language rulers, select colors, show web colors
-   1. Developer inspect TM scopes
-      1. Already have links
-1. Update VS code configurations page when all done
-1. New module needs to have automodule to be in module index
-   1. Even if just show one member
-
-## Configurations page
-1. Settings.json for user and workspace
-   1. See developer environment setup
-   1. dev env setup then go through and link back to configurations page
-
-## PDF viewing
+## Proofreading
+1. Annotate off the options, they don't render right in the PDF
+1. Turns out that genindex and modindex just get put at the end
+1. On books page, link to the what next page instead of the dist-doc page
+1. https://blog.codinghorror.com/quantity-always-trumps-quality
 1. Quantity/quality goes into personal motivation
    1. Update Zen later
 
-## Tools
-1. Vim section, find all for vim links to it
-   1. Add to Git and VS code aaaaaa references tables
-1. Dev env setup should link to tools section with references used to learn
-
-## Versioning
-1. Update acronyms, and versioning statistics table
-
-## Update version list
+## Version list
+1. Added acronyms pages, indices section, version statistics, restructured
+   1. Also VS Code procedures
 1. Add sections instead of toctrees
 1. PDF page proliferation
    1. Page count upon release
@@ -40,6 +21,39 @@
 1. Say all the configurations that were documented
 1. Vim support?
 1. Statistics table for PPP and acronym count
+
+## VS Code procedures
+   1. Show how to get tokens, language rulers, select colors, show web colors
+   1. Developer inspect TM scopes
+      1. Already have links
+1. Update VS code configurations page when all done
+
+## Napoleon
+1. Link to the module index
+1. Show an example of using a blank annotation
+1. Explain empty docstring
+1. Link to actual Py objs
+1. New module needs to have automodule to be in module index
+   1. Even if just show one member
+
+## Configurations page
+1. a6 on configs page, just literal include
+1. Settings.json for user and workspace
+   1. See developer environment setup
+   1. dev env setup then go through and link back to configurations page
+
+## Tools
+1. Vim section, find all for vim links to it
+   1. Add to Git and VS code aaaaaa references tables
+1. Dev env setup should link to tools section with references used to learn
+1. Show how to install Vim in dev environment (at least VS code ext)
+   1. Need to put in the VS Code page
+
+## Versioning
+1. Update acronyms, and versioning statistics table
+1. Restructure links if a list is > 10
+1. Back on master, for "latest", do a commit after the tagged release
+   1. Indicate the version time after pushing
 
 ## quicklinks
 1. :wiki-pg:`run <Execution_(computing)>`
@@ -147,6 +161,7 @@
    1. Also then review the sphinx settings section
 
 ## src updates
+1. User sections for "tracking" and "choosing"
 1. Give an example of initializing a transaction class
 1. ISO 8061 (or whatever robinhood uses) for dates
 1. xref in transaction source code
@@ -405,9 +420,8 @@
 
 
 
-## page updates
+## Zen page updates
 1. Go through and re-write/re-link once there are more places to link to
-1. https://blog.codinghorror.com/quantity-always-trumps-quality
 
 ## Pandas ledger class
 1. Make a ledger a sub class of a dataframe

@@ -28,6 +28,7 @@
 
 
     // Vim integration
+    "vim.statusBarColorControl": true,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
     "vim.handleKeys": {
@@ -36,11 +37,16 @@
         "<C-F>": false, // Find all
         "<C-f>": false, // Find in files
         "<C-k>": false, // Zen Mode
+        "<C-w>": false, // Close window
         "<C-1>": false, // Editor 1
         "<C-2>": false, // Editor 2
         "<C-b>": false, // Side bar
         "<C-`>": false, // Integrated terminal
         "<C-j>": false, // Panel
+        "<C-s>": false, // Save
+        "<C-x>": false, // Cut
+        "<C-v>": false, // Paste
+        "<C-c>": false, // Copy
     },
 
 
