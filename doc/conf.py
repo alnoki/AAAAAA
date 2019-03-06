@@ -228,6 +228,7 @@ extlinks = {
     'vim-wiki': ('https://vim.fandom.com/wiki/%s', ''),
     'docutils': ('http://docutils.sourceforge.net/%s', ''),
     'github-help': ('https://help.github.com/en/articles/%s', ''),
+    'vs-code-api': ('https://code.visualstudio.com/api/%s', ''),
 }
 
 # Base urls used by xrefs extension: delete eventually after migrating
@@ -274,11 +275,11 @@ xref_links = {
     'rtfd-account': ('Read the Docs account', 'https://readthedocs.org'),
     'tables-generator': ("Tables generator for assorted languages",
                          'http://tablesgenerator.com'),
+    'quantity-trumps-quality':
+        ("Why quantity trumps quality", 'https://blog.codinghorror.com/'
+         'quantity-always-trumps-quality'),
 
     # To sort
-    'documenting-python': ("Guide to Documenting Python",
-                           url['RealPython'] + 'documenting-python-code/'),
-    'open-source': ('open-source', url['Wiki pg'] + 'Open-source_software'),
     'RealPython': ('RealPython.com', url['RealPython']),
     'AAAAAA-zip-archive': ('AAAAAA repository archive', 'https://codeload.'
                            'github.com/alnoki/AAAAAA/zip/master'),

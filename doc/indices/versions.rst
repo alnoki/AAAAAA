@@ -50,12 +50,21 @@ Features
 
 * 0.4.0
 
-   * Add to :ref:`toctrees <tools-sphinx>`: :ref:`examples <examples>`,
-     :ref:`developer guide intro <dev-intro>`,
-     :ref:`testing intro <testing-intro>`,
-     :ref:`distribution intro <dist-intro>`,
-     :ref:`configurations <concepts-configs>`,
-     :ref:`contributing <dev-env-contributing>`
+   * Add to :ref:`toctrees <tools-sphinx>`:
+
+     * :ref:`examples`
+     * :ref:`Developer guide intro <dev-intro>`
+     * :ref:`Testing section <testing-intro>`
+     * :ref:`Distribution section <dist-intro>`
+     * :ref:`Documentation distribution guide <dist-doc>`
+     * :ref:`concepts-configs`
+     * :ref:`Contributing setup <dev-env-contributing>`
+     * :term:`AAACCC`
+     * :ref:`Version statistics <versions-stats>`
+     * :ref:`Indices section <indices-intro>`
+     * :ref:`VS Code procedures <procedures-vs-code>`
+
+   * Add :ref:`PDF vs Website explanation <what-next-format>`
    * Add :ref:`tools-extlinks` support and :ref:`procedures <sphinx-extlinks>`
    * Add :term:`checklist` explanation from :ref:`book-checklist-manifesto`
    * Define :wiki-pg:`time standards <Time_standard>` for
@@ -63,7 +72,8 @@ Features
    * Add :ref:`reST syntax <tools-restructured-text>` to
      :ref:`sample-doc <sample-doc>`
    * Add explanation of :ref:`configs-conf-py` via
-     :ref:`napoleon <tools-Napoleon>`
+     :ref:`napoleon <tools-Napoleon>`, and assorted other
+     :ref:`configurations <concepts-configs>`
    * Add :ref:`Tools: Google <tools-google>` section
 
 

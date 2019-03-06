@@ -32,10 +32,10 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
     "vim.handleKeys": {
-        "<C-P>": false, // Command pallete
+        "<C-P>": false, // Command palette
         "<C-p>": false, // Open
-        "<C-F>": false, // Find all
-        "<C-f>": false, // Find in files
+        "<C-f>": false, // Find
+        "<C-F>": false, // Find in files
         "<C-k>": false, // Zen Mode
         "<C-w>": false, // Close window
         "<C-1>": false, // Editor 1
@@ -45,8 +45,8 @@
         "<C-j>": false, // Panel
         "<C-s>": false, // Save
         "<C-x>": false, // Cut
-        "<C-v>": false, // Paste
         "<C-c>": false, // Copy
+        "<C-v>": false, // Paste
     },
 
 
@@ -69,10 +69,7 @@
     "editor.detectIndentation": false,
 
 
-    // Line/tab width
-    // Command palette >
-    //   Change language mode >
-    //     Configure 'x' language based settings
+    // Indentation and line width
     "[python]": { // Per PEP8, for comments (71) and code (79)
         "editor.rulers": [71, 79],
         "editor.tabSize": 4,

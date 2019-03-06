@@ -43,11 +43,47 @@ Maximizing screen estate
 
    * :guilabel:`View: Toggle Zen Mode`
 
-
 *****************
 Managing settings
 *****************
 
 #. Open :ref:`configs-settings-json`
-#. Use the :ref:`command palette <tools-vs-code>` to compare against
-   :guilabel:`Preferences: Open Raw Default Settings`
+#. Use the :ref:`command palette <tools-vs-code>` to compare against defaults
+
+   * :guilabel:`Preferences: Open Raw Default Settings`
+
+
+****************************
+Changing syntax highlighting
+****************************
+
+#. Use the :ref:`command palette <tools-vs-code>` to open the
+   :github:`TextMate inspector <Microsoft/vscode/pull/29393>`
+
+   * :guilabel:`Developer: Inspect TM Scopes`
+
+#. :wiki-pg:`Click <Clicking>` on whatever
+   :wiki-pg:`string <String_(computer_science)>` you are interested in
+#. Update the resultant
+   :github:`textMateRules <Microsoft/vscode/pull/29393>` in
+   :ref:`configs-settings-json` with your desired :wiki-pg:`color <Web_colors>`
+
+
+******************
+Configuring rulers
+******************
+
+#. Determine the relevant :wiki-pg:`line break <Newline>` rule for your
+   :ref:`code style <concepts-code-style>` or
+   :ref:`documentation style <concepts-doc-style>`
+#. While viewing the :wiki-pg:`filetype <Filename_extension>` in question, use
+   the :ref:`command palette <tools-vs-code>` for inspection
+
+   * :guilabel:`Change Language Mode`
+
+#. Where ``'x'`` corresponds to the :wiki-pg:`filetype <Filename_extension>` in
+   question, select
+
+   * :guilabel:`Configure 'x' language based settings...`
+
+#. Update :ref:`configs-settings-json` in accordance with examples therein

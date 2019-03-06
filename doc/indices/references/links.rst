@@ -556,7 +556,7 @@ General
    * Guide to general :doc:`Sphinx <sphinx:intro>` use
    * :doc:`reStructuredTest <sphinx:usage/restructuredtext/basics>` style guide
 
-#. :xref:`RealPython Guide to Documenting Python <documenting-python>`
+#. :real-py:`RealPython guide to documenting Python <documenting-python-code>`
 
    * Recommended :wiki-pg:`documentation <Software_documentation>` practices
      :xref:`Python`
@@ -1021,6 +1021,21 @@ Extensions
 VS Code
 =======
 
+Colors
+------
+
+#. :vs-code-doc:`Themes <getstarted/themes>`
+
+   * General workspace :wiki-pg:`colors <Web_colors>`
+
+#. :vs-code-api:`Color theme extension guide <extension-guides/color-theme>`
+
+   * Enhanced :wiki-pg:`color <Web_colors>` customization functionality
+
+#. :github:`Token color customizations <Microsoft/vscode/pull/29393>`
+
+   * Advanced :wiki-pg:`color <Web_colors>` manipulation
+
 General
 -------
 
@@ -1031,10 +1046,10 @@ General
 
 #. :xref:`VS-Code`
 
-   * :xref:`Open-source <open-source>` environment for
+   * :wiki-pg:`Open-source <Open-source_software>` environment for
      :wiki-pg:`software development <Software_development>`
    * Has a collection of :xref:`extensions <VS-Code-extensions>` developed by
-     the :xref:`open-source` community
+     the :wiki-pg:`open-source <Open-source_software>` community
 
 #. :xref:`VS-Code-extensions`
 
@@ -1425,7 +1440,7 @@ Online information
 
    * For accessing tutorials and other video information
 
-#. :xref:`Open-source software <open-source>`
+#. :wiki-pg:`Open-source software <Open-source_software>`
 
    * Public way to share :xref:`source code <source-code>`
 
@@ -1576,6 +1591,11 @@ Personal motivation
 #. :xref:`schafer-interview`
 
    * Reasons for making content
+   * :xref:`Cited <citation>` in :ref:`zen-aipaip`
+
+#. :xref:`quantity-trumps-quality`
+
+   * Just keep making content
    * :xref:`Cited <citation>` in :ref:`zen-aipaip`
 
 Places worth visiting

@@ -25,9 +25,9 @@ Typically this information is accompanied by a conceptual explanation that fits
 within the context of :term:`AAAAAA`
 
 You will soon learn that :term:`AAAAAA` live within the magical,
-:xref:`open-source <open-source>` world of :ref:`tools-python`. Indeed, you
-shall learn that which you need as you follow the :guilabel:`next`-lit path
-that has befallen you in :term:`AAAAAA`
+:wiki-pg:`open-source <Open-source_software>` world of :ref:`tools-python`.
+Indeed, you shall learn that which you need as you follow the
+:guilabel:`next`-lit path that has befallen you in :term:`AAAAAA`
 
 
 *********************************

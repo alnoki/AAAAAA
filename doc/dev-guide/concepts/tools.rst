@@ -47,9 +47,10 @@ Core
 Python
 ======
 
-:xref:`Python` is an :xref:`open-source computer language <open-source>` with
-various applications. The :xref:`source code <source-code>` for :term:`AAAAAA`
-is written in :xref:`Python`, using assorted
+:xref:`Python` is an
+:wiki-pg:`open-source computer language <Open-source_software>` with various
+applications. The :xref:`source code <source-code>` for :term:`AAAAAA` is
+written in :xref:`Python`, using assorted
 :ref:`packages <python:tut-packages>`. See the :ref:`examples <examples>`
 section for a showcase of :term:`AAAAAA` functionality
 
@@ -313,6 +314,16 @@ which has all the latest features but may not be completely stable
    :ref:`tools-pytest` integration"
    :github-help:`Markdown <basic-writing-and-formatting-syntax>`, "
    :ref:`Planning version features <versioning-td3>`"
+
+.. csv-table:: Modifying :wiki-pg:`colors <Web_colors>`
+   :align: center
+   :header: Reference, Topic
+
+   :vs-code-doc:`Themes <getstarted/themes>`, General usage
+   :vs-code-api:`Color theme extension guide <extension-guides/color-theme>`, "
+   Enhanced functionality"
+   :github:`Token color customizations <Microsoft/vscode/pull/29393>`, "
+   Advanced usage"
 
 .. rubric:: Footnotes
 

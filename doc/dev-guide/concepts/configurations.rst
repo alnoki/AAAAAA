@@ -159,7 +159,7 @@ Extensions
 .. literalinclude:: ../../conf.py
    :caption: :wiki-pg:`Path <Path_(computing)>` setup
    :language: python
-   :lines: 3-7
+   :lines: 9-13
 
 Relative to the :ref:`documentation root directory <concepts-doc-tree>`, this
 gives :ref:`tools-sphinx` access to the following
@@ -176,6 +176,7 @@ gives :ref:`tools-sphinx` access to the following
    :doc:`conf.py <sphinx:usage/configuration>`"
 
 .. autodata:: conf.extensions
+   :annotation:
 
 AAAAAA project info
 -------------------
@@ -191,6 +192,7 @@ File handling
 
 .. autodata:: conf.master_doc
 .. autodata:: conf.exclude_patterns
+   :annotation:
 .. autodata:: conf.html_static_path
 
 Website
@@ -198,7 +200,9 @@ Website
 
 .. autodata:: conf.html_theme
 .. autodata:: conf.html_theme_options
+   :annotation:
 .. autodata:: conf.linkcheck_ignore
+   :annotation:
 
 Document generation
 -------------------

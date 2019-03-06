@@ -16,7 +16,8 @@ Documentation
 
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "Official
    :xref:`Python` guide to :wiki-pg:`documenting <Software_documentation>`"
-   :xref:`RealPython guide to documenting Python <documenting-python>`, "
+   ":real-py:`RealPython guide to documenting Python
+   <documenting-python-code>`", "
    General :wiki-pg:`documentation <Software_documentation>` practices for
    :xref:`Python`"
 
@@ -195,7 +196,8 @@ Common Conceptual Capitalizations (C\ :superscript:`3`)
         :ref:`Miniconda <tools-anaconda>`, :ref:`Miniconda <tools-anaconda>`
         :ref:`tools-napoleon`, :ref:`napoleon <tools-napoleon>`
         :doc:`NumPy <numpy:about>`, :doc:`NumPy <numpy:about>`
-        :xref:`Open-source <open-source>`, :xref:`open-source <open-source>`
+        :wiki-pg:`Open-source <Open-source_software>`, "
+        :wiki-pg:`open-source <Open-source_software>`"
         :doc:`pytest <pytest:index>`, :doc:`pytest <pytest:index>`
         :ref:`Python <tools-python>`, :ref:`Python <tools-python>`
 

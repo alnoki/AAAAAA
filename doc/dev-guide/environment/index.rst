@@ -21,7 +21,7 @@ Any :ref:`tools <concepts-tools>` and :ref:`configurations <concepts-configs>`
 that you might need will be :wiki-pg:`downloaded <Download>` throughout the
 the following instructions, so get ready to
 :wiki-pg:`install <Installation_(computer_programs)>` some
-:xref:`free software <open-source>`!
+:wiki-pg:`free software <Open-source_software>`!
 
 .. toctree::
    :caption: Developer environment setup

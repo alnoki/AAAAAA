@@ -1,46 +1,36 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Proofreading
-1. Annotate off the options, they don't render right in the PDF
-1. Turns out that genindex and modindex just get put at the end
-1. On books page, link to the what next page instead of the dist-doc page
-1. https://blog.codinghorror.com/quantity-always-trumps-quality
-1. Quantity/quality goes into personal motivation
-   1. Update Zen later
-
-## Version list
-1. Added acronyms pages, indices section, version statistics, restructured
-   1. Also VS Code procedures
-1. Add sections instead of toctrees
-1. PDF page proliferation
-   1. Page count upon release
-   1. Colloquially referred to triple papa
-   1. Need a link to each acronym
-1. Mention distributing documentation guide
-1. Say all the configurations that were documented
-1. Vim support?
-1. Statistics table for PPP and acronym count
-
 ## VS Code procedures
-   1. Show how to get tokens, language rulers, select colors, show web colors
-   1. Developer inspect TM scopes
-      1. Already have links
+1. Focus next terminal
 1. Update VS code configurations page when all done
+1. Note how Vim status bar control auto-updates user settings
 
 ## Napoleon
 1. Link to the module index
 1. Show an example of using a blank annotation
+   1. Like in conf.py
+   1. Mention keep blank if lots of data
+      1. Otherwise doesn't render right in PDF
+         1. In dist-doc note as much
 1. Explain empty docstring
 1. Link to actual Py objs
 1. New module needs to have automodule to be in module index
    1. Even if just show one member
+1. The autodoc module docstring at top of conf.py then links to napoleon page
+
+## Version list update
+1. Napoleon procedures
+1. Vim procedures
+1. Vim integration
 
 ## Configurations page
 1. a6 on configs page, just literal include
 1. Settings.json for user and workspace
    1. See developer environment setup
    1. dev env setup then go through and link back to configurations page
+1. Mention on vs code settings how nearly everything should be workspace
+   1. Only a few things should be user
 
 ## Tools
 1. Vim section, find all for vim links to it
@@ -49,11 +39,14 @@
 1. Show how to install Vim in dev environment (at least VS code ext)
    1. Need to put in the VS Code page
 
-## Versioning
+## Versioning procedures
 1. Update acronyms, and versioning statistics table
 1. Restructure links if a list is > 10
 1. Back on master, for "latest", do a commit after the tagged release
    1. Indicate the version time after pushing
+
+## Proofreading
+1. Find all for unlinked "file" on links page
 
 ## quicklinks
 1. :wiki-pg:`run <Execution_(computing)>`

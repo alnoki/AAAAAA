@@ -14,11 +14,12 @@ according to :ref:`book reference procedures <sphinx-reference-book>`
 
 .. note::
 
-   If you are viewing :wiki-pg:`documentation <Software_documentation>` for
-   :term:`AAAAAA` on a :wiki-pg:`website <Website>`, the
+   If you are viewing
+   :ref:`the website form of AAAAAA documentation <what-next-format>`, the
    :wiki-pg:`bibliography <Citation>` for these :wiki-pg:`books <Book>` should
-   be on this :wiki-pg:`webpage <Webpage>`. If you are viewing a
-   :ref:`PDF version <dist-doc-pdf>`, it will appear towards the end
+   be on this :wiki-pg:`webpage <Webpage>`. If you are viewing
+   :ref:`the PDF form of AAAAAA documentation <what-next-format>`, it will
+   appear towards the end
 
 .. contents:: Books
    :local:

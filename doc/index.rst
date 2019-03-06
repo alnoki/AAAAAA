@@ -28,7 +28,7 @@ What are they?
       :xref:`Python computer language <Python>`, and uses
       :ref:`packages <python:tut-packages>` that have been
       :wiki-pg:`developed <Software_development>` by the
-      :xref:`open-source` community
+      :wiki-pg:`open-source <Open-source_software>` community
 
 Python?
 =======

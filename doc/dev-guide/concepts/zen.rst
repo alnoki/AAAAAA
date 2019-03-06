@@ -24,17 +24,19 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
    beyond :xref:`source code <source-code>` development alone
 #. Consider :wiki-pg:`DO-178B` as a model for software design assurance [#]_
 #. Legacy conventions shant prevent the adoption of a new worthwhile philosopy
-#. Play around and "whiteboard" :xref:`software <open-source>` during initial
-   stages [#]_
+#. Play around and "whiteboard" :wiki-pg:`software <Open-source_software>`
+   during initial stages [#]_
 #. Read :wiki-pg:`documentation <Software_documentation>` out loud [#]_
 #. :ref:`Py <tools-python>` like you :ref:`reST <tools-restructured-text>`,
    :ref:`reST <tools-restructured-text>` like you
    :ref:`Py <tools-python>` [#]_
-#. "We, the :xref:`coders <open-source>`, are foreigners, seeking citizenship
+#. "We, the :wiki-pg:`coders <Programmer>`, are foreigners, seeking citizenship
    in the :xref:`computer <computer>`’s locale" [#]_, so respect the house
    rules
 #. Your legacy is the :wiki-pg:`documentation <Software_documentation>`
 #. Make content for yourself because you like it [#]_
+#. :xref:`Quality trumps quantity <quantity-trumps-quality>` when you are
+   creating content, so just keep creating
 
 
 .. _zen-spirit:
@@ -43,7 +45,7 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 The spirit of alnoki's apps
 ***************************
 
-#. :xref:`Open-source <open-source>`, ``d00d``
+#. :wiki-pg:`Open-source <Open-source_software>`, ``d00d``
 #. :ref:`concepts-tools` should be :xref:`free <money>`, otherwise,
    make them yourself [#]_
 #. When in doubt, :ref:`link <references-links>` (or you might forget later)
@@ -78,7 +80,7 @@ Need some more inspiration? Try::
 .. [#] :wiki-pg:`AHRS <Attitude_and_heading_reference_system>` products from
    :wiki-pg:`Garmin` are :wiki-pg:`DO-178B Level A <DO-178B>`
 .. [#] From a comment by Brett Glasner, that whiteboarding is the most
-   fun part of :xref:`software <open-source>` design
+   fun part of :wiki-pg:`software <Software>` design
 .. [#] Recommeded in
    :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018
    <0ROZRNZkPS8>`

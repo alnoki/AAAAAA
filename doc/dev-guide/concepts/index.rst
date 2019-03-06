@@ -8,7 +8,8 @@ Concepts
 ########
 
 All of the :ref:`tools <concepts-tools>` used to create :term:`AAAAAA` are
-:xref:`free <money>`, and most are :xref:`open-source`. If you completed the
+:xref:`free <money>`, and most are
+:wiki-pg:`open-source <Open-source_software>`. If you completed the
 :ref:`developer environment setup <dev-env-intro>` then you will have just
 finished :wiki-pg:`dowloading <Download>` all of them
 
