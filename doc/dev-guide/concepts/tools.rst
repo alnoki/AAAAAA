@@ -113,7 +113,7 @@ different :ref:`conda channels <conda:channels-glossary>`, like the
 
    :ref:`Developer environment <dev-env-intro>`, Setup
    :ref:`Conda procedures <procedures-conda>`, Usage
-
+   :ref:`Conda configuration <configs-conda>`, Options
 
 .. csv-table:: :doc:`conda:index` references
    :align: center
@@ -257,7 +257,7 @@ that is used to create :term:`AAAAAA`, with additional functionality provided
 by :vs-code-doc:`extensions <editor/extension-gallery>`
 
 The :github:`AAAAAA repository <alnoki/AAAAAA>` comes with a collection of
-:xref:`VS-Code-settings` that will automatically
+:vs-code-doc:`VS Code settings <getstarted/settings>` that will automatically
 :ref:`configure <concepts-configs>` most of your
 :wiki-pg:`software <Software>` workspace. If you completed the
 :ref:`developer environment setup <dev-env-intro>`, then all the relevant
@@ -335,6 +335,12 @@ which has all the latest features but may not be completely stable
    :wiki-pg:`real-time <Time>`, but is not as reliable as using a
    :xref:`browser <web-browser>` with :ref:`tools-sphinx-autobuild`. For
    example, fails for :ref:`intersphinx links <sphinx-intersphinx>`
+
+.. _tools-vim:
+
+Vim
+===
+
 
 
 *************
@@ -607,7 +613,7 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
    :doc:`Roles <sphinx:usage/restructuredtext/roles>` and
    :doc:`directives <sphinx:usage/restructuredtext/directives>`"
    :xref:`Type checking <realpython-type-checking>`, "
-   :xref:`RealPython <RealPython>` guide"
+   :real-py:`RealPython <>` guide"
    :doc:`Sample automodule <demo/api>`, "
    :doc:`Autodoc <sphinx:usage/extensions/autodoc>` demo with
    :doc:`RTD Sphinx theme <rtd-sphinx-theme:index>`"

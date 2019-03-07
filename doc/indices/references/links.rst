@@ -66,7 +66,7 @@ General
    * :wiki-pg:`Syntax <Syntax_(programming_languages)>`, methods,
      recommended practices
 
-#. :xref:`RealPython`
+#. :real-py:`RealPython <>`
 
    * Comprehensive :xref:`website <website>` with examples, guides, tips, etc.
 
@@ -1063,7 +1063,7 @@ General
 
    * Use :ref:`tools-pytest`
 
-#. :xref:`VS-Code-settings`
+#. :vs-code-doc:`VS Code settings <getstarted/settings>`
 
    * Configurations in ``settings.json``
 

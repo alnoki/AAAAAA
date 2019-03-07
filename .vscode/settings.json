@@ -40,6 +40,7 @@
         "<C-w>": false, // Close window
         "<C-1>": false, // Editor 1
         "<C-2>": false, // Editor 2
+        "<C-\\>": false, // Split editor
         "<C-b>": false, // Side bar
         "<C-`>": false, // Integrated terminal
         "<C-j>": false, // Panel
@@ -103,13 +104,13 @@
     "restructuredtext.confPath": "${workspaceFolder}\\doc",
 
 
-    // Testing, see VS Code unit test documentation
+    // Testing
     "python.unitTest.unittestEnabled": false,
     "python.unitTest.pyTestEnabled": true,
     "python.unitTest.nosetestsEnabled": false,
 
 
-    // Privacy related
+    // Privacy
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "gitlens.advanced.telemetry.enabled": false,

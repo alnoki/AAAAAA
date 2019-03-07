@@ -43,6 +43,17 @@ Maximizing screen estate
 
    * :guilabel:`View: Toggle Zen Mode`
 
+
+********************
+Improving efficiency
+********************
+
+#. Use the :ref:`VS Code command palette <tools-vs-code>` to experiment with
+   the following :wiki-pg:`commands <Command_line>`:
+
+   * :guilabel:`Focus Next Terminal`
+
+
 *****************
 Managing settings
 *****************

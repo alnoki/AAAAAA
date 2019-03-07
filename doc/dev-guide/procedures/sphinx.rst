@@ -102,7 +102,7 @@ Automatically
 
    .. code-block:: bash
 
-      sphinx-autobuild sphinx-autobuild . _build/html -B -s 1
+      sphinx-autobuild . _build/html -B -s 1
 
    :xref:`sphinx-autobuild options <sphinx-autobuild>`:
 

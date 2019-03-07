@@ -33,4 +33,5 @@ These should either be followed exactly, or updated
    vs-code
    pytest
    writing
+   napoleon
    versioning

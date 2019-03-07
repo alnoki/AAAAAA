@@ -10,6 +10,7 @@ Configurations
 .. code-block:: none
 
    AAAAAA/
+       a6.yml
        .gitignore
        .vscode/
            settings.json
@@ -22,6 +23,31 @@ Configurations
 
 .. contents:: Contents
    :local:
+
+.. _configs-conda:
+
+
+*****
+Conda
+*****
+
+.. csv-table:: Select reference within :term:`AAAAAA`
+   :align: center
+   :header: Reference, Topic
+
+   :ref:`tools-anaconda`, Conceptual explanation
+
+a6.yml
+======
+
+:ref:`a6.yml <concepts-configs-tree>` specifies a
+:ref:`conda environment <tools-anaconda>` that you will need to do
+:wiki-pg:`development <Software_development>` for :term:`AAAAAA`. See the
+:ref:`conda procedures <procedures-conda>` for more information on how to use
+it
+
+.. literalinclude:: ../../../a6.yml
+   :language: yaml
 
 .. _configs-git:
 
@@ -77,7 +103,9 @@ its :ref:`configuration <concepts-configs>` is described in
 :git-doc:`.gitignore <user-manual.html#ignoring-files>` describes which
 :wiki-pg:`files <Computer_file>` in the
 :ref:`AAAAAA root directory <concepts-configs-tree>` do not need to be tracked
-by :ref:`tools-Git`
+by :ref:`tools-Git`. It contains some
+:wiki-pg:`comments <Comment_(computer_programming)>` to help separate content
+into sections
 
 .. _configs-vs-code:
 
@@ -96,6 +124,37 @@ VS Code
 
 settings.json
 =============
+
+:ref:`tools-vs-code` has both
+:vs-code-doc:`user and workspace settings <getstarted/settings>`. For the most
+part, you will only have to modify the
+:ref:`AAAAAA workspace settings <concepts-configs-tree>` except for when you
+are first :ref:`setting up the development environment <dev-env-intro>`
+
+Workspace
+---------
+
+See the :ref:`VS Code procedures <procedures-vs-code>` for more information
+about how to view the :ref:`AAAAAA workspace settings <concepts-configs-tree>`
+and an interpretation of a few specific options
+
+The :ref:`AAAAAA workspace settings <concepts-configs-tree>` are separated
+into categories with :wiki-pg:`comments <Comment_(computer_programming)>`
+
+User
+----
+
+You may have to use the :ref:`developer environment setup <dev-env-intro>` to
+get a few key :vs-code-doc:`user settings <getstarted/settings>` correct, but
+for the most part they are not needed because they will be
+:vs-code-doc:`overrided by workspace settings <getstarted/settings>` if you are
+:wiki-pg:`developing <Software_development>` for :term:`AAAAAA`
+
+.. note::
+
+   The :vs-code-ext:`Vim extension <vscodevim.vim>` can change a few
+   :vs-code-doc:`user settings <getstarted/settings>` throughout usage if you
+   use the ``vim.statusBarColorControl`` option, don't worry about this
 
 .. _configs-sphinx:
 
@@ -241,7 +300,7 @@ Link management
 
 .. py:data:: conf.xref_links
 
-   Contains :ref:`xref base URLs <sphinx-xref>`
+   Contains :ref:`xref URLs <sphinx-xref>`
 
 .. _configs-read-the-docs:
 

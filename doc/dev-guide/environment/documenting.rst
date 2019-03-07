@@ -11,7 +11,7 @@ Documenting
    :vs-code-doc:`extensions <editor/extension-gallery>`
 #. :wiki-pg:`Install` the :xref:`VS-Code-bookmarks-ext`
 #. Update the :xref:`VS-Code-terminal` ``USER SETTINGS`` in
-   :xref:`settings.json <VS-Code-settings>` so that you can use
+   :vs-code-doc:`settings.json <getstarted/settings>` so that you can use
    :ref:`Conda <conda:starting-conda>`:
 
    * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, add the following
@@ -91,9 +91,10 @@ Documenting
 
    * This should add a setting for your :wiki-pg:`computer <Computer>`-specific
      :wiki-pg:`path <Path_(computing)>` to
-     :xref:`settings.json <VS-Code-settings>`. If it is added to
-     ``WORKSPACE SETTINGS`` in :xref:`settings.json <VS-Code-settings>`, make
-     sure to put it in ``USER SETTINGS`` instead
+     :vs-code-doc:`settings.json <getstarted/settings>`. If it is added to
+     ``WORKSPACE SETTINGS`` in
+     :vs-code-doc:`settings.json <getstarted/settings>`, make sure to put it in
+     ``USER SETTINGS`` instead
    * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, this should look like:
 
      .. code-block:: json
@@ -139,8 +140,9 @@ Documenting
 #. Use the :xref:`command-palette` to :git-doc:`git-clone` the
    :github:`AAAAAA repository <alnoki/AAAAAA>`
 
-   * This will include all of the :xref:`VS Code settings<VS-Code-settings>`
-     that :github:`alnoki` uses
+   * This will include all of the
+     :vs-code-doc:`VS Code settings <getstarted/settings>` that
+     :github:`alnoki` uses
 
 #. At this point you should be able to
    :ref:`build the documentation <sphinx-building-doc>` and play around with

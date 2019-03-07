@@ -278,13 +278,10 @@ xref_links = {
     'quantity-trumps-quality':
         ("Why quantity trumps quality", 'https://blog.codinghorror.com/'
          'quantity-always-trumps-quality'),
-
-    # To sort
-    'RealPython': ('RealPython.com', url['RealPython']),
     'AAAAAA-zip-archive': ('AAAAAA repository archive', 'https://codeload.'
                            'github.com/alnoki/AAAAAA/zip/master'),
-    'VS-Code-settings': ("VS Code settings", url['VS Code doc'] +
-                         'getstarted/settings'),
+
+    # To sort
     'VS-Code-terminal': ("integrated terminal", url['VS Code doc'] +
                          'editor/integrated-terminal'),
     'command-palette': ("command palette", url['VS Code doc'] +

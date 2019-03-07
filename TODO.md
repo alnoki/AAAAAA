@@ -1,13 +1,14 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## VS Code procedures
-1. Focus next terminal
-1. Update VS code configurations page when all done
-1. Note how Vim status bar control auto-updates user settings
-
 ## Napoleon
 1. Link to the module index
+   * Explain how you can use members, etc
+* Show how to link between things using python domain (link in tools section)
+* Links to get - throw them in napoleon syntax part?
+   * Python module for python general section
+   * automodule directive for napoleon section
+      * Same with autodata and autofunction
 1. Show an example of using a blank annotation
    1. Like in conf.py
    1. Mention keep blank if lots of data
@@ -18,33 +19,43 @@
 1. New module needs to have automodule to be in module index
    1. Even if just show one member
 1. The autodoc module docstring at top of conf.py then links to napoleon page
+* dist-doc say how autodata looks different
+
+## Tools
+* Fill in Vim stub
+   * See the configurations Vim section
+1. Vim section, find all for vim links to it
+   1. Add to Git and VS code aaaaaa references tables
+1. Dev env setup should link to tools section with references used to learn
+1. Show how to install Vim in dev environment (at least VS code ext)
+   1. Need to put in the VS Code page
+* Review Git setup and procedures, link to Vim tools page
 
 ## Version list update
 1. Napoleon procedures
 1. Vim procedures
 1. Vim integration
 
-## Configurations page
-1. a6 on configs page, just literal include
-1. Settings.json for user and workspace
-   1. See developer environment setup
-   1. dev env setup then go through and link back to configurations page
-1. Mention on vs code settings how nearly everything should be workspace
-   1. Only a few things should be user
-
-## Tools
-1. Vim section, find all for vim links to it
-   1. Add to Git and VS code aaaaaa references tables
-1. Dev env setup should link to tools section with references used to learn
-1. Show how to install Vim in dev environment (at least VS code ext)
-   1. Need to put in the VS Code page
-
 ## Versioning procedures
 1. Update acronyms, and versioning statistics table
 1. Restructure links if a list is > 10
 1. Back on master, for "latest", do a commit after the tagged release
    1. Indicate the version time after pushing
+* Use '*' for todo headings
+* Add in UTC for most recent version when starting new branch
 
+## Advanced stats
+* Number of commits total at each commit
+* Say time between releases
+* Comment how most recent release doesn't have UTC included
+* Get stats from first few versions in a dataframe
+* Get total number of commits at the time of a tag
+   * df can then calculate the diff
+* New jupyter cell for each addition
+* The .ipynb stays in the doc/indices folder
+   * Need to indicate on doc tree
+* Also say flag for release type
+   * 'major', 'minor', 'release'is an r_type
 ## Proofreading
 1. Find all for unlinked "file" on links page
 
@@ -188,6 +199,10 @@
 1. Add a csv table to the concepts-code page once you have more references
    1. Packges, __init__, setup.py, etc.
    1. As you go through and explain
+
+## Writing procedures
+* Use draw.io to make an SVG
+* Where to keep the .xml?
 
 ## Content card
 1. AnaKAHNndaKAHN 2019
