@@ -124,9 +124,9 @@ Content is, of course, :wiki-pg:`rendered <Rendering_(computer_graphics)>`
 differently in the :wiki-pg:`PDF` and in the :wiki-pg:`website <Website>`,
 especially for:
 
-* :rst:role:`guilabels <guilabel>`
+* :rst:role:`guilabels <guilabel>` like :guilabel:`this`
 * :ref:`tools-BibTeX`
-* :ref:`tools-Napoleon`
+* :ref:`concepts-code-e4`
 * :wiki-pg:`URLs <URL>` in a
   :doc:`directive argument <sphinx:usage/restructuredtext/basics>` for a
   :ref:`csv-table <sphinx:table-directives>`

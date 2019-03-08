@@ -7,7 +7,8 @@
 Analyzing
 #########
 
-#. Use the :xref:`VS Code integrated terminal <VS-Code-terminal>` to
+#. Use the
+   :vs-code-doc:`VS Code integrated terminal <editor/integrated-terminal>` to
    :doc:`install <conda:commands/install>` some more
    :ref:`conda packages <conda:concept-conda-package>` for :term:`a6`:
 

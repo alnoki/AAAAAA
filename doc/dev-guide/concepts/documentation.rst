@@ -279,7 +279,7 @@ Whitespace and line breaking
 #. Use a :wiki-pg:`blank line <Line_(text_file)>` before
    :doc:`directive content <sphinx:usage/restructuredtext/directives>`, but
    not before
-   :doc:`directive options <sphinx:usage/restructuredtext/directives>`:
+   :doc:`directive options <sphinx:usage/restructuredtext/basics>`:
 
    .. code-block:: rest
 

@@ -820,25 +820,6 @@ Showing code
      sections of :wiki-pg:`code <Source_code>`, directly from a
      :wiki-pg:`file <Computer_file>`
 
-#. :doc:`Autodoc <sphinx:usage/extensions/autodoc>`
-
-   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to include content
-     from code :ref:`docstrings <python:tut-docstrings>`
-
-#. :ref:`NumPy docstrings <numpy:format>`
-
-   * :ref:`Docstring <python:tut-docstrings>` format provided by
-     :doc:`NumPy <numpy:about>`
-
-#. :doc:`Napoleon <sphinx:usage/extensions/napoleon>`
-
-   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
-     content from :ref:`NumPy docstrings <numpy:format>`
-
-#. :pep:`257`
-
-   * Official conventions for :ref:`docstrings <python:tut-docstrings>`
-
 #. :pep:`Type annotations <484>`
 
    * :wiki-pg:`Syntax <Syntax_(programming_languages)>` to indicate
@@ -854,15 +835,49 @@ Showing code
    * Sample :wiki-pg:`syntax <Syntax_(programming_languages)>` for
      :doc:`autodoc <sphinx:usage/extensions/autodoc>`
 
+#. :ref:`sphinx:info-field-lists`
+
+   * :ref:`reST syntax <tools-restructured-text>` that
+     :doc:`napoleon <sphinx:usage/extensions/napoleon>` produces
+
+Napoleon
+--------
+
+#. :doc:`Napoleon <sphinx:usage/extensions/napoleon>`
+
+   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to include
+     content from :ref:`NumPy docstrings <numpy:format>`
+
+#. :doc:`Autodoc <sphinx:usage/extensions/autodoc>`
+
+   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to include content
+     from code :ref:`docstrings <python:tut-docstrings>`
+
+#. :pep:`257`
+
+   * Official conventions for :ref:`docstrings <python:tut-docstrings>`
+
+#. :ref:`NumPy docstrings <numpy:format>`
+
+   * :ref:`Docstring <python:tut-docstrings>` format provided by
+     :doc:`NumPy <numpy:about>`
+
 #. :doc:`napoleon:example_numpy`
 
    * Sample :ref:`NumPy docstring syntax <numpy:format>` for
      :doc:`napoleon <sphinx:usage/extensions/napoleon>`
 
-#. :ref:`sphinx:info-field-lists`
+#. :rst:dir:`automodule`
 
-   * :ref:`reST syntax <tools-restructured-text>` that
-     :doc:`napoleon <sphinx:usage/extensions/napoleon>` produces
+   * Show :ref:`modules <python:tut-modules>`
+
+#. :rst:dir:`autodata`
+
+   * Show :ref:`attributes <python:tut-scopes>`
+
+#. :rst:dir:`autofunction`
+
+   * Show :ref:`functions <python:tut-functions>`
 
 reStructuredText
 ================
@@ -1067,11 +1082,12 @@ General
 
    * Configurations in ``settings.json``
 
-#. :xref:`VS Code integrated terminal <VS-Code-terminal>`
+#. :vs-code-doc:`VS Code integrated terminal <editor/integrated-terminal>`
 
    * Using a :xref:`command line <command-line>`
 
-#. :xref:`VS Code command palette <command-palette>`
+#. :vs-code-doc:`VS Code command palette
+   <getstarted/userinterface#_command-palette>`
 
    * Direct :wiki-pg:`command <Command_line>` input
 

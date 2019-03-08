@@ -1,11 +1,3 @@
-""":ref:`concepts-configs` for :ref:`tools-sphinx`
-
-This is included so that the :ref:`automatic indices <indices-auto>`
-can add :ref:`configs-conf-py` to the
-:ref:`module index <modindex>` via :ref:`napoleon <tools-napoleon>`
-
-"""
-
 import os
 import sys
 sys.path.insert(0, os.path.abspath('exts'))  # For xref
@@ -212,6 +204,7 @@ intersphinx_mapping = {
     'pypa': ('https://pip.pypa.io/en/latest/', None),
     'pypa-guide': ('https://packaging.python.org/', None),
 }
+"""Contains :ref:`intersphinx base URLs <sphinx-intersphinx>`"""
 
 extlinks = {
     'wiki-pg': ('https://en.wikipedia.org/wiki/%s', ''),
@@ -230,6 +223,7 @@ extlinks = {
     'github-help': ('https://help.github.com/en/articles/%s', ''),
     'vs-code-api': ('https://code.visualstudio.com/api/%s', ''),
 }
+"""Contains :ref:`extlinks base URLs <sphinx-extlinks>`"""
 
 # Base urls used by xrefs extension: delete eventually after migrating
 url = {
@@ -282,10 +276,6 @@ xref_links = {
                            'github.com/alnoki/AAAAAA/zip/master'),
 
     # To sort
-    'VS-Code-terminal': ("integrated terminal", url['VS Code doc'] +
-                         'editor/integrated-terminal'),
-    'command-palette': ("command palette", url['VS Code doc'] +
-                        'getstarted/userinterface#_command-palette'),
     'VS-Code-interpreter':
         ("select Python interpreter", url['VS Code doc'] +
          'python/environments#_select-and-activate-an-environment'),
@@ -415,3 +405,4 @@ xref_links = {
     # New links below, sorted links above
     'stack-overflow': ("Stack Overflow", url['Stack OF']),
 }
+"""Contains :ref:`xref URLs <sphinx-xref>`"""

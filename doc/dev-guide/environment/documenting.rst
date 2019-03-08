@@ -10,9 +10,10 @@ Documenting
 #. :xref:`Download VS code <VS-Code>` and get ready for some
    :vs-code-doc:`extensions <editor/extension-gallery>`
 #. :wiki-pg:`Install` the :xref:`VS-Code-bookmarks-ext`
-#. Update the :xref:`VS-Code-terminal` ``USER SETTINGS`` in
-   :vs-code-doc:`settings.json <getstarted/settings>` so that you can use
-   :ref:`Conda <conda:starting-conda>`:
+#. Update the
+   :vs-code-doc:`VS Code integrated terminal <editor/integrated-terminal>`
+   ``USER SETTINGS`` in :vs-code-doc:`settings.json <getstarted/settings>` so
+   that you can use :ref:`Conda <conda:starting-conda>`:
 
    * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, add the following
      options so you can use :xref:`bash login mode invocation<bash-man-page>`:
@@ -43,7 +44,10 @@ Documenting
         Be sure to :xref:`copy and paste <copy-paste>` the whole box! It may
         :wiki-pg:`scroll <Scrolling>` to the right
 
-#. Use the :xref:`command-palette` to open a new :xref:`VS-Code-terminal` and
+#. Use the
+   :vs-code-doc:`command palette <getstarted/userinterface#_command-palette>`
+   to open a new
+   :vs-code-doc:`Integrated terminal <editor/integrated-terminal>` and
    :xref:`copy and paste <copy-paste>` the following
    :wiki-pg:`command <Command_line>` to
    :doc:`create <conda:commands/create>` a new
@@ -55,8 +59,10 @@ Documenting
 
       conda create --name a6 python conda pep8 sphinx sphinx_rtd_theme
 
-#. Configure the :xref:`VS-Code-terminal` to automatically
-   :ref:`activate <conda:activate-env>` the :term:`a6 evironment <a6>`:
+#. Configure the
+   :vs-code-doc:`Integrated terminal <editor/integrated-terminal>` to
+   automatically :ref:`activate <conda:activate-env>` the
+   :term:`a6 environment <a6>`:
 
    * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, there is no
      :xref:`bash <bash-man-page>` equivalent to the ``/K``
@@ -65,7 +71,7 @@ Documenting
      add the following line to :xref:`~/.bash_profile <bash-man-page>`, which
      will :wiki-pg:`execute <Execution_(computing)>` any time a
      :xref:`bash login mode <bash-man-page>` session starts (even outside of
-     the :xref:`VS Code integrated terminal <VS-Code-terminal>`):
+     the :vs-code-doc:`integrated terminal <editor/integrated-terminal>`):
 
      .. code-block:: text
 
@@ -86,8 +92,9 @@ Documenting
 
 #. :wiki-pg:`Install <Installation_(computer_programs)>` the
    :vs-code-ext:`VS Code Python extension <ms-python.python>` and
-   use the :xref:`command-palette` to
-   :xref:`select the intepreter <VS-Code-interpreter>` for :term:`a6`
+   use the
+   :vs-code-doc:`command palette <getstarted/userinterface#_command-palette>`
+   to :xref:`select the intepreter <VS-Code-interpreter>` for :term:`a6`
 
    * This should add a setting for your :wiki-pg:`computer <Computer>`-specific
      :wiki-pg:`path <Path_(computing)>` to
@@ -115,7 +122,7 @@ Documenting
      :ref:`activating <conda:activate-env>` the :term:`a6 evironment <a6>` then
      :wiki-pg:`typing <Typing>` :command:`which python`
 
-#. Use the :xref:`VS-Code-terminal` to
+#. Use the :vs-code-doc:`integrated terminal <editor/integrated-terminal>` to
    :doc:`install <conda:commands/install>` a few more
    :ref:`packages <conda:concept-conda-package>` that come from the
    :ref:`conda-forge <tools-anaconda>`:
@@ -129,7 +136,9 @@ Documenting
    <lextudio.restructuredtext>`
 #. If you don't already have it, :xref:`download Git <git-download>`
 
-   * To figure out if you have it, open the :xref:`VS-Code-terminal` and type:
+   * To figure out if you have it, open the
+     :vs-code-doc:`Integrated terminal <editor/integrated-terminal>` and
+     :wiki-pg:`type <Typing>`:
 
      .. code-block:: bash
 
@@ -137,8 +146,9 @@ Documenting
 
 #. :wiki-pg:`Install <Installation_(computer_programs)>` the
    :vs-code-ext:`GitLens extension <eamodio.gitlens>`
-#. Use the :xref:`command-palette` to :git-doc:`git-clone` the
-   :github:`AAAAAA repository <alnoki/AAAAAA>`
+#. Use the
+   :vs-code-doc:`command palette <getstarted/userinterface#_command-palette>`
+   to :git-doc:`git-clone` the :github:`AAAAAA repository <alnoki/AAAAAA>`
 
    * This will include all of the
      :vs-code-doc:`VS Code settings <getstarted/settings>` that

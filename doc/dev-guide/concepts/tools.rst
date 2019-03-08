@@ -302,13 +302,14 @@ which has all the latest features but may not be completely stable
 
    :vs-code-doc:`Python integration <languages/python>`, "Official tutorial
    for :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
-   :xref:`Command palette <command-palette>`, "Quickly input
+   ":vs-code-doc:`Command palette
+   <getstarted/userinterface#_command-palette>`", "Quickly input
    :wiki-pg:`commands <Command_line>`"
    :vs-code-doc:`Settings <getstarted/settings>`, "Official
    :ref:`configuration options <configs-settings-json>`"
    :vs-code-doc:`Extensions <editor/extension-gallery>`, "Additional
    functionality"
-   :xref:`Integrated terminal <VS-Code-terminal>`, "Run a
+   :vs-code-doc:`Integrated terminal <editor/integrated-terminal>`, "Use a
    :xref:`command line <command-line>` inside :xref:`VS Code <VS-Code>`"
    :vs-code-doc:`VS Code unit testing <python/unit-testing>`,"
    :ref:`tools-pytest` integration"
@@ -594,6 +595,7 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
 
    :ref:`Documentation syntax <concepts-doc-style>`, Usage
    :ref:`Napoleon example <concepts-code-e4>`, Usage
+   :ref:`Napoleon procedures <procedures-napoleon>`, Usage
 
 .. csv-table:: Select references
    :align: center

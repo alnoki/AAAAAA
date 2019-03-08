@@ -1,27 +1,13 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Napoleon
-1. Link to the module index
-   * Explain how you can use members, etc
-* Show how to link between things using python domain (link in tools section)
-* Links to get - throw them in napoleon syntax part?
-   * Python module for python general section
-   * automodule directive for napoleon section
-      * Same with autodata and autofunction
-1. Show an example of using a blank annotation
-   1. Like in conf.py
-   1. Mention keep blank if lots of data
-      1. Otherwise doesn't render right in PDF
-         1. In dist-doc note as much
-1. Explain empty docstring
-1. Link to actual Py objs
-1. New module needs to have automodule to be in module index
-   1. Even if just show one member
-1. The autodoc module docstring at top of conf.py then links to napoleon page
-* dist-doc say how autodata looks different
+## Proofreading
+* e4s? see all references
 
 ## Tools
+* https://code.visualstudio.com/docs/getstarted/userinterface
+* Official Google search tips
+   * https://support.google.com/websearch/answer/134479?hl=en
 * Fill in Vim stub
    * See the configurations Vim section
 1. Vim section, find all for vim links to it
@@ -36,9 +22,24 @@
 1. Vim procedures
 1. Vim integration
 
+## Building a LaTeX PDF
+* Download Tex Live
+   * https://www.tug.org/texlive/acquire-netinstall.html
+   * A library of TeX syntax
+* Install perl at least v2.08 for conda environment
+   * https://tex.stackexchange.com/questions/186065/sublime-text-latextools-fail
+* From doc directory, make latexpdf
+   * Document was blank
+* From doc directory, make latex
+   * Then inside doc directory, keep doing make until passes are done
+* Can also try other builder distributions at https://www.tug.org/index.html
+* Just make a separate conda env with Perl
+   * Takes a long time to download texlive too
+
 ## Versioning procedures
 1. Update acronyms, and versioning statistics table
 1. Restructure links if a list is > 10
+   * Or do this in writing section?
 1. Back on master, for "latest", do a commit after the tagged release
    1. Indicate the version time after pushing
 * Use '*' for todo headings
@@ -56,6 +57,7 @@
    * Need to indicate on doc tree
 * Also say flag for release type
    * 'major', 'minor', 'release'is an r_type
+
 ## Proofreading
 1. Find all for unlinked "file" on links page
 
@@ -165,6 +167,7 @@
    1. Also then review the sphinx settings section
 
 ## src updates
+1. Already have the link for autofunction in napoleon links if need to describe
 1. User sections for "tracking" and "choosing"
 1. Give an example of initializing a transaction class
 1. ISO 8061 (or whatever robinhood uses) for dates
@@ -216,6 +219,8 @@
 1. Use version 0.3 field list
 
 ## adp.py
+* An intersphinx that automatically grabs the intersphinx target from conf.py
+   * adp.py objs rtfd
 1. https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
 1. autodoc it on the procedures index page
 1. Cite the checklist manifesto
@@ -396,6 +401,27 @@
 
 # 0.6.0
 
+## For fun
+
+   - In Python 3 you can use a bare "*" asterisk
+   - in function parameter lists to force the
+   - caller to use keyword arguments for certain
+   - parameters:
+
+   >>> def f(a, b, *, c='x', d='y', e='z'):
+   ...     return 'Hello'
+
+   - To pass the value for c, d, and e you
+   - will need to explicitly pass it as
+   - "key=value" named arguments:
+   >>> f(1, 2, 'p', 'q', 'v')
+   TypeError:
+   "f() takes 2 positional arguments but 5 were given"
+
+   >>> f(1, 2, c='p', d='q',e='v')
+   'Hello'
+
+
 ## Robinhood time
 1. https://stackabuse.com/converting-strings-to-datetime-in-python/
    1. Do strptime
@@ -426,10 +452,11 @@
 1. RegEx
    1. https://regexr.com/
 
-
-
 ## Zen page updates
 1. Go through and re-write/re-link once there are more places to link to
+* Tools of Titans
+   * You'll be overwhelmed with references, but remember...
+   * The good *stuff* sticks
 
 ## Pandas ledger class
 1. Make a ledger a sub class of a dataframe
@@ -519,6 +546,8 @@
       1. Also it is academic
 
 ## Numerical analysis
+* https://scipy-cookbook.readthedocs.io/
+   * https://scipy-cookbook.readthedocs.io/items/KalmanFiltering.html
 1. https://web.stanford.edu/~schmit/cme193/
    1. has seaborn and pandas examples
    1. Predictor of survivor on Titanic, powerful statistical modeling tools

@@ -52,7 +52,9 @@ which is a special type of :term:`object <python:object>`:
 
 .. tip::
 
-   You can click :guilabel:`[source]` above to view the original
+   If you are viewing
+   :ref:`AAAAAA documentation as a website <what-next-format>`, you can click
+   :guilabel:`[source]` above to view the original
    :xref:`source code <source-code>`, then click :guilabel:`[docs]` to return
 
 :py:class:`~AAAAAA.ledger.Transaction` has a
