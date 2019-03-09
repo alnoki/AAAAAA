@@ -32,6 +32,13 @@ Sphinx
 Building documentation
 **********************
 
+:doc:`sphinx:usage/builders/index` enable you to create both
+:ref:`website and PDF documentation <dist-doc-pdf>`. Make sure you are using
+:term:`a6`
+
+.. contents:: Contents
+   :local:
+
 .. _sphinx-building-manually:
 
 Manually
@@ -141,6 +148,55 @@ Automatically
 
 .. [#] If you try to use no :wiki-pg:`delay <Time>` at all, ``-s 0``, the
    :xref:`browser <web-browser>` might not open
+
+.. _sphinx-building-pdf:
+
+PDF version
+===========
+
+.. note::
+
+   :ref:`Read the Docs will do this for you <dist-doc-pdf>`, but if you are so
+   inclined it is possible to do it on your :wiki-pg:`computer <Computer>`
+
+#. :wiki-pg:`Download` based on your :wiki-pg:`OS <Operating_system>`:
+
+   .. csv-table::
+      :align: center
+      :header: :wiki-pg:`OS <Operating_system>`, What to get
+
+      :wiki-pg:`Mac <Macintosh_operating_system>`, :xref:`mactex`
+      :wiki-pg:`Windows <Microsoft_Windows>`, :xref:`texlive`
+      :wiki-pg:`Linux`, :xref:`texlive` (probably)
+
+
+#. Use the :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
+   :ref:`documentation root directory <concepts-doc-tree>`, with the
+   :doc:`latex builder <sphinx:usage/builders/index>`:
+
+   .. code-block:: bash
+
+      make latex
+
+#. Temporarily :ref:`create a conda environment <conda-create-a6>` that you
+   won't need again
+
+   .. code-block:: bash
+
+      conda create -n PDF perl
+
+#. :ref:`Activate the PDF environment <conda:activate-env>`, then
+   :wiki-pg:`navigate <Path_(computing)>` to ``_build/latex``:
+
+   .. code-block:: bash
+
+      make
+
+   .. tip::
+
+      You may need to do this a few times since it can take a few passes to
+      resolve all the internal references. Just :wiki-pg:`type <Typing>`
+      :kbd:`enter` if you get queried at all
 
 .. _sphinx-managing-references:
 

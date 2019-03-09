@@ -139,7 +139,8 @@ about how to view the :ref:`AAAAAA workspace settings <concepts-configs-tree>`
 and an interpretation of a few specific options
 
 The :ref:`AAAAAA workspace settings <concepts-configs-tree>` are separated
-into categories with :wiki-pg:`comments <Comment_(computer_programming)>`
+into categories with :wiki-pg:`comments <Comment_(computer_programming)>`. For
+consistency, :wiki-pg:`X11 color names <Web_colors>` are used
 
 User
 ----

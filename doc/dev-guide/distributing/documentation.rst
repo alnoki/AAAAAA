@@ -59,7 +59,14 @@ indicate them in :ref:`configs-conf-py`, and potentially in
 Monitoring builds
 *****************
 
-On your :xref:`rtfd-account`, it is important to become familiar with the
+The :ref:`Sphinx procedures <procedures-sphinx>` describe how to
+:ref:`build documentation <sphinx-building-doc>` on your
+:wiki-pg:`computer <Computer>`, which you'll want to do as you write
+
+Whenever you :ref:`commit <git-committing>`,
+:ref:`tools-read-the-docs` will create a new :wiki-pg:`website <Website>` of
+your :wiki-pg:`documentation <Software_documentation>`. On your
+:xref:`rtfd-account`, it is important to become familiar with the
 :doc:`builds <rtfd:builds>` monitoring interface at
 :menuselection:`Projects --> AAAAAA --> Builds`. You should check this when you
 are :ref:`releasing a new version <versioning-releasing>` at the very least,
@@ -118,7 +125,10 @@ by the :ref:`headings <concepts-doc-style>` in :py:data:`conf.master_doc`
 The :wiki-pg:`website <Website>` is considered the primary way to view
 :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`, but the
 :wiki-pg:`PDF` is useful for measuring the
-:ref:`amount of content generated for a version release <versions-stats>`
+:ref:`amount of content generated for a version release <versions-stats>`. You
+can also follow the :ref:`procedures to build a PDF <sphinx-building-pdf>` on
+your computer if you are okay with :wiki-pg:`downloading <Download>` a
+particularly large :wiki-pg:`LaTeX` library
 
 Content is, of course, :wiki-pg:`rendered <Rendering_(computer_graphics)>`
 differently in the :wiki-pg:`PDF` and in the :wiki-pg:`website <Website>`,

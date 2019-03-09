@@ -1,6 +1,9 @@
 {
     // Colors
     "workbench.colorTheme": "Default Dark+",
+    "workbench.colorCustomizations": {
+        "editor.background": "#000000", // Black
+    },
     "editor.tokenColorCustomizations": {
         "comments": "#3CB371", // MediumSeaGreen
         "strings": "#BA55D3", // MediumOrchid

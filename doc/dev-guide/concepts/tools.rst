@@ -265,7 +265,10 @@ The :github:`AAAAAA repository <alnoki/AAAAAA>` comes with a collection of
 :wiki-pg:`installed <Installation_(computer_programs)>`! These
 :ref:`configurations <configs-vs-code>` will
 help with things like :ref:`code style <concepts-code-style>` and
-:ref:`test discovery <pytest-discover-tests>`
+:ref:`test discovery <pytest-discover-tests>`. Additionally, this will
+:ref:`configure <concepts-configs>` your
+:vs-code-doc:`VS Code user interface <getstarted/userinterface>` with some
+select :wiki-pg:`X11 colors <Web_colors>`
 
 There is also the :xref:`VS Code Insider Edition <VS-Code-insiders>`,
 which has all the latest features but may not be completely stable
@@ -274,7 +277,7 @@ which has all the latest features but may not be completely stable
    :align: center
    :header: Extension, Purpose, Setup Phase
 
-   :xref:`Bookmarks <VS-Code-bookmarks-ext>`, Mark/navigate content, "
+   :vs-code-ext:`Bookmarks <alefragnani.Bookmarks>`, Mark/navigate content, "
    :ref:`Documenting <dev-env-documenting>`"
    :vs-code-ext:`Python <ms-python.python>`, Using :ref:`tools-python`, "
    :ref:`Documenting <dev-env-documenting>`"
@@ -300,6 +303,8 @@ which has all the latest features but may not be completely stable
    :align: center
    :header: Reference, Topic
 
+   :vs-code-doc:`User interface <getstarted/userinterface>`, "Official
+   introduction"
    :vs-code-doc:`Python integration <languages/python>`, "Official tutorial
    for :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
    ":vs-code-doc:`Command palette
@@ -323,6 +328,8 @@ which has all the latest features but may not be completely stable
    :vs-code-doc:`Themes <getstarted/themes>`, General usage
    :vs-code-api:`Color theme extension guide <extension-guides/color-theme>`, "
    Enhanced functionality"
+   :vs-code-api:`Token color customizations <references/theme-color>`, "
+   Official reference"
    :github:`Token color customizations <Microsoft/vscode/pull/29393>`, "
    Advanced usage"
 
@@ -395,6 +402,8 @@ functionality and :ref:`several are used <tools-sphinx-extensions>` in
    :wiki-pg:`documentation <Software_documentation>`"
    :doc:`conf.py <sphinx:usage/configuration>`, "Official
    :ref:`configuration options <configs-conf-py>`"
+   :doc:`sphinx:usage/builders/index`, "Create different styles of
+   :wiki-pg:`documentation <Software_documentation>`"
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "
    :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
    :yt-vid:`Practical use seminar <0ROZRNZkPS8>`, "Practical

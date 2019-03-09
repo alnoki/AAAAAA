@@ -64,6 +64,17 @@ Managing settings
    * :guilabel:`Preferences: Open Raw Default Settings`
 
 
+***********************
+Changing general colors
+***********************
+
+#. Review the
+   :vs-code-api:`token color customization <references/theme-color>` for the
+   :ref:`setting <configs-settings-json>` you want to modify
+#. Choose an :wiki-pg:`X11 color <Web_colors>` and add it to
+   :ref:`configs-settings-json` like the rest of the examples therein
+
+
 ****************************
 Changing syntax highlighting
 ****************************
@@ -77,7 +88,8 @@ Changing syntax highlighting
    :wiki-pg:`string <String_(computer_science)>` you are interested in
 #. Update the resultant
    :github:`textMateRules <Microsoft/vscode/pull/29393>` in
-   :ref:`configs-settings-json` with your desired :wiki-pg:`color <Web_colors>`
+   :ref:`configs-settings-json` with your desired
+   :wiki-pg:`X11 color <Web_colors>`
 
 
 ******************

@@ -595,6 +595,11 @@ Practical use
      :ref:`checking links <sphinx-checking-links>`
    * Team :wiki-pg:`development <Software_development>` strategies
 
+#. :doc:`Sphinx builders <sphinx:usage/builders/index>`
+
+   * Create different styles of
+     :wiki-pg:`documentation <Software_documentation>`
+
 #. :xref:`sphinx-autobuild`
 
    * Automatically update :ref:`documentation builds <sphinx-building-doc>`
@@ -951,8 +956,8 @@ Syntax
 
          This is an :xref:`admonotion <admonition>`
 
-Engine-agnostic tools
-=====================
+Engine-agnostic formatting
+==========================
 
 #. :xref:`tables-generator`
 
@@ -1036,21 +1041,6 @@ Extensions
 VS Code
 =======
 
-Colors
-------
-
-#. :vs-code-doc:`Themes <getstarted/themes>`
-
-   * General workspace :wiki-pg:`colors <Web_colors>`
-
-#. :vs-code-api:`Color theme extension guide <extension-guides/color-theme>`
-
-   * Enhanced :wiki-pg:`color <Web_colors>` customization functionality
-
-#. :github:`Token color customizations <Microsoft/vscode/pull/29393>`
-
-   * Advanced :wiki-pg:`color <Web_colors>` manipulation
-
 General
 -------
 
@@ -1082,6 +1072,10 @@ General
 
    * Configurations in ``settings.json``
 
+#. :vs-code-doc:`User interface <getstarted/userinterface>`
+
+   * Explanation of core components
+
 #. :vs-code-doc:`VS Code integrated terminal <editor/integrated-terminal>`
 
    * Using a :xref:`command line <command-line>`
@@ -1094,6 +1088,25 @@ General
 #. :xref:`VS-Code-insiders`
 
    * Has the latest features, may have problems
+
+Colors
+------
+
+#. :vs-code-doc:`Themes <getstarted/themes>`
+
+   * General workspace :wiki-pg:`colors <Web_colors>`
+
+#. :vs-code-api:`Token color customizations <references/theme-color>`
+
+   * Reference for changing various workspace :wiki-pg:`colors <Web_colors>`
+
+#. :vs-code-api:`Color theme extension guide <extension-guides/color-theme>`
+
+   * Enhanced :wiki-pg:`color <Web_colors>` customization functionality
+
+#. :github:`Token color customizations usage <Microsoft/vscode/pull/29393>`
+
+   * Advanced :wiki-pg:`color <Web_colors>` manipulation
 
 Extensions
 ----------
@@ -1110,7 +1123,8 @@ Extensions
 
    * Work with :ref:`tools-python`
 
-#. :xref:`Selecting the Python interpreter <VS-Code-interpreter>`
+#. :vs-code-doc:`Selecting the Python interpreter
+   <python/environments#_select-and-activate-an-environment>`
 
    * Integrate the :doc:`Python interpreter <python:tutorial/interpreter>`
 
@@ -1119,7 +1133,7 @@ Extensions
 
    * Work with :ref:`tools-pytest`
 
-#. :xref:`VS-Code-bookmarks-ext`
+#. :vs-code-ext:`VS Code Bookmarks extension <alefragnani.Bookmarks>`
 
    * Mark and navigate :xref:`source code <source-code>`
 
@@ -1595,6 +1609,15 @@ Mathematics
 #. :wiki-pg:`Factorial`
 
    * :math:`x! = x(x - 1)(x - 2)...`
+
+#. :xref:`mactex`
+
+   * :wiki-pg:`LaTeX` for :wiki-pg:`Mac <Macintosh_operating_systems>`
+
+#. :xref:`texlive`
+
+   * :wiki-pg:`LaTeX` for :wiki-pg:`Windows <Microsoft_windows>` (and probably
+     :wiki-pg:`Linux`)
 
 
 **********

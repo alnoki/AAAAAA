@@ -1,0 +1,6 @@
+:wiki-pg:`Time` of :xref:`release <semver>`,:xref:`Number <semver>`,# of :ref:`commits <tools-git>`,:term:`PPP`,:term:`AAA`,:xref:`Type <semver>`
+2019-04-01 00:00:00,0.4.0,130,115,12,minor
+2019-02-17 19:41:19+00:00,0.3.1,98,69,6,patch
+2019-02-17 18:45:27+00:00,0.3.0,96,69,6,minor
+2019-02-09 05:24:35+00:00,0.2.0,77,51,3,minor
+2019-01-31 02:57:50+00:00,0.1.0,67,45,2,minor

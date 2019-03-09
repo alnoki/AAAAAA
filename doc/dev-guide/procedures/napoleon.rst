@@ -62,7 +62,7 @@ Referencing Python components
 Documenting variables
 *********************
 
-#. Use  :rst:dir:`autodata` to create :ref:`E4s <concepts-code-e4>` for
+#. Use  :rst:dir:`autodata` to create :ref:`E4 <concepts-code-e4>` for
    :ref:`variables <python:tut-scopes>`, but make sure to use an empty
    ``annotation``
    :doc:`directive option <sphinx:usage/restructuredtext/basics>` if the

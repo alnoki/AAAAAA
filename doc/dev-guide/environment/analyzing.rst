@@ -33,8 +33,13 @@ Analyzing
 #. Use :guilabel:`Edit`, then :guilabel:`nbextensions config`
    to enable the following :doc:`extensions <nb-extensions:index>`:
 
-   #. :doc:`Collapsible Headings <nb-extensions:nbextensions/collapsible_headings/readme>`
+   #. :doc:`Collapsible Headings
+      <nb-extensions:nbextensions/collapsible_headings/readme>`
    #. :doc:`nb-extensions:nbextensions/toc2/README`
+
+      * Select
+        :guilabel:`Add a Table of Contents cell at the top of the notebook`
+
    #. :doc:`nb-extensions:nbextensions/varInspector/README`
    #. :xref:`live-md-preview`
 

@@ -274,14 +274,11 @@ xref_links = {
          'quantity-always-trumps-quality'),
     'AAAAAA-zip-archive': ('AAAAAA repository archive', 'https://codeload.'
                            'github.com/alnoki/AAAAAA/zip/master'),
+    'mactex': ('MacTeX', 'http://www.tug.org/mactex/'),
+    'texlive': ('Tex Live', 'http://www.tug.org/texlive/'),
+    'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
 
     # To sort
-    'VS-Code-interpreter':
-        ("select Python interpreter", url['VS Code doc'] +
-         'python/environments#_select-and-activate-an-environment'),
-    'VS-Code-bookmarks-ext': ("Bookmarks extension", url['VS Code ext'] +
-                              'alefragnani.Bookmarks'),
-    'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
     'bash-man-page': ("bash shell manual", url['linux-die'] + 'bash'),
     'Doc8': ("Doc8 reST syntax checker", url['conda-forge'] + 'doc8'),
     'git-manual': ("Git manual", url['git-scm'] + 'docs/user-manual.html'),

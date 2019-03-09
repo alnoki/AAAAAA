@@ -1,14 +1,51 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Proofreading
-* e4s? see all references
+## Advanced stats
+* Update the output column mapping dictionary to be at the top
+   * Then use the column mapping before any output
+* Comment how most recent release doesn't have UTC included
+* Add to doc nbs tree
+   * Also the generated csv file
+      * Just link to cs table directive
+* Git procedures shows how to get commit statistics
+   * uses tag and rev-count
+   * https://stackoverflow.com/questions/677436/how-do-i-get-the-git-commit-count/21607276
+   * git rev-list --count 0.1.0
+* Update the notebook when releasing
 
-## Tools
-* https://code.visualstudio.com/docs/getstarted/userinterface
-* Official Google search tips
-   * https://support.google.com/websearch/answer/134479?hl=en
-* Fill in Vim stub
+## Derived version statistics
+* Per minor release, get average difference in metrics
+   * N commits
+   * PPP
+   * AAA
+   * Time
+   * Have this print out to a text file that can be literal included?
+      * Use the :include: directive
+* Also say time between releases?
+
+## VS Code procedures for efficiency
+* Say use bookmark extension and commands
+* View: keep editor
+
+## Vim training
+* https://vim.fandom.com/wiki/Recording_keys_for_repeated_jobs
+1. https://web.archive.org/web/20161221161539/http://bullium.com/support/vim.html#move
+1. The purple interactive tutorial
+1. Basic tutorial
+   1. https://vim.fandom.com/wiki/Tutorial
+1. Reference
+   1. https://vim.fandom.com/wiki/All_the_right_moves
+1. Top rated Vim tutorials
+   1. https://gitconnected.com/learn/vim
+1. http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
+   1. :help usr_02.txt
+1. Have on the dev env setup page
+   1. No need to make a procedures page, it's all there
+1. Make a tools page that is jut for Vim
+   1. The contributing section references the vim tools section
+      1. Which has a ton of references on how to learn
+1. vimgolf
    * See the configurations Vim section
 1. Vim section, find all for vim links to it
    1. Add to Git and VS code aaaaaa references tables
@@ -18,23 +55,8 @@
 * Review Git setup and procedures, link to Vim tools page
 
 ## Version list update
-1. Napoleon procedures
 1. Vim procedures
 1. Vim integration
-
-## Building a LaTeX PDF
-* Download Tex Live
-   * https://www.tug.org/texlive/acquire-netinstall.html
-   * A library of TeX syntax
-* Install perl at least v2.08 for conda environment
-   * https://tex.stackexchange.com/questions/186065/sublime-text-latextools-fail
-* From doc directory, make latexpdf
-   * Document was blank
-* From doc directory, make latex
-   * Then inside doc directory, keep doing make until passes are done
-* Can also try other builder distributions at https://www.tug.org/index.html
-* Just make a separate conda env with Perl
-   * Takes a long time to download texlive too
 
 ## Versioning procedures
 1. Update acronyms, and versioning statistics table
@@ -44,19 +66,6 @@
    1. Indicate the version time after pushing
 * Use '*' for todo headings
 * Add in UTC for most recent version when starting new branch
-
-## Advanced stats
-* Number of commits total at each commit
-* Say time between releases
-* Comment how most recent release doesn't have UTC included
-* Get stats from first few versions in a dataframe
-* Get total number of commits at the time of a tag
-   * df can then calculate the diff
-* New jupyter cell for each addition
-* The .ipynb stays in the doc/indices folder
-   * Need to indicate on doc tree
-* Also say flag for release type
-   * 'major', 'minor', 'release'is an r_type
 
 ## Proofreading
 1. Find all for unlinked "file" on links page
@@ -469,12 +478,23 @@
 
 # 0.7.0
 
+## KFREAP
+* Kalman filter recursive estimator of asset price
+* You reap what you (KF)SOW?
+* Use price position, velocity, acceleration
+   * https://scipy-cookbook.readthedocs.io/items/KalmanFiltering.html
+* Make so you can nominalize to a percentage when you inject to the portfolio
+* Use simpson integration
+   * If not here, at least somewhere else
+
+
 ## robinhood user data
 1. Have a .txt file that denotes portfolios
 1. Have a way you can use google drive to store data
 
 ## alnoki's analysis archives
 1. A new section with a ton of plots
+* Use SVGs with the date embedded in each one
 
 # 1.0.0 Package release
 
@@ -514,6 +534,8 @@
 1. Need a to_string()
 
 # 1.1.0 BTMF
+* Can't be a coefficient, because sign of you and market could be different
+* Should just be a percentage positive or negative
 
 ## Main functionailty
 1. Adds PARDAFA and BTMF versus CRSPTMT

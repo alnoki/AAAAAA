@@ -63,7 +63,15 @@ Features
      * :ref:`Version statistics <versions-stats>`
      * :ref:`Indices section <indices-intro>`
      * :ref:`VS Code procedures <procedures-vs-code>`
+     * :ref:`Napoleon procedures <procedures-napoleon>`
 
+   * Add to :ref:`tools section <concepts-tools>`:
+
+     * :ref:`tools-google`
+     * :ref:`tools-vim`
+
+   * Integrate :ref:`tools-vim` with :ref:`tools-vs-code` and recommend during
+     :ref:`developer environment setup <dev-env-intro>`
    * Add :ref:`PDF vs Website explanation <what-next-format>`
    * Add :ref:`tools-extlinks` support and :ref:`procedures <sphinx-extlinks>`
    * Add :term:`checklist` explanation from :ref:`book-checklist-manifesto`
@@ -74,7 +82,6 @@ Features
    * Add explanation of :ref:`configs-conf-py` via
      :ref:`napoleon <tools-Napoleon>`, and assorted other
      :ref:`configurations <concepts-configs>`
-   * Add :ref:`Tools: Google <tools-google>` section
 
 
 * 0.3.1 (2019-02-17T19:41:19Z)
@@ -123,7 +130,6 @@ Statistics
       :ref:`version <versions-features>`
 
 .. csv-table:: :ref:`Version <versions-features>` statistics
+   :file: ../../nbs/doc/version-stats.csv
    :align: center
-   :header: :ref:`Version <versions-features>`, :term:`AAA`, :term:`PPP`
-
-   0.4.0, 9, 101
+   :header-rows: 1

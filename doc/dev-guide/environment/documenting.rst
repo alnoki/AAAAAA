@@ -9,7 +9,8 @@ Documenting
 
 #. :xref:`Download VS code <VS-Code>` and get ready for some
    :vs-code-doc:`extensions <editor/extension-gallery>`
-#. :wiki-pg:`Install` the :xref:`VS-Code-bookmarks-ext`
+#. :wiki-pg:`Install` the
+   :vs-code-ext:`VS Code Bookmarks extension <alefragnani.Bookmarks>`
 #. Update the
    :vs-code-doc:`VS Code integrated terminal <editor/integrated-terminal>`
    ``USER SETTINGS`` in :vs-code-doc:`settings.json <getstarted/settings>` so
@@ -94,7 +95,9 @@ Documenting
    :vs-code-ext:`VS Code Python extension <ms-python.python>` and
    use the
    :vs-code-doc:`command palette <getstarted/userinterface#_command-palette>`
-   to :xref:`select the intepreter <VS-Code-interpreter>` for :term:`a6`
+   to
+   :vs-code-doc:`select the intepreter
+   <python/environments#_select-and-activate-an-environment>` for :term:`a6`
 
    * This should add a setting for your :wiki-pg:`computer <Computer>`-specific
      :wiki-pg:`path <Path_(computing)>` to
