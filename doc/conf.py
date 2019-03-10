@@ -222,6 +222,8 @@ extlinks = {
     'docutils': ('http://docutils.sourceforge.net/%s', ''),
     'github-help': ('https://help.github.com/en/articles/%s', ''),
     'vs-code-api': ('https://code.visualstudio.com/api/%s', ''),
+    'linux-die': ('https://linux.die.net/man/1/%s', ''),
+    'conda-forge': ('https://anaconda.org/conda-forge/%s', ''),
 }
 """Contains :ref:`extlinks base URLs <sphinx-extlinks>`"""
 
@@ -279,8 +281,6 @@ xref_links = {
     'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
 
     # To sort
-    'bash-man-page': ("bash shell manual", url['linux-die'] + 'bash'),
-    'Doc8': ("Doc8 reST syntax checker", url['conda-forge'] + 'doc8'),
     'git-manual': ("Git manual", url['git-scm'] + 'docs/user-manual.html'),
     'git-download': ("Git download", url['git-scm'] + 'downloads'),
     'git-book': ("Git book", url['git-scm'] + 'book/en/v2'),

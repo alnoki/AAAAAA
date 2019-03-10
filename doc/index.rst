@@ -167,8 +167,8 @@ Developer guide
    dev-guide/index
    dev-guide/environment/index
    dev-guide/concepts/index
-   dev-guide/testing/index
    dev-guide/distributing/index
+   dev-guide/testing/index
    dev-guide/procedures/index
 
 .. _indices-and-tables:

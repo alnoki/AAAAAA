@@ -200,16 +200,17 @@ Listing project committers
 
       git log --pretty="%an, %ae, %cn, %ce"
 
-.. _git-get-time-commit:
+.. _git-get-commit-stats:
 
-Get the time of a commit
-========================
+Get commit statistics
+=====================
 
 .. csv-table:: Select references
    :align: center
    :header: Reference, Topic
 
-   :git-doc:`git-show`, Inspect :git-doc:`tags <git-tag>`
+   :git-doc:`git-show`, :wiki-pg:`Time` inspection
+   :git-doc:`git-rev-list`, :ref:`Commit <tools-git>` number inspection
    :xref:`dencode`, Convert :wiki-pg:`time standards <Time_standard>`
 
 Typically you will do this once a :git-doc:`tag <git-tag>` has already been
@@ -221,11 +222,16 @@ made
 
    .. code-block:: bash
 
-      git show -s --format=%cI 0.3.0
+      git show -s --format=%cI 0.4.0
 
 #. On :xref:`dencode`, convert using
    :wiki-pg:`UTC <Coordinated_Universal_Time>` and
    :wiki-pg:`ISO8601 Date (Extend) <ISO_8601>`
+#. To see the number of :ref:`commits <tools-git>`:
+
+   .. code-block:: bash
+
+      git rev-list --count 0.4.0
 
 .. _git-dev-tasks:
 

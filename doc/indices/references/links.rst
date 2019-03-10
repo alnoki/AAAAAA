@@ -521,6 +521,9 @@ Core commands
 
    * Inspect :git-doc:`tags <git-tag>` and :git-doc:`commits <git-commit>`
 
+#. :git-doc:`rev-list`
+
+   * Get number of :git-doc:`commits <git-commit>`
 
 Special features
 ================
@@ -904,9 +907,10 @@ General
 
    * Quick reference with :ref:`reST <tools-restructured-text>` examples
 
-#. :xref:`Doc8`
+#. :conda-forge:`Doc8 reST linter <doc8>`
 
-   * Style checker for :doc:`reST <sphinx:usage/restructuredtext/basics>`
+   * :wiki-pg:`Linter <Lint_(software)>` for
+     :doc:`reST <sphinx:usage/restructuredtext/basics>`
 
 Syntax
 ------
@@ -1410,14 +1414,14 @@ OS specifics
 
    * :xref:`command-line` for :wiki-pg:`Windows <Microsoft_Windows>`
 
-#. :xref:`bash-man-page`
+#. :linux-die:`bash`
 
    * :xref:`command-line` for :wiki-pg:`Mac <Macintosh_operating_systems>`
      and :wiki-pg:`Linux`
 
 #. :xref:`Change-bash-prompt`
 
-   * How to change :xref:`bash <bash-man-page>` prompt to a custom
+   * How to change :linux-die:`bash` prompt to a custom
      :xref:`string <string>` like ``$``
 
 #. :wiki-pg:`Exit status <Exit_status>`

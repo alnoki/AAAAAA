@@ -63,11 +63,10 @@ The :ref:`Sphinx procedures <procedures-sphinx>` describe how to
 :ref:`build documentation <sphinx-building-doc>` on your
 :wiki-pg:`computer <Computer>`, which you'll want to do as you write
 
-Whenever you :ref:`commit <git-committing>`,
 :ref:`tools-read-the-docs` will create a new :wiki-pg:`website <Website>` of
-your :wiki-pg:`documentation <Software_documentation>`. On your
-:xref:`rtfd-account`, it is important to become familiar with the
-:doc:`builds <rtfd:builds>` monitoring interface at
+your :wiki-pg:`documentation <Software_documentation>` whenever you
+:ref:`commit <git-committing>`. On your :xref:`rtfd-account`, it is important
+to become familiar with the :doc:`builds <rtfd:builds>` monitoring interface at
 :menuselection:`Projects --> AAAAAA --> Builds`. You should check this when you
 are :ref:`releasing a new version <versioning-releasing>` at the very least,
 and definitely whenever you use a new
@@ -107,6 +106,14 @@ then :ref:`tag <git-tagging>` the new :ref:`version <indices-versions>` on the
 :xref:`master branch <git-manual>` and enable it instead, so that your
 :wiki-pg:`website <Website>` will show the latest
 :ref:`version <indices-versions>`
+
+You can use :ref:`version-stats.ipynb <concepts-nbs-tree>`, which is a
+:ref:`Jupyter Notebook <tools-jupyter>`, to track progress as you go. Using a
+:ref:`csv-table <sphinx:table-directives>`, you can integrate the results as
+:ref:`tools-restructured-text` in the
+:ref:`version statistics <versions-stats>` section. See the
+:ref:`versioning procedures <procedures-versioning>` for more
+:term:`checklist`-like instructions on managing all of this
 
 .. _dist-doc-pdf:
 

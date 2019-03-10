@@ -163,7 +163,7 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
          :ref:`Documentation appearance <tools-read-the-docs>`", "
          :ref:`Documenting <dev-env-documenting>`", "
          :ref:`conda <conda:channels-glossary>`"
-         :xref:`Doc8 <Doc8>`, "Check
+         :conda-forge:`Doc8 reST linter <doc8>`, "Check
          :ref:`documentation style <concepts-doc-style>`", "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
          :ref:`tools-bibtex`, :ref:`Book citations <references-books>`, "
@@ -336,7 +336,7 @@ which has all the latest features but may not be completely stable
 .. rubric:: Footnotes
 
 .. [#] Requires a
-   :github:`Doc8 newline issue fix
+   :github:`doc8 newline issue fix
    <vscode-restructuredtext/vscode-restructuredtext/issues/84>`, included in
    the provided :ref:`VS Code settings <configs-vs-code>`
 .. [#] Offers :wiki-pg:`rendering <Rendering_(computer_graphics)>` in
@@ -743,7 +743,7 @@ quickly :wiki-pg:`rendering <Rendering_(computer_graphics)>` equations in
    :header: Reference, Topic
 
    :ref:`Developer enviroment <dev-env-intro>`, Setup
-   :ref:`Notebook structure <concepts-jupyter-nbs-tree>`, "
+   :ref:`Notebook structure <concepts-nbs-tree>`, "
    :wiki-pg:`File <Computer_file>` layout"
 
 .. csv-table:: Select references

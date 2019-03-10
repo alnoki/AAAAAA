@@ -11,7 +11,7 @@ Versions
 :xref:`semantic versioning standards <semver>`, using
 :wiki-pg:`ISO 8601 extended format <ISO_8601>` and
 :wiki-pg:`UTC <Coordinated_Universal_Time>` for
-:wiki-pg:`time standards <Time_standard>`
+:wiki-pg:`time standards <Time_standard>`:
 
 .. centered:: ``MAJOR.MINOR.PATCH`` (``YYYY-MM-DD``\ T\ ``HH:MM:SS``\ Z)
 
@@ -23,7 +23,18 @@ explained in a way that
 :ref:`commit messages <git-committing>`
 
 :ref:`versions-stats` help measure the creation of content throughout the
-:wiki-pg:`development <Software_development>` of :term:`AAAAAA`
+:wiki-pg:`development <Software_development>`, using
+:doc:`pandas <pandas:index>`! Because it is impractical to expect to know the
+:wiki-pg:`UTC <Coordinated_Universal_Time>` of a :ref:`commit <tools-git>`
+before it is made, that of the most recent :xref:`version <semver>` is given as
+``00:00:00Z``
+
+.. tip::
+
+   If you manage your own :ref:`Python package <python:tut-packages>` and you
+   want to know how this is done, see the
+   :ref:`documentation distribution guide <dist-doc>` and the
+   :ref:`versioning procedures <procedures-versioning>`
 
 .. contents:: Contents
    :local:
@@ -35,12 +46,6 @@ explained in a way that
    :xref:`semver`, Numbering standards
    :xref:`git-commit-guidelines`, Long version message guidelines
    :wiki-pg:`ISO 8601<ISO_8601>`, :wiki-pg:`Time standards <Time_standard>`
-
-.. tip::
-
-   If you manage your own :ref:`Python package <python:tut-packages>` and you
-   want to know how this is done, see the
-   :ref:`versioning procedures <procedures-versioning>`
 
 .. _versions-features:
 

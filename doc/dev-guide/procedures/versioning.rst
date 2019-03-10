@@ -101,10 +101,19 @@ Starting a new version
 #. In :ref:`conf.py <configs-conf-py>`, update
    :ref:`version numbers <indices-versions>` (and potentially
    :wiki-pg:`copyright <Copyright>`)
-#. Add an entry to the :ref:`version list <indices-versions>`
+#. Add an entry to the :ref:`version feature list <versions-features>`
 
    * :wiki-pg:`Document <Software_documentation>` changes as you go, in a way
      that :xref:`tells the codebase what to do <commit-conventions>`
+
+#. Update the :ref:`commit statistics <git-get-commit-stats>` and other data
+   for the :ref:`version <versions-features>` that was just
+   :ref:`released <versioning-releasing>` at:
+
+   * The :wiki-pg:`time <Time>` on the
+     :ref:`version feature list <versions-features>`
+   * :ref:`version-stats.ipynb <concepts-nbs-tree>`
+   * Verify the :ref:`version statistics <versions-stats>`
 
 #. :ref:`Tidy up conda <conda-tidy-up>`
 #. :ref:`versioning-td3`
@@ -121,17 +130,19 @@ Releasing a new version
 At this point you should be working on a
 :ref:`development branch <versioning-start-new>`
 
-#. Update descriptions of any modified :ref:`configurations <concepts-configs>`
-#. :ref:`Update labels <sphinx-update-labels>`
-#. Do a :ref:`link check <sphinx-checking-links>`
 #. Verify that the :ref:`quickstart <quickstart>` works
 #. Verify and :ref:`update directory trees <writing-make-dir-tree>`
 
    * :ref:`AAAAAA <concepts-project-tree>`
    * :ref:`Documentation <concepts-doc-tree>`
-   * :ref:`Jupyter Notebooks <concepts-jupyter-nbs-tree>`
+   * :ref:`Jupyter Notebooks <concepts-nbs-tree>`
    * :ref:`Code <concepts-code-tree>`
    * :ref:`Configurations <concepts-configs-tree>`
+#. Update descriptions of any modified :ref:`configurations <concepts-configs>`
+#. :ref:`Update labels <sphinx-update-labels>`
+#. Organize sections in :ref:`links <references-links>` so there are at most
+   10
+#. Do a :ref:`link check <sphinx-checking-links>`
 
 #. Finalize feature additions in the :ref:`version list <indices-versions>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
@@ -142,10 +153,19 @@ At this point you should be working on a
      :ref:`.rst file <tools-restructured-text>` you are on
    * Feel free to add some :ref:`to-dos <versioning-td3>` for later, though
 
-#. Update the :wiki-pg:`time <Time>` on the
-   :ref:`version list <indices-versions>`
+#. :ref:`git-get-commit-stats` and update:
+
+   * The :wiki-pg:`date and time <Time>` on the
+     :ref:`version feature list <versions-features>` with ``00:00:00Z``
+   * Data for the :ref:`version <versions-features>` at
+     :ref:`version-stats.ipynb <concepts-nbs-tree>`
+
+     * Increment the :ref:`commit number <git-get-commit-stats>`
+     * :menuselection:`Kernel -> Restart & Run All`
+     * Verify the :ref:`version statistics <versions-stats>`
+
 #. :ref:`Commit and push <git-committing>`, making sure to verify
-   :ref:`version tag comments <writing-proofread-new>` when
+   :ref:`reST version comments <writing-proofread-new>` when
    :ref:`staging changes <git-committing>`
 #. Verify the :ref:`build passes <dist-doc-monitor-builds>` on your
    :xref:`rtfd-account`

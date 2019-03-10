@@ -15,14 +15,16 @@ The :ref:`environment setup <dev-env-intro>` will help you
 :ref:`tools <concepts-tools>` and :ref:`configurations <concepts-configs>`
 that :github:`alnoki` uses to create :term:`AAAAAA`
 
-The :ref:`concepts section <concepts-intro>` provides conceptual explanations
-of the :ref:`tools <concepts-tools>` and
+The :ref:`concepts section <concepts-intro>` provides conside conceptual
+explanations of the :ref:`tools <concepts-tools>` and
 :ref:`configurations <concepts-configs>` that :github:`alnoki` uses to create
 :term:`AAAAAA`, and the specific ways that they are used
 
-The :ref:`testing section <testing-intro>` is *coming soon*
+The :ref:`distributing section <dist-intro>` contains detailed explanations to
+guide you through distributing your :ref:`documentation <dist-doc>` and
+(*coming soon*) more
 
-The :ref:`distributing section <dist-intro>` is *coming soon*
+The :ref:`testing section <testing-intro>` is *coming soon*
 
 The :ref:`procedures section <procedures>` contains :term:`checklist`-like
 instructions for common :wiki-pg:`development <Software_development>` tasks,
@@ -56,6 +58,12 @@ some select :wiki-pg:`links <URL>` are below
    :wiki-pg:`Hosting <Host_(network)>` platform integration"
    :yt-vid:`Quickstart tutorial <oJsUvBQyHBs>`, "Starting a blank
    :ref:`tools-sphinx` project"
+
+.. csv-table:: How :github:`alnoki` does it
+   :align: center
+   :header: Reference, Topic
+
+   :ref:`Documentation <dist-doc>`, Guide to :ref:`distributing <dist-intro>`
 
 Of course there are a few things you will need to figure out along the way, but
 :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` can help

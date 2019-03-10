@@ -123,8 +123,8 @@ particular emphases
 
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "General
    :ref:`reST <tools-restructured-text>` style guide"
-   :xref:`Doc8`, ":wiki-pg:`Syntax highlighting <Syntax_highlighting>` for
-   :ref:`reST <tools-restructured-text>` [#]_"
+   :conda-forge:`Doc8 reST linter <doc8>`, ":wiki-pg:`Linter <Lint_(software)>`
+   for :ref:`reST <tools-restructured-text>` [#]_"
 
 .. rubric:: Footnotes
 
@@ -366,7 +366,7 @@ Jupyter Notebooks
    :ref:`Jupyter <tools-Jupyter>` works, but this is an elaboration of
    specific components in :term:`AAAAAA`
 
-.. _concepts-jupyter-nbs-tree:
+.. _concepts-nbs-tree:
 
 .. code-block:: none
 
@@ -377,6 +377,10 @@ Jupyter Notebooks
            src/
                ledger.ipynb
                utilities.ipynb
+           doc/
+               version-stats.ipynb
+               version-stats.csv
+
 
 .. csv-table::
    :align: center
@@ -384,8 +388,11 @@ Jupyter Notebooks
 
    ``dev/``, Created during :wiki-pg:`development <Software_development>`
    ``src/``, Complements :ref:`source code <user-intro>`
-   "``ledger.ipynb``, ``utilities.ipynb``, etc.", "
+   ``doc/``, For measuring :ref:`version statistics <dist-doc-versions>`
+   "``ledger.ipynb``, ``version-stats.ipynb``, etc.", "
    :ref:`Jupyter Notebooks <tools-jupyter>`"
+   ``version-stats.csv``, ":ref:`csv-table <sphinx:table-directives>`
+   integration"
 
 .. tip::
 

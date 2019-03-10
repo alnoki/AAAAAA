@@ -17,7 +17,7 @@ Documenting
    that you can use :ref:`Conda <conda:starting-conda>`:
 
    * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, add the following
-     options so you can use :xref:`bash login mode invocation<bash-man-page>`:
+     options so you can use :linux-die:`bash login mode invocation <bash>`:
 
      .. code-block:: json
 
@@ -66,12 +66,12 @@ Documenting
    :term:`a6 environment <a6>`:
 
    * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, there is no
-     :xref:`bash <bash-man-page>` equivalent to the ``/K``
+     :linux-die:`bash` equivalent to the ``/K``
      :xref:`cmd.exe option <cmd.exe-invocation>`, so the easiest way to
      :ref:`activate <conda:activate-env>` the :term:`a6 environment <a6>` is to
-     add the following line to :xref:`~/.bash_profile <bash-man-page>`, which
+     add the following line to :linux-die:`~/.bash_profile <bash>`, which
      will :wiki-pg:`execute <Execution_(computing)>` any time a
-     :xref:`bash login mode <bash-man-page>` session starts (even outside of
+     :linux-die:`bash login mode <bash>` session starts (even outside of
      the :vs-code-doc:`integrated terminal <editor/integrated-terminal>`):
 
      .. code-block:: text

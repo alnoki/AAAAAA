@@ -1,20 +1,23 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 1. Py like you rest, rest like you Py
 
-## Advanced stats
-* Update the output column mapping dictionary to be at the top
-   * Then use the column mapping before any output
-* Comment how most recent release doesn't have UTC included
-* Add to doc nbs tree
-   * Also the generated csv file
-      * Just link to cs table directive
-* Git procedures shows how to get commit statistics
-   * uses tag and rev-count
-   * https://stackoverflow.com/questions/677436/how-do-i-get-the-git-commit-count/21607276
-   * git rev-list --count 0.1.0
-* Update the notebook when releasing
+## Proofread
+* conf.py should link somehow to napoleon procedures
+* Explain some docstrings empty per napoleon procedures
+* Link to napoleon tools page
+* napoleon tools page links to napoleon procedurespage
+
+## Versioning procedures
+1. Restructure links if a list is > 10
+   * Or do this in writing section?
+   * Use restructured text link to list
+* Use '*' for todo headings
+* Add in UTC for most recent version when starting new branch
 
 ## Derived version statistics
+* Only made date the index when exporting to first .csv
+* Use df.r_type.value_counts(), etc
+* Try exporting to .rst for include::
 * Per minor release, get average difference in metrics
    * N commits
    * PPP
@@ -57,15 +60,6 @@
 ## Version list update
 1. Vim procedures
 1. Vim integration
-
-## Versioning procedures
-1. Update acronyms, and versioning statistics table
-1. Restructure links if a list is > 10
-   * Or do this in writing section?
-1. Back on master, for "latest", do a commit after the tagged release
-   1. Indicate the version time after pushing
-* Use '*' for todo headings
-* Add in UTC for most recent version when starting new branch
 
 ## Proofreading
 1. Find all for unlinked "file" on links page

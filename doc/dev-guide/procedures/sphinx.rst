@@ -172,7 +172,7 @@ PDF version
 
 #. Use the :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
    :ref:`documentation root directory <concepts-doc-tree>`, with the
-   :doc:`latex builder <sphinx:usage/builders/index>`:
+   :doc:`LaTeX builder <sphinx:usage/builders/index>`:
 
    .. code-block:: bash
 
