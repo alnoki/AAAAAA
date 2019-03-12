@@ -36,17 +36,6 @@ Vim
 
 To maximize efficiency,
 :vs-code-ext:`install the Vim extension <vscodevim.vim>` for
-:ref:`tools-vs-code`. If you have never used it before, consider a
-:xref:`plan to learn Vim <vim-learn-plan>`
-
-.. csv-table:: Learning :xref:`Vim`
-   :align: center
-   :header: Reference, topic
-
-   :ref:`Configuring Git <git-configuring>`, "Basic :term:`AAAAAA` use of
-   :xref:`Vim <Vim>`"
-   :ref:`configs-settings-json`, ":ref:`Configuration <concepts-configs>` for
-   :term:`AAAAAA`"
-   :xref:`Vim-tutorial`, Learn minimum necessary :xref:`Vim <Vim>`
-   :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
-   :xref:`Vim learning plan <vim-learn-plan>`, Structured approach
+:ref:`tools-vs-code`. If you have never used it before, the
+:ref:`Tools: Vim <tools-vim>` section has plenty of references that can help
+you learn

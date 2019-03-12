@@ -52,7 +52,10 @@ Improving efficiency
    the following :wiki-pg:`commands <Command_line>`:
 
    * :guilabel:`Focus Next Terminal`
-
+   * :guilabel:`View: Keep Editor` (from closing)
+   * :guilabel:`Bookmarks: Toggle`
+   * :guilabel:`Bookmarks: Jump to Next`
+   * :guilabel:`Bookmarks: Jump to Previous`
 
 *****************
 Managing settings

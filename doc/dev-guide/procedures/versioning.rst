@@ -65,7 +65,7 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
 
       ``#``, :ref:`Versions <indices-versions>`
       ``##``, Topic
-      ``1.``, Item
+      ``*``, Item
 
 #. Identify if the planned topic set is too much for one
    :ref:`version <indices-versions>`
@@ -110,7 +110,7 @@ Starting a new version
    for the :ref:`version <versions-features>` that was just
    :ref:`released <versioning-releasing>` at:
 
-   * The :wiki-pg:`time <Time>` on the
+   * The :wiki-pg:`UTC <Coordinated_Universal_Time>` on the
      :ref:`version feature list <versions-features>`
    * :ref:`version-stats.ipynb <concepts-nbs-tree>`
    * Verify the :ref:`version statistics <versions-stats>`
@@ -140,8 +140,9 @@ At this point you should be working on a
    * :ref:`Configurations <concepts-configs-tree>`
 #. Update descriptions of any modified :ref:`configurations <concepts-configs>`
 #. :ref:`Update labels <sphinx-update-labels>`
-#. Organize sections in :ref:`links <references-links>` so there are at most
-   10
+#. Organize :ref:`links <references-links>` so there are at most 10
+   :wiki-pg:`URLs <URL>` per
+   :doc:`list <sphinx:usage/restructuredtext/basics>`
 #. Do a :ref:`link check <sphinx-checking-links>`
 
 #. Finalize feature additions in the :ref:`version list <indices-versions>`
@@ -171,7 +172,7 @@ At this point you should be working on a
    :xref:`rtfd-account`
 #. :ref:`Merge <git-merging>` the
    :ref:`development branch <versioning-start-new>` in to the
-   :xref:`master branch <git-manual>`
+   :git-doc:`master branch <user-manual>`
 #. :ref:`Tag and push <git-tagging>` with a
    :xref:`long message <git-commit-guidelines>` that describes the
    :ref:`version list additions <indices-versions>`

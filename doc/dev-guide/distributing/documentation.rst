@@ -97,13 +97,14 @@ It is helpful to enable whatever
 can see how it will actually appear in your :wiki-pg:`browser <Web_browser>`,
 and as long as you use the suggested
 :ref:`versioning procedures <versioning-start-new>`, only the last
-:ref:`tagged version <git-tagging>` on the :xref:`master branch <git-manual>`
-will be outwardly visible when you view your :wiki-pg:`website <Website>`
+:ref:`tagged version <git-tagging>` on the
+:git-doc:`master branch <user-manual>` will be outwardly visible when you view
+your :wiki-pg:`website <Website>`
 
 When you :ref:`merge <git-merging>`, it makes sense to disable the
 :ref:`development branch <versioning-start-new>` you were just working on,
 then :ref:`tag <git-tagging>` the new :ref:`version <indices-versions>` on the
-:xref:`master branch <git-manual>` and enable it instead, so that your
+:git-doc:`master branch <user-manual>` and enable it instead, so that your
 :wiki-pg:`website <Website>` will show the latest
 :ref:`version <indices-versions>`
 

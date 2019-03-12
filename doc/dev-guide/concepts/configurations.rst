@@ -74,10 +74,30 @@ and allows you to :ref:`use Vim <git-setup>`. The
 instructions on how to get started with :xref:`git-config`, which you shouldn't
 need that often
 
-.. _configs-git-vim:
+.. _configs-gitignore:
 
+.gitignore
+==========
+
+:git-doc:`.gitignore <user-manual.html#ignoring-files>` describes which
+:wiki-pg:`files <Computer_file>` in the
+:ref:`AAAAAA root directory <concepts-configs-tree>` do not need to be tracked
+by :ref:`tools-Git`. It contains some
+:wiki-pg:`comments <Comment_(computer_programming)>` to help separate content
+into sections
+
+.. _configs-vim:
+
+
+***
 Vim
-===
+***
+
+.. csv-table:: Select reference within :term:`AAAAAA`
+   :align: center
+   :header: Reference, topic
+
+   :ref:`tools-vim`, Conceptual explanation
 
 :xref:`Vim` is helpful for creating :ref:`commit messages <git-committing>`
 from the :ref:`VS Code integrated terminal <tools-vs-code>`, and it comes with
@@ -94,18 +114,6 @@ This functionality is automatically enabled, except on a
 :ref:`recommended as an extension to VS Code <dev-env-contributing>`, and
 its :ref:`configuration <concepts-configs>` is described in
 :ref:`configs-settings-json`
-
-.. _configs-gitignore:
-
-.gitignore
-==========
-
-:git-doc:`.gitignore <user-manual.html#ignoring-files>` describes which
-:wiki-pg:`files <Computer_file>` in the
-:ref:`AAAAAA root directory <concepts-configs-tree>` do not need to be tracked
-by :ref:`tools-Git`. It contains some
-:wiki-pg:`comments <Comment_(computer_programming)>` to help separate content
-into sections
 
 .. _configs-vs-code:
 

@@ -446,7 +446,7 @@ General
 
    * A way to track changes to :wiki-pg:`files <Computer_file>`
 
-#. :xref:`git-manual`
+#. :git-doc:`Git manual <user-manual>`
 
    * Quick practical reference
 
@@ -454,9 +454,9 @@ General
 
    * In-depth conceptual explanations
 
-#. :xref:`git-download`
+#. :git-scm:`downloads`
 
-   * Get :xref:`Git <git-manual>`
+   * Get :git-doc:`Git <user-manual>`
 
 #. :xref:`git-setup`
 
@@ -469,6 +469,10 @@ General
 #. :git-doc:`.gitignore <user-manual.html#ignoring-files>`
 
    * Ignore certain :wiki-pg:`files <Computer_file>`
+
+#. :xref:`less-pager`
+
+   * For viewing :xref:`git-log`
 
 Core commands
 =============
@@ -521,7 +525,7 @@ Core commands
 
    * Inspect :git-doc:`tags <git-tag>` and :git-doc:`commits <git-commit>`
 
-#. :git-doc:`rev-list`
+#. :git-doc:`git-rev-list`
 
    * Get number of :git-doc:`commits <git-commit>`
 
@@ -1159,12 +1163,8 @@ Extensions
 
    * Use :xref:`Vim <Vim>` in :ref:`tools-vs-code`
 
-Text manipulation
------------------
-
-#. :xref:`less-pager`
-
-   * For viewing :xref:`git-log`
+Vim
+===
 
 #. :xref:`Vim`
 
@@ -1178,6 +1178,10 @@ Text manipulation
 
    * Common :wiki-pg:`commands <Command_line>` for :xref:`Vim <Vim>`
 
+#. :yt-vid:`Mastering Vim by Chris Toomey <wlR5gYd6um0>`
+
+   * Demonstrative video with tips and :wiki-pg:`commands <Command_line>`
+
 #. :stack-q:`Vim E325 error <45489008/vim-opening-file-e325-attention-error>`
 
    * Can happen when :ref:`committing <git-committing>` incorrectly
@@ -1188,12 +1192,24 @@ Text manipulation
 
 #. :vim-wiki:`.vimrc file <Open_vimrc_file>`
 
-   * :ref:`Vim configuration file <configs-git-vim>` for
+   * :ref:`Vim configuration file <configs-vim>` for
      :wiki-pg:`syntax highlighting <Syntax_highlighting>`
 
 #. :xref:`vim-learn-plan`
 
    * Become efficient with :xref:`Vim`
+
+#. :vim-wiki:`Repeating keystrokes <Recording_keys_for_repeated_jobs>`
+
+   * Do similar :wiki-pg:`commands <Command_line>` repeatedly
+
+#. :vim-wiki:`Official tutorial <Tutorial>`
+
+   * Simple instructions
+
+#. :vim-wiki:`All the right moves <All_the_right_moves>`
+
+   * Intermediate :wiki-pg:`command <Command_line>` reference
 
 *********
 Computers

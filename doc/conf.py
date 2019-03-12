@@ -209,7 +209,6 @@ intersphinx_mapping = {
 extlinks = {
     'wiki-pg': ('https://en.wikipedia.org/wiki/%s', ''),
     'real-py': ('https://realpython.com/%s', ''),
-    'git-doc': ('https://git-scm.com/docs/%s', ''),
     'github': ('https://github.com/%s', ''),
     'yt-vid': ('https://www.youtube.com/watch?v=%s', ''),
     'yt-pl': ('https://www.youtube.com/playlist?list=PL%s', ''),
@@ -224,6 +223,8 @@ extlinks = {
     'vs-code-api': ('https://code.visualstudio.com/api/%s', ''),
     'linux-die': ('https://linux.die.net/man/1/%s', ''),
     'conda-forge': ('https://anaconda.org/conda-forge/%s', ''),
+    'git-doc': ('https://git-scm.com/docs/%s', ''),
+    'git-scm': ('https://git-scm.com/%s', ''),
 }
 """Contains :ref:`extlinks base URLs <sphinx-extlinks>`"""
 
@@ -281,8 +282,6 @@ xref_links = {
     'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
 
     # To sort
-    'git-manual': ("Git manual", url['git-scm'] + 'docs/user-manual.html'),
-    'git-download': ("Git download", url['git-scm'] + 'downloads'),
     'git-book': ("Git book", url['git-scm'] + 'book/en/v2'),
     'git-config': ('git-config', url['git-scm'] + 'docs/git-config'),
     'git-log': ('git-log', url['git-scm'] + 'docs/git-log'),

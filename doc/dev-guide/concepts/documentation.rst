@@ -187,7 +187,7 @@ Common Conceptual Capitalizations (C\ :superscript:`3`)
         :ref:`Conda <tools-anaconda>`, :ref:`conda <tools-anaconda>`
         :ref:`Docstrings <python:tut-docstrings>`, "
         :ref:`docstrings <python:tut-docstrings>`"
-        :xref:`Git <git-manual>`, :xref:`Git <git-manual>`
+        :git-doc:`Git <user-manual>`, :git-doc:`Git <user-manual>`
         :wiki-pg:`Internet`, :wiki-pg:`Internet`
         :ref:`Intersphinx <tools-intersphinx>`, "
         :ref:`Intersphinx <tools-intersphinx>`"

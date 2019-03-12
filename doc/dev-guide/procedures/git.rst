@@ -17,7 +17,7 @@ Git
    :align: center
    :header: Reference, Topic
 
-   :xref:`git-manual`, Quick practical reference
+   :git-doc:`Git manual <user-manual>`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`commit-conventions`, Tell the :xref:`codebase <software>` what to do
    :xref:`git-commit-guidelines`, Message guidelines
@@ -82,7 +82,7 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
 
    :xref:`Vim-tutorial`, Learn minimum necessary :xref:`Vim <Vim>`
    :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
-   :ref:`Vim configuration <configs-git-vim>`, "
+   :ref:`Vim configuration <configs-vim>`, "
    :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
 
 .. _git-credentials:
@@ -351,7 +351,7 @@ Quick fixes
 #. If you are experiencing a
    :stack-q:`Vim 325 error <45489008/vim-opening-file-e325-attention-error>`,
    you may need to :wiki-pg:`delete <Computer_file>` (if it exists)
-   :ref:`AAAAAA/.git/COMMIT_MSG.swp <configs-git-vim>`
+   :ref:`AAAAAA/.git/COMMIT_MSG.swp <configs-vim>`
 
 .. _git-tagging:
 

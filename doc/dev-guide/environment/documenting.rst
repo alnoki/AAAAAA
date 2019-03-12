@@ -137,7 +137,7 @@ Documenting
 #. :wiki-pg:`Install <Installation_(computer_programs)>` the
    :vs-code-ext:`VS Code reStructuredText extension
    <lextudio.restructuredtext>`
-#. If you don't already have it, :xref:`download Git <git-download>`
+#. If you don't already have it, :git-scm:`download Git <downloads>`
 
    * To figure out if you have it, open the
      :vs-code-doc:`Integrated terminal <editor/integrated-terminal>` and

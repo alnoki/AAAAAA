@@ -197,9 +197,9 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
 Git
 ===
 
-:xref:`Git <git-manual>` is used manage changes to
+:git-doc:`Git <user-manual>` is used manage changes to
 :wiki-pg:`files <Computer_file>` in the
-:github:`AAAAAA repository <alnoki/AAAAAA>`. :xref:`Git <git-manual>` is a
+:github:`AAAAAA repository <alnoki/AAAAAA>`. :git-doc:`Git <user-manual>` is a
 :wiki-pg:`version control <Version_control>` system that allows :term:`AAAAAA`
 to be updated with :xref:`commits <git-commit>`, which are like snapshots in
 :wiki-pg:`time <Time>` that describe minor changes to :term:`AAAAAA`. Each
@@ -215,13 +215,13 @@ independent sequences of :xref:`commits <git-commit>`, are used to manage
 :github:`AAAAAA repository <alnoki/AAAAAA>` for :wiki-pg:`free <Money>`
 
 There are several :xref:`command line<command-line>` text manipulators that go
-along with :xref:`Git <git-manual>`
+along with :git-doc:`Git <user-manual>`
 
 .. csv-table:: Text manipulators
    :align: center
    :header: Tool, Usage
 
-   :xref:`Vim <Vim-tutorial>`, ":ref:`Configuring <git-setup>` and
+   :ref:`Vim <tools-vim>`, ":ref:`Configuring <git-setup>` and
    :ref:`git-committing`"
    :xref:`less <less-pager>`, "
    :ref:`Viewing project history <git-view-project-log>`"
@@ -238,7 +238,7 @@ along with :xref:`Git <git-manual>`
    :align: center
    :header: Reference, Topic
 
-   :xref:`git-manual`, Quick practical reference
+   :git-doc:`Git manual <user-manual>`, Quick practical reference
    :xref:`git-book`, In-depth conceptual explanations
    :xref:`git-commit-guidelines`, Contribution guidelines
    :doc:`Documentation webhooks <rtfd:webhooks>`, "Automatic
@@ -290,6 +290,8 @@ which has all the latest features but may not be completely stable
    ":vs-code-ext:`Python Test Explorer
    <LittleFoxTeam.vscode-python-test-adapter>`", "Using
    :ref:`pytest <tools-pytest>`", :ref:`Testing <dev-env-testing>`
+   :vs-code-ext:`Vim <vscodevim.vim>`, :ref:`Efficiency <tools-vim>`,"
+   :ref:`Contributing <dev-env-contributing>`"
 
 .. csv-table:: Select references within :term:`AAAAAA`
    :align: center
@@ -349,7 +351,51 @@ which has all the latest features but may not be completely stable
 Vim
 ===
 
+:xref:`Vim` is an efficient way to manipulate :wiki-pg:`files <Computer_file>`,
+but it can be tricky to learn. It is useful in
+:wiki-pg:`command line<Command_line>`-style
+:ref:`Git procedures <procedures-git>` and as a
+:ref:`VS Code extension <tools-vs-code>`
 
+If the below references are not enough, you may be surprised at the ability
+of a :ref:`Google search <tools-google>` to answer "how do I do
+``oddly-specific thing x`` in :xref:`Vim <Vim>`?"
+
+.. csv-table:: Select references within :term:`AAAAAA`
+   :align: center
+   :header: Reference, Topic
+
+   :ref:`Vim configuration <configs-vim>`, Options
+   :ref:`Developer environment <dev-env-contributing>`, Setup
+   :ref:`Git configuring procedures <git-configuring>`,"
+   :wiki-pg:`Command line <Command_line>` usage"
+
+.. csv-table:: Select official references
+   :align: center
+   :header: Reference, Topic
+
+   :xref:`Vim`, Official information
+   :vim-wiki:`Official tutorial <Tutorial>`, Simple instructions
+   :vim-wiki:`All the right moves <All_the_right_moves>`, "Intermediate
+   :wiki-pg:`command <Command_line>` reference"
+   ":vim-wiki:`Mac OS syntax highlighting
+   <Turn_on_syntax_coloring_in_Mac_OS_X>`", "Enable
+   :wiki-pg:`syntax highlighting <Syntax_highlighting>`"
+   :vim-wiki:`.vimrc file <Open_vimrc_file>`, "
+   :ref:`Configuration file <configs-vim>`"
+   :vim-wiki:`Repeating keystrokes <Recording_keys_for_repeated_jobs>`,"Repeat
+   :wiki-pg:`commands <Command_line>`"
+
+.. csv-table:: Select references
+   :align: center
+   :header: Reference, Topic
+
+   :yt-vid:`Mastering Vim <wlR5gYd6um0>`, Talk with tricks and tips
+   :xref:`vim-learn-plan`, How to learn
+   :xref:`Vim-tutorial`, Learn interactively
+   :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
+   :stack-q:`Vim E325 error <45489008/vim-opening-file-e325-attention-error>`,"
+   Can happen when :ref:`committing <git-committing>` incorrectly"
 
 *************
 Documentation

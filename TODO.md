@@ -1,18 +1,342 @@
 ## Links audit: 1 at the start, 1 at the end of your session
-1. Py like you rest, rest like you Py
+* Py like you rest, rest like you Py
 
-## Proofread
-* conf.py should link somehow to napoleon procedures
-* Explain some docstrings empty per napoleon procedures
-* Link to napoleon tools page
-* napoleon tools page links to napoleon procedurespage
+# 0.4.0
 
-## Versioning procedures
-1. Restructure links if a list is > 10
-   * Or do this in writing section?
-   * Use restructured text link to list
-* Use '*' for todo headings
-* Add in UTC for most recent version when starting new branch
+## Vim training
+* Vim section, find all for vim links to it
+* Review Git setup and procedures, link to Vim tools page
+
+## Version list update
+* Vim integration
+
+## Proofreading
+* Find all for unlinked "file" on links page
+
+## quicklinks
+* :wiki-pg:`run <Execution_(computing)>`
+* :wiki-pg:`scroll <Scrolling>`
+* :wiki-pg:`Click <Point_and_click>`
+* :wiki-pg:`Typing`
+* :wiki-pg:`HTML`
+* :wiki-pg:`Install <Installation_(computer_programs)>`
+* :wiki-pg:`Download`
+* :wiki-pg:`Filename extension <Filename_extension>`
+* :wiki-pg:`File <Computer_file>`
+* :wiki-pg:`Open-source_software`
+* :wiki-pg:`Character <Character_(computing)>`
+* :wiki-pg:`String <String_(computer_science)>`
+* :wiki-pg:`Line <Line_(text_file)>`
+* :wiki-pg:`Line break <Newline>`
+* :wiki-pg:`Whitespace <Whitespace_character>`
+* :wiki-pg:`Indentation <Indentation_(typesetting)>`
+* :wiki-pg:`User <User_(computing)>`
+* :wiki-pg:`Developer <Programmer>`
+* :wiki-pg:`Development <Software_development>`
+* :wiki-pg:`Algorithm`
+* :wiki-pg:`Rendering_(computer_graphics)`
+* :wiki-pg:`Host <Host_(network)>`
+* :wiki-pg:`Documentation <Software_documentation>`
+* :wiki-pg:`Delimiter`
+
+# 0.5.0
+
+## Data integration
+* Consider pandas_datareader
+   * Has a wrapper for instant quotes off alphavantage
+* There is an alphavantage wrapper at github romelTorres/alpha_vantage
+* Also coyo8/sec-edgar
+   * Downloads in pdf form
+* Just use robinhood if can get away with it
+
+## Passwords
+* Use an environment variable like in pandas_datareader?
+* Use corey schafer tutorials?
+* Use python secrets library?
+
+## Jupyter
+* Should have concepts notebooks page
+* Do all official 10 minutes to "x" tutorials in one notebook
+   * On examples page mention official-tutorials.ipynb
+* https://jupyter.org/try
+   * Shows how to make the lorenz interactive sliders
+* jupyter --paths
+   * Shows how to edit configs
+* Read the docs
+   * https://jupyter.readthedocs.io/en/latest/projects/jupyter-directories.html
+   * Talks about configs
+   * Should add to Jupyter tools and configs options
+* Use the editor extension
+* Dark themes mess stuff up
+   * Edit it yourself if you really think it's necessary
+      * Just background, heading, and markdown text colors
+   * Save the config
+* Dev env setup, don't need to open a new notebook to set nb extension themes
+   * Just find nb extensions tab from home screen
+* Update the documentation.rst jupyter section
+* All jupyter notebooks should be able to be viewed
+   * If you add one, must be able to access it from the AAAAAA nb viewer link
+* Verify all Jupyter notebooks are linked
+* Link a Jupyter notebook per Carol Willing video
+* Make an examples page with Jupyter notebook to follow along
+* Tip to open the nb viewer
+* TOC for all Jupyter notebooks?
+* Need a way to include he nbs directory
+* Need a table that says which doc pages link to which nbs
+* Each doc that links to an nb also says which nb it links to
+* Add to nbs concepts page
+   * Say links in them may not be in links page
+   * Core content is distilled into .rst
+* Procedure for linking an nb says the two places that must be update
+   * Link to this procedure in the nbs concepts page
+   * Link to it in the nbs toc page
+* examples page is a jupyter notebook you can reset and run all cells
+* Use one common file to prototype LaTeX
+* The Anaconda table needs to link to a purpose
+   * For Jupyter, numpy, matplotlib, and pandas
+* https://nbsphinx.readthedocs.io/en/rtd-theme/index.html
+   * Can embed jupyter plots
+* Can use Jupyter to prototype, matplotlib to embed
+   * However, matplotlib can take some time to load
+* Add a Jupyter configurations page
+   * Talk about the notebook extensions, etc
+
+## Dev Order
+* Write up testing first before packaging
+   * Do what you know first
+* Update ISO8061 then do testing
+
+## Examples page
+* Say can do either in the interpreter or in Jupyter notebook
+* Then put in a link from jupyter page
+* Python tools section should link here
+
+## Doc coverage
+* Figure out how to do this
+   * The packaging video on iPad may help
+* Doc coverage is a sphinx extension
+
+## pytest
+* Get pytest from home dir to actually run....
+* Cite DO-178B
+* Have a test index in the developer's guide
+   * The pytest entry on the links page should link here
+      * Framework for :ref:`writing test code <test-index>`
+* Document test_ledger.py
+   * Add a section to common tasks about testing
+   * May need to update the quickstart guide
+* Document test_utilities.py
+* Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger for tests
+* tests should be motivated by the examples page
+* On the code structure page, update the dir tree
+   * Use a table for each of the components like on the other dir trees
+      * name, function
+
+## src updates
+* Use corey schafer url post video from iPad to explain concept
+* Already have the link for autofunction in napoleon links if need to describe
+* User sections for "tracking" and "choosing"
+* Give an example of initializing a transaction class
+* ISO 8061 (or whatever robinhood uses) for dates
+* xref in transaction source code
+* Transaction class then explains how file structure is
+   * For importing the module, etc.
+* Then say we need to talk about the dir structure
+   * Then make the dir tree script
+* Explain how Transaction is, of course, all part of a module
+   * Then describe automodule and show below
+   * Then, enable modindex
+* use datetime.datetime with zulu time - call the instance variable "when"
+* Restructure other attributes as necessary
+* change kinda to a dict of str to tuple(bool,bool)
+   * bools say is associated with ticker
+   * Second says does it result in add or subtract to buying power
+* overload + to add two transactions and yield effect on the brokerage
+* As you segway into explaining file structure
+   * https://docs.python.org/3/tutorial/modules.html
+   * Should help you get ready to package on conda
+* Add to python tools description as you go
+* Run https://docs.python.org/3/tutorial/modules.html#the-dir-function
+* https://docs.python.org/3/tutorial/modules.html#packages
+* Then, use https://docs.python.org/3/library/argparse.html#module-argparse
+   * Draw a dir tree?
+* Uncomment module index on homepage, verify it works
+* Re-write the jupyter section after the jupyter examples page is live
+   * Will need aaaaaa usage on the examples page
+   * The numerical analysis packages should link to tools-numpy, etc.
+* Tables can line break in the title without quotes
+   * See VS code extensions
+* Add a csv table to the concepts-code page once you have more references
+   * Packges, __init__, setup.py, etc.
+   * As you go through and explain
+
+## Writing procedures
+* Use draw.io to make an SVG
+* Where to keep the .xml?
+* Always use code block
+   * Use >>> if shouldn't be able to copy-paste
+* Use vs code sort imports
+
+## AAAA (analyst archives)
+* Jupyter SVGs should have the date on which they were generated
+* Reasons not to buy something
+* Colloquially known as alnoki's arcks
+* Terms for p/e ratio, book value, etc
+* alnoki's algorithmic analysis archives
+* Shows how your portfolio is, etc
+* All print outs should have iso8601 of when generated
+* INSURANCE
+   * I need something underwritten: ridiculous assets nobody can explain
+   * Cite wolf of wall street, it is just fairy dust
+
+## adp.py
+* An intersphinx that automatically grabs the intersphinx target from conf.py
+   * adp.py objs rtfd
+* https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
+* autodoc it on the procedures index page
+* Cite the checklist manifesto
+* arg parse from early on in python tutorial
+* Talk about utils.py in AAAAAA root?
+    * code for writing dir tree
+        * Take command line args
+* Wrapper for sphinx-autobuild
+    * Says which folders to watch
+    * Simple command line prompt:
+        * python utils -doc
+* Explain how the terminal opens at top aaaaaa dir, so use argparse
+   * For wrapping autobuild, etc.
+* Use the command line options style of table
+   * See the RTD theme
+   * Add this to the sphinx autobuild options once you know how to do it
+* Have one that automatically opens a :ref: or a :doc:
+   * python adp ref-tools-restructured-text
+
+## Wrapping autobuild
+* Make it run in command line
+   * Only open html files that have been changed, after the build started
+   * Shows how the argument parser, etc. works from command line
+   * Appears that it only opens a browser the first time
+* Run your own python script that looks for touched .html files
+   * Open a new window if the browser doesn't already have it open
+   * How to know whether to open a new window or to reload the old one...
+      * Need to check if the server isn't already "serving" the page?
+* Don't bother integrating with makefiles, it doesn't work on windows too...
+   * https://www.gnu.org/software/make/manual/make.html#Phony-Targets
+* Later, may want to incorporate --watch jupyter notebooks
+   * Just incorporate to the autobuilder
+      * The wrapper should then handle the html monitoring correctly
+* Potentially just have one script to call
+   * Make sure python doesn't go crazy and open eveything
+      * Only open changed pages, not new pages?
+      * Guard: only if the .rst and the .html were changed?
+   * Make clean at the end?
+      * Would this make you have to re-intersphinx everytime?
+* Keep in mind that autobuild sends out some sort of ping or hook
+   * You could somehow monitor this?
+* See https://docs.python.org/3/tutorial/modules.html
+* Have the wrapper put the output to the console
+   * See autobuild for how this is done, because it wraps sphinx
+   * https://docs.python.org/3/library/argparse.html#module-argparse
+* Watch the server that autobuild makes
+   * https://pythonhosted.org/watchdog/index.html
+   * It should send out some sort of ping that says to reload
+   * Only open a new browser window if the html file in question isn't served
+      * And if a reload ping came
+* When the html file changes, the autobuild console should say so
+   * Have the wrapper look for this and then open up a new browser?
+
+## Packaging
+* See the project management -> distribution section of links
+   * Update the comment for requirements files?
+* After making a packaging section, link to it from the top of the code.rst pg
+* Reciprically link with the project directory structure
+* https://anaconda.org/conda-forge/doc8
+   * This one is showing on anaconda cloud....
+* Tools section on PyPI
+* Currently, the link to pip already exists
+* Do this first!
+* Section on writing tests and packaging in dev-guide
+* Try out with the 0.3.0 codebase
+* First get onto PyPi
+    * https://packaging.python.org/tutorials/packaging-projects/
+* Then, can try adding to conda-forge
+    * https://conda-forge.org/docs/
+    * There is a sample file that just points to PyPi
+    * https://github.com/conda-forge/staged-recipes/blob/master/recipes/example/meta.yaml
+* PEP 328
+* yaml should freeze at last release and then update each release
+   * Sort of depends on Travis
+* Update license
+* https://stackoverflow.com/questions/448271/what-is-init-py-for
+* https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
+* Ship conda with the dependencies
+   * Then can install in the quick start
+      * Mention you have just started the python interpreter with link
+         * Link is in the floating point rampage
+* Push to conda and create procedures as you go
+* https://packaging.python.org/tutorials/packaging-projects/
+   * Go through the tutorial and upload to test pypi
+* https://choosealicense.com/
+   * Probably MIT
+      * Need to have a versioning section that says to update year
+* https://packaging.python.org/guides/distributing-packages-using-setuptools/
+   * More info about setup tools
+* The examples page (if in Jupyter) should link to interactive analysis
+   * In the Anaconda a6 table
+   * Also, the Code testing link should go to the test index
+   * And, the numerical analysis parts should get links
+* Make sure to do Conda-forge packaging too
+
+## Doc
+* TOC for everything page?
+* Software also has an auto-api section?
+   * May enable module index
+* When conda finally gets sphinx rtd theme 0.4.3 (or whatever it is)
+   * Are the settings different?
+      * How far down can the stick TOC go?
+
+## myPy
+* ttps://code.visualstudio.com/docs/python/settings-reference#_mypy
+* MyPy type linter
+   * https://www.python.org/dev/peps/pep-0526/
+   * https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
+      * Get the mypy linter going in the conda package
+   * VS Code linter
+      * https://code.visualstudio.com/docs/python/linting
+         * Make a type checking procedures page
+         * Talk about how to disable the pep8 colon warning but leave mypy on
+* Figure out how to show all lines in rst files that are too long
+* :pep:`Type hint theory <483>`
+   * Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
+* :pep:`Variable annotations <527>`
+* :doc:`Typing module <python:library/typing>`
+
+## Downloading transaction history from Robinhood
+* If transaction type isn't recognized, just skip over it
+   * Print out that a .json object was obtained that was unknown
+* After downloading, the pandas portfolio parser (PPP) does checksum
+   * Does net portfolio amount equal buying power?
+* Need a logger / other way to harvest syntax from others
+   * What does a stock split or withdrawal look like?
+      * You can easily simulate withdrawal, then can put right back in
+
+## Transaction updates
+* When transaction init gets an error, should
+   * Raise error
+   * Show a trace to the data that produced it
+* Class method to convert to a dataframe?
+   * Could have a subclass of DataFrame called ledger
+      * By merit of existing, it has already been sanitized
+         * Thus can go straight back into transactions
+   * Would already have sanitized data
+
+## gitignore
+* Explain what different things can cause gitignore to have contents
+   * Pytest/compiled python, etc
+* Make a development task to clean it out?
+* Do a commit that is just cleaning out .gitignore
+
+# 0.6.0
 
 ## Derived version statistics
 * Only made date the index when exporting to first .csv
@@ -27,382 +351,47 @@
       * Use the :include: directive
 * Also say time between releases?
 
-## VS Code procedures for efficiency
-* Say use bookmark extension and commands
-* View: keep editor
-
-## Vim training
-* https://vim.fandom.com/wiki/Recording_keys_for_repeated_jobs
-1. https://web.archive.org/web/20161221161539/http://bullium.com/support/vim.html#move
-1. The purple interactive tutorial
-1. Basic tutorial
-   1. https://vim.fandom.com/wiki/Tutorial
-1. Reference
-   1. https://vim.fandom.com/wiki/All_the_right_moves
-1. Top rated Vim tutorials
-   1. https://gitconnected.com/learn/vim
-1. http://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/
-   1. :help usr_02.txt
-1. Have on the dev env setup page
-   1. No need to make a procedures page, it's all there
-1. Make a tools page that is jut for Vim
-   1. The contributing section references the vim tools section
-      1. Which has a ton of references on how to learn
-1. vimgolf
-   * See the configurations Vim section
-1. Vim section, find all for vim links to it
-   1. Add to Git and VS code aaaaaa references tables
-1. Dev env setup should link to tools section with references used to learn
-1. Show how to install Vim in dev environment (at least VS code ext)
-   1. Need to put in the VS Code page
-* Review Git setup and procedures, link to Vim tools page
-
-## Version list update
-1. Vim procedures
-1. Vim integration
-
-## Proofreading
-1. Find all for unlinked "file" on links page
-
-## quicklinks
-1. :wiki-pg:`run <Execution_(computing)>`
-1. :wiki-pg:`scroll <Scrolling>`
-1. :wiki-pg:`Click <Point_and_click>`
-1. :wiki-pg:`Typing`
-1. :wiki-pg:`HTML`
-1. :wiki-pg:`Install <Installation_(computer_programs)>`
-1. :wiki-pg:`Download`
-1. :wiki-pg:`Filename extension <Filename_extension>`
-1. :wiki-pg:`File <Computer_file>`
-1. :wiki-pg:`Open-source_software`
-1. :wiki-pg:`Character <Character_(computing)>`
-1. :wiki-pg:`String <String_(computer_science)>`
-1. :wiki-pg:`Line <Line_(text_file)>`
-1. :wiki-pg:`Line break <Newline>`
-1. :wiki-pg:`Whitespace <Whitespace_character>`
-1. :wiki-pg:`Indentation <Indentation_(typesetting)>`
-1. :wiki-pg:`User <User_(computing)>`
-1. :wiki-pg:`Developer <Programmer>`
-1. :wiki-pg:`Development <Software_development>`
-1. :wiki-pg:`Algorithm`
-1. :wiki-pg:`Rendering_(computer_graphics)`
-1. :wiki-pg:`Host <Host_(network)>`
-1. :wiki-pg:`Documentation <Software_documentation>`
-1. :wiki-pg:`Delimiter`
-
-# 0.5.0
-
-## Dev Order
-1. Write up testing first before packaging
-   1. Do what you know first
-1. Update ISO8061 then do testing
-
-## Examples page
-1. Say can do either in the interpreter or in Jupyter notebook
-1. Then put in a link from jupyter page
-1. Python tools section should link here
-
-## Jupyter
-1. Update the documentation.rst jupyter section
-1. All jupyter notebooks should be able to be viewed
-   1. If you add one, must be able to access it from the AAAAAA nb viewer link
-1. Verify all Jupyter notebooks are linked
-1. Link a Jupyter notebook per Carol Willing video
-1. Make an examples page with Jupyter notebook to follow along
-1. Tip to open the nb viewer
-1. TOC for all Jupyter notebooks?
-1. Need a way to include he nbs directory
-1. Need a table that says which doc pages link to which nbs
-1. Each doc that links to an nb also says which nb it links to
-1. Add to nbs concepts page
-   1. Say links in them may not be in links page
-   1. Core content is distilled into .rst
-1. Procedure for linking an nb says the two places that must be update
-   1. Link to this procedure in the nbs concepts page
-   1. Link to it in the nbs toc page
-1. examples page is a jupyter notebook you can reset and run all cells
-1. Use one common file to prototype LaTeX
-1. The Anaconda table needs to link to a purpose
-   1. For Jupyter, numpy, matplotlib, and pandas
-1. https://nbsphinx.readthedocs.io/en/rtd-theme/index.html
-   1. Can embed jupyter plots
-1. Can use Jupyter to prototype, matplotlib to embed
-   1. However, matplotlib can take some time to load
-1. Add a Jupyter configurations page
-   1. Talk about the notebook extensions, etc
-
-## Doc coverage
-1. Figure out how to do this
-   1. The packaging video on iPad may help
-1. Doc coverage is a sphinx extension
-
-## pytest
-1. Get pytest from home dir to actually run....
-1. Cite DO-178B
-1. Have a test index in the developer's guide
-   1. The pytest entry on the links page should link here
-      1. Framework for :ref:`writing test code <test-index>`
-1. Document test_ledger.py
-   1. Add a section to common tasks about testing
-   1. May need to update the quickstart guide
-1. Document test_utilities.py
-1. Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger for tests
-1. tests should be motivated by the examples page
-1. On the code structure page, update the dir tree
-   1. Use a table for each of the components like on the other dir trees
-      1. name, function
-
-## Settings concept
-1. Vim and Git setup?
-1. VS Code
-   1. Colors via textmate
-   1. https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#scope-inspector
-      1. :guilabel:`Developer: Inspect TM Scopes` then add to settings.json
-   1. https://stackoverflow.com/questions/46689334
-   1. https://github.com/Microsoft/vscode/pull/29393
-1. :wiki-pg:`Web_colors` already in links
-1. link to "linter"
-1. Need a conf.py part of documentation concepts
-   1. Then can hyperlink the conf.py part in the Sphinx references table
-1. https://stackoverflow.com/questions/46689334
-1. Automodule conf.py and settings.json
-   1. If you do this, then be sure to review the links in the vs code section
-   1. Also then review the sphinx settings section
-
-## src updates
-1. Already have the link for autofunction in napoleon links if need to describe
-1. User sections for "tracking" and "choosing"
-1. Give an example of initializing a transaction class
-1. ISO 8061 (or whatever robinhood uses) for dates
-1. xref in transaction source code
-1. Transaction class then explains how file structure is
-   1. For importing the module, etc.
-1. Then say we need to talk about the dir structure
-   1. Then make the dir tree script
-1. Explain how Transaction is, of course, all part of a module
-   1. Then describe automodule and show below
-   1. Then, enable modindex
-1. use datetime.datetime with zulu time - call the instance variable "when"
-1. Restructure other attributes as necessary
-1. change kinda to a dict of str to tuple(bool,bool)
-   1. bools say is associated with ticker
-   1. Second says does it result in add or subtract to buying power
-1. overload + to add two transactions and yield effect on the brokerage
-1. As you segway into explaining file structure
-   1. https://docs.python.org/3/tutorial/modules.html
-   1. Should help you get ready to package on conda
-1. Add to python tools description as you go
-1. Run https://docs.python.org/3/tutorial/modules.html#the-dir-function
-1. https://docs.python.org/3/tutorial/modules.html#packages
-1. Then, use https://docs.python.org/3/library/argparse.html#module-argparse
-   1. Draw a dir tree?
-1. Uncomment module index on homepage, verify it works
-1. Re-write the jupyter section after the jupyter examples page is live
-   1. Will need aaaaaa usage on the examples page
-   1. The numerical analysis packages should link to tools-numpy, etc.
-1. Tables can line break in the title without quotes
-   1. See VS code extensions
-1. Add a csv table to the concepts-code page once you have more references
-   1. Packges, __init__, setup.py, etc.
-   1. As you go through and explain
-
-## Writing procedures
-* Use draw.io to make an SVG
-* Where to keep the .xml?
+## plot directive
+* On home page
+* Feeling super fancy?
+   * Exit interpreter
+   * Conda install matplotlib
+   * Then do the matplotlib code
+* Use the in-line version that shows the sample and the plot
+* Matplotlib plotting need to change packages setup phase
+   * Also go off conda install procedure
+   * Same for numpy and pandas? Since will embed them?
+* Search links for the word plot and link to matplotlib tools section
+* https://matplotlib.org/sampledoc/extensions.html
+* Appears to be included with matplotlib
+* https://matplotlib.org/devel/plot_directive.html
+* Need to include matplotlib and numpy in documenting package
+* Make a factorial plot on the homepage
+   * If you want to run this, you may need to install matplotlib with anaconda
+      * See what happens when you do it from inside python
+         * What pops up?
+* Try out on homepage
+* Search links for the word plot and link to matplotlib?
+* Create a section in tools on Matplotlib
+* matplotlib sample doc
+* Have an example page in iPython
+   * Show link to the actual notebook so people can play around with it
+* Integrate plots
+* Link Jupyter
+* Try out log base 16 of factorial of x
+* On links page, the jupyter general link says plotting, should link
+   * Link to matplotlib
 
 ## Content card
-1. AnaKAHNndaKAHN 2019
-1. Front
-   1. :term:`AAAAAA`: link :xref:`everywhere`
-      1. At bottom:
-         1. * 'everywhere' : ("The internet", url['Wiki pg] + 'Universe')
-   1. Have your email and your website
-1. On back, explanation field list
-   1. Just make the window smaller in order to view it
-1. Use version 0.3 field list
-
-## adp.py
-* An intersphinx that automatically grabs the intersphinx target from conf.py
-   * adp.py objs rtfd
-1. https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
-1. autodoc it on the procedures index page
-1. Cite the checklist manifesto
-1. arg parse from early on in python tutorial
-1. Talk about utils.py in AAAAAA root?
-    1. code for writing dir tree
-        1. Take command line args
-1. Wrapper for sphinx-autobuild
-    1. Says which folders to watch
-    1. Simple command line prompt:
-        1. python utils -doc
-1. Explain how the terminal opens at top aaaaaa dir, so use argparse
-   1. For wrapping autobuild, etc.
-1. Use the command line options style of table
-   1. See the RTD theme
-   1. Add this to the sphinx autobuild options once you know how to do it
-1. Have one that automatically opens a :ref: or a :doc:
-   1. python adp ref-tools-restructured-text
-
-## Wrapping autobuild
-1. Make it run in command line
-   1. Only open html files that have been changed, after the build started
-   1. Shows how the argument parser, etc. works from command line
-   1. Appears that it only opens a browser the first time
-1. Run your own python script that looks for touched .html files
-   1. Open a new window if the browser doesn't already have it open
-   1. How to know whether to open a new window or to reload the old one...
-      1. Need to check if the server isn't already "serving" the page?
-1. Don't bother integrating with makefiles, it doesn't work on windows too...
-   1. https://www.gnu.org/software/make/manual/make.html#Phony-Targets
-1. Later, may want to incorporate --watch jupyter notebooks
-   1. Just incorporate to the autobuilder
-      1. The wrapper should then handle the html monitoring correctly
-1. Potentially just have one script to call
-   1. Make sure python doesn't go crazy and open eveything
-      1. Only open changed pages, not new pages?
-      1. Guard: only if the .rst and the .html were changed?
-   1. Make clean at the end?
-      1. Would this make you have to re-intersphinx everytime?
-1. Keep in mind that autobuild sends out some sort of ping or hook
-   1. You could somehow monitor this?
-1. See https://docs.python.org/3/tutorial/modules.html
-1. Have the wrapper put the output to the console
-   1. See autobuild for how this is done, because it wraps sphinx
-   1. https://docs.python.org/3/library/argparse.html#module-argparse
-1. Watch the server that autobuild makes
-   1. https://pythonhosted.org/watchdog/index.html
-   1. It should send out some sort of ping that says to reload
-   1. Only open a new browser window if the html file in question isn't served
-      1. And if a reload ping came
-1. When the html file changes, the autobuild console should say so
-   1. Have the wrapper look for this and then open up a new browser?
-
-## plot directive
-1. On home page
-1. Feeling super fancy?
-   1. Exit interpreter
-   1. Conda install matplotlib
-   1. Then do the matplotlib code
-1. Use the in-line version that shows the sample and the plot
-1. Matplotlib plotting need to change packages setup phase
-   1. Also go off conda install procedure
-   1. Same for numpy and pandas? Since will embed them?
-1. Search links for the word plot and link to matplotlib tools section
-1. https://matplotlib.org/sampledoc/extensions.html
-1. Appears to be included with matplotlib
-1. https://matplotlib.org/devel/plot_directive.html
-1. Need to include matplotlib and numpy in documenting package
-1. Make a factorial plot on the homepage
-   1. If you want to run this, you may need to install matplotlib with anaconda
-      1. See what happens when you do it from inside python
-         1. What pops up?
-1. Try out on homepage
-1. Search links for the word plot and link to matplotlib?
-1. Create a section in tools on Matplotlib
-1. matplotlib sample doc
-1. Have an example page in iPython
-   1. Show link to the actual notebook so people can play around with it
-1. Integrate plots
-1. Link Jupyter
-1. Try out log base 16 of factorial of x
-1. On links page, the jupyter general link says plotting, should link
-   1. Link to matplotlib
-
-
-## Packaging
-1. See the project management -> distribution section of links
-   1. Update the comment for requirements files?
-1. After making a packaging section, link to it from the top of the code.rst pg
-1. Reciprically link with the project directory structure
-1. https://anaconda.org/conda-forge/doc8
-   1. This one is showing on anaconda cloud....
-1. Tools section on PyPI
-1. Currently, the link to pip already exists
-1. Do this first!
-1. Section on writing tests and packaging in dev-guide
-1. Try out with the 0.3.0 codebase
-1. First get onto PyPi
-    1. https://packaging.python.org/tutorials/packaging-projects/
-1. Then, can try adding to conda-forge
-    1. https://conda-forge.org/docs/
-    1. There is a sample file that just points to PyPi
-    1. https://github.com/conda-forge/staged-recipes/blob/master/recipes/example/meta.yaml
-1. PEP 328
-1. yaml should freeze at last release and then update each release
-   1. Sort of depends on Travis
-1. Update license
-1. https://stackoverflow.com/questions/448271/what-is-init-py-for
-1. https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
-1. Ship conda with the dependencies
-   1. Then can install in the quick start
-      1. Mention you have just started the python interpreter with link
-         1. Link is in the floating point rampage
-1. Push to conda and create procedures as you go
-1. https://packaging.python.org/tutorials/packaging-projects/
-   1. Go through the tutorial and upload to test pypi
-1. https://choosealicense.com/
-   1. Probably MIT
-      1. Need to have a versioning section that says to update year
-1. https://packaging.python.org/guides/distributing-packages-using-setuptools/
-   1. More info about setup tools
-1. The examples page (if in Jupyter) should link to interactive analysis
-   1. In the Anaconda a6 table
-   1. Also, the Code testing link should go to the test index
-   1. And, the numerical analysis parts should get links
-1. Make sure to do Conda-forge packaging too
-
-## Doc
-1. TOC for everything page?
-1. Software also has an auto-api section?
-   1. May enable module index
-1. When conda finally gets sphinx rtd theme 0.4.3 (or whatever it is)
-   1. Are the settings different?
-      1. How far down can the stick TOC go?
-
-## myPy
-1. ttps://code.visualstudio.com/docs/python/settings-reference#_mypy
-1. MyPy type linter
-   1. https://www.python.org/dev/peps/pep-0526/
-   1. https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
-      1. Get the mypy linter going in the conda package
-   1. VS Code linter
-      1. https://code.visualstudio.com/docs/python/linting
-         1. Make a type checking procedures page
-         1. Talk about how to disable the pep8 colon warning but leave mypy on
-1. Figure out how to show all lines in rst files that are too long
-1. :pep:`Type hint theory <483>`
-   1. Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
-1. :pep:`Variable annotations <527>`
-1. :doc:`Typing module <python:library/typing>`
-
-## Robinhood integration
-
-## Downloading transaction history from Robinhood
-1. If transaction type isn't recognized, just skip over it
-   1. Print out that a .json object was obtained that was unknown
-1. After downloading, the pandas portfolio parser (PPP) does checksum
-   1. Does net portfolio amount equal buying power?
-1. Need a logger / other way to harvest syntax from others
-   1. What does a stock split or withdrawal look like?
-      1. You can easily simulate withdrawal, then can put right back in
-
-## Transaction updates
-1. When transaction init gets an error, should
-   1. Raise error
-   1. Show a trace to the data that produced it
-1. Class method to convert to a dataframe?
-   1. Could have a subclass of DataFrame called ledger
-      1. By merit of existing, it has already been sanitized
-         1. Thus can go straight back into transactions
-   1. Would already have sanitized data
-
-## gitignore
-1. Explain what different things can cause gitignore to have contents
-   1. Pytest/compiled python, etc
-1. Make a development task to clean it out?
-1. Do a commit that is just cleaning out .gitignore
-
-# 0.6.0
+* AnaKAHNndaKAHN 2019?
+* Front
+   * :term:`AAAAAA`: link :xref:`everywhere`
+      * At bottom:
+         * * 'everywhere' : ("The internet", url['Wiki pg] + 'Universe')
+   * Have your email and your website
+* On back, explanation field list
+   * Just make the window smaller in order to view it
+* Use version 0.3 field list
 
 ## For fun
 
@@ -426,49 +415,49 @@
 
 
 ## Robinhood time
-1. https://stackabuse.com/converting-strings-to-datetime-in-python/
-   1. Do strptime
-   1. https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
-   1. Have a robinhood.py file
-      1. module variable robinhood.date_format
-         1. '%b %d %Y %I:%M%p' or similar
-1. https://docs.python.org/3/library/datetime.html#datetime.datetime
-   1. Looks like robinhood is already in correct format
-   1. https://github.com/sanko/Robinhood/blob/master/Order.md#place-an-order
-1. Assume all times are zulu to avoid confusion
-1. Use a Naive timezone, assume zulu
+* https://stackabuse.com/converting-strings-to-datetime-in-python/
+   * Do strptime
+   * https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+   * Have a robinhood.py file
+      * module variable robinhood.date_format
+         * '%b %d %Y %I:%M%p' or similar
+* https://docs.python.org/3/library/datetime.html#datetime.datetime
+   * Looks like robinhood is already in correct format
+   * https://github.com/sanko/Robinhood/blob/master/Order.md#place-an-order
+* Assume all times are zulu to avoid confusion
+* Use a Naive timezone, assume zulu
 
 ## Robinhood integration
-1. Services setup
-   1. Robinhood
-   1. Will require its own setup section, adding to .yaml, etc
-1. Can do later:
-   1. AlphaVantage
-   1. Google Sheets
-   1. EDGAR
-1. Use Corey Schafer password tutorial
-1. [Unofficial Robinhood API documentation](https://github.com/sanko/Robinhood)
-1. GitHub Robinhood modules
-   1. [version with 736 stars](https://github.com/Jamonek/Robinhood)
-   1. [version with 30 stars](https://github.com/westonplatter/fast_arrow)
-   1. [version with 27 stars](https://github.com/mstrum/robinhood-python)
-1. RegEx
-   1. https://regexr.com/
+* Services setup
+   * Robinhood
+   * Will require its own setup section, adding to .yaml, etc
+* Can do later:
+   * AlphaVantage
+   * Google Sheets
+   * EDGAR
+* Use Corey Schafer password tutorial
+* [Unofficial Robinhood API documentation](https://github.com/sanko/Robinhood)
+* GitHub Robinhood modules
+   * [version with 736 stars](https://github.com/Jamonek/Robinhood)
+   * [version with 30 stars](https://github.com/westonplatter/fast_arrow)
+   * [version with 27 stars](https://github.com/mstrum/robinhood-python)
+* RegEx
+   * https://regexr.com/
 
 ## Zen page updates
-1. Go through and re-write/re-link once there are more places to link to
+* Go through and re-write/re-link once there are more places to link to
 * Tools of Titans
    * You'll be overwhelmed with references, but remember...
    * The good *stuff* sticks
 
 ## Pandas ledger class
-1. Make a ledger a sub class of a dataframe
-   1. Use super like in https://realpython.com/python-super/
-      1. Also has inheritance tutorials, OOP:
-         1. https://realpython.com/python3-object-oriented-programming/
+* Make a ledger a sub class of a dataframe
+   * Use super like in https://realpython.com/python-super/
+      * Also has inheritance tutorials, OOP:
+         * https://realpython.com/python3-object-oriented-programming/
 
 ## Proofreading
-1. Delete base_url from conf.py or defer until later
+* Delete base_url from conf.py or defer until later
 
 # 0.7.0
 
@@ -483,89 +472,89 @@
 
 
 ## robinhood user data
-1. Have a .txt file that denotes portfolios
-1. Have a way you can use google drive to store data
+* Have a .txt file that denotes portfolios
+* Have a way you can use google drive to store data
 
 ## alnoki's analysis archives
-1. A new section with a ton of plots
+* A new section with a ton of plots
 * Use SVGs with the date embedded in each one
 
-# 1.0.0 Package release
+# *0.0 Package release
 
 ## Main functionality
-1. Download a Robinhood history to a pandas DataFrame
-1. MVP (minimum viable prototype)
-1. Package per the YouTube tutorial by the freelancer, link on iPad
-1. Make sure the downloadable PDF version is okay
+* Download a Robinhood history to a pandas DataFrame
+* MVP (minimum viable prototype)
+* Package per the YouTube tutorial by the freelancer, link on iPad
+* Make sure the downloadable PDF version is okay
 
 ## Deployment
-1. Use iPad video
-   1. Travis
-   1. Coverage for both code and docs
-1. Coverage.py for testing framework
-1. Per Carol Willing talk
-   1. Make spelling test with exception words
-   1. Links for topics in csv table, like spellchecking, etc.
-   1. Links for package deployment talk
-1. __init__.py should have docstrings too per {PEP257 (?)}
+* Use iPad video
+   * Travis
+   * Coverage for both code and docs
+* Coverage.py for testing framework
+* Per Carol Willing talk
+   * Make spelling test with exception words
+   * Links for topics in csv table, like spellchecking, etc.
+   * Links for package deployment talk
+* __init__.py should have docstrings too per {PEP257 (?)}
 
 ## Setup page
-1. For the python enthusiast
-   1. Conda install AAAAAA
-   1. pip install AAAAAA (?)
+* For the python enthusiast
+   * Conda install AAAAAA
+   * pip install AAAAAA (?)
 
 ## Linking
-1. Import times from the iPad speech about packaging
-   1. Shows code coverage
-   1. Link to the topics when you get around to it
-      1. Link to every topic from a csv table
-1. Make sure all topics from the willing speech are linked too
+* Import times from the iPad speech about packaging
+   * Shows code coverage
+   * Link to the topics when you get around to it
+      * Link to every topic from a csv table
+* Make sure all topics from the willing speech are linked too
 
 ## Transaction code
-1. Do original tutorials but with financial data
-1. NaN in GoogleSheets should be different than $0
-1. __repr__ should sanitize inputs
-1. Need a to_string()
+* Do original tutorials but with financial data
+* NaN in GoogleSheets should be different than $0
+* __repr__ should sanitize inputs
+* Need a to_string()
 
-# 1.1.0 BTMF
+# **0 BTMF
 * Can't be a coefficient, because sign of you and market could be different
 * Should just be a percentage positive or negative
 
 ## Main functionailty
-1. Adds PARDAFA and BTMF versus CRSPTMT
-1. Cast a portfolio into a Pandas dataframe then plot
-1. ABC: Annualized BTMF coefficient
-   1. (APR of alnoki) / (APR of CRSPTMT)
+* Adds PARDAFA and BTMF versus CRSPTMT
+* Cast a portfolio into a Pandas dataframe then plot
+* ABC: Annualized BTMF coefficient
+   * (APR of alnoki) / (APR of CRSPTMT)
 
-# 1.2.0 and on
+# *2.0 and on
 
 ## General ideas
-1. See all notebook entries since Dec 26
-   1. Leisurely review paper notebook notes for more ideas
-1. Robinhood interface to Google sheets?
-   1. Make an AAAAAA GSheet and update the associated GDrive document ledger
-1. RODCA with LaTeX?
-1. Do some fun stats first just for fun
-   1. Those goons at instutions don't know DSP
-   1. The patterns are there
+* See all notebook entries since Dec 26
+   * Leisurely review paper notebook notes for more ideas
+* Robinhood interface to Google sheets?
+   * Make an AAAAAA GSheet and update the associated GDrive document ledger
+* RODCA with LaTeX?
+* Do some fun stats first just for fun
+   * Those goons at instutions don't know DSP
+   * The patterns are there
 
 ## Investing philosophy page?
-1. For The Intelligent investor, can link to another "concepts page"
-   1. The 7-step checklist, etc.
-1. See other investing references from urls on Google Drive
-1. Warren Buffet BRK website
-   1. Fair price wonderful company vs wonderful price fair company
-1. Easy to be small guy vs hunting elephants
-1. Growth in book value per year as a metric?
-1. Standard and Poors facilitated the 2009 crisis
-   1. This is why we use CRSPTMT
-      1. Also it is academic
+* For The Intelligent investor, can link to another "concepts page"
+   * The 7-step checklist, etc.
+* See other investing references from urls on Google Drive
+* Warren Buffet BRK website
+   * Fair price wonderful company vs wonderful price fair company
+* Easy to be small guy vs hunting elephants
+* Growth in book value per year as a metric?
+* Standard and Poors facilitated the 2009 crisis
+   * This is why we use CRSPTMT
+      * Also it is academic
 
 ## Numerical analysis
 * https://scipy-cookbook.readthedocs.io/
    * https://scipy-cookbook.readthedocs.io/items/KalmanFiltering.html
-1. https://web.stanford.edu/~schmit/cme193/
-   1. has seaborn and pandas examples
-   1. Predictor of survivor on Titanic, powerful statistical modeling tools
-1. [RealPython.com Pandas optimization](https://realpython.com/fast-flexible-pandas/)
-1. Other references from Python training logs on Google Drive
+* https://web.stanford.edu/~schmit/cme193/
+   * has seaborn and pandas examples
+   * Predictor of survivor on Titanic, powerful statistical modeling tools
+* [RealPython.com Pandas optimization](https://realpython.com/fast-flexible-pandas/)
+* Other references from Python training logs on Google Drive
