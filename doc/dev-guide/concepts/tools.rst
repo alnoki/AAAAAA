@@ -239,7 +239,7 @@ along with :git-doc:`Git <user-manual>`
    :header: Reference, Topic
 
    :git-doc:`Git manual <user-manual>`, Quick practical reference
-   :xref:`git-book`, In-depth conceptual explanations
+   :git-scm:`Git book <book/en/v2>`, In-depth conceptual explanations
    :xref:`git-commit-guidelines`, Contribution guidelines
    :doc:`Documentation webhooks <rtfd:webhooks>`, "Automatic
    :ref:`version <indices-versions>` support"

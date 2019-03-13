@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 .. _what-next:
 
@@ -37,7 +37,7 @@ You don't want to get sidetracked
 Keep on :wiki-pg:`clicking <Point_and_click>` :guilabel:`next`! Lucky for you,
 this :xref:`website <website>` is made with :ref:`tools-sphinx` and as such you
 can view every :xref:`webpage <webpage>` in a logical linear order without
-having to think twice
+having to think twice (if you use :guilabel:`next`)
 
 
 ****************************************

@@ -282,7 +282,7 @@ Conda syntax
 
 #. :doc:`conda:user-guide/tasks/manage-environments`
 
-   * Exporting and importing :ref:`environment files<conda:concept-conda-env>`
+   * Exporting and importing :ref:`environment files <conda:concept-conda-env>`
 
 #. :doc:`conda:commands/clean`
 
@@ -450,7 +450,7 @@ General
 
    * Quick practical reference
 
-#. :xref:`git-book`
+#. :git-scm:`Git book <book/en/v2>`
 
    * In-depth conceptual explanations
 
@@ -517,6 +517,9 @@ Core commands
 
    * Combine :xref:`branches <git-branch>`
 
+Auxiliary commands
+==================
+
 #. :git-doc:`git-reset`
 
    * Fix mistakes
@@ -571,6 +574,26 @@ General
 #. :wiki-pg:`Acronym`
 
    * A short way to say something, like :term:`AAAAAA`
+
+#. :xref:`citation`
+
+   * A way to create a :ref:`reference <references>` to a source of information
+
+#. :xref:`book`
+
+   * Information source
+
+#. :xref:`ISBN`
+
+   * Unique identifier for :xref:`books <book>`
+
+#. :xref:`cite-multiple-authors`
+
+   * Use of ``et. al``
+
+#. :wiki-pg:`Copyright`
+
+   * Defines rules for using content
 
 Sphinx
 ======
@@ -739,8 +762,8 @@ With Read the Docs
 
    * Interface for :ref:`distributing documentation <dist-doc>`
 
-Managing references
--------------------
+Reference management
+--------------------
 
 #. :doc:`Intersphinx extension <sphinx:usage/extensions/intersphinx>`
 
@@ -755,8 +778,8 @@ Managing references
 
 #. :doc:`extlinks <sphinx:usage/extensions/extlinks>`
 
-   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` for improved
-     handling of :ref:`sphinx-xref base URLs <sphinx-xref>`
+   * :doc:`Sphinx extension <sphinx:usage/extensions/index>` for
+     :wiki-pg:`URLs <URL>` from common sources
 
 #. :stack-q:`Intersphinx objects.inv explanation
    <45699577/how-to-link-to-root-page-in-intersphinx>`
@@ -779,10 +802,6 @@ Managing references
      :doc:`Intersphinx <usage/extensions/intersphinx>` with specific
      :ref:`packages <python:tut-packages>`
 
-#. :xref:`citation`
-
-   * A way to create a :ref:`reference <references>` to a source of information
-
 #. :xref:`bibtex`
 
    * :xref:`citation` management format
@@ -791,14 +810,6 @@ Managing references
 
    * :ref:`Sphinx extension <tools-sphinx>` for :xref:`citing <citation>` with
      :xref:`bibtex`
-
-#. :xref:`book`
-
-   * Information source
-
-#. :xref:`ISBN`
-
-   * Unique identifier for :xref:`books <book>`
 
 #. :xref:`ottobib`
 
@@ -809,14 +820,6 @@ Managing references
 
    * :wiki-pg:`Syntax <Syntax_(programming_languages)>` for identifying
      specific :xref:`citation <citation>` components
-
-#. :xref:`cite-multiple-authors`
-
-   * Use of ``et. al``
-
-#. :wiki-pg:`Copyright`
-
-   * Defines rules for using content
 
 Showing code
 ------------
@@ -849,8 +852,8 @@ Showing code
 
 #. :ref:`sphinx:info-field-lists`
 
-   * :ref:`reST syntax <tools-restructured-text>` that
-     :doc:`napoleon <sphinx:usage/extensions/napoleon>` produces
+   * :ref:`reST syntax <tools-restructured-text>` shown at
+     :ref:`concepts-code-e4`
 
 Napoleon
 --------
@@ -1044,7 +1047,8 @@ Extensions
 
 #. :xref:`live-md-preview`
 
-   * Preview :github-help:`Markdown <basic-writing-and-formatting-syntax>` and :wiki-pg:`LaTeX`
+   * Preview :github-help:`Markdown <basic-writing-and-formatting-syntax>` and
+     :wiki-pg:`LaTeX`
 
 VS Code
 =======
@@ -1161,14 +1165,41 @@ Extensions
 
 #. :vs-code-ext:`Vim extension for VS code <vscodevim.vim>`
 
-   * Use :xref:`Vim <Vim>` in :ref:`tools-vs-code`
+   * Use :ref:`tools-vim` in :ref:`tools-vs-code`
 
 Vim
 ===
 
+Official information
+--------------------
+
 #. :xref:`Vim`
 
    * For :xref:`git-config`, :xref:`git-commit`, and :ref:`tools-vs-code`
+
+#. :vim-wiki:`Mac OS syntax highlighting <Turn_on_syntax_coloring_in_Mac_OS_X>`
+
+   * Enable :wiki-pg:`syntax highlighting <Syntax_highlighting>`
+
+#. :vim-wiki:`.vimrc file <Open_vimrc_file>`
+
+   * :ref:`Vim configuration file <configs-vim>` for
+     :wiki-pg:`syntax highlighting <Syntax_highlighting>`
+
+#. :vim-wiki:`Repeating keystrokes <Recording_keys_for_repeated_jobs>`
+
+   * Do similar :wiki-pg:`commands <Command_line>` repeatedly
+
+#. :vim-wiki:`Official tutorial <Tutorial>`
+
+   * Simple instructions
+
+#. :vim-wiki:`All the right moves <All_the_right_moves>`
+
+   * Intermediate :wiki-pg:`command <Command_line>` reference
+
+Unofficial supplements
+----------------------
 
 #. :xref:`Vim-tutorial`
 
@@ -1186,30 +1217,10 @@ Vim
 
    * Can happen when :ref:`committing <git-committing>` incorrectly
 
-#. :vim-wiki:`Mac OS syntax highlighting <Turn_on_syntax_coloring_in_Mac_OS_X>`
-
-   * Enable :wiki-pg:`syntax highlighting <Syntax_highlighting>`
-
-#. :vim-wiki:`.vimrc file <Open_vimrc_file>`
-
-   * :ref:`Vim configuration file <configs-vim>` for
-     :wiki-pg:`syntax highlighting <Syntax_highlighting>`
-
 #. :xref:`vim-learn-plan`
 
    * Become efficient with :xref:`Vim`
 
-#. :vim-wiki:`Repeating keystrokes <Recording_keys_for_repeated_jobs>`
-
-   * Do similar :wiki-pg:`commands <Command_line>` repeatedly
-
-#. :vim-wiki:`Official tutorial <Tutorial>`
-
-   * Simple instructions
-
-#. :vim-wiki:`All the right moves <All_the_right_moves>`
-
-   * Intermediate :wiki-pg:`command <Command_line>` reference
 
 *********
 Computers
@@ -1220,7 +1231,20 @@ General
 
 #. :xref:`computer`
 
-   * A system that manipulates information
+   * A system that manipulates information using :wiki-pg:`software <Software>`
+
+#. :wiki-pg:`User <User_(computing)>`
+
+   * Who is using :wiki-pg:`software <Software>`
+
+#. :wiki-pg:`Developer <Programmer>`
+
+   * Who is creating :wiki-pg:`software <Software>`
+
+#. :wiki-pg:`Install <Installation_(computer_programs)>`
+
+   * Provide :wiki-pg:`software <Software>` for a
+     :wiki-pg:`computer <Computer>`
 
 Interfaces
 ==========
@@ -1257,7 +1281,7 @@ Interfaces
 
    * Moving visualizations around
 
-#. :wiki-pg:`Sidebar_(computing)`
+#. :wiki-pg:`Sidebar <Sidebar_(computing)>`
 
    * Keeps information on the side of a :wiki-pg:`program <Software>`
 
@@ -1272,17 +1296,13 @@ Software
 
    * A structured collection of :xref:`source code <source-code>`
 
-#. :wiki-pg:`Documentation <Software_documentation>`
+#. :wiki-pg:`Open-source software <Open-source_software>`
+
+   * Public way to share :xref:`source code <source-code>`
+
+#. :wiki-pg:`Software documentation <Software_documentation>`
 
    * Describes how :wiki-pg:`software <Software>` works
-
-#. :wiki-pg:`User <User_(computing)>`
-
-   * Who is using :wiki-pg:`software <Software>`
-
-#. :wiki-pg:`Developer <Programmer>`
-
-   * Who is creating :wiki-pg:`software <Software>`
 
 #. :wiki-pg:`Development <Software_development>`
 
@@ -1291,11 +1311,6 @@ Software
 #. :wiki-pg:`Line of code <Source_lines_of_code>`
 
    * One portion of :wiki-pg:`source code <Source_code>`
-
-#. :wiki-pg:`Install <Installation_(computer_programs)>`
-
-   * Provide :wiki-pg:`software <Software>` for a
-     :wiki-pg:`computer <Computer>`
 
 #. :wiki-pg:`Algorithm`
 
@@ -1306,6 +1321,13 @@ Software
    * Check :wiki-pg:`source code <Source_code>` for
      :wiki-pg:`syntax <Syntax_(programming_languages)>` or style errors
 
+#. :wiki-pg:`Execution <Execution_(computing)>`
+
+   * When a :wiki-pg:`computer <Computer>` uses :wiki-pg:`software <Software>`
+
+Syntax
+======
+
 #. :wiki-pg:`Syntax <Syntax_(programming_languages)>`
 
    * :wiki-pg:`String <String_(computer_science)>` composition rules
@@ -1314,30 +1336,6 @@ Software
 
    * :wiki-pg:`Rendering <Rendering_(computer_graphics)>` for special
      components in a :wiki-pg:`file <Computer_file>`
-
-#. :wiki-pg:`Execution <Execution_(computing)>`
-
-   * When a :wiki-pg:`computer <Computer>` uses :wiki-pg:`software <Software>`
-
-Data storage
-============
-
-#. :wiki-pg:`Directory <Directory_(computing)>`
-
-   * Cataloging structure for :xref:`computer <computer>` data
-
-#. :wiki-pg:`Path <Path_(computing)>`
-
-   * Identifier for a :wiki-pg:`directory <Directory_(computing)>` or
-     :wiki-pg:`file <Computer_file>`
-
-#. :wiki-pg:`File <Computer_file>`
-
-   * A way to store data in a :wiki-pg:`computer <Computer>`
-
-#. :wiki-pg:`Filename extension <Filename_extension>`
-
-   * A way to identify the type of a :wiki-pg:`file <Computer_file>`
 
 #. :wiki-pg:`Character <Character_(computing)>`
 
@@ -1367,6 +1365,26 @@ Data storage
 #. :wiki-pg:`Delimiter`
 
    * A data boundary marker
+
+Data storage
+============
+
+#. :wiki-pg:`Directory <Directory_(computing)>`
+
+   * Cataloging structure for :xref:`computer <computer>` data
+
+#. :wiki-pg:`Path <Path_(computing)>`
+
+   * Identifier for a :wiki-pg:`directory <Directory_(computing)>` or
+     :wiki-pg:`file <Computer_file>`
+
+#. :wiki-pg:`File <Computer_file>`
+
+   * A way to store data in a :wiki-pg:`computer <Computer>`
+
+#. :wiki-pg:`Filename extension <Filename_extension>`
+
+   * A way to identify the type of a :wiki-pg:`file <Computer_file>`
 
 #. :wiki-pg:`PDF`
 
@@ -1444,8 +1462,8 @@ OS specifics
 
    * A report from :wiki-pg:`software <Software>` when it is done
 
-Online information
-==================
+The Internet
+============
 
 #. :xref:`internet`
 
@@ -1478,9 +1496,30 @@ Online information
 
    * A way to locate a :xref:`webpage <webpage>`
 
+#. :wiki-pg:`Download`
+
+   * Gather information from the :wiki-pg:`Internet`
+
+#. :wiki-pg:`Upload`
+
+   * Provide information to the :wiki-pg:`Internet`
+
+#. :wiki-pg:`Host <Host_(network)>`
+
+   * A :wiki-pg:`computer <Computer>` that provides resources to other
+     :wiki-pg:`computers <Computer>` via the :wiki-pg:`Internet`
+
+Information sources
+===================
+
+#. :wiki-pg:`Search engine <Web_search_engine>`
+
+   * A :wiki-pg:`software <Software>` system that indexes :wiki-pg:`Internet`
+     information
+
 #. :xref:`Google`
 
-   * Preferred way to search for :xref:`online <internet>` information
+   * Preferred :wiki-pg:`search engine <Web_search_engine>`
 
 #. :wiki-pg:`Wikipedia`
 
@@ -1490,32 +1529,10 @@ Online information
 
    * For accessing tutorials and other video information
 
-#. :wiki-pg:`Open-source software <Open-source_software>`
-
-   * Public way to share :xref:`source code <source-code>`
-
-#. :wiki-pg:`Download`
-
-   * Gather information from the :wiki-pg:`Internet`
-
-#. :wiki-pg:`Upload`
-
-   * Provide information to the :wiki-pg:`Internet`
-
 #. :xref:`stack-overflow`
 
    * Community :wiki-pg:`website <Website>` that provides answers to
      :wiki-pg:`computer <Computer>` questions
-
-#. :wiki-pg:`Host <Host_(network)>`
-
-   * A :wiki-pg:`computer <Computer>` that provides resources to other
-     :wiki-pg:`computers <Computer>` via the :wiki-pg:`Internet`
-
-#. :wiki-pg:`Search engine <Web_search_engine>`
-
-   * A :wiki-pg:`software <Software>` system that indexes :wiki-pg:`Internet`
-     information
 
 Software design standards
 =========================

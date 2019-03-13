@@ -58,17 +58,17 @@ Some select demonstrative contents of the
    :align: center
    :header: Name, Function
 
-   ``AAAAAA/``, Project root :xref:`directory <directory>`
+   ``AAAAAA/``, Project :xref:`root directory <directory>`
    ``src/`` , :xref:`Source code <source-code>` (in :ref:`tools-Python`)
    ``test/`` , :ref:`pytest test code <tools-pytest>`
    ``doc/`` , ":ref:`tools-sphinx`-style
    :wiki-pg:`documentation <Software_documentation>`"
    ``nbs/`` , :ref:`Jupyter notebooks <tools-jupyter>`
-   ``.vscode/`` , :ref:`tools-vs-code` settings
-   ``.gitignore`` , :ref:`tools-git` configuration
+   ``.vscode/`` , :ref:`VS Code settings <tools-vs-code>`
+   ``.gitignore`` , :ref:`Git configuration <configs-git>`
    ``a6.yml`` , :term:`a6 conda environment <a6>`
-   ``setup.py`` , Configuration for :ref:`tools-pytest`
-   ``README.md`` , "Contains :wiki-pg:`URL` for
+   ``setup.py`` , :ref:`pytest configuration <configs-pytest>`
+   ``README.md`` , "Has :wiki-pg:`URL` for
    :wiki-pg:`documentation <Software_documentation>`
    :xref:`website <website>`"
    ``TODO.md`` , :ref:`Task planning <versioning-td3>`

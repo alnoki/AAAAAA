@@ -44,7 +44,6 @@ In accordance with :ref:`pytest configuration specifications <configs-pytest>`,
 .. code-block:: none
 
    AAAAAA/
-       setup.py
        src/
            AAAAAA/
                __init__.py
@@ -52,9 +51,17 @@ In accordance with :ref:`pytest configuration specifications <configs-pytest>`,
        test/
            test_ledger.py
            test_utilities.py
+       setup.py
 
 .. _concepts-code-style:
 
+.. csv-table::
+   :align: center
+   :header: Name, Function
+
+   ``src/AAAAAA/``, :ref:`Python source code <tools-python>`
+   ``test/``, :ref:`pytest test code <tools-pytest>`
+   ``setup.py``, :ref:`pytest configuration <configs-pytest>`
 
 *****
 Style

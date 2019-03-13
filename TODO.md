@@ -3,16 +3,6 @@
 
 # 0.4.0
 
-## Vim training
-* Vim section, find all for vim links to it
-* Review Git setup and procedures, link to Vim tools page
-
-## Version list update
-* Vim integration
-
-## Proofreading
-* Find all for unlinked "file" on links page
-
 ## quicklinks
 * :wiki-pg:`run <Execution_(computing)>`
 * :wiki-pg:`scroll <Scrolling>`
@@ -39,6 +29,18 @@
 * :wiki-pg:`Documentation <Software_documentation>`
 * :wiki-pg:`Delimiter`
 
+## Proofreading notes
+* https://www.idownloadblog.com/2015/01/14/how-to-enable-key-repeats-on-your-mac/
+* Proofreading changed documents
+   * Not need identify a tag
+   * Go in the order of the next button
+      * Compare vs gitlens output
+   * If file totally changed, may just re-do whole file
+   * Still can just proofread after Gitlens has identified a change
+   * Only may want tag if file moved
+* Proofreading can also just hover over the link too
+* Button_(computing) find all and insert
+
 # 0.5.0
 
 ## Data integration
@@ -55,6 +57,7 @@
 * Use python secrets library?
 
 ## Jupyter
+* When split off nbs page from doc page, re-do header levels on doc page
 * Should have concepts notebooks page
 * Do all official 10 minutes to "x" tutorials in one notebook
    * On examples page mention official-tutorials.ipynb
@@ -393,7 +396,7 @@
    * Just make the window smaller in order to view it
 * Use version 0.3 field list
 
-## For fun
+## kwarg passing
 
    - In Python 3 you can use a bare "*" asterisk
    - in function parameter lists to force the
@@ -413,6 +416,22 @@
    >>> f(1, 2, c='p', d='q',e='v')
    'Hello'
 
+   -  Python 3.5+ allows passing multiple sets
+   -  of keyword arguments ("kwargs") to a
+   -  function within a single call, using
+   -  the "**" syntax:
+
+   >>> def process_data(a, b, c, d):
+   >>>    print(a, b, c, d)
+
+   >>> x = {'a': 1, 'b': 2}
+   >>> y = {'c': 3, 'd': 4}
+
+   >>> process_data(**x, **y)
+   1 2 3 4
+
+   >>> process_data(**x, c=23, d=42)
+   1 2 23 42
 
 ## Robinhood time
 * https://stackabuse.com/converting-strings-to-datetime-in-python/

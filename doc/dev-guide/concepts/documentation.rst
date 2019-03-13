@@ -45,22 +45,17 @@ Structure
             exts/
                 xref.py
             conf.py
+            requirements.txt
             Makefile
             make.bat
             index.rst
-            requirements.txt
             getting-started/
                 quickstart.rst
                 examples.rst
                 what-next.rst
-                references/
-                    index.rst
-                    refs.bib
-                    books.rst
-                    links.rst
             user-guide/
                 index.rst
-                fundamentals.rst
+                transactions.rst
                 ...
             dev-guide/
                 index.rst
@@ -72,15 +67,13 @@ Structure
                     index.rst
                     tools.rst
                     ...
-                testing/
-                    index.rst
-                distributing/
-                    index.rst
+            indices/
+                index.rst
+                references/
                     ...
-                procedures/
-                    index.rst
-                    conda.rst
-                    ...
+                    refs.bib
+                    books.rst
+
 
 .. csv-table::
    :align: center
@@ -88,10 +81,11 @@ Structure
 
    ``exts/``, ":xref:`Directory <directory>` for
    :doc:`extensions <sphinx:usage/extensions/index>`"
-   ``conf.py``, ":ref:`Configuration <configs-conf-py>` for
-   :ref:`tools-sphinx`"
+   ``conf.py``, :ref:`Sphinx configuration <configs-conf-py>`
+   ``requirements.txt``, "
+   :ref:`Read the Docs configuration <configs-read-the-docs>`"
    "``Makefile`` , ``make.bat``", :ref:`sphinx-building-doc`
-   ``index.rst`` (top-level) , ":xref:`homepage <webpage>` of
+   ``index.rst`` (top-level) , ":xref:`Homepage <webpage>` of
    :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`"
    "``getting-started/`` , ``user-guide/``, etc.", "
    :xref:`Directories <directory>` for
@@ -392,7 +386,7 @@ Jupyter Notebooks
    "``ledger.ipynb``, ``version-stats.ipynb``, etc.", "
    :ref:`Jupyter Notebooks <tools-jupyter>`"
    ``version-stats.csv``, ":ref:`csv-table <sphinx:table-directives>`
-   integration"
+   integration for :ref:`version statistics <versions-stats>`"
 
 .. tip::
 

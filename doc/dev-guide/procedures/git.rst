@@ -18,7 +18,7 @@ Git
    :header: Reference, Topic
 
    :git-doc:`Git manual <user-manual>`, Quick practical reference
-   :xref:`git-book`, In-depth conceptual explanations
+   :git-scm:`Git book <book/en/v2>`, In-depth conceptual explanations
    :xref:`commit-conventions`, Tell the :xref:`codebase <software>` what to do
    :xref:`git-commit-guidelines`, Message guidelines
 
@@ -50,7 +50,7 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
       git config --global user.name alnoki
       git config --global user.email 43892045+alnoki@users.noreply.github.com
 
-#. Set :xref:`Vim` as the default editor and use it to verify your
+#. Set :ref:`tools-vim` as the default editor and use it to verify your
    :wiki-pg:`identity <User_(computing)>`:
 
    .. code-block:: bash
@@ -58,12 +58,12 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
       git config --global core.editor Vim
       git config --global -e
 
-#. At this point, you will be in the :xref:`Vim`. If you your
+#. At this point, you will be in :ref:`tools-vim`. If you your
    :wiki-pg:`identity <User_(computing)>` looks right, you can
    :xref:`exit without saving <Vim-cheatsheet>` by
    :wiki-pg:`typing <Typing>` ``:q!`` then :kbd:`return`
 
-#. :xref:`Vim` comes with built-in
+#. :ref:`tools-vim` comes with built-in
    :wiki-pg:`syntax highlighting <Syntax_highlighting>` for
    :ref:`commit messages <git-committing>`, but if you are using a
    :wiki-pg:`Mac <Macintosh_operating_systems>` you may have to
@@ -76,7 +76,7 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
       filetype plugin indent on
       syntax on
 
-.. csv-table:: Learning :xref:`Vim`
+.. csv-table:: Learning :ref:`tools-vim`
    :align: center
    :header: Reference, Topic
 
@@ -93,7 +93,7 @@ Updating user credentials
 Per :xref:`git-config`:
 
 #. Use the :ref:`VS Code integrated terminal <tools-vs-code>` to edit
-   :xref:`git-config` using :xref:`Vim <Vim>`:
+   :xref:`git-config` using :ref:`tools-vim`:
 
    .. code-block:: bash
 
@@ -296,7 +296,7 @@ Committing
 
    .. Note::
 
-      This will open :xref:`Vim <Vim>`, which you can use to generate your
+      This will open :ref:`tools-vim`, which you can use to generate your
       :xref:`commit message <git-commit>` per the
       :xref:`save and close <Vim-cheatsheet>` procedure used to
       :ref:`update Git credentials <git-credentials>`
@@ -391,7 +391,7 @@ Tagging
 
    .. Note::
 
-      This will open :xref:`Vim <Vim>`, which you can use to generate your
+      This will open :ref:`tools-vim`, which you can use to generate your
       :xref:`commit message <git-commit>` per the
       :xref:`save and close <Vim-cheatsheet>` procedure used to
       :ref:`update Git credentials <git-credentials>`

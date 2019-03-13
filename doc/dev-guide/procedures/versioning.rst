@@ -145,7 +145,7 @@ At this point you should be working on a
    :doc:`list <sphinx:usage/restructuredtext/basics>`
 #. Do a :ref:`link check <sphinx-checking-links>`
 
-#. Finalize feature additions in the :ref:`version list <indices-versions>`
+#. Finalize :ref:`version feature additions <versions-features>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
    most recent :ref:`release <indices-versions>`
 

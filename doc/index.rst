@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 
 ########
@@ -36,7 +36,7 @@ Python?
 You can use a bit of :xref:`Python` on most :xref:`computers <computer>` with
 minimal effort, using :py:func:`python:print`:
 
-#. Open the :xref:`command line <command-line>` on your
+#. Start the :xref:`command line <command-line>` on your
    :xref:`computer <computer>`:
 
 .. csv-table::
@@ -76,8 +76,9 @@ minimal effort, using :py:func:`python:print`:
       for i in range(5):
           print("Please be aware of the number", i)
 
-   * This :xref:`Python` input ends with an indented
-     :wiki-pg:`line of code <Source_lines_of_code>`, so
+   * This :xref:`Python` input ends with a
+     :wiki-pg:`line of code <Source_lines_of_code>` that is
+     :wiki-pg:`indented <Indentation_(typesetting)>`, so
      :wiki-pg:`type <Typing>`
      :kbd:`return` twice after :xref:`copy-pasting <copy-paste>` the above
      contents
@@ -109,10 +110,10 @@ minimal effort, using :py:func:`python:print`:
 
    .. admonition:: Don't forget
 
-      This :xref:`Python` input ends with an indented
-      :wiki-pg:`line of code <Source_lines_of_code>`, so
-      :wiki-pg:`type <Typing>`
-      :kbd:`return` twice
+      This :xref:`Python` input ends with a
+      :wiki-pg:`line of code <Source_lines_of_code>` that is
+      :wiki-pg:`indented <Indentation_(typesetting)>`, so
+      :wiki-pg:`type <Typing>` :kbd:`return` twice
 
 Congratulations!!!
 
@@ -171,14 +172,13 @@ Developer guide
    dev-guide/testing/index
    dev-guide/procedures/index
 
-.. _indices-and-tables:
-
 
 ******************
 Indices and tables
 ******************
 
-:ref:`Here <indices-intro>` you can review contents of :term:`AAAAAA`!
+:ref:`Here <indices-intro>` you can review contents of :term:`AAAAAA` with
+precision and zeal!
 
 .. toctree::
    :caption: Indices

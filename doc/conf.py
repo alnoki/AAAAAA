@@ -282,7 +282,6 @@ xref_links = {
     'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
 
     # To sort
-    'git-book': ("Git book", url['git-scm'] + 'book/en/v2'),
     'git-config': ('git-config', url['git-scm'] + 'docs/git-config'),
     'git-log': ('git-log', url['git-scm'] + 'docs/git-log'),
     'git-commit': ('git-commit', url['git-scm'] + 'docs/git-commit'),
