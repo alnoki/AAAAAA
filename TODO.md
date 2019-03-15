@@ -3,6 +3,8 @@
 
 # 0.4.0
 
+* Try to proofread without using your mouse on the LHS of the screen
+
 ## quicklinks
 * :wiki-pg:`run <Execution_(computing)>`
 * :wiki-pg:`scroll <Scrolling>`
@@ -40,8 +42,80 @@
    * Only may want tag if file moved
 * Proofreading can also just hover over the link too
 * Button_(computing) find all and insert
+* Vim series to tools page
 
 # 0.5.0
+
+## User guide restructuring
+* Intro
+   * Show how to install via conda, etc
+   * For now, use pip install -e and the package name
+      * This will end up being the lowest-priority option later on?
+* Any examples just assume package has been imported
+   * Can do by running book inside src folder or adding to path
+* Fundamentals
+   * Introduction
+      * Talk about what this section is for
+   * Transactions
+      * Move the possible kinds into the kinds docstring
+      * Have require args/kwargs per real python
+      * https://docs.python.org/3/glossary.html#term-parameter
+      * per_share_amount is defined twice
+      * Table of kinds should say exchange money for a security
+         * exchange a security for money
+      * Receive money from a security (typically dividends)
+      * Make sure to update quickstart if you change variable names
+      * ISO8601
+      * Transaction types tell brokerage account what to do (like git)
+         * Buy, sell, contribute, withdraw, receive (dividends), pay (fees)
+      * Change num_shares to just shares
+      * Show an examples of what it means to initialize a transaction
+         * In that section
+   * Connectivity
+      * Connect to robinhood
+         * Robinhood tools section
+      * Make a robinhood module
+      * Download a transaction
+      * Need a way to store it...
+         * Motivation for ledgers
+   * Ledgers
+      * Subclass of a dataframe
+      * Use int instead of decimal
+      * Properties at a certain time
+         * Holdings
+            * Dict from symbols to shares
+      * Some properties here (in ledger.py module) may be explained later
+* Performance
+   * Introduction
+      * Net asset price
+      * Contribution event (either a withdrawal or a contribution)
+      * contribution-independent ledger coefficient (CILC)
+      * Here include the matplotlib plot directive with:
+         * Use the examples from CIIC entry in financial journal
+      * To do this, we will need to get quotes, which motivates next page
+   * Quotes
+      * Add to the robinhood module
+   * Ledger additions
+      * Net asset price at a point in time
+      * Just concise pandas calls, no loops
+   * Subledgers
+      * Based on how you want
+   * After you get a plot to show, put on home page
+      * Do you want to make something like this? Keep reading!
+* Picking
+   * Coming soon: how to pick stocks
+
+## Developer guide
+* Distributing section has data section
+   * How to anonymize your transaction data
+   * Simply hashes symbols, multiplies by random number?
+   * Save as a .pkl
+   * Can then use this data for pytest on ledger and performance data
+   * Make a jupyter notebook with commands not yet run
+      * Commit it, then run it, then clear all, then check diff
+         * Shouldn't reveal any data
+* Testing section goes by module?
+   * Intro says more or less these were written as user guide was made
 
 ## Data integration
 * Consider pandas_datareader
@@ -58,6 +132,7 @@
 
 ## Jupyter
 * When split off nbs page from doc page, re-do header levels on doc page
+   * Also need to update concepts index page
 * Should have concepts notebooks page
 * Do all official 10 minutes to "x" tutorials in one notebook
    * On examples page mention official-tutorials.ipynb
@@ -103,6 +178,7 @@
    * However, matplotlib can take some time to load
 * Add a Jupyter configurations page
    * Talk about the notebook extensions, etc
+* Update the Jupyter row in the a6 table
 
 ## Dev Order
 * Write up testing first before packaging
@@ -193,6 +269,7 @@
    * Cite wolf of wall street, it is just fairy dust
 
 ## adp.py
+* Use option directive https://virtualenv.pypa.io/en/latest/reference/#options
 * An intersphinx that automatically grabs the intersphinx target from conf.py
    * adp.py objs rtfd
 * https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
@@ -480,6 +557,10 @@
 
 # 0.7.0
 
+## Tools re-linking
+* See the a6 table
+   * Need to link Numpy, Matplotlib, Jupyter, etc.
+
 ## KFREAP
 * Kalman filter recursive estimator of asset price
 * You reap what you (KF)SOW?
@@ -545,7 +626,7 @@
 * ABC: Annualized BTMF coefficient
    * (APR of alnoki) / (APR of CRSPTMT)
 
-# *2.0 and on
+# 1.0 and on
 
 ## General ideas
 * See all notebook entries since Dec 26
@@ -556,6 +637,7 @@
 * Do some fun stats first just for fun
    * Those goons at instutions don't know DSP
    * The patterns are there
+* Watch realpython video courses on iPad
 
 ## Investing philosophy page?
 * For The Intelligent investor, can link to another "concepts page"

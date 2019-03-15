@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 .. _dev-env-testing:
 
@@ -37,7 +37,8 @@ Testing
 
    .. note::
 
-      :xref:`Copy-paste <copy-paste>` this one line at a time
+      :xref:`Copy-paste <copy-paste>` this one
+      :wiki-pg:`line <Command-line_interface>` at a time
 
 #. Try out :ref:`tools-pytest` from inside the
    :ref:`AAAAAA root directory <concepts-project-tree>`:

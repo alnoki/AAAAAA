@@ -555,11 +555,11 @@ Updating labels
 #. With an :ref:`active build running <sphinx-building-doc>`, open the
    :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
    :ref:`documentation root directory <concepts-project-tree>`
-#. Use :ref:`intersphinx <sphinx-intersphinx>` on ``_build/html/objects.inv``
+#. Use :ref:`Intersphinx <sphinx-intersphinx>` on ``_build/html/objects.inv``
    to inspect inspect :ref:`labels <sphinx:ref-role>` for :term:`AAAAAA`
 #. Verify the proper :ref:`label style <concepts-doc-style>`
 #. Update any :ref:`labels <sphinx:ref-role>` via the
-   :ref:`VS code command palette <tools-vs-code>`:
+   :ref:`VS code Command Palette <tools-vs-code>`:
    :guilabel:`Search: Replace in Files`
 
 .. _sphinx-reference-book:

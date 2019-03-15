@@ -53,8 +53,6 @@ In accordance with :ref:`pytest configuration specifications <configs-pytest>`,
            test_utilities.py
        setup.py
 
-.. _concepts-code-style:
-
 .. csv-table::
    :align: center
    :header: Name, Function
@@ -62,6 +60,9 @@ In accordance with :ref:`pytest configuration specifications <configs-pytest>`,
    ``src/AAAAAA/``, :ref:`Python source code <tools-python>`
    ``test/``, :ref:`pytest test code <tools-pytest>`
    ``setup.py``, :ref:`pytest configuration <configs-pytest>`
+
+.. _concepts-code-style:
+
 
 *****
 Style

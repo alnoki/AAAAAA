@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 .. _concepts-tools:
 
@@ -22,7 +22,7 @@ Google
 ======
 
 This is by far the most important :ref:`tool <concepts-tools>` that
-:github:`alnoki` has in the :term:`AAAAAA` arsenal
+:github:`alnoki` uses
 
 Nearly everything that :github:`alnoki` has done to create :term:`AAAAAA` has
 started with :wiki-pg:`searches <Web_search_engine>` on :xref:`Google`. Because
@@ -38,9 +38,13 @@ It is not an exaggeration to say that you can legitimately figure out all of
 this for yourself with a :wiki-pg:`laptop <Laptop>`, access to :xref:`Google`,
 and enough curiosity. That is of course, how :github:`alnoki` did it, after all
 
+
 ****
 Core
 ****
+
+.. contents::
+   :local:
 
 .. _tools-python:
 
@@ -66,9 +70,8 @@ specific :xref:`Python` considerations in :term:`AAAAAA` like
    :header: Reference, Topic
 
    :ref:`Developer environment <dev-env-intro>`, Setup
-   :ref:`Code concepts <concepts-code>`, "
-   :wiki-pg:`Syntax <Syntax_(programming_languages)>`, structure of
-   :wiki-pg:`files <Computer_file>`"
+   :ref:`Code concepts <concepts-code>`, ":ref:`Syntax <concepts-code-style>`
+   and :ref:`file structure <concepts-code-tree>`"
    :ref:`User guide <user-intro>`, Walkthrough
 
 .. csv-table:: Select references
@@ -77,15 +80,16 @@ specific :xref:`Python` considerations in :term:`AAAAAA` like
 
    :xref:`Python.org <Python>`, Official information
    :yt-pl:`Corey Schafer tutorials <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`, "Learn
-   :xref:`Python` (recommended tutorial)"
+   :xref:`Python` (recommended)"
    :doc:`python:tutorial/index`, Official tutorial
    :doc:`python:howto/functional`, ":ref:`Function <python:tut-functions>`
    techniques"
    :doc:`python:howto/index`, Specific use cases
    :doc:`python:faq/index`, Common issues
    :doc:`python:faq/programming`, Advanced technical information
-   :doc:`The Python interpreter <tutorial/interpreter>`, "Mechanism that
-   executes :xref:`source code <source-code>`"
+   :doc:`The Python interpreter <tutorial/interpreter>`, "
+   :wiki-pg:`Executes <Execution_(computing)>` any
+   :xref:`source code <source-code>` in :xref:`Python`"
 
 .. _tools-anaconda:
 
@@ -101,9 +105,9 @@ access only the ones that you need
 
 You can manage these :ref:`packages <conda:concept-conda-package>` using
 :doc:`conda <conda:index>`, a :wiki-pg:`command line <Command_line>` utility
-that automatically checks dependencies and maintains compatibility between
+that automatically maintains compatibility between
 :ref:`packages <conda:concept-conda-package>`.
-:ref:`conda:concept-conda-package` can be downloaded from
+:ref:`conda:concept-conda-package` can be :wiki-pg:`downloaded <Download>` from
 different :ref:`conda channels <conda:channels-glossary>`, like the
 :xref:`conda-forge`
 
@@ -166,7 +170,7 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
          :conda-forge:`Doc8 reST linter <doc8>`, "Check
          :ref:`documentation style <concepts-doc-style>`", "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
-         :ref:`tools-bibtex`, :ref:`Book citations <references-books>`, "
+         :ref:`tools-bibtex`, :ref:`Book citations <sphinx-reference-book>`, "
          :ref:`Documenting <dev-env-documenting>`", :xref:`conda-forge`
          :ref:`tools-sphinx-autobuild`, "
          :ref:`Auto-update documentation <sphinx-autobuilding>`", "
@@ -186,10 +190,10 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
          :ref:`dev-env-analyzing`", "
          :ref:`conda <conda:channels-glossary>`"
          :doc:`pip <python:installing/index>`, "
-         :ref:`Configuring test code <conda-pip-AAAAAA>`", "
+         :ref:`Enable testing <conda-pip-AAAAAA>`", "
          :ref:`dev-env-testing`", :ref:`conda <conda:channels-glossary>`
          :ref:`pytest <tools-pytest>`, "
-         :ref:`Code testing <procedures-pytest>`", ":ref:`dev-env-testing`", "
+         :ref:`Code testing <testing-intro>`", ":ref:`dev-env-testing`", "
          :ref:`conda <conda:channels-glossary>`"
 
 .. _tools-git:
@@ -203,8 +207,9 @@ Git
 :wiki-pg:`version control <Version_control>` system that allows :term:`AAAAAA`
 to be updated with :xref:`commits <git-commit>`, which are like snapshots in
 :wiki-pg:`time <Time>` that describe minor changes to :term:`AAAAAA`. Each
-:xref:`commit <git-commit>` is identified by a :xref:`sha1`, a unique
-identifier that can be accessed by
+:xref:`commit <git-commit>` is identified by a
+:wiki-pg:`Secure Hash Algorithm 1 (SHA-1) value <SHA-1>`, a unique identifier
+that can be accessed by
 :ref:`viewing the project log <git-view-project-log>`
 
 :xref:`Tags <git-tag>`, which provide a unique identifier for
@@ -307,9 +312,9 @@ which has all the latest features but may not be completely stable
 
    :vs-code-doc:`User interface <getstarted/userinterface>`, "Official
    introduction"
-   :vs-code-doc:`Python integration <languages/python>`, "Official tutorial
-   for :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
-   ":vs-code-doc:`Command palette
+   :vs-code-doc:`Python integration <languages/python>`, "Use
+   :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
+   ":vs-code-doc:`Command Palette
    <getstarted/userinterface#_command-palette>`", "Quickly input
    :wiki-pg:`commands <Command_line>`"
    :vs-code-doc:`Settings <getstarted/settings>`, "Official
@@ -332,7 +337,7 @@ which has all the latest features but may not be completely stable
    Enhanced functionality"
    :vs-code-api:`Token color customizations <references/theme-color>`, "
    Official reference"
-   :github:`Token color customizations <Microsoft/vscode/pull/29393>`, "
+   :github:`Token colors with textMateRules <Microsoft/vscode/pull/29393>`, "
    Advanced usage"
 
 .. rubric:: Footnotes
@@ -344,7 +349,7 @@ which has all the latest features but may not be completely stable
 .. [#] Offers :wiki-pg:`rendering <Rendering_(computer_graphics)>` in
    :wiki-pg:`real-time <Time>`, but is not as reliable as using a
    :xref:`browser <web-browser>` with :ref:`tools-sphinx-autobuild`. For
-   example, fails for :ref:`intersphinx links <sphinx-intersphinx>`
+   example, fails for :ref:`Intersphinx links <sphinx-intersphinx>`
 
 .. _tools-vim:
 
@@ -617,7 +622,7 @@ Intersphinx
 
 :doc:`Intersphinx <sphinx:usage/extensions/intersphinx>` helps manage
 :ref:`links <references-links>` to other :ref:`tools-sphinx` projects, via the
-:ref:`intersphinx procedures <sphinx-intersphinx>`
+:ref:`Intersphinx procedures <sphinx-intersphinx>`
 
 .. _tools-napoleon:
 
@@ -701,7 +706,7 @@ xref
 
 :github:`Michael Jones' xref extension <michaeljones/sphinx-xref>` helps manage
 :ref:`links <references-links>` to arbitrary :xref:`URLs <URL>` that can not be
-accessed via :ref:`intersphinx <tools-intersphinx>`. A simple
+accessed via :ref:`Intersphinx <tools-intersphinx>`. A simple
 :ref:`role <tools-restructured-text>` is used to insert
 :ref:`links <references-links>`, and usage is described at
 :ref:`xref procedures <sphinx-xref>`

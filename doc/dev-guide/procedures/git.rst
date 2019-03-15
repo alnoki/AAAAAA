@@ -272,7 +272,7 @@ Committing
 #. :wiki-pg:`Save and close <Computer_file>` any open project
    :wiki-pg:`files <Computer_file>`
 #. :ref:`Update your Git credentials <git-credentials>` and verify as needed
-#. Use the :ref:`VS Code command palette <tools-vs-code>` to select:
+#. Use the :ref:`VS Code Command Palette <tools-vs-code>` to select:
 
    * :guilabel:`View: Open View`
    * :guilabel:`Source Control`
@@ -280,7 +280,7 @@ Committing
 #. Use the :guilabel:`Source Control` interface to
    :git-doc:`stage changes <git-add>`
 
-   * You may consider using the :ref:`command palette <tools-vs-code>` to
+   * You may consider using the :ref:`Command Palette <tools-vs-code>` to
      select :guilabel:`Git: Stage All Changes` or, equivalently:
 
      .. code-block:: bash

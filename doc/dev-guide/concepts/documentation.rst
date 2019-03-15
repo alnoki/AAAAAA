@@ -178,11 +178,17 @@ Common Conceptual Capitalizations (C\ :superscript:`3`)
         :header: Beginning of sentence, Elsewhere
 
         :ref:`Anaconda <tools-anaconda>`, :ref:`Anaconda <tools-anaconda>`
+        ":vs-code-doc:`Command Palette
+        <getstarted/userinterface#_command-palette>`","
+        :vs-code-doc:`Command Palette
+        <getstarted/userinterface#_command-palette>`"
         :ref:`Conda <tools-anaconda>`, :ref:`conda <tools-anaconda>`
         :ref:`Docstrings <python:tut-docstrings>`, "
         :ref:`docstrings <python:tut-docstrings>`"
         :git-doc:`Git <user-manual>`, :git-doc:`Git <user-manual>`
         :wiki-pg:`Internet`, :wiki-pg:`Internet`
+        :vs-code-doc:`Integrated terminal <editor/integrated-terminal>`, "
+        :vs-code-doc:`integrated terminal <editor/integrated-terminal>`"
         :ref:`Intersphinx <tools-intersphinx>`, "
         :ref:`Intersphinx <tools-intersphinx>`"
         :github-help:`Markdown <basic-writing-and-formatting-syntax>`, "

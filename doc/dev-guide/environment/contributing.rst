@@ -1,4 +1,7 @@
+.. 0.4.0
+
 .. _dev-env-contributing:
+
 
 ############
 Contributing
@@ -6,7 +9,7 @@ Contributing
 
 .. admonition:: Disclaimer
 
-   If you are already have experience
+   If you already have experience
    :wiki-pg:`developing <Software_development>`, you might have some
    preferences of your own which involve different
    :ref:`procedures <procedures>`. That's okay, but the below information is
@@ -18,7 +21,7 @@ Git
 ***
 
 If you want to contribute to :term:`AAAAAA`, then you will need to do a bit
-more set up for :ref:`tools-git`. It is recommended that you first review the
+more setup for :ref:`tools-git`. It is recommended that you first review the
 remainder of the :ref:`developer guide <dev-intro>` before you begin
 
 The :ref:`Git configuring procedures <git-configuring>` will help you get

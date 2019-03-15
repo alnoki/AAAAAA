@@ -53,7 +53,7 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    Chant :term:`OHIO` while doing this
 
 #. Open :ref:`TODO.md <concepts-project-tree>` in :ref:`tools-vs-code`
-#. From the :ref:`command palette <tools-vs-code>`:
+#. From the :ref:`Command Palette <tools-vs-code>`:
 
    * :guilabel:`View: Open View`
    * :guilabel:`Outline`

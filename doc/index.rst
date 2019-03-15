@@ -119,8 +119,10 @@ Congratulations!!!
 
 .. tip::
 
-   :wiki-pg:`Click <Point_and_click>` the :guilabel:`Next` button at the top
-   or the bottom of this :xref:`webpage <webpage` to begin your journey
+   If you are viewing this as a :wiki-pg:`website <Website>`, then
+   :wiki-pg:`click <Point_and_click>` the :guilabel:`Next`
+   :wiki-pg:`button <Button_(computing)>` at the top or the bottom of this
+   :wiki-pg:`webpage <Webpage>` to begin your journey
 
 
 ***************
@@ -189,3 +191,9 @@ precision and zeal!
    indices/acronyms
    indices/versions
    indices/references/index
+
+|
+
+.. seealso::
+
+   Have you tried that new dish from the ``f00cafe``?

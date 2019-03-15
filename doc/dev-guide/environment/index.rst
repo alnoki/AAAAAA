@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 .. _dev-env-intro:
 
@@ -7,9 +7,11 @@
 Environment setup
 #################
 
-The steps in this section will enable you to reproduce the environment that
-:github:`alnoki` uses to create :term:`AAAAAA`, which will all be explained
-afterwards in the :ref:`concepts <concepts-intro>` section
+The steps in this section will enable you to reproduce the
+:wiki-pg:`integrated development environment
+<Integrated_development_environment>` that :github:`alnoki` uses to create
+:term:`AAAAAA`, which will all be explained afterwards in the
+:ref:`concepts <concepts-intro>` section
 
 Before you begin, you will need
 :doc:`Miniconda <conda:user-guide/install/download>`, which will
@@ -19,7 +21,7 @@ the :ref:`quickstart <quickstart>`, then you should already have
 
 Any :ref:`tools <concepts-tools>` and :ref:`configurations <concepts-configs>`
 that you might need will be :wiki-pg:`downloaded <Download>` throughout the
-the following instructions, so get ready to
+following instructions, so get ready to
 :wiki-pg:`install <Installation_(computer_programs)>` some
 :wiki-pg:`free software <Open-source_software>`!
 

@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 .. _concepts-intro:
 
@@ -11,7 +11,7 @@ All of the :ref:`tools <concepts-tools>` used to create :term:`AAAAAA` are
 :xref:`free <money>`, and most are
 :wiki-pg:`open-source <Open-source_software>`. If you completed the
 :ref:`developer environment setup <dev-env-intro>` then you will have just
-finished :wiki-pg:`dowloading <Download>` all of them
+finished :wiki-pg:`downloading <Download>` all of them
 
 * :ref:`Tools <concepts-tools>` describes the core concepts of things like
   :ref:`tools-git` and :ref:`tools-sphinx`, but not precise :term:`AAAAAA` use
@@ -20,11 +20,12 @@ finished :wiki-pg:`dowloading <Download>` all of them
   instructions
 * :ref:`concepts-project-structure` describes the contents of the
   :github:`AAAAAA repository <alnoki/AAAAAA>` and provides :xref:`links <URL>`
-  related to each component
+  that help describe the individual components contained therein
 * :ref:`concepts-doc` describes the :wiki-pg:`file structure <Computer_file>`
   of contents related to :ref:`tools-Sphinx` and :ref:`tools-Jupyter`, and
   provides :ref:`syntax guidelines <concepts-doc-style>`
-* :ref:`concepts-configs` describes the settings that
+* :ref:`concepts-configs` describes the
+  :ref:`VS Code settings <configs-vs-code>` (and more!) that you
   :wiki-pg:`downloaded <Download>` during the
   :ref:`developer environment setup <dev-env-intro>`, and how they affect
   :ref:`tools <concepts-tools>` that are used for the

@@ -4,12 +4,12 @@ from typing import Set, Optional
 
 
 class Transaction:
-    """An exchange of money inside of a brokerage account
+    """A :wiki-pg:`financial transaction <Financial_transaction>`
 
     Attributes
     ----------
     when : :obj:`datetime.date`
-        Day of occurence
+        :wiki-pg:`Time` of occurence
     total_amount : :obj:`decimal.Decimal`
         The amount of :xref:`money <money>` involved, in units of
         :xref:`$ <USD>` and :xref:`¢ <finance-cent>`

@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 .. _user-intro:
 
@@ -33,13 +33,14 @@ be self-contained, but if you want more resources there a few select ones below
    :header: Reference, Topic
 
    :yt-pl:`Corey Schafer tutorials <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`, "Learn
-   :xref:`Python` (recommended tutorial)"
+   :xref:`Python` (recommended)"
    :doc:`python:tutorial/index`, Official tutorial
 
 .. tip::
 
-   Keep on :wiki-pg:`clicking <Point_and_click>` the :guilabel:`Next` button
-   at the top or the bottom of the :xref:`webpage <webpage>`! It will allow you
-   to sequentially visit all :xref:`webpages <webpage>` of
-   :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`
-   in a logical order
+   Keep on :wiki-pg:`clicking <Point_and_click>` the :guilabel:`Next`
+   :wiki-pg:`button <Button_(computing)>` at the top or the bottom of the
+   :xref:`webpage <webpage>`! It will allow you to sequentially visit all
+   :xref:`webpages <webpage>` of
+   :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` in a
+   logical order

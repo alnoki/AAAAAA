@@ -48,5 +48,7 @@ Congratulations!!!
 
 .. tip::
 
-   :wiki-pg:`Click <Point_and_click>` the :guilabel:`Next` button at the top or
-   the bottom of the :xref:`webpage <webpage>` to continue
+   If you are viewing this as a :wiki-pg:`website <Website>`, then
+   :wiki-pg:`click <Point_and_click>` the :guilabel:`Next`
+   :wiki-pg:`button <Button_(computing)>` at the top or the bottom of the
+   :xref:`webpage <webpage>` to continue

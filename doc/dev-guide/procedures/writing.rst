@@ -17,7 +17,7 @@ Creating a directory tree
 Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
 :ref:`AAAAAA project tree <concepts-project-tree>`:
 
-#. Use the :ref:`VS Code command palette <tools-vs-code>` to select
+#. Use the :ref:`VS Code Command Palette <tools-vs-code>` to select
    :guilabel:`File: New Untitled File`
 #. :wiki-pg:`Copy and paste <Cut,_copy,_and_paste>` the below contents to the
    new :wiki-pg:`file <Computer_file>`:
@@ -47,7 +47,7 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
    would like to write about
 #. Select all the :wiki-pg:`line <Line_(text_file)>` in the
    :wiki-pg:`file <Computer_file>`
-#. Use the :ref:`command palette <tools-vs-code>` to select
+#. Use the :ref:`Command Palette <tools-vs-code>` to select
    :guilabel:`Python: Run Selection/Line in Python Terminal` then
    :wiki-pg:`type <Typing>` :kbd:`enter` from inside the
    :ref:`VS Code integrated terminal <tools-vs-code>`
@@ -152,7 +152,7 @@ Isolating changes
 This is typically done right before
 :ref:`releasing a version <versioning-releasing>`
 
-#. Use the :ref:`VS Code command palette <tools-vs-code>` to
+#. Use the :ref:`VS Code Command Palette <tools-vs-code>` to
    :guilabel:`GitLens: Compare Working Tree with Branch or Tag...`
 #. Select the :ref:`tag <git-tagging>` of the relevant
    :ref:`version <indices-versions>` to compare against
@@ -242,5 +242,5 @@ Changes to a document
    :ref:`proofreading new documents <writing-proofread-new>`, but only review
    *changes* to the :wiki-pg:`file <Computer_file>`:
 
-      * Use the :ref:`VS Code command palette <tools-vs-code>` to select
+      * Use the :ref:`VS Code Command Palette <tools-vs-code>` to select
         :guilabel:`Move to Next Change`

@@ -1,9 +1,14 @@
+.. 0.4.0
+
 .. _dev-intro:
 
 
 ############
 Introduction
 ############
+
+.. contents::
+   :local:
 
 
 **************************
@@ -15,7 +20,7 @@ The :ref:`environment setup <dev-env-intro>` will help you
 :ref:`tools <concepts-tools>` and :ref:`configurations <concepts-configs>`
 that :github:`alnoki` uses to create :term:`AAAAAA`
 
-The :ref:`concepts section <concepts-intro>` provides conside conceptual
+The :ref:`concepts section <concepts-intro>` provides concise conceptual
 explanations of the :ref:`tools <concepts-tools>` and
 :ref:`configurations <concepts-configs>` that :github:`alnoki` uses to create
 :term:`AAAAAA`, and the specific ways that they are used
@@ -32,11 +37,13 @@ like :ref:`managing references with Sphinx <sphinx-managing-references>`
 
 .. tip::
 
-   Keep on :wiki-pg:`clicking <Point_and_click>` the :guilabel:`Next` button
-   at the top or the bottom of the :xref:`webpage <webpage>`! It will allow you
-   to sequentially visit all :xref:`webpages <webpage>` of
-   :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`
-   in a logical order
+   Keep on :wiki-pg:`clicking <Point_and_click>` the :guilabel:`Next`
+   :wiki-pg:`button <Button_(computing)>` at the top or the bottom of the
+   :xref:`webpage <webpage>`! It will allow you to sequentially visit all
+   :xref:`webpages <webpage>` of
+   :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` in a
+   logical order
+
 
 **********************************
 How you can make something similar
@@ -49,6 +56,12 @@ your own :ref:`tools-sphinx`-style :wiki-pg:`website <Website>`, which you can
 indeed have :wiki-pg:`hosted <Host_(network)>` for :wiki-pg:`free <Money>`,
 some select :wiki-pg:`links <URL>` are below
 
+.. csv-table:: How :github:`alnoki` does it
+   :align: center
+   :header: Reference, Topic
+
+   :ref:`Documentation <dist-doc>`, Guide to :ref:`distributing <dist-intro>`
+
 .. csv-table:: Start your own :ref:`tools-sphinx`-style
    :wiki-pg:`website <Website>`, for :wiki-pg:`free <Money>`
    :align: center
@@ -58,12 +71,6 @@ some select :wiki-pg:`links <URL>` are below
    :wiki-pg:`Hosting <Host_(network)>` platform integration"
    :yt-vid:`Quickstart tutorial <oJsUvBQyHBs>`, "Starting a blank
    :ref:`tools-sphinx` project"
-
-.. csv-table:: How :github:`alnoki` does it
-   :align: center
-   :header: Reference, Topic
-
-   :ref:`Documentation <dist-doc>`, Guide to :ref:`distributing <dist-intro>`
 
 Of course there are a few things you will need to figure out along the way, but
 :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` can help

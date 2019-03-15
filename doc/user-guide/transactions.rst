@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 ############
 Transactions
@@ -9,6 +9,7 @@ Transactions
 
 .. _user-fin-background:
 
+
 *************************
 Background financial info
 *************************
@@ -18,8 +19,8 @@ A :xref:`brokerage <brokerage>` facilitates the
 :xref:`securities <finance-security>`, which are tradable forms of
 :xref:`financial assets <financial-asset>`. One example of a
 :xref:`security <finance-security>` is a :xref:`share <finance-share>` of
-:xref:`stock <finance-stock>`, which
-represents fractional ownership of a :xref:`corporation <corporation>`
+:xref:`stock <finance-stock>`, which represents fractional ownership of a
+:xref:`corporation <corporation>`
 
 Typically, a :xref:`ticker symbol <ticker-symbol>` will be used to identify the
 particular :xref:`security <finance-security>` that is the subject of a
@@ -93,10 +94,8 @@ When you :ref:`initialize an instance<python:tut-classobjects>` of
 You may optionally provide one or more
 :ref:`keyword arguments <python:tut-keywordargs>`, like
 :py:attr:`~AAAAAA.ledger.Transaction.num_shares`, for example, which would
-enable you to access :py:attr:`AAAAAA.ledger.Transaction.per_share_amount`,
-which is a :py:class:`python:property`:
-
-.. autoattribute:: AAAAAA.ledger.Transaction.per_share_amount
+enable you to access :py:attr:`~AAAAAA.ledger.Transaction.per_share_amount`,
+(itself a :py:class:`python:property`)
 
 
 ***********************************
@@ -104,7 +103,8 @@ A word (or several) about precision
 ***********************************
 
 Clearly you need to :ref:`work with numbers <python:tut-numbers>`, and it makes
-sense to have an :py:obj:`python:int` number of :xref:`shares <finance-share>`
+sense to have an :py:obj:`integer <python:int>` amount of
+:xref:`shares <finance-share>`
 
 But does it make sense to buy something that costs exactly
 ``$110.1200000000000045474735088646411895751953125`` ?!?!?!?
@@ -114,7 +114,8 @@ But does it make sense to buy something that costs exactly
    No, it does not!
 
 That is why :py:attr:`~AAAAAA.ledger.Transaction.total_amount` is a
-:doc:`decimal <python:library/decimal>`, not a :py:obj:`python:float`
+:doc:`decimal <python:library/decimal>`, not a
+:py:obj:`floating point number <python:float>`
 
 Okay, alnoki is fired up
 ========================
@@ -138,18 +139,22 @@ from the pressing inquisition on hand, which continues below
 
 .. tip::
 
-   :xref:`Copy-paste <copy-paste>` each line individually (except for the
-   ``>>>``) then :wiki-pg:`type <Typing>` :kbd:`return` if you want to play
-   with the :doc:`the Python interpreter <tutorial/interpreter>`
+   :xref:`Copy-paste <copy-paste>` the below lines into the
+   :doc:`Python interpreter <tutorial/interpreter>` then
+   :wiki-pg:`type <Typing>` :kbd:`return`
 
->>> from decimal import Decimal
->>> Decimal.from_float(110.12)
+.. code-block:: python
+
+   from decimal import Decimal
+   Decimal.from_float(110.12)
 
 What's that you say, :doc:`Python interpreter <tutorial/interpreter>`?
 
->>> from decimal import Decimal
->>> Decimal.from_float(110.12)
-Decimal('110.1200000000000045474735088646411895751953125')
+.. code-block:: python
+
+   >>> from decimal import Decimal
+   >>> Decimal.from_float(110.12)
+   Decimal('110.1200000000000045474735088646411895751953125')
 
 .. seealso::
 

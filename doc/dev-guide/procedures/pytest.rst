@@ -30,7 +30,7 @@ Discovering tests
    * This should yield output that looks like the
      :doc:`pytest documentation <pytest:index>`
 
-#. Use the :ref:`VS Code command palette <tools-vs-code>` to select
+#. Use the :ref:`VS Code Command Palette <tools-vs-code>` to select
    :guilabel:`Python: Discover Unit Tests`
 
    #. If this fails, you may be experiencing a :xref:`pytest-discovery-issue`
@@ -59,7 +59,7 @@ Discovering tests
 
                conda install "pytest<=4.0.0"
 
-#. Use the :ref:`VS Code command palette <tools-vs-code>` to select
+#. Use the :ref:`VS Code Command Palette <tools-vs-code>` to select
    :guilabel:`Python: Discover Unit Tests`
 #. Check out the
    :ref:`VS Code Test Explorer Extension <tools-vs-code>` to see if tests are

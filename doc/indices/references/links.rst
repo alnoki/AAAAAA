@@ -1092,7 +1092,7 @@ General
 
    * Using a :xref:`command line <command-line>`
 
-#. :vs-code-doc:`VS Code command palette
+#. :vs-code-doc:`VS Code Command Palette
    <getstarted/userinterface#_command-palette>`
 
    * Direct :wiki-pg:`command <Command_line>` input
@@ -1284,6 +1284,10 @@ Interfaces
 #. :wiki-pg:`Sidebar <Sidebar_(computing)>`
 
    * Keeps information on the side of a :wiki-pg:`program <Software>`
+
+#. :wiki-pg:`Button <Button_(computing)>`
+
+   * A component that you can :wiki-pg:`click <Point_and_click>`
 
 Software
 ========

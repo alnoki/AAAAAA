@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 .. _dev-env-documenting:
 
@@ -9,12 +9,12 @@ Documenting
 
 #. :xref:`Download VS code <VS-Code>` and get ready for some
    :vs-code-doc:`extensions <editor/extension-gallery>`
-#. :wiki-pg:`Install` the
+#. :wiki-pg:`Install <Installation_(computer_programs)>` the
    :vs-code-ext:`VS Code Bookmarks extension <alefragnani.Bookmarks>`
 #. Update the
    :vs-code-doc:`VS Code integrated terminal <editor/integrated-terminal>`
    ``USER SETTINGS`` in :vs-code-doc:`settings.json <getstarted/settings>` so
-   that you can use :ref:`Conda <conda:starting-conda>`:
+   that you can use :ref:`conda <conda:starting-conda>`:
 
    * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, add the following
      options so you can use :linux-die:`bash login mode invocation <bash>`:
@@ -46,9 +46,9 @@ Documenting
         :wiki-pg:`scroll <Scrolling>` to the right
 
 #. Use the
-   :vs-code-doc:`command palette <getstarted/userinterface#_command-palette>`
-   to open a new
-   :vs-code-doc:`Integrated terminal <editor/integrated-terminal>` and
+   :vs-code-doc:`VS Code Command Palette
+   <getstarted/userinterface#_command-palette>` to open a new
+   :vs-code-doc:`integrated terminal <editor/integrated-terminal>` and
    :xref:`copy and paste <copy-paste>` the following
    :wiki-pg:`command <Command_line>` to
    :doc:`create <conda:commands/create>` a new
@@ -60,8 +60,8 @@ Documenting
 
       conda create --name a6 python conda pep8 sphinx sphinx_rtd_theme
 
-#. Configure the
-   :vs-code-doc:`Integrated terminal <editor/integrated-terminal>` to
+#. :ref:`Configure <configs-vs-code>` the
+   :vs-code-doc:`integrated terminal <editor/integrated-terminal>` to
    automatically :ref:`activate <conda:activate-env>` the
    :term:`a6 environment <a6>`:
 
@@ -69,8 +69,8 @@ Documenting
      :linux-die:`bash` equivalent to the ``/K``
      :xref:`cmd.exe option <cmd.exe-invocation>`, so the easiest way to
      :ref:`activate <conda:activate-env>` the :term:`a6 environment <a6>` is to
-     add the following line to :linux-die:`~/.bash_profile <bash>`, which
-     will :wiki-pg:`execute <Execution_(computing)>` any time a
+     add the following to :linux-die:`~/.bash_profile <bash>`, which will
+     :wiki-pg:`execute <Execution_(computing)>` any time a
      :linux-die:`bash login mode <bash>` session starts (even outside of
      the :vs-code-doc:`integrated terminal <editor/integrated-terminal>`):
 
@@ -80,7 +80,8 @@ Documenting
         conda activate a6
 
    * On :wiki-pg:`Windows <Microsoft_Windows>`, append ``"a6"`` to the
-     ``"terminal.integrated.shellArgs.windows"`` setting from above:
+     ``"terminal.integrated.shellArgs.windows"``
+     :ref:`setting <configs-vs-code>` from above:
 
      .. code-block:: json
         :emphasize-lines: 4
@@ -94,17 +95,18 @@ Documenting
 #. :wiki-pg:`Install <Installation_(computer_programs)>` the
    :vs-code-ext:`VS Code Python extension <ms-python.python>` and
    use the
-   :vs-code-doc:`command palette <getstarted/userinterface#_command-palette>`
+   :vs-code-doc:`Command Palette <getstarted/userinterface#_command-palette>`
    to
    :vs-code-doc:`select the intepreter
    <python/environments#_select-and-activate-an-environment>` for :term:`a6`
 
-   * This should add a setting for your :wiki-pg:`computer <Computer>`-specific
+   * This should add a :ref:`setting <configs-vs-code>` for your
+     :wiki-pg:`computer <Computer>`-specific
      :wiki-pg:`path <Path_(computing)>` to
-     :vs-code-doc:`settings.json <getstarted/settings>`. If it is added to
-     ``WORKSPACE SETTINGS`` in
-     :vs-code-doc:`settings.json <getstarted/settings>`, make sure to put it in
-     ``USER SETTINGS`` instead
+     :ref:`settings.json <configs-vs-code>`. If it is  added to
+     ``WORKSPACE SETTINGS`` in :ref:`settings.json <configs-vs-code>`, make
+     sure to put it in ``USER SETTINGS`` instead
+
    * On a :wiki-pg:`Mac <Macintosh_operating_systems>`, this should look like:
 
      .. code-block:: json
@@ -121,7 +123,7 @@ Documenting
             "python.pythonPath": "C:\\Users\\alnoki\\AppData\\Local\\Continuum\\miniconda3\\envs\\a6\\python.exe",
         }
 
-   * You can also get this path by
+   * You can also get this :wiki-pg:`path <Path_(computing)>` by
      :ref:`activating <conda:activate-env>` the :term:`a6 evironment <a6>` then
      :wiki-pg:`typing <Typing>` :command:`which python`
 
@@ -140,7 +142,7 @@ Documenting
 #. If you don't already have it, :git-scm:`download Git <downloads>`
 
    * To figure out if you have it, open the
-     :vs-code-doc:`Integrated terminal <editor/integrated-terminal>` and
+     :vs-code-doc:`integrated terminal <editor/integrated-terminal>` and
      :wiki-pg:`type <Typing>`:
 
      .. code-block:: bash
@@ -148,14 +150,13 @@ Documenting
         git --version
 
 #. :wiki-pg:`Install <Installation_(computer_programs)>` the
-   :vs-code-ext:`GitLens extension <eamodio.gitlens>`
+   :vs-code-ext:`VS Code GitLens extension <eamodio.gitlens>`
 #. Use the
-   :vs-code-doc:`command palette <getstarted/userinterface#_command-palette>`
+   :vs-code-doc:`Command Palette <getstarted/userinterface#_command-palette>`
    to :git-doc:`git-clone` the :github:`AAAAAA repository <alnoki/AAAAAA>`
 
    * This will include all of the
-     :vs-code-doc:`VS Code settings <getstarted/settings>` that
-     :github:`alnoki` uses
+     :ref:`VS Code settings <configs-vs-code>` that :github:`alnoki` uses
 
 #. At this point you should be able to
    :ref:`build the documentation <sphinx-building-doc>` and play around with

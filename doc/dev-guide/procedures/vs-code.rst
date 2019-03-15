@@ -22,7 +22,7 @@ VS Code
 Maximizing screen estate
 ************************
 
-#. For half-screen, use the :ref:`VS Code command palette <tools-vs-code>`
+#. For half-screen, use the :ref:`VS Code Command Palette <tools-vs-code>`
    to experiment with the following :wiki-pg:`commands <Command_line>`:
 
    * :guilabel:`View: Toggle Tab Visibility`
@@ -48,7 +48,7 @@ Maximizing screen estate
 Improving efficiency
 ********************
 
-#. Use the :ref:`VS Code command palette <tools-vs-code>` to experiment with
+#. Use the :ref:`VS Code Command Palette <tools-vs-code>` to experiment with
    the following :wiki-pg:`commands <Command_line>`:
 
    * :guilabel:`Focus Next Terminal`
@@ -62,7 +62,7 @@ Managing settings
 *****************
 
 #. Open :ref:`configs-settings-json`
-#. Use the :ref:`command palette <tools-vs-code>` to compare against defaults
+#. Use the :ref:`Command Palette <tools-vs-code>` to compare against defaults
 
    * :guilabel:`Preferences: Open Raw Default Settings`
 
@@ -82,7 +82,7 @@ Changing general colors
 Changing syntax highlighting
 ****************************
 
-#. Use the :ref:`command palette <tools-vs-code>` to open the
+#. Use the :ref:`Command Palette <tools-vs-code>` to open the
    :github:`TextMate inspector <Microsoft/vscode/pull/29393>`
 
    * :guilabel:`Developer: Inspect TM Scopes`
@@ -103,7 +103,7 @@ Configuring rulers
    :ref:`code style <concepts-code-style>` or
    :ref:`documentation style <concepts-doc-style>`
 #. While viewing the :wiki-pg:`filetype <Filename_extension>` in question, use
-   the :ref:`command palette <tools-vs-code>` for inspection
+   the :ref:`Command Palette <tools-vs-code>` for inspection
 
    * :guilabel:`Change Language Mode`
 
