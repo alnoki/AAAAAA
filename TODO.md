@@ -43,6 +43,12 @@
 * Proofreading can also just hover over the link too
 * Button_(computing) find all and insert
 * Vim series to tools page
+* Should read E4s everywhere because it is a plural compound noun
+   * Compared with AAAAAA, which is "owned"
+* Numerical conda packages deal with at some point, when writing about Jupyter?
+   * Or say the user guide provides additional examples, but learn more hear
+      * Also link to examples and user guide?
+   * Link to the a6 table
 
 # 0.5.0
 
@@ -376,6 +382,8 @@
       * How far down can the stick TOC go?
 
 ## myPy
+* Add to tools testing section and create TOC
+   * Same with Travis?
 * ttps://code.visualstudio.com/docs/python/settings-reference#_mypy
 * MyPy type linter
    * https://www.python.org/dev/peps/pep-0526/

@@ -371,7 +371,7 @@ of a :ref:`Google search <tools-google>` to answer "how do I do
    :header: Reference, Topic
 
    :ref:`Vim configuration <configs-vim>`, Options
-   :ref:`Developer environment <dev-env-contributing>`, Setup
+   :ref:`Developer environment <dev-env-intro>`, Setup
    :ref:`Git configuring procedures <git-configuring>`,"
    :wiki-pg:`Command line <Command_line>` usage"
 
@@ -400,11 +400,14 @@ of a :ref:`Google search <tools-google>` to answer "how do I do
    :xref:`Vim-tutorial`, Learn interactively
    :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
    :stack-q:`Vim E325 error <45489008/vim-opening-file-e325-attention-error>`,"
-   Can happen when :ref:`committing <git-committing>` incorrectly"
+   Can happen when :ref:`committing incorrectly <git-committing-fixes>`"
 
 *************
 Documentation
 *************
+
+.. contents::
+   :local:
 
 .. _tools-sphinx:
 
@@ -416,14 +419,16 @@ Sphinx
 :ref:`builds <sphinx-building-doc>` the :xref:`website <website>` for
 :term:`AAAAAA` and even for :doc:`Python itself <py-dev-guide:documenting>`.
 Sphinx uses :ref:`tools-restructured-text` (``reST``), a particular style of
-:wiki-pg:`markup language <Markup_language>`, which it converts to
-:wiki-pg:`HTML` when :ref:`building a website <sphinx-building-doc>`
+:wiki-pg:`markup language <Markup_language>`, which is converted to
+:wiki-pg:`HTML` when :ref:`building a website <sphinx-building-doc>`.
+:doc:`Sphinx <sphinx:intro>` can also
+:ref:`create a PDF of documentation <dist-doc-pdf>`
 
 :doc:`Sphinx <sphinx:intro>` has a
 :ref:`table of contents <sphinx:toctree-directive>` feature
 (:rst:dir:`toctree`), which provides a linearly navigable structure that
 ensures access to all :wiki-pg:`pages <Webpage>` of
-:wiki-pg:`Documentation <Software_documentation>`.
+:wiki-pg:`documentation <Software_documentation>`.
 :term:`AAAAAA` are :wiki-pg:`documented <Software_documentation>` using the
 :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which provides the
 visual layout of this :xref:`website <website>`
@@ -451,16 +456,16 @@ functionality and :ref:`several are used <tools-sphinx-extensions>` in
 
    :doc:`Sphinx <sphinx:intro>`, "Official
    :wiki-pg:`documentation <Software_documentation>`"
-   :doc:`conf.py <sphinx:usage/configuration>`, "Official
+   :doc:`conf.py <sphinx:usage/configuration>`, "Official reference for
    :ref:`configuration options <configs-conf-py>`"
    :doc:`sphinx:usage/builders/index`, "Create different styles of
    :wiki-pg:`documentation <Software_documentation>`"
    :doc:`Python Developer's Guide <py-dev-guide:documenting>`, "
    :xref:`Python` guide to using :doc:`Sphinx <sphinx:intro>`"
-   :yt-vid:`Practical use seminar <0ROZRNZkPS8>`, "Practical
-   :ref:`use examples <procedures-sphinx>`"
+   :yt-vid:`Practical use seminar <0ROZRNZkPS8>`, "Practical examples of
+   :ref:`procedures <procedures-sphinx>`"
    ":ref:`References extension configuration example
-   <sublime-with-sphinx:use the external links extension>`", "Similar usage and
+   <sublime-with-sphinx:use the external links extension>`", "Related usage and
    :ref:`configuration <configs-conf-py>`"
 
 .. _tools-restructured-text:
@@ -476,7 +481,7 @@ components like ``this``, :guilabel:`this`, or
 
 The two most fundamental :doc:`reST <sphinx:usage/restructuredtext/basics>`
 components are the :doc:`role <sphinx:usage/restructuredtext/roles>`, which
-marks a piece of text (usually in-line), and the
+marks a piece of text (usually in-:wiki-pg:`line <Line_(text_file)>`), and the
 :doc:`directive <sphinx:usage/restructuredtext/directives>`, which marks a
 block of text
 
@@ -493,6 +498,7 @@ them to :wiki-pg:`HTML` whenever
    :ref:`reST style <concepts-doc-style>`, Style
    :ref:`tools-sphinx`, ":wiki-pg:`Documentation <Software_documentation>`
    engine"
+   :ref:`tools-napoleon`, Create :ref:`E4s <concepts-code-e4>`
 
 .. csv-table:: Select references
    :align: center
@@ -502,24 +508,22 @@ them to :wiki-pg:`HTML` whenever
    :doc:`Sphinx <sphinx:intro>` tutorial on ``reST`` usage"
    :docutils:`reStructuredText <rst.html>`, "Official
    :wiki-pg:`documentation <Software_documentation>`"
-   :docutils:`docs/user/rst/quickref.html`, "Practical
+   :docutils:`Quick reST <docs/user/rst/quickref.html>`, "Practical
    :wiki-pg:`syntax <Syntax_(programming_languages)>`"
    ":github:`reST cheatsheet
    <ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst>`", "Quick
    :wiki-pg:`syntax <Syntax_(programming_languages)>` reference"
    :doc:`Read the Docs sample project <rtd-sphinx-theme:index>`, "Sample
    :wiki-pg:`syntax <Syntax_(programming_languages)>`"
-   :doc:`sphinx:usage/restructuredtext/domains`, "Collections of
+   :doc:`sphinx:usage/restructuredtext/domains`, "Application-specific
    :doc:`roles <sphinx:usage/restructuredtext/roles>` and
    :doc:`directives <sphinx:usage/restructuredtext/directives>`"
 
-Many :ref:`tools-sphinx`-style :xref:`websites <website>` for
-:wiki-pg:`documentation <Software_documentation>` have an
-:guilabel:`Edit on GitHub` (or similar) feature at
-the top/bottom of each :xref:`webpage <webpage>`. This feature will
-:xref:`link <URL>` to the
-:doc:`reST file <sphinx:usage/restructuredtext/basics>`
-that :ref:`tools-sphinx` used to create the :xref:`webpage <webpage>`
+Many :ref:`tools-sphinx`-style :xref:`websites <website>` have an
+:guilabel:`Edit on GitHub` (or similar) feature at the top or bottom of each
+:xref:`webpage <webpage>`. This feature will :xref:`link <URL>` to the
+:doc:`reST file <sphinx:usage/restructuredtext/basics>` that
+:ref:`tools-sphinx` used to create the :xref:`webpage <webpage>`
 
 .. tip::
 
@@ -530,8 +534,8 @@ that :ref:`tools-sphinx` used to create the :xref:`webpage <webpage>`
    :guilabel:`Edit on GitHub` feature
 
    After :wiki-pg:`clicking <Point_and_click>` :guilabel:`Edit on GitHub`, look
-   for a :guilabel:`Raw` button, which should show you the
-   :doc:`reST <sphinx:usage/restructuredtext/basics>`
+   for a :guilabel:`Raw` :wiki-pg:`button <Button_(computing)>`, which should
+   show you the :doc:`reST <sphinx:usage/restructuredtext/basics>`
 
 .. _tools-read-the-docs:
 
@@ -539,8 +543,8 @@ Read the Docs
 =============
 
 :doc:`Read the Docs<rtfd:index>` is a :xref:`free <money>` provider of
-:wiki-pg:`hosting services <Host_(network)>` for
-:doc:`Sphinx <sphinx:intro>` projects, and even provides its own
+:wiki-pg:`hosting services <Host_(network)>` for :doc:`Sphinx <sphinx:intro>`
+projects, and even provides its own
 :doc:`Sphinx Theme <rtd-sphinx-theme:index>`. :doc:`Read the Docs<rtfd:index>`
 uses :doc:`webhooks <rtfd:webhooks>` to automatically detect any
 :ref:`Git <tools-git>` updates, which trigger new
@@ -552,8 +556,8 @@ uses :doc:`webhooks <rtfd:webhooks>` to automatically detect any
 :wiki-pg:`Documentation <Software_documentation>` for :term:`AAAAAA` uses the
 :doc:`Read the Docs Sphinx Theme <rtd-sphinx-theme:index>`, which generates
 the :wiki-pg:`visual appearance <Rendering_(computer_graphics)>` of this
-:xref:`website <website>`. The :doc:`theme <rtd-sphinx-theme:index>`
-even :wiki-pg:`renders <Rendering_(computer_graphics)>` on the
+:wiki-pg:`website <Website>`. The :doc:`theme <rtd-sphinx-theme:index>` even
+:wiki-pg:`renders <Rendering_(computer_graphics)>` on the
 :wiki-pg:`web browser <Web_browser>` for
 :wiki-pg:`mobile devices <Mobile_device>`!
 
@@ -563,7 +567,7 @@ even :wiki-pg:`renders <Rendering_(computer_graphics)>` on the
 
    :ref:`RTD Configurations <configs-read-the-docs>`, Options
    :ref:`Distributing documentation <dist-doc>`, Walkthrough
-   :ref:`Documentation versioning <versioning-releasing>`, Usage
+   :ref:`Documentation versioning <procedures-versioning>`, Usage
 
 .. csv-table:: Select references
    :align: center
@@ -583,7 +587,7 @@ even :wiki-pg:`renders <Rendering_(computer_graphics)>` on the
 Sphinx extensions
 =================
 
-:term:`AAAAAA` uses some
+:term:`AAAAAA` use some
 :doc:`built-in Sphinx extensions <sphinx:usage/extensions/index>` and some that
 are not :doc:`built-in <sphinx:usage/extensions/index>`
 
@@ -603,7 +607,7 @@ are not :doc:`built-in <sphinx:usage/extensions/index>`
    :ref:`Create links <sphinx-intersphinx>` to other
    :doc:`Sphinx <sphinx:intro>` projects"
    :ref:`tools-napoleon`, :ref:`Document code components <concepts-code-e4>`
-   :ref:`tools-extlinks`, ":ref:`Create links <sphinx-xref>` to common
+   :ref:`tools-extlinks`, ":ref:`Create links <sphinx-extlinks>` to common
    :wiki-pg:`URLs <URL>`"
    :ref:`xref <tools-xref>`, ":ref:`Create links <sphinx-xref>` to arbitrary
    :wiki-pg:`URLs <URL>`"
@@ -614,6 +618,9 @@ are not :doc:`built-in <sphinx:usage/extensions/index>`
 
 Included with Sphinx
 --------------------
+
+.. contents::
+   :local:
 
 .. _tools-intersphinx:
 
@@ -631,7 +638,7 @@ Napoleon
 
 :doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
 :ref:`Sphinx extension <tools-sphinx>` that parses
-:xref:`source code <source-code>` and creates
+:ref:`Python source code <tools-python>` and creates
 :ref:`documentation elements <concepts-code-e4>` from
 :ref:`docstrings <python:tut-docstrings>` and :pep:`type annotations <484>`. It
 uses the same
@@ -644,7 +651,7 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
 :ref:`reST <tools-restructured-text>`, like that used for
 :ref:`info field lists <sphinx:info-field-lists>`
 
-:ref:`Docstrings <python:tut-docstrings>` are annotated using the
+:ref:`Docstrings <python:tut-docstrings>` are written using the
 :ref:`Python domain <sphinx:python-roles>`, which is also used to reference
 :ref:`concepts-code-e4` elsewhere in
 :wiki-pg:`documentation <Software_documentation>`
@@ -657,7 +664,7 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
    :ref:`Napoleon example <concepts-code-e4>`, Usage
    :ref:`Napoleon procedures <procedures-napoleon>`, Usage
 
-.. csv-table:: Select references
+.. csv-table:: Select conceptual references
    :align: center
    :header: Reference, Topic
 
@@ -674,13 +681,18 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
    :ref:`Python domain <sphinx:python-roles>`, "
    :doc:`Roles <sphinx:usage/restructuredtext/roles>` and
    :doc:`directives <sphinx:usage/restructuredtext/directives>`"
-   :xref:`Type checking <realpython-type-checking>`, "
-   :real-py:`RealPython <>` guide"
+
+.. csv-table:: Select exemplary references
+   :align: center
+   :header: Reference, Topic
+
    :doc:`Sample automodule <demo/api>`, "
    :doc:`Autodoc <sphinx:usage/extensions/autodoc>` demo with
    :doc:`RTD Sphinx theme <rtd-sphinx-theme:index>`"
    :doc:`Example NumPy Strings <napoleon:example_numpy>`, "Example
    :ref:`docstrings <python:tut-docstrings>`"
+   :xref:`Type annotations <realpython-type-checking>`, "
+   :real-py:`RealPython <>` guide"
    :ref:`sphinx:info-field-lists`, "Resultant
    :ref:`reST syntax <tools-restructured-text>`"
 
@@ -698,6 +710,9 @@ described at :ref:`extlinks procedures <sphinx-extlinks>`
 
 Not included with Sphinx
 ------------------------
+
+.. contents::
+   :local:
 
 .. _tools-xref:
 
@@ -742,7 +757,7 @@ can usually get the :xref:`bibtex` from :xref:`ottobib`
    :xref:`book`, Information source
    :xref:`bibtex`, :xref:`Citation <citation>` format
    :doc:`BibTeX Sphinx extension <bibtex:index>`, Converts :xref:`bibtex`
-   :xref:`ottobib`, :xref:`bibtex` database for :ref:`books <references-books>`
+   :xref:`ottobib`, Contains :xref:`bibtex` for :ref:`books <references-books>`
    :xref:`ISBN`, Unique identifier for :ref:`books <references-books>`
    :xref:`bibtex-syntax`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
    specifications"
@@ -755,8 +770,8 @@ sphinx-autobuild
 
 :xref:`sphinx-autobuild` is a :ref:`package <tools-anaconda>` that
 :ref:`automates <sphinx-autobuilding>` the iterative process of
-:ref:`manual builds <sphinx-building-manually>`, which
-is helpful when :ref:`proofreading documentation <writing-proofread>`
+:ref:`manual builds <sphinx-building-manually>`. This is particularly useful
+when :ref:`proofreading documentation <writing-proofread>`
 
 .. csv-table:: Select references within :term:`AAAAAA`
    :align: center
@@ -778,6 +793,9 @@ is helpful when :ref:`proofreading documentation <writing-proofread>`
 Analysis
 ********
 
+.. contents::
+   :local:
+
 .. _tools-jupyter:
 
 Jupyter
@@ -787,46 +805,31 @@ Jupyter
 :wiki-pg:`development <Software_development>` style for creating
 :wiki-pg:`algorithms <Algorithms>`, and for
 quickly :wiki-pg:`rendering <Rendering_(computer_graphics)>` equations in
-:wiki-pg:`LaTeX`
+:wiki-pg:`LaTeX`. The interactive style of :xref:`Jupyter Notebooks <Jupyter>`
+make it easy to use :ref:`numerical conda packages <tools-numerical-packages>`.
+The :doc:`nb-extensions:index` provide additional functionality
 
 .. csv-table:: Select references within :term:`AAAAAA`
    :align: center
    :header: Reference, Topic
 
+   :xref:`AAAAAA Jupyter Notebook viewer <AAAAAA-nbs>`, "View all
+   :xref:`Jupyter Notebooks <Jupyter>`"
    :ref:`Developer enviroment <dev-env-intro>`, Setup
-   :ref:`Notebook structure <concepts-nbs-tree>`, "
-   :wiki-pg:`File <Computer_file>` layout"
+   :ref:`Notebooks structure <concepts-nbs-tree>`, "
+   :wiki-pg:`File <Computer_file>` structure"
 
 .. csv-table:: Select references
    :align: center
    :header: Reference, Topic
 
-   :yt-vid:`Corey Schafer tutorial <HW29067qVWk>`, "Recommended
-   :xref:`YouTube` tutorial"
+   :yt-vid:`Corey Schafer Jupyter Notebook tutorial <HW29067qVWk>`, "
+   Recommended :xref:`YouTube` tutorial"
    :github-help:`Markdown <basic-writing-and-formatting-syntax>`, "
    :wiki-pg:`Syntax <Syntax_(programming_languages)>` for
    making :wiki-pg:`links <URL>`, :xref:`tables <tables-generator>`, etc."
    :xref:`tables-generator`, "
    :wiki-pg:`Syntax <Syntax_(programming_languages)>` generator"
-
-The interactive style of :xref:`Jupyter Notebooks <Jupyter>` make it easy to
-analyze data with numerical :ref:`conda packages <conda:concept-conda-package>`
-
-.. csv-table:: Numerical analysis :ref:`packages <conda:concept-conda-package>`
-   :align: center
-   :header: Package, Official tutorial, YouTube tutorial
-
-   :doc:`NumPy <numpy:about>`, "
-   :doc:`Quickstart <numpy:user/quickstart>`", "
-   :xref:`NumPy <codebasics-numpy>`"
-   :doc:`Matplotlib <matplotlib:index>`,"
-   :doc:`matplotlib:tutorials/index`", "
-   :xref:`Matplotlib <codebasics-matplotlib>`"
-   :doc:`pandas <pandas:index>`, "
-   :doc:`10 min tutorial <pandas:getting_started/10min>`", "
-   :xref:`pandas <codebasics-pandas>`"
-
-The :doc:`nb-extensions:index` provide additional functionality
 
 .. csv-table:: Select :doc:`extensions <nb-extensions:index>`
    :align: center
@@ -843,12 +846,29 @@ The :doc:`nb-extensions:index` provide additional functionality
 
 .. tip::
 
-   This :xref:`AAAAAA-nbs` can
+   The :xref:`AAAAAA-nbs` can
    :wiki-pg:`render <Rendering_(computer_graphics)>` any
    :xref:`Jupyter Notebook<Jupyter>` from the
    :github:`AAAAAA repository <alnoki/AAAAAA>` inside of a
    :xref:`web browser <web-browser>`, even if you don't have
    :xref:`Jupyter <Jupyter>`
+
+.. _tools-numerical-packages:
+
+Numerical conda packages
+========================
+
+.. csv-table:: Numerical analysis :term:`packages <a6>`
+   :align: center
+   :header: Package info, Official tutorial (s), YouTube tutorial
+
+   :doc:`NumPy <numpy:about>`, :doc:`numpy:user/quickstart`, "
+   :xref:`NumPy <codebasics-numpy>`"
+   :doc:`Matplotlib <matplotlib:index>`,"
+   :doc:`matplotlib:tutorials/index`", "
+   :xref:`Matplotlib <codebasics-matplotlib>`"
+   :doc:`pandas <pandas:index>`, :doc:`pandas:getting_started/10min`, "
+   :xref:`pandas <codebasics-pandas>`"
 
 
 *******
@@ -860,9 +880,9 @@ Testing
 pytest
 ======
 
-:term:`AAAAAA` uses :doc:`pytest <pytest:index>`, a
-:ref:`conda package<tools-anaconda>`, to verify that
-:ref:`source code <tools-python>` is functioning as expected
+:term:`AAAAAA` use :doc:`pytest <pytest:index>`, a
+:term:`conda package <a6>`, to verify that :ref:`source code <tools-python>` is
+functioning as expected
 
 :ref:`tools-vs-code` natively integrates with :doc:`pytest <pytest:index>`,
 and additional functionality is provided by the
@@ -886,6 +906,7 @@ and additional functionality is provided by the
    :wiki-pg:`documentation <Software_documentation>`"
    :xref:`codebasics-pytest`, Recommended :xref:`YouTube` tutorial
    :doc:`pytest tutorials <pytest:contents>`, Official tutorials
+
 
 ************
 Distributing

@@ -329,6 +329,8 @@ Committing
 
 #. Verify results at the :github:`AAAAAA repository <alnoki/AAAAAA>`
 
+.. _git-committing-fixes:
+
 Quick fixes
 -----------
 

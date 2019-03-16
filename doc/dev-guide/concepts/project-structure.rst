@@ -1,4 +1,4 @@
-.. 0.3.0
+.. 0.4.0
 
 .. _concepts-project-structure:
 
@@ -42,10 +42,10 @@ Some select demonstrative contents of the
            conf.py
            make.bat
        nbs/
-           dev/
-               ledger.ipynb
            src/
                ledger.ipynb
+           doc/
+               version-stats.ipynb
        .vscode/
            settings.json
        .gitignore
@@ -59,7 +59,7 @@ Some select demonstrative contents of the
    :header: Name, Function
 
    ``AAAAAA/``, Project :xref:`root directory <directory>`
-   ``src/`` , :xref:`Source code <source-code>` (in :ref:`tools-Python`)
+   ``src/`` , :ref:`Python source code <tools-Python>`
    ``test/`` , :ref:`pytest test code <tools-pytest>`
    ``doc/`` , ":ref:`tools-sphinx`-style
    :wiki-pg:`documentation <Software_documentation>`"
