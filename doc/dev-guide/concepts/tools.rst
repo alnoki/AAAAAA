@@ -1,5 +1,3 @@
-.. 0.4.0
-
 .. _concepts-tools:
 
 
@@ -9,7 +7,6 @@ Tools
 
 .. contents::
    :local:
-   :depth: 2
 
 
 **************
@@ -139,14 +136,16 @@ you can also reproduce via the :ref:`import a6 procedure <conda-import-a6>`
    a6
       A :ref:`conda environment <conda:concept-conda-env>` containing all
       the :ref:`packages <conda:concept-conda-package>` that :term:`AAAAAA`
-      require
+      require during :ref:`development <dev-env-intro>`
 
       .. _concepts-packages-table:
 
       .. csv-table:: :ref:`conda:concept-conda-package` required for
          :term:`AAAAAA`
          :align: center
-         :header: Package, Function, Setup Phase, Channel
+         :header: :ref:`Package <conda:concept-conda-package>`, Function, "
+            :ref:`Setup Phase <dev-env-intro>`", "
+            :ref:`Channel <conda:channels-glossary>`"
 
          :xref:`Python`, :xref:`source-code` creation, "
          :ref:`Documenting <dev-env-documenting>`", "
@@ -481,9 +480,10 @@ components like ``this``, :guilabel:`this`, or
 
 The two most fundamental :doc:`reST <sphinx:usage/restructuredtext/basics>`
 components are the :doc:`role <sphinx:usage/restructuredtext/roles>`, which
-marks a piece of text (usually in-:wiki-pg:`line <Line_(text_file)>`), and the
+marks a piece of :wiki-pg:`text <Character_(computing)>` (usually
+in-:wiki-pg:`line <Line_(text_file)>`), and the
 :doc:`directive <sphinx:usage/restructuredtext/directives>`, which marks a
-block of text
+block of :wiki-pg:`text <Character_(computing)>`
 
 :wiki-pg:`Files <Computer_file>` that contain
 :doc:`reST <sphinx:usage/restructuredtext/basics>` have an ``.rst``
@@ -725,6 +725,11 @@ accessed via :ref:`Intersphinx <tools-intersphinx>`. A simple
 :ref:`role <tools-restructured-text>` is used to insert
 :ref:`links <references-links>`, and usage is described at
 :ref:`xref procedures <sphinx-xref>`
+
+:github:`xref <michaeljones/sphinx-xref>` is
+:ref:`configured with Sphinx <configs-sphinx>` via its placement in the
+:ref:`exts directory <concepts-doc-tree>` and it can
+:ref:`integrate with Read the Docs <configs-requirements-txt>`
 
 .. _tools-bibtex:
 

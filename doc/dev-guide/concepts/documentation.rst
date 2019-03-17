@@ -1,5 +1,3 @@
-.. 0.3.0
-
 .. _concepts-doc:
 
 
@@ -29,8 +27,8 @@ Sphinx
 .. note::
 
    The :ref:`Tools: Sphinx <tools-sphinx>` section explains how
-   :ref:`Sphinx <tools-sphinx>` works, but this is an elaboration of
-   specific :wiki-pg:`documentation <Software_documentation>` components in
+   :ref:`Sphinx <tools-sphinx>` works, but this is an elaboration of specific
+   :wiki-pg:`documentation <Software_documentation>` components in
    :term:`AAAAAA`
 
 .. _concepts-doc-tree:
@@ -42,10 +40,10 @@ Structure
 
     AAAAAA/
         doc/
-            exts/
-                xref.py
             conf.py
             requirements.txt
+            exts/
+                xref.py
             Makefile
             make.bat
             index.rst
@@ -79,19 +77,19 @@ Structure
    :align: center
    :header: Name, Function
 
-   ``exts/``, ":xref:`Directory <directory>` for
-   :doc:`extensions <sphinx:usage/extensions/index>`"
    ``conf.py``, :ref:`Sphinx configuration <configs-conf-py>`
    ``requirements.txt``, "
    :ref:`Read the Docs configuration <configs-read-the-docs>`"
-   "``Makefile`` , ``make.bat``", :ref:`sphinx-building-doc`
-   ``index.rst`` (top-level) , ":xref:`Homepage <webpage>` of
+   ``exts/xref.py``, :ref:`xref Sphinx extension <tools-xref>`
+   "``Makefile`` , ``make.bat``", ":ref:`sphinx-building-doc`, from
+   :ref:`sphinx-quickstart <dist-doc>`"
+   ``doc/index.rst`` , ":xref:`Homepage <webpage>` of
    :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`"
    "``getting-started/`` , ``user-guide/``, etc.", "
    :xref:`Directories <directory>` for
-   :wiki-pg:`documentation <Software_documentation>`"
+   :wiki-pg:`documentation <Software_documentation>` sections"
    "``quickstart.rst`` , ``what-next.rst`` , etc. ", "
-   :wiki-pg:`Files <Computer_file>` with :ref:`tools-restructured-text`"
+   :ref:`reStructuredText files <tools-restructured-text>`"
    ``refs.bib``, ":xref:`Citations <citation>` for
    :ref:`books <references-books>` (in :ref:`tools-bibtex` format)"
 
@@ -99,6 +97,9 @@ Structure
 
 Style
 =====
+
+.. contents::
+   :local:
 
 :term:`AAAAAA` adopt stylistic recommendations from common sources, with some
 particular emphases
@@ -120,6 +121,12 @@ particular emphases
    :conda-forge:`Doc8 reST linter <doc8>`, ":wiki-pg:`Linter <Lint_(software)>`
    for :ref:`reST <tools-restructured-text>` [#]_"
 
+.. tip::
+
+   The :ref:`.rst files <tools-restructured-text>` in :term:`AAAAAA` should
+   clearly portray stylistic components. Look around in them for more examples
+   after reviewing the below considerations
+
 .. rubric:: Footnotes
 
 .. [#] Automatically :wiki-pg:`runs <Execution_(computing)>` via the
@@ -134,8 +141,8 @@ Specific syntax
    require it
 #. Use :ref:`labels <sphinx:ref-role>` (``:ref:``) to reference content within
    :term:`AAAAAA` rather than specific :ref:`.rst <tools-restructured-text>`
-   (``:doc:``) refrences, since the
-   :ref:`toctrees <sphinx:toctree-directive>` are constantly evolving
+   (``:doc:``) references, in case
+   :ref:`toctrees <sphinx:toctree-directive>` change
 #. :ref:`Labels <sphinx:ref-role>` should be ``lowercase-hyphenated``, and
    should use similar categorical naming when possible:
 
@@ -149,7 +156,7 @@ Specific syntax
 
 #. There should be regular :wiki-pg:`text <Character_(computing)>` between two
    different :ref:`links <references-links>` so that the
-   :ref:`links <references-links>` can clearly be differentiated:
+   :ref:`links <references-links>` can be clearly differentiated:
 
    .. csv-table::
       :align: center
@@ -205,6 +212,9 @@ Common Conceptual Capitalizations (C\ :superscript:`3`)
 
 Whitespace and line breaking
 ----------------------------
+
+Many of these are exemplified below in the
+:ref:`documentation example <concepts-doc-example>`
 
 #. Use a :wiki-pg:`blank line <Newline>` at the end of
    :ref:`.rst files <tools-restructured-text>`
@@ -299,6 +309,7 @@ Whitespace and line breaking
    .. code-block:: rest
 
       .. literalinclude:: sample-doc.rst
+         :language: rest
          :caption: What the :ref:`reST <tools-restructured-text>` for
             :ref:`sample-doc.rst <sample-doc>` looks like:
 
@@ -318,13 +329,18 @@ Whitespace and line breaking
    :wiki-pg:`line breaks <Newline>`
 
    * You should only need ``"`` in :ref:`csv-tables <sphinx:table-directives>`
-     for :wiki-pg:`line breaks <Newline>` in row data, so don't use them
-     for the
-     :doc:`directive options <sphinx:usage/restructuredtext/directives>`
-     listed after ``:header:`` (even if the ``:header:``
-     :doc:`directive options <sphinx:usage/restructuredtext/directives>` have
-     a line break)
+     for :wiki-pg:`line breaks <Newline>` that are necessary when ``,`` is also
+     needed
    * For consistency, ``:align:`` should come before ``:header:``
+
+     .. code-block:: rest
+
+        .. csv-table:: :ref:`conda:concept-conda-package` required for
+           :term:`AAAAAA`
+           :align: center
+           :header: :ref:`Package <conda:concept-conda-package>`, Function, "
+              :ref:`Setup Phase <dev-env-intro>`", "
+              :ref:`Channel <conda:channels-glossary>`"
 
 #. Use a single :wiki-pg:`space <Whitespace_character>` before
    :doc:`footnotes <sphinx:usage/restructuredtext/basics>`
@@ -334,26 +350,13 @@ Whitespace and line breaking
 Simple example
 ==============
 
-Per the :ref:`proofreading procedures <writing-proofread>`, there should be
-a :doc:`reST comment <usage/restructuredtext/basics>` with a
-:ref:`version number <indices-versions>` tag (in the form of a
-:doc:`reST comment <usage/restructuredtext/basics>`)  at the top of
-:ref:`.rst files <tools-restructured-text>`
-
-Though it is not included in a :ref:`toctree <sphinx:toctree-directive>`, check
-out :ref:`sample-doc.rst <sample-doc>`!
+Though it is an :ref:`orphan page <sphinx:metadata>`, check
+out the :wiki-pg:`HTML` form of :ref:`sample-doc.rst <sample-doc>`!
 
 .. literalinclude:: sample-doc.rst
    :caption: What the :ref:`reST <tools-restructured-text>` for
-      :ref:`sample-doc.rst <sample-doc>` looks like:
+      :ref:`sample-doc.rst <sample-doc>` looks like
    :language: rest
-   :lines: 3-
-
-.. tip::
-
-   The :ref:`.rst files <tools-restructured-text>` in :term:`AAAAAA` should
-   clearly portray other relevant stylistic components. Look around in them for
-   more examples
 
 
 *****************
@@ -396,9 +399,9 @@ Jupyter Notebooks
 
 .. tip::
 
-   This :xref:`AAAAAA-nbs` opens at the ``nbs/`` :xref:`directory <directory>`
+   The :xref:`AAAAAA-nbs` opens at the ``nbs/`` :xref:`directory <directory>`
    and can :wiki-pg:`render <Rendering_(computer_graphics)>` any
-   :xref:`Jupyter Notebook<Jupyter>` from the
+   :ref:`Jupyter Notebook <tools-jupyter>` from the
    :github:`AAAAAA repository <alnoki/AAAAAA>` inside of a
    :xref:`web browser <web-browser>`, even if you don't have
-   :xref:`Jupyter <Jupyter>`
+   :ref:`Jupyter <tools-jupyter>`

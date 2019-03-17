@@ -1,6 +1,5 @@
-.. 0.4.0
-
 .. _user-intro:
+
 
 ############
 Introduction

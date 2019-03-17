@@ -1,5 +1,3 @@
-.. 0.3.0
-
 .. _concepts-code:
 
 
@@ -17,6 +15,9 @@ Code
    specific components in :term:`AAAAAA` from a
    :wiki-pg:`developer <Programmer>`'s perspective
 
+.. contents::
+   :local:
+
 .. _concepts-code-tree:
 
 
@@ -30,6 +31,8 @@ Structure
 
    :ref:`tools-python`, Conceptual explanation
    :ref:`tools-pytest`, Conceptual explanation
+   :ref:`User guide <user-intro>`, Walkthrough
+   :ref:`testing-intro`, Walkthrough
 
 .. csv-table:: Select references
    :align: center
@@ -39,7 +42,7 @@ Structure
    :doc:`pytest:goodpractices`, Integrating :ref:`test code <tools-pytest>`
 
 In accordance with :ref:`pytest configuration specifications <configs-pytest>`,
-:term:`AAAAAA` is structured as follows:
+:term:`AAAAAA` are structured as follows:
 
 .. code-block:: none
 
@@ -75,13 +78,18 @@ Style
    :pep:`8`, Official :ref:`tools-python` style guide
    :pep:`257`, :ref:`Docstring <python:tut-docstrings>` conventions
 
-#. Items of particuar emphasis:
+#. Items of particular emphasis:
 
-   * Lines should be a maximum length of 79 characters, except
+   * :wiki-pg:`Lines <Line_(text_file)>` should be a maximum length of 79
+     :wiki-pg:`characters <Character_(computing)>`, except
      :ref:`comments <python:comments>` and
      :ref:`docstrings <python:tut-docstrings>`, which should be a maximum
-     of 72 characters
-   * Two spaces should precede a :ref:`comment <python:comments>`
+     of 72 :wiki-pg:`characters <Character_(computing)>`
+
+     * The :ref:`VS Code ruler settings <configs-vs-code>` help with this
+
+   * Two :wiki-pg:`spaces <Whitespace_character>` should precede a
+     :ref:`comment <python:comments>`
 
 #. Per a recommended
    :stack-q:`Python quote convention
@@ -99,11 +107,12 @@ Style
 Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
 **********************************************************************
 
-.. csv-table:: Select reference within :term:`AAAAAA`
+.. csv-table:: Select references within :term:`AAAAAA`
    :align: center
    :header: Reference, Topic
 
    :ref:`tools-napoleon`, Conceptual explanation
+   :ref:`Napoleon procedures <procedures-napoleon>`, Usage
 
 .. csv-table:: Select references
    :align: center
@@ -117,9 +126,10 @@ Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
    :ref:`Python domain <sphinx:python-roles>`, "
    :wiki-pg:`Syntax <Syntax_(programming_languages)>` guide"
 
-:ref:`Source code <user-intro>` is enhanced with :pep:`type annotations <484>`
-and :ref:`docstrings <python:tut-docstrings>` containing
-:ref:`Python domain <sphinx:python-roles>` components, so that
+:ref:`Source code <tools-Python>` is enhanced with
+:pep:`type annotations <484>` and :ref:`docstrings <python:tut-docstrings>`
+containing :ref:`Python domain <sphinx:python-roles>` components for
+:ref:`reST <tools-restructured-text>`, so that
 :ref:`napoleon <tools-napoleon>` can create pretty
 :wiki-pg:`documentation <Software_documentation>` elements that explain
 :xref:`source code <source-code>`, like this
@@ -158,10 +168,11 @@ created, it can be referenced using the
 :ref:`Python domain <sphinx:python-roles>`:
 
 .. code-block:: rest
+   :caption: Let's talk about :py:class:`AAAAAA.ledger.Transaction`
 
    Let's talk about :py:class:`AAAAAA.ledger.Transaction`
 
-Real E\ :superscript:`4`\ s, like the example below, also have a
+Real :ref:`concepts-code-e4`, like the example below, also have a
 :guilabel:`[source]` feature that :xref:`links <URL>` directly to
 :xref:`source code <source-code>`, except when viewing
 :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` in

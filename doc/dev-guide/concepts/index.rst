@@ -1,5 +1,3 @@
-.. 0.4.0
-
 .. _concepts-intro:
 
 
@@ -38,7 +36,6 @@ finished :wiki-pg:`downloading <Download>` all of them
 
 .. toctree::
    :caption: Concepts
-   :maxdepth: -1
 
    tools
    project-structure

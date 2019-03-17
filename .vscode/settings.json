@@ -1,5 +1,5 @@
 {
-    // Colors
+    // X11 Colors
     "workbench.colorTheme": "Default Dark+",
     "workbench.colorCustomizations": {
         "editor.background": "#000000", // Black
@@ -74,8 +74,8 @@
 
 
     // Indentation and line width
-    "[python]": { // Per PEP8, for comments (71) and code (79)
-        "editor.rulers": [71, 79],
+    "[python]": { // Per PEP8, for comments (72) and code (79)
+        "editor.rulers": [72, 79],
         "editor.tabSize": 4,
     },
     "[restructuredtext]": { // Per Python developer guide
@@ -89,7 +89,7 @@
     "[jsonc]":{ // json with comments (this file)
         "editor.tabSize": 4,
     },
-    "[json]":{
+    "[json]":{ // json
         "editor.tabSize": 4,
     },
 

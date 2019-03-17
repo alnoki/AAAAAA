@@ -1,6 +1,5 @@
-.. 0.3.0
-
 .. _procedures:
+
 
 **********
 Procedures
@@ -25,13 +24,12 @@ These should either be followed exactly, or updated
 
 .. toctree::
    :caption: Procedures
-   :maxdepth: -1
 
    conda
    git
-   sphinx
    vs-code
+   sphinx
+   napoleon
    pytest
    writing
-   napoleon
    versioning

@@ -715,6 +715,11 @@ Usage specifics
      :doc:`directives <sphinx:usage/restructuredtext/directives>` and
      :doc:`roles <sphinx:usage/restructuredtext/roles>` for specific topics
 
+#. :ref:`sphinx:metadata`
+
+   * Enables :ref:`orphan pages <sphinx:metadata>`, like
+     :ref:`sample-doc.rst <sample-doc>`
+
 With Read the Docs
 ------------------
 

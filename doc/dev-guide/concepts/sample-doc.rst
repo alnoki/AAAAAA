@@ -1,12 +1,10 @@
 :orphan:
 
-.. 0.3.0
-
 .. _sample-doc:
 
 
 ##########
-Part title
+Page title
 ##########
 
 Welcome to this :wiki-pg:`file <Computer_file>`! Don't forget the two
@@ -21,7 +19,7 @@ You ready for a :doc:`list <sphinx:usage/restructuredtext/basics>`?
    * Item 3 (needs :wiki-pg:`vertical whitespace <Newline>` above)
    * Item 4 (one :wiki-pg:`space <Whitespace_character>` after ``*``)
 
-      * Item 5 (:wiki-pg:`indentated <Indentation_(typesetting)>` 3
+      * Item 5 (:wiki-pg:`indented <Indentation_(typesetting)>` 3
         :wiki-pg:`spaces <Whitespace_character>`)
 
 
@@ -62,9 +60,9 @@ Welcome to this :doc:`section <sphinx:usage/restructuredtext/basics>`! Only one
 
    .. note::
 
-      Check out this the :wiki-pg:`indentation <Indentation_(typesetting)>`
-      for this :doc:`directive <sphinx:usage/restructuredtext/directives>`,
-      after a :doc:`list <sphinx:usage/restructuredtext/basics>`
+      Check out the :wiki-pg:`indentation <Indentation_(typesetting)>` for this
+      :doc:`directive <sphinx:usage/restructuredtext/directives>`, after a
+      :doc:`list <sphinx:usage/restructuredtext/basics>`
 
    * Item 3
 

@@ -1,4 +1,6 @@
 
+.. _indices-acronyms:
+
 
 ########
 Acronyms

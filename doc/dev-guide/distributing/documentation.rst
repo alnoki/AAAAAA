@@ -27,8 +27,8 @@ Documentation
 :wiki-pg:`Documentation <Software_documentation>` for :term:`AAAAAA` was
 initially created using the
 :doc:`Read the Docs with Sphinx getting started guide
-<rtfd:intro/getting-started-with-sphinx>`, which should have you on your way
-if you want to create a similar :wiki-pg:`website <Website>`
+<rtfd:intro/getting-started-with-sphinx>`, which should have you on your way if
+you want to create a similar :wiki-pg:`website <Website>`
 
 .. contents:: Contents
    :local:
@@ -77,8 +77,8 @@ and definitely whenever you use a new
 If you experience a failed :doc:`build <rtfd:builds>`, you probably just need
 to update :ref:`configs-conf-py` or :ref:`configs-requirements-txt`
 
-
 .. _dist-doc-versions:
+
 
 *****************
 Managing versions
@@ -100,14 +100,15 @@ can see how it will actually appear in your :wiki-pg:`browser <Web_browser>`,
 and as long as you use the suggested
 :ref:`versioning procedures <versioning-start-new>`, only the last
 :ref:`tagged version <git-tagging>` on the
-:git-doc:`master branch <user-manual>` will be outwardly visible when you view
-your :wiki-pg:`website <Website>`
+:git-doc:`master branch <user-manual>` will appear to others as the official
+:wiki-pg:`website <Website>` (unless they manually
+:ref:`choose a different version <what-next-format>`)
 
 When you :ref:`merge <git-merging>`, it makes sense to disable the
 :ref:`development branch <versioning-start-new>` you were just working on,
 then :ref:`tag <git-tagging>` the new :ref:`version <indices-versions>` on the
 :git-doc:`master branch <user-manual>` and enable it instead, so that your
-:wiki-pg:`website <Website>` will show the latest
+:wiki-pg:`website <Website>` will officially show the latest
 :ref:`version <indices-versions>`
 
 You can use :ref:`version-stats.ipynb <concepts-nbs-tree>`, which is a
@@ -137,8 +138,8 @@ The :wiki-pg:`website <Website>` is considered the primary way to view
 :wiki-pg:`PDF` is useful for measuring the
 :ref:`amount of content generated for a version release <versions-stats>`. You
 can also follow the :ref:`procedures to build a PDF <sphinx-building-pdf>` on
-your computer if you are okay with :wiki-pg:`downloading <Download>` a
-particularly large :wiki-pg:`LaTeX` library
+your :wiki-pg:`computer <Computer>` if you are okay with
+:wiki-pg:`downloading <Download>` a particularly large :wiki-pg:`LaTeX` library
 
 Content is, of course, :wiki-pg:`rendered <Rendering_(computer_graphics)>`
 differently in the :wiki-pg:`PDF` and in the :wiki-pg:`website <Website>`,

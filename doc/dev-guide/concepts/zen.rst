@@ -1,5 +1,3 @@
-.. 0.3.0
-
 .. _zen:
 
 
@@ -13,19 +11,25 @@ Zen
 Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :superscript:`2`
 *******************************************************************************************
 
-#. Silly acronyms actually help with remembering things
-#. Testing and :wiki-pg:`documenting <Software_documentation>` up front
-   prevents massive runtime debug headaches
-#. Have DRY (don't repeat yourself) [#]_ code: decompose as much as possible
+#. Silly :ref:`acronyms <indices-acronyms>` actually make it easy to remember
+   things
+#. :ref:`Test <testing-intro>` and :ref:`document <user-intro>` from the
+   beginning to prevent massive runtime debug headaches
+#. Have DRY (don't repeat yourself) [#]_ :ref:`code <tools-python>`: decompose
+   as much as possible
 #. :wiki-pg:`Documentation <Software_documentation>` should enable another to
-   re-write :xref:`source <source-code>` and test code [#]_
-#. Have STUPID simple tests. [#]_ Don't recursively "test the test code"
-#. :wiki-pg:`Documenting <Software_documentation>` & testing adds perspective
-   beyond :xref:`source code <source-code>` development alone
-#. Consider :wiki-pg:`DO-178B` as a model for software design assurance [#]_
+   re-create :ref:`source <user-intro>` and :ref:`test code <testing-intro>`
+   [#]_
+#. Have STUPID simple :ref:`tests <testing-intro>`. [#]_ Don't recursively
+   ":ref:`test <testing-intro>` the :ref:`test code <testing-intro>`"
+#. :wiki-pg:`Documenting <Software_documentation>` and
+   :ref:`testing <testing-intro>` adds perspective beyond the
+   :ref:`development <dev-intro>` of :ref:`source code <user-intro>` alone
+#. Consider :wiki-pg:`DO-178B` as a model for :wiki-pg:`software <Software>`
+   design assurance [#]_
 #. Legacy conventions shant prevent the adoption of a new worthwhile philosopy
 #. Play around and "whiteboard" :wiki-pg:`software <Open-source_software>`
-   during initial stages [#]_
+   during initial :wiki-pg:`development <Software_development>` [#]_
 #. Read :wiki-pg:`documentation <Software_documentation>` out loud [#]_
 #. :ref:`Py <tools-python>` like you :ref:`reST <tools-restructured-text>`,
    :ref:`reST <tools-restructured-text>` like you
@@ -73,10 +77,10 @@ Need some more inspiration? Try::
 .. rubric:: Footnotes
 
 .. [#] Acronym from :yt-pl:`Corey Schafer <-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU>`
-.. [#] From Software Requirements Documents (SWRDs) and Software Design
-   Documents (SDDs) standards at :wiki-pg:`Garmin`
-.. [#] From a tip that embedded systems code should be "stupid simple", given
-   by Daniel Santos, co-founder of :xref:`219-Design`
+.. [#] From :wiki-pg:`Software` Requirements Documents (SWRDs) and
+   :wiki-pg:`Software` Design Documents (SDDs) standards at :wiki-pg:`Garmin`
+.. [#] From a tip that embedded systems :wiki-pg:`code <Software>` should be
+   "stupid simple", given by Daniel Santos, co-founder of :xref:`219-Design`
 .. [#] :wiki-pg:`AHRS <Attitude_and_heading_reference_system>` products from
    :wiki-pg:`Garmin` are :wiki-pg:`DO-178B Level A <DO-178B>`
 .. [#] From a comment by Brett Glasner, that whiteboarding is the most

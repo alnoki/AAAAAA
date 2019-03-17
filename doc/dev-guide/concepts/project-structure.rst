@@ -1,5 +1,3 @@
-.. 0.4.0
-
 .. _concepts-project-structure:
 
 

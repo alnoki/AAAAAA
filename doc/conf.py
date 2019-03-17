@@ -17,13 +17,13 @@ extensions = [
     'xref',
     'sphinxcontrib.bibtex',
 ]
-"""Which :doc:`extensions <sphinx:usage/extensions/index>` to use
+"""Which :ref:`extensions <tools-sphinx-extensions>` to use
 
 Includes :ref:`extensions <tools-sphinx-extensions>` that are:
 
    * Automatically
      :wiki-pg:`installed <Installation_(computer_programs)>` via
-     :doc:`sphinx-quickstart <sphinx:usage/quickstart>`
+     :ref:`sphinx-quickstart <dist-doc>`
    * Selected from the
      :doc:`built-in Sphinx extensions <sphinx:usage/extensions/index>`
      for usage in :term:`AAAAAA`
@@ -36,10 +36,10 @@ project = 'AAAAAA'
 """What to call this :ref:`tools-sphinx` project"""
 
 copyright = '2019, alnoki'
-"""Basic :wiki-pg:`copyright <Copyright>`"""
+"""Basic :wiki-pg:`copyright <Copyright>` information"""
 
 author = 'alnoki'
-""":github:`Who <alnoki>` even made this anyways?"""
+""":github:`Who <alnoki>` even made this?"""
 
 version = '0.4'
 """Just ``MAJOR.MINOR`` for the :ref:`version <indices-versions>`"""
@@ -52,6 +52,7 @@ master_doc = 'index'
 
 For :term:`AAAAAA`, is inside of the
 :ref:`documentation root directory <concepts-doc-tree>`
+
 """
 
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -87,12 +88,12 @@ the :doc:`default options <rtd-sphinx-theme:configuring>`
 """
 
 linkcheck_ignore = [
-    r'http://localhost:8000/_build/html/index.html',  # Manual
-    r'http://127.0.0.1:8000'  # sphinx-autobuild
+    'http://localhost:8000/_build/html/index.html',  # Manual builds
+    'http://127.0.0.1:8000'  # sphinx-autobuild
 ]
 """Ignore when :ref:`checking links <sphinx-checking-links>`
 
-These :wiki-pg:`URLs <URL>` only exist when
+These :wiki-pg:`URLs <URL>` are just for
 :ref:`building documentation <sphinx-building-doc>`, so ignore them
 
 """

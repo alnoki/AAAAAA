@@ -4,32 +4,8 @@
 # 0.4.0
 
 * Try to proofread without using your mouse on the LHS of the screen
-
-## quicklinks
-* :wiki-pg:`run <Execution_(computing)>`
-* :wiki-pg:`scroll <Scrolling>`
-* :wiki-pg:`Click <Point_and_click>`
-* :wiki-pg:`Typing`
-* :wiki-pg:`HTML`
-* :wiki-pg:`Install <Installation_(computer_programs)>`
-* :wiki-pg:`Download`
-* :wiki-pg:`Filename extension <Filename_extension>`
-* :wiki-pg:`File <Computer_file>`
-* :wiki-pg:`Open-source_software`
-* :wiki-pg:`Character <Character_(computing)>`
-* :wiki-pg:`String <String_(computer_science)>`
-* :wiki-pg:`Line <Line_(text_file)>`
-* :wiki-pg:`Line break <Newline>`
-* :wiki-pg:`Whitespace <Whitespace_character>`
-* :wiki-pg:`Indentation <Indentation_(typesetting)>`
-* :wiki-pg:`User <User_(computing)>`
-* :wiki-pg:`Developer <Programmer>`
-* :wiki-pg:`Development <Software_development>`
-* :wiki-pg:`Algorithm`
-* :wiki-pg:`Rendering_(computer_graphics)`
-* :wiki-pg:`Host <Host_(network)>`
-* :wiki-pg:`Documentation <Software_documentation>`
-* :wiki-pg:`Delimiter`
+* Find all for .. 0.3.0 or .. 0.
+* Check doc8 output when proofreading
 
 ## Proofreading notes
 * https://www.idownloadblog.com/2015/01/14/how-to-enable-key-repeats-on-your-mac/
@@ -49,6 +25,9 @@
    * Or say the user guide provides additional examples, but learn more hear
       * Also link to examples and user guide?
    * Link to the a6 table
+* PDF version of sample-doc?
+   * Note not show up in PDF form?
+* Should check doc8 output when proofreading
 
 # 0.5.0
 

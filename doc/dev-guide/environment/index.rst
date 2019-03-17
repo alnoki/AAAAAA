@@ -1,5 +1,3 @@
-.. 0.4.0
-
 .. _dev-env-intro:
 
 
@@ -27,7 +25,6 @@ following instructions, so get ready to
 
 .. toctree::
    :caption: Developer environment setup
-   :maxdepth: -1
 
    documenting
    analyzing
