@@ -1,5 +1,3 @@
-.. 0.3.0
-
 .. _procedures-git:
 
 
@@ -19,8 +17,8 @@ Git
 
    :git-doc:`Git manual <user-manual>`, Quick practical reference
    :git-scm:`Git book <book/en/v2>`, In-depth conceptual explanations
+   :xref:`git-commit-guidelines`, Official message guidelines
    :xref:`commit-conventions`, Tell the :xref:`codebase <software>` what to do
-   :xref:`git-commit-guidelines`, Message guidelines
 
 .. contents:: Contents
    :local:
@@ -34,6 +32,15 @@ Configuring
 
 .. contents::
    :local:
+
+.. csv-table:: Learning :ref:`tools-vim`
+   :align: center
+   :header: Reference, Topic
+
+   :xref:`Vim-tutorial`, Learn minimum necessary :xref:`Vim <Vim>`
+   :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
+   :ref:`Vim configuration <configs-vim>`, "
+   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
 
 .. _git-setup:
 
@@ -50,8 +57,8 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
       git config --global user.name alnoki
       git config --global user.email 43892045+alnoki@users.noreply.github.com
 
-#. Set :ref:`tools-vim` as the default editor and use it to verify your
-   :wiki-pg:`identity <User_(computing)>`:
+#. Indicate :ref:`tools-vim` as the :xref:`default editor <git-setup>` and use
+   it to verify your :wiki-pg:`identity <User_(computing)>`:
 
    .. code-block:: bash
 
@@ -63,7 +70,7 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
    :xref:`exit without saving <Vim-cheatsheet>` by
    :wiki-pg:`typing <Typing>` ``:q!`` then :kbd:`return`
 
-#. :ref:`tools-vim` comes with built-in
+#. :ref:`tools-vim` comes with
    :wiki-pg:`syntax highlighting <Syntax_highlighting>` for
    :ref:`commit messages <git-committing>`, but if you are using a
    :wiki-pg:`Mac <Macintosh_operating_systems>` you may have to
@@ -75,15 +82,6 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
 
       filetype plugin indent on
       syntax on
-
-.. csv-table:: Learning :ref:`tools-vim`
-   :align: center
-   :header: Reference, Topic
-
-   :xref:`Vim-tutorial`, Learn minimum necessary :xref:`Vim <Vim>`
-   :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
-   :ref:`Vim configuration <configs-vim>`, "
-   :ref:`Configuration <concepts-configs>` for :term:`AAAAAA`"
 
 .. _git-credentials:
 
@@ -99,7 +97,7 @@ Per :xref:`git-config`:
 
       git config --global -e
 
-#. Type ``i`` then :kbd:`return` to get into
+#. :wiki-pg:`Type <Typing>` ``i`` then :kbd:`return` to get into
    :xref:`insert mode <Vim-cheatsheet>`, then make your changes:
 
    .. code-block:: none
@@ -111,7 +109,7 @@ Per :xref:`git-config`:
       [core]
            editor = Vim
 
-#. Type :kbd:`Esc`, then ``:x``, then :kbd:`return`, to
+#. :wiki-pg:`Type <Typing>` :kbd:`Esc`, then ``:x``, then :kbd:`return`, to
    :xref:`save and close <Vim-cheatsheet>`
 #. To check that the :wiki-pg:`user credentials <User_(computing)>` have
    updated:
@@ -127,6 +125,17 @@ Per :xref:`git-config`:
 Inspecting history
 ******************
 
+.. contents::
+   :local:
+
+.. csv-table:: Core :xref:`less commands <less-pager>`
+   :align: center
+   :header: Key, Function
+
+   :kbd:`return`, scroll
+   ``q``, exit
+   ``h``, help
+
 .. _git-view-project-log:
 
 Viewing the project log
@@ -140,15 +149,7 @@ Per :xref:`git-log`:
 
       git log
 
-#. This will open the :xref:`less-pager` for text navigation
-
-   .. csv-table:: Core :xref:`less commands <less-pager>`
-      :align: center
-      :header: Key, Function
-
-      :kbd:`return`, scroll
-      ``q``, exit
-      ``h``, show help
+#. This will open the :xref:`less-pager`
 
 #. A condensed version:
 
@@ -167,12 +168,6 @@ Per :xref:`git-log`:
 
 Listing project committers
 ==========================
-
-.. csv-table:: Select reference within :term:`AAAAAA`
-   :align: center
-   :header: Reference, topic
-
-   :ref:`tools-git`, Conceptual explanation
 
 .. csv-table:: Select references
    :align: center
@@ -240,16 +235,13 @@ made
 Development tasks
 *****************
 
+.. contents::
+   :local:
+
 .. _git-committing:
 
 Committing
 ==========
-
-.. csv-table:: Select reference within :term:`AAAAAA`
-   :align: center
-   :header: Reference, topic
-
-   :ref:`tools-git`, Conceptual explanation
 
 .. csv-table:: Select references
    :align: center
@@ -258,8 +250,7 @@ Committing
    :git-doc:`git-add`, Prepare changes
    :xref:`git-commit`, Create snapshot of project changes
    :xref:`git-push`, :wiki-pg:`Upload` changes to :github:`GitHub <>`
-   :xref:`Message conventions <commit-conventions>`, "Tell the
-   :xref:`codebase <software>` what to do"
+   :xref:`git-commit-guidelines`, Official message guidelines
 
 #. Verify the state of the project using the
    :ref:`VS Code integrated terminal <tools-vs-code>`:
@@ -269,24 +260,27 @@ Committing
       git pull
       git log
 
-#. :wiki-pg:`Save and close <Computer_file>` any open project
-   :wiki-pg:`files <Computer_file>`
+#. :vs-code-doc:`Save and close <getstarted/userinterface>` any
+   :wiki-pg:`open files <Computer_file>`
 #. :ref:`Update your Git credentials <git-credentials>` and verify as needed
-#. Use the :ref:`VS Code Command Palette <tools-vs-code>` to select:
+#. Use the
+   :vs-code-doc:`VS Code symbol input
+   <getstarted/userinterface#_command-palette>` to :wiki-pg:`type <Typing>`:
 
-   * :guilabel:`View: Open View`
-   * :guilabel:`Source Control`
+   * :guilabel:`view source control`
 
 #. Use the :guilabel:`Source Control` interface to
    :git-doc:`stage changes <git-add>`
 
-   * You may consider using the :ref:`Command Palette <tools-vs-code>` to
-     select :guilabel:`Git: Stage All Changes` or, equivalently:
+   * Consider using the :ref:`Command Palette <tools-vs-code>` to select
+
+     * :guilabel:`Git: Stage All Changes`
+
+   * Or, equivalently:
 
      .. code-block:: bash
 
         git add -A
-
 
 #. In the :ref:`integrated terminal <tools-vs-code>`:
 
@@ -296,10 +290,7 @@ Committing
 
    .. Note::
 
-      This will open :ref:`tools-vim`, which you can use to generate your
-      :xref:`commit message <git-commit>` per the
-      :xref:`save and close <Vim-cheatsheet>` procedure used to
-      :ref:`update Git credentials <git-credentials>`
+      This will open :ref:`tools-vim`
 
 #. Compose a message that
    :xref:`tells the codebase what to do <commit-conventions>`
@@ -327,7 +318,7 @@ Committing
       git push
       git log
 
-#. Verify results at the :github:`AAAAAA repository <alnoki/AAAAAA>`
+#. Optionally verify results at the :github:`AAAAAA repository <alnoki/AAAAAA>`
 
 .. _git-committing-fixes:
 
@@ -360,12 +351,6 @@ Quick fixes
 Tagging
 =======
 
-.. csv-table:: Select reference within :term:`AAAAAA`
-   :align: center
-   :header: Reference, topic
-
-   :ref:`tools-git`, Conceptual explanation
-
 .. csv-table:: Select references
    :align: center
    :header: Reference, Topic
@@ -393,10 +378,7 @@ Tagging
 
    .. Note::
 
-      This will open :ref:`tools-vim`, which you can use to generate your
-      :xref:`commit message <git-commit>` per the
-      :xref:`save and close <Vim-cheatsheet>` procedure used to
-      :ref:`update Git credentials <git-credentials>`
+      This will open :ref:`tools-vim`
 
 #. Compose a message that
    :xref:`tells the codebase what to do <commit-conventions>` and includes
@@ -415,12 +397,6 @@ Tagging
 Branching
 =========
 
-.. csv-table:: Select reference within :term:`AAAAAA`
-   :align: center
-   :header: Reference, topic
-
-   :ref:`tools-git`, Conceptual explanation
-
 .. csv-table:: Select references
    :align: center
    :header: Reference, Topic
@@ -430,7 +406,7 @@ Branching
 
 #. :ref:`View the project log <git-view-project-log>` to verify the
    :xref:`commit <git-commit>` in question
-#. Inspect :xref:`all branches <git-branch>` in the
+#. Inspect :xref:`all branches <git-branch>` using the
    :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
@@ -442,7 +418,7 @@ Branching
 
    .. code-block:: bash
 
-      git checkout -b dev/0.3.0
+      git checkout -b dev/0.4.0
 
 #. Verify:
 
@@ -457,7 +433,7 @@ Branching
 
    .. code-block:: bash
 
-      git push -u origin dev/0.3.0
+      git push -u origin dev/0.4.0
 
 #. To :xref:`check out <git-checkout>` a :xref:`branch <git-branch>` from the
    :github:`AAAAAA repository <alnoki/AAAAAA>` for the first time:
@@ -470,12 +446,6 @@ Branching
 
 Merging
 =======
-
-.. csv-table:: Select reference within :term:`AAAAAA`
-   :align: center
-   :header: Reference, topic
-
-   :ref:`tools-git`, Conceptual explanation
 
 .. csv-table:: Select references
    :align: center
@@ -502,7 +472,7 @@ Merging
 
    .. code-block:: bash
 
-      git merge dev/0.3.0
+      git merge dev/0.4.0
 
 #. :ref:`Verify the project log <git-view-project-log>`
 
@@ -513,12 +483,6 @@ Merging
 Changing commit credential history
 **********************************
 
-.. csv-table:: Select reference within :term:`AAAAAA`
-   :align: center
-   :header: Reference, topic
-
-   :ref:`tools-git`, Conceptual explanation
-
 .. csv-table:: Select references
    :align: center
    :header: Reference, Topic
@@ -528,26 +492,24 @@ Changing commit credential history
    :xref:`git-branch-filtering`, "Advanced
    :wiki-pg:`syntax <Syntax_(programming_languages)>`"
 
-If you are learning :ref:`tools-git`, like :github:`alnoki` was (and still is),
-and you forget to either :ref:`set up <git-setup>` your
-:wiki-pg:`identity <User_(computing)>` and/or
+If you are learning :ref:`tools-git` and you forget to either
+:ref:`set up <git-setup>` your :wiki-pg:`identity <User_(computing)>` and/or
 :ref:`update your credentials <git-credentials>` when using different
 :wiki-pg:`computers <Computer>`, your
 :ref:`committer list <git-list-committers>` can end up looking like total
-nonsense. You should only need to do this once, after which you will
-(hopefully) have learned your lesson
+nonsense. This is how you fix it
+
+You should only need to do this once, after which you will have
+(hopefully) learned your lesson
 
 .. warning::
 
    This can totally mess stuff up if you are not careful
 
-#. For the most part, follow :xref:`github-change-authors`. Before you
-   :xref:`push the corrected history <github-change-authors>`, check out the
-   updated :ref:`commit credential history <git-list-committers>`:
+#. For the most part, follow :xref:`github-change-authors`
 
-   .. code-block:: bash
-
-      git log --pretty="%an, %ae, %cn, %ce"
+   * Before you :xref:`push the corrected history <github-change-authors>`,
+     check out the :ref:`unique project committers <git-list-committers>`
 
 #. If you forget to :ref:`update your user credentials <git-credentials>`
    before :ref:`committing and pushing <git-committing>` (a whole bunch of
@@ -570,9 +532,10 @@ nonsense. You should only need to do this once, after which you will
       fi
       ' --tag-name-filter cat -- --branches --tags
 
-   * This will update all
-     :ref:`project commit credentials <git-list-committers>`
-     that were not authored by ``43892045+alnoki@users.noreply.github.com``
+   * This example will update all
+     :ref:`project commit credentials <git-list-committers>` that do not have
+     ``43892045+alnoki@users.noreply.github.com`` as the
+     :ref:`author email <git-list-committers>`
 
 #. If you want to get more specific about your selections, play around with
    some more options:

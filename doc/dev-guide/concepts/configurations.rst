@@ -37,6 +37,8 @@ Conda
 
    :ref:`tools-anaconda`, Conceptual explanation
 
+.. _configs-a6-yml:
+
 a6.yml
 ======
 

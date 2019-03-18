@@ -1,5 +1,3 @@
-.. 0.3.0
-
 .. _procedures-conda:
 
 
@@ -87,7 +85,7 @@ Creating a6 from scratch
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`
 #. :doc:`Install <conda:commands/install>` the remaining
-   :ref:`packages <conda:concept-conda-package>` from :xref:`conda-forge`:
+   :ref:`packages <conda:concept-conda-package>` from the :xref:`conda-forge`:
 
    .. code-block:: bash
 
@@ -150,14 +148,14 @@ Using a new package
 #. Add the :ref:`package <conda:concept-conda-package>` to
 
    #. The :ref:`packages table <concepts-packages-table>`
-   #. The :ref:`a6.yml file <concepts-project-tree>`
+   #. :ref:`configs-a6-yml`
    #. The instructions for :ref:`creating a6 from scratch <conda-create-a6>`
 
       * Here, use the same order for the separate
         :ref:`channels <conda:channels-glossary>` as from top to bottom in the
         :ref:`packages table <concepts-packages-table>`
 
-   #. An installation step somewhere in the
+   #. An step somewhere in the
       :ref:`developer environment setup <dev-env-intro>`
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>`

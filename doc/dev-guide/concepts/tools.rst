@@ -121,6 +121,8 @@ different :ref:`conda channels <conda:channels-glossary>`, like the
    :header: Reference, Topic
 
    :doc:`conda:index`, Official reference
+   :doc:`conda:user-guide/tasks/manage-environments`, "Official practical
+   reference"
    :doc:`Conda cheatsheet <conda:user-guide/cheatsheet>`, "Common
    :wiki-pg:`commands <Command_line>` for :doc:`conda <conda:index>`"
    :doc:`Miniconda <conda:user-guide/install/download>`, ":wiki-pg:`URL <URL>`
