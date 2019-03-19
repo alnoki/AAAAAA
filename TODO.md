@@ -3,6 +3,7 @@
 
 # 0.4.0
 
+* TD3 was in 0.3.1!!!!!!, not 0.2.0 though
 * Try to proofread without using your mouse on the LHS of the screen
 * Find all for .. 0.3.0 or .. 0.
 * Check doc8 output when proofreading
@@ -28,6 +29,7 @@
 * PDF version of sample-doc?
    * Note not show up in PDF form?
 * Should check doc8 output when proofreading
+* Find all for "inside" and link to wiki-pg path
 
 # 0.5.0
 
@@ -59,6 +61,7 @@
    * Connectivity
       * Connect to robinhood
          * Robinhood tools section
+         * API: a way for software to communicate with other software
       * Make a robinhood module
       * Download a transaction
       * Need a way to store it...
@@ -101,6 +104,10 @@
          * Shouldn't reveal any data
 * Testing section goes by module?
    * Intro says more or less these were written as user guide was made
+* Proposal to enhance AAAAAA (PEAs)
+   * Require a whitepaper if someone wants to contribute
+   * Keep this in the indices section?
+   * PEA1 is you writing a PEA about how to contribute
 
 ## Data integration
 * Consider pandas_datareader
@@ -233,6 +240,8 @@
 * Add a csv table to the concepts-code page once you have more references
    * Packges, __init__, setup.py, etc.
    * As you go through and explain
+* Because AAAAAA are colloquially known as alnoki's apps
+   * We are going to import as aa
 
 ## Writing procedures
 * Use draw.io to make an SVG
@@ -254,6 +263,11 @@
    * Cite wolf of wall street, it is just fairy dust
 
 ## adp.py
+* Makefile wraps adp.py
+   * make obj sphinx calls adp which searches through conf.py
+   * make dev opens a website and watches src directory
+   * make clean does cd doc, make clean, the cd ..
+* Put on procedures home page?
 * Use option directive https://virtualenv.pypa.io/en/latest/reference/#options
 * An intersphinx that automatically grabs the intersphinx target from conf.py
    * adp.py objs rtfd
@@ -275,6 +289,10 @@
    * Add this to the sphinx autobuild options once you know how to do it
 * Have one that automatically opens a :ref: or a :doc:
    * python adp ref-tools-restructured-text
+
+## VS Code
+* Keyboard shortcuts print page
+* https://code.visualstudio.com/docs/getstarted/tips-and-tricks
 
 ## Wrapping autobuild
 * Make it run in command line
@@ -311,6 +329,7 @@
    * Have the wrapper look for this and then open up a new browser?
 
 ## Packaging
+* Update copyright year in versioning
 * See the project management -> distribution section of links
    * Update the comment for requirements files?
 * After making a packaging section, link to it from the top of the code.rst pg
@@ -352,6 +371,9 @@
    * And, the numerical analysis parts should get links
 * Make sure to do Conda-forge packaging too
 
+## Git
+* Need to do a fetch before checkout a remote branch with tracking
+
 ## Doc
 * TOC for everything page?
 * Software also has an auto-api section?
@@ -359,6 +381,12 @@
 * When conda finally gets sphinx rtd theme 0.4.3 (or whatever it is)
    * Are the settings different?
       * How far down can the stick TOC go?
+
+## Proofreading
+* Use [inline view](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_git-integration)
+   * If only part of file changed
+* what-next should explain how to navigate with the sidebar
+   * If viewing in website form
 
 ## myPy
 * Add to tools testing section and create TOC

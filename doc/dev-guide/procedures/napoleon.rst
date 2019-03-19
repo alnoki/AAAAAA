@@ -86,5 +86,4 @@ Documenting variables
 
    Make sure the :ref:`variable <python:tut-scopes>` has a
    :ref:`docstring <python:tut-docstrings>`, even if it is empty, otherwise
-   you will get a :wiki-pg:`rendering <Rendering_(computer_graphics)>`
-   problem
+   you will get a :wiki-pg:`rendering <Rendering_(computer_graphics)>` problem

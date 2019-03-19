@@ -1,5 +1,3 @@
-.. 0.3.0
-
 .. _procedures-versioning:
 
 
@@ -15,6 +13,7 @@ Versioning
    :ref:`tools-git`, :ref:`Version <indices-versions>` identification
    :ref:`tools-read-the-docs`, "Automated
    :ref:`version <indices-versions>` support"
+   :ref:`Distributing documentation <dist-doc>`, Walkthrough
 
 
 .. csv-table:: Select references
@@ -28,6 +27,7 @@ Versioning
    :local:
 
 .. _versioning-td3:
+
 
 ***************************************************
 Top-down to-do task deferral (TD)\ :superscript:`3`
@@ -53,10 +53,11 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    Chant :term:`OHIO` while doing this
 
 #. Open :ref:`TODO.md <concepts-project-tree>` in :ref:`tools-vs-code`
-#. From the :ref:`Command Palette <tools-vs-code>`:
+#. Use the
+   :vs-code-doc:`VS Code symbol input
+   <getstarted/userinterface#_command-palette>` to :wiki-pg:`type <Typing>`:
 
-   * :guilabel:`View: Open View`
-   * :guilabel:`Outline`
+   * :guilabel:`view outline`
 
    .. csv-table::
       :github-help:`Markdown headers <basic-writing-and-formatting-syntax>`
@@ -161,13 +162,12 @@ At this point you should be working on a
    * Data for the :ref:`version <versions-features>` at
      :ref:`version-stats.ipynb <concepts-nbs-tree>`
 
-     * Increment the :ref:`commit number <git-get-commit-stats>`
+     * Increment the :ref:`commit number <git-get-commit-stats>` from the
+       :ref:`commit statistics <git-get-commit-stats>` by 1
      * :menuselection:`Kernel -> Restart & Run All`
      * Verify the :ref:`version statistics <versions-stats>`
 
-#. :ref:`Commit and push <git-committing>`, making sure to verify
-   :ref:`reST version comments <writing-proofread-new>` when
-   :ref:`staging changes <git-committing>`
+#. :ref:`Commit and push <git-committing>`
 #. Verify the :ref:`build passes <dist-doc-monitor-builds>` on your
    :xref:`rtfd-account`
 #. :ref:`Merge <git-merging>` the

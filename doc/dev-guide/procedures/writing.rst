@@ -1,11 +1,12 @@
-.. 0.3.0
-
 .. _procedures-writing:
 
 
 #######
 Writing
 #######
+
+.. contents:: Contents
+   :local:
 
 .. _writing-make-dir-tree:
 
@@ -45,19 +46,25 @@ Adapted from :xref:`directory tree sample code <print-dir-tree>`, to create the
    to have in your :ref:`tree <concepts-project-tree>`
 #. Update ``where_to_start`` to the :xref:`directory <directory>` that you
    would like to write about
-#. Select all the :wiki-pg:`line <Line_(text_file)>` in the
-   :wiki-pg:`file <Computer_file>`
+#. :vs-code-doc:`Select <getstarted/userinterface>` all the
+   :wiki-pg:`lines <Line_(text_file)>` in the :wiki-pg:`file <Computer_file>`
 #. Use the :ref:`Command Palette <tools-vs-code>` to select
    :guilabel:`Python: Run Selection/Line in Python Terminal` then
    :wiki-pg:`type <Typing>` :kbd:`enter` from inside the
    :ref:`VS Code integrated terminal <tools-vs-code>`
 
+
+**********************
+Documenting new topics
+**********************
+
+.. contents:: Contents
+   :local:
+
 .. _writing-new-topic:
 
-
-***********************
-Documenting a new topic
-***********************
+Core conceptual topics
+======================
 
 #. :ref:`Gather necessary references <sphinx-managing-references>` first,
    preferably in a batch
@@ -138,6 +145,9 @@ Tools satellite topics
 Proofreading documentation
 **************************
 
+.. contents:: Contents
+   :local:
+
 .. tip::
 
    :ref:`Read out loud <zen-aipaip>` in a marginally silly voice (to enhance
@@ -172,37 +182,23 @@ New documents
 See :ref:`documentation style <concepts-doc-style>` for a list of things to
 watch out for
 
-#. Put a :doc:`comment <usage/restructuredtext/basics>` at the top
-   of the :ref:`.rst file <tools-restructured-text>`, to note the
-   :ref:`current development branch version number <versioning-start-new>`
-
-   .. code-block:: rest
-
-      .. 0.3.0
-
-      .. _doc-label:
-
-
-      ###############
-      Document header
-      ###############
-
 #. Open an :ref:`autobuild <sphinx-autobuilding>` in a
    :xref:`browser <web-browser>` alongside :ref:`tools-vs-code` with
    :ref:`maximum half-screen estate <vs-code-max-screen-estate>`, so you can
    make edits immediately
 #. Go through one :ref:`minor section <concepts-doc-example>` at a time
 
-   #. :wiki-pg:`Clear your browser history <Web_browsing_history>` so you can
-      tell which :wiki-pg:`URLs <URL>` to :wiki-pg:`click <Point_and_click>`
+   #. :wiki-pg:`Clear your browser history <Web_browsing_history>` if you want
+      to see which :wiki-pg:`URLs <URL>` you have not yet
+      :wiki-pg:`clicked <Point_and_click>`
    #. Read, :ref:`out loud <zen-aipaip>`, the :wiki-pg:`webpage <Webpage>` that
       is :wiki-pg:`rendered <Rendering_(computer_graphics)>` by your
       :xref:`browser <web-browser>` and make any corrections in
       :ref:`tools-vs-code`
    #. Verify each :xref:`link <URL>` in the section by
       :wiki-pg:`clicking <Point_and_click>` on it
-   #. Review parts of the :ref:`.rst file <tools-restructured-text>` that do
-      not show up as :wiki-pg:`white <Web_colors>` in the
+   #. Review the :ref:`.rst file <tools-restructured-text>`, especially parts
+      that do not show up as :wiki-pg:`white <Web_colors>` in the
       :ref:`RST preview extension <tools-vs-code>`
    #. When you see :term:`AAAAAA` in the :wiki-pg:`webpage <Webpage>`, read it
       :ref:`out loud <zen-aipaip>` as *alnoki's apps*:
@@ -218,29 +214,30 @@ watch out for
 Changes to a document
 =====================
 
-#. Use :ref:`GitLens <tools-vs-code>` to inspect the history of the
-   file: :guilabel:`GitLens: Show File History`
-#. The :ref:`version comment <concepts-doc-example>` at the top of the
-   :wiki-pg:`file <Computer_file>` should identify the
-   :wiki-pg:`most-recent <Time>` :ref:`version <indices-versions>` for which
-   the :wiki-pg:`file <Computer_file>` was reviewed. Thus:
+#. Use :ref:`GitLens <tools-vs-code>` to inspect the :wiki-pg:`history <Time>`
+   of the :wiki-pg:`file <Computer_file>`:
 
-   #. Use the :guilabel:`GitLens: Show File History`
-      view to :guilabel:`Choose from Branch or Tag History...`
-   #. Select the :ref:`tag <git-tagging>` that corresponds to the
-      :ref:`version comment <concepts-doc-example>`
-   #. Select the first :ref:`commit <tools-git>` in the list
+      * :guilabel:`GitLens: Show File History`
+
+#. Compare against the last :ref:`version <indices-versions>`:
+
+   #. :guilabel:`GitLens: Show File History`
+   #. :guilabel:`Choose from Branch or Tag History...`
+   #. Select the :ref:`tag <git-tagging>` that is most
+      :wiki-pg:`recent <Time>`, then the :ref:`commit <tools-git>` that is most
+      :wiki-pg:`recent <Time>`
    #. :guilabel:`Open Changes with Working File`
 
    .. tip::
 
       If there is a warning that the :wiki-pg:`file <Computer_file>` did not
       exist for that :ref:`tag <git-tagging>`, then the
-      :wiki-pg:`file <Computer_file>` was probably moved
+      :wiki-pg:`file <Computer_file>` was probably
+      :wiki-pg:`moved <Path_(computing)>`
 
-#. Follow the steps for
+#. :guilabel:`Compare: Toggle Inline View`
+#. Follow the :ref:`procedures <procedures>` for
    :ref:`proofreading new documents <writing-proofread-new>`, but only review
    *changes* to the :wiki-pg:`file <Computer_file>`:
 
-      * Use the :ref:`VS Code Command Palette <tools-vs-code>` to select
-        :guilabel:`Move to Next Change`
+      * :guilabel:`Move to Next Change`

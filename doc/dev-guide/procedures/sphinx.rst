@@ -1,5 +1,3 @@
-.. 0.3.0
-
 .. _procedures-sphinx:
 
 
@@ -33,8 +31,8 @@ Building documentation
 **********************
 
 :doc:`sphinx:usage/builders/index` enable you to create both
-:ref:`website and PDF documentation <dist-doc-pdf>`. Make sure you are using
-:term:`a6`
+:ref:`website and PDF documentation <dist-doc-pdf>` styles. Make sure you are
+using :term:`a6` for the below :ref:`procedures <procedures>`
 
 .. contents:: Contents
    :local:
@@ -48,11 +46,13 @@ Per
 :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018 <0ROZRNZkPS8>`:
 
 #. :ref:`Activate <conda:activate-env>` the :term:`a6 environment <a6>` from
-   inside the :ref:`documentation root directory<concepts-project-tree>` if it
-   is not already :ref:`active <conda:activate-env>`
-#. From the :ref:`VS Code integrated terminal <tools-vs-code>`, make the
-   :wiki-pg:`HTML` for :wiki-pg:`documentation <Software_documentation>` then
-   start a :doc:`server <python:library/http.server>`
+   :wiki-pg:`inside <Path_(computing)>` the
+   :ref:`documentation root directory <concepts-doc-tree>` if it is not already
+   :ref:`active <conda:activate-env>`
+#. From the :ref:`VS Code integrated terminal <tools-vs-code>`,
+   :doc:`build <sphinx:usage/builders/index>` the  :wiki-pg:`HTML` for
+   :wiki-pg:`documentation <Software_documentation>` then start a
+   :doc:`server <python:library/http.server>`
 
    .. code-block:: bash
 
@@ -73,7 +73,8 @@ Per
       make html
 
 #. Refresh the :xref:`browser <web-browser>` to see changes
-#. Before :ref:`committing <git-committing>`, clear out the build:
+#. Before :ref:`committing <git-committing>`, clear out the
+   :doc:`build <sphinx:usage/builders/index>`:
 
    .. code-block:: bash
 
@@ -103,8 +104,9 @@ Automatically
    :xref:`sphinx-autobuild`, Official :wiki-pg:`user <User_(computing)>` manual
 
 #. Like in the :ref:`manual build procedure <sphinx-building-manually>`,
-   use the :term:`a6 environment <a6>` inside the
-   :ref:`documentation root directory<concepts-project-tree>` via the
+   use the :term:`a6 environment <a6>` from
+   :wiki-pg:`inside <Path_(computing)>` the
+   :ref:`documentation root directory <concepts-doc-tree>` via the
    :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
@@ -170,7 +172,8 @@ PDF version
       :wiki-pg:`Linux`, :xref:`texlive` (probably)
 
 
-#. Use the :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
+#. Use the :ref:`VS Code integrated terminal <tools-vs-code>` from
+   :wiki-pg:`inside <Path_(computing)>` the
    :ref:`documentation root directory <concepts-doc-tree>`, with the
    :doc:`LaTeX builder <sphinx:usage/builders/index>`:
 
@@ -256,13 +259,13 @@ Using Intersphinx
    .. code-block:: python
 
       intersphinx_mapping = {
-         'python': ('https://docs.python.org/3', None),
-         'sphinx': ('http://www.sphinx-doc.org/en/master/', None),
-         'pytest': ('https://docs.pytest.org/en/latest/', None),
-         'rtfd': ('https://docs.readthedocs.io/en/latest/', None),
-         'rtd-sphinx-theme':
-            ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
-         ...
+          'python': ('https://docs.python.org/3', None),
+          'sphinx': ('http://www.sphinx-doc.org/en/master/', None),
+          'pytest': ('https://docs.pytest.org/en/latest/', None),
+          'rtfd': ('https://docs.readthedocs.io/en/latest/', None),
+          'rtd-sphinx-theme':
+              ('https://sphinx-rtd-theme.readthedocs.io/en/latest/', None),
+          ...
 
 #. Inspect the :doc:`objects.inv mapping <sphinx:usage/extensions/intersphinx>`
    from the project in question
@@ -317,9 +320,11 @@ Using Intersphinx
    :ref:`links <references-links>`
 #. Add a :doc:`role <sphinx:usage/restructuredtext/roles>` to
    :wiki-pg:`documentation <Software_documentation>` using the appropriate
-   :ref:`capitalization <concepts-doc-style>`. For example:
+   :ref:`capitalization <concepts-doc-style>`:
 
    .. code-block:: rest
+      :caption: Read about
+         :doc:`Sphinx roles <sphinx:usage/restructuredtext/roles>`
 
       Read about :doc:`Sphinx roles <sphinx:usage/restructuredtext/roles>`
 
@@ -341,11 +346,14 @@ Using Intersphinx
 Referencing external links
 ==========================
 
+.. contents:: Contents
+   :local:
+
 For :ref:`links <references-links>` that can not be managed with
 :ref:`Intersphinx <sphinx-intersphinx>`, use either :ref:`sphinx-xref` or
 :ref:`sphinx-extlinks`. In general you can use :ref:`sphinx-xref`, but if the
-:wiki-pg:`webpage <Webpage>` you want to :wiki-pg:`cite <Citation>` comes
-from a :wiki-pg:`website <Website>` that you often use, it makes sense to use
+:wiki-pg:`webpage <Webpage>` you want to :wiki-pg:`cite <Citation>` comes from
+a :wiki-pg:`website <Website>` that you often use, it makes sense to use
 :ref:`sphinx-extlinks`:
 
 #. :wiki-pg:`Wikipedia articles <Wikipedia>`, like
@@ -501,12 +509,12 @@ extlinks
    .. note::
 
       The :ref:`link checker <sphinx-checking-links>` is particular about
-      capitalization for :wiki-pg:`Wikipedia`, so make sure to use
-      the exact :wiki-pg:`string <String_(computer_science)>` from the end of
-      the :wiki-pg:`URL`: ``Download``, not ``download``
+      capitalization for :wiki-pg:`Wikipedia`, so make sure to use the exact
+      :wiki-pg:`string <String_(computer_science)>` from the end of the
+      :wiki-pg:`URL`: ``Download``, not ``download``
 
 #. For most :wiki-pg:`websites <Website>` other than :wiki-pg:`Wikipedia`, you
-   will want to add in a
+   will usually want to add in a
    :doc:`role title <sphinx:usage/restructuredtext/roles>`:
 
    .. code-block:: rest
@@ -539,7 +547,7 @@ Checking links
 Per
 :yt-vid:`Carol Willing's Practical Sphinx talk from PyCon 2018 <0ROZRNZkPS8>`:
 
-#. From inside the
+#. From :wiki-pg:`inside <Path_(computing)>` the
    :ref:`documentation root directory <concepts-doc-tree>`, use the
    :ref:`VS Code integrated terminal <tools-vs-code>`:
 
@@ -553,14 +561,16 @@ Updating labels
 ===============
 
 #. With an :ref:`active build running <sphinx-building-doc>`, open the
-   :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
+   :ref:`VS Code integrated terminal <tools-vs-code>` from
+   :wiki-pg:`inside <Path_(computing)>` the
    :ref:`documentation root directory <concepts-project-tree>`
 #. Use :ref:`Intersphinx <sphinx-intersphinx>` on ``_build/html/objects.inv``
    to inspect inspect :ref:`labels <sphinx:ref-role>` for :term:`AAAAAA`
 #. Verify the proper :ref:`label style <concepts-doc-style>`
 #. Update any :ref:`labels <sphinx:ref-role>` via the
-   :ref:`VS code Command Palette <tools-vs-code>`:
-   :guilabel:`Search: Replace in Files`
+   :ref:`VS Code Command Palette <tools-vs-code>`
+
+      * :guilabel:`Search: Replace in Files`
 
 .. _sphinx-reference-book:
 
@@ -572,7 +582,7 @@ Referencing books
    :header: Reference, Topic
 
    :ref:`tools-bibtex`, Conceptual explanation
-   :ref:`refs.bib <concepts-doc>`, "Collection of :xref:`bibtex`-style
+   :ref:`refs.bib <concepts-doc-tree>`, "Collection of :xref:`bibtex`-style
    :xref:`citations <citation>`"
 
 .. csv-table:: Select references
@@ -591,7 +601,7 @@ Referencing books
 
 #. Check :xref:`ottobib` for your :xref:`ISBN` and
    :xref:`copy-paste <copy-paste>` the :xref:`bibtex` option into
-   :ref:`refs.bib <concepts-doc>`
+   :ref:`refs.bib <concepts-doc-tree>`
 #. Verify that you added a :xref:`book entry <bibtex-syntax>` in
    :ref:`refs.bib <concepts-doc-tree>`
 

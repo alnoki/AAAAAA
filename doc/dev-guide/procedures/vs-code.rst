@@ -71,6 +71,7 @@ Improving efficiency
    * :guilabel:`Bookmarks: Toggle`
    * :guilabel:`Bookmarks: Jump to Next`
    * :guilabel:`Bookmarks: Jump to Previous`
+   * :guilabel:`Search: Replace in Files`
 
 
 ***************************

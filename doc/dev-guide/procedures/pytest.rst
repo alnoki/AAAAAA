@@ -1,6 +1,5 @@
-.. 0.3.0
-
 .. _procedures-pytest:
+
 
 ######
 pytest
@@ -14,12 +13,14 @@ pytest
 
 .. _pytest-discover-tests:
 
+
 *****************
 Discovering tests
 *****************
 
 #. Verify that you can use :ref:`tools-pytest` in the
-   :ref:`VS Code integrated terminal <tools-vs-code>` from inside the
+   :ref:`VS Code integrated terminal <tools-vs-code>` from
+   :wiki-pg:`inside <Path_(computing)>` the
    :ref:`AAAAAA project root directory <concepts-project-tree>`, using
    :term:`a6`
 
@@ -51,8 +52,8 @@ Discovering tests
             :term:`a6 environment <a6>`
          #. Use :doc:`conda:commands/install` with the appropriate
             :wiki-pg:`syntax <Syntax_(programming_languages)>` for the
-            :ref:`version number <indices-versions>`, from the
-            :doc:`conda cheatsheet <conda:user-guide/cheatsheet>`. For
+            :ref:`version number <indices-versions>` (taken from the
+            :doc:`conda cheatsheet <conda:user-guide/cheatsheet>`). For
             example:
 
             .. code-block:: bash
@@ -62,6 +63,5 @@ Discovering tests
 #. Use the :ref:`VS Code Command Palette <tools-vs-code>` to select
    :guilabel:`Python: Discover Unit Tests`
 #. Check out the
-   :ref:`VS Code Test Explorer Extension <tools-vs-code>` to see if tests are
-   showing up
-
+   :ref:`VS Code Test Explorer Extension <tools-vs-code>` to see if
+   :ref:`tests <testing-intro>` are showing up
