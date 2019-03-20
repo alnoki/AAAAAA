@@ -214,12 +214,8 @@ watch out for
 Changes to a document
 =====================
 
-#. Use :ref:`GitLens <tools-vs-code>` to inspect the :wiki-pg:`history <Time>`
-   of the :wiki-pg:`file <Computer_file>`:
-
-      * :guilabel:`GitLens: Show File History`
-
-#. Compare against the last :ref:`version <indices-versions>`:
+#. Compare against the last :ref:`version <indices-versions>` using the
+   :ref:`VS Code Command Palette <tools-vs-code>`:
 
    #. :guilabel:`GitLens: Show File History`
    #. :guilabel:`Choose from Branch or Tag History...`
@@ -235,9 +231,10 @@ Changes to a document
       :wiki-pg:`file <Computer_file>` was probably
       :wiki-pg:`moved <Path_(computing)>`
 
-#. :guilabel:`Compare: Toggle Inline View`
+#. :guilabel:`Compare: Toggle Inline View` (optional)
 #. Follow the :ref:`procedures <procedures>` for
    :ref:`proofreading new documents <writing-proofread-new>`, but only review
-   *changes* to the :wiki-pg:`file <Computer_file>`:
+   *changes* to the :wiki-pg:`file <Computer_file>` by either:
 
       * :guilabel:`Move to Next Change`
+      * :wiki-pg:`Scrolling`

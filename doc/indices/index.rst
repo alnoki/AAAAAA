@@ -1,5 +1,6 @@
 .. _indices-intro:
 
+
 ############
 Introduction
 ############
@@ -15,6 +16,7 @@ See :ref:`versions <indices-versions>` to review the
 :wiki-pg:`cited <Citation>` throughout :term:`AAAAAA`
 
 .. _indices-auto:
+
 
 *****************
 Automatic indices
@@ -39,4 +41,4 @@ appear at the end of the :wiki-pg:`PDF`
    :header: :wiki-pg:`URL`, Components
 
    :ref:`genindex`, Everything
-   :ref:`modindex`, Just :wiki-pg:`Python`
+   :ref:`modindex`, Just :ref:`Python modules <python:tut-modules>`

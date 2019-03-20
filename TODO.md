@@ -44,6 +44,9 @@
    * Introduction
       * Talk about what this section is for
    * Transactions
+      * Per PEP257, __init__ should have docstring
+         * Just mention attributes in class docstring, others in __init__
+         * Explain in initialization
       * Move the possible kinds into the kinds docstring
       * Have require args/kwargs per real python
       * https://docs.python.org/3/glossary.html#term-parameter
@@ -605,6 +608,7 @@
 ## Deployment
 * Use iPad video
    * Travis
+      * Add link to willing talk too?
    * Coverage for both code and docs
 * Coverage.py for testing framework
 * Per Carol Willing talk
@@ -653,6 +657,7 @@
    * Those goons at instutions don't know DSP
    * The patterns are there
 * Watch realpython video courses on iPad
+* Compare 52 week lows with CRSP small cap value
 
 ## Investing philosophy page?
 * For The Intelligent investor, can link to another "concepts page"

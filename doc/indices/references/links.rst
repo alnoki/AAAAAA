@@ -1,5 +1,3 @@
-.. 0.3.0:
-
 .. _references-links:
 
 
@@ -103,14 +101,14 @@ Text
 ====
 
 #. :stack-q:`Python quote convention
-   <56011/single-quotes-vs-double-quotes-in-python>`:
+   <56011/single-quotes-vs-double-quotes-in-python>`
 
    * Recommendation for using ``'`` vs ``"`` in :xref:`strings <string>`
 
 #. :ref:`python:comments`
 
    * :wiki-pg:`Documentation <Software_documentation>` inside
-     :xref:`code <source-code>`
+     :xref:`source code <source-code>`
 
 #. :ref:`python:tut-docstrings`
 
@@ -192,8 +190,8 @@ Classes
 
 #. :ref:`python:tut-classobjects`
 
-   * :wiki-pg:`Syntax <Syntax_(programming_languages)>` and instance
-     concepts, like ``__init__()``
+   * :wiki-pg:`Syntax <Syntax_(programming_languages)>` and
+ :ref:`instance <python:tut-classes>` concepts, like ``__init__()``
 
 #. :term:`Attributes <python:attribute>`
 
@@ -251,9 +249,9 @@ Anaconda
 
    * A collection of :ref:`conda packages <conda:concept-conda-package>`
 
-#. :ref:`Conda channels <conda:channels-glossary>`
+#. :ref:`Conda channel <conda:channels-glossary>`
 
-   * A :wiki-pg:`host <Host_(network)>` repository for
+   * A :wiki-pg:`host <Host_(network)>` for
      :ref:`conda packages <conda:concept-conda-package>`
 
 #. :xref:`conda-forge`
@@ -282,7 +280,7 @@ Conda syntax
 
 #. :doc:`conda:user-guide/tasks/manage-environments`
 
-   * Exporting and importing :ref:`environment files <conda:concept-conda-env>`
+   * Using :ref:`environment files <conda:concept-conda-env>`
 
 #. :doc:`conda:commands/clean`
 
@@ -385,9 +383,9 @@ Project management
 AAAAAA codebase
 ===============
 
-#. ::github:`AAAAAA repository <alnoki/AAAAAA>`
+#. :github:`AAAAAA repository <alnoki/AAAAAA>`
 
-   * :github:`GitHub <>` repository for :term:`AAAAAA` project
+   * :github:`GitHub <>` repository for :term:`AAAAAA`
 
 #. :github:`alnoki's GitHub repositories <alnoki>`
 
@@ -401,7 +399,7 @@ AAAAAA codebase
 
 #. :xref:`AAAAAA-zip-archive`
 
-   * Quick way to :wiki-pg:`download <Download>` the
+   * Quickly :wiki-pg:`download <Download>` the
      :github:`AAAAAA repository <alnoki/AAAAAA>`
 
 Versioning
@@ -569,7 +567,7 @@ General
 #. :real-py:`RealPython guide to documenting Python <documenting-python-code>`
 
    * Recommended :wiki-pg:`documentation <Software_documentation>` practices
-     :xref:`Python`
+     for :xref:`Python`
 
 #. :wiki-pg:`Acronym`
 
@@ -643,7 +641,8 @@ Practical use
 
 #. :doc:`HTTP server <python:library/http.server>`
 
-   * :ref:`Python package <python:tut-packages>` that creates a
+   * :ref:`Python package <python:tut-packages>` that can
+     :wiki-pg:`host <Host_(network)>` a
      :xref:`website <website>` for viewing
      :wiki-pg:`documentation <Software_documentation>`
 
@@ -652,7 +651,7 @@ Practical use
 .. [#]
    .. csv-table::
       :align: center
-      :header: Time in video, Topic
+      :header: :wiki-pg:`Time` in video, Topic
 
       10:15, Incorporating :ref:`Jupyter Notebooks <tools-jupyter>`
       13:00, Checking spelling
@@ -717,7 +716,7 @@ Usage specifics
 
 #. :ref:`sphinx:metadata`
 
-   * Enables :ref:`orphan pages <sphinx:metadata>`, like
+   * Enable :ref:`orphan pages <sphinx:metadata>`, like
      :ref:`sample-doc.rst <sample-doc>`
 
 With Read the Docs
@@ -761,7 +760,8 @@ With Read the Docs
 #. :doc:`rtfd:builds`
 
    * How the :wiki-pg:`host computer <Host_(network)>` performs
-     :ref:`Sphinx build procedures <sphinx-building-doc>`
+     :ref:`Sphinx build procedures <sphinx-building-doc>` for
+     :ref:`tools-read-the-docs`
 
 #. :xref:`rtfd-account`
 
@@ -803,7 +803,7 @@ Reference management
    <21538983/specifying-targets-for-intersphinx-links-to-numpy-scipy-and-\
    matplotlib>`
 
-   * Instructions to for using
+   * Instructions for using
      :doc:`Intersphinx <usage/extensions/intersphinx>` with specific
      :ref:`packages <python:tut-packages>`
 
@@ -845,7 +845,7 @@ Showing code
    * :wiki-pg:`Syntax <Syntax_(programming_languages)>` to indicate
      :doc:`types <python:library/stdtypes>` in :xref:`code <source-code>`
 
-#. :ref:`sphinx:python-roles`
+#. :ref:`Python roles <sphinx:python-roles>`
 
    * :doc:`Sphinx Domain <sphinx:usage/restructuredtext/domains>` for
      :xref:`Python` component :wiki-pg:`documentation <Software_documentation>`
@@ -871,7 +871,7 @@ Napoleon
 #. :doc:`Autodoc <sphinx:usage/extensions/autodoc>`
 
    * :doc:`Sphinx extension <sphinx:usage/extensions/index>` to include content
-     from code :ref:`docstrings <python:tut-docstrings>`
+     from :ref:`docstrings <python:tut-docstrings>`
 
 #. :pep:`257`
 
@@ -911,13 +911,13 @@ General
      :doc:`reST <sphinx:usage/restructuredtext/basics>`, a particular
      :wiki-pg:`markup language <Markup_language>`
 
-#. :docutils:`rst.html`
+#. :docutils:`reStructuredText <rst.html>`
 
    * Official :wiki-pg:`documentation <Software_documentation>`
 
 #. :docutils:`Quick reST <docs/user/rst/quickref.html>`
 
-   * Quick reference with :ref:`reST <tools-restructured-text>` examples
+   * Official reference with :ref:`reST <tools-restructured-text>` examples
 
 #. :conda-forge:`Doc8 reST linter <doc8>`
 

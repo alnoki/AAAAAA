@@ -1,5 +1,3 @@
-.. 0.3.0
-
 .. _indices-versions:
 
 
@@ -23,7 +21,7 @@ explained in a way that
 :ref:`commit messages <git-committing>`
 
 :ref:`versions-stats` help measure the creation of content throughout the
-:wiki-pg:`development <Software_development>`, using
+:wiki-pg:`development <Software_development>` of :term:`AAAAAA`, using
 :doc:`pandas <pandas:index>`! Because it is impractical to expect to know the
 :wiki-pg:`UTC <Coordinated_Universal_Time>` of a :ref:`commit <tools-git>`
 before it is made, that of the most recent :xref:`version <semver>` is given as
@@ -48,6 +46,7 @@ before it is made, that of the most recent :xref:`version <semver>` is given as
    :wiki-pg:`ISO 8601<ISO_8601>`, :wiki-pg:`Time standards <Time_standard>`
 
 .. _versions-features:
+
 
 ********
 Features
@@ -115,6 +114,7 @@ Features
 
 
 .. _versions-stats:
+
 
 **********
 Statistics
