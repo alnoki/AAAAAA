@@ -1,14 +1,15 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 * Py like you rest, rest like you Py
 
-# 0.4.0
-
-* TD3 was in 0.3.1!!!!!!, not 0.2.0 though
-* Try to proofread without using your mouse on the LHS of the screen
-* Find all for .. 0.3.0 or .. 0.
-* Check doc8 output when proofreading
+# 0.5.0
 
 ## Proofreading notes
+* src updates use the dateutil parser from version-stats.ipynb
+* PPP should be the page count of PDF, not what last page says
+   * Page 116 said 112 at the bottom
+   * Update for the released ones
+* rev-list count HEAD for current commit
+* Check doc8 output when proofreading
 * https://www.idownloadblog.com/2015/01/14/how-to-enable-key-repeats-on-your-mac/
 * Proofreading changed documents
    * Not need identify a tag
@@ -30,8 +31,33 @@
    * Note not show up in PDF form?
 * Should check doc8 output when proofreading
 * Find all for "inside" and link to wiki-pg path
+* A moved document
+   * Compare working tree with branch or tag
+   * Usually GitLens will say :guilabel`R` for renamed
+      * But sometimes shows ``A`` and ``D`` in two places
+   * If file moved, open the new one in an editor
+      * Can do this by clicking it in GitLens
+      * Select the old one in GitLens then say compare with working file
+   * Open doc/indices/links.rst in editor
+      * Compared with doc/getting-started/references/links from 0.3.1
+* Move environment setup into dev/intro
+   * Merge the conent from dev/intro onto the introduction page as a header
 
-# 0.5.0
+## Napoleon
+* Use :obj: when not just one simple type
+* The intersphinx target in use is outdated
+   * Use the orphan document:
+      * https://www.sphinx-doc.org/en/master/usage/extensions/example_numpy.html#example-numpy
+* Only have an extra line at end when the docstring is inside a class
+   * Not for a module level variable
+   * Actually, doesn't hurt
+
+        Parameters
+        ----------
+        param1 : str
+            Description of `param1`.
+        param2 : :obj:`list` of :obj:`str`
+            Description of `param2`. Multiple
 
 ## User guide restructuring
 * Intro
@@ -658,6 +684,7 @@
    * The patterns are there
 * Watch realpython video courses on iPad
 * Compare 52 week lows with CRSP small cap value
+   * See what is common to both?
 
 ## Investing philosophy page?
 * For The Intelligent investor, can link to another "concepts page"

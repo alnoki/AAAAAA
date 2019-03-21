@@ -191,7 +191,7 @@ Classes
 #. :ref:`python:tut-classobjects`
 
    * :wiki-pg:`Syntax <Syntax_(programming_languages)>` and
- :ref:`instance <python:tut-classes>` concepts, like ``__init__()``
+     :ref:`instance <python:tut-classes>` concepts, like ``__init__()``
 
 #. :term:`Attributes <python:attribute>`
 
@@ -1003,6 +1003,7 @@ Engine-agnostic formatting
 
    * A: ``Alfa``, B: ``Bravo``, and so on
 
+
 *****
 Tools
 *****
@@ -1061,15 +1062,15 @@ VS Code
 General
 -------
 
-#. :wiki-pg:`Integrated development environment
+#. :wiki-pg:`Integrated development environment (IDE)
    <Integrated_development_environment>`
 
    * :wiki-pg:`Software` that is used to make :wiki-pg:`software <Software>`
 
 #. :xref:`VS-Code`
 
-   * :wiki-pg:`Open-source <Open-source_software>` environment for
-     :wiki-pg:`software development <Software_development>`
+   * An :wiki-pg:`IDE <Integrated_development_environment>` that is
+     :wiki-pg:`open-source <Open-source_software>`
    * Has a collection of :xref:`extensions <VS-Code-extensions>` developed by
      the :wiki-pg:`open-source <Open-source_software>` community
 
@@ -1087,7 +1088,7 @@ General
 
 #. :vs-code-doc:`VS Code settings <getstarted/settings>`
 
-   * Configurations in ``settings.json``
+   * :ref:`concepts-configs` in :ref:`configs-settings-json`
 
 #. :vs-code-doc:`User interface <getstarted/userinterface>`
 
@@ -1095,7 +1096,7 @@ General
 
 #. :vs-code-doc:`VS Code integrated terminal <editor/integrated-terminal>`
 
-   * Using a :xref:`command line <command-line>`
+   * Use a :xref:`command line <command-line>`
 
 #. :vs-code-doc:`VS Code Command Palette
    <getstarted/userinterface#_command-palette>`
@@ -1111,11 +1112,12 @@ Colors
 
 #. :vs-code-doc:`Themes <getstarted/themes>`
 
-   * General workspace :wiki-pg:`colors <Web_colors>`
+   * General :wiki-pg:`colors <Web_colors>` for the
+     :wiki-pg:`IDE <Integrated_development_environment>`
 
 #. :vs-code-api:`Token color customizations <references/theme-color>`
 
-   * Reference for changing various workspace :wiki-pg:`colors <Web_colors>`
+   * Reference for changing specific :wiki-pg:`colors <Web_colors>`
 
 #. :vs-code-api:`Color theme extension guide <extension-guides/color-theme>`
 
@@ -1148,7 +1150,7 @@ Extensions
 #. :vs-code-ext:`Python Test Explorer Extension
    <LittleFoxTeam.vscode-python-test-adapter>`
 
-   * Work with :ref:`tools-pytest`
+   * Use :ref:`tools-pytest`
 
 #. :vs-code-ext:`VS Code Bookmarks extension <alefragnani.Bookmarks>`
 
@@ -1299,7 +1301,7 @@ Software
 
 #. :wiki-pg:`Source code <Source_code>`
 
-   * A way to communicate to a :xref:`computer <computer>`
+   * A way to communicate with a :xref:`computer <computer>`
 
 #. :wiki-pg:`Software`
 
@@ -1382,18 +1384,18 @@ Data storage
 
    * Cataloging structure for :xref:`computer <computer>` data
 
+#. :wiki-pg:`File <Computer_file>`
+
+   * A way to store data in a :wiki-pg:`computer <Computer>`
+
 #. :wiki-pg:`Path <Path_(computing)>`
 
    * Identifier for a :wiki-pg:`directory <Directory_(computing)>` or
      :wiki-pg:`file <Computer_file>`
 
-#. :wiki-pg:`File <Computer_file>`
-
-   * A way to store data in a :wiki-pg:`computer <Computer>`
-
 #. :wiki-pg:`Filename extension <Filename_extension>`
 
-   * A way to identify the type of a :wiki-pg:`file <Computer_file>`
+   * A way to identify a type of a :wiki-pg:`file <Computer_file>`
 
 #. :wiki-pg:`PDF`
 
@@ -1412,7 +1414,7 @@ Time
 
 #. :wiki-pg:`ISO 8601 <ISO_8601>`
 
-   * A specific way to represent :wiki-pg:`time <Time>` data
+   * A specific :wiki-pg:`time standard <Time_standard>`
 
 #. :wiki-pg:`UTC <Coordinated_Universal_Time>`
 
@@ -1453,7 +1455,7 @@ OS specifics
 
    * A direct way to communicate with an :xref:`operating system <OS>`
 
-#. :xref:`cmd.exe-invocation`
+#. :xref:`cmd.exe <cmd.exe-invocation>`
 
    * :xref:`command-line` for :wiki-pg:`Windows <Microsoft_Windows>`
 
@@ -1496,14 +1498,14 @@ The Internet
 
    * What a :xref:`web browser <web-browser>` shows
 
-#. :wiki-pg:`HTML`
+#. :wiki-pg:`Hypertext Markup Language (HTML) <HTML>`
 
    * Standard :wiki-pg:`markup language <Markup_language>` for
      :wiki-pg:`webpages <Webpage>`
 
 #. :xref:`URL`
 
-   * A way to locate a :xref:`webpage <webpage>`
+   * A way to identify a :xref:`webpage <webpage>`
 
 #. :wiki-pg:`Download`
 
@@ -1557,7 +1559,7 @@ Software design standards
 #. :wiki-pg:`Attitude Heading and Reference System (AHRS)
    <Attitude_and_heading_reference_system>`
 
-   * Aviation device certified to :wiki-pg:`DO-178B Level A <DO-178B>`
+   * Aviation device, sometimes :wiki-pg:`DO-178B Level A <DO-178B>`
 
 #. :wiki-pg:`Garmin Ltd. <Garmin>`
 
@@ -1566,6 +1568,7 @@ Software design standards
 #. :xref:`why-poignant-guide`
 
    * Explanation of :xref:`software <software>`, mentioned in :ref:`zen-aipaip`
+
 
 *********
 Financial

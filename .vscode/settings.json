@@ -94,6 +94,18 @@
     },
 
 
+    // Testing
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.pyTestEnabled": true,
+    "python.unitTest.nosetestsEnabled": false,
+
+
+    // Privacy
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "gitlens.advanced.telemetry.enabled": false,
+
+
     // Linting
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
@@ -105,16 +117,4 @@
         "--ignore D004"
     ],
     "restructuredtext.confPath": "${workspaceFolder}\\doc",
-
-
-    // Testing
-    "python.unitTest.unittestEnabled": false,
-    "python.unitTest.pyTestEnabled": true,
-    "python.unitTest.nosetestsEnabled": false,
-
-
-    // Privacy
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "gitlens.advanced.telemetry.enabled": false,
 }

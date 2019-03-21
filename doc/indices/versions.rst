@@ -52,7 +52,7 @@ before it is made, that of the most recent :xref:`version <semver>` is given as
 Features
 ********
 
-* 0.4.0
+* 0.4.0 (2019-03-21T00:00:00Z)
 
    * Add to :ref:`toctrees <tools-sphinx>`:
 
@@ -86,7 +86,6 @@ Features
    * Add explanation of :ref:`configs-conf-py` via
      :ref:`napoleon <tools-Napoleon>`, and assorted other
      :ref:`configurations <concepts-configs>`
-
 
 * 0.3.1 (2019-02-17T19:41:19Z)
 

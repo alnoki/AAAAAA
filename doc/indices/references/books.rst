@@ -1,5 +1,3 @@
-.. 0.3.0
-
 .. _references-books:
 
 
@@ -7,7 +5,7 @@
 Books
 #####
 
-This is a centralized and comprehensive list of :xref:`books <book>`
+This is a centralized and comprehensive list of :xref:`books <book>` that are
 :xref:`cited <citation>` throughout :term:`AAAAAA`.
 :xref:`Citations <citation>` are managed using :ref:`BibTeX <tools-bibtex>`,
 according to :ref:`book reference procedures <sphinx-reference-book>`
@@ -18,7 +16,7 @@ according to :ref:`book reference procedures <sphinx-reference-book>`
    :ref:`the website form of AAAAAA documentation <what-next-format>`, the
    :wiki-pg:`bibliography <Citation>` for these :wiki-pg:`books <Book>` should
    be on this :wiki-pg:`webpage <Webpage>`. If you are viewing
-   :ref:`the PDF form of AAAAAA documentation <what-next-format>`, it will
+   :ref:`the PDF form of AAAAAA documentation <what-next-format>`, it should
    appear towards the end
 
 .. contents:: Books
@@ -50,6 +48,7 @@ On Managing Yourself
          you touch a document, act on it, file it, or throw it away
 
 .. _book-checklist-manifesto:
+
 
 ***********************
 The Checklist Manifesto

@@ -144,8 +144,6 @@ At this point you should be working on a
 #. Organize :ref:`links <references-links>` so there are at most 10
    :wiki-pg:`URLs <URL>` per
    :doc:`list <sphinx:usage/restructuredtext/basics>`
-#. Do a :ref:`link check <sphinx-checking-links>`
-
 #. Finalize :ref:`version feature additions <versions-features>`
 #. :ref:`Isolate and proofread changes <writing-isolate-changes>` against the
    most recent :ref:`release <indices-versions>`
@@ -155,6 +153,7 @@ At this point you should be working on a
      :ref:`.rst file <tools-restructured-text>` you are on
    * Feel free to add some :ref:`to-dos <versioning-td3>` for later, though
 
+#. Do a :ref:`link check <sphinx-checking-links>`
 #. :ref:`git-get-commit-stats` and update:
 
    * The :wiki-pg:`date and time <Time>` on the
