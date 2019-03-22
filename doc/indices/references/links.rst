@@ -27,6 +27,9 @@ high priority are usually placed at the top of a section
 Python
 ******
 
+.. contents:: Contents
+   :local:
+
 General
 =======
 
@@ -218,6 +221,9 @@ Classes
 Environments
 ============
 
+.. contents:: Contents
+   :local:
+
 Anaconda
 --------
 
@@ -301,8 +307,14 @@ Conda syntax
 Packages
 ********
 
+.. contents:: Contents
+   :local:
+
 Numerical Analysis
 ==================
+
+.. contents:: Contents
+   :local:
 
 NumPy
 -----
@@ -380,6 +392,9 @@ pytest
 Project management
 ******************
 
+.. contents:: Contents
+   :local:
+
 AAAAAA codebase
 ===============
 
@@ -436,6 +451,9 @@ Distribution
 *******************
 Git version control
 *******************
+
+.. contents:: Contents
+   :local:
 
 General
 =======
@@ -507,6 +525,11 @@ Core commands
 
    * Work with independent sequences of :xref:`commits <git-commit>`
 
+#. :git-doc:`git-fetch`
+
+   * Get a list of :git-doc:`branches <git-branch>` from the
+     :github:`AAAAAA repository <alnoki/AAAAAA>`
+
 #. :xref:`git-checkout`
 
    * Switch between :xref:`branches <git-branch>`
@@ -555,6 +578,9 @@ Special features
 Documentation
 *************
 
+.. contents:: Contents
+   :local:
+
 General
 =======
 
@@ -595,6 +621,9 @@ General
 
 Sphinx
 ======
+
+.. contents:: Contents
+   :local:
 
 Practical use
 -------------
@@ -858,7 +887,7 @@ Showing code
 #. :ref:`sphinx:info-field-lists`
 
    * :ref:`reST syntax <tools-restructured-text>` shown at
-     :ref:`concepts-code-e4`
+     :ref:`concepts-code-e4s`
 
 Napoleon
 --------
@@ -901,6 +930,9 @@ Napoleon
 
 reStructuredText
 ================
+
+.. contents:: Contents
+   :local:
 
 General
 -------
@@ -1008,8 +1040,14 @@ Engine-agnostic formatting
 Tools
 *****
 
+.. contents:: Contents
+   :local:
+
 Jupyter
 =======
+
+.. contents:: Contents
+   :local:
 
 General
 -------
@@ -1059,6 +1097,9 @@ Extensions
 VS Code
 =======
 
+.. contents:: Contents
+   :local:
+
 General
 -------
 
@@ -1093,6 +1134,10 @@ General
 #. :vs-code-doc:`User interface <getstarted/userinterface>`
 
    * Explanation of core components
+
+#. :vs-code-doc:`Tips and Tricks <getstarted/tips-and-tricks>`
+
+   * :wiki-pg:`Keyboard shortcuts <Keyboard_shortcut>`, other efficiency tips
 
 #. :vs-code-doc:`VS Code integrated terminal <editor/integrated-terminal>`
 
@@ -1177,6 +1222,9 @@ Extensions
 Vim
 ===
 
+.. contents:: Contents
+   :local:
+
 Official information
 --------------------
 
@@ -1208,6 +1256,10 @@ Official information
 Unofficial supplements
 ----------------------
 
+#. :yt-pl:`TheFrugalComputerGuy: Vim <y7Kah3WzqrEjsuvhT46fr28Q11oa5ZoI>`
+
+   * Recommended tutorial series
+
 #. :xref:`Vim-tutorial`
 
    * Learn :xref:`Vim <Vim>`
@@ -1232,6 +1284,9 @@ Unofficial supplements
 *********
 Computers
 *********
+
+.. contents:: Contents
+   :local:
 
 General
 =======
@@ -1296,6 +1351,11 @@ Interfaces
 
    * A component that you can :wiki-pg:`click <Point_and_click>`
 
+#. :wiki-pg:`Keyboard shortcuts <Keyboard_shortcut>`
+
+   * Improve :wiki-pg:`computer <Computer>` efficiency via special
+     :wiki-pg:`typing <Typing>` maneuvers
+
 Software
 ========
 
@@ -1335,6 +1395,10 @@ Software
 #. :wiki-pg:`Execution <Execution_(computing)>`
 
    * When a :wiki-pg:`computer <Computer>` uses :wiki-pg:`software <Software>`
+
+#. :wiki-pg:`Exit status <Exit_status>`
+
+   * A report from :wiki-pg:`software <Software>` when it is done
 
 Syntax
 ======
@@ -1469,9 +1533,9 @@ OS specifics
    * How to change :linux-die:`bash` prompt to a custom
      :xref:`string <string>` like ``$``
 
-#. :wiki-pg:`Exit status <Exit_status>`
+#. :xref:`mac-key-repeats`
 
-   * A report from :wiki-pg:`software <Software>` when it is done
+   * Use :ref:`tools-vim` faster
 
 The Internet
 ============
@@ -1574,6 +1638,9 @@ Software design standards
 Financial
 *********
 
+.. contents:: Contents
+   :local:
+
 Securities mechanics
 ====================
 
@@ -1672,6 +1739,9 @@ Mathematics
 **********
 Philosophy
 **********
+
+.. contents:: Contents
+   :local:
 
 Personal motivation
 ===================

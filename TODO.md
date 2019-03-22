@@ -1,63 +1,32 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 * Py like you rest, rest like you Py
+* Conda tidy up
+* Enable dev branch on rtd
 
 # 0.5.0
 
 ## Proofreading notes
-* src updates use the dateutil parser from version-stats.ipynb
-* PPP should be the page count of PDF, not what last page says
-   * Page 116 said 112 at the bottom
-   * Update for the released ones
-* rev-list count HEAD for current commit
-* Check doc8 output when proofreading
-* https://www.idownloadblog.com/2015/01/14/how-to-enable-key-repeats-on-your-mac/
-* Proofreading changed documents
-   * Not need identify a tag
-   * Go in the order of the next button
-      * Compare vs gitlens output
-   * If file totally changed, may just re-do whole file
-   * Still can just proofread after Gitlens has identified a change
-   * Only may want tag if file moved
-* Proofreading can also just hover over the link too
-* Button_(computing) find all and insert
-* Vim series to tools page
-* Should read E4s everywhere because it is a plural compound noun
-   * Compared with AAAAAA, which is "owned"
 * Numerical conda packages deal with at some point, when writing about Jupyter?
    * Or say the user guide provides additional examples, but learn more hear
       * Also link to examples and user guide?
    * Link to the a6 table
 * PDF version of sample-doc?
    * Note not show up in PDF form?
-* Should check doc8 output when proofreading
 * Find all for "inside" and link to wiki-pg path
-* A moved document
-   * Compare working tree with branch or tag
-   * Usually GitLens will say :guilabel`R` for renamed
-      * But sometimes shows ``A`` and ``D`` in two places
-   * If file moved, open the new one in an editor
-      * Can do this by clicking it in GitLens
-      * Select the old one in GitLens then say compare with working file
-   * Open doc/indices/links.rst in editor
-      * Compared with doc/getting-started/references/links from 0.3.1
 * Move environment setup into dev/intro
    * Merge the conent from dev/intro onto the introduction page as a header
+* Explain what different things can cause gitignore to have contents
+   * Pytest/compiled python, etc
+* Make a development task to clean it out?
+* Do a commit that is just cleaning out .gitignore
 
-## Napoleon
-* Use :obj: when not just one simple type
-* The intersphinx target in use is outdated
-   * Use the orphan document:
-      * https://www.sphinx-doc.org/en/master/usage/extensions/example_numpy.html#example-numpy
-* Only have an extra line at end when the docstring is inside a class
-   * Not for a module level variable
-   * Actually, doesn't hurt
-
-        Parameters
-        ----------
-        param1 : str
-            Description of `param1`.
-        param2 : :obj:`list` of :obj:`str`
-            Description of `param2`. Multiple
+## Writing procedures
+* Use draw.io to make an SVG
+   * Can defer this to later if no images to make now
+* Where to keep the .xml?
+* Always use code block
+   * Use >>> if shouldn't be able to copy-paste
+* Use vs code sort imports
 
 ## User guide restructuring
 * Intro
@@ -70,6 +39,14 @@
    * Introduction
       * Talk about what this section is for
    * Transactions
+      * When transaction init gets an error, should
+         * Raise error
+         * Show a trace to the data that produced it
+      * Class method to convert to a dataframe?
+         * Could have a subclass of DataFrame called ledger
+            * By merit of existing, it has already been sanitized
+               * Thus can go straight back into transactions
+         * Would already have sanitized data
       * Per PEP257, __init__ should have docstring
          * Just mention attributes in class docstring, others in __init__
          * Explain in initialization
@@ -89,6 +66,11 @@
          * In that section
    * Connectivity
       * Connect to robinhood
+         * src updates use the dateutil parser from version-stats.ipynb
+         * https://docs.python.org/3/library/getpass.html
+         * http://docs.python-requests.org/en/master/
+         * https://realpython.com/python-requests/#performance
+            * Has context manager
          * Robinhood tools section
          * API: a way for software to communicate with other software
       * Make a robinhood module
@@ -97,6 +79,13 @@
          * Motivation for ledgers
    * Ledgers
       * Subclass of a dataframe
+      * If transaction type isn't recognized, just skip over it
+         * Print out that a .json object was obtained that was unknown
+      * After downloading, the pandas portfolio parser (PPP) does checksum
+         * Does net portfolio amount equal buying power?
+      * Need a logger / other way to harvest syntax from others
+         * What does a stock split or withdrawal look like?
+            * You can easily simulate withdrawal, then can put right back in
       * Use int instead of decimal
       * Properties at a certain time
          * Holdings
@@ -122,34 +111,212 @@
 * Picking
    * Coming soon: how to pick stocks
 
-## Developer guide
-* Distributing section has data section
-   * How to anonymize your transaction data
-   * Simply hashes symbols, multiplies by random number?
-   * Save as a .pkl
-   * Can then use this data for pytest on ledger and performance data
-   * Make a jupyter notebook with commands not yet run
-      * Commit it, then run it, then clear all, then check diff
-         * Shouldn't reveal any data
-* Testing section goes by module?
-   * Intro says more or less these were written as user guide was made
-* Proposal to enhance AAAAAA (PEAs)
-   * Require a whitepaper if someone wants to contribute
-   * Keep this in the indices section?
-   * PEA1 is you writing a PEA about how to contribute
+## src updates
+* Use corey schafer url post video from iPad to explain concept
+* Already have the link for autofunction in napoleon links if need to describe
+* User sections for "tracking" and "choosing"
+* Give an example of initializing a transaction class
+* ISO 8061 (or whatever robinhood uses) for dates
+* xref in transaction source code
+* Transaction class then explains how file structure is
+   * For importing the module, etc.
+* Then say we need to talk about the dir structure
+   * Then make the dir tree script
+* Explain how Transaction is, of course, all part of a module
+   * Then describe automodule and show below
+   * Then, enable modindex
+* use datetime.datetime with zulu time - call the instance variable "when"
+* Restructure other attributes as necessary
+* change kinda to a dict of str to tuple(bool,bool)
+   * bools say is associated with ticker
+   * Second says does it result in add or subtract to buying power
+* overload + to add two transactions and yield effect on the brokerage
+* As you segway into explaining file structure
+   * https://docs.python.org/3/tutorial/modules.html
+   * Should help you get ready to package on conda
+* Add to python tools description as you go
+* Run https://docs.python.org/3/tutorial/modules.html#the-dir-function
+* https://docs.python.org/3/tutorial/modules.html#packages
+* Then, use https://docs.python.org/3/library/argparse.html#module-argparse
+   * Draw a dir tree?
+* Uncomment module index on homepage, verify it works
+* Re-write the jupyter section after the jupyter examples page is live
+   * Will need aaaaaa usage on the examples page
+   * The numerical analysis packages should link to tools-numpy, etc.
+* Tables can line break in the title without quotes
+   * See VS code extensions
+* Add a csv table to the concepts-code page once you have more references
+   * Packges, __init__, setup.py, etc.
+   * As you go through and explain
+* Because AAAAAA are colloquially known as alnoki's apps
+   * We are going to import as aa
 
-## Data integration
-* Consider pandas_datareader
-   * Has a wrapper for instant quotes off alphavantage
-* There is an alphavantage wrapper at github romelTorres/alpha_vantage
-* Also coyo8/sec-edgar
-   * Downloads in pdf form
-* Just use robinhood if can get away with it
+## Napoleon
+* Use :obj: when not just one simple type
+* The intersphinx target in use is outdated
+   * Use the orphan document:
+      * https://www.sphinx-doc.org/en/master/usage/extensions/example_numpy.html#example-numpy
+* Only have an extra line at end when the docstring is inside a class
+   * Not for a module level variable
+   * Actually, doesn't hurt
+Parameters
+----------
+param1 : str
+   Description of `param1`.
+param2 : :obj:`list` of :obj:`str`
+   Description of `param2`. Multiple
 
-## Passwords
-* Use an environment variable like in pandas_datareader?
-* Use corey schafer tutorials?
-* Use python secrets library?
+## Examples page
+* Say can do either in the interpreter or in Jupyter notebook
+* Then put in a link from jupyter page
+* Python tools section should link here
+
+## pytest
+* Get pytest from home dir to actually run....
+* Cite DO-178B
+* Have a test index in the developer's guide
+   * The pytest entry on the links page should link here
+      * Framework for :ref:`writing test code <test-index>`
+* Document test_ledger.py
+   * Add a section to common tasks about testing
+   * May need to update the quickstart guide
+* Document test_utilities.py
+* Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger for tests
+* tests should be motivated by the examples page
+* On the code structure page, update the dir tree
+   * Use a table for each of the components like on the other dir trees
+      * name, function
+
+# 0.6.0
+
+## myPy
+* Should be in testing section
+* Add to tools testing section and create TOC
+   * Same with Travis?
+* ttps://code.visualstudio.com/docs/python/settings-reference#_mypy
+* MyPy type linter
+   * https://www.python.org/dev/peps/pep-0526/
+   * https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
+      * Get the mypy linter going in the conda package
+   * VS Code linter
+      * https://code.visualstudio.com/docs/python/linting
+         * Make a type checking procedures page
+         * Talk about how to disable the pep8 colon warning but leave mypy on
+* Figure out how to show all lines in rst files that are too long
+* :pep:`Type hint theory <483>`
+   * Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
+* :pep:`Variable annotations <527>`
+* :doc:`Typing module <python:library/typing>`
+
+## Packaging
+* Update copyright year in versioning
+* See the project management -> distribution section of links
+   * Update the comment for requirements files?
+* After making a packaging section, link to it from the top of the code.rst pg
+* Reciprically link with the project directory structure
+* https://anaconda.org/conda-forge/doc8
+   * This one is showing on anaconda cloud....
+* Tools section on PyPI
+* Currently, the link to pip already exists
+* Do this first!
+* Section on writing tests and packaging in dev-guide
+* Try out with the 0.3.0 codebase
+* First get onto PyPi
+    * https://packaging.python.org/tutorials/packaging-projects/
+* Then, can try adding to conda-forge
+    * https://conda-forge.org/docs/
+    * There is a sample file that just points to PyPi
+    * https://github.com/conda-forge/staged-recipes/blob/master/recipes/example/meta.yaml
+* PEP 328
+* yaml should freeze at last release and then update each release
+   * Sort of depends on Travis
+* Update license
+   * In versioning procedures need to update date
+* https://stackoverflow.com/questions/448271/what-is-init-py-for
+* https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
+* Ship conda with the dependencies
+   * Then can install in the quick start
+      * Mention you have just started the python interpreter with link
+         * Link is in the floating point rampage
+* Push to conda and create procedures as you go
+* https://packaging.python.org/tutorials/packaging-projects/
+   * Go through the tutorial and upload to test pypi
+* https://choosealicense.com/
+   * Probably MIT
+      * Need to have a versioning section that says to update year
+* https://packaging.python.org/guides/distributing-packages-using-setuptools/
+   * More info about setup tools
+* The examples page (if in Jupyter) should link to interactive analysis
+   * In the Anaconda a6 table
+   * Also, the Code testing link should go to the test index
+   * And, the numerical analysis parts should get links
+* Make sure to do Conda-forge packaging too
+
+## adp.py
+* Makefile wraps adp.py
+   * make obj sphinx calls adp which searches through conf.py
+   * make dev opens a website and watches src directory
+   * make clean does cd doc, make clean, the cd ..
+* Put on procedures home page?
+* Use option directive https://virtualenv.pypa.io/en/latest/reference/#options
+* An intersphinx that automatically grabs the intersphinx target from conf.py
+   * adp.py objs rtfd
+* https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
+* autodoc it on the procedures index page
+* Cite the checklist manifesto
+* arg parse from early on in python tutorial
+* Talk about utils.py in AAAAAA root?
+    * code for writing dir tree
+        * Take command line args
+* Wrapper for sphinx-autobuild
+    * Says which folders to watch
+    * Simple command line prompt:
+        * python utils -doc
+* Explain how the terminal opens at top aaaaaa dir, so use argparse
+   * For wrapping autobuild, etc.
+* Use the command line options style of table
+   * See the RTD theme
+   * Add this to the sphinx autobuild options once you know how to do it
+* Have one that automatically opens a :ref: or a :doc:
+   * python adp ref-tools-restructured-text
+* Wrapping autobuild
+   * Make it run in command line
+      * Only open html files that have been changed, after the build started
+      * Shows how the argument parser, etc. works from command line
+      * Appears that it only opens a browser the first time
+   * Run your own python script that looks for touched .html files
+      * Open a new window if the browser doesn't already have it open
+      * How to know whether to open a new window or to reload the old one...
+         * Need to check if the server isn't already "serving" the page?
+   * Don't bother integrating with makefiles, it doesn't work on windows too...
+      * https://www.gnu.org/software/make/manual/make.html#Phony-Targets
+   * Later, may want to incorporate --watch jupyter notebooks
+      * Just incorporate to the autobuilder
+         * The wrapper should then handle the html monitoring correctly
+   * Potentially just have one script to call
+      * Make sure python doesn't go crazy and open eveything
+         * Only open changed pages, not new pages?
+         * Guard: only if the .rst and the .html were changed?
+      * Make clean at the end?
+         * Would this make you have to re-intersphinx everytime?
+   * Keep in mind that autobuild sends out some sort of ping or hook
+      * You could somehow monitor this?
+   * See https://docs.python.org/3/tutorial/modules.html
+   * Have the wrapper put the output to the console
+      * See autobuild for how this is done, because it wraps sphinx
+      * https://docs.python.org/3/library/argparse.html#module-argparse
+   * Watch the server that autobuild makes
+      * https://pythonhosted.org/watchdog/index.html
+      * It should send out some sort of ping that says to reload
+      * Only open a new browser window if the html file in question isn't served
+         * And if a reload ping came
+   * When the html file changes, the autobuild console should say so
+      * Have the wrapper look for this and then open up a new browser?
+
+## Doc coverage
+* Figure out how to do this
+   * The packaging video on iPad may help
+* Doc coverage is a sphinx extension
 
 ## Jupyter
 * When split off nbs page from doc page, re-do header levels on doc page
@@ -201,83 +368,29 @@
    * Talk about the notebook extensions, etc
 * Update the Jupyter row in the a6 table
 
-## Dev Order
-* Write up testing first before packaging
-   * Do what you know first
-* Update ISO8061 then do testing
+## Data integration
+* Consider pandas_datareader
+   * Has a wrapper for instant quotes off alphavantage
+* There is an alphavantage wrapper at github romelTorres/alpha_vantage
+* Also coyo8/sec-edgar
+   * Downloads in pdf form
+* Just use robinhood if can get away with it
 
-## Examples page
-* Say can do either in the interpreter or in Jupyter notebook
-* Then put in a link from jupyter page
-* Python tools section should link here
-
-## Doc coverage
-* Figure out how to do this
-   * The packaging video on iPad may help
-* Doc coverage is a sphinx extension
-
-## pytest
-* Get pytest from home dir to actually run....
-* Cite DO-178B
-* Have a test index in the developer's guide
-   * The pytest entry on the links page should link here
-      * Framework for :ref:`writing test code <test-index>`
-* Document test_ledger.py
-   * Add a section to common tasks about testing
-   * May need to update the quickstart guide
-* Document test_utilities.py
-* Get files to import via AAAAAA.ledger, not src.AAAAAA.ledger for tests
-* tests should be motivated by the examples page
-* On the code structure page, update the dir tree
-   * Use a table for each of the components like on the other dir trees
-      * name, function
-
-## src updates
-* Use corey schafer url post video from iPad to explain concept
-* Already have the link for autofunction in napoleon links if need to describe
-* User sections for "tracking" and "choosing"
-* Give an example of initializing a transaction class
-* ISO 8061 (or whatever robinhood uses) for dates
-* xref in transaction source code
-* Transaction class then explains how file structure is
-   * For importing the module, etc.
-* Then say we need to talk about the dir structure
-   * Then make the dir tree script
-* Explain how Transaction is, of course, all part of a module
-   * Then describe automodule and show below
-   * Then, enable modindex
-* use datetime.datetime with zulu time - call the instance variable "when"
-* Restructure other attributes as necessary
-* change kinda to a dict of str to tuple(bool,bool)
-   * bools say is associated with ticker
-   * Second says does it result in add or subtract to buying power
-* overload + to add two transactions and yield effect on the brokerage
-* As you segway into explaining file structure
-   * https://docs.python.org/3/tutorial/modules.html
-   * Should help you get ready to package on conda
-* Add to python tools description as you go
-* Run https://docs.python.org/3/tutorial/modules.html#the-dir-function
-* https://docs.python.org/3/tutorial/modules.html#packages
-* Then, use https://docs.python.org/3/library/argparse.html#module-argparse
-   * Draw a dir tree?
-* Uncomment module index on homepage, verify it works
-* Re-write the jupyter section after the jupyter examples page is live
-   * Will need aaaaaa usage on the examples page
-   * The numerical analysis packages should link to tools-numpy, etc.
-* Tables can line break in the title without quotes
-   * See VS code extensions
-* Add a csv table to the concepts-code page once you have more references
-   * Packges, __init__, setup.py, etc.
-   * As you go through and explain
-* Because AAAAAA are colloquially known as alnoki's apps
-   * We are going to import as aa
-
-## Writing procedures
-* Use draw.io to make an SVG
-* Where to keep the .xml?
-* Always use code block
-   * Use >>> if shouldn't be able to copy-paste
-* Use vs code sort imports
+## Developer guide
+* Distributing section has data section
+   * How to anonymize your transaction data
+   * Simply hashes symbols, multiplies by random number?
+   * Save as a .pkl
+   * Can then use this data for pytest on ledger and performance data
+   * Make a jupyter notebook with commands not yet run
+      * Commit it, then run it, then clear all, then check diff
+         * Shouldn't reveal any data
+* Testing section goes by module?
+   * Intro says more or less these were written as user guide was made
+* Proposal to enhance AAAAAA (PEAs)
+   * Require a whitepaper if someone wants to contribute
+   * Keep this in the indices section?
+   * PEA1 is you writing a PEA about how to contribute
 
 ## AAAA (analyst archives)
 * Jupyter SVGs should have the date on which they were generated
@@ -290,177 +403,6 @@
 * INSURANCE
    * I need something underwritten: ridiculous assets nobody can explain
    * Cite wolf of wall street, it is just fairy dust
-
-## adp.py
-* Makefile wraps adp.py
-   * make obj sphinx calls adp which searches through conf.py
-   * make dev opens a website and watches src directory
-   * make clean does cd doc, make clean, the cd ..
-* Put on procedures home page?
-* Use option directive https://virtualenv.pypa.io/en/latest/reference/#options
-* An intersphinx that automatically grabs the intersphinx target from conf.py
-   * adp.py objs rtfd
-* https://sphinx-rtd-theme.readthedocs.io/en/latest/demo/lists_tables.html#option-lists
-* autodoc it on the procedures index page
-* Cite the checklist manifesto
-* arg parse from early on in python tutorial
-* Talk about utils.py in AAAAAA root?
-    * code for writing dir tree
-        * Take command line args
-* Wrapper for sphinx-autobuild
-    * Says which folders to watch
-    * Simple command line prompt:
-        * python utils -doc
-* Explain how the terminal opens at top aaaaaa dir, so use argparse
-   * For wrapping autobuild, etc.
-* Use the command line options style of table
-   * See the RTD theme
-   * Add this to the sphinx autobuild options once you know how to do it
-* Have one that automatically opens a :ref: or a :doc:
-   * python adp ref-tools-restructured-text
-
-## VS Code
-* Keyboard shortcuts print page
-* https://code.visualstudio.com/docs/getstarted/tips-and-tricks
-
-## Wrapping autobuild
-* Make it run in command line
-   * Only open html files that have been changed, after the build started
-   * Shows how the argument parser, etc. works from command line
-   * Appears that it only opens a browser the first time
-* Run your own python script that looks for touched .html files
-   * Open a new window if the browser doesn't already have it open
-   * How to know whether to open a new window or to reload the old one...
-      * Need to check if the server isn't already "serving" the page?
-* Don't bother integrating with makefiles, it doesn't work on windows too...
-   * https://www.gnu.org/software/make/manual/make.html#Phony-Targets
-* Later, may want to incorporate --watch jupyter notebooks
-   * Just incorporate to the autobuilder
-      * The wrapper should then handle the html monitoring correctly
-* Potentially just have one script to call
-   * Make sure python doesn't go crazy and open eveything
-      * Only open changed pages, not new pages?
-      * Guard: only if the .rst and the .html were changed?
-   * Make clean at the end?
-      * Would this make you have to re-intersphinx everytime?
-* Keep in mind that autobuild sends out some sort of ping or hook
-   * You could somehow monitor this?
-* See https://docs.python.org/3/tutorial/modules.html
-* Have the wrapper put the output to the console
-   * See autobuild for how this is done, because it wraps sphinx
-   * https://docs.python.org/3/library/argparse.html#module-argparse
-* Watch the server that autobuild makes
-   * https://pythonhosted.org/watchdog/index.html
-   * It should send out some sort of ping that says to reload
-   * Only open a new browser window if the html file in question isn't served
-      * And if a reload ping came
-* When the html file changes, the autobuild console should say so
-   * Have the wrapper look for this and then open up a new browser?
-
-## Packaging
-* Update copyright year in versioning
-* See the project management -> distribution section of links
-   * Update the comment for requirements files?
-* After making a packaging section, link to it from the top of the code.rst pg
-* Reciprically link with the project directory structure
-* https://anaconda.org/conda-forge/doc8
-   * This one is showing on anaconda cloud....
-* Tools section on PyPI
-* Currently, the link to pip already exists
-* Do this first!
-* Section on writing tests and packaging in dev-guide
-* Try out with the 0.3.0 codebase
-* First get onto PyPi
-    * https://packaging.python.org/tutorials/packaging-projects/
-* Then, can try adding to conda-forge
-    * https://conda-forge.org/docs/
-    * There is a sample file that just points to PyPi
-    * https://github.com/conda-forge/staged-recipes/blob/master/recipes/example/meta.yaml
-* PEP 328
-* yaml should freeze at last release and then update each release
-   * Sort of depends on Travis
-* Update license
-* https://stackoverflow.com/questions/448271/what-is-init-py-for
-* https://gisellezeno.com/tutorials/sphinx-for-python-documentation.html
-* Ship conda with the dependencies
-   * Then can install in the quick start
-      * Mention you have just started the python interpreter with link
-         * Link is in the floating point rampage
-* Push to conda and create procedures as you go
-* https://packaging.python.org/tutorials/packaging-projects/
-   * Go through the tutorial and upload to test pypi
-* https://choosealicense.com/
-   * Probably MIT
-      * Need to have a versioning section that says to update year
-* https://packaging.python.org/guides/distributing-packages-using-setuptools/
-   * More info about setup tools
-* The examples page (if in Jupyter) should link to interactive analysis
-   * In the Anaconda a6 table
-   * Also, the Code testing link should go to the test index
-   * And, the numerical analysis parts should get links
-* Make sure to do Conda-forge packaging too
-
-## Git
-* Need to do a fetch before checkout a remote branch with tracking
-
-## Doc
-* TOC for everything page?
-* Software also has an auto-api section?
-   * May enable module index
-* When conda finally gets sphinx rtd theme 0.4.3 (or whatever it is)
-   * Are the settings different?
-      * How far down can the stick TOC go?
-
-## Proofreading
-* Use [inline view](https://code.visualstudio.com/docs/getstarted/tips-and-tricks#_git-integration)
-   * If only part of file changed
-* what-next should explain how to navigate with the sidebar
-   * If viewing in website form
-
-## myPy
-* Add to tools testing section and create TOC
-   * Same with Travis?
-* ttps://code.visualstudio.com/docs/python/settings-reference#_mypy
-* MyPy type linter
-   * https://www.python.org/dev/peps/pep-0526/
-   * https://mypy.readthedocs.io/en/latest/cheat_sheet_py3.html
-      * Get the mypy linter going in the conda package
-   * VS Code linter
-      * https://code.visualstudio.com/docs/python/linting
-         * Make a type checking procedures page
-         * Talk about how to disable the pep8 colon warning but leave mypy on
-* Figure out how to show all lines in rst files that are too long
-* :pep:`Type hint theory <483>`
-   * Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
-* :pep:`Variable annotations <527>`
-* :doc:`Typing module <python:library/typing>`
-
-## Downloading transaction history from Robinhood
-* If transaction type isn't recognized, just skip over it
-   * Print out that a .json object was obtained that was unknown
-* After downloading, the pandas portfolio parser (PPP) does checksum
-   * Does net portfolio amount equal buying power?
-* Need a logger / other way to harvest syntax from others
-   * What does a stock split or withdrawal look like?
-      * You can easily simulate withdrawal, then can put right back in
-
-## Transaction updates
-* When transaction init gets an error, should
-   * Raise error
-   * Show a trace to the data that produced it
-* Class method to convert to a dataframe?
-   * Could have a subclass of DataFrame called ledger
-      * By merit of existing, it has already been sanitized
-         * Thus can go straight back into transactions
-   * Would already have sanitized data
-
-## gitignore
-* Explain what different things can cause gitignore to have contents
-   * Pytest/compiled python, etc
-* Make a development task to clean it out?
-* Do a commit that is just cleaning out .gitignore
-
-# 0.6.0
 
 ## Derived version statistics
 * Only made date the index when exporting to first .csv
@@ -623,7 +565,7 @@
 * A new section with a ton of plots
 * Use SVGs with the date embedded in each one
 
-# *0.0 Package release
+# 1.0.0 Package release
 
 ## Main functionality
 * Download a Robinhood history to a pandas DataFrame
@@ -661,7 +603,7 @@
 * __repr__ should sanitize inputs
 * Need a to_string()
 
-# **0 BTMF
+## BTMF
 * Can't be a coefficient, because sign of you and market could be different
 * Should just be a percentage positive or negative
 

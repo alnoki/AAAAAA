@@ -39,4 +39,5 @@ To maximize efficiency,
 :vs-code-ext:`install the Vim extension <vscodevim.vim>` for
 :ref:`tools-vs-code`. If you have never used it before, the
 :ref:`Tools: Vim <tools-vim>` section has plenty of references that can help
-you learn
+you learn. If you like :wiki-pg:`keyboard shortcuts <Keyboard_shortcut>`, then
+you may like :ref:`tools-vim`

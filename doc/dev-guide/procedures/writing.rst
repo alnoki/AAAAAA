@@ -159,20 +159,41 @@ Proofreading documentation
 Isolating changes
 =================
 
-This is typically done right before
-:ref:`releasing a version <versioning-releasing>`
+.. csv-table:: :ref:`GitLens file classifications <tools-vs-code>`
+   :align: center
+   :header: :wiki-pg:`Button <Button_(computing)>`, "
+      :wiki-pg:`File <Computer_file>` status"
 
-#. Use the :ref:`VS Code Command Palette <tools-vs-code>` to
-   :guilabel:`GitLens: Compare Working Tree with Branch or Tag...`
+   :guilabel:`A`, Added
+   :guilabel:`D`, Deleted
+   :guilabel:`M`, Modified
+   :guilabel:`R`, Renamed
+
+#. In the :ref:`VS Code Command Palette <tools-vs-code>`:
+
+   * :guilabel:`GitLens: Compare Working Tree with Branch or Tag...`
+
 #. Select the :ref:`tag <git-tagging>` of the relevant
    :ref:`version <indices-versions>` to compare against
-#. Proofread :ref:`new documents <writing-proofread-new>` and
-   :ref:`changed documents <writing-proofread-changed>`
+#. :ref:`New documents <writing-proofread-new>` should only be classified by
+   :guilabel:`A`
+#. :ref:`Changed documents <writing-proofread-changed>` can be classified
+   several ways:
 
-      * Even if you have moved an :ref:`.rst file <tools-restructured-text>`,
-        :ref:`GitLens <tools-vs-code>` is often able to identify that it is in
-        a new :xref:`directory <directory>` and will only display changes to
-        the :wiki-pg:`file <Computer_file>` (rather than classify it as new)
+   * :guilabel:`M` if the :wiki-pg:`file <Computer_file>` has the same
+     :wiki-pg:`path <Path_(computing)>` that it did in the last
+     :ref:`version <indices-versions>`
+   * If the :wiki-pg:`file <Computer_file>` has a different
+     :wiki-pg:`path <Path_(computing)>` than it did in the last
+     :ref:`version <indices-versions>`, you may see either:
+
+     * Only :guilabel:`R`
+     * :guilabel:`D` at the old :wiki-pg:`path <Path_(computing)>`, and
+       :guilabel:`A` at the new :wiki-pg:`path <Path_(computing)>`
+
+.. seealso::
+
+   :ref:`versioning-releasing`
 
 .. _writing-proofread-new:
 
@@ -214,8 +235,10 @@ watch out for
 Changes to a document
 =====================
 
-#. Compare against the last :ref:`version <indices-versions>` using the
-   :ref:`VS Code Command Palette <tools-vs-code>`:
+#. If the :ref:`GitLens Working Tree compare <writing-isolate-changes>` yields
+   :guilabel:`M` or :guilabel:`R`, you can simply
+   :wiki-pg:`click <Point_and_click>` the :wiki-pg:`file <Computer_(file)>`,
+   or with the :wiki-pg:`file already open <getstarted/userinterface>`:
 
    #. :guilabel:`GitLens: Show File History`
    #. :guilabel:`Choose from Branch or Tag History...`
@@ -224,12 +247,14 @@ Changes to a document
       :wiki-pg:`recent <Time>`
    #. :guilabel:`Open Changes with Working File`
 
-   .. tip::
+#. If the :ref:`GitLens Working Tree compare <writing-isolate-changes>` yields
+   a combination of :guilabel:`A` and :guilabel:`D`:
 
-      If there is a warning that the :wiki-pg:`file <Computer_file>` did not
-      exist for that :ref:`tag <git-tagging>`, then the
-      :wiki-pg:`file <Computer_file>` was probably
-      :wiki-pg:`moved <Path_(computing)>`
+   #. :wiki-pg:`Click <Point_and_click>` the :wiki-pg:`file <Computer_(file)>`
+      classified by :guilabel:`A`
+   #. :wiki-pg:`Right-click <Point_and_click>` the
+      :wiki-pg:`file <Computer_(file)>` classified by :guilabel:`D` and select
+      :guilabel:`Open Changes with Working File`
 
 #. :guilabel:`Compare: Toggle Inline View` (optional)
 #. Follow the :ref:`procedures <procedures>` for

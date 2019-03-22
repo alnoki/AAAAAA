@@ -13,6 +13,7 @@ Alnoki's Inspired Philosophies, Adopted and Implemented in Practice (AIP)\ :supe
 
 #. Silly :ref:`acronyms <indices-acronyms>` actually make it easy to remember
    things
+#. Use :wiki-pg:`keyboard shortcuts <Keyboard_shortcut>`, or kindly depart
 #. :ref:`Test <testing-intro>` and :ref:`document <user-intro>` from the
    beginning to prevent massive runtime debug headaches
 #. Have DRY (don't repeat yourself) [#]_ :ref:`code <tools-python>`: decompose

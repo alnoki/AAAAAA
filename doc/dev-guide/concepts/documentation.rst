@@ -110,7 +110,7 @@ particular emphases
 
    :ref:`tools-restructured-text`, Conceptual explanation
    :ref:`tools-napoleon`, Conceptual explanation
-   :ref:`Napoleon example <concepts-code-e4>`, Usage
+   :ref:`Napoleon example <concepts-code-e4s>`, Usage
 
 .. csv-table:: Select references
    :align: center
@@ -166,10 +166,10 @@ Specific syntax
       :doc:`Sphinx <sphinx:intro>`", ":doc:`Sphinx <sphinx:intro>`
       :doc:`extensions <sphinx:usage/extensions/index>`"
 
-.. _concepts-doc-ccc:
+.. _concepts-doc-cccs:
 
-Common Conceptual Capitalizations (C\ :superscript:`3`)
--------------------------------------------------------
+Common Conceptual Capitalizations (C\ :superscript:`3`\ s)
+----------------------------------------------------------
 
 #. :ref:`Link <references-links>` capitalization should be natural with regard
    to the rest of the sentence, unless the thing you are describing has special

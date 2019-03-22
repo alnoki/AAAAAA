@@ -58,6 +58,34 @@ these to have an effect
 
    * :guilabel:`View: Toggle Zen Mode`
 
+.. _vs-code-markdown-headers:
+
+
+*************************
+Managing markdown headers
+*************************
+
+#. Use the
+   :vs-code-doc:`VS Code symbol input
+   <getstarted/userinterface#_command-palette>` to :wiki-pg:`type <Typing>`:
+
+   * :guilabel:`view outline`
+
+#. Use the :ref:`Command Palette <tools-vs-code>`:
+
+   * :guilabel:`Fold level 2`
+   * :guilabel:`Fold`
+
+#. Use the :ref:`Vim extension <tools-vim>` to
+   :xref:`go to an arbitrary line <Vim-cheatsheet>` and
+   :xref:`delete <Vim-cheatsheet>` a
+   :github-help:`Markdown heading level <basic-writing-and-formatting-syntax>`,
+   then :xref:`put <Vim-cheatsheet>` it elsewhere
+
+.. seealso::
+
+   :ref:`versioning-td3`
+
 
 ********************
 Improving efficiency

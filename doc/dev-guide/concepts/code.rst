@@ -100,12 +100,12 @@ Style
       symbol_like = 'begin_index'  # Symbol-like term
       natural = "Documentation optimality"  # Natural language message
 
-.. _concepts-code-e4:
+.. _concepts-code-e4s:
 
 
-**********************************************************************
-Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`)
-**********************************************************************
+*************************************************************************
+Elaborately Embellished Explanatory Enhancements (E\ :superscript:`4`\ s)
+*************************************************************************
 
 .. csv-table:: Select references within :term:`AAAAAA`
    :align: center
@@ -172,7 +172,7 @@ created, it can be referenced using the
 
    Let's talk about :py:class:`AAAAAA.ledger.Transaction`
 
-Real :ref:`concepts-code-e4`, like the example below, also have a
+Real :ref:`concepts-code-e4s`, like the example below, also have a
 :guilabel:`[source]` feature that :xref:`links <URL>` directly to
 :xref:`source code <source-code>`, except when viewing
 :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` in

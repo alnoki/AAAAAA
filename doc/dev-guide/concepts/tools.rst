@@ -313,6 +313,8 @@ which has all the latest features but may not be completely stable
 
    :vs-code-doc:`User interface <getstarted/userinterface>`, "Official
    introduction"
+   :vs-code-doc:`Tips and Tricks <getstarted/tips-and-tricks>`, "
+   :wiki-pg:`Keyboard shortcuts <Keyboard_shortcut>`, other efficiency tips"
    :vs-code-doc:`Python integration <languages/python>`, "Use
    :ref:`tools-python` with :xref:`VS Code <VS-Code>`"
    ":vs-code-doc:`Command Palette
@@ -396,12 +398,17 @@ of a :ref:`Google search <tools-google>` to answer "how do I do
    :align: center
    :header: Reference, Topic
 
+   :yt-pl:`TheFrugalComputerGuy: Vim <y7Kah3WzqrEjsuvhT46fr28Q11oa5ZoI>`, "
+   Recommended tutorial series"
    :yt-vid:`Mastering Vim <wlR5gYd6um0>`, Talk with tricks and tips
    :xref:`vim-learn-plan`, How to learn
    :xref:`Vim-tutorial`, Learn interactively
    :xref:`Vim-cheatsheet`, Common :wiki-pg:`commands <Command_line>`
    :stack-q:`Vim E325 error <45489008/vim-opening-file-e325-attention-error>`,"
    Can happen when :ref:`committing incorrectly <git-committing-fixes>`"
+   :xref:`mac-key-repeats`, "For faster
+   :wiki-pg:`Mac <Macintosh_operating_systems>` use"
+
 
 *************
 Documentation
@@ -500,7 +507,7 @@ them to :wiki-pg:`HTML` whenever
    :ref:`reST style <concepts-doc-style>`, Style
    :ref:`tools-sphinx`, ":wiki-pg:`Documentation <Software_documentation>`
    engine"
-   :ref:`tools-napoleon`, Create :ref:`E4s <concepts-code-e4>`
+   :ref:`tools-napoleon`, Create :ref:`E4s <concepts-code-e4s>`
 
 .. csv-table:: Select references
    :align: center
@@ -608,7 +615,7 @@ are not :doc:`built-in <sphinx:usage/extensions/index>`
    :ref:`Intersphinx <tools-intersphinx>`, "
    :ref:`Create links <sphinx-intersphinx>` to other
    :doc:`Sphinx <sphinx:intro>` projects"
-   :ref:`tools-napoleon`, :ref:`Document code components <concepts-code-e4>`
+   :ref:`tools-napoleon`, :ref:`Document code components <concepts-code-e4s>`
    :ref:`tools-extlinks`, ":ref:`Create links <sphinx-extlinks>` to common
    :wiki-pg:`URLs <URL>`"
    :ref:`xref <tools-xref>`, ":ref:`Create links <sphinx-xref>` to arbitrary
@@ -641,7 +648,7 @@ Napoleon
 :doc:`Napoleon <sphinx:usage/extensions/napoleon>` is a
 :ref:`Sphinx extension <tools-sphinx>` that parses
 :ref:`Python source code <tools-python>` and creates
-:ref:`documentation elements <concepts-code-e4>` from
+:ref:`documentation elements <concepts-code-e4s>` from
 :ref:`docstrings <python:tut-docstrings>` and :pep:`type annotations <484>`. It
 uses the same
 :ref:`directives <tools-restructured-text>` as
@@ -655,7 +662,7 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
 
 :ref:`Docstrings <python:tut-docstrings>` are written using the
 :ref:`Python domain <sphinx:python-roles>`, which is also used to reference
-:ref:`concepts-code-e4` elsewhere in
+:ref:`concepts-code-e4s` elsewhere in
 :wiki-pg:`documentation <Software_documentation>`
 
 .. csv-table:: Select references within :term:`AAAAAA`
@@ -663,7 +670,7 @@ can accept :ref:`NumPy docstrings <numpy:format>`.
    :header: Reference, Topic
 
    :ref:`Documentation syntax <concepts-doc-style>`, Usage
-   :ref:`Napoleon example <concepts-code-e4>`, Usage
+   :ref:`Napoleon example <concepts-code-e4s>`, Usage
    :ref:`Napoleon procedures <procedures-napoleon>`, Usage
 
 .. csv-table:: Select conceptual references

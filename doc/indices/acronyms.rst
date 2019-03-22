@@ -19,8 +19,8 @@ Acronyms
 #. :term:`AAACCC`
 #. :term:`AAA`
 #. :ref:`AIPAIP <zen-aipaip>`
-#. :ref:`CCC <concepts-doc-ccc>`
-#. :ref:`EEEE <concepts-code-e4>`
+#. :ref:`CCC <concepts-doc-cccs>`
+#. :ref:`EEEE <concepts-code-e4s>`
 #. :term:`OHIO`
 #. :term:`pop`
 #. :term:`PPP`

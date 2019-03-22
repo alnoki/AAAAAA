@@ -41,10 +41,10 @@ copyright = '2019, alnoki'
 author = 'alnoki'
 """:github:`Who <alnoki>` even made this?"""
 
-version = '0.4'
+version = '0.5'
 """Just ``MAJOR.MINOR`` for the :ref:`version <indices-versions>`"""
 
-release = '0.4.0'
+release = '0.5.0'
 """``MAJOR.MINOR.PATCH`` for the :ref:`version <indices-versions>`"""
 
 master_doc = 'index'
@@ -281,6 +281,9 @@ xref_links = {
     'mactex': ('MacTeX', 'http://www.tug.org/mactex/'),
     'texlive': ('Tex Live', 'http://www.tug.org/texlive/'),
     'cmd.exe-invocation': ("cmd.exe options", 'https://ss64.com/nt/cmd.html'),
+    'mac-key-repeats': (
+        "Enable key repeats on Mac", 'https://www.idownloadblog.com/2015/'
+        '01/14/how-to-enable-key-repeats-on-your-mac/'),
 
     # To sort
     'git-config': ('git-config', url['git-scm'] + 'docs/git-config'),

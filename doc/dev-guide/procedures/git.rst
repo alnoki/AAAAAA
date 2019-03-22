@@ -83,6 +83,9 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
       filetype plugin indent on
       syntax on
 
+#. If you are using a :wiki-pg:`Mac <Macintosh_operating_systems>`, you should
+   also :xref:`enable key repeats <mac-key-repeats>`
+
 .. _git-credentials:
 
 Updating user credentials
@@ -226,6 +229,7 @@ made
 
    .. code-block:: bash
 
+      git rev-list --count HEAD
       git rev-list --count 0.4.0
 
 .. _git-dev-tasks:
@@ -403,6 +407,8 @@ Branching
 
    :xref:`git-branch`, Manage independent :xref:`commit <git-commit>` sequences
    :xref:`git-checkout`, Switch :xref:`branches <git-branch>`
+   :git-doc:`git-fetch`, "Get :git-doc:`branches <git-branch>` from the
+   :github:`AAAAAA repository <alnoki/AAAAAA>`"
 
 #. :ref:`View the project log <git-view-project-log>` to verify the
    :xref:`commit <git-commit>` in question
@@ -440,6 +446,7 @@ Branching
 
    .. code-block:: bash
 
+      git fetch
       git checkout --track origin/dev/0.4.0
 
 .. _git-merging:
@@ -499,12 +506,12 @@ If you are learning :ref:`tools-git` and you forget to either
 :ref:`committer list <git-list-committers>` can end up looking like total
 nonsense. This is how you fix it
 
-You should only need to do this once, after which you will have
-(hopefully) learned your lesson
+You should only need to do this once, then you will have (hopefully) learned
+your lesson
 
 .. warning::
 
-   This can totally mess stuff up if you are not careful
+   You can break things if you are not careful with this
 
 #. For the most part, follow :xref:`github-change-authors`
 

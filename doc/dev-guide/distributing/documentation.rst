@@ -147,7 +147,7 @@ especially for:
 
 * :rst:role:`guilabels <guilabel>` like :guilabel:`this`
 * :ref:`tools-BibTeX`
-* :ref:`concepts-code-e4`
+* :ref:`concepts-code-e4s`
 * :wiki-pg:`URLs <URL>` in a
   :doc:`directive argument <sphinx:usage/restructuredtext/basics>` for a
   :ref:`csv-table <sphinx:table-directives>`

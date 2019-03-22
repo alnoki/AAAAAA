@@ -33,6 +33,10 @@ Versioning
 Top-down to-do task deferral (TD)\ :superscript:`3`
 ***************************************************
 
+.. tip::
+
+   Chant :term:`OHIO` while doing this
+
 .. csv-table:: Select references within :term:`AAAAAA`
    :align: center
    :header: Reference, topic
@@ -40,53 +44,39 @@ Top-down to-do task deferral (TD)\ :superscript:`3`
    :term:`OHIO`, Task management philosophy
    :ref:`tools-vs-code`, Task management environment
    :ref:`Project structure <concepts-project-tree>`, Layout
+   :ref:`vs-code-markdown-headers`, "
+   :ref:`VS Code procedure <procedures-vs-code>`"
 
-.. csv-table:: Select reference
+.. csv-table::
+   :github-help:`Markdown headers <basic-writing-and-formatting-syntax>` in
+      :ref:`TODO.md <concepts-project-tree>`
    :align: center
-   :header: Reference, Topic
+   :header: Level, Meaning
 
-   :github-help:`Markdown <basic-writing-and-formatting-syntax>`, "
-   :wiki-pg:`Syntax <Syntax_(programming_languages)>` specification"
-
-.. tip::
-
-   Chant :term:`OHIO` while doing this
+   ``#``, :ref:`Versions <indices-versions>`
+   ``##``, ``Topic``
+   ``*``, ``Item``
 
 #. Open :ref:`TODO.md <concepts-project-tree>` in :ref:`tools-vs-code`
-#. Use the
-   :vs-code-doc:`VS Code symbol input
-   <getstarted/userinterface#_command-palette>` to :wiki-pg:`type <Typing>`:
-
-   * :guilabel:`view outline`
-
-   .. csv-table::
-      :github-help:`Markdown headers <basic-writing-and-formatting-syntax>`
-      :align: center
-      :header: Level, Meaning
-
-      ``#``, :ref:`Versions <indices-versions>`
-      ``##``, Topic
-      ``*``, Item
-
-#. Identify if the planned topic set is too much for one
+#. Identify if the planned ``topic`` set is too much for one
    :ref:`version <indices-versions>`
-#. Starting with the topmost topic for the current
+#. Starting with the topmost ``topic`` for the current
    :ref:`version <indices-versions>`:
 
-   * Either defer the topic to the next :ref:`version <indices-versions>` or
-     move it to the bottom of the set for the current
+   * Either defer the ``topic`` to the next :ref:`version <indices-versions>`
+     or move it to the bottom of the set for the current
      :ref:`version <indices-versions>`
-   * Repeat until the topic that you started with is back at the top of the set
-     for the current :ref:`version <indices-versions>`
+   * Repeat until the ``topic`` that you started with is back at the top of the
+     set for the current :ref:`version <indices-versions>`
 
-#. Re-order the topics in a logically progressive
+#. Re-order the ``topics`` in a logically progressive
    :wiki-pg:`development <Software_development>` sequence
 #. :wiki-pg:`Develop <Software_development>` with a similar treatment of
-   items/topics
+   ``items``/``topics``
 
    * Start at the top and work your way down
    * Re-ordering shouldn't be necessary
-   * Either defer the item to a future :ref:`version <indices-versions>` or
+   * Either defer the ``item`` to a future :ref:`version <indices-versions>` or
      complete it before moving on
 
 .. _versioning-start-new:
@@ -149,9 +139,7 @@ At this point you should be working on a
    most recent :ref:`release <indices-versions>`
 
    * :term:`OHIO` from the first :ref:`.rst file <tools-restructured-text>` to
-     the last, editing only the
-     :ref:`.rst file <tools-restructured-text>` you are on
-   * Feel free to add some :ref:`to-dos <versioning-td3>` for later, though
+     the last in the order specified by :guilabel:`next`
 
 #. Do a :ref:`link check <sphinx-checking-links>`
 #. :ref:`git-get-commit-stats` and update:
