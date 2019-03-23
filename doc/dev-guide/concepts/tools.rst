@@ -884,6 +884,14 @@ Numerical conda packages
    :doc:`pandas <pandas:index>`, :doc:`pandas:getting_started/10min`, "
    :xref:`pandas <codebasics-pandas>`"
 
+.. csv-table:: Select references within :term:`AAAAAA`
+   :align: center
+   :header: Reference, Topic
+
+   :term:`a6`, :ref:`Conda environment <conda:concept-conda-env>`
+   :ref:`examples`, Usage showcase
+   :ref:`User guide <user-intro>`,  Usage walkthrough
+
 
 *******
 Testing

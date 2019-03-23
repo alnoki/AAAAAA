@@ -91,10 +91,10 @@ Use the :ref:`VS Code integrated terminal <tools-vs-code>` for first-time
 Updating user credentials
 =========================
 
-Per :xref:`git-config`:
+Per :git-doc:`git-config`:
 
 #. Use the :ref:`VS Code integrated terminal <tools-vs-code>` to edit
-   :xref:`git-config` using :ref:`tools-vim`:
+   :git-doc:`git-config` using :ref:`tools-vim`:
 
    .. code-block:: bash
 
@@ -144,7 +144,7 @@ Inspecting history
 Viewing the project log
 =======================
 
-Per :xref:`git-log`:
+Per :git-doc:`git-log`:
 
 #. In the :ref:`VS Code integrated terminal <tools-vs-code>`:
 
@@ -176,7 +176,7 @@ Listing project committers
    :align: center
    :header: Reference, Topic
 
-   :xref:`git-log`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
+   :git-doc:`git-log`, ":wiki-pg:`Syntax <Syntax_(programming_languages)>`
    reference"
    :xref:`list-git-developers`, Sorting unique instances
    :xref:`git-log-formatting`, "Practical

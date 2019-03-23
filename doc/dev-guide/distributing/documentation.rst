@@ -152,3 +152,5 @@ especially for:
   :doc:`directive argument <sphinx:usage/restructuredtext/basics>` for a
   :ref:`csv-table <sphinx:table-directives>`
 * The :ref:`automatic indices <indices-auto>`
+* :ref:`Orphan pages <sphinx:metadata>`, like
+  :ref:`sample-doc.rst <sample-doc>`, are not part of the :wiki-pg:`PDF`

@@ -69,12 +69,13 @@ Git
 config
 ======
 
-:xref:`git-config` helps store your :wiki-pg:`identity <User_(computing)>` the
-way that you want it to appear in :ref:`the Git log <git-view-project-log>`,
-and allows you to :ref:`use Vim <git-setup>`. The
+:git-doc:`git-config` helps store your
+:wiki-pg:`identity <User_(computing)>` the way that you want it to appear in
+:ref:`the Git log <git-view-project-log>`, and allows you to
+:ref:`use Vim <git-setup>`. The
 :ref:`Git configuring procedures <git-configuring>` include precise
-instructions on how to get started with :xref:`git-config`, which you shouldn't
-need that often
+instructions on how to get started with :git-doc:`git-config`, which you
+should not need that often after initial :ref:`setup <git-configuring>`
 
 .. _configs-gitignore:
 

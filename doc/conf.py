@@ -32,6 +32,8 @@ Includes :ref:`extensions <tools-sphinx-extensions>` that are:
 
 """
 
+napoleon_include_init_with_doc = True
+
 project = 'AAAAAA'
 """What to call this :ref:`tools-sphinx` project"""
 
@@ -50,7 +52,7 @@ release = '0.5.0'
 master_doc = 'index'
 """The top-level :ref:`.rst file <tools-restructured-text>`
 
-For :term:`AAAAAA`, is inside of the
+For :term:`AAAAAA`, is :wiki-pg:`inside <Path_(computing)>` of the
 :ref:`documentation root directory <concepts-doc-tree>`
 
 """
@@ -286,8 +288,6 @@ xref_links = {
         '01/14/how-to-enable-key-repeats-on-your-mac/'),
 
     # To sort
-    'git-config': ('git-config', url['git-scm'] + 'docs/git-config'),
-    'git-log': ('git-log', url['git-scm'] + 'docs/git-log'),
     'git-commit': ('git-commit', url['git-scm'] + 'docs/git-commit'),
     'git-push': ('git-push', url['git-scm'] + 'docs/git-push'),
     'git-clone': ('git-clone', url['git-scm'] + 'docs/git-clone'),

@@ -106,7 +106,8 @@ Creating a6 from scratch
 Importing a6
 ************
 
-#. :ref:`Start up conda <conda:starting-conda>` from inside the
+#. :ref:`Start up conda <conda:starting-conda>` from
+   :wiki-pg:`inside <Path_(computing)>` the
    :ref:`AAAAAA project directory <concepts-project-tree>`, then
    :doc:`import <conda:user-guide/tasks/manage-environments>`
    the necessary :ref:`conda packages <concepts-packages-table>`:
@@ -128,9 +129,9 @@ Installing AAAAAA for testing
 
 Per :doc:`pytest integration practices <pytest:goodpractices>`:
 
-#. From inside the :ref:`AAAAAA project directory <concepts-project-tree>`, use
-   :term:`a6` from inside the
-   :ref:`VS Code integrated terminal <tools-vs-code>`:
+#. From :wiki-pg:`inside <Path_(computing)>` the
+   :ref:`AAAAAA project directory <concepts-project-tree>`, use :term:`a6` in
+   the :ref:`VS Code integrated terminal <tools-vs-code>`:
 
    .. code-block:: bash
 

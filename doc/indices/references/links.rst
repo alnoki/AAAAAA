@@ -488,7 +488,7 @@ General
 
 #. :xref:`less-pager`
 
-   * For viewing :xref:`git-log`
+   * For viewing :git-doc:`git-log`
 
 Core commands
 =============
@@ -497,11 +497,11 @@ Core commands
 
    * :wiki-pg:`Download` a :wiki-pg:`software <Software>` project
 
-#. :xref:`git-config`
+#. :git-doc:`git-config`
 
    * Setup :wiki-pg:`user credentials <User_(computing)>`
 
-#. :xref:`git-log`
+#. :git-doc:`git-log`
 
    * See project history
 
@@ -558,7 +558,7 @@ Special features
 
 #. :xref:`git-log-formatting`
 
-   * Special options for inspecting :xref:`git-log`
+   * Special options for inspecting :git-doc:`git-log`
 
 #. :xref:`list-git-developers`
 
@@ -1230,7 +1230,7 @@ Official information
 
 #. :xref:`Vim`
 
-   * For :xref:`git-config`, :xref:`git-commit`, and :ref:`tools-vs-code`
+   * For :git-doc:`git-config`, :xref:`git-commit`, and :ref:`tools-vs-code`
 
 #. :vim-wiki:`Mac OS syntax highlighting <Turn_on_syntax_coloring_in_Mac_OS_X>`
 

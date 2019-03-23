@@ -5,9 +5,18 @@
 Introduction
 ############
 
+.. contents::
+   :local:
+
+
+*********************************
+So you want to use alnoki's apps?
+*********************************
+
 If you haven't already taken a look at the :ref:`examples <examples>`
 section, which showcases select :term:`AAAAAA` functionality, you may want to
-start there
+start there. If you decide to continue here, it is recommended that you view
+:term:`AAAAAA` as a :ref:`website instead of as a PDF <what-next-format>`
 
 This guide explains, with more depth than the
 :ref:`examples <examples>` section, the various :ref:`tools-python` and
@@ -35,6 +44,13 @@ be self-contained, but if you want more resources there a few select ones below
    :xref:`Python` (recommended)"
    :doc:`python:tutorial/index`, Official tutorial
 
+
+************
+Installation
+************
+
+*Coming soon*
+
 .. tip::
 
    Keep on :wiki-pg:`clicking <Point_and_click>` the :guilabel:`Next`
@@ -43,3 +59,10 @@ be self-contained, but if you want more resources there a few select ones below
    :xref:`webpages <webpage>` of
    :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA` in a
    logical order
+
+
+*******************
+User guide contents
+*******************
+
+*Coming soon*

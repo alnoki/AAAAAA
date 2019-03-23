@@ -138,6 +138,19 @@ Tools satellite topics
    :ref:`Sphinx extension table <tools-sphinx-extensions>`, for example, if it
    makes sense for your new topic
 
+Code samples
+============
+
+#. Always use a :rst:dir:`code-block` instead of
+   :doc:`:: <sphinx:usage/restructuredtext/basics>`
+
+#. Use ``python`` as the
+   :doc:`directive target <sphinx:usage/restructuredtext/basics>`
+
+#. Only show ``>>>`` if you do not intend for the content to be
+   :wiki-pg:`copy-pasted <Cut,_copy,_and_paste>` into an
+   :doc:`interpreter session <tutorial/interpreter>`
+
 .. _writing-proofread:
 
 
@@ -237,8 +250,8 @@ Changes to a document
 
 #. If the :ref:`GitLens Working Tree compare <writing-isolate-changes>` yields
    :guilabel:`M` or :guilabel:`R`, you can simply
-   :wiki-pg:`click <Point_and_click>` the :wiki-pg:`file <Computer_(file)>`,
-   or with the :wiki-pg:`file already open <getstarted/userinterface>`:
+   :wiki-pg:`click <Point_and_click>` the :wiki-pg:`file <Computer_file>`,
+   or with the :vs-code-doc:`file already open <getstarted/userinterface>`:
 
    #. :guilabel:`GitLens: Show File History`
    #. :guilabel:`Choose from Branch or Tag History...`
@@ -250,10 +263,10 @@ Changes to a document
 #. If the :ref:`GitLens Working Tree compare <writing-isolate-changes>` yields
    a combination of :guilabel:`A` and :guilabel:`D`:
 
-   #. :wiki-pg:`Click <Point_and_click>` the :wiki-pg:`file <Computer_(file)>`
+   #. :wiki-pg:`Click <Point_and_click>` the :wiki-pg:`file <Computer_file>`
       classified by :guilabel:`A`
    #. :wiki-pg:`Right-click <Point_and_click>` the
-      :wiki-pg:`file <Computer_(file)>` classified by :guilabel:`D` and select
+      :wiki-pg:`file <Computer_file>` classified by :guilabel:`D` and select
       :guilabel:`Open Changes with Working File`
 
 #. :guilabel:`Compare: Toggle Inline View` (optional)

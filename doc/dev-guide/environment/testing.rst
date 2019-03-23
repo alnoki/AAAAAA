@@ -14,9 +14,9 @@ Testing
 
       conda install pip pytest
 
-#. From inside the :ref:`AAAAAA project directory <concepts-project-tree>`,
-   configure :doc:`pytest discovery <pytest:goodpractices>` for
-   :term:`AAAAAA`:
+#. From :wiki-pg:`inside <Path_(computing)>` the
+   :ref:`AAAAAA project directory <concepts-project-tree>`, enable
+   :doc:`pytest discovery <pytest:goodpractices>` for :term:`AAAAAA`:
 
    .. code-block:: bash
 
@@ -38,7 +38,7 @@ Testing
       :xref:`Copy-paste <copy-paste>` this one
       :wiki-pg:`line <Command-line_interface>` at a time
 
-#. Try out :ref:`tools-pytest` from inside the
+#. Try out :ref:`tools-pytest` from :wiki-pg:`inside <Path_(computing)>` the
    :ref:`AAAAAA root directory <concepts-project-tree>`:
 
    .. code-block:: bash

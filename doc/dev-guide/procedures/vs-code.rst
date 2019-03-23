@@ -101,6 +101,7 @@ Improving efficiency
    * :guilabel:`Bookmarks: Jump to Previous`
    * :guilabel:`Search: Replace in Files`
    * :guilabel:`Toggle Tab Key Moves Focus`
+   * :guilabel:`Python Refactor: Sort Imports`
 
 
 ***************************

@@ -152,7 +152,7 @@ User guide
    :numbered:
 
    user-guide/index
-   user-guide/transactions
+   user-guide/fundamentals/index
 
 
 ***************
@@ -167,7 +167,6 @@ Developer guide
    :numbered:
 
    dev-guide/index
-   dev-guide/environment/index
    dev-guide/concepts/index
    dev-guide/distributing/index
    dev-guide/testing/index

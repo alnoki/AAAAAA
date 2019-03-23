@@ -58,7 +58,6 @@ Structure
             dev-guide/
                 index.rst
                 environment/
-                    index.rst
                     documenting.rst
                     ...
                 concepts/
@@ -269,7 +268,7 @@ Many of these are exemplified below in the
 
       #. If the :wiki-pg:`line <Line_(text_file)>` is still too long, then use
          a ``\`` to :wiki-pg:`escape <Delimiter>` a
-         :wiki-pg:`new line <Newline>` inside the
+         :wiki-pg:`new line <Newline>` in the
          :doc:`target <sphinx:usage/restructuredtext/roles>` and/or
          :doc:`title <sphinx:usage/restructuredtext/roles>`:
 
@@ -352,6 +351,12 @@ Simple example
 
 Though it is an :ref:`orphan page <sphinx:metadata>`, check
 out the :wiki-pg:`HTML` form of :ref:`sample-doc.rst <sample-doc>`!
+
+.. note::
+
+   :ref:`sample-doc.rst <sample-doc>` is not
+   :ref:`part of the PDF version <dist-doc-pdf>` of
+   :wiki-pg:`documentation <Software_documentation>` for :term:`AAAAAA`
 
 .. literalinclude:: sample-doc.rst
    :caption: What the :ref:`reST <tools-restructured-text>` for

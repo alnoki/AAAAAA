@@ -1,69 +1,28 @@
 ## Links audit: 1 at the start, 1 at the end of your session
 * Py like you rest, rest like you Py
-* Conda tidy up
-* Enable dev branch on rtd
 
 # 0.5.0
 
-## Proofreading notes
-* Numerical conda packages deal with at some point, when writing about Jupyter?
-   * Or say the user guide provides additional examples, but learn more hear
-      * Also link to examples and user guide?
-   * Link to the a6 table
-* PDF version of sample-doc?
-   * Note not show up in PDF form?
-* Find all for "inside" and link to wiki-pg path
-* Move environment setup into dev/intro
-   * Merge the conent from dev/intro onto the introduction page as a header
-* Explain what different things can cause gitignore to have contents
-   * Pytest/compiled python, etc
-* Make a development task to clean it out?
-* Do a commit that is just cleaning out .gitignore
-
-## Writing procedures
-* Use draw.io to make an SVG
-   * Can defer this to later if no images to make now
-* Where to keep the .xml?
-* Always use code block
-   * Use >>> if shouldn't be able to copy-paste
-* Use vs code sort imports
+## versions feature list
+* New structure for transactions
 
 ## User guide restructuring
-* Intro
-   * Show how to install via conda, etc
-   * For now, use pip install -e and the package name
-      * This will end up being the lowest-priority option later on?
-* Any examples just assume package has been imported
-   * Can do by running book inside src folder or adding to path
 * Fundamentals
-   * Introduction
-      * Talk about what this section is for
    * Transactions
-      * When transaction init gets an error, should
-         * Raise error
-         * Show a trace to the data that produced it
-      * Class method to convert to a dataframe?
-         * Could have a subclass of DataFrame called ledger
-            * By merit of existing, it has already been sanitized
-               * Thus can go straight back into transactions
-         * Would already have sanitized data
-      * Per PEP257, __init__ should have docstring
-         * Just mention attributes in class docstring, others in __init__
-         * Explain in initialization
-      * Move the possible kinds into the kinds docstring
-      * Have require args/kwargs per real python
-      * https://docs.python.org/3/glossary.html#term-parameter
-      * per_share_amount is defined twice
-      * Table of kinds should say exchange money for a security
-         * exchange a security for money
-      * Receive money from a security (typically dividends)
-      * Make sure to update quickstart if you change variable names
       * ISO8601
+      * Move the possible kinds into the kinds docstring
+      * Use admonition for examples?
+         * Put initialization example inside the code
+         * Explain in initialization
+      * Table of kinds should say exchange money for a security
+         * Have a dict, and some * lists in the docstring
+         * exchange a security for money
       * Transaction types tell brokerage account what to do (like git)
          * Buy, sell, contribute, withdraw, receive (dividends), pay (fees)
-      * Change num_shares to just shares
-      * Show an examples of what it means to initialize a transaction
-         * In that section
+         * Receive money from a security (typically dividends)
+      * Make sure to update quickstart if you change variable names
+      * Have require args/kwargs per real python
+         * https://docs.python.org/3/glossary.html#term-parameter
    * Connectivity
       * Connect to robinhood
          * src updates use the dateutil parser from version-stats.ipynb
@@ -78,6 +37,10 @@
       * Need a way to store it...
          * Motivation for ledgers
    * Ledgers
+      * Class method to convert Transaction to a dataframe?
+         * Could have a subclass of DataFrame called ledger
+            * By merit of existing, it has already been sanitized
+               * Thus can go straight back into transactions
       * Subclass of a dataframe
       * If transaction type isn't recognized, just skip over it
          * Print out that a .json object was obtained that was unknown
@@ -186,6 +149,14 @@ param2 : :obj:`list` of :obj:`str`
 * On the code structure page, update the dir tree
    * Use a table for each of the components like on the other dir trees
       * name, function
+* Explain what different things can cause gitignore to have contents
+   * Pytest/compiled python, etc
+   * Make a development task to clean it out?
+   * Do a commit that is just cleaning out .gitignore
+
+## Index descriptions to add
+* user guide intro page
+* fundamentals intro page
 
 # 0.6.0
 
@@ -207,6 +178,7 @@ param2 : :obj:`list` of :obj:`str`
    * Compare to https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 * :pep:`Variable annotations <527>`
 * :doc:`Typing module <python:library/typing>`
+* Add explanation of what these are in the user guide on the transaction page
 
 ## Packaging
 * Update copyright year in versioning
@@ -251,6 +223,10 @@ param2 : :obj:`list` of :obj:`str`
    * Also, the Code testing link should go to the test index
    * And, the numerical analysis parts should get links
 * Make sure to do Conda-forge packaging too
+* User guide intro
+   * Show how to install via conda, etc
+   * For now, use pip install -e and the package name
+      * This will end up being the lowest-priority option later on?
 
 ## adp.py
 * Makefile wraps adp.py
@@ -319,6 +295,7 @@ param2 : :obj:`list` of :obj:`str`
 * Doc coverage is a sphinx extension
 
 ## Jupyter
+* Talk about numerical conda packages
 * When split off nbs page from doc page, re-do header levels on doc page
    * Also need to update concepts index page
 * Should have concepts notebooks page
@@ -391,6 +368,9 @@ param2 : :obj:`list` of :obj:`str`
    * Require a whitepaper if someone wants to contribute
    * Keep this in the indices section?
    * PEA1 is you writing a PEA about how to contribute
+* Use draw.io to make an SVG
+   * Can defer this to later if no images to make now
+   * Where to keep the .xml?
 
 ## AAAA (analyst archives)
 * Jupyter SVGs should have the date on which they were generated
