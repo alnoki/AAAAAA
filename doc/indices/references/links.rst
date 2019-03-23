@@ -117,6 +117,10 @@ Text
 
    * :ref:`python:comments` for specific :xref:`Python` components
 
+#. :py:obj:`python:str`
+
+   * A :wiki-pg:`string <String_(computer_science)>`
+
 #. :py:func:`python:print`
 
    * Display a :wiki-pg:`string <String_(computer_science)>`
@@ -133,9 +137,34 @@ Types
    * The most basic :doc:`type <python:library/stdtypes>`, from which others
      are derived
 
+#. :term:`Immutable <python:immutable>`
+
+   * Does not change
+
+#. :term:`Mutable <python:mutable>`
+
+   * May change
+
+#. :term:`Iterable <python:iterable>`
+
+   * An :term:`python:object` with members that can be accessed individually
+
+#. :term:`Sequence <python:sequence>`
+
+   * An efficient :term:`python:iterable`
+
 #. :ref:`python:tut-dictionaries`
 
+   * Also explained at :py:obj:`python:dict`
    * A :doc:`type <python:library/stdtypes>` containing *key: value* pairs
+
+#. :py:obj:`python:bool`
+
+   * :py:obj:`python:True` or :py:obj:`python:False`
+
+#. :py:obj:`python:None`
+
+   * When there is nothing
 
 #. :xref:`realpython-type-checking`
 
@@ -480,7 +509,7 @@ General
 
 #. :xref:`sha1`
 
-   * Unique identifier attached to each :xref:`commit <git-commit>`
+   * Unique identifier attached to each :git-doc:`commit <git-commit>`
 
 #. :git-doc:`.gitignore <user-manual.html#ignoring-files>`
 
@@ -505,7 +534,7 @@ Core commands
 
    * See project history
 
-#. :xref:`git-commit`
+#. :git-doc:`git-commit`
 
    * Create saved changes to a project
 
@@ -513,17 +542,17 @@ Core commands
 
    * Prepare changes for :ref:`committing <git-committing>`
 
-#. :xref:`git-push`
+#. :git-doc:`git-push`
 
-   * :wiki-pg:`Upload` a :xref:`commit <git-commit>`
+   * :wiki-pg:`Upload` a :git-doc:`commit <git-commit>`
 
 #. :xref:`git-tag`
 
-   * Assign a special identifier to a :xref:`commit <git-commit>`
+   * Assign a special identifier to a :git-doc:`commit <git-commit>`
 
 #. :xref:`git-branch`
 
-   * Work with independent sequences of :xref:`commits <git-commit>`
+   * Work with independent sequences of :git-doc:`commits <git-commit>`
 
 #. :git-doc:`git-fetch`
 
@@ -562,11 +591,12 @@ Special features
 
 #. :xref:`list-git-developers`
 
-   * Identifying unique :xref:`committers <git-commit>`
+   * Identifying unique :git-doc:`committers <git-commit>`
 
 #. :xref:`github-change-authors`
 
-   * :github:`GitHub <>` instructions to re-write :xref:`git-commit` history
+   * :github:`GitHub <>` instructions to re-write
+     :git-doc:`commit <git-commit>` history
 
 #. :xref:`git-branch-filtering`
 
@@ -1230,7 +1260,7 @@ Official information
 
 #. :xref:`Vim`
 
-   * For :git-doc:`git-config`, :xref:`git-commit`, and :ref:`tools-vs-code`
+   * For :git-doc:`git-config`, :git-doc:`git-commit`, and :ref:`tools-vs-code`
 
 #. :vim-wiki:`Mac OS syntax highlighting <Turn_on_syntax_coloring_in_Mac_OS_X>`
 
@@ -1671,6 +1701,10 @@ Securities mechanics
    * Facilitates the buying and selling of
      :xref:`securities <finance-security>`
 
+#. :wiki-pg:`Brokerage account <Securities_account>`
+
+   * A place to manage your :wiki-pg:`securities <Security_(finance)>`
+
 #. :xref:`ticker-symbol`
 
    * Identifier used to buy or sell a :xref:`security <finance-security>`
@@ -1716,6 +1750,11 @@ Money definitions
 #. :xref:`bank`
 
    * An institution that manages :xref:`money <money>`
+
+#. :wiki-pg:`Deposit <Deposit_(finance)>`
+
+   * Put :wiki-pg:`money <Money>` into a :wiki-pg:`bank <Bank>`, a
+     :wiki-pg:`brokerage <Broker>`, etc.
 
 
 ***********

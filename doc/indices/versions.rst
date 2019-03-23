@@ -54,7 +54,9 @@ Features
 
 * 0.5.0
 
-   * Foobly doobly
+   * Add to :ref:`toctrees <tools-sphinx>`:
+
+     * :ref:`user-fundamentals`
 
 * 0.4.0 (2019-03-21T21:16:05Z)
 

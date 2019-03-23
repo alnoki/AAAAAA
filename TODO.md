@@ -3,24 +3,14 @@
 
 # 0.5.0
 
-## versions feature list
-* New structure for transactions
-
 ## User guide restructuring
 * Fundamentals
    * Transactions
-      * ISO8601
-      * Move the possible kinds into the kinds docstring
+      * Nonnegative for shares and per share amount
+      * What did that mean -> interpretations section
       * Use admonition for examples?
          * Put initialization example inside the code
          * Explain in initialization
-      * Table of kinds should say exchange money for a security
-         * Have a dict, and some * lists in the docstring
-         * exchange a security for money
-      * Transaction types tell brokerage account what to do (like git)
-         * Buy, sell, contribute, withdraw, receive (dividends), pay (fees)
-         * Receive money from a security (typically dividends)
-      * Make sure to update quickstart if you change variable names
       * Have require args/kwargs per real python
          * https://docs.python.org/3/glossary.html#term-parameter
    * Connectivity
@@ -115,6 +105,7 @@
    * We are going to import as aa
 
 ## Napoleon
+* Assume python domain in .py files
 * Use :obj: when not just one simple type
 * The intersphinx target in use is outdated
    * Use the orphan document:
@@ -130,6 +121,7 @@ param2 : :obj:`list` of :obj:`str`
    Description of `param2`. Multiple
 
 ## Examples page
+* Need to update quickstart too with new time styles
 * Say can do either in the interpreter or in Jupyter notebook
 * Then put in a link from jupyter page
 * Python tools section should link here

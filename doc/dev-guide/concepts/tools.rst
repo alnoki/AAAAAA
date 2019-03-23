@@ -206,17 +206,17 @@ Git
 :wiki-pg:`files <Computer_file>` in the
 :github:`AAAAAA repository <alnoki/AAAAAA>`. :git-doc:`Git <user-manual>` is a
 :wiki-pg:`version control <Version_control>` system that allows :term:`AAAAAA`
-to be updated with :xref:`commits <git-commit>`, which are like snapshots in
+to be updated with :git-doc:`commits <git-commit>`, which are like snapshots in
 :wiki-pg:`time <Time>` that describe minor changes to :term:`AAAAAA`. Each
-:xref:`commit <git-commit>` is identified by a
+:git-doc:`commit <git-commit>` is identified by a
 :wiki-pg:`Secure Hash Algorithm 1 (SHA-1) value <SHA-1>`, a unique identifier
 that can be accessed by
 :ref:`viewing the project log <git-view-project-log>`
 
 :xref:`Tags <git-tag>`, which provide a unique identifier for
-:xref:`commits <git-commit>`, and :xref:`branches <git-branch>`, which enable
-independent sequences of :xref:`commits <git-commit>`, are used to manage
-:ref:`project versions <indices-versions>` on :github:`GitHub <>`, a
+:git-doc:`commits <git-commit>`, and :git-doc:`branches <git-branch>`, which
+enable independent sequences of :git-doc:`commits <git-commit>`, are used to
+manage :ref:`project versions <indices-versions>` on :github:`GitHub <>`, a
 :xref:`free <money>` service that :wiki-pg:`hosts <Host_(network)>` the
 :github:`AAAAAA repository <alnoki/AAAAAA>` for :wiki-pg:`free <Money>`
 

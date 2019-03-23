@@ -252,8 +252,8 @@ Committing
    :header: Reference, Topic
 
    :git-doc:`git-add`, Prepare changes
-   :xref:`git-commit`, Create snapshot of project changes
-   :xref:`git-push`, :wiki-pg:`Upload` changes to :github:`GitHub <>`
+   :git-doc:`git-commit`, Create snapshot of project changes
+   :git-doc:`git-push`, :wiki-pg:`Upload` changes to :github:`GitHub <>`
    :xref:`git-commit-guidelines`, Official message guidelines
 
 #. Verify the state of the project using the
@@ -300,7 +300,7 @@ Committing
    :xref:`tells the codebase what to do <commit-conventions>`
 
 #. Use the :ref:`integrated terminal <tools-vs-code>` to verify the
-   :xref:`commit <git-commit>` looks alright and that the
+   :git-doc:`commit <git-commit>` looks alright and that the
    :ref:`commit identities <git-list-committers>` are okay
 
    .. code-block:: bash
@@ -315,7 +315,7 @@ Committing
       git log --pretty="%an, %ae, %cn, %ce"
 
 #. Use the :ref:`integrated terminal <tools-vs-code>` to
-   :xref:`push <git-push>` and verify
+   :git-doc:`push <git-push>` and verify
 
    .. code-block:: bash
 
@@ -359,14 +359,15 @@ Tagging
    :align: center
    :header: Reference, Topic
 
-   :xref:`git-tag`, Assign a unique identifier to a :xref:`commit <git-commit>`
+   :xref:`git-tag`, "Assign a unique identifier to a
+   :git-doc:`commit <git-commit>`"
    :xref:`Message style <commit-conventions>`, "Tell the
    :xref:`codebase <software>` what to do"
-   :xref:`git-push`, :wiki-pg:`Upload` changes to :github:`GitHub <>`
+   :git-doc:`git-push`, :wiki-pg:`Upload` changes to :github:`GitHub <>`
    :xref:`git-commit-guidelines`, Long message guidelines
 
 #. :ref:`View the project log <git-view-project-log>` to verify the
-   :xref:`commit <git-commit>` in question
+   :git-doc:`commit <git-commit>` in question
 #. Use the :ref:`VS Code integrated terminal <tools-vs-code>` to view existing
    :xref:`tags <git-tag>`
 
@@ -388,7 +389,7 @@ Tagging
    :xref:`tells the codebase what to do <commit-conventions>` and includes
    a :xref:`lengthier description <git-commit-guidelines>` if appropriate
 #. Verify by :ref:`viewing the project log <git-view-project-log>`
-#. :xref:`Push with tag following <git-push>`:
+#. :git-doc:`Push with tag following <git-push>`:
 
    .. code-block:: bash
 
@@ -405,13 +406,14 @@ Branching
    :align: center
    :header: Reference, Topic
 
-   :xref:`git-branch`, Manage independent :xref:`commit <git-commit>` sequences
+   :xref:`git-branch`, "Manage independent
+   :git-doc:`commit <git-commit>` sequences"
    :xref:`git-checkout`, Switch :xref:`branches <git-branch>`
    :git-doc:`git-fetch`, "Get :git-doc:`branches <git-branch>` from the
    :github:`AAAAAA repository <alnoki/AAAAAA>`"
 
 #. :ref:`View the project log <git-view-project-log>` to verify the
-   :xref:`commit <git-commit>` in question
+   :git-doc:`commit <git-commit>` in question
 #. Inspect :xref:`all branches <git-branch>` using the
    :ref:`VS Code integrated terminal <tools-vs-code>`:
 
@@ -435,7 +437,7 @@ Branching
 #. The first time you :ref:`commit <git-committing>` a new
    :xref:`branch <git-branch>` to the
    :github:`AAAAAA repository <alnoki/AAAAAA>`, make sure to
-   :xref:`set upstream tracking <git-push>`:
+   :git-doc:`set upstream tracking <git-push>`:
 
    .. code-block:: bash
 
@@ -458,9 +460,10 @@ Merging
    :align: center
    :header: Reference, Topic
 
-   :xref:`git-branch`, Manage independent :xref:`commit <git-commit>` sequences
-   :xref:`git-checkout`, Switch :xref:`branches <git-branch>`
-   :xref:`git-merge`, Combine :xref:`branches <git-branch>`
+   :xref:`git-branch`, "Manage independent :git-doc:`commit <git-commit>`
+   sequences"
+   :git-doc:`git-checkout`, Switch :git-doc:`branches <git-branch>`
+   :git-doc:`git-merge`, Combine :git-doc:`branches <git-branch>`
 
 #. Use the :ref:`VS Code integrated terminal <tools-vs-code>` to
    :xref:`view available branches <git-branch>`:

@@ -288,8 +288,6 @@ xref_links = {
         '01/14/how-to-enable-key-repeats-on-your-mac/'),
 
     # To sort
-    'git-commit': ('git-commit', url['git-scm'] + 'docs/git-commit'),
-    'git-push': ('git-push', url['git-scm'] + 'docs/git-push'),
     'git-clone': ('git-clone', url['git-scm'] + 'docs/git-clone'),
     'git-branch': ('git-branch', url['git-scm'] + 'docs/git-branch'),
     'git-tag': ('git-tag', url['git-scm'] + 'docs/git-tag'),
